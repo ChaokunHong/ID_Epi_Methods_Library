@@ -6,7 +6,7 @@
 
 ## Current phase and status
 
-Bootstrap is complete through the frozen broadened seed scan at Git commit `975f3ea43fb7d927b64028c2108c92e3db5a8b4f` (`freeze broadened infectious disease seed scan`). Task 6 continuity files were introduced in `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` (`add filesystem-based project handoff`), and review corrections follow in the Git history. Resolve the current exact commit with `git rev-parse HEAD`: a handoff file cannot embed the SHA of the commit containing that same text. Tasks 7 and 8 remain. The approved design was committed as `c708ac2402431202c8b1af4c5fd87035460249ab` (`define infectious disease methods library design`), and the bootstrap implementation plan was committed as `9d38e235f031d0b5959e1d587ee28fe8d20a53de` (`plan methods library bootstrap`). No flagship has been selected, and no broad applied-paper or method-source search has been executed.
+Bootstrap Tasks 1–7 are complete; Task 8 remains. The frozen broadened seed scan was committed in `975f3ea43fb7d927b64028c2108c92e3db5a8b4f` (`freeze broadened infectious disease seed scan`), Task 6 continuity files were introduced in `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` (`add filesystem-based project handoff`), and the Task 7 reciprocal pointer was completed and recorded in full commit `e8953a920800c932df75ff39631e06a29aaaeede` (`record reciprocal project pointer`). Review corrections follow in the Git history. Resolve the current exact commit with `git rev-parse HEAD`: a handoff file cannot embed the SHA of the commit containing that same text. The approved design was committed as `c708ac2402431202c8b1af4c5fd87035460249ab` (`define infectious disease methods library design`), and the bootstrap implementation plan was committed as `9d38e235f031d0b5959e1d587ee28fe8d20a53de` (`plan methods library bootstrap`). No flagship has been selected, and no broad applied-paper or method-source search has been executed.
 
 ## Approved scope
 
@@ -32,7 +32,7 @@ There are no current blockers to planning the next task. The Task 5 whitespace e
 
 ## Exact next action
 
-Write and obtain approval for a separate, broad applied-paper and method-source search execution plan. The plan must preserve methods-first discovery, record reproducible search routes and primary-source verification, and cover the intended portfolio. Do not select a flagship from the seed scan, execute the search, download candidate data, run simulations, or create a paper repository in this task.
+Perform Task 8 local release preparation and its full release gate: run the complete tests, validator, structure, SHA, status, and remote checks; create the bootstrap verification report; then update and commit this handoff. Per the owner workflow and controller ledger, do not push yet. Complete the final whole-branch review, apply any required fixes, run final verification, merge the verified branch to `main`, and only then push verified `main`.
 
 ## Verification commands
 
@@ -49,4 +49,4 @@ git diff --check
 
 ## Last updated
 
-2026-07-20 after Task 6 review corrections. Resolve the current exact commit with `git rev-parse HEAD`; a handoff file cannot embed the SHA of the commit containing itself.
+2026-07-20 after Task 7 review corrections. Resolve the current exact commit with `git rev-parse HEAD`; a handoff file cannot embed the SHA of the commit containing itself.
