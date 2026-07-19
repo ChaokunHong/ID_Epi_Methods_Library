@@ -209,7 +209,7 @@ eb5d15656b8fe69a8359705c80125d695a1c0782
 
 The authorized Task 7 action log records that `apply_patch` wrote only the new pointer and that no staging or commit command was run in `Surveillance_AMR`; Task 8 likewise ran no source write, staging, or commit command. That action-scope evidence is distinct from the narrower independent status-receipt proof. The pointer remains present and intentionally untracked.
 
-## Git and remote pre-publication receipt
+## Original pre-release branch and named-ref receipt
 
 Commands:
 
@@ -219,7 +219,7 @@ git rev-parse HEAD
 git status --short --branch
 git log --oneline --decorate --all
 git remote -v
-git ls-remote origin
+git ls-remote origin HEAD refs/heads/main
 ```
 
 Exit code: `0`. Pre-release state:
@@ -229,8 +229,10 @@ branch: codex/library-bootstrap
 HEAD: 36d81978d39a2b08f1d5d022c5143de817192645
 origin fetch: https://github.com/ChaokunHong/ID_Epi_Methods_Library.git
 origin push: https://github.com/ChaokunHong/ID_Epi_Methods_Library.git
-git ls-remote origin: exit 0 with no output (no remote refs)
+git ls-remote origin HEAD refs/heads/main: exit 0 with no output
 ```
+
+This original receipt was captured at pre-release HEAD `36d81978d39a2b08f1d5d022c5143de817192645`. It proves only that the two named refs, `HEAD` and `refs/heads/main`, were absent at that time; it was not an all-ref query.
 
 Pre-release log:
 
@@ -250,7 +252,37 @@ c9f2954 add research card and folder contracts
 c708ac2 define infectious disease methods library design
 ```
 
-The local release record is committed with subject `verify methods library bootstrap`. Because a tracked report cannot embed the SHA of the commit that contains itself, resolve that exact release-record commit with `git rev-parse HEAD` after the commit.
+The initial release record is commit `64286301f4d04edba22d01571e4d8fba70e9f7b0`, subject `verify methods library bootstrap`, whose parent is the pre-release commit above.
+
+## Review-correction and current pre-publication receipt
+
+The first receipt-correction commit is `6a44aa5c71cbf6455bf26a9db1cb6d296b20e1c1`, subject `correct bootstrap verification receipts`, whose parent is the initial release-record commit.
+
+Fresh commands run at that corrected branch tip:
+
+```bash
+date '+%Y-%m-%d %H:%M:%S %Z %z'
+printf 'TZ=%s\n' "${TZ:-not-set}"
+git rev-parse HEAD
+git branch --show-current
+git status --short --branch
+git ls-remote origin
+```
+
+Exit code: `0`. Concise output:
+
+```text
+2026-07-20 07:38:46 CST +0800
+TZ=not-set
+6a44aa5c71cbf6455bf26a9db1cb6d296b20e1c1
+codex/library-bootstrap
+## codex/library-bootstrap
+git ls-remote origin: no output
+```
+
+The process did not set `TZ`; the system receipt resolved `CST +0800` in the Asia/Shanghai context. The full `git ls-remote origin` all-ref query exited `0` with empty output, proving that no remote refs existed at this later current-pre-publication checkpoint. No push had occurred.
+
+`git rev-parse HEAD` resolves the current corrected branch tip. At the timestamp above it returned the first receipt-correction commit; after this chronology clarification is committed it will resolve the newer clarification commit, not the initial release-record commit. The new commit cannot embed its own SHA in this tracked report; use `git rev-parse HEAD` for the live tip and the explicit immutable SHAs above for the two earlier Task 8 commits.
 
 ## Deferred work and next gate
 
