@@ -6,7 +6,7 @@
 
 ## Current phase and status
 
-Bootstrap is complete through the frozen broadened seed scan at Git commit `975f3ea` (`freeze broadened infectious disease seed scan`). The continuity files in this handoff unit are ready for commit. The approved design was committed as `c708ac2` (`define infectious disease methods library design`), and the bootstrap implementation plan was committed as `9d38e23` (`plan methods library bootstrap`). No flagship has been selected, and no broad applied-paper or method-source search has been executed.
+Bootstrap is complete through the frozen broadened seed scan at Git commit `975f3ea43fb7d927b64028c2108c92e3db5a8b4f` (`freeze broadened infectious disease seed scan`). Task 6 continuity files were introduced in `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` (`add filesystem-based project handoff`). The current HEAD was verified with `git rev-parse HEAD` as that Task 6 commit before this corrective update; Task 8 will replace this interim status with the release state. Tasks 7 and 8 remain. The approved design was committed as `c708ac2402431202c8b1af4c5fd87035460249ab` (`define infectious disease methods library design`), and the bootstrap implementation plan was committed as `9d38e235f031d0b5959e1d587ee28fe8d20a53de` (`plan methods library bootstrap`). No flagship has been selected, and no broad applied-paper or method-source search has been executed.
 
 ## Approved scope
 
@@ -14,8 +14,8 @@ Discovery is method/problem first, not data/disease first. Do not exclude leads 
 
 ## Immutable outputs
 
-- Approved design: `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, commit `c708ac2`, SHA256 `e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57`; preserve byte-for-byte.
-- Frozen seed snapshot: `01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md`, commit `975f3ea`, SHA256 `520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55`; verify with both SHA256 and `cmp` against the source before any claimed replacement.
+- Approved design: `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, commit `c708ac2402431202c8b1af4c5fd87035460249ab`, SHA256 `e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57`; preserve byte-for-byte.
+- Frozen seed snapshot: `01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md`, commit `975f3ea43fb7d927b64028c2108c92e3db5a8b4f`, SHA256 `520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55`; verify with both SHA256 and `cmp` against `/Users/hongchaokun/Documents/PhD/Surveillance_AMR/02_source_registry/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md` before any claimed replacement.
 - Remote: `origin` is `https://github.com/ChaokunHong/ID_Epi_Methods_Library.git` (not yet pushed).
 
 ## Registry state
@@ -42,11 +42,11 @@ git log --oneline --decorate --all
 git remote -v
 shasum -a 256 docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md
 shasum -a 256 01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md
-cmp -s 01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md ../Surveillance_AMR/02_source_registry/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md
+cmp -s 01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md /Users/hongchaokun/Documents/PhD/Surveillance_AMR/02_source_registry/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md
 python3 00_governance/scripts/validate_library.py --root .
 git diff --check
 ```
 
 ## Last updated
 
-2026-07-20 from live worktree state at `975f3ea43fb7d927b64028c2108c92e3db5a8b4f` before committing this continuity unit.
+2026-07-20. Current HEAD was verified as `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` before this corrective update; Task 8 will replace the interim status with the release state.
