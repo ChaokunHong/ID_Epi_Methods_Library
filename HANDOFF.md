@@ -6,7 +6,7 @@
 
 ## Current phase and status
 
-Bootstrap is complete through the frozen broadened seed scan at Git commit `975f3ea43fb7d927b64028c2108c92e3db5a8b4f` (`freeze broadened infectious disease seed scan`). Task 6 continuity files were introduced in `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` (`add filesystem-based project handoff`). The current HEAD was verified with `git rev-parse HEAD` as that Task 6 commit before this corrective update; Task 8 will replace this interim status with the release state. Tasks 7 and 8 remain. The approved design was committed as `c708ac2402431202c8b1af4c5fd87035460249ab` (`define infectious disease methods library design`), and the bootstrap implementation plan was committed as `9d38e235f031d0b5959e1d587ee28fe8d20a53de` (`plan methods library bootstrap`). No flagship has been selected, and no broad applied-paper or method-source search has been executed.
+Bootstrap is complete through the frozen broadened seed scan at Git commit `975f3ea43fb7d927b64028c2108c92e3db5a8b4f` (`freeze broadened infectious disease seed scan`). Task 6 continuity files were introduced in `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` (`add filesystem-based project handoff`), and review corrections follow in the Git history. Resolve the current exact commit with `git rev-parse HEAD`: a handoff file cannot embed the SHA of the commit containing that same text. Tasks 7 and 8 remain. The approved design was committed as `c708ac2402431202c8b1af4c5fd87035460249ab` (`define infectious disease methods library design`), and the bootstrap implementation plan was committed as `9d38e235f031d0b5959e1d587ee28fe8d20a53de` (`plan methods library bootstrap`). No flagship has been selected, and no broad applied-paper or method-source search has been executed.
 
 ## Approved scope
 
@@ -24,7 +24,7 @@ All six registries contain headers only: `03_evidence_tables/papers.csv`, `03_ev
 
 ## Related projects
 
-`../Surveillance_AMR` is a separate AMR application project and the source of the copied seed snapshot. Do not modify its protocol or application-specific decisions except through an explicit, separately reviewed task. The next scientific task belongs in this Library and must not perform a `Surveillance_AMR` protocol change.
+`/Users/hongchaokun/Documents/PhD/Surveillance_AMR` is a separate AMR application project and the source of the copied seed snapshot. Do not modify its protocol or application-specific decisions except through an explicit, separately reviewed task. The next scientific task belongs in this Library and must not perform a `Surveillance_AMR` protocol change.
 
 ## Known blockers and non-blockers
 
@@ -49,4 +49,4 @@ git diff --check
 
 ## Last updated
 
-2026-07-20. Current HEAD was verified as `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` before this corrective update; Task 8 will replace the interim status with the release state.
+2026-07-20 after Task 6 review corrections. Resolve the current exact commit with `git rev-parse HEAD`; a handoff file cannot embed the SHA of the commit containing itself.
