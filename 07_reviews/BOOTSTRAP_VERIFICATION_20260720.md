@@ -183,21 +183,31 @@ Commands:
 test -f /Users/hongchaokun/Documents/PhD/Surveillance_AMR/ID_EPI_METHODS_LIBRARY_POINTER.md
 git -C /Users/hongchaokun/Documents/PhD/Surveillance_AMR status --porcelain=v1 \
   | sed '/^?? ID_EPI_METHODS_LIBRARY_POINTER.md$/d' \
-  | cmp -s - /tmp/id_epi_library_surveillance_status_before_task7.txt
+  > /tmp/id_epi_library_surveillance_status_task8_review_live.txt
+shasum -a 256 /tmp/id_epi_library_surveillance_status_before_task7.txt /tmp/id_epi_library_surveillance_status_task8_review_live.txt
+wc -l /tmp/id_epi_library_surveillance_status_before_task7.txt /tmp/id_epi_library_surveillance_status_task8_review_live.txt
+diff -u /tmp/id_epi_library_surveillance_status_before_task7.txt /tmp/id_epi_library_surveillance_status_task8_review_live.txt
 git -C /Users/hongchaokun/Documents/PhD/Surveillance_AMR status --porcelain=v1 -- ID_EPI_METHODS_LIBRARY_POINTER.md
 git -C /Users/hongchaokun/Documents/PhD/Surveillance_AMR ls-files --error-unmatch ID_EPI_METHODS_LIBRARY_POINTER.md
 git -C /Users/hongchaokun/Documents/PhD/Surveillance_AMR diff --cached --name-only
 git -C /Users/hongchaokun/Documents/PhD/Surveillance_AMR rev-parse HEAD
 ```
 
-Exit code: `0` for file presence and the exact filtered-status comparison. Concise output:
+The fresh live-receipt generation, digest, line-count, and comparison commands exited `0`. Concise output:
 
 ```text
+e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e  /tmp/id_epi_library_surveillance_status_before_task7.txt
+e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e  /tmp/id_epi_library_surveillance_status_task8_review_live.txt
+16 /tmp/id_epi_library_surveillance_status_before_task7.txt
+16 /tmp/id_epi_library_surveillance_status_task8_review_live.txt
+32 total
 ?? ID_EPI_METHODS_LIBRARY_POINTER.md
 eb5d15656b8fe69a8359705c80125d695a1c0782
 ```
 
-The `ls-files --error-unmatch` command exited `1`, confirming that the pointer is not tracked; the source index command returned no paths. After filtering only the exact pointer status line, current source status byte-matched `/tmp/id_epi_library_surveillance_status_before_task7.txt`. The pointer is present and intentionally untracked; Task 8 staged or committed nothing in `Surveillance_AMR` and did not modify its pre-existing dirty paths.
+`diff -u` produced no output. The `ls-files --error-unmatch` command exited `1`, confirming that the pointer is not tracked; the source index command returned no paths. After filtering only the exact pointer status line, the current 16-line porcelain receipt byte-matched the 16-line baseline receipt. This proves that no pre-existing path/status entry changed. It does not independently prove byte identity for files that were already dirty because no pre-write byte-hash manifest of those paths was captured.
+
+The authorized Task 7 action log records that `apply_patch` wrote only the new pointer and that no staging or commit command was run in `Surveillance_AMR`; Task 8 likewise ran no source write, staging, or commit command. That action-scope evidence is distinct from the narrower independent status-receipt proof. The pointer remains present and intentionally untracked.
 
 ## Git and remote pre-publication receipt
 
@@ -209,7 +219,7 @@ git rev-parse HEAD
 git status --short --branch
 git log --oneline --decorate --all
 git remote -v
-git ls-remote origin HEAD refs/heads/main
+git ls-remote origin
 ```
 
 Exit code: `0`. Pre-release state:
@@ -219,7 +229,7 @@ branch: codex/library-bootstrap
 HEAD: 36d81978d39a2b08f1d5d022c5143de817192645
 origin fetch: https://github.com/ChaokunHong/ID_Epi_Methods_Library.git
 origin push: https://github.com/ChaokunHong/ID_Epi_Methods_Library.git
-remote HEAD and refs/heads/main: no output (empty remote)
+git ls-remote origin: exit 0 with no output (no remote refs)
 ```
 
 Pre-release log:
@@ -252,5 +262,7 @@ The following work was not performed by Task 8:
 4. merge to `main`;
 5. push of verified `main` and remote-SHA equality receipt; and
 6. broad applied-paper and authoritative method-source search planning or execution.
+
+No candidate dataset was downloaded and no simulation was executed during bootstrap. Dataset acquisition and simulation execution remain deferred to separately approved plans after the applicable evidence, feasibility, and specification gates.
 
 The exact next operational action is the controller-owned whole-branch review. Only after reviewed `main` is merged, revalidated, and published may the next scientific action begin: draft the separate broad-search execution plan for owner review. That future plan must remain methods/problem first; combine applied seeds with authoritative method lineage; preserve a portfolio of multiple flagship candidates, one or two lower-risk public-data projects, and a non-AMR infectious-disease route; and require a broad structural contribution for any pure-simulation flagship.
