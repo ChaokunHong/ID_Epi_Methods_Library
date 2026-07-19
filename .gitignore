@@ -1,1 +1,13 @@
 .worktrees/
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.Rhistory
+.RData
+.Rproj.user/
+*.tmp
+*.swp
