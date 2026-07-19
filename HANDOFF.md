@@ -24,7 +24,7 @@ All six registries contain headers only: `03_evidence_tables/papers.csv`, `03_ev
 
 ## Related projects
 
-`/Users/hongchaokun/Documents/PhD/Surveillance_AMR` is a separate AMR application project and the source of the copied seed snapshot. Do not modify its protocol or application-specific decisions except through an explicit, separately reviewed task. The next scientific task belongs in this Library and must not perform a `Surveillance_AMR` protocol change.
+`/Users/hongchaokun/Documents/PhD/Surveillance_AMR` is a separate AMR application project and the source of the copied seed snapshot. The reciprocal pointer at `/Users/hongchaokun/Documents/PhD/Surveillance_AMR/ID_EPI_METHODS_LIBRARY_POINTER.md` is present but intentionally uncommitted in the dirty `Surveillance_AMR` worktree; no existing source file changed. Do not modify its protocol or application-specific decisions except through an explicit, separately reviewed task. The next scientific task belongs in this Library and must not perform a `Surveillance_AMR` protocol change.
 
 ## Known blockers and non-blockers
 
