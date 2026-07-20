@@ -7,6 +7,7 @@ from dataclasses import asdict, dataclass
 from datetime import date, datetime, timedelta
 import hashlib
 import importlib.util
+import io
 import json
 import math
 import os
@@ -728,12 +729,16 @@ def _resumable_root_matches(
         safe = _safe_relative(relative)
         if safe is None or manifest.get(safe) != expected_sha:
             return False
-        path = output_dir / safe
         try:
-            if hashlib.sha256(path.read_bytes()).hexdigest() != expected_sha:
+            artifact_bytes, confined_error = _confined_artifact_bytes(
+                output_dir, safe, f"resumable {kind}"
+            )
+            if confined_error is not None or artifact_bytes is None:
+                return False
+            if hashlib.sha256(artifact_bytes).hexdigest() != expected_sha:
                 return False
             if kind == "page":
-                _parse_pubmed_page(path.read_bytes())
+                _parse_pubmed_page(artifact_bytes)
         except (OSError, DiscoveryExecutionError):
             return False
     leaves = _leaf_receipts([existing])
@@ -940,6 +945,8 @@ def _validate_wave_two_registry(
         errors.append("Wave 2 family set mismatch")
     seen_ids: set[str] = set()
     infectious_block = ""
+    frozen_date_start = ""
+    frozen_date_end = ""
     if root is not None:
         config_object, config_errors = _read_json(
             Path(root) / QUERY_CONFIG_PATH, "invalid discovery query JSON"
@@ -949,6 +956,8 @@ def _validate_wave_two_registry(
             config_object.get("infectious_disease_block"), str
         ):
             infectious_block = str(config_object["infectious_disease_block"])
+            frozen_date_start = str(config_object.get("applied_date_start", ""))
+            frozen_date_end = str(config_object.get("applied_date_end", ""))
     for row in rows:
         family = row.get("family", "")
         status_value = row.get("status", "")
@@ -984,6 +993,15 @@ def _validate_wave_two_registry(
             end = _parse_date(row.get("date_end"))
             if start is None or end is None or start > end:
                 errors.append(f"invalid Wave 2 date interval: {family}")
+            if (
+                frozen_date_start
+                and frozen_date_end
+                and (
+                    row.get("date_start") != frozen_date_start
+                    or row.get("date_end") != frozen_date_end
+                )
+            ):
+                errors.append(f"Wave 2 frozen date interval mismatch: {family}")
             if _query_date_interval(row.get("query")) != (
                 row.get("date_start"),
                 row.get("date_end"),
@@ -1319,8 +1337,15 @@ def _pubmed_lineage_candidate_rows(
     for page in receipt.get("efetch_pages", []):
         if not isinstance(page, dict):
             continue
-        path = output_dir / str(page.get("path", ""))
-        root, _ = _parse_pubmed_page(path.read_bytes())
+        relative = str(page.get("path", ""))
+        page_bytes, confined_error = _confined_artifact_bytes(
+            output_dir, relative, "PubMed lineage raw"
+        )
+        if confined_error is not None or page_bytes is None:
+            raise DiscoveryExecutionError(
+                confined_error or f"PubMed lineage raw missing: {relative}"
+            )
+        root, _ = _parse_pubmed_page(page_bytes)
         for record in root:
             if record.tag.rsplit("}", 1)[-1] not in {
                 "PubmedArticle", "PubmedBookArticle"
@@ -1358,15 +1383,27 @@ def _crossref_lineage_candidate_rows(
     receipt: dict[str, object],
     output_dir: Path,
 ) -> list[dict[str, str]]:
-    try:
-        payload = json.loads(
-            (output_dir / str(receipt["response_path"])).read_text(encoding="utf-8")
+    relative = str(receipt.get("response_path", ""))
+    response_bytes, confined_error = _confined_artifact_bytes(
+        output_dir, relative, "Crossref lineage raw"
+    )
+    if confined_error is not None or response_bytes is None:
+        raise DiscoveryExecutionError(
+            confined_error or f"Crossref lineage raw missing: {relative}"
         )
+    try:
+        payload = json.loads(response_bytes.decode("utf-8"))
         items = payload["message"]["items"]
-    except (OSError, UnicodeError, json.JSONDecodeError, KeyError, TypeError) as error:
+    except (UnicodeError, json.JSONDecodeError, KeyError, TypeError) as error:
         raise DiscoveryExecutionError("malformed Crossref response JSON") from error
+    if not isinstance(items, list):
+        raise DiscoveryExecutionError("malformed Crossref response JSON")
     rows: list[dict[str, str]] = []
     for rank, item in enumerate(items, 1):
+        if not isinstance(item, dict):
+            raise DiscoveryExecutionError(
+                f"invalid Crossref candidate item: {rank}"
+            )
         doi = _normalize_doi(str(item.get("DOI", "")))
         titles = item.get("title", [])
         containers = item.get("container-title", [])
@@ -1440,9 +1477,10 @@ def _lineage_query_resumable(
         or manifest.get(raw_path) != raw_sha
     ):
         return False
-    try:
-        raw_data = (output_dir / raw_path).read_bytes()
-    except OSError:
+    raw_data, confined_error = _confined_artifact_bytes(
+        output_dir, raw_path, "lineage resume raw"
+    )
+    if confined_error is not None or raw_data is None:
         return False
     if hashlib.sha256(raw_data).hexdigest() != raw_sha:
         return False
@@ -1734,8 +1772,8 @@ def _candidate_key(fields: dict[str, str]) -> tuple[str, str]:
     return f"TITLE:{hashlib.sha256(fallback.encode()).hexdigest()[:16]}", "title_year_journal"
 
 
-def compile_pubmed_candidates(run_dir: Path) -> list[dict[str, str]]:
-    """Compile all manifested PubMed pages into a deterministic raw candidate table."""
+def _derive_pubmed_candidates(run_dir: Path) -> list[dict[str, str]]:
+    """Purely derive deterministic candidates from receipt-owned manifested pages."""
     run_dir = Path(run_dir)
     try:
         receipt = json.loads((run_dir / "RUN_RECEIPT.json").read_text(encoding="utf-8"))
@@ -1759,11 +1797,13 @@ def compile_pubmed_candidates(run_dir: Path) -> list[dict[str, str]]:
                 raise DiscoveryExecutionError(
                     f"compile input checksum mismatch: {relative}"
                 )
-            page_path = run_dir / relative
-            try:
-                page_bytes = page_path.read_bytes()
-            except OSError as error:
-                raise DiscoveryExecutionError("missing EFetch page for compilation") from error
+            page_bytes, confined_error = _confined_artifact_bytes(
+                run_dir, relative, "compile input"
+            )
+            if confined_error is not None or page_bytes is None:
+                raise DiscoveryExecutionError(
+                    confined_error or f"missing EFetch page for compilation: {relative}"
+                )
             if hashlib.sha256(page_bytes).hexdigest() != expected_sha:
                 raise DiscoveryExecutionError(
                     f"compile input checksum mismatch: {relative}"
@@ -1773,6 +1813,8 @@ def compile_pubmed_candidates(run_dir: Path) -> list[dict[str, str]]:
                 if record.tag.rsplit("}", 1)[-1] not in {"PubmedArticle", "PubmedBookArticle"}:
                     continue
                 fields = _pubmed_record_fields(record)
+                if not any(fields[field] for field in ("pmid", "doi", "title")):
+                    continue
                 fields.update(
                     search_ids=str(leaf.get("search_id", "")),
                     lanes=str(leaf.get("lane", "")),
@@ -1870,17 +1912,23 @@ def compile_pubmed_candidates(run_dir: Path) -> list[dict[str, str]]:
                 separators=(",", ":"),
             ).encode("utf-8")
         ).hexdigest()
+    return rows
+
+
+def _render_compiled_candidates(rows: Sequence[dict[str, str]]) -> bytes:
+    buffer = io.StringIO(newline="")
+    writer = csv.DictWriter(buffer, fieldnames=COMPILED_HEADERS)
+    writer.writeheader()
+    writer.writerows(rows)
+    return buffer.getvalue().encode("utf-8")
+
+
+def compile_pubmed_candidates(run_dir: Path) -> list[dict[str, str]]:
+    """Compile all manifested PubMed pages into a deterministic raw candidate table."""
+    run_dir = Path(run_dir)
+    rows = _derive_pubmed_candidates(run_dir)
     path = run_dir / "compiled_candidates_raw.csv"
-    temporary = path.with_name(f".{path.name}.{os.getpid()}.{time.time_ns()}.tmp")
-    try:
-        with temporary.open("w", encoding="utf-8", newline="") as handle:
-            writer = csv.DictWriter(handle, fieldnames=COMPILED_HEADERS)
-            writer.writeheader()
-            writer.writerows(rows)
-        temporary.replace(path)
-    except BaseException:
-        temporary.unlink(missing_ok=True)
-        raise
+    _atomic_bytes(path, _render_compiled_candidates(rows))
     _manifest_artifact(run_dir, path, hashlib.sha256(path.read_bytes()).hexdigest())
     return rows
 
@@ -2177,6 +2225,60 @@ def _confined_artifact_sha256(
                 pass
 
 
+def _confined_artifact_bytes(
+    root: Path,
+    relative: str,
+    kind: str,
+) -> tuple[bytes | None, str | None]:
+    safe = _safe_relative(relative)
+    if safe is None:
+        return None, f"{kind} path traversal: {relative}"
+    parts = PurePosixPath(safe).parts
+    open_fds: list[int] = []
+    try:
+        current_fd = os.open(root, os.O_RDONLY | os.O_DIRECTORY)
+        open_fds.append(current_fd)
+        for index, part in enumerate(parts):
+            try:
+                mode = os.stat(part, dir_fd=current_fd, follow_symlinks=False).st_mode
+            except FileNotFoundError:
+                return None, f"{kind} file missing: {relative}"
+            if stat.S_ISLNK(mode):
+                return None, f"{kind} path contains symlink: {relative}"
+            if index < len(parts) - 1:
+                if not stat.S_ISDIR(mode):
+                    return None, f"{kind} parent is not a directory: {relative}"
+                current_fd = os.open(
+                    part,
+                    os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW,
+                    dir_fd=current_fd,
+                )
+                open_fds.append(current_fd)
+                continue
+            if not stat.S_ISREG(mode):
+                return None, f"{kind} path is not a regular file: {relative}"
+            artifact_fd = os.open(
+                part,
+                os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW,
+                dir_fd=current_fd,
+            )
+            open_fds.append(artifact_fd)
+            if not stat.S_ISREG(os.fstat(artifact_fd).st_mode):
+                return None, f"{kind} path is not a regular file: {relative}"
+            chunks: list[bytes] = []
+            while chunk := os.read(artifact_fd, 1024 * 1024):
+                chunks.append(chunk)
+            return b"".join(chunks), None
+    except OSError as error:
+        return None, _error(f"{kind} file unreadable", Path(relative), error)
+    finally:
+        for descriptor in reversed(open_fds):
+            try:
+                os.close(descriptor)
+            except OSError:
+                pass
+
+
 def _validate_manifest(run_dir: Path) -> tuple[list[str], dict[str, str]]:
     path = run_dir / "MANIFEST_SHA256.json"
     if not path.is_file():
@@ -2230,14 +2332,6 @@ def _reference_errors(
     if not isinstance(digest_raw, str) or digest_raw != manifest[relative]:
         return [f"{label} SHA disagreement: {relative}"]
     return []
-
-
-def _count_xml_records(path: Path) -> int:
-    root = ET.parse(path).getroot()
-    return sum(
-        child.tag.rsplit("}", 1)[-1] in {"PubmedArticle", "PubmedBookArticle"}
-        for child in root
-    )
 
 
 def _integer(value: object) -> bool:
@@ -2328,8 +2422,15 @@ def _validate_pages(
                 owned_raw_paths.add(relative)
         if relative is not None and relative in manifest:
             try:
-                actual_count = _count_xml_records(run_dir / relative)
-            except (ET.ParseError, OSError):
+                page_bytes, confined_error = _confined_artifact_bytes(
+                    run_dir, relative, "PubMed page"
+                )
+                if confined_error is not None or page_bytes is None:
+                    raise DiscoveryExecutionError(
+                        confined_error or f"invalid PubMed XML: {relative}"
+                    )
+                _, actual_count = _parse_pubmed_page(page_bytes)
+            except (ET.ParseError, OSError, DiscoveryExecutionError):
                 errors.append(f"invalid PubMed XML: {relative}")
             else:
                 if actual_count != parsed_count:
@@ -2417,9 +2518,15 @@ def _validate_cell(
             owned_raw_paths.add(esearch_path)
         if esearch_path in manifest:
             try:
-                esearch_result = _parse_esearch(
-                    (run_dir / esearch_path).read_bytes()
+                esearch_bytes, confined_error = _confined_artifact_bytes(
+                    run_dir, esearch_path, "PubMed ESearch"
                 )
+                if confined_error is not None or esearch_bytes is None:
+                    raise DiscoveryExecutionError(
+                        confined_error
+                        or f"invalid PubMed ESearch JSON: {esearch_path}"
+                    )
+                esearch_result = _parse_esearch(esearch_bytes)
             except (OSError, DiscoveryExecutionError):
                 errors.append(f"invalid PubMed ESearch JSON: {esearch_path}")
             else:
@@ -2646,7 +2753,16 @@ def validate_search_run(run_dir: Path) -> list[str]:
         )
     if payload.get("source") != "pubmed":
         errors.append("invalid run source")
+    wave_two_registry_rows: list[dict[str, str]] = []
+    if wave_two:
+        wave_two_registry_rows, wave_two_registry_errors = _validate_wave_two_registry(
+            run_dir / "QUERY_REGISTRY.csv", configuration_root
+        )
+        errors.extend(wave_two_registry_errors)
     cells = payload["cells"]
+    owned_esearch_paths: set[str] = set()
+    owned_page_paths: set[str] = set()
+    owned_raw_paths: set[str] = set()
     if not isinstance(cells, list):
         errors.append("invalid cells receipt")
     else:
@@ -2683,10 +2799,41 @@ def validate_search_run(run_dir: Path) -> list[str]:
             }
             if len(cells) != 12 or actual_signatures != expected_signatures:
                 errors.append("wave 1 root cell mismatch")
+        if wave_two:
+            expected_wave_two_roots = {
+                (
+                    row.get("search_id"),
+                    "FAMILY",
+                    row.get("family"),
+                    row.get("query"),
+                    "",
+                    row.get("date_start"),
+                    row.get("date_end"),
+                    "pubmed",
+                )
+                for row in wave_two_registry_rows
+                if row.get("status") == "executed"
+            }
+            actual_wave_two_roots = {
+                (
+                    cell.get("search_id"),
+                    cell.get("lane"),
+                    cell.get("family"),
+                    cell.get("query"),
+                    cell.get("parent_search_id"),
+                    cell.get("date_start"),
+                    cell.get("date_end"),
+                    cell.get("source", payload.get("source")),
+                )
+                for cell in cells
+                if isinstance(cell, dict)
+            }
+            if (
+                len(cells) != len(expected_wave_two_roots)
+                or actual_wave_two_roots != expected_wave_two_roots
+            ):
+                errors.append("Wave 2 root cell mismatch")
         search_ids: set[str] = set()
-        owned_esearch_paths: set[str] = set()
-        owned_page_paths: set[str] = set()
-        owned_raw_paths: set[str] = set()
         for cell in cells:
             errors.extend(
                 _validate_cell(
@@ -2702,6 +2849,24 @@ def validate_search_run(run_dir: Path) -> list[str]:
             )
     if "compiled_candidates_raw.csv" not in manifest:
         errors.append("compiled_candidates_raw.csv absent from manifest")
+    manifest_raw_paths = {path for path in manifest if path.startswith("raw/")}
+    for path in sorted(manifest_raw_paths - owned_raw_paths):
+        errors.append(f"unowned manifest raw artifact: {path}")
+    try:
+        expected_compiled = _derive_pubmed_candidates(run_dir)
+    except DiscoveryExecutionError as error:
+        errors.append(f"compiled candidates cannot be recomputed: {error}")
+    else:
+        compiled_headers, compiled_rows, compiled_errors = _read_csv(
+            run_dir / "compiled_candidates_raw.csv",
+            "invalid compiled candidates",
+        )
+        errors.extend(compiled_errors)
+        if (
+            compiled_headers != list(COMPILED_HEADERS)
+            or compiled_rows != expected_compiled
+        ):
+            errors.append("compiled candidates content mismatch")
     empty_errors = _empty_wave_contract_errors(run_dir)
     if empty_errors is not None:
         errors.extend(empty_errors)
@@ -2808,10 +2973,15 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
             raw_relative = _safe_relative(row["raw_path"])
             if raw_relative is not None and raw_relative in manifest:
                 try:
-                    raw_count, raw_webenv, raw_query_key = _parse_esearch(
-                        (run_dir / raw_relative).read_bytes()
+                    raw_bytes, confined_error = _confined_artifact_bytes(
+                        run_dir, raw_relative, "PubMed lineage raw"
                     )
-                except (OSError, DiscoveryExecutionError):
+                    if confined_error is not None or raw_bytes is None:
+                        raise DiscoveryExecutionError(
+                            confined_error or "PubMed lineage raw missing"
+                        )
+                    raw_count, raw_webenv, raw_query_key = _parse_esearch(raw_bytes)
+                except DiscoveryExecutionError:
                     errors.append("invalid PubMed lineage ESearch JSON")
                 else:
                     if (
@@ -2859,9 +3029,14 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
             raw_relative = _safe_relative(row["raw_path"])
             if raw_relative is not None and raw_relative in manifest:
                 try:
-                    raw_payload = json.loads(
-                        (run_dir / raw_relative).read_text(encoding="utf-8")
+                    raw_bytes, confined_error = _confined_artifact_bytes(
+                        run_dir, raw_relative, "Crossref lineage raw"
                     )
+                    if confined_error is not None or raw_bytes is None:
+                        raise DiscoveryExecutionError(
+                            confined_error or "Crossref lineage raw missing"
+                        )
+                    raw_payload = json.loads(raw_bytes.decode("utf-8"))
                     raw_message = raw_payload["message"]
                     raw_items = raw_message["items"]
                     raw_total = int(raw_message["total-results"])
@@ -2872,6 +3047,7 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
                     KeyError,
                     TypeError,
                     ValueError,
+                    DiscoveryExecutionError,
                 ):
                     errors.append("invalid Crossref lineage response JSON")
                 else:
@@ -3081,6 +3257,10 @@ def _validate_lineage_decisions(
             or not set(considered).issubset(available_keys)
         ):
             errors.append(f"lineage candidate provenance mismatch: {decision_id}")
+        if not audit.get("primary_reviewer", "").strip():
+            errors.append(f"blank lineage primary reviewer: {decision_id}")
+        if not audit.get("audit_reviewer", "").strip():
+            errors.append(f"blank lineage audit reviewer: {decision_id}")
         if audit.get("audit_reviewer") == audit.get("primary_reviewer"):
             errors.append(f"lineage audit reviewer is not independent: {decision_id}")
         stages = (
@@ -3100,6 +3280,14 @@ def _validate_lineage_decisions(
                     errors.append(f"lineage candidate provenance mismatch: {decision_id}")
             elif selected:
                 errors.append(f"invalid lineage selected key: {decision_id}: {stage}")
+        if any(
+            audit.get(f"{stage}_decision") == "unresolved_after_three_queries"
+            for stage, _ in stages
+        ) and len(supporting) != 3:
+            errors.append(
+                "unresolved_after_three_queries requires exactly three "
+                f"supporting queries: {decision_id}"
+            )
         conflict = audit.get("conflict_status", "")
         primary_pair = (
             audit.get("primary_decision"),

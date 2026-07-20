@@ -262,7 +262,11 @@ class DiscoverySearchTests(unittest.TestCase):
             "retrieved_count": 0,
             "children": [first, second],
         }
-        compiled = self.add_artifact(run_dir, "compiled_candidates_raw.csv", b"header\n")
+        compiled = self.add_artifact(
+            run_dir,
+            "compiled_candidates_raw.csv",
+            (",".join(search.COMPILED_HEADERS) + "\n").encode(),
+        )
         return self.write_run(
             run_dir,
             [parent_cell],
@@ -271,23 +275,21 @@ class DiscoverySearchTests(unittest.TestCase):
 
     def make_valid_screened_run(self, parent: Path | None = None) -> Path:
         run_dir = self.make_valid_run(parent)
-        candidate_key = "PMID:1"
-        row_sha = "d" * 64
-        raw_headers = [
-            "candidate_key", "row_sha256", "pmid", "doi", "title", "year",
-            "journal", "authors", "abstract", "publication_types", "search_ids",
-            "lanes", "preliminary_families", "source_url", "deduplication_basis",
-            "possible_duplicate_group",
-        ]
-        self.write_csv(
-            run_dir / "compiled_candidates_raw.csv",
-            raw_headers,
-            [{key: (candidate_key if key == "candidate_key" else row_sha if key == "row_sha256" else "") for key in raw_headers}],
-        )
+        receipt = json.loads((run_dir / "RUN_RECEIPT.json").read_text())
         manifest_path = run_dir / "MANIFEST_SHA256.json"
         manifest = json.loads(manifest_path.read_text())
-        next(item for item in manifest["files"] if item["path"] == "compiled_candidates_raw.csv")["sha256"] = self.sha(run_dir / "compiled_candidates_raw.csv")
+        page = receipt["cells"][0]["efetch_pages"][0]
+        page_path = run_dir / page["path"]
+        page_path.write_bytes(self.pubmed_xml([{"pmid": "1", "title": "Fixture paper"}]))
+        page["sha256"] = self.sha(page_path)
+        next(item for item in manifest["files"] if item["path"] == page["path"])[
+            "sha256"
+        ] = page["sha256"]
+        (run_dir / "RUN_RECEIPT.json").write_text(json.dumps(receipt), encoding="utf-8")
         manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        compiled_rows = search.compile_pubmed_candidates(run_dir)
+        candidate_key = compiled_rows[0]["candidate_key"]
+        row_sha = compiled_rows[0]["row_sha256"]
 
         primary_headers = [
             "candidate_key", "source_row_sha256", "primary_decision",
@@ -335,7 +337,9 @@ class DiscoverySearchTests(unittest.TestCase):
             "candidate_key": candidate_key,
             "source_row_sha256": row_sha,
             "primary_reviewer": "reviewer-a",
-            "audit_stratum": "include_applied_seed|I_APPLIED_TRANSFERABLE_DESIGN|",
+            "audit_stratum": (
+                "include_applied_seed|I_APPLIED_TRANSFERABLE_DESIGN|causal_policy"
+            ),
             "audit_rank": hashlib.sha256(f"{candidate_key}|audit-v1".encode()).hexdigest(),
             "audit_reviewer": "reviewer-b",
             "primary_decision": "include_applied_seed",
@@ -354,6 +358,24 @@ class DiscoverySearchTests(unittest.TestCase):
         }
         self.write_csv(run_dir / "screening_audit.csv", audit_headers, [audit])
         return run_dir
+
+    def refresh_compiled_screening(self, run_dir: Path) -> str:
+        compiled_rows = search.compile_pubmed_candidates(run_dir)
+        self.assertEqual(len(compiled_rows), 1)
+        row_sha = compiled_rows[0]["row_sha256"]
+        for relative in (
+            "screening_batches/BATCH-001.csv",
+            "screened_candidates.csv",
+            "screening_audit.csv",
+        ):
+            path = run_dir / relative
+            with path.open(encoding="utf-8", newline="") as handle:
+                reader = csv.DictReader(handle)
+                headers = list(reader.fieldnames or [])
+                rows = list(reader)
+            rows[0]["source_row_sha256"] = row_sha
+            self.write_csv(path, headers, rows)
+        return row_sha
 
     def delete_one_required_audit_row(self, run_dir: Path) -> None:
         path = run_dir / "screening_audit.csv"
@@ -608,16 +630,65 @@ class DiscoverySearchTests(unittest.TestCase):
                 receipt["cells"] = cells
                 receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
                 manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+                self.refresh_compiled_screening(wave_dir)
             if wave == "wave_02_synonym_expansion":
                 receipt_path = wave_dir / "RUN_RECEIPT.json"
+                manifest_path = wave_dir / "MANIFEST_SHA256.json"
                 receipt = json.loads(receipt_path.read_text())
+                manifest = json.loads(manifest_path.read_text())
+                config = json.loads((self.root / search.QUERY_CONFIG_PATH).read_text())
+                start = config["applied_date_start"]
+                end = config["applied_date_end"]
+                query = (
+                    '("test synonym"[Title/Abstract]) AND '
+                    f'{config["infectious_disease_block"]} AND '
+                    f'("{start}"[Date - Publication] : "{end}"[Date - Publication])'
+                )
+                search_id = "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-91"
+                receipt["cells"][0].update(
+                    search_id=search_id,
+                    lane="FAMILY",
+                    family="causal_policy",
+                    query=query,
+                    parent_search_id="",
+                    date_start=start,
+                    date_end=end,
+                    source="pubmed",
+                )
                 query_registry = wave_dir / "QUERY_REGISTRY.csv"
-                query_registry.write_text("family\n", encoding="utf-8")
+                registry_rows = []
+                for family in sorted(search.FAMILIES):
+                    executed = family == "causal_policy"
+                    registry_rows.append(
+                        {
+                            "family": family,
+                            "search_id": search_id if executed else "",
+                            "status": "executed" if executed else "no_expansion_needed",
+                            "new_synonyms": "test synonym" if executed else "",
+                            "rationale": "Fixture rationale.",
+                            "source_candidate_keys": "PMID:1",
+                            "source": "pubmed" if executed else "",
+                            "query": query if executed else "",
+                            "date_start": start if executed else "",
+                            "date_end": end if executed else "",
+                            "reviewer": "reviewer-a",
+                        }
+                    )
+                self.write_csv(
+                    query_registry,
+                    list(search.WAVE_TWO_QUERY_HEADERS),
+                    registry_rows,
+                )
                 relative_registry = query_registry.relative_to(self.root).as_posix()
                 receipt["configuration_files"].append(
                     {"path": relative_registry, "sha256": self.sha(query_registry)}
                 )
                 receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+                manifest["files"].append(
+                    {"path": "QUERY_REGISTRY.csv", "sha256": self.sha(query_registry)}
+                )
+                manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+                self.refresh_compiled_screening(wave_dir)
         self.make_valid_lineage_run(phase)
         global_dir = phase / "global"
         global_headers = [
@@ -625,13 +696,24 @@ class DiscoverySearchTests(unittest.TestCase):
             "final_decision", "final_proposed_record_type", "final_reason_code",
             "duplicate_disposition",
         ]
+        wave_hashes: dict[str, str] = {}
+        for wave, directory in (
+            ("wave_01", phase / "wave_01_frozen_queries"),
+            ("wave_02", phase / "wave_02_synonym_expansion"),
+        ):
+            with (directory / "compiled_candidates_raw.csv").open(
+                encoding="utf-8", newline=""
+            ) as handle:
+                wave_hashes[wave] = next(csv.DictReader(handle))["row_sha256"]
         self.write_csv(
             global_dir / "candidates_through_wave_02.csv",
             global_headers,
             [{
                 "candidate_key": "PMID:1",
                 "waves": "wave_01|wave_02",
-                "wave_source_row_sha256s": f"wave_01:{'d' * 64}|wave_02:{'d' * 64}",
+                "wave_source_row_sha256s": (
+                    f"wave_01:{wave_hashes['wave_01']}|wave_02:{wave_hashes['wave_02']}"
+                ),
                 "screening_path": "wave_01_frozen_queries/screened_candidates.csv",
                 "final_decision": "include_applied_seed",
                 "final_proposed_record_type": "applied_seed",
@@ -1643,6 +1725,40 @@ class DiscoverySearchTests(unittest.TestCase):
             "\n".join(search.validate_lineage(self.root, run_dir)),
         )
 
+    def test_crossref_nonobject_candidate_returns_stable_confined_error(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        receipt_path = run_dir / "LINEAGE_RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        raw_path = run_dir / receipt["queries"][0]["raw_path"]
+        raw_payload = json.loads(raw_path.read_text())
+        raw_payload["message"]["items"] = [None]
+        raw_path.write_text(json.dumps(raw_payload), encoding="utf-8")
+        raw_sha = self.sha(raw_path)
+        receipt["queries"][0]["raw_sha256"] = raw_sha
+        receipt["queries"][0]["response_sha256"] = raw_sha
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        next(
+            item for item in manifest["files"]
+            if item["path"] == receipt["queries"][0]["raw_path"]
+        )["sha256"] = raw_sha
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        try:
+            rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+        except Exception as error:
+            self.fail(f"validate_lineage raised {type(error).__name__}: {error}")
+        self.assertIn("invalid Crossref candidate item", rendered)
+
+        receipt = json.loads(receipt_path.read_text())
+        receipt["queries"][0]["response_path"] = "../outside.json"
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        try:
+            rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+        except Exception as error:
+            self.fail(f"path traversal raised {type(error).__name__}: {error}")
+        self.assertIn("path traversal", rendered)
+
     def test_lineage_preserves_completed_query_before_later_failure(self):
         self.copy_configuration()
         output = self.root / "partial/wave_03_lineage_resolution"
@@ -2050,6 +2166,54 @@ class DiscoverySearchTests(unittest.TestCase):
         self.assertIn("esearch reported count mismatch", rendered)
         self.assertIn("esearch history mismatch", rendered)
 
+    def test_search_run_recomputes_compiled_rows_and_rejects_orphan_raw(self):
+        run_dir = self.make_valid_run()
+        receipt_path = run_dir / "RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        page_receipt = receipt["cells"][0]["efetch_pages"][0]
+        page_path = run_dir / page_receipt["path"]
+        page_path.write_bytes(
+            self.pubmed_xml(
+                [
+                    {
+                        "pmid": "909",
+                        "doi": "10.1000/recomputed",
+                        "title": "Recomputed candidate",
+                    }
+                ]
+            )
+        )
+        page_sha = self.sha(page_path)
+        page_receipt["sha256"] = page_sha
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        next(
+            item for item in manifest["files"] if item["path"] == page_receipt["path"]
+        )["sha256"] = page_sha
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        self.assertIn(
+            "compiled candidates content mismatch",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
+        run_dir = self.make_valid_run(self.root / "orphan-raw")
+        orphan = self.add_artifact(
+            run_dir,
+            "raw/ORPHAN.esearch.json",
+            json.dumps(
+                {"esearchresult": {"count": "0", "webenv": "orphan", "querykey": "1"}}
+            ).encode(),
+        )
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        manifest["files"].append(orphan)
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        self.assertIn(
+            "unowned manifest raw artifact",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
     def test_manifest_rejects_a_symlinked_parent_outside_the_run(self):
         run_dir = self.make_valid_run()
         outside_raw = self.root / "outside-raw"
@@ -2124,6 +2288,81 @@ class DiscoverySearchTests(unittest.TestCase):
         self.assertIn(
             "wave 2 configuration_files mismatch",
             "\n".join(search.validate_search_run(run_dir)),
+        )
+
+    def test_wave_two_executed_dates_must_equal_frozen_configuration(self):
+        self.copy_configuration()
+        output = self.root / "wave_02_synonym_expansion"
+        registry = output / "QUERY_REGISTRY.csv"
+        rows = self.wave_two_rows({"causal_policy": "executed"})
+        executed = next(row for row in rows if row["status"] == "executed")
+        executed["date_start"] = "2020/01/01"
+        infectious_block = json.loads(
+            (self.root / search.QUERY_CONFIG_PATH).read_text(encoding="utf-8")
+        )["infectious_disease_block"]
+        executed["query"] = (
+            f'new method label[Title] AND {infectious_block} AND '
+            '("2020/01/01"[Date - Publication] : '
+            '"2026/12/31"[Date - Publication])'
+        )
+        self.write_csv(registry, list(search.WAVE_TWO_QUERY_HEADERS), rows)
+        with self.assertRaisesRegex(
+            search.DiscoveryExecutionError, "Wave 2 frozen date interval mismatch"
+        ):
+            search.execute_wave(
+                self.root,
+                registry,
+                output,
+                "test@example.invalid",
+                opener=lambda *_args, **_kwargs: self.fail("invalid registry called network"),
+            )
+
+    def test_nonempty_wave_two_receipt_is_derived_from_full_registry_validation(self):
+        self.copy_configuration()
+        output = self.root / "wave_02_synonym_expansion"
+        registry = output / "QUERY_REGISTRY.csv"
+        rows = self.wave_two_rows({"causal_policy": "executed"})
+        self.write_csv(registry, list(search.WAVE_TWO_QUERY_HEADERS), rows)
+
+        def opener(_request, timeout=0):
+            del timeout
+            return self.fake_response(
+                json.dumps(
+                    {"esearchresult": {"count": "0", "webenv": "EMPTY", "querykey": "1"}}
+                ).encode()
+            )
+
+        search.execute_wave(
+            self.root, registry, output, "test@example.invalid", opener=opener
+        )
+        receipt_path = output / "RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        receipt["cells"][0].update(
+            lane="VENUE",
+            family="spatial_transmission",
+            source="crossref",
+        )
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        rendered = "\n".join(search.validate_search_run(output))
+        self.assertIn("Wave 2 root cell mismatch", rendered)
+
+        with registry.open(encoding="utf-8", newline="") as handle:
+            registry_rows = list(csv.DictReader(handle))
+        registry_rows[0]["rationale"] = ""
+        self.write_csv(registry, list(search.WAVE_TWO_QUERY_HEADERS), registry_rows)
+        registry_sha = self.sha(registry)
+        receipt = json.loads(receipt_path.read_text())
+        receipt["configuration_files"][-1]["sha256"] = registry_sha
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        manifest_path = output / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        next(
+            item for item in manifest["files"] if item["path"] == "QUERY_REGISTRY.csv"
+        )["sha256"] = registry_sha
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        self.assertIn(
+            "incomplete Wave 2 rationale provenance",
+            "\n".join(search.validate_search_run(output)),
         )
 
     def test_search_run_rejects_path_traversal_and_bad_page_count(self):
@@ -2403,6 +2642,45 @@ class DiscoverySearchTests(unittest.TestCase):
             ledger_rows[0][field] = ""
         self.write_csv(ledger_path, list(search.LINEAGE_LEDGER_HEADERS), ledger_rows)
         self.assertEqual(search.validate_lineage(self.root, run_dir), [])
+
+    def test_unresolved_after_three_queries_requires_three_and_nonblank_reviewers(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        audit_path = run_dir / "lineage_identity_audit.csv"
+        with audit_path.open(encoding="utf-8", newline="") as handle:
+            audit_rows = list(csv.DictReader(handle))
+        audit_rows[0].update(
+            primary_selected_candidate_key="",
+            primary_decision="unresolved_after_three_queries",
+            primary_reason="Three attempts would be required before this terminal state.",
+            primary_reviewer="",
+            audit_selected_candidate_key="",
+            audit_decision="unresolved_after_three_queries",
+            audit_reason="Independent review confirms unresolved identity.",
+            final_selected_candidate_key="",
+            final_decision="unresolved_after_three_queries",
+            final_reason="Identity remains unresolved after the permitted attempts.",
+            inspected_primary_url="",
+        )
+        self.write_csv(audit_path, list(search.LINEAGE_AUDIT_HEADERS), audit_rows)
+        ledger_path = run_dir.parent / "global/lineage_ledger.csv"
+        with ledger_path.open(encoding="utf-8", newline="") as handle:
+            ledger_rows = list(csv.DictReader(handle))
+        ledger_rows[0].update(
+            final_candidate_key="",
+            title="",
+            year="",
+            doi="",
+            pmid="",
+            primary_url="",
+            status="unresolved_after_three_queries",
+        )
+        self.write_csv(ledger_path, list(search.LINEAGE_LEDGER_HEADERS), ledger_rows)
+        rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+        self.assertIn(
+            "unresolved_after_three_queries requires exactly three supporting queries",
+            rendered,
+        )
+        self.assertIn("blank lineage primary reviewer", rendered)
 
     def test_external_boundary_rejects_filtered_status_change(self):
         self.make_external_boundary_fixture()
