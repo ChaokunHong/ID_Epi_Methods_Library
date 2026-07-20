@@ -1,0 +1,2 @@
+# NCBI EFetch XML is an immutable raw byte snapshot; validate it by manifest SHA and XML/count checks.
+raw/*.xml -diff

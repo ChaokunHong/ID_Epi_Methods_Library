@@ -1,0 +1,287 @@
+{
+  "cells": [
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 141,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-02.efetch.000000000-000000140.xml",
+          "retmax": 141,
+          "retstart": 0,
+          "sha256": "6431cca2d575403d2592cad748471084b81ee28f53c61b71d4ca230a1ff260f7"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-02.esearch.json",
+      "esearch_sha256": "f644e0a8a0cc7ed78921bf1ae0aae718cd55cc48e7b855ff4bcfa65b1916a5ce",
+      "family": "causal_policy",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(\"g-formula\"[Title/Abstract] OR \"g formula\"[Title/Abstract] OR g-computation[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 141,
+      "retrieved_count": 141,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-02",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5dedf0d905b93d2701232a"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 125,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-02.efetch.000000000-000000124.xml",
+          "retmax": 125,
+          "retstart": 0,
+          "sha256": "4ffefec94771838d1d65c3175097a284154155a74d8688e0da6d36a3dedc8792"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-02.esearch.json",
+      "esearch_sha256": "dbc1673f18586f82c4c60c50a95704c8e43d39a8e46a5bba50ad2d1d20a7ae4b",
+      "family": "evidence_synthesis",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(\"data fusion\"[Title/Abstract] OR \"evidence integration\"[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 125,
+      "retrieved_count": 125,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-02",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5dedfc49060385510c9598"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 43,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-02.efetch.000000000-000000042.xml",
+          "retmax": 43,
+          "retstart": 0,
+          "sha256": "8edf1f4b1b8d4866cfa3af8a4c34a12d481ba45887d29902aeff4bb479814e4e"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-02.esearch.json",
+      "esearch_sha256": "e45d4e96bb74616fac5e3d0d0cc085806fc0da0763ffae0dfa36feb50b947936",
+      "family": "forecasting_dynamics",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(EpiEstim[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 43,
+      "retrieved_count": 43,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-FORECASTING-02",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5dee06dd5c27ee080118a7"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-02.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "00568c578a85e77e8344a7d2e81c241d6e9fdf8c5b202d269d3da5e80f39d24a"
+        },
+        {
+          "parsed_count": 149,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-02.efetch.000000200-000000348.xml",
+          "retmax": 149,
+          "retstart": 200,
+          "sha256": "f6727f5d2567331c94455a527fba6bcb17579c6e9effd7655011ad911b34e9ee"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-02.esearch.json",
+      "esearch_sha256": "7b9d42e33bf5f0d7b67bd55d94a04e6b6dad9c8f66a9da79af4150b1f236aaef",
+      "family": "simulation_methods",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(microsimulation[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 349,
+      "retrieved_count": 349,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-SIMULATION-02",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5dee0bb7ffde1b870e9c18"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-02.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "0bf33bf8847985ddea5d25bcb693c9d77a80148ef116e9f9d51d04dad16713f1"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-02.efetch.000000200-000000399.xml",
+          "retmax": 200,
+          "retstart": 200,
+          "sha256": "c6e7c02ee43d40f7e5c6e4c0472fa6b5f878ce5ea938531bc9e889b5b3190529"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-02.efetch.000000400-000000599.xml",
+          "retmax": 200,
+          "retstart": 400,
+          "sha256": "33db99915dd962e93a22d019a416de97c16a8549daf3bfe368b51300bb867ae3"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-02.efetch.000000600-000000799.xml",
+          "retmax": 200,
+          "retstart": 600,
+          "sha256": "a641af2695bdc72b05dbfdbd97711331dae0b05ffbb713fecde4cca9abeef38f"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-02.efetch.000000800-000000999.xml",
+          "retmax": 200,
+          "retstart": 800,
+          "sha256": "895c032480fb6d78dc30e134dc9d2009d1b60c172a59eef1873cf2bf963c6926"
+        },
+        {
+          "parsed_count": 138,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-02.efetch.000001000-000001137.xml",
+          "retmax": 138,
+          "retstart": 1000,
+          "sha256": "c85b7caba751771f6fd1759534dfb34a996f12357939430fc4b079eb5f258b0b"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-02.esearch.json",
+      "esearch_sha256": "08b1ecbae8087a1af1da354413cf7ad2b7392fd3d1f5be2e87b20251108eb905",
+      "family": "spatial_transmission",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(phylodynamic*[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 1138,
+      "retrieved_count": 1138,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-SPATIAL-02",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5dee1ae12676ac4d0fe2f6"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "3364d4b100995b777861b758c761dac36c53aa0fa8aae5c0baac2d6a73343355"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000000200-000000399.xml",
+          "retmax": 200,
+          "retstart": 200,
+          "sha256": "3c949e3d0ca07edb8c72e0987e079411a1eb380d8020625b1d0dbd56c2f9e6d5"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000000400-000000599.xml",
+          "retmax": 200,
+          "retstart": 400,
+          "sha256": "b5260b9745dc8c0da66d90467ce5ed6845f1d6201110d780944c884f004c0291"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000000600-000000799.xml",
+          "retmax": 200,
+          "retstart": 600,
+          "sha256": "2bf693862ef3d3c7c5d1dd2289a498e3f181c711866670a20ea40c9744826fda"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000000800-000000999.xml",
+          "retmax": 200,
+          "retstart": 800,
+          "sha256": "56f5d587a9513d623d15c4971b5f229f141a96cd5ab6518afc07ad777b0bfd6e"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000001000-000001199.xml",
+          "retmax": 200,
+          "retstart": 1000,
+          "sha256": "12906b9c54df99a3f3280ca30e1569c3585d25d82aa000a2ee3cd95dd9662c54"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000001200-000001399.xml",
+          "retmax": 200,
+          "retstart": 1200,
+          "sha256": "34c3d37ed81b045ef594f2ae2054e3ca9b9ac0458fd799903d0bffd25d73fd49"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000001400-000001599.xml",
+          "retmax": 200,
+          "retstart": 1400,
+          "sha256": "19135b5db5843e9195dbcefc2ac757b7f8b8044b899b68132fc21df07716a650"
+        },
+        {
+          "parsed_count": 183,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.efetch.000001600-000001782.xml",
+          "retmax": 183,
+          "retstart": 1600,
+          "sha256": "bfea1b28256b0905002dfa89fe890663b76d2d664f0e5882e66c71a70af89d5e"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02.esearch.json",
+      "esearch_sha256": "e7e3cc4ce6c4273445c44ce8d8a6ba2136c022a913cc47ec2b3df3cc04db34bb",
+      "family": "surveillance_measurement",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(\"under-reporting\"[Title/Abstract] OR underreporting[Title/Abstract] OR \"under-report\"[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 1783,
+      "retrieved_count": 1783,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-02",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5dee519e0294bd3f0b66b8"
+    }
+  ],
+  "configuration_files": [
+    {
+      "path": "01_search/search_protocols/2026-07-20-broad-methods-discovery-protocol.md",
+      "sha256": "e3b1013862e2f18314702cbf1e1e0e5c2c6b9e0d2b78113b23b9e65e2ccb20df"
+    },
+    {
+      "path": "01_search/search_protocols/discovery_queries.json",
+      "sha256": "7e7e6bd7eeb4704e43ffa30e3c002a4ce5d044b5ac0c722fce7dd5d34f24a3e1"
+    },
+    {
+      "path": "01_search/journal_registry/journals.csv",
+      "sha256": "ef65e25ccb8ef1feb7220fc82c476bf2322c7e78db8fd1c05d463347aa688cc8"
+    },
+    {
+      "path": "01_search/search_logs/2026-07-20-broad-discovery/wave_02_synonym_expansion/QUERY_REGISTRY.csv",
+      "sha256": "05227366bcd08223483654af5075e67682d88ad5500f696bcd9fd9e08e4c1b04"
+    }
+  ],
+  "executed_at": "2026-07-20T17:44:15.328057+08:00",
+  "schema_version": 1,
+  "source": "pubmed",
+  "timezone": "Asia/Shanghai",
+  "tool_version": "1"
+}
