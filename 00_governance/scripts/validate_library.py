@@ -57,6 +57,7 @@ class RegistrySpec:
     enums: Mapping[str, frozenset[str]]
     required_columns: tuple[str, ...] = ()
     unique_columns: tuple[str, ...] = ()
+    foreign_keys: tuple[tuple[str, str, str], ...] = ()
 
 
 REGISTRY_SPECS = (
@@ -117,6 +118,10 @@ REGISTRY_SPECS = (
         },
         ("paper_id", "method_id", "relationship"),
         ("paper_id", "method_id", "relationship"),
+        (
+            ("paper_id", "03_evidence_tables/papers.csv", "paper_id"),
+            ("method_id", "03_evidence_tables/methods.csv", "method_id"),
+        ),
     ),
     RegistrySpec(
         "03_evidence_tables/candidate_method_links.csv",
@@ -126,6 +131,14 @@ REGISTRY_SPECS = (
         {},
         ("candidate_id", "method_id"),
         ("candidate_id", "method_id"),
+        (
+            (
+                "candidate_id",
+                "04_translation_candidates/translation_candidates.csv",
+                "candidate_id",
+            ),
+            ("method_id", "03_evidence_tables/methods.csv", "method_id"),
+        ),
     ),
     RegistrySpec(
         "03_evidence_tables/candidate_dataset_links.csv",
@@ -135,6 +148,14 @@ REGISTRY_SPECS = (
         {},
         ("candidate_id", "dataset_id"),
         ("candidate_id", "dataset_id"),
+        (
+            (
+                "candidate_id",
+                "04_translation_candidates/translation_candidates.csv",
+                "candidate_id",
+            ),
+            ("dataset_id", "05_data_registry/datasets.csv", "dataset_id"),
+        ),
     ),
     RegistrySpec(
         "03_evidence_tables/simulation_method_links.csv",
@@ -144,6 +165,10 @@ REGISTRY_SPECS = (
         {},
         ("simulation_id", "method_id"),
         ("simulation_id", "method_id"),
+        (
+            ("simulation_id", "06_simulation_lab/simulations.csv", "simulation_id"),
+            ("method_id", "03_evidence_tables/methods.csv", "method_id"),
+        ),
     ),
     RegistrySpec(
         "03_evidence_tables/simulation_candidate_links.csv",
@@ -153,6 +178,14 @@ REGISTRY_SPECS = (
         {},
         ("simulation_id", "candidate_id"),
         ("simulation_id", "candidate_id"),
+        (
+            ("simulation_id", "06_simulation_lab/simulations.csv", "simulation_id"),
+            (
+                "candidate_id",
+                "04_translation_candidates/translation_candidates.csv",
+                "candidate_id",
+            ),
+        ),
     ),
     RegistrySpec(
         "04_translation_candidates/translation_candidates.csv",
@@ -277,61 +310,15 @@ REQUIRED_PATHS = (
     "docs/superpowers/plans/2026-07-20-library-bootstrap-implementation.md",
 )
 
-LINK_FOREIGN_KEYS = (
-    (
-        "03_evidence_tables/paper_method_links.csv",
-        (
-            ("paper_id", "03_evidence_tables/papers.csv", "paper_id"),
-            ("method_id", "03_evidence_tables/methods.csv", "method_id"),
-        ),
-    ),
-    (
-        "03_evidence_tables/candidate_method_links.csv",
-        (
-            (
-                "candidate_id",
-                "04_translation_candidates/translation_candidates.csv",
-                "candidate_id",
-            ),
-            ("method_id", "03_evidence_tables/methods.csv", "method_id"),
-        ),
-    ),
-    (
-        "03_evidence_tables/candidate_dataset_links.csv",
-        (
-            (
-                "candidate_id",
-                "04_translation_candidates/translation_candidates.csv",
-                "candidate_id",
-            ),
-            ("dataset_id", "05_data_registry/datasets.csv", "dataset_id"),
-        ),
-    ),
-    (
-        "03_evidence_tables/simulation_method_links.csv",
-        (
-            ("simulation_id", "06_simulation_lab/simulations.csv", "simulation_id"),
-            ("method_id", "03_evidence_tables/methods.csv", "method_id"),
-        ),
-    ),
-    (
-        "03_evidence_tables/simulation_candidate_links.csv",
-        (
-            ("simulation_id", "06_simulation_lab/simulations.csv", "simulation_id"),
-            (
-                "candidate_id",
-                "04_translation_candidates/translation_candidates.csv",
-                "candidate_id",
-            ),
-        ),
-    ),
-)
-
 
 def _read_rows(path: Path) -> tuple[list[str] | None, list[dict[str, str]]]:
     with path.open("r", encoding="utf-8", newline="") as handle:
-        reader = csv.DictReader(handle)
+        reader = csv.DictReader(handle, strict=True)
         return reader.fieldnames, list(reader)
+
+
+def _read_error(kind: str, relative_path: str | Path, error: BaseException) -> str:
+    return f"{kind}: {relative_path}: {type(error).__name__}: {error}"
 
 
 def _semantic_errors(
@@ -383,7 +370,10 @@ def validate_csv(root: Path, spec: RegistrySpec) -> list[str]:
     if not path.is_file():
         return [f"required registry missing: {spec.path}"]
 
-    headers, rows = _read_rows(path)
+    try:
+        headers, rows = _read_rows(path)
+    except (csv.Error, UnicodeError, OSError) as error:
+        return [_read_error("invalid registry", spec.path, error)]
     if headers != list(spec.headers):
         errors.append(
             f"{spec.path}: header mismatch; expected {list(spec.headers)!r}, got {headers!r}"
@@ -445,12 +435,20 @@ def validate_csv(root: Path, spec: RegistrySpec) -> list[str]:
             if not raw_card_path:
                 errors.append(f"{spec.path}:{line_number}: card_path is required")
             else:
-                card_path = (root / raw_card_path).resolve()
                 try:
+                    card_path = (root / raw_card_path).resolve()
                     card_path.relative_to(root.resolve())
                 except ValueError:
                     errors.append(
                         f"{spec.path}:{line_number}: card_path escapes repository: {raw_card_path}"
+                    )
+                except OSError as error:
+                    errors.append(
+                        _read_error(
+                            f"{spec.path}:{line_number}: invalid card_path",
+                            raw_card_path,
+                            error,
+                        )
                     )
                 else:
                     if not card_path.is_file():
@@ -460,28 +458,58 @@ def validate_csv(root: Path, spec: RegistrySpec) -> list[str]:
     return errors
 
 
-def _registry_ids(root: Path, relative_path: str, id_column: str) -> set[str]:
-    path = root / relative_path
-    if not path.is_file():
-        return set()
-    _, rows = _read_rows(path)
-    return {(row.get(id_column) or "").strip() for row in rows}
-
-
 def validate_foreign_keys(root: Path) -> list[str]:
     errors: list[str] = []
-    for link_path, foreign_keys in LINK_FOREIGN_KEYS:
-        path = root / link_path
-        if not path.is_file():
+    row_cache: dict[
+        str,
+        tuple[list[str] | None, list[dict[str, str]]] | None,
+    ] = {}
+    id_cache: dict[tuple[str, str], set[str] | None] = {}
+    reported_read_errors: set[str] = set()
+
+    def read_registry(
+        relative_path: str,
+    ) -> tuple[list[str] | None, list[dict[str, str]]] | None:
+        if relative_path in row_cache:
+            return row_cache[relative_path]
+        path = root / relative_path
+        try:
+            result = _read_rows(path) if path.is_file() else (None, [])
+        except (csv.Error, UnicodeError, OSError) as error:
+            result = None
+            if relative_path not in reported_read_errors:
+                errors.append(_read_error("invalid registry", relative_path, error))
+                reported_read_errors.add(relative_path)
+        row_cache[relative_path] = result
+        return result
+
+    for spec in REGISTRY_SPECS:
+        if not spec.foreign_keys:
             continue
-        _, rows = _read_rows(path)
+        link_registry = read_registry(spec.path)
+        if link_registry is None:
+            continue
+        _, rows = link_registry
         for line_number, row in enumerate(rows, start=2):
-            for column, target_path, target_column in foreign_keys:
+            for column, target_path, target_column in spec.foreign_keys:
                 value = (row.get(column) or "").strip()
-                target_ids = _registry_ids(root, target_path, target_column)
+                cache_key = (target_path, target_column)
+                if cache_key not in id_cache:
+                    target_registry = read_registry(target_path)
+                    if target_registry is None:
+                        id_cache[cache_key] = None
+                    else:
+                        _, target_rows = target_registry
+                        id_cache[cache_key] = {
+                            (target_row.get(target_column) or "").strip()
+                            for target_row in target_rows
+                        }
+                target_ids = id_cache[cache_key]
+                if target_ids is None:
+                    continue
                 if value not in target_ids:
                     errors.append(
-                        f"{link_path}:{line_number}: unknown {column}: {value}"
+                        f"{spec.path}:{line_number}: unknown {column}: {value}"
                     )
     return errors
 
@@ -490,7 +518,10 @@ def validate_design_checksum(root: Path) -> list[str]:
     path = root / DESIGN_PATH
     if not path.is_file():
         return [f"required design file missing: {DESIGN_PATH}"]
-    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    try:
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    except OSError as error:
+        return [_read_error("invalid design file", DESIGN_PATH, error)]
     if digest != DESIGN_SHA256:
         return [
             f"design checksum mismatch: expected {DESIGN_SHA256}, got {digest}: "
@@ -504,7 +535,10 @@ def validate_seed_checksum(root: Path) -> list[str]:
     if not path.is_file():
         return [f"required seed file missing: {SEED_PATH}"]
     errors: list[str] = []
-    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    try:
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    except OSError as error:
+        return [_read_error("invalid seed file", SEED_PATH, error)]
     if digest != SEED_SHA256:
         errors.append(
             f"seed checksum mismatch: expected {SEED_SHA256}, got {digest}: {SEED_PATH}"
@@ -515,8 +549,8 @@ def validate_seed_checksum(root: Path) -> list[str]:
         return errors
     try:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError) as error:
-        errors.append(f"invalid seed manifest: {error}")
+    except (json.JSONDecodeError, UnicodeError, OSError) as error:
+        errors.append(_read_error("invalid seed manifest", SEED_MANIFEST_PATH, error))
         return errors
     if not isinstance(manifest, dict):
         errors.append("invalid seed manifest: expected a JSON object")
@@ -528,7 +562,10 @@ def validate_seed_checksum(root: Path) -> list[str]:
 
 
 def validate_repository(root: Path) -> list[str]:
-    root = root.resolve()
+    try:
+        root = root.resolve()
+    except OSError as error:
+        return [_read_error("invalid repository root", root, error)]
     errors = [
         f"required file missing: {relative_path}"
         for relative_path in REQUIRED_PATHS
@@ -540,7 +577,7 @@ def validate_repository(root: Path) -> list[str]:
     if (root / DESIGN_PATH).is_file():
         errors.extend(validate_design_checksum(root))
     errors.extend(validate_seed_checksum(root))
-    return errors
+    return list(dict.fromkeys(errors))
 
 
 def main(argv: Sequence[str] | None = None) -> int:

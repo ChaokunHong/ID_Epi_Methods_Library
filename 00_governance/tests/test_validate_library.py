@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import contextlib
 import csv
 import importlib.util
+import io
 import json
 import sys
 import tempfile
@@ -49,25 +51,6 @@ class ValidatorTests(unittest.TestCase):
     def write_all_registry_headers(self) -> None:
         for registry_spec in validator.REGISTRY_SPECS:
             self.write_registry(registry_spec, [])
-        for relative_path, headers in (
-            (
-                "03_evidence_tables/candidate_method_links.csv",
-                ("candidate_id", "method_id", "notes"),
-            ),
-            (
-                "03_evidence_tables/candidate_dataset_links.csv",
-                ("candidate_id", "dataset_id", "notes"),
-            ),
-            (
-                "03_evidence_tables/simulation_method_links.csv",
-                ("simulation_id", "method_id", "notes"),
-            ),
-            (
-                "03_evidence_tables/simulation_candidate_links.csv",
-                ("simulation_id", "candidate_id", "notes"),
-            ),
-        ):
-            self.write_csv(relative_path, headers, [])
 
     def blank_row(self, spec) -> dict[str, str]:
         return {column: "" for column in spec.headers}
@@ -186,6 +169,110 @@ class ValidatorTests(unittest.TestCase):
                 except Exception as error:  # pragma: no cover - desired contract forbids this
                     self.fail(f"non-object manifest raised {type(error).__name__}: {error}")
                 self.assertIn("invalid seed manifest", "\n".join(errors))
+
+    def test_invalid_utf8_registry_returns_path_specific_error(self):
+        spec = validator.REGISTRY_BY_PATH["03_evidence_tables/papers.csv"]
+        path = self.root / spec.path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"\xff\xfe")
+        try:
+            errors = validator.validate_csv(self.root, spec)
+        except Exception as error:  # pragma: no cover - desired contract forbids this
+            self.fail(f"invalid UTF-8 registry raised {type(error).__name__}: {error}")
+        rendered = "\n".join(errors)
+        self.assertIn("invalid registry", rendered)
+        self.assertIn(spec.path, rendered)
+
+    def test_cli_invalid_utf8_registry_fails_without_traceback(self):
+        spec = validator.REGISTRY_BY_PATH["03_evidence_tables/papers.csv"]
+        path = self.root / spec.path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"\xff\xfe")
+        output = io.StringIO()
+        try:
+            with contextlib.redirect_stdout(output):
+                exit_code = validator.main(["--root", str(self.root)])
+        except Exception as error:  # pragma: no cover - desired contract forbids this
+            self.fail(f"CLI raised {type(error).__name__}: {error}")
+        self.assertEqual(exit_code, 1)
+        self.assertIn("VALIDATION FAIL", output.getvalue())
+        self.assertIn(spec.path, output.getvalue())
+        self.assertNotIn("Traceback", output.getvalue())
+
+    def test_invalid_utf8_seed_manifest_returns_error_without_exception(self):
+        seed = self.root / validator.SEED_PATH
+        seed.parent.mkdir(parents=True, exist_ok=True)
+        seed.write_text("altered\n", encoding="utf-8")
+        manifest = self.root / validator.SEED_MANIFEST_PATH
+        manifest.write_bytes(b"\xff\xfe")
+        try:
+            errors = validator.validate_seed_checksum(self.root)
+        except Exception as error:  # pragma: no cover - desired contract forbids this
+            self.fail(f"invalid UTF-8 manifest raised {type(error).__name__}: {error}")
+        rendered = "\n".join(errors)
+        self.assertIn("invalid seed manifest", rendered)
+        self.assertIn(str(validator.SEED_MANIFEST_PATH), rendered)
+
+    def test_malformed_quoted_csv_returns_path_specific_error(self):
+        spec = validator.REGISTRY_BY_PATH["03_evidence_tables/papers.csv"]
+        path = self.root / spec.path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            ",".join(spec.headers) + "\n\"unterminated\n",
+            encoding="utf-8",
+        )
+        try:
+            errors = validator.validate_csv(self.root, spec)
+        except Exception as error:  # pragma: no cover - desired contract forbids this
+            self.fail(f"malformed CSV raised {type(error).__name__}: {error}")
+        rendered = "\n".join(errors)
+        self.assertIn("invalid registry", rendered)
+        self.assertIn(spec.path, rendered)
+
+    def test_foreign_keys_handle_malformed_link_and_target_registries(self):
+        self.write_all_registry_headers()
+        malformed_link = self.root / "03_evidence_tables/paper_method_links.csv"
+        malformed_link.write_text(
+            "paper_id,method_id,relationship,notes\n\"unterminated\n",
+            encoding="utf-8",
+        )
+        self.write_csv(
+            "03_evidence_tables/candidate_method_links.csv",
+            ("candidate_id", "method_id", "notes"),
+            [["T-AMR-001", "M-CAUSAL-001", ""]],
+        )
+        malformed_target = self.root / (
+            "04_translation_candidates/translation_candidates.csv"
+        )
+        malformed_target.write_bytes(b"\xff\xfe")
+        try:
+            errors = validator.validate_foreign_keys(self.root)
+        except Exception as error:  # pragma: no cover - desired contract forbids this
+            self.fail(f"foreign-key validation raised {type(error).__name__}: {error}")
+        rendered = "\n".join(errors)
+        self.assertIn("invalid registry", rendered)
+        self.assertIn("03_evidence_tables/paper_method_links.csv", rendered)
+        self.assertIn(
+            "04_translation_candidates/translation_candidates.csv",
+            rendered,
+        )
+
+    def test_registry_oserror_returns_path_specific_error(self):
+        spec = validator.REGISTRY_BY_PATH["03_evidence_tables/papers.csv"]
+        path = self.root / spec.path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(",".join(spec.headers) + "\n", encoding="utf-8")
+        path.chmod(0)
+        try:
+            try:
+                errors = validator.validate_csv(self.root, spec)
+            except Exception as error:  # pragma: no cover - desired contract forbids this
+                self.fail(f"registry read raised {type(error).__name__}: {error}")
+        finally:
+            path.chmod(0o600)
+        rendered = "\n".join(errors)
+        self.assertIn("invalid registry", rendered)
+        self.assertIn(spec.path, rendered)
 
     def test_over_width_and_under_width_rows_fail(self):
         spec = validator.REGISTRY_BY_PATH["03_evidence_tables/papers.csv"]

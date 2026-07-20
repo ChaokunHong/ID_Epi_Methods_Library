@@ -6,7 +6,7 @@
 
 ## Current phase and status
 
-**Bootstrap implementation and the schema-hardening correction are complete locally; the correction is awaiting whole-branch re-review.** Tasks 1–8 local implementation and release-record work are complete on `codex/library-bootstrap`, and the owner-approved correction schema is recorded as `DEC-20260720-005`. The release evidence and dated correction addendum are in `07_reviews/BOOTSTRAP_VERIFICATION_20260720.md`. Whole-branch re-review, final validation, merge to `main`, and publication of verified `main` remain pending and controller-owned. Resolve the exact live branch tip with `git rev-parse HEAD`: a handoff file cannot embed the SHA of the commit containing that same text. No broad search has been executed.
+**Bootstrap implementation, schema hardening, and the validator error-boundary correction are complete locally; the latest correction is awaiting whole-branch re-review.** Tasks 1–8 local implementation and release-record work are complete on `codex/library-bootstrap`, and the owner-approved correction schema is recorded as `DEC-20260720-005`. The release evidence and dated correction addenda are in `07_reviews/BOOTSTRAP_VERIFICATION_20260720.md`. Whole-branch re-review, final validation, merge to `main`, and publication of verified `main` remain pending and controller-owned. Resolve the exact live branch tip with `git rev-parse HEAD`: a handoff file cannot embed the SHA of the commit containing that same text. No broad search has been executed.
 
 The frozen broadened seed scan was committed in `975f3ea43fb7d927b64028c2108c92e3db5a8b4f` (`freeze broadened infectious disease seed scan`), Task 6 continuity files were introduced in `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` (`add filesystem-based project handoff`), and the Task 7 reciprocal pointer was completed and recorded in full commit `e8953a920800c932df75ff39631e06a29aaaeede` (`record reciprocal project pointer`). Review corrections follow in the Git history. The approved design was committed as `c708ac2402431202c8b1af4c5fd87035460249ab` (`define infectious disease methods library design`), and the bootstrap implementation plan was committed as `9d38e235f031d0b5959e1d587ee28fe8d20a53de` (`plan methods library bootstrap`). No flagship has been selected, no broad applied-paper or method-source search has been executed, no candidate dataset has been downloaded, and no simulation has been executed.
 
@@ -34,7 +34,7 @@ There are no current blockers to the controller-owned whole-branch re-review and
 
 ## Exact next action
 
-The controller must conduct whole-branch re-review of the correction commit, then run the final validation gate, merge the verified branch to `main`, and push only verified `main` with an exact remote-SHA receipt. Do not push this task branch. After publication succeeds, draft the separate methods/problem-first broad applied-paper and authoritative method-source search execution plan for owner review; do not execute that search or select a flagship during this gate.
+The controller must conduct whole-branch re-review of the latest correction commit, then run the final validation gate, merge the verified branch to `main`, and push only verified `main` with an exact remote-SHA receipt. Do not push this task branch. After publication succeeds, draft the separate methods/problem-first broad applied-paper and authoritative method-source search execution plan for owner review; do not execute that search or select a flagship during this gate.
 
 ## Verification commands
 
@@ -51,4 +51,4 @@ git diff --check
 
 ## Last updated
 
-2026-07-20 after the owner-approved schema-hardening correction. Resolve the current exact commit with `git rev-parse HEAD`; a handoff file cannot embed the SHA of the commit containing itself. Whole-branch re-review, final validation, merge, and publication remain pending.
+2026-07-20 after the validator error-boundary correction. Resolve the current exact commit with `git rev-parse HEAD`; a handoff file cannot embed the SHA of the commit containing itself. Whole-branch re-review, final validation, merge, and publication remain pending.

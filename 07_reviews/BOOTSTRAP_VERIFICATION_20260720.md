@@ -350,3 +350,43 @@ e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57  docs/superpowe
 The reciprocal pointer remains present and untracked. The Task 7 filtered baseline and the fresh filtered `Surveillance_AMR` porcelain status both had SHA256 `e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e`, 16 lines, and `diff -u` exit `0`. The exact pointer status remained `?? ID_EPI_METHODS_LIBRARY_POINTER.md`; `git ls-files --error-unmatch` exited `1`; the source index contained no staged paths; and source HEAD remained `eb5d15656b8fe69a8359705c80125d695a1c0782`. This proves unchanged path/status state after excluding the pointer, not byte identity for paths that were already dirty before Task 7.
 
 At `2026-07-20 08:02:49 CST +0800`, the full command `git ls-remote origin` exited `0` with no output, so the remote still had no refs. This correction wave did not push, merge, create a pull request, modify `main`, run a literature search, download candidate data, execute simulations, select a flagship, or write any `Surveillance_AMR` file. The exact next action remains whole-branch re-review followed by the final validation/publication gate.
+
+## Validator error-boundary correction addendum — 2026-07-20
+
+This addendum records the bounded read-failure correction based on `2040adee0e4435a00a056798ea31b49d5ada8f33`. It preserves all earlier receipts and does not confer re-review, merge, or publication authority.
+
+### RED, GREEN, and validator receipt
+
+Six focused tests were added before production edits. The focused RED command exited `1` with `Ran 6 tests` and `FAILED (failures=6)`. The failures showed uncaught invalid-UTF-8 registry and manifest reads, an uncaught registry `PermissionError`, permissive acceptance of an unterminated quoted CSV field, unsafe foreign-key rereading, and an escaping CLI exception.
+
+After the minimum implementation, the same six focused tests exited `0` with `OK`. The full command `python3 -m unittest 00_governance/tests/test_validate_library.py -v` then exited `0` with `Ran 25 tests in 0.042s` and `OK`, preserving the prior 19 behaviors. `python3 00_governance/scripts/validate_library.py --root .` exited `0` and printed `VALIDATION PASS`.
+
+The validator now uses strict CSV parsing and converts `csv.Error`, `UnicodeError`, and `OSError` into path-specific human-readable errors. Foreign-key endpoint metadata is stored on each canonical registry specification; link and target reads are cached per call, and every target ID set is built at most once per call. The five public function signatures remain unchanged.
+
+### Malformed CLI probes
+
+Three real subprocess probes used temporary roots. Each printed `VALIDATION FAIL`, exited `1`, and produced zero `Traceback` occurrences:
+
+```text
+invalid registry: 03_evidence_tables/papers.csv: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+invalid UTF-8 registry CLI exit=1 traceback_count=0
+
+invalid seed manifest: 01_search/seed_scans/MANIFEST_SHA256.json: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+invalid UTF-8 manifest CLI exit=1 traceback_count=0
+
+invalid registry: 03_evidence_tables/papers.csv: Error: unexpected end of data
+malformed quoted CSV CLI exit=1 traceback_count=0
+```
+
+### Registry, provenance, pointer, and remote receipt
+
+All ten registries remained exactly one line with zero data rows. The immutable hashes remained:
+
+```text
+e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57  docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md
+520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55  01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md
+```
+
+The design comparison against approved commit `c708ac2402431202c8b1af4c5fd87035460249ab` and the seed comparison against the named `Surveillance_AMR` source each exited `0`. The fresh filtered `Surveillance_AMR` status still matched the 16-line Task 7 baseline with `diff -u` exit `0`; the exact pointer status remained `?? ID_EPI_METHODS_LIBRARY_POINTER.md`; the source index had zero staged paths; and source HEAD remained `eb5d15656b8fe69a8359705c80125d695a1c0782`. This remains path/status proof, not byte-identity proof for paths already dirty before Task 7.
+
+At `2026-07-20 08:18:26 CST +0800`, the full `git ls-remote origin` query exited `0` with no output, so the remote remained empty. This wave did not push, merge, create a pull request, modify `main`, run a search, download data, execute a simulation, select a flagship, or write any `Surveillance_AMR` file. The next action is whole-branch re-review, followed by the final validation/merge/publication gate.
