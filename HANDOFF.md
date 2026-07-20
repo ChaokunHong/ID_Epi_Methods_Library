@@ -34,7 +34,7 @@ There are no bootstrap blockers. The one deferred Minor—redundant `try`/`excep
 
 ## Exact next action
 
-The next gated action is owner review of the separate methods/problem-first broad applied-paper and authoritative method-source search execution plan. Until that plan is approved, do not execute the search, download candidate data, run a formal simulation, or select a flagship. Before any later work, resolve the live commit with `git rev-parse HEAD` and confirm that `git ls-remote origin refs/heads/main` reports the same SHA.
+The controller must first run final validation of the current `main`, push the current `main`, and then verify that `git rev-parse HEAD`, `git rev-parse origin/main`, and the SHA reported by `git ls-remote origin refs/heads/main` are identical. Only after that current three-way equality passes is the next scientific gate owner review of the separate methods/problem-first broad applied-paper and authoritative method-source search execution plan. Until that plan is approved, do not execute the search, download candidate data, run a formal simulation, or select a flagship.
 
 ## Verification commands
 
@@ -54,4 +54,4 @@ git diff --check
 
 ## Last updated
 
-2026-07-20 after the first verified publication equality at `36379bf4d648909854140d383959ebeefe88e569`. Resolve the current exact commit with `git rev-parse HEAD`; a handoff file cannot embed the SHA of the commit containing itself. The next gated action is owner review of the separate broad-search execution plan.
+2026-07-20 after the first verified publication equality at `36379bf4d648909854140d383959ebeefe88e569` and creation of the later publication-state receipt. That initial publication remains verified, but the current `main` is locally ahead until the controller finishes final validation, pushes it, and confirms current three-way SHA equality. Resolve the current exact commit with `git rev-parse HEAD`; a handoff file cannot embed the SHA of the commit containing itself. Owner review of the separate broad-search execution plan follows only after that equality passes.
