@@ -1,0 +1,285 @@
+{
+  "algorithm": "SHA256",
+  "files": [
+    {
+      "path": "COUNT_RECONCILIATION.txt",
+      "sha256": "ba644c51c1f4c17461daa9e24727d3a7ad0df617b33ada05cf2c22ec427d0f90"
+    },
+    {
+      "path": "compiled_candidates_raw.csv",
+      "sha256": "ddd56d3eed2c63510457e17198087ae755e9c9cc3b1b6b3ccad7eadd511c9a3f"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000000-000000199.xml",
+      "sha256": "153e13fc34842608ad5efcdf07b823987199d1df4b1ce94279e62b59df3fa06e"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000200-000000399.xml",
+      "sha256": "ec462c9b33a79da9a128d01441cffc918bc2d2c626c15b64728d34cc10e1df59"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000400-000000599.xml",
+      "sha256": "a6cded09144095ef6d87bc5cc08b635d6f78f2e7cbf2c7bfdfbb228607eb4b19"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000600-000000799.xml",
+      "sha256": "b61bdbed072befdf295c3c4d6575aeafc64319eeb78560f2acf27305bbb7385e"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000800-000000921.xml",
+      "sha256": "d6876243bc206d4a4ba90e03dfad80343f80ce7d3df479122ebc424032cfd4a3"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.esearch.json",
+      "sha256": "094e01d665a07226e08e3dbdac34d2904a64567ddc356ed6f6aea11a6afdee28"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-01.efetch.000000000-000000145.xml",
+      "sha256": "22838ad2d257909581dfae5afe3107a5f87fbada539f0ba5aff2c37a5cbcdb97"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-01.esearch.json",
+      "sha256": "eb3078380eff29aa5e728b908fa94dd4f4da8c6adf3ccab607282d8c737e082a"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000000-000000199.xml",
+      "sha256": "2f17fee91bafffc69af05359742221334af6e62510e914c678bc961f81414dc9"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000200-000000399.xml",
+      "sha256": "600d01a3e758514867941184291cb1d71859fba0cd733ea89bb7dafd1249218b"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000400-000000599.xml",
+      "sha256": "4a3457db5734ea521cae03b93934d64b2d0ab4d707be6a292e41a7c9e38f95ec"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000600-000000799.xml",
+      "sha256": "38dc50dd51738b3a74b7efcb0166ad8607905020f209c617411629cca7ead9fa"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000800-000000999.xml",
+      "sha256": "298d8093b78aa9828a16a31bb9e5934cf8abd5d13e97b8eb8e55ba633ceab0f9"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000001000-000001199.xml",
+      "sha256": "f7a83369c5f571937043d48005e086b478b81e857f785861c1dda53219920bba"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000001200-000001250.xml",
+      "sha256": "38c534c6984aef94cc572a618666b97099958b0016376820ffa6394912b5fbd8"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.esearch.json",
+      "sha256": "376569696b4fbadd589f5a0080d1bcb8d391fe06ddb5cfa1439473905a70cd45"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000000-000000199.xml",
+      "sha256": "6c56baf5b0b3a1200c7b6f651fe809ebab75ef0776beae4ae13f25e61dd9bc67"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000200-000000399.xml",
+      "sha256": "e3c87d79994446830d99eec304df35193da315c99965a666f6db575093f38cea"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000400-000000599.xml",
+      "sha256": "58d42de25a0ce02a00e5456c05a42684f608f412db86223db62f6bf36dffa1a8"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000600-000000799.xml",
+      "sha256": "87ef5943f8a39ce47f8ddbd24b2257fa971a9df37c83f72f9607346e1998a2c2"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000800-000000999.xml",
+      "sha256": "1084cfc7e9757e016bf0bda386f5d3d8494510eb1efd15a85764cca23b1c8b5c"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000001000-000001199.xml",
+      "sha256": "ddb10cf5ce93fc6f6a6d92de69e247451ef23410339eeb20a1701eefbdb9dbd4"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000001200-000001315.xml",
+      "sha256": "da3f18c865d60197d27b7f221447300615c391d7e262874ac499617c266957a3"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.esearch.json",
+      "sha256": "ef9e2b1359354f0d1e63ca8d7e676c184d9531ce984e3a4b9a003d5689e8895f"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000000-000000199.xml",
+      "sha256": "e764f3ccfd620f6cf3adc5f008be3a7c181158269d0e6d2ed2657e1ccf2822c1"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000200-000000399.xml",
+      "sha256": "0fb44a2f78339a1bfba6358f438597fe153b0a91c0b1abaaf60f7f28fc8e0f93"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000400-000000599.xml",
+      "sha256": "2435ee39543402ef53d467beeabf8d1a5cb1c86bd790906833a4b5339b16320a"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000600-000000799.xml",
+      "sha256": "5513fbc675eb6e543b6e74f8240e2f4845ce1bc4ce110d2bebd2d611efaecca5"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000800-000000999.xml",
+      "sha256": "2d2f1a3bd0aaaf75c249487aeeaa389ffcc99a95c4d2c25d5bde0e06d1937fea"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000001000-000001199.xml",
+      "sha256": "f2f5bba62978e937271fcd2c21cc9d352f867c3922bcdc5c3bd7f5839d00f522"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000001200-000001399.xml",
+      "sha256": "2d8e3276c39a0198857bf90135b2ca2b4be8e0516d6b075a93d16f7146f19384"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000001400-000001415.xml",
+      "sha256": "0f9c0c8f61012dd1f2e1a03a47e8ecdcf0c8d5c86fabf7c465bd37cc43a72051"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.esearch.json",
+      "sha256": "a619a1aa7501d5d3b494ef26cff5f4ea94c0a9edcf9025f9b5730a9bfc423ec1"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000000-000000199.xml",
+      "sha256": "eabcde75378b5718a6634c4c835677aa98539619bba760bbfca5f30e2d98180a"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000200-000000399.xml",
+      "sha256": "80afd662a701ff53b0fe488f4b3d3de9f33788fad4c2b0b6f7398f8f9b5b10bc"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000400-000000599.xml",
+      "sha256": "7b993530799a34261c11e055a02a3f3d86ebd8c779a94cd9e21057847b044e35"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000600-000000799.xml",
+      "sha256": "10d1632af6f1a336fa1164eb90d3641c7d62f664cea20a7b8802a7eaa8091371"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000800-000000979.xml",
+      "sha256": "b6f41e0409e5cd96899a3ba912cbac4845617adedb9f506eccd80fc83151c282"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.esearch.json",
+      "sha256": "9c7ccd9979b7845d748ad6a160ebe395395807f671173c700161af0fa9ba9a2d"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-CAUSAL-01.efetch.000000000-000000199.xml",
+      "sha256": "313a4017cea1e3073cd219d1869fd6d31db6b9b5349c9ab567e5ff4a697475c5"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-CAUSAL-01.efetch.000000200-000000278.xml",
+      "sha256": "454936948652eaf9c007e2fd38a85d287712a7887f46c855d1e07faca2eace11"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-CAUSAL-01.esearch.json",
+      "sha256": "7413ba327209de6c91901f6c1c11008c2d228bd42fb2bc16ec86d1cf84f9467a"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-EVIDENCE-01.efetch.000000000-000000154.xml",
+      "sha256": "5a17109e8d027605aab7d2068f4f7308bfdb6e9e2d8d697bb57be5daf361241e"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-EVIDENCE-01.esearch.json",
+      "sha256": "5a5533b8f581e67f46532768df48aaca345c91fd2efcd10cb3419733983fcc37"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-FORECASTING-01.efetch.000000000-000000199.xml",
+      "sha256": "738f0faaf9c27a33e23f2a2387303b3e999eab14a9023e0ec28084aa14a096e1"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-FORECASTING-01.efetch.000000200-000000394.xml",
+      "sha256": "60f9e1f4b726f9dbe9e2e801d645acbca315e874294d2408f7276ac383c0abce"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-FORECASTING-01.esearch.json",
+      "sha256": "95f0b5544ffba77c20a9e4183760b57fe7c795253b27c0c3081033e053db8366"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SIMULATION-01.efetch.000000000-000000199.xml",
+      "sha256": "86811326535bee014977a2b4992c664e81c7d27d8e736d27d353b9c3d4bff6c6"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SIMULATION-01.efetch.000000200-000000254.xml",
+      "sha256": "a68eb5d40051d22383155caa40cb83d58bc5337858a22e6450dd320189a79fea"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SIMULATION-01.esearch.json",
+      "sha256": "564106489a9d793aedb8b32f8ef2d88d279e293a1e55e95523e25b50a00d6bc3"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SPATIAL-01.efetch.000000000-000000199.xml",
+      "sha256": "7a9ebcbe56ba6ffb47a8267ccd0e586b7a71027f449b9b396a041d55b9d18291"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SPATIAL-01.efetch.000000200-000000215.xml",
+      "sha256": "282140dadbe8dca5d1335033dde35f9e8778080f7f21170b0551abe2b7e1bb48"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SPATIAL-01.esearch.json",
+      "sha256": "d22f676292fea95fab3ed697bbf945f7750ce8402f95914e8b1e3e844c4c4024"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SURVEILLANCE-01.efetch.000000000-000000199.xml",
+      "sha256": "5a99305cbcbbc218ece297f192d882dbdb42cf9de610ba5a4ac01663087ea38e"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SURVEILLANCE-01.efetch.000000200-000000219.xml",
+      "sha256": "32684c38783d1c037bcf5e6ea967a90face147f1d2981f9991829bb441a656ba"
+    },
+    {
+      "path": "raw/SEARCH-20260720-PUBMED-VENUE-SURVEILLANCE-01.esearch.json",
+      "sha256": "3b64c1464b4db46f4bd8ca8d5874fbbc44599532f2a53cbf77920b089e336ad0"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.md",
+      "sha256": "76e6ac623bdd01116c54fe4b601428ecfa0cbb6487f9f78257f9cecb63b8e5fc"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-01.md",
+      "sha256": "dcd987d01b85c803d196bd5c7a5c987eb5ff86d2bcfba35405de10f586f8cfe1"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.md",
+      "sha256": "13faefb005c44be06ae6617daf0473afe552950420292128b0bf282dc0f95874"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.md",
+      "sha256": "c632134b755a84331646ade29570d4ea40d2ec003d81f408006dfe5afd750a32"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.md",
+      "sha256": "0a453c05b8efc3c0947d78842a60380f351a5f9e1b4dcb481f3025aef17e1e2a"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.md",
+      "sha256": "b519079f3af04598873b3c8a35b28528867659407822e75519f84da03318101d"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-VENUE-CAUSAL-01.md",
+      "sha256": "974d52fe0a90664a464f7ee574f936ba4ac4d06e086c5e8e285428e7b2c16c0c"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-VENUE-EVIDENCE-01.md",
+      "sha256": "088911f61c92576a31a45ec0859b23b1fc10052a2b875ccf2d23a01a7aedffb0"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-VENUE-FORECASTING-01.md",
+      "sha256": "0ac0205688b25f4f375612f63886e776291797ecd6bfe575d249c905c94faabf"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-VENUE-SIMULATION-01.md",
+      "sha256": "f6de732d9bf6442a4acde71ca9340bd5fd7fd7c0e36d139394ac2b56eb3c817a"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-VENUE-SPATIAL-01.md",
+      "sha256": "647b473ab026e47e8c852445d04dba11edd6e1aa0e78d8cd15049df596a0b72d"
+    },
+    {
+      "path": "search_logs/SEARCH-20260720-PUBMED-VENUE-SURVEILLANCE-01.md",
+      "sha256": "33a93c8b76aab35525acd17563f50e74fe868fd4ce3c659246b78c2827cb8fd5"
+    }
+  ]
+}

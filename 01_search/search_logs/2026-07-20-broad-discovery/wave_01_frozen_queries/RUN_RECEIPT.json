@@ -1,0 +1,571 @@
+{
+  "cells": [
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "153e13fc34842608ad5efcdf07b823987199d1df4b1ce94279e62b59df3fa06e"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000200-000000399.xml",
+          "retmax": 200,
+          "retstart": 200,
+          "sha256": "ec462c9b33a79da9a128d01441cffc918bc2d2c626c15b64728d34cc10e1df59"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000400-000000599.xml",
+          "retmax": 200,
+          "retstart": 400,
+          "sha256": "a6cded09144095ef6d87bc5cc08b635d6f78f2e7cbf2c7bfdfbb228607eb4b19"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000600-000000799.xml",
+          "retmax": 200,
+          "retstart": 600,
+          "sha256": "b61bdbed072befdf295c3c4d6575aeafc64319eeb78560f2acf27305bbb7385e"
+        },
+        {
+          "parsed_count": 122,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000800-000000921.xml",
+          "retmax": 122,
+          "retstart": 800,
+          "sha256": "d6876243bc206d4a4ba90e03dfad80343f80ce7d3df479122ebc424032cfd4a3"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.esearch.json",
+      "esearch_sha256": "094e01d665a07226e08e3dbdac34d2904a64567ddc356ed6f6aea11a6afdee28",
+      "family": "causal_policy",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(\"interrupted time series\"[Title] OR \"difference-in-differences\"[Title] OR \"difference in differences\"[Title] OR \"event study\"[Title] OR \"synthetic control\"[Title] OR \"regression discontinuity\"[Title] OR \"instrumental variable\"[Title] OR \"target trial\"[Title] OR \"negative control\"[Title]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 922,
+      "retrieved_count": 922,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db5a1b580c3d63207519f"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 146,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-01.efetch.000000000-000000145.xml",
+          "retmax": 146,
+          "retstart": 0,
+          "sha256": "22838ad2d257909581dfae5afe3107a5f87fbada539f0ba5aff2c37a5cbcdb97"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-01.esearch.json",
+      "esearch_sha256": "eb3078380eff29aa5e728b908fa94dd4f4da8c6adf3ccab607282d8c737e082a",
+      "family": "evidence_synthesis",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(triangulation[Title] OR \"specification curve\"[Title] OR multiverse[Title] OR transportability[Title] OR generalizability[Title] OR \"outcome definition\"[Title] OR denominator[Title] OR \"hierarchical borrowing\"[Title] OR \"modelled versus observed\"[Title] OR \"modeled versus observed\"[Title]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 146,
+      "retrieved_count": 146,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-EVIDENCE-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db5c9058927082108717e"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "2f17fee91bafffc69af05359742221334af6e62510e914c678bc961f81414dc9"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000200-000000399.xml",
+          "retmax": 200,
+          "retstart": 200,
+          "sha256": "600d01a3e758514867941184291cb1d71859fba0cd733ea89bb7dafd1249218b"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000400-000000599.xml",
+          "retmax": 200,
+          "retstart": 400,
+          "sha256": "4a3457db5734ea521cae03b93934d64b2d0ab4d707be6a292e41a7c9e38f95ec"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000600-000000799.xml",
+          "retmax": 200,
+          "retstart": 600,
+          "sha256": "38dc50dd51738b3a74b7efcb0166ad8607905020f209c617411629cca7ead9fa"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000000800-000000999.xml",
+          "retmax": 200,
+          "retstart": 800,
+          "sha256": "298d8093b78aa9828a16a31bb9e5934cf8abd5d13e97b8eb8e55ba633ceab0f9"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000001000-000001199.xml",
+          "retmax": 200,
+          "retstart": 1000,
+          "sha256": "f7a83369c5f571937043d48005e086b478b81e857f785861c1dda53219920bba"
+        },
+        {
+          "parsed_count": 51,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.efetch.000001200-000001250.xml",
+          "retmax": 51,
+          "retstart": 1200,
+          "sha256": "38c534c6984aef94cc572a618666b97099958b0016376820ffa6394912b5fbd8"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01.esearch.json",
+      "esearch_sha256": "376569696b4fbadd589f5a0080d1bcb8d391fe06ddb5cfa1439473905a70cd45",
+      "family": "forecasting_dynamics",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(\"renewal model\"[Title] OR \"reproduction number\"[Title] OR \"ensemble forecast\"[Title] OR \"forecast calibration\"[Title] OR \"early warning\"[Title] OR changepoint[Title] OR \"change point\"[Title] OR \"outbreak detection\"[Title] OR \"mechanistic-statistical\"[Title]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 1251,
+      "retrieved_count": 1251,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-FORECASTING-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db5d6045a99d3660e81e8"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "6c56baf5b0b3a1200c7b6f651fe809ebab75ef0776beae4ae13f25e61dd9bc67"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000200-000000399.xml",
+          "retmax": 200,
+          "retstart": 200,
+          "sha256": "e3c87d79994446830d99eec304df35193da315c99965a666f6db575093f38cea"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000400-000000599.xml",
+          "retmax": 200,
+          "retstart": 400,
+          "sha256": "58d42de25a0ce02a00e5456c05a42684f608f412db86223db62f6bf36dffa1a8"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000600-000000799.xml",
+          "retmax": 200,
+          "retstart": 600,
+          "sha256": "87ef5943f8a39ce47f8ddbd24b2257fa971a9df37c83f72f9607346e1998a2c2"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000000800-000000999.xml",
+          "retmax": 200,
+          "retstart": 800,
+          "sha256": "1084cfc7e9757e016bf0bda386f5d3d8494510eb1efd15a85764cca23b1c8b5c"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000001000-000001199.xml",
+          "retmax": 200,
+          "retstart": 1000,
+          "sha256": "ddb10cf5ce93fc6f6a6d92de69e247451ef23410339eeb20a1701eefbdb9dbd4"
+        },
+        {
+          "parsed_count": 116,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.efetch.000001200-000001315.xml",
+          "retmax": 116,
+          "retstart": 1200,
+          "sha256": "da3f18c865d60197d27b7f221447300615c391d7e262874ac499617c266957a3"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01.esearch.json",
+      "esearch_sha256": "ef9e2b1359354f0d1e63ca8d7e676c184d9531ce984e3a4b9a003d5689e8895f",
+      "family": "simulation_methods",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(\"simulation study\"[Title] OR \"synthetic data\"[Title] OR \"data-generating process\"[Title] OR \"data generating process\"[Title] OR \"agent-based\"[Title] OR \"mechanistic model\"[Title] OR benchmark*[Title] OR \"operating characteristics\"[Title] OR \"coverage probability\"[Title]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 1316,
+      "retrieved_count": 1316,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-SIMULATION-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db6138764d3a1d002cab1"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "e764f3ccfd620f6cf3adc5f008be3a7c181158269d0e6d2ed2657e1ccf2822c1"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000200-000000399.xml",
+          "retmax": 200,
+          "retstart": 200,
+          "sha256": "0fb44a2f78339a1bfba6358f438597fe153b0a91c0b1abaaf60f7f28fc8e0f93"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000400-000000599.xml",
+          "retmax": 200,
+          "retstart": 400,
+          "sha256": "2435ee39543402ef53d467beeabf8d1a5cb1c86bd790906833a4b5339b16320a"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000600-000000799.xml",
+          "retmax": 200,
+          "retstart": 600,
+          "sha256": "5513fbc675eb6e543b6e74f8240e2f4845ce1bc4ce110d2bebd2d611efaecca5"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000000800-000000999.xml",
+          "retmax": 200,
+          "retstart": 800,
+          "sha256": "2d2f1a3bd0aaaf75c249487aeeaa389ffcc99a95c4d2c25d5bde0e06d1937fea"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000001000-000001199.xml",
+          "retmax": 200,
+          "retstart": 1000,
+          "sha256": "f2f5bba62978e937271fcd2c21cc9d352f867c3922bcdc5c3bd7f5839d00f522"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000001200-000001399.xml",
+          "retmax": 200,
+          "retstart": 1200,
+          "sha256": "2d8e3276c39a0198857bf90135b2ca2b4be8e0516d6b075a93d16f7146f19384"
+        },
+        {
+          "parsed_count": 16,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.efetch.000001400-000001415.xml",
+          "retmax": 16,
+          "retstart": 1400,
+          "sha256": "0f9c0c8f61012dd1f2e1a03a47e8ecdcf0c8d5c86fabf7c465bd37cc43a72051"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01.esearch.json",
+      "esearch_sha256": "a619a1aa7501d5d3b494ef26cff5f4ea94c0a9edcf9025f9b5730a9bfc423ec1",
+      "family": "spatial_transmission",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(\"endemic-epidemic\"[Title] OR metapopulation[Title] OR \"network model\"[Title] OR \"border discontinuity\"[Title] OR \"spatial diffusion\"[Title] OR \"gravity model\"[Title] OR \"radiation model\"[Title] OR Hawkes[Title] OR phylogeograph*[Title] OR \"genomic epidemiology\"[Title]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 1416,
+      "retrieved_count": 1416,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-SPATIAL-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db6eb35c084ce560ecaaa"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "eabcde75378b5718a6634c4c835677aa98539619bba760bbfca5f30e2d98180a"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000200-000000399.xml",
+          "retmax": 200,
+          "retstart": 200,
+          "sha256": "80afd662a701ff53b0fe488f4b3d3de9f33788fad4c2b0b6f7398f8f9b5b10bc"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000400-000000599.xml",
+          "retmax": 200,
+          "retstart": 400,
+          "sha256": "7b993530799a34261c11e055a02a3f3d86ebd8c779a94cd9e21057847b044e35"
+        },
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000600-000000799.xml",
+          "retmax": 200,
+          "retstart": 600,
+          "sha256": "10d1632af6f1a336fa1164eb90d3641c7d62f664cea20a7b8802a7eaa8091371"
+        },
+        {
+          "parsed_count": 180,
+          "path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.efetch.000000800-000000979.xml",
+          "retmax": 180,
+          "retstart": 800,
+          "sha256": "b6f41e0409e5cd96899a3ba912cbac4845617adedb9f506eccd80fc83151c282"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01.esearch.json",
+      "esearch_sha256": "9c7ccd9979b7845d748ad6a160ebe395395807f671173c700161af0fa9ba9a2d",
+      "family": "surveillance_measurement",
+      "lane": "FAMILY",
+      "parent_search_id": "",
+      "query": "(capture-recapture[Title] OR \"capture recapture\"[Title] OR \"multiple-system estimation\"[Title] OR nowcast*[Title] OR \"reporting delay\"[Title] OR \"observation process\"[Title] OR \"preferential sampling\"[Title] OR \"measurement error\"[Title] OR \"sentinel surveillance\"[Title] OR \"latent class\"[Title]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 980,
+      "retrieved_count": 980,
+      "search_id": "SEARCH-20260720-PUBMED-FAMILY-SURVEILLANCE-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db72ef58676bf78076287"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-CAUSAL-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "313a4017cea1e3073cd219d1869fd6d31db6b9b5349c9ab567e5ff4a697475c5"
+        },
+        {
+          "parsed_count": 79,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-CAUSAL-01.efetch.000000200-000000278.xml",
+          "retmax": 79,
+          "retstart": 200,
+          "sha256": "454936948652eaf9c007e2fd38a85d287712a7887f46c855d1e07faca2eace11"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-VENUE-CAUSAL-01.esearch.json",
+      "esearch_sha256": "7413ba327209de6c91901f6c1c11008c2d228bd42fb2bc16ec86d1cf84f9467a",
+      "family": "causal_policy",
+      "lane": "VENUE",
+      "parent_search_id": "",
+      "query": "(\"interrupted time series\"[Title/Abstract] OR \"difference-in-differences\"[Title/Abstract] OR \"difference in differences\"[Title/Abstract] OR \"event study\"[Title/Abstract] OR \"synthetic control\"[Title/Abstract] OR \"regression discontinuity\"[Title/Abstract] OR \"instrumental variable\"[Title/Abstract] OR \"target trial\"[Title/Abstract] OR \"negative control\"[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"Am J Epidemiol\"[Journal] OR \"BMJ\"[Journal] OR \"Clin Infect Dis\"[Journal] OR \"Emerg Infect Dis\"[Journal] OR \"Epidemiology\"[Journal] OR \"Euro Surveill\"[Journal] OR \"Int J Epidemiol\"[Journal] OR \"JAMA\"[Journal] OR \"Lancet\"[Journal] OR \"Lancet Glob Health\"[Journal] OR \"Lancet Infect Dis\"[Journal] OR \"N Engl J Med\"[Journal] OR \"NPJ Biofilms Microbiomes\"[Journal] OR \"NPJ Digit Med\"[Journal] OR \"NPJ Syst Biol Appl\"[Journal] OR \"NPJ Vaccines\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Microbiol\"[Journal] OR \"Nature\"[Journal] OR \"PLoS Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"Science\"[Journal]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 279,
+      "retrieved_count": 279,
+      "search_id": "SEARCH-20260720-PUBMED-VENUE-CAUSAL-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db7595dceebebc00f5d0c"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 155,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-EVIDENCE-01.efetch.000000000-000000154.xml",
+          "retmax": 155,
+          "retstart": 0,
+          "sha256": "5a17109e8d027605aab7d2068f4f7308bfdb6e9e2d8d697bb57be5daf361241e"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-VENUE-EVIDENCE-01.esearch.json",
+      "esearch_sha256": "5a5533b8f581e67f46532768df48aaca345c91fd2efcd10cb3419733983fcc37",
+      "family": "evidence_synthesis",
+      "lane": "VENUE",
+      "parent_search_id": "",
+      "query": "(triangulation[Title/Abstract] OR \"specification curve\"[Title/Abstract] OR multiverse[Title/Abstract] OR transportability[Title/Abstract] OR generalizability[Title/Abstract] OR \"outcome definition\"[Title/Abstract] OR denominator[Title/Abstract] OR \"hierarchical borrowing\"[Title/Abstract] OR \"modelled versus observed\"[Title/Abstract] OR \"modeled versus observed\"[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"Am J Epidemiol\"[Journal] OR \"BMJ\"[Journal] OR \"Clin Infect Dis\"[Journal] OR \"Emerg Infect Dis\"[Journal] OR \"Epidemiology\"[Journal] OR \"Euro Surveill\"[Journal] OR \"Int J Epidemiol\"[Journal] OR \"JAMA\"[Journal] OR \"Lancet\"[Journal] OR \"Lancet Glob Health\"[Journal] OR \"Lancet Infect Dis\"[Journal] OR \"N Engl J Med\"[Journal] OR \"NPJ Biofilms Microbiomes\"[Journal] OR \"NPJ Digit Med\"[Journal] OR \"NPJ Syst Biol Appl\"[Journal] OR \"NPJ Vaccines\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Microbiol\"[Journal] OR \"Nature\"[Journal] OR \"PLoS Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"Science\"[Journal]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 155,
+      "retrieved_count": 155,
+      "search_id": "SEARCH-20260720-PUBMED-VENUE-EVIDENCE-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db77096d8ca5895042e87"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-FORECASTING-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "738f0faaf9c27a33e23f2a2387303b3e999eab14a9023e0ec28084aa14a096e1"
+        },
+        {
+          "parsed_count": 195,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-FORECASTING-01.efetch.000000200-000000394.xml",
+          "retmax": 195,
+          "retstart": 200,
+          "sha256": "60f9e1f4b726f9dbe9e2e801d645acbca315e874294d2408f7276ac383c0abce"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-VENUE-FORECASTING-01.esearch.json",
+      "esearch_sha256": "95f0b5544ffba77c20a9e4183760b57fe7c795253b27c0c3081033e053db8366",
+      "family": "forecasting_dynamics",
+      "lane": "VENUE",
+      "parent_search_id": "",
+      "query": "(\"renewal model\"[Title/Abstract] OR \"reproduction number\"[Title/Abstract] OR \"ensemble forecast\"[Title/Abstract] OR \"forecast calibration\"[Title/Abstract] OR \"early warning\"[Title/Abstract] OR changepoint[Title/Abstract] OR \"change point\"[Title/Abstract] OR \"outbreak detection\"[Title/Abstract] OR \"mechanistic-statistical\"[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"Am J Epidemiol\"[Journal] OR \"BMJ\"[Journal] OR \"Clin Infect Dis\"[Journal] OR \"Emerg Infect Dis\"[Journal] OR \"Epidemiology\"[Journal] OR \"Euro Surveill\"[Journal] OR \"Int J Epidemiol\"[Journal] OR \"JAMA\"[Journal] OR \"Lancet\"[Journal] OR \"Lancet Glob Health\"[Journal] OR \"Lancet Infect Dis\"[Journal] OR \"N Engl J Med\"[Journal] OR \"NPJ Biofilms Microbiomes\"[Journal] OR \"NPJ Digit Med\"[Journal] OR \"NPJ Syst Biol Appl\"[Journal] OR \"NPJ Vaccines\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Microbiol\"[Journal] OR \"Nature\"[Journal] OR \"PLoS Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"Science\"[Journal]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 395,
+      "retrieved_count": 395,
+      "search_id": "SEARCH-20260720-PUBMED-VENUE-FORECASTING-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db77cd5f8a94535041139"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-SIMULATION-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "86811326535bee014977a2b4992c664e81c7d27d8e736d27d353b9c3d4bff6c6"
+        },
+        {
+          "parsed_count": 55,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-SIMULATION-01.efetch.000000200-000000254.xml",
+          "retmax": 55,
+          "retstart": 200,
+          "sha256": "a68eb5d40051d22383155caa40cb83d58bc5337858a22e6450dd320189a79fea"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-VENUE-SIMULATION-01.esearch.json",
+      "esearch_sha256": "564106489a9d793aedb8b32f8ef2d88d279e293a1e55e95523e25b50a00d6bc3",
+      "family": "simulation_methods",
+      "lane": "VENUE",
+      "parent_search_id": "",
+      "query": "(\"simulation study\"[Title/Abstract] OR \"synthetic data\"[Title/Abstract] OR \"data-generating process\"[Title/Abstract] OR \"data generating process\"[Title/Abstract] OR \"agent-based\"[Title/Abstract] OR \"mechanistic model\"[Title/Abstract] OR benchmark*[Title/Abstract] OR \"operating characteristics\"[Title/Abstract] OR \"coverage probability\"[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"Am J Epidemiol\"[Journal] OR \"BMJ\"[Journal] OR \"Clin Infect Dis\"[Journal] OR \"Emerg Infect Dis\"[Journal] OR \"Epidemiology\"[Journal] OR \"Euro Surveill\"[Journal] OR \"Int J Epidemiol\"[Journal] OR \"JAMA\"[Journal] OR \"Lancet\"[Journal] OR \"Lancet Glob Health\"[Journal] OR \"Lancet Infect Dis\"[Journal] OR \"N Engl J Med\"[Journal] OR \"NPJ Biofilms Microbiomes\"[Journal] OR \"NPJ Digit Med\"[Journal] OR \"NPJ Syst Biol Appl\"[Journal] OR \"NPJ Vaccines\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Microbiol\"[Journal] OR \"Nature\"[Journal] OR \"PLoS Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"Science\"[Journal]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 255,
+      "retrieved_count": 255,
+      "search_id": "SEARCH-20260720-PUBMED-VENUE-SIMULATION-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db7921bbc4bf410055034"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-SPATIAL-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "7a9ebcbe56ba6ffb47a8267ccd0e586b7a71027f449b9b396a041d55b9d18291"
+        },
+        {
+          "parsed_count": 16,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-SPATIAL-01.efetch.000000200-000000215.xml",
+          "retmax": 16,
+          "retstart": 200,
+          "sha256": "282140dadbe8dca5d1335033dde35f9e8778080f7f21170b0551abe2b7e1bb48"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-VENUE-SPATIAL-01.esearch.json",
+      "esearch_sha256": "d22f676292fea95fab3ed697bbf945f7750ce8402f95914e8b1e3e844c4c4024",
+      "family": "spatial_transmission",
+      "lane": "VENUE",
+      "parent_search_id": "",
+      "query": "(\"endemic-epidemic\"[Title/Abstract] OR metapopulation[Title/Abstract] OR \"network model\"[Title/Abstract] OR \"border discontinuity\"[Title/Abstract] OR \"spatial diffusion\"[Title/Abstract] OR \"gravity model\"[Title/Abstract] OR \"radiation model\"[Title/Abstract] OR Hawkes[Title/Abstract] OR phylogeograph*[Title/Abstract] OR \"genomic epidemiology\"[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"Am J Epidemiol\"[Journal] OR \"BMJ\"[Journal] OR \"Clin Infect Dis\"[Journal] OR \"Emerg Infect Dis\"[Journal] OR \"Epidemiology\"[Journal] OR \"Euro Surveill\"[Journal] OR \"Int J Epidemiol\"[Journal] OR \"JAMA\"[Journal] OR \"Lancet\"[Journal] OR \"Lancet Glob Health\"[Journal] OR \"Lancet Infect Dis\"[Journal] OR \"N Engl J Med\"[Journal] OR \"NPJ Biofilms Microbiomes\"[Journal] OR \"NPJ Digit Med\"[Journal] OR \"NPJ Syst Biol Appl\"[Journal] OR \"NPJ Vaccines\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Microbiol\"[Journal] OR \"Nature\"[Journal] OR \"PLoS Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"Science\"[Journal]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 216,
+      "retrieved_count": 216,
+      "search_id": "SEARCH-20260720-PUBMED-VENUE-SPATIAL-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db7d5a51c8bff840198c6"
+    },
+    {
+      "cell_type": "leaf",
+      "date_end": "2026/12/31",
+      "date_start": "2010/01/01",
+      "efetch_pages": [
+        {
+          "parsed_count": 200,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-SURVEILLANCE-01.efetch.000000000-000000199.xml",
+          "retmax": 200,
+          "retstart": 0,
+          "sha256": "5a99305cbcbbc218ece297f192d882dbdb42cf9de610ba5a4ac01663087ea38e"
+        },
+        {
+          "parsed_count": 20,
+          "path": "raw/SEARCH-20260720-PUBMED-VENUE-SURVEILLANCE-01.efetch.000000200-000000219.xml",
+          "retmax": 20,
+          "retstart": 200,
+          "sha256": "32684c38783d1c037bcf5e6ea967a90face147f1d2981f9991829bb441a656ba"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260720-PUBMED-VENUE-SURVEILLANCE-01.esearch.json",
+      "esearch_sha256": "3b64c1464b4db46f4bd8ca8d5874fbbc44599532f2a53cbf77920b089e336ad0",
+      "family": "surveillance_measurement",
+      "lane": "VENUE",
+      "parent_search_id": "",
+      "query": "(capture-recapture[Title/Abstract] OR \"capture recapture\"[Title/Abstract] OR \"multiple-system estimation\"[Title/Abstract] OR nowcast*[Title/Abstract] OR \"reporting delay\"[Title/Abstract] OR \"observation process\"[Title/Abstract] OR \"preferential sampling\"[Title/Abstract] OR \"measurement error\"[Title/Abstract] OR \"sentinel surveillance\"[Title/Abstract] OR \"latent class\"[Title/Abstract]) AND (\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract]) AND (\"Am J Epidemiol\"[Journal] OR \"BMJ\"[Journal] OR \"Clin Infect Dis\"[Journal] OR \"Emerg Infect Dis\"[Journal] OR \"Epidemiology\"[Journal] OR \"Euro Surveill\"[Journal] OR \"Int J Epidemiol\"[Journal] OR \"JAMA\"[Journal] OR \"Lancet\"[Journal] OR \"Lancet Glob Health\"[Journal] OR \"Lancet Infect Dis\"[Journal] OR \"N Engl J Med\"[Journal] OR \"NPJ Biofilms Microbiomes\"[Journal] OR \"NPJ Digit Med\"[Journal] OR \"NPJ Syst Biol Appl\"[Journal] OR \"NPJ Vaccines\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Microbiol\"[Journal] OR \"Nature\"[Journal] OR \"PLoS Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"Science\"[Journal]) AND (\"2010/01/01\"[Date - Publication] : \"2026/12/31\"[Date - Publication])",
+      "query_key": "1",
+      "reported_count": 220,
+      "retrieved_count": 220,
+      "search_id": "SEARCH-20260720-PUBMED-VENUE-SURVEILLANCE-01",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a5db7e6373acae5ee0faeed"
+    }
+  ],
+  "configuration_files": [
+    {
+      "path": "01_search/search_protocols/2026-07-20-broad-methods-discovery-protocol.md",
+      "sha256": "e3b1013862e2f18314702cbf1e1e0e5c2c6b9e0d2b78113b23b9e65e2ccb20df"
+    },
+    {
+      "path": "01_search/search_protocols/discovery_queries.json",
+      "sha256": "7e7e6bd7eeb4704e43ffa30e3c002a4ce5d044b5ac0c722fce7dd5d34f24a3e1"
+    },
+    {
+      "path": "01_search/journal_registry/journals.csv",
+      "sha256": "ef65e25ccb8ef1feb7220fc82c476bf2322c7e78db8fd1c05d463347aa688cc8"
+    }
+  ],
+  "executed_at": "2026-07-20T13:44:01.058821+08:00",
+  "schema_version": 1,
+  "source": "pubmed",
+  "timezone": "Asia/Shanghai",
+  "tool_version": "1"
+}
