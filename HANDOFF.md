@@ -6,7 +6,7 @@
 
 ## Current phase and status
 
-**Bootstrap is complete and published.** The implementation and both correction waves passed final whole-branch re-review of `13e133417e44c6b869dca40b7fff2afd046bf42b` with `Ready to merge: Yes`, 0 Critical findings, 0 Important findings, and one deferred non-blocking Minor concerning redundant `try`/`except` test wrappers. The first verified publication equality was `local main = origin/main = remote refs/heads/main = 36379bf4d648909854140d383959ebeefe88e569`. The release evidence and dated review addenda are in `07_reviews/BOOTSTRAP_VERIFICATION_20260720.md`, and the owner-approved correction schema is recorded as `DEC-20260720-005`. This publication-state receipt is a later commit, so resolve its exact live commit with `git rev-parse HEAD` and use `git ls-remote origin refs/heads/main` for final remote equality. The separate methods/problem-first broad applied-paper and authoritative method-source search execution plan is pending owner review. No broad search, data download, formal simulation, or flagship selection has started.
+**Bootstrap is complete and published; broad discovery execution is approved and entering isolated-worktree preflight.** The bootstrap implementation and both correction waves passed final whole-branch re-review of `13e133417e44c6b869dca40b7fff2afd046bf42b` with `Ready to merge: Yes`, 0 Critical findings, 0 Important findings, and one deferred non-blocking Minor concerning redundant `try`/`except` test wrappers. The methods/problem-first broad discovery and lineage plan at `docs/superpowers/plans/2026-07-20-broad-methods-discovery-search.md` was owner-authorized in the live task, committed as `155bf99eefa759d8c54bedeb78ef5d4a7908687c`, and independently reviewed through seven correction rounds to a final verdict of 0 Critical, 0 Important, and 0 Minor. Its locked SHA256 is `671f24a245c48a9c3661ecf176081f72948c5cdc0c3157df85d3781774ee4209`. No broad search result, data download, formal simulation, or flagship selection exists yet; execution begins only in the plan's isolated worktree and ledger sequence.
 
 The frozen broadened seed scan was committed in `975f3ea43fb7d927b64028c2108c92e3db5a8b4f` (`freeze broadened infectious disease seed scan`), Task 6 continuity files were introduced in `de58d0c5160d6e8d5a7b14ea75cba155c22cdd92` (`add filesystem-based project handoff`), and the Task 7 reciprocal pointer was completed and recorded in full commit `e8953a920800c932df75ff39631e06a29aaaeede` (`record reciprocal project pointer`). Review corrections follow in the Git history. The approved design was committed as `c708ac2402431202c8b1af4c5fd87035460249ab` (`define infectious disease methods library design`), and the bootstrap implementation plan was committed as `9d38e235f031d0b5959e1d587ee28fe8d20a53de` (`plan methods library bootstrap`). No flagship has been selected, no broad applied-paper or method-source search has been executed, no candidate dataset has been downloaded, and no simulation has been executed.
 
@@ -17,6 +17,7 @@ Discovery is method/problem first, not data/disease first. Do not exclude leads 
 ## Immutable outputs
 
 - Approved design: `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, commit `c708ac2402431202c8b1af4c5fd87035460249ab`, SHA256 `e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57`; preserve byte-for-byte.
+- Approved broad discovery plan: `docs/superpowers/plans/2026-07-20-broad-methods-discovery-search.md`, commit `155bf99eefa759d8c54bedeb78ef5d4a7908687c`, SHA256 `671f24a245c48a9c3661ecf176081f72948c5cdc0c3157df85d3781774ee4209`; execute Tasks 1–8 with the plan's per-task implementation/review gate.
 - Frozen seed snapshot: `01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md`, commit `975f3ea43fb7d927b64028c2108c92e3db5a8b4f`, SHA256 `520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55`; verify with both SHA256 and `cmp` against `/Users/hongchaokun/Documents/PhD/Surveillance_AMR/02_source_registry/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md` before any claimed replacement.
 - Remote: `origin` is `https://github.com/ChaokunHong/ID_Epi_Methods_Library.git`; `main` was first published with verified local, tracking-ref, and remote equality at `36379bf4d648909854140d383959ebeefe88e569`.
 
@@ -30,11 +31,11 @@ All ten registries contain headers only: `03_evidence_tables/papers.csv`, `03_ev
 
 ## Known blockers and non-blockers
 
-There are no bootstrap blockers. The one deferred Minor—redundant `try`/`except` wrappers around several validator-test assertions—is non-blocking and does not alter validator behavior or release readiness. The separate broad-search execution plan is pending owner review and must not be executed before approval. The Task 5 whitespace exception is narrow: the byte-locked seed snapshot alone is exempt from the Task 8 edit-level whitespace gate because line 3 has two intentional trailing spaces. Its exact SHA256 and `cmp` verification remain mandatory. This exception does not relax `git diff --check` or any other gate for correction edits or future files.
+There are no execution blockers. The one bootstrap-deferred Minor—redundant `try`/`except` wrappers around several validator-test assertions—is non-blocking and does not alter validator behavior or release readiness. The broad-search plan is owner-approved and independently review-clean. The Task 5 whitespace exception remains narrow: the byte-locked seed snapshot alone is exempt from the bootstrap edit-level whitespace gate because line 3 has two intentional trailing spaces. Its exact SHA256 and `cmp` verification remain mandatory. This exception does not relax `git diff --check` or any discovery-plan gate.
 
 ## Exact next action
 
-The controller must first run final validation of the current `main`, push the current `main`, and then verify that `git rev-parse HEAD`, `git rev-parse origin/main`, and the SHA reported by `git ls-remote origin refs/heads/main` are identical. Only after that current three-way equality passes is the next scientific gate owner review of the separate methods/problem-first broad applied-paper and authoritative method-source search execution plan. Until that plan is approved, do not execute the search, download candidate data, run a formal simulation, or select a flagship.
+Commit this handoff receipt, rerun the planning-baseline validator and locked SHA checks, push `main`, and verify local/tracking/remote equality. Then use `superpowers:using-git-worktrees` to create `.worktrees/broad-methods-discovery` on `codex/broad-methods-discovery`, initialize both discovery execution ledgers, and execute Task 1 with `superpowers:subagent-driven-development`. Continue through all eight task gates and the whole-branch review without inter-task owner prompts. Do not download candidate data, run a formal simulation, or select a flagship in this plan.
 
 ## Verification commands
 
@@ -46,6 +47,7 @@ git ls-remote origin refs/heads/main
 git log --oneline --decorate --all
 git remote -v
 shasum -a 256 docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md
+shasum -a 256 docs/superpowers/plans/2026-07-20-broad-methods-discovery-search.md
 shasum -a 256 01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md
 cmp -s 01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md /Users/hongchaokun/Documents/PhD/Surveillance_AMR/02_source_registry/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md
 python3 00_governance/scripts/validate_library.py --root .
@@ -54,4 +56,4 @@ git diff --check
 
 ## Last updated
 
-2026-07-20 after the first verified publication equality at `36379bf4d648909854140d383959ebeefe88e569` and creation of the later publication-state receipt. That initial publication remains verified, but the current `main` is locally ahead until the controller finishes final validation, pushes it, and confirms current three-way SHA equality. Resolve the current exact commit with `git rev-parse HEAD`; a handoff file cannot embed the SHA of the commit containing itself. Owner review of the separate broad-search execution plan follows only after that equality passes.
+2026-07-20 after owner authorization and independent final review of the broad discovery plan committed at `155bf99eefa759d8c54bedeb78ef5d4a7908687c`. The next action is planning-baseline publication equality followed by isolated-worktree execution. Resolve the current exact handoff commit with `git log -1 --format=%H -- HANDOFF.md`; a handoff file cannot embed the SHA of the commit containing itself.
