@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-07-20T10:16:13+08:00",
+  "timezone": "Asia/Shanghai",
+  "source_repository": "/Users/hongchaokun/Documents/PhD/Surveillance_AMR",
+  "source_head": "eb5d15656b8fe69a8359705c80125d695a1c0782",
+  "filtered_pointer_line": "?? ID_EPI_METHODS_LIBRARY_POINTER.md",
+  "filtered_status_line_count": 16,
+  "filtered_status_sha256": "e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e",
+  "pointer_status": "untracked",
+  "pointer_index_paths": [],
+  "seed_source_status": "untracked",
+  "proof_limit": "Path/status evidence only; no pre-phase byte manifest exists for paths already dirty at baseline."
+}

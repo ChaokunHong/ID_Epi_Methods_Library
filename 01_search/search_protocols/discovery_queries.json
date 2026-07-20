@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "applied_date_start": "2010/01/01",
+  "applied_date_end": "2026/12/31",
+  "source": "pubmed",
+  "family_method_field": "Title",
+  "venue_method_field": "Title/Abstract",
+  "infectious_disease_block": "(\"Communicable Diseases\"[Mesh] OR infection*[Title/Abstract] OR infectious[Title/Abstract] OR outbreak*[Title/Abstract] OR epidemic*[Title/Abstract] OR pathogen*[Title/Abstract] OR vaccin*[Title/Abstract] OR antimicrobial resistance[Title/Abstract])",
+  "families": [
+    {
+      "family": "causal_policy",
+      "token": "CAUSAL",
+      "method_block": "(\"interrupted time series\"[Title/Abstract] OR \"difference-in-differences\"[Title/Abstract] OR \"difference in differences\"[Title/Abstract] OR \"event study\"[Title/Abstract] OR \"synthetic control\"[Title/Abstract] OR \"regression discontinuity\"[Title/Abstract] OR \"instrumental variable\"[Title/Abstract] OR \"target trial\"[Title/Abstract] OR \"negative control\"[Title/Abstract])"
+    },
+    {
+      "family": "surveillance_measurement",
+      "token": "SURVEILLANCE",
+      "method_block": "(capture-recapture[Title/Abstract] OR \"capture recapture\"[Title/Abstract] OR \"multiple-system estimation\"[Title/Abstract] OR nowcast*[Title/Abstract] OR \"reporting delay\"[Title/Abstract] OR \"observation process\"[Title/Abstract] OR \"preferential sampling\"[Title/Abstract] OR \"measurement error\"[Title/Abstract] OR \"sentinel surveillance\"[Title/Abstract] OR \"latent class\"[Title/Abstract])"
+    },
+    {
+      "family": "spatial_transmission",
+      "token": "SPATIAL",
+      "method_block": "(\"endemic-epidemic\"[Title/Abstract] OR metapopulation[Title/Abstract] OR \"network model\"[Title/Abstract] OR \"border discontinuity\"[Title/Abstract] OR \"spatial diffusion\"[Title/Abstract] OR \"gravity model\"[Title/Abstract] OR \"radiation model\"[Title/Abstract] OR Hawkes[Title/Abstract] OR phylogeograph*[Title/Abstract] OR \"genomic epidemiology\"[Title/Abstract])"
+    },
+    {
+      "family": "forecasting_dynamics",
+      "token": "FORECASTING",
+      "method_block": "(\"renewal model\"[Title/Abstract] OR \"reproduction number\"[Title/Abstract] OR \"ensemble forecast\"[Title/Abstract] OR \"forecast calibration\"[Title/Abstract] OR \"early warning\"[Title/Abstract] OR changepoint[Title/Abstract] OR \"change point\"[Title/Abstract] OR \"outbreak detection\"[Title/Abstract] OR \"mechanistic-statistical\"[Title/Abstract])"
+    },
+    {
+      "family": "evidence_synthesis",
+      "token": "EVIDENCE",
+      "method_block": "(triangulation[Title/Abstract] OR \"specification curve\"[Title/Abstract] OR multiverse[Title/Abstract] OR transportability[Title/Abstract] OR generalizability[Title/Abstract] OR \"outcome definition\"[Title/Abstract] OR denominator[Title/Abstract] OR \"hierarchical borrowing\"[Title/Abstract] OR \"modelled versus observed\"[Title/Abstract] OR \"modeled versus observed\"[Title/Abstract])"
+    },
+    {
+      "family": "simulation_methods",
+      "token": "SIMULATION",
+      "method_block": "(\"simulation study\"[Title/Abstract] OR \"synthetic data\"[Title/Abstract] OR \"data-generating process\"[Title/Abstract] OR \"data generating process\"[Title/Abstract] OR \"agent-based\"[Title/Abstract] OR \"mechanistic model\"[Title/Abstract] OR benchmark*[Title/Abstract] OR \"operating characteristics\"[Title/Abstract] OR \"coverage probability\"[Title/Abstract])"
+    }
+  ]
+}
