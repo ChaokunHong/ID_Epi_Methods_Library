@@ -13,6 +13,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest import mock
 
 
 PROJECT_ROOT = Path(__file__).parents[2]
@@ -54,6 +55,18 @@ class DiscoverySearchTests(unittest.TestCase):
             writer = csv.DictWriter(handle, fieldnames=headers)
             writer.writeheader()
             writer.writerows(rows)
+
+    @staticmethod
+    def shorten_first_csv_row(path: Path) -> None:
+        lines = path.read_text(encoding="utf-8").splitlines()
+        lines[1] = lines[1].split(",", 1)[0]
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    @staticmethod
+    def extend_first_csv_row(path: Path) -> None:
+        lines = path.read_text(encoding="utf-8").splitlines()
+        lines[1] += ",unexpected-extra-field"
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     def copy_configuration(self) -> None:
         for relative in (
@@ -147,7 +160,6 @@ class DiscoverySearchTests(unittest.TestCase):
             "search_id": search_id,
             "lane": "FAMILY",
             "family": "causal_policy",
-            "source": "pubmed",
             "query": (
                 f'test query AND ("{date_start}"[Date - Publication] : '
                 f'"{date_end}"[Date - Publication])'
@@ -209,7 +221,6 @@ class DiscoverySearchTests(unittest.TestCase):
             "search_id": "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
             "lane": "FAMILY",
             "family": "causal_policy",
-            "source": "pubmed",
             "query": (
                 'test query AND ("2020/01/01"[Date - Publication] : '
                 '"2020/12/31"[Date - Publication])'
@@ -663,6 +674,45 @@ class DiscoverySearchTests(unittest.TestCase):
         self.assertEqual(result, 1)
         self.assertIn("DISCOVERY FAIL", output.getvalue())
 
+    def test_configuration_requires_top_level_fields_and_list_cells_is_stable(self):
+        self.copy_configuration()
+        path = self.root / search.QUERY_CONFIG_PATH
+        config = json.loads(path.read_text())
+        del config["applied_date_start"]
+        path.write_text(json.dumps(config), encoding="utf-8")
+        self.assertIn(
+            "missing discovery configuration field: applied_date_start",
+            "\n".join(search.validate_configuration(self.root)),
+        )
+        output = io.StringIO()
+        try:
+            with contextlib.redirect_stdout(output):
+                result = search.main(
+                    ["list-cells", "--root", str(self.root), "--date", "2026-07-20"]
+                )
+        except Exception as error:
+            self.fail(f"list-cells raised {type(error).__name__}: {error}")
+        self.assertEqual(result, 1)
+        self.assertIn("DISCOVERY FAIL", output.getvalue())
+
+    def test_list_cells_contains_unexpected_builder_errors(self):
+        self.copy_configuration()
+        output = io.StringIO()
+        with mock.patch.object(
+            search,
+            "build_search_cells",
+            side_effect=RuntimeError("simulated builder failure"),
+        ):
+            try:
+                with contextlib.redirect_stdout(output):
+                    result = search.main(
+                        ["list-cells", "--root", str(self.root), "--date", "2026-07-20"]
+                    )
+            except Exception as error:
+                self.fail(f"list-cells raised {type(error).__name__}: {error}")
+        self.assertEqual(result, 1)
+        self.assertIn("unable to build search cells: RuntimeError", output.getvalue())
+
     def test_journal_tokens_must_be_unique_and_nonblank(self):
         self.copy_configuration()
         path = self.root / search.JOURNAL_REGISTRY_PATH
@@ -672,11 +722,54 @@ class DiscoverySearchTests(unittest.TestCase):
         self.write_journals(rows)
         self.assertIn("duplicate pubmed_token", "\n".join(search.validate_configuration(self.root)))
 
+    def test_configuration_csv_rejects_short_rows_without_traceback(self):
+        self.copy_configuration()
+        self.shorten_first_csv_row(self.root / search.JOURNAL_REGISTRY_PATH)
+        self.assertIn(
+            "CSV row width mismatch",
+            "\n".join(search.validate_configuration(self.root)),
+        )
+
+    def test_screening_csv_rejects_short_rows_without_traceback(self):
+        run_dir = self.make_valid_screened_run(self.root / "screening-width")
+        self.shorten_first_csv_row(run_dir / "screened_candidates.csv")
+        self.assertIn(
+            "CSV row width mismatch",
+            "\n".join(search.validate_screening(run_dir)),
+        )
+
+    def test_audit_csv_rejects_extra_fields_without_traceback(self):
+        run_dir = self.make_valid_screened_run(self.root / "audit-width")
+        self.extend_first_csv_row(run_dir / "screening_audit.csv")
+        self.assertIn(
+            "CSV row width mismatch",
+            "\n".join(search.validate_screening_audit(run_dir)),
+        )
+
+    def test_lineage_csv_rejects_short_rows_without_traceback(self):
+        run_dir = self.make_valid_lineage_run(self.root / "lineage-width")
+        self.shorten_first_csv_row(run_dir / "lineage_identity_audit.csv")
+        try:
+            rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+        except Exception as error:
+            self.fail(f"validate_lineage raised {type(error).__name__}: {error}")
+        self.assertIn("CSV row width mismatch", rendered)
+
     def test_search_run_rejects_sha_mismatch(self):
         run_dir = self.make_valid_run()
         raw = next((run_dir / "raw").glob("*.xml"))
         raw.write_bytes(raw.read_bytes() + b"altered")
         self.assertIn("checksum mismatch", "\n".join(search.validate_search_run(run_dir)))
+
+    def test_manifest_rejects_a_symlinked_parent_outside_the_run(self):
+        run_dir = self.make_valid_run()
+        outside_raw = self.root / "outside-raw"
+        (run_dir / "raw").rename(outside_raw)
+        (run_dir / "raw").symlink_to(outside_raw, target_is_directory=True)
+        self.assertIn(
+            "manifest path contains symlink",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
 
     def test_search_run_rejects_missing_receipt_fields(self):
         run_dir = self.make_valid_run()
@@ -785,6 +878,21 @@ class DiscoverySearchTests(unittest.TestCase):
             "\n".join(search.validate_search_run(run_dir)),
         )
 
+    def test_search_cells_use_the_top_level_source_contract(self):
+        run_dir = self.make_valid_run()
+        receipt_path = run_dir / "RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        receipt["cells"][0].pop("source", None)
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        self.assertEqual(search.validate_search_run(run_dir), [])
+
+        receipt["cells"][0]["source"] = "crossref"
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        self.assertIn(
+            "cell source mismatch",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
     def test_split_parent_requires_contiguous_nonoverlapping_children(self):
         run_dir = self.make_valid_split_run()
         self.assertEqual(search.validate_search_run(run_dir), [])
@@ -844,7 +952,7 @@ class DiscoverySearchTests(unittest.TestCase):
         self.assertIn("cell date range inverted", rendered)
         self.assertIn("child lane mismatch", rendered)
         self.assertIn("child family mismatch", rendered)
-        self.assertIn("child source mismatch", rendered)
+        self.assertIn("cell source mismatch", rendered)
         self.assertIn("child query semantic core mismatch", rendered)
         self.assertIn("child query date interval mismatch", rendered)
 
@@ -957,6 +1065,40 @@ class DiscoverySearchTests(unittest.TestCase):
             "lineage ledger final key mismatch",
             "\n".join(search.validate_lineage(self.root, run_dir)),
         )
+
+    def test_unresolved_lineage_ledger_cannot_retain_resolved_identity_fields(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        audit_path = run_dir / "lineage_identity_audit.csv"
+        with audit_path.open(encoding="utf-8", newline="") as handle:
+            audit_rows = list(csv.DictReader(handle))
+        audit_rows[0].update(
+            primary_selected_candidate_key="",
+            primary_decision="rejected",
+            primary_reason="The candidate does not resolve the named source.",
+            audit_selected_candidate_key="",
+            audit_decision="rejected",
+            audit_reason="Independent review rejects the candidate identity.",
+            final_selected_candidate_key="",
+            final_decision="rejected",
+            final_reason="Independent review rejects the candidate identity.",
+            inspected_primary_url="",
+        )
+        self.write_csv(audit_path, list(search.LINEAGE_AUDIT_HEADERS), audit_rows)
+
+        ledger_path = run_dir.parent / "global/lineage_ledger.csv"
+        with ledger_path.open(encoding="utf-8", newline="") as handle:
+            ledger_rows = list(csv.DictReader(handle))
+        ledger_rows[0].update(final_candidate_key="", status="rejected")
+        self.write_csv(ledger_path, list(search.LINEAGE_LEDGER_HEADERS), ledger_rows)
+        self.assertIn(
+            "unresolved lineage ledger identity fields populated",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+        for field in ("title", "year", "doi", "pmid", "primary_url"):
+            ledger_rows[0][field] = ""
+        self.write_csv(ledger_path, list(search.LINEAGE_LEDGER_HEADERS), ledger_rows)
+        self.assertEqual(search.validate_lineage(self.root, run_dir), [])
 
     def test_external_boundary_rejects_filtered_status_change(self):
         self.make_external_boundary_fixture()

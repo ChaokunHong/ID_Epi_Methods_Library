@@ -8,6 +8,7 @@ import hashlib
 import importlib.util
 import json
 import math
+import os
 from pathlib import Path, PurePosixPath
 import re
 import stat
@@ -82,7 +83,6 @@ CELL_REQUIRED_FIELDS = (
     "search_id",
     "lane",
     "family",
-    "source",
     "query",
     "date_start",
     "date_end",
@@ -153,6 +153,16 @@ GLOBAL_INDEX_HEADERS = (
     "candidate_key", "waves", "wave_source_row_sha256s", "screening_path",
     "final_decision", "final_proposed_record_type", "final_reason_code",
     "duplicate_disposition",
+)
+CONFIG_REQUIRED_FIELDS = (
+    "schema_version",
+    "applied_date_start",
+    "applied_date_end",
+    "source",
+    "family_method_field",
+    "venue_method_field",
+    "infectious_disease_block",
+    "families",
 )
 
 COMPILED_HEADERS = (
@@ -275,7 +285,23 @@ def _read_csv(path: Path, kind: str) -> tuple[list[str] | None, list[dict[str, s
     try:
         with path.open("r", encoding="utf-8", newline="") as handle:
             reader = csv.DictReader(handle, strict=True)
-            return reader.fieldnames, list(reader), []
+            rows: list[dict[str, str]] = []
+            errors: list[str] = []
+            for row in reader:
+                headers = reader.fieldnames or []
+                if None in row or any(row.get(header) is None for header in headers):
+                    errors.append(
+                        f"CSV row width mismatch: {kind}: {path}: line {reader.line_num}"
+                    )
+                rows.append(
+                    {
+                        header: row.get(header)
+                        if isinstance(row.get(header), str)
+                        else ""
+                        for header in headers
+                    }
+                )
+            return reader.fieldnames, rows, errors
     except (csv.Error, UnicodeError, OSError) as error:
         return None, [], [_error(kind, path, error)]
 
@@ -303,8 +329,44 @@ def validate_configuration(root: Path) -> list[str]:
         return json_errors or ["invalid discovery query JSON: expected object"]
     config = config_object
     errors: list[str] = []
+    for field in CONFIG_REQUIRED_FIELDS:
+        if field not in config:
+            errors.append(f"missing discovery configuration field: {field}")
+    if config.get("schema_version") != 1:
+        errors.append("invalid discovery configuration field: schema_version")
+    for field in (
+        "applied_date_start",
+        "applied_date_end",
+        "source",
+        "family_method_field",
+        "venue_method_field",
+        "infectious_disease_block",
+    ):
+        if not isinstance(config.get(field), str) or not config.get(field, "").strip():
+            errors.append(f"invalid discovery configuration field: {field}")
+    if config.get("source") != "pubmed":
+        errors.append("invalid discovery configuration field: source")
+    if config.get("family_method_field") != "Title":
+        errors.append("invalid discovery configuration field: family_method_field")
+    if config.get("venue_method_field") != "Title/Abstract":
+        errors.append("invalid discovery configuration field: venue_method_field")
+    configured_dates = {
+        field: _parse_date(config.get(field))
+        for field in ("applied_date_start", "applied_date_end")
+    }
+    for field, parsed in configured_dates.items():
+        if field in config and parsed is None:
+            errors.append(f"invalid discovery configuration field: {field}")
+    if (
+        configured_dates["applied_date_start"] is not None
+        and configured_dates["applied_date_end"] is not None
+        and configured_dates["applied_date_start"]
+        > configured_dates["applied_date_end"]
+    ):
+        errors.append("discovery configuration date range inverted")
     families = config.get("families")
     if not isinstance(families, list):
+        errors.append("invalid discovery configuration field: families")
         families = []
     names = {
         row.get("family")
@@ -368,7 +430,11 @@ def validate_configuration(root: Path) -> list[str]:
 
     try:
         cells = build_search_cells(root, date(2000, 1, 1))
-    except (KeyError, TypeError, ValueError):
+    except Exception as error:
+        errors.append(
+            "unable to build search cells: "
+            f"{type(error).__name__}: {error}"
+        )
         cells = []
     ids = [cell.search_id for cell in cells]
     if len(ids) != len(set(ids)):
@@ -425,6 +491,59 @@ def _safe_relative(raw: object) -> str | None:
     return path.as_posix()
 
 
+def _manifest_artifact_sha256(run_dir: Path, relative: str) -> tuple[str | None, str | None]:
+    parts = PurePosixPath(relative).parts
+    open_fds: list[int] = []
+    try:
+        current_fd = os.open(run_dir, os.O_RDONLY | os.O_DIRECTORY)
+        open_fds.append(current_fd)
+        for index, part in enumerate(parts):
+            try:
+                mode = os.stat(part, dir_fd=current_fd, follow_symlinks=False).st_mode
+            except FileNotFoundError:
+                return None, f"manifest file missing: {relative}"
+            if stat.S_ISLNK(mode):
+                return None, f"manifest path contains symlink: {relative}"
+            if index < len(parts) - 1:
+                if not stat.S_ISDIR(mode):
+                    return None, f"manifest parent is not a directory: {relative}"
+                try:
+                    current_fd = os.open(
+                        part,
+                        os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW,
+                        dir_fd=current_fd,
+                    )
+                except OSError:
+                    return None, f"manifest path contains symlink: {relative}"
+                open_fds.append(current_fd)
+                continue
+            if not stat.S_ISREG(mode):
+                return None, f"manifest path is not a regular file: {relative}"
+            try:
+                artifact_fd = os.open(
+                    part,
+                    os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW,
+                    dir_fd=current_fd,
+                )
+            except OSError:
+                return None, f"manifest path contains symlink: {relative}"
+            open_fds.append(artifact_fd)
+            if not stat.S_ISREG(os.fstat(artifact_fd).st_mode):
+                return None, f"manifest path is not a regular file: {relative}"
+            digest = hashlib.sha256()
+            while chunk := os.read(artifact_fd, 1024 * 1024):
+                digest.update(chunk)
+            return digest.hexdigest(), None
+    except OSError as error:
+        return None, _error("manifest file unreadable", Path(relative), error)
+    finally:
+        for descriptor in reversed(open_fds):
+            try:
+                os.close(descriptor)
+            except OSError:
+                pass
+
+
 def _validate_manifest(run_dir: Path) -> tuple[list[str], dict[str, str]]:
     path = run_dir / "MANIFEST_SHA256.json"
     if not path.is_file():
@@ -451,19 +570,9 @@ def _validate_manifest(run_dir: Path) -> tuple[list[str], dict[str, str]]:
             errors.append(f"invalid manifest sha256: {relative}")
             continue
         entries[relative] = digest
-        artifact = run_dir / relative
-        try:
-            mode = artifact.lstat().st_mode
-        except OSError:
-            errors.append(f"manifest file missing: {relative}")
-            continue
-        if artifact.is_symlink() or not stat.S_ISREG(mode):
-            errors.append(f"manifest path is not a regular file: {relative}")
-            continue
-        try:
-            actual = hashlib.sha256(artifact.read_bytes()).hexdigest()
-        except OSError as error:
-            errors.append(_error("manifest file unreadable", Path(relative), error))
+        actual, artifact_error = _manifest_artifact_sha256(run_dir, relative)
+        if artifact_error is not None:
+            errors.append(artifact_error)
             continue
         if actual != digest:
             errors.append(f"checksum mismatch: {relative}")
@@ -601,6 +710,7 @@ def _validate_cell(
     owned_esearch_paths: set[str],
     owned_page_paths: set[str],
     owned_raw_paths: set[str],
+    expected_source: str,
     expected_parent: dict[str, object] | None = None,
 ) -> list[str]:
     if not isinstance(cell, dict):
@@ -621,8 +731,10 @@ def _validate_cell(
     expected_parent_id = str(expected_parent["search_id"]) if expected_parent else ""
     if cell["parent_search_id"] != expected_parent_id:
         errors.append(f"parent_search_id mismatch: {search_id}")
+    if "source" in cell and cell["source"] != expected_source:
+        errors.append(f"cell source mismatch: {search_id}")
     if expected_parent is not None:
-        for field in ("lane", "family", "source"):
+        for field in ("lane", "family"):
             if cell[field] != expected_parent[field]:
                 errors.append(f"child {field} mismatch: {search_id}")
         if _query_semantic_core(cell["query"]) != _query_semantic_core(
@@ -732,6 +844,7 @@ def _validate_cell(
                     owned_esearch_paths,
                     owned_page_paths,
                     owned_raw_paths,
+                    expected_source,
                     cell,
                 )
             )
@@ -932,6 +1045,7 @@ def validate_search_run(run_dir: Path) -> list[str]:
                     owned_esearch_paths,
                     owned_page_paths,
                     owned_raw_paths,
+                    str(payload["source"]),
                 )
             )
     if "compiled_candidates_raw.csv" not in manifest:
@@ -1326,6 +1440,13 @@ def _validate_lineage_decisions(
                     or ledger.get("primary_url") != audit.get("inspected_primary_url")
                 ):
                     errors.append(f"lineage ledger primary URL mismatch: {decision_id}")
+        elif any(
+            ledger.get(field, "")
+            for field in ("title", "year", "doi", "pmid", "primary_url")
+        ):
+            errors.append(
+                f"unresolved lineage ledger identity fields populated: {decision_id}"
+            )
     if sorted(covered_queries) != sorted(receipt_queries) or len(covered_queries) != len(
         set(covered_queries)
     ):
@@ -1866,7 +1987,16 @@ def main(argv: Sequence[str] | None = None) -> int:
         errors = validate_configuration(args.root)
         if errors:
             return _emit(errors)
-        for cell in build_search_cells(args.root, args.date):
+        try:
+            cells = build_search_cells(args.root, args.date)
+        except Exception as error:
+            return _emit(
+                [
+                    "unable to build search cells: "
+                    f"{type(error).__name__}: {error}"
+                ]
+            )
+        for cell in cells:
             print(json.dumps(asdict(cell), sort_keys=True))
         return 0
     if args.command == "verify":
