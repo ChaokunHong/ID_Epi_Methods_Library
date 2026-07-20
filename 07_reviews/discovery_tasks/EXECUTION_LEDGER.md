@@ -10,8 +10,8 @@ Recovery rule: trust this ledger together with live Git history. Resolve a passi
 
 | task | status | base_sha | implementation_sha | fix_shas | reviewed_head | review_verdict | review_receipt_path | next_action |
 |---|---|---|---|---|---|---|---|---|
-| 1 | pending | — | — | — | — | — | `07_reviews/discovery_tasks/TASK_1_REVIEW.md` | dispatch fresh Task 1 implementer |
-| 2 | pending | — | — | — | — | — | `07_reviews/discovery_tasks/TASK_2_REVIEW.md` | wait for Task 1 passing receipt |
+| 1 | complete | `303d6b178f5be4ad0f7b3eee20f0f4631bff73e9` | `2da0eef6bf5fe6038548c64649b3ecc26025cdd8` | none | `2da0eef6bf5fe6038548c64649b3ecc26025cdd8` | PASS — 0 Critical, 0 Important, 0 Minor | `07_reviews/discovery_tasks/TASK_1_REVIEW.md` | dispatch fresh Task 2 implementer |
+| 2 | pending | — | — | — | — | — | `07_reviews/discovery_tasks/TASK_2_REVIEW.md` | Task 1 passing receipt recorded; dispatch fresh Task 2 implementer |
 | 3 | pending | — | — | — | — | — | `07_reviews/discovery_tasks/TASK_3_REVIEW.md` | wait for Task 2 passing receipt |
 | 4 | pending | — | — | — | — | — | `07_reviews/discovery_tasks/TASK_4_REVIEW.md` | wait for Task 3 passing receipt |
 | 5 | pending | — | — | — | — | — | `07_reviews/discovery_tasks/TASK_5_REVIEW.md` | wait for Task 4 passing receipt |
