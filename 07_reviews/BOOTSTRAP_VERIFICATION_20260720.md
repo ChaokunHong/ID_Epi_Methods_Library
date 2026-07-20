@@ -407,3 +407,35 @@ The deferred Minor concerns redundant `try`/`except` plus `self.fail` wrappers i
 This receipt records review acceptance only. It does not claim that final controller validation, merge to `main`, post-merge validation, push, or publication has occurred. Those actions remain sequentially pending. No broad scientific search, data download, simulation, or flagship-selection work has started.
 
 The exact next action is controller-owned final validation of the reviewed branch, followed by merge to `main`, post-merge validation, and push of only verified `main` with an exact remote-SHA equality receipt.
+
+## Bootstrap publication receipt addendum — 2026-07-20
+
+This addendum preserves the earlier pre-publication chronology and records the first verified publication of reviewed `main`. It does not rewrite the historical pending-state receipts above.
+
+At the publication gate, the controller ran:
+
+```bash
+git push -u origin main
+git rev-parse main
+git rev-parse origin/main
+git ls-remote origin refs/heads/main
+```
+
+All commands exited `0`. `git push -u origin main` created the remote `main` branch and configured the local branch to track `origin/main`. The exact equality receipt was:
+
+```text
+local_main=36379bf4d648909854140d383959ebeefe88e569
+origin_main=36379bf4d648909854140d383959ebeefe88e569
+remote_main=36379bf4d648909854140d383959ebeefe88e569
+initial_publication_equality=PASS
+```
+
+The live remote query returned:
+
+```text
+36379bf4d648909854140d383959ebeefe88e569	refs/heads/main
+```
+
+This equality was verified before authoring this post-publication receipt. The receipt commit cannot embed its own SHA; resolve the exact current commit with `git rev-parse HEAD`. After this receipt commit is pushed, the controller must rerun `git rev-parse HEAD`, `git rev-parse origin/main`, and `git ls-remote origin refs/heads/main` and confirm final equality.
+
+Bootstrap is complete and published. The separate methods/problem-first broad applied-paper and authoritative method-source search execution plan is pending owner review. No broad search, data download, formal simulation, or flagship selection has started.
