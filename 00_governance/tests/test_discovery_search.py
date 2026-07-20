@@ -13,6 +13,8 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import urllib.error
+import urllib.parse
 from unittest import mock
 
 
@@ -132,7 +134,19 @@ class DiscoverySearchTests(unittest.TestCase):
         reported_count: int = 1,
     ) -> tuple[dict[str, object], list[dict[str, str]]]:
         stem = search_id
-        esearch = self.add_artifact(run_dir, f"raw/{stem}.esearch.json", b"{}")
+        esearch = self.add_artifact(
+            run_dir,
+            f"raw/{stem}.esearch.json",
+            json.dumps(
+                {
+                    "esearchresult": {
+                        "count": str(reported_count),
+                        "webenv": "test-webenv",
+                        "querykey": "1",
+                    }
+                }
+            ).encode(),
+        )
         page_receipts: list[dict[str, object]] = []
         files = [esearch]
         for retstart in range(0, reported_count, 200):
@@ -200,7 +214,19 @@ class DiscoverySearchTests(unittest.TestCase):
         self.copy_configuration()
         run_dir = self.root / "split-run"
         run_dir.mkdir(parents=True)
-        parent_esearch = self.add_artifact(run_dir, "raw/parent.esearch.json", b"{}")
+        parent_esearch = self.add_artifact(
+            run_dir,
+            "raw/parent.esearch.json",
+            json.dumps(
+                {
+                    "esearchresult": {
+                        "count": "10000",
+                        "webenv": "unused-parent",
+                        "querykey": "1",
+                    }
+                }
+            ).encode(),
+        )
         first, first_files = self.make_leaf(
             run_dir,
             "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-02",
@@ -342,7 +368,29 @@ class DiscoverySearchTests(unittest.TestCase):
         query_id = "SEARCH-20260720-LINEAGE-CAUSAL-01"
         named_source_id = "NS-CAUSAL-001"
         candidate_key = "DOI:10.1234/example"
-        response = self.add_artifact(run_dir, "raw/crossref.json", b"{}")
+        response = self.add_artifact(
+            run_dir,
+            "raw/crossref.json",
+            json.dumps(
+                {
+                    "status": "ok",
+                    "message": {
+                        "total-results": 10,
+                        "items": [
+                            {
+                                "DOI": "10.1234/example",
+                                "title": ["Example method"],
+                                "published": {"date-parts": [[2020]]},
+                                "container-title": ["Example Journal"],
+                                "author": [{"family": "Smith"}],
+                                "type": "journal-article",
+                                "URL": "https://doi.org/10.1234/example",
+                            }
+                        ],
+                    },
+                }
+            ).encode(),
+        )
         pubmed_headers = [
             "candidate_key", "query_id", "named_source_id", "candidate_rank",
             "pmid", "doi", "title", "year", "journal", "authors", "source_url",
@@ -531,7 +579,15 @@ class DiscoverySearchTests(unittest.TestCase):
                     esearch = self.add_artifact(
                         wave_dir,
                         f"raw/{configured_cell.search_id}.esearch.json",
-                        b"{}",
+                        json.dumps(
+                            {
+                                "esearchresult": {
+                                    "count": "0",
+                                    "webenv": "empty-history",
+                                    "querykey": "1",
+                                }
+                            }
+                        ).encode(),
                     )
                     manifest["files"].append(esearch)
                     cells.append(
@@ -635,6 +691,1179 @@ class DiscoverySearchTests(unittest.TestCase):
 
     def mutate_source_porcelain_fixture(self) -> None:
         (self.source_root / "new-untracked.txt").write_text("new\n", encoding="utf-8")
+
+    @staticmethod
+    def fake_response(data: bytes):
+        class Response:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self) -> bytes:
+                return data
+
+        return Response()
+
+    @staticmethod
+    def pubmed_xml(records: list[dict[str, str]]) -> bytes:
+        rendered: list[str] = ["<PubmedArticleSet>"]
+        for record in records:
+            record_type = record.get("record_type", "PubmedArticle")
+            rendered.append(
+                f"""<{record_type}>
+  <MedlineCitation>
+    <PMID>{record.get('pmid', '')}</PMID>
+    <Article>
+      <Journal><Title>{record.get('journal', 'Journal')}</Title><JournalIssue><PubDate><Year>{record.get('year', '2020')}</Year></PubDate></JournalIssue></Journal>
+      <ArticleTitle>{record.get('title', 'Title')}</ArticleTitle>
+      <Abstract><AbstractText>{record.get('abstract', 'Abstract')}</AbstractText></Abstract>
+      <AuthorList><Author><ForeName>Ada</ForeName><LastName>Lovelace</LastName></Author></AuthorList>
+      <PublicationTypeList><PublicationType>Journal Article</PublicationType></PublicationTypeList>
+    </Article>
+  </MedlineCitation>
+  <PubmedData><ArticleIdList><ArticleId IdType="doi">{record.get('doi', '')}</ArticleId></ArticleIdList></PubmedData>
+</{record_type}>"""
+            )
+        rendered.append("</PubmedArticleSet>")
+        return "".join(rendered).encode()
+
+    def test_execute_pubmed_cell_writes_atomic_complete_artifacts(self):
+        output = self.root / "wave"
+        query = (
+            '("difference in differences"[Title]) AND infection*[Title/Abstract] '
+            'AND ("2020/01/01"[Date - Publication] : '
+            '"2020/12/31"[Date - Publication])'
+        )
+        cell = search.SearchCell(
+            search_id="SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+            lane="FAMILY",
+            family="causal_policy",
+            source="pubmed",
+            query=query,
+            parent_search_id="",
+            date_start="2020/01/01",
+            date_end="2020/12/31",
+        )
+        calls: list[dict[str, list[str]]] = []
+
+        def opener(request, timeout=0):
+            del timeout
+            parsed = urllib.parse.urlparse(request.full_url)
+            params = urllib.parse.parse_qs(parsed.query)
+            calls.append(params)
+            if parsed.path.endswith("esearch.fcgi"):
+                self.assertEqual(params["term"], [query])
+                self.assertEqual(params["usehistory"], ["y"])
+                return self.fake_response(
+                    json.dumps(
+                        {"esearchresult": {"count": "201", "webenv": "ENV-EXACT", "querykey": "7"}}
+                    ).encode()
+                )
+            retstart = int(params["retstart"][0])
+            count = 200 if retstart == 0 else 1
+            self.assertEqual(params["WebEnv"], ["ENV-EXACT"])
+            self.assertEqual(params["query_key"], ["7"])
+            return self.fake_response(
+                self.pubmed_xml(
+                    [
+                        {
+                            "pmid": str(retstart + offset + 1),
+                            "doi": f"10.1000/{retstart + offset + 1}",
+                            "title": f"Paper {retstart + offset + 1}",
+                            "record_type": "PubmedBookArticle" if offset == count - 1 else "PubmedArticle",
+                        }
+                        for offset in range(count)
+                    ]
+                )
+            )
+
+        with mock.patch("time.sleep") as sleep:
+            receipt = search.execute_pubmed_cell(
+                cell, output, "test@example.invalid", opener=opener
+            )
+
+        self.assertEqual(receipt["query"], query)
+        self.assertEqual(receipt["webenv"], "ENV-EXACT")
+        self.assertEqual(receipt["query_key"], "7")
+        self.assertEqual(receipt["retrieved_count"], 201)
+        self.assertEqual(
+            [(page["retstart"], page["retmax"], page["parsed_count"]) for page in receipt["efetch_pages"]],
+            [(0, 200, 200), (200, 1, 1)],
+        )
+        manifest = json.loads((output / "MANIFEST_SHA256.json").read_text())
+        self.assertEqual(len(manifest["files"]), 3)
+        self.assertTrue(all((output / item["path"]).is_file() for item in manifest["files"]))
+        self.assertEqual(list(output.rglob("*.tmp")), [])
+        self.assertNotIn("api_key", json.dumps(receipt))
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(sleep.call_count, 2)
+
+    def test_compile_flags_title_only_possible_duplicates(self):
+        run_dir = self.root / "run"
+        run_dir.mkdir()
+        page_a = self.add_artifact(
+            run_dir,
+            "raw/a.xml",
+            self.pubmed_xml(
+                [{"pmid": "101", "doi": "10.1000/a", "title": "Café transmission", "year": "2020"}]
+            ),
+        )
+        page_b = self.add_artifact(
+            run_dir,
+            "raw/b.xml",
+            self.pubmed_xml(
+                [{"pmid": "202", "doi": "10.1000/b", "title": "CAFÉ   TRANSMISSION", "year": "2021"}]
+            ),
+        )
+        receipt = {
+            "cells": [
+                {
+                    "search_id": "SEARCH-1",
+                    "lane": "FAMILY",
+                    "family": "causal_policy",
+                    "cell_type": "leaf",
+                    "efetch_pages": [{"path": page_a["path"], "sha256": page_a["sha256"]}],
+                },
+                {
+                    "search_id": "SEARCH-2",
+                    "lane": "VENUE",
+                    "family": "causal_policy",
+                    "cell_type": "leaf",
+                    "efetch_pages": [{"path": page_b["path"], "sha256": page_b["sha256"]}],
+                },
+            ]
+        }
+        (run_dir / "RUN_RECEIPT.json").write_text(json.dumps(receipt), encoding="utf-8")
+        (run_dir / "MANIFEST_SHA256.json").write_text(
+            json.dumps({"algorithm": "SHA256", "files": [page_a, page_b]}),
+            encoding="utf-8",
+        )
+
+        rows = search.compile_pubmed_candidates(run_dir)
+
+        self.assertEqual(len(rows), 2)
+        self.assertNotEqual(rows[0]["candidate_key"], rows[1]["candidate_key"])
+        groups = {row["possible_duplicate_group"] for row in rows}
+        self.assertEqual(len(groups), 1)
+        self.assertNotEqual(groups, {""})
+        self.assertTrue((run_dir / "compiled_candidates_raw.csv").is_file())
+        compiled_entry = next(
+            item
+            for item in json.loads((run_dir / "MANIFEST_SHA256.json").read_text())["files"]
+            if item["path"] == "compiled_candidates_raw.csv"
+        )
+        self.assertEqual(compiled_entry["sha256"], self.sha(run_dir / compiled_entry["path"]))
+
+    def test_pubmed_http_and_timeout_failures_are_stable_and_atomic(self):
+        cell = search.SearchCell(
+            "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+            "FAMILY", "causal_policy", "pubmed", "query", "",
+            "2020/01/01", "2020/12/31",
+        )
+        failures = (
+            urllib.error.HTTPError("https://example.invalid", 503, "unavailable", {}, None),
+            TimeoutError("timed out"),
+        )
+        for index, failure in enumerate(failures):
+            with self.subTest(failure=type(failure).__name__):
+                output = self.root / f"failure-{index}"
+
+                def opener(_request, timeout=0):
+                    del timeout
+                    raise failure
+
+                with self.assertRaisesRegex(search.DiscoveryExecutionError, "network request failed"):
+                    search.execute_pubmed_cell(
+                        cell, output, "test@example.invalid", opener=opener
+                    )
+                self.assertEqual(list(output.rglob("*.tmp")), [])
+                self.assertEqual(list((output / "raw").glob("*")), [])
+
+    def test_malformed_esearch_json_leaves_no_final_artifact(self):
+        output = self.root / "malformed-esearch"
+        cell = search.SearchCell(
+            "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+            "FAMILY", "causal_policy", "pubmed", "query", "",
+            "2020/01/01", "2020/12/31",
+        )
+
+        with self.assertRaisesRegex(search.DiscoveryExecutionError, "malformed PubMed ESearch JSON"):
+            search.execute_pubmed_cell(
+                cell,
+                output,
+                "test@example.invalid",
+                opener=lambda *_args, **_kwargs: self.fake_response(b"not-json"),
+            )
+        self.assertEqual(list(output.rglob("*.tmp")), [])
+        self.assertEqual(list((output / "raw").glob("*")), [])
+
+    def test_malformed_xml_and_count_mismatch_leave_no_final_page(self):
+        cell = search.SearchCell(
+            "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+            "FAMILY", "causal_policy", "pubmed", "query", "",
+            "2020/01/01", "2020/12/31",
+        )
+        for name, page, message in (
+            ("xml", b"<not-closed", "malformed PubMed EFetch XML"),
+            ("count", b"<PubmedArticleSet />", "PubMed count mismatch"),
+        ):
+            with self.subTest(name=name):
+                output = self.root / f"bad-{name}"
+                responses = iter(
+                    (
+                        self.fake_response(
+                            json.dumps(
+                                {"esearchresult": {"count": "1", "webenv": "ENV", "querykey": "1"}}
+                            ).encode()
+                        ),
+                        self.fake_response(page),
+                    )
+                )
+                with mock.patch("time.sleep"):
+                    with self.assertRaisesRegex(search.DiscoveryExecutionError, message):
+                        search.execute_pubmed_cell(
+                            cell,
+                            output,
+                            "test@example.invalid",
+                            opener=lambda *_args, **_kwargs: next(responses),
+                        )
+                self.assertEqual(list(output.rglob("*.tmp")), [])
+                self.assertEqual(list((output / "raw").glob("*.xml")), [])
+                self.assertEqual(len(list((output / "raw").glob("*.esearch.json"))), 1)
+
+    def test_recursive_split_manifests_parents_and_year_month_day_leaves(self):
+        output = self.root / "split"
+        cell = search.SearchCell(
+            "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+            "FAMILY", "causal_policy", "pubmed",
+            'method AND ("2020/01/01"[Date - Publication] : "2021/12/31"[Date - Publication])',
+            "", "2020/01/01", "2021/12/31",
+        )
+        counts = {
+            ("2020/01/01", "2021/12/31"): 10000,
+            ("2020/01/01", "2020/12/31"): 10000,
+            ("2021/01/01", "2021/12/31"): 0,
+            ("2020/01/01", "2020/01/31"): 10000,
+        }
+        for month in range(2, 13):
+            last = 29 if month == 2 else 30 if month in {4, 6, 9, 11} else 31
+            counts[(f"2020/{month:02d}/01", f"2020/{month:02d}/{last:02d}")] = 0
+        for day in range(1, 32):
+            counts[(f"2020/01/{day:02d}", f"2020/01/{day:02d}")] = 9999 if day == 1 else 1 if day == 2 else 0
+        efetch_offsets: dict[str, int] = {}
+
+        def opener(request, timeout=0):
+            del timeout
+            parsed = urllib.parse.urlparse(request.full_url)
+            params = urllib.parse.parse_qs(parsed.query)
+            if parsed.path.endswith("esearch.fcgi"):
+                interval = search._query_date_interval(params["term"][0])
+                self.assertIn(interval, counts)
+                query_key = f"Q{len(efetch_offsets) + 1}"
+                efetch_offsets[query_key] = counts[interval]
+                return self.fake_response(
+                    json.dumps(
+                        {
+                            "esearchresult": {
+                                "count": str(counts[interval]),
+                                "webenv": f"ENV-{query_key}",
+                                "querykey": query_key,
+                            }
+                        }
+                    ).encode()
+                )
+            query_key = params["query_key"][0]
+            retmax = int(params["retmax"][0])
+            return self.fake_response(
+                b"<PubmedArticleSet>"
+                + b"<PubmedArticle />" * retmax
+                + b"</PubmedArticleSet>"
+            )
+
+        with mock.patch("time.sleep"):
+            receipt = search.execute_pubmed_cell(
+                cell, output, "test@example.invalid", opener=opener
+            )
+
+        self.assertEqual(receipt["cell_type"], "split_parent")
+        self.assertEqual(len(receipt["children"]), 2)
+        year_2020 = receipt["children"][0]
+        self.assertEqual(year_2020["cell_type"], "split_parent")
+        self.assertEqual(len(year_2020["children"]), 12)
+        january = year_2020["children"][0]
+        self.assertEqual(january["cell_type"], "split_parent")
+        self.assertEqual(len(january["children"]), 31)
+        leaves = search._leaf_receipts([receipt])
+        self.assertTrue(all(leaf["reported_count"] < 10000 for leaf in leaves))
+        manifest = json.loads((output / "MANIFEST_SHA256.json").read_text())
+        esearch_entries = [item for item in manifest["files"] if item["path"].endswith(".esearch.json")]
+        self.assertEqual(len(esearch_entries), 46)
+        self.assertNotIn("webenv", receipt)
+        self.assertNotIn("query_key", receipt)
+
+    def test_unsplittable_pubmed_day_stops_before_efetch(self):
+        output = self.root / "unsplittable"
+        cell = search.SearchCell(
+            "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+            "FAMILY", "causal_policy", "pubmed",
+            'method AND ("2020/01/01"[Date - Publication] : "2020/01/01"[Date - Publication])',
+            "", "2020/01/01", "2020/01/01",
+        )
+
+        def opener(request, timeout=0):
+            del timeout
+            self.assertTrue(request.full_url.startswith(search.PUBMED_ESEARCH_URL))
+            return self.fake_response(
+                json.dumps(
+                    {"esearchresult": {"count": "10000", "webenv": "ENV", "querykey": "1"}}
+                ).encode()
+            )
+
+        with self.assertRaisesRegex(search.DiscoveryExecutionError, "unsplittable PubMed cell"):
+            search.execute_pubmed_cell(
+                cell, output, "test@example.invalid", opener=opener
+            )
+        manifest = json.loads((output / "MANIFEST_SHA256.json").read_text())
+        self.assertEqual(len(manifest["files"]), 1)
+        self.assertEqual(list((output / "raw").glob("*.xml")), [])
+
+    def test_run_resume_skips_valid_leaf_and_restarts_tampered_leaf_with_fresh_history(self):
+        self.copy_configuration()
+        output = self.root / "resume"
+        cell = search.SearchCell(
+            "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+            "FAMILY", "causal_policy", "pubmed",
+            'method AND ("2020/01/01"[Date - Publication] : "2020/12/31"[Date - Publication])',
+            "", "2020/01/01", "2020/12/31",
+        )
+
+        def opener_for(history: str, calls: list[str]):
+            def opener(request, timeout=0):
+                del timeout
+                parsed = urllib.parse.urlparse(request.full_url)
+                calls.append(parsed.path)
+                if parsed.path.endswith("esearch.fcgi"):
+                    return self.fake_response(
+                        json.dumps(
+                            {"esearchresult": {"count": "1", "webenv": history, "querykey": "1"}}
+                        ).encode()
+                    )
+                return self.fake_response(
+                    self.pubmed_xml([{"pmid": "1", "title": "Resume paper"}])
+                )
+
+            return opener
+
+        first_calls: list[str] = []
+        with mock.patch("time.sleep"):
+            first = search.execute_pubmed_run(
+                self.root,
+                [cell],
+                output,
+                "test@example.invalid",
+                opener=opener_for("ENV-OLD", first_calls),
+            )
+        self.assertEqual(first["cells"][0]["webenv"], "ENV-OLD")
+        self.assertEqual(len(first_calls), 2)
+
+        skipped_calls: list[str] = []
+        second = search.execute_pubmed_run(
+            self.root,
+            [cell],
+            output,
+            "test@example.invalid",
+            opener=opener_for("ENV-SHOULD-NOT-BE-USED", skipped_calls),
+        )
+        self.assertEqual(skipped_calls, [])
+        self.assertEqual(second["cells"][0]["webenv"], "ENV-OLD")
+
+        page = next((output / "raw").glob("*.xml"))
+        page.write_bytes(page.read_bytes() + b"tampered")
+        fresh_calls: list[str] = []
+        with mock.patch("time.sleep"):
+            third = search.execute_pubmed_run(
+                self.root,
+                [cell],
+                output,
+                "test@example.invalid",
+                opener=opener_for("ENV-FRESH", fresh_calls),
+            )
+        self.assertEqual(third["cells"][0]["webenv"], "ENV-FRESH")
+        self.assertEqual(len(fresh_calls), 2)
+        self.assertEqual(list(output.rglob("*.tmp")), [])
+        self.assertNotIn("api_key", (output / "RUN_RECEIPT.json").read_text())
+        self.assertEqual(search.validate_search_run(output), [])
+
+        page = next((output / "raw").glob("*.xml"))
+        page.write_bytes(b"<PubmedArticleSet />")
+        changed_sha = self.sha(page)
+        manifest_path = output / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        next(item for item in manifest["files"] if item["path"].endswith(".xml"))[
+            "sha256"
+        ] = changed_sha
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        receipt_path = output / "RUN_RECEIPT.json"
+        forged = json.loads(receipt_path.read_text())
+        forged["cells"][0]["efetch_pages"][0]["sha256"] = changed_sha
+        receipt_path.write_text(json.dumps(forged), encoding="utf-8")
+        semantic_calls: list[str] = []
+        with mock.patch("time.sleep"):
+            fourth = search.execute_pubmed_run(
+                self.root,
+                [cell],
+                output,
+                "test@example.invalid",
+                opener=opener_for("ENV-SEMANTIC-FRESH", semantic_calls),
+            )
+        self.assertEqual(fourth["cells"][0]["webenv"], "ENV-SEMANTIC-FRESH")
+        self.assertEqual(len(semantic_calls), 2)
+
+    def test_compile_identifier_matches_auto_deduplicate_and_merge_provenance(self):
+        run_dir = self.root / "dedup"
+        run_dir.mkdir()
+        first = self.add_artifact(
+            run_dir,
+            "raw/first.xml",
+            self.pubmed_xml([{"pmid": "101", "doi": "10.1000/SAME", "title": "First rendering"}]),
+        )
+        second = self.add_artifact(
+            run_dir,
+            "raw/second.xml",
+            self.pubmed_xml([{"pmid": "202", "doi": "https://doi.org/10.1000/same", "title": "Second rendering"}]),
+        )
+        (run_dir / "RUN_RECEIPT.json").write_text(
+            json.dumps(
+                {
+                    "cells": [
+                        {
+                            "search_id": "SEARCH-A", "lane": "FAMILY",
+                            "family": "causal_policy", "cell_type": "leaf",
+                            "efetch_pages": [first],
+                        },
+                        {
+                            "search_id": "SEARCH-B", "lane": "VENUE",
+                            "family": "simulation_methods", "cell_type": "leaf",
+                            "efetch_pages": [second],
+                        },
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+        (run_dir / "MANIFEST_SHA256.json").write_text(
+            json.dumps({"algorithm": "SHA256", "files": [first, second]}),
+            encoding="utf-8",
+        )
+
+        rows = search.compile_pubmed_candidates(run_dir)
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["search_ids"], "SEARCH-A|SEARCH-B")
+        self.assertEqual(rows[0]["lanes"], "FAMILY|VENUE")
+        self.assertEqual(rows[0]["preliminary_families"], "causal_policy|simulation_methods")
+        self.assertEqual(rows[0]["deduplication_basis"], "doi")
+
+    def test_compile_rejects_page_not_matching_its_manifest_receipt(self):
+        run_dir = self.root / "compile-lock"
+        run_dir.mkdir()
+        page = self.add_artifact(
+            run_dir,
+            "raw/page.xml",
+            self.pubmed_xml([{"pmid": "1", "title": "Manifested paper"}]),
+        )
+        (run_dir / "RUN_RECEIPT.json").write_text(
+            json.dumps(
+                {
+                    "cells": [
+                        {
+                            "search_id": "SEARCH-A", "lane": "FAMILY",
+                            "family": "causal_policy", "cell_type": "leaf",
+                            "efetch_pages": [page],
+                        }
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+        (run_dir / "MANIFEST_SHA256.json").write_text(
+            json.dumps({"algorithm": "SHA256", "files": [page]}),
+            encoding="utf-8",
+        )
+        (run_dir / "raw/page.xml").write_bytes(
+            self.pubmed_xml([{"pmid": "2", "title": "Unmanifested replacement"}])
+        )
+        with self.assertRaisesRegex(
+            search.DiscoveryExecutionError, "compile input checksum mismatch"
+        ):
+            search.compile_pubmed_candidates(run_dir)
+
+    def test_crossref_resolution_is_bounded_manifested_and_has_no_decision(self):
+        output = self.root / "crossref"
+        calls: list[dict[str, list[str]]] = []
+
+        def opener(request, timeout=0):
+            del timeout
+            params = urllib.parse.parse_qs(urllib.parse.urlparse(request.full_url).query)
+            calls.append(params)
+            return self.fake_response(
+                json.dumps(
+                    {
+                        "status": "ok",
+                        "message": {
+                            "total-results": 12,
+                            "items": [
+                                {
+                                    "DOI": "10.1000/ONE",
+                                    "title": ["Method one"],
+                                    "published": {"date-parts": [[2020]]},
+                                    "container-title": ["Journal"],
+                                    "author": [{"family": "Smith", "given": "A"}],
+                                    "type": "journal-article",
+                                    "URL": "https://doi.org/10.1000/one",
+                                },
+                                {
+                                    "title": ["Method two"],
+                                    "published": {"date-parts": [[2021]]},
+                                    "container-title": ["Journal"],
+                                    "author": [{"family": "Jones"}],
+                                    "type": "journal-article",
+                                    "URL": "https://example.invalid/two",
+                                },
+                            ],
+                        },
+                    }
+                ).encode()
+            )
+
+        receipt = search.resolve_crossref_candidates(
+            "SEARCH-20260720-LINEAGE-CAUSAL-01",
+            "Exact method citation Smith 2020",
+            output,
+            "test@example.invalid",
+            opener=opener,
+        )
+
+        self.assertEqual(calls[0]["query.bibliographic"], ["Exact method citation Smith 2020"])
+        self.assertEqual(calls[0]["rows"], ["5"])
+        self.assertEqual(calls[0]["mailto"], ["test@example.invalid"])
+        self.assertNotIn("cursor", calls[0])
+        self.assertEqual(receipt["returned_candidate_count"], 2)
+        self.assertEqual(receipt["total_results"], 12)
+        self.assertEqual(receipt["rows"], 5)
+        self.assertFalse(any("decision" in key for key in receipt))
+        manifest = json.loads((output / "MANIFEST_SHA256.json").read_text())
+        self.assertEqual(len(manifest["files"]), 1)
+        raw = output / receipt["response_path"]
+        self.assertEqual(receipt["response_sha256"], self.sha(raw))
+
+    def wave_two_rows(self, status_by_family: dict[str, str]) -> list[dict[str, str]]:
+        rows: list[dict[str, str]] = []
+        infectious_block = json.loads(
+            (PROJECT_ROOT / search.QUERY_CONFIG_PATH).read_text(encoding="utf-8")
+        )["infectious_disease_block"]
+        tokens = {
+            "causal_policy": "CAUSAL",
+            "surveillance_measurement": "SURVEILLANCE",
+            "spatial_transmission": "SPATIAL",
+            "forecasting_dynamics": "FORECASTING",
+            "evidence_synthesis": "EVIDENCE",
+            "simulation_methods": "SIMULATION",
+        }
+        for number, family in enumerate(sorted(search.FAMILIES), 1):
+            status = status_by_family.get(family, "no_expansion_needed")
+            executed = status == "executed"
+            rows.append(
+                {
+                    "family": family,
+                    "search_id": f"SEARCH-20260720-PUBMED-FAMILY-{tokens[family]}-{number + 1:02d}" if executed else "",
+                    "status": status,
+                    "new_synonyms": "new method label" if executed else "",
+                    "rationale": "The completed Wave 1 review documented this family decision.",
+                    "source_candidate_keys": "PMID:1",
+                    "source": "pubmed" if executed else "",
+                    "query": (
+                        f'new method label[Title] AND {infectious_block} '
+                        'AND ("2010/01/01"[Date - Publication] : "2026/12/31"[Date - Publication])'
+                    ) if executed else "",
+                    "date_start": "2010/01/01" if executed else "",
+                    "date_end": "2026/12/31" if executed else "",
+                    "reviewer": "reviewer-a",
+                }
+            )
+        return rows
+
+    def test_run_wave_rejects_missing_family_and_executes_only_executed_rows(self):
+        self.copy_configuration()
+        output = self.root / "wave_02_synonym_expansion"
+        registry = output / "QUERY_REGISTRY.csv"
+        headers = [
+            "family", "search_id", "status", "new_synonyms", "rationale",
+            "source_candidate_keys", "source", "query", "date_start", "date_end",
+            "reviewer",
+        ]
+        rows = self.wave_two_rows({"causal_policy": "executed"})
+        self.write_csv(registry, headers, rows[:-1])
+        calls: list[str] = []
+
+        def no_network(request, timeout=0):
+            del request, timeout
+            calls.append("called")
+            raise AssertionError("malformed registry must fail before network")
+
+        with self.assertRaisesRegex(search.DiscoveryExecutionError, "Wave 2 family set mismatch"):
+            search.execute_wave(
+                self.root, registry, output, "test@example.invalid", opener=no_network
+            )
+        self.assertEqual(calls, [])
+
+        self.write_csv(registry, headers, rows)
+
+        def opener(request, timeout=0):
+            del timeout
+            calls.append(urllib.parse.urlparse(request.full_url).path)
+            return self.fake_response(
+                json.dumps(
+                    {"esearchresult": {"count": "0", "webenv": "EMPTY", "querykey": "1"}}
+                ).encode()
+            )
+
+        receipt = search.execute_wave(
+            self.root, registry, output, "test@example.invalid", opener=opener
+        )
+        self.assertEqual(len(receipt["cells"]), 1)
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(receipt["cells"][0]["family"], "causal_policy")
+
+    def test_run_wave_rejects_wrong_family_id_and_missing_infectious_block(self):
+        self.copy_configuration()
+        output = self.root / "wave_02_synonym_expansion"
+        registry = output / "QUERY_REGISTRY.csv"
+        headers = list(search.WAVE_TWO_QUERY_HEADERS)
+        rows = self.wave_two_rows({"causal_policy": "executed"})
+        executed = next(row for row in rows if row["status"] == "executed")
+        executed["search_id"] = "SEARCH-20260720-PUBMED-FAMILY-SPATIAL-99"
+        executed["query"] = (
+            'new method label[Title] AND '
+            '("2010/01/01"[Date - Publication] : "2026/12/31"[Date - Publication])'
+        )
+        self.write_csv(registry, headers, rows)
+
+        with self.assertRaisesRegex(
+            search.DiscoveryExecutionError,
+            "Wave 2 search_id family mismatch.*Wave 2 infectious block mismatch",
+        ):
+            search.execute_wave(
+                self.root,
+                registry,
+                output,
+                "test@example.invalid",
+                opener=lambda *_args, **_kwargs: self.fail("invalid registry called network"),
+            )
+
+    def test_run_wave_accepts_exact_all_no_expansion_empty_artifacts(self):
+        self.copy_configuration()
+        output = self.root / "wave_02_synonym_expansion"
+        registry = output / "QUERY_REGISTRY.csv"
+        headers = [
+            "family", "search_id", "status", "new_synonyms", "rationale",
+            "source_candidate_keys", "source", "query", "date_start", "date_end",
+            "reviewer",
+        ]
+        self.write_csv(registry, headers, self.wave_two_rows({}))
+
+        receipt = search.execute_wave(
+            self.root,
+            registry,
+            output,
+            "test@example.invalid",
+            opener=lambda *_args, **_kwargs: self.fail("empty wave called network"),
+        )
+
+        self.assertEqual(receipt["cells"], [])
+        self.assertEqual(receipt["empty_reason"], "all_families_no_expansion_needed")
+        self.assertFalse((output / "raw").exists())
+        self.assertEqual(search.validate_search_run(output), [])
+        self.assertEqual(search.validate_screening(output), [])
+        self.assertEqual(search.validate_screening_audit(output), [])
+
+    def lineage_registry_rows(self) -> list[dict[str, str]]:
+        return [
+            {
+                "query_id": "SEARCH-20260720-LINEAGE-CAUSAL-01",
+                "named_source_id": "NS-CAUSAL-001",
+                "method_label": "Method A",
+                "canonical_name": "Method A",
+                "family": "causal_policy",
+                "source_role": "original_candidate",
+                "source": "pubmed",
+                "query_variant": "exact_title",
+                "query": '"Exact PubMed method title"[Title]',
+                "seed_candidate_keys": "PMID:seed-a",
+                "reviewer": "reviewer-a",
+            },
+            {
+                "query_id": "SEARCH-20260720-LINEAGE-SIMULATION-01",
+                "named_source_id": "NS-SIMULATION-001",
+                "method_label": "Method B",
+                "canonical_name": "Method B",
+                "family": "simulation_methods",
+                "source_role": "guidance",
+                "source": "crossref",
+                "query_variant": "exact_title",
+                "query": "Exact Crossref method citation",
+                "seed_candidate_keys": "PMID:seed-b",
+                "reviewer": "reviewer-c",
+            },
+        ]
+
+    def complete_lineage_decisions(self, output: Path) -> None:
+        registry_path = output / "LINEAGE_QUERY_REGISTRY.csv"
+        with registry_path.open(encoding="utf-8", newline="") as handle:
+            registry = {row["query_id"]: row for row in csv.DictReader(handle)}
+        candidates: dict[str, dict[str, str]] = {}
+        for filename in ("pubmed_lineage_candidates.csv", "crossref_candidates.csv"):
+            with (output / filename).open(encoding="utf-8", newline="") as handle:
+                for row in csv.DictReader(handle):
+                    candidates[row["query_id"]] = row
+        audit_rows: list[dict[str, str]] = []
+        ledger_rows: list[dict[str, str]] = []
+        for number, query_id in enumerate(sorted(registry), 1):
+            source = registry[query_id]
+            candidate = candidates[query_id]
+            key = candidate["candidate_key"]
+            url = candidate.get("source_url") or candidate.get("url") or ""
+            decision_id = f"ID-DEC-{number:03d}"
+            audit_rows.append(
+                {
+                    "identity_decision_id": decision_id,
+                    "named_source_id": source["named_source_id"],
+                    "supporting_query_ids": query_id,
+                    "candidate_keys_considered": key,
+                    "primary_selected_candidate_key": key,
+                    "primary_decision": "resolved",
+                    "primary_reason": "The candidate matches the inspected primary bibliographic record.",
+                    "primary_reviewer": source["reviewer"],
+                    "audit_selected_candidate_key": key,
+                    "audit_decision": "resolved",
+                    "audit_reason": "Independent inspection confirms the same bibliographic identity.",
+                    "audit_reviewer": f"independent-{number}",
+                    "conflict_status": "none",
+                    "adjudicator": "",
+                    "final_selected_candidate_key": key,
+                    "final_decision": "resolved",
+                    "final_reason": "Both reviewers independently selected the same record.",
+                    "inspected_primary_url": url,
+                }
+            )
+            ledger_rows.append(
+                {
+                    "identity_decision_id": decision_id,
+                    "named_source_id": source["named_source_id"],
+                    "final_candidate_key": key,
+                    "method_label": source["method_label"],
+                    "canonical_name": source["canonical_name"],
+                    "family": source["family"],
+                    "source_role": source["source_role"],
+                    "title": candidate["title"],
+                    "year": candidate["year"],
+                    "doi": candidate["doi"],
+                    "pmid": candidate.get("pmid", ""),
+                    "primary_url": url,
+                    "discovery_route": "bounded lineage identity query",
+                    "bibliographic_role_evidence": "Bibliographic identity only; source role remains unverified.",
+                    "verification_state": "discovery",
+                    "search_ids": query_id,
+                    "status": "resolved_identity_role_unverified",
+                    "notes": "",
+                }
+            )
+        self.write_csv(
+            output / "lineage_identity_audit.csv",
+            list(search.LINEAGE_AUDIT_HEADERS),
+            audit_rows,
+        )
+        self.write_csv(
+            output.parent / "global/lineage_ledger.csv",
+            list(search.LINEAGE_LEDGER_HEADERS),
+            ledger_rows,
+        )
+
+    def test_run_lineage_rejects_over_three_queries_before_network(self):
+        self.copy_configuration()
+        output = self.root / "phase/wave_03_lineage_resolution"
+        registry = output / "LINEAGE_QUERY_REGISTRY.csv"
+        base = self.lineage_registry_rows()[0]
+        variants = ("exact_title", "title_first_author", "method_author_year", "exact_title")
+        rows = [
+            {
+                **base,
+                "query_id": f"SEARCH-20260720-LINEAGE-CAUSAL-{number:02d}",
+                "query_variant": variant,
+                "query": f"query {number}",
+            }
+            for number, variant in enumerate(variants, 1)
+        ]
+        self.write_csv(registry, list(search.LINEAGE_REGISTRY_HEADERS), rows)
+        with self.assertRaisesRegex(
+            search.DiscoveryExecutionError, "lineage named source has over three queries"
+        ):
+            search.execute_lineage(
+                self.root,
+                registry,
+                output,
+                "test@example.invalid",
+                opener=lambda *_args, **_kwargs: self.fail("invalid registry called network"),
+            )
+
+    def test_run_lineage_dispatches_sources_and_validates_heterogeneous_receipt(self):
+        self.copy_configuration()
+        output = self.root / "phase/wave_03_lineage_resolution"
+        registry = output / "LINEAGE_QUERY_REGISTRY.csv"
+        self.write_csv(
+            registry,
+            list(search.LINEAGE_REGISTRY_HEADERS),
+            self.lineage_registry_rows(),
+        )
+        calls: list[str] = []
+
+        def opener(request, timeout=0):
+            del timeout
+            parsed = urllib.parse.urlparse(request.full_url)
+            calls.append(parsed.path)
+            if parsed.path.endswith("esearch.fcgi"):
+                return self.fake_response(
+                    json.dumps(
+                        {"esearchresult": {"count": "1", "webenv": "LINEAGE-ENV", "querykey": "3"}}
+                    ).encode()
+                )
+            if parsed.path.endswith("efetch.fcgi"):
+                return self.fake_response(
+                    self.pubmed_xml(
+                        [
+                            {
+                                "pmid": "303",
+                                "doi": "10.1000/pubmed-method",
+                                "title": "Exact PubMed method title",
+                                "year": "2018",
+                            }
+                        ]
+                    )
+                )
+            return self.fake_response(
+                json.dumps(
+                    {
+                        "status": "ok",
+                        "message": {
+                            "total-results": 1,
+                            "items": [
+                                {
+                                    "DOI": "10.1000/crossref-method",
+                                    "title": ["Exact Crossref method citation"],
+                                    "published": {"date-parts": [[2019]]},
+                                    "container-title": ["Methods Journal"],
+                                    "author": [{"family": "Smith", "given": "A"}],
+                                    "type": "journal-article",
+                                    "URL": "https://doi.org/10.1000/crossref-method",
+                                }
+                            ],
+                        },
+                    }
+                ).encode()
+            )
+
+        with mock.patch("time.sleep"):
+            receipt = search.execute_lineage(
+                self.root,
+                registry,
+                output,
+                "test@example.invalid",
+                opener=opener,
+            )
+
+        self.assertEqual([row["source"] for row in receipt["queries"]], ["pubmed", "crossref"])
+        pubmed_receipt = receipt["queries"][0]
+        self.assertEqual(pubmed_receipt["date_start"], "")
+        self.assertEqual(pubmed_receipt["date_end"], "")
+        self.assertEqual(pubmed_receipt["query_scope"], "unbounded_identity")
+        self.assertEqual(pubmed_receipt["webenv"], "LINEAGE-ENV")
+        crossref_receipt = receipt["queries"][1]
+        self.assertFalse(any(field in crossref_receipt for field in ("webenv", "query_key", "efetch_pages")))
+        self.assertEqual(len(calls), 3)
+        with (output / "pubmed_lineage_candidates.csv").open(encoding="utf-8", newline="") as handle:
+            self.assertEqual(len(list(csv.DictReader(handle))), 1)
+        with (output / "crossref_candidates.csv").open(encoding="utf-8", newline="") as handle:
+            self.assertEqual(len(list(csv.DictReader(handle))), 1)
+
+        resume_calls: list[str] = []
+        resumed = search.execute_lineage(
+            self.root,
+            registry,
+            output,
+            "test@example.invalid",
+            opener=lambda request, timeout=0: (
+                resume_calls.append(request.full_url),
+                self.fail("valid lineage query called network"),
+            )[1],
+        )
+        self.assertEqual(resume_calls, [])
+        self.assertEqual(resumed["queries"], receipt["queries"])
+
+        self.complete_lineage_decisions(output)
+        self.assertEqual(search.validate_lineage(self.root, output), [])
+        payload = json.loads((output / "LINEAGE_RUN_RECEIPT.json").read_text())
+        payload["queries"][0]["webenv"] = "forged-history"
+        (output / "LINEAGE_RUN_RECEIPT.json").write_text(json.dumps(payload), encoding="utf-8")
+        self.assertIn(
+            "PubMed lineage esearch mismatch",
+            "\n".join(search.validate_lineage(self.root, output)),
+        )
+        payload["queries"][0]["webenv"] = "LINEAGE-ENV"
+        payload["queries"][1]["query_key"] = "forbidden"
+        (output / "LINEAGE_RUN_RECEIPT.json").write_text(json.dumps(payload), encoding="utf-8")
+        self.assertIn(
+            "crossref receipt contains pubmed field",
+            "\n".join(search.validate_lineage(self.root, output)),
+        )
+
+    def test_crossref_lineage_receipt_recomputes_raw_counts(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        receipt_path = run_dir / "LINEAGE_RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        receipt["queries"][0].update(
+            reported_count=99,
+            total_results=99,
+            returned_candidate_count=0,
+        )
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        self.assertIn(
+            "Crossref lineage raw count mismatch",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+    def test_lineage_preserves_completed_query_before_later_failure(self):
+        self.copy_configuration()
+        output = self.root / "partial/wave_03_lineage_resolution"
+        registry = output / "LINEAGE_QUERY_REGISTRY.csv"
+        self.write_csv(
+            registry,
+            list(search.LINEAGE_REGISTRY_HEADERS),
+            self.lineage_registry_rows(),
+        )
+        calls: list[str] = []
+
+        def first_opener(request, timeout=0):
+            del timeout
+            path = urllib.parse.urlparse(request.full_url).path
+            calls.append(path)
+            if path.endswith("esearch.fcgi"):
+                return self.fake_response(
+                    json.dumps(
+                        {"esearchresult": {"count": "1", "webenv": "KEEP", "querykey": "1"}}
+                    ).encode()
+                )
+            if path.endswith("efetch.fcgi"):
+                return self.fake_response(
+                    self.pubmed_xml([{"pmid": "11", "title": "Kept PubMed query"}])
+                )
+            raise urllib.error.HTTPError(request.full_url, 503, "later failure", {}, None)
+
+        with mock.patch("time.sleep"):
+            with self.assertRaisesRegex(search.DiscoveryExecutionError, "network request failed"):
+                search.execute_lineage(
+                    self.root,
+                    registry,
+                    output,
+                    "test@example.invalid",
+                    opener=first_opener,
+                )
+        partial = json.loads((output / "LINEAGE_RUN_RECEIPT.json").read_text())
+        self.assertEqual(len(partial["queries"]), 1)
+        self.assertEqual(partial["queries"][0]["webenv"], "KEEP")
+
+        rerun_calls: list[str] = []
+
+        def second_opener(request, timeout=0):
+            del timeout
+            path = urllib.parse.urlparse(request.full_url).path
+            rerun_calls.append(path)
+            self.assertTrue(path.endswith("/works"))
+            return self.fake_response(
+                json.dumps(
+                    {
+                        "status": "ok",
+                        "message": {"total-results": 0, "items": []},
+                    }
+                ).encode()
+            )
+
+        completed = search.execute_lineage(
+            self.root,
+            registry,
+            output,
+            "test@example.invalid",
+            opener=second_opener,
+        )
+        self.assertEqual(len(completed["queries"]), 2)
+        self.assertEqual(len(rerun_calls), 1)
+
+    def test_overbroad_pubmed_lineage_query_stops_before_efetch(self):
+        self.copy_configuration()
+        output = self.root / "phase/wave_03_lineage_resolution"
+        registry = output / "LINEAGE_QUERY_REGISTRY.csv"
+        self.write_csv(
+            registry,
+            list(search.LINEAGE_REGISTRY_HEADERS),
+            [self.lineage_registry_rows()[0]],
+        )
+        calls: list[str] = []
+
+        def opener(request, timeout=0):
+            del timeout
+            parsed = urllib.parse.urlparse(request.full_url)
+            calls.append(parsed.path)
+            self.assertTrue(parsed.path.endswith("esearch.fcgi"))
+            return self.fake_response(
+                json.dumps(
+                    {"esearchresult": {"count": "10000", "webenv": "OVERBROAD", "querykey": "1"}}
+                ).encode()
+            )
+
+        with self.assertRaisesRegex(
+            search.DiscoveryExecutionError, "overbroad lineage identity query"
+        ):
+            search.execute_lineage(
+                self.root, registry, output, "test@example.invalid", opener=opener
+            )
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(list((output / "raw").glob("*.xml")), [])
+        self.assertEqual(len(list((output / "raw").glob("*.esearch.json"))), 1)
+
+    def test_lineage_candidate_tables_are_required_and_manifest_locked(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        candidate_table = run_dir / "crossref_candidates.csv"
+        candidate_table.write_bytes(candidate_table.read_bytes() + b"tampered")
+        self.assertIn(
+            "checksum mismatch",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+        candidate_table.unlink()
+        self.assertIn(
+            "lineage candidate table missing",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+    def test_lineage_candidate_table_must_recompute_from_raw_response(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        candidate_path = run_dir / "crossref_candidates.csv"
+        with candidate_path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["title"] = "Fabricated title not present in the raw response"
+        self.write_csv(
+            candidate_path, list(search.CROSSREF_LINEAGE_HEADERS), rows
+        )
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        next(
+            item for item in manifest["files"]
+            if item["path"] == "crossref_candidates.csv"
+        )["sha256"] = self.sha(candidate_path)
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        self.assertIn(
+            "lineage candidate table content mismatch",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+    def test_lineage_rejects_reused_query_and_unclosed_resolved_key_conflict(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        audit_path = run_dir / "lineage_identity_audit.csv"
+        with audit_path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        query_id = rows[0]["supporting_query_ids"]
+        rows[0]["supporting_query_ids"] = f"{query_id}|{query_id}"
+        self.write_csv(audit_path, list(search.LINEAGE_AUDIT_HEADERS), rows)
+        self.assertIn(
+            "lineage supporting query coverage mismatch",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+        run_dir = self.make_valid_lineage_run(self.root / "key-conflict")
+        candidates_path = run_dir / "crossref_candidates.csv"
+        with candidates_path.open(encoding="utf-8", newline="") as handle:
+            candidates = list(csv.DictReader(handle))
+        second = dict(candidates[0])
+        second.update(
+            candidate_key="DOI:10.1234/second",
+            doi="10.1234/second",
+            title="Second plausible candidate",
+            url="https://doi.org/10.1234/second",
+        )
+        self.write_csv(
+            candidates_path,
+            list(search.CROSSREF_LINEAGE_HEADERS),
+            [*candidates, second],
+        )
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        next(
+            item for item in manifest["files"]
+            if item["path"] == "crossref_candidates.csv"
+        )["sha256"] = self.sha(candidates_path)
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        audit_path = run_dir / "lineage_identity_audit.csv"
+        with audit_path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["candidate_keys_considered"] = (
+            "DOI:10.1234/example|DOI:10.1234/second"
+        )
+        rows[0]["audit_selected_candidate_key"] = "DOI:10.1234/second"
+        self.write_csv(audit_path, list(search.LINEAGE_AUDIT_HEADERS), rows)
+        self.assertIn(
+            "lineage conflict mismatch",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+    def test_execution_cli_runs_all_pubmed_cells_and_compile_action(self):
+        self.copy_configuration()
+        output = self.root / "cli-run"
+        calls: list[str] = []
+
+        def opener(request, timeout=0):
+            del timeout
+            calls.append(urllib.parse.urlparse(request.full_url).path)
+            return self.fake_response(
+                json.dumps(
+                    {"esearchresult": {"count": "0", "webenv": "EMPTY", "querykey": "1"}}
+                ).encode()
+            )
+
+        stdout = io.StringIO()
+        with mock.patch.object(search.urllib.request, "urlopen", side_effect=opener):
+            with mock.patch("time.sleep") as sleep:
+                with contextlib.redirect_stdout(stdout):
+                    result = search.main(
+                        [
+                            "run", "--root", str(self.root), "--date", "2026-07-20",
+                            "--email", "test@example.invalid", "--api-key", "runtime-only",
+                            "--output", str(output),
+                        ]
+                    )
+        self.assertEqual(result, 0)
+        self.assertEqual(stdout.getvalue().strip(), "DISCOVERY PASS")
+        self.assertEqual(len(calls), 12)
+        self.assertEqual(sleep.call_count, 11)
+        self.assertTrue(all(call.args == (0.11,) for call in sleep.call_args_list))
+        receipt = json.loads((output / "RUN_RECEIPT.json").read_text())
+        self.assertEqual(len(receipt["cells"]), 12)
+        self.assertNotIn("runtime-only", json.dumps(receipt))
+
+        stdout = io.StringIO()
+        with contextlib.redirect_stdout(stdout):
+            result = search.main(["compile", "--run-dir", str(output)])
+        self.assertEqual(result, 0)
+        self.assertEqual(stdout.getvalue().strip(), "DISCOVERY PASS")
 
     def test_configuration_builds_twelve_unique_cells(self):
         self.copy_configuration()
@@ -788,6 +2017,38 @@ class DiscoverySearchTests(unittest.TestCase):
         raw = next((run_dir / "raw").glob("*.xml"))
         raw.write_bytes(raw.read_bytes() + b"altered")
         self.assertIn("checksum mismatch", "\n".join(search.validate_search_run(run_dir)))
+
+    def test_search_run_recomputes_esearch_count_and_history(self):
+        run_dir = self.make_valid_run()
+        receipt_path = run_dir / "RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        cell = receipt["cells"][0]
+        esearch_path = run_dir / cell["esearch_path"]
+        esearch_path.write_text(
+            json.dumps(
+                {
+                    "esearchresult": {
+                        "count": "2",
+                        "webenv": "different-history",
+                        "querykey": "9",
+                    }
+                }
+            ),
+            encoding="utf-8",
+        )
+        changed_sha = self.sha(esearch_path)
+        cell["esearch_sha256"] = changed_sha
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        next(
+            item for item in manifest["files"]
+            if item["path"] == cell["esearch_path"]
+        )["sha256"] = changed_sha
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        rendered = "\n".join(search.validate_search_run(run_dir))
+        self.assertIn("esearch reported count mismatch", rendered)
+        self.assertIn("esearch history mismatch", rendered)
 
     def test_manifest_rejects_a_symlinked_parent_outside_the_run(self):
         run_dir = self.make_valid_run()

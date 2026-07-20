@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import calendar
 import csv
 from dataclasses import asdict, dataclass
 from datetime import date, datetime, timedelta
@@ -14,8 +15,14 @@ import re
 import stat
 import subprocess
 import sys
-from typing import Iterable, Sequence
+import time
+from typing import Callable, Iterable, Sequence
+import unicodedata
+import urllib.error
+import urllib.parse
+import urllib.request
 import xml.etree.ElementTree as ET
+from zoneinfo import ZoneInfo
 
 
 PROTOCOL_PATH = Path(
@@ -159,6 +166,36 @@ CROSSREF_LINEAGE_HEADERS = (
     "candidate_rank", "doi", "title", "year", "container_title", "first_author",
     "type", "url", "raw_path", "raw_sha256",
 )
+WAVE_TWO_QUERY_HEADERS = (
+    "family", "search_id", "status", "new_synonyms", "rationale",
+    "source_candidate_keys", "source", "query", "date_start", "date_end",
+    "reviewer",
+)
+LINEAGE_SOURCES = frozenset({"pubmed", "crossref"})
+LINEAGE_QUERY_VARIANTS = (
+    "exact_title",
+    "title_first_author",
+    "method_author_year",
+)
+LINEAGE_SOURCE_ROLES = frozenset(
+    {
+        "original_candidate",
+        "authoritative_candidate",
+        "correction",
+        "diagnostic",
+        "guidance",
+        "implementation",
+        "infectious_application",
+    }
+)
+FAMILY_TOKENS = {
+    "causal_policy": "CAUSAL",
+    "surveillance_measurement": "SURVEILLANCE",
+    "spatial_transmission": "SPATIAL",
+    "forecasting_dynamics": "FORECASTING",
+    "evidence_synthesis": "EVIDENCE",
+    "simulation_methods": "SIMULATION",
+}
 LINEAGE_AUDIT_HEADERS = (
     "identity_decision_id", "named_source_id", "supporting_query_ids",
     "candidate_keys_considered", "primary_selected_candidate_key",
@@ -209,6 +246,12 @@ COMPILED_HEADERS = (
     "deduplication_basis",
     "possible_duplicate_group",
 )
+
+PUBMED_ESEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+PUBMED_EFETCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+CROSSREF_WORKS_URL = "https://api.crossref.org/works"
+TOOL_NAME = "ID_Epi_Methods_Library"
+TOOL_VERSION = "1"
 PRIMARY_HEADERS = (
     "candidate_key",
     "source_row_sha256",
@@ -294,6 +337,1552 @@ class SearchCell:
     parent_search_id: str
     date_start: str
     date_end: str
+
+
+class DiscoveryExecutionError(RuntimeError):
+    """A stable, user-facing retrieval failure."""
+
+
+class _PacedOpener:
+    _discovery_handles_pacing = True
+
+    def __init__(
+        self,
+        opener: Callable[..., object],
+        delay: float,
+    ) -> None:
+        self._opener = opener
+        self._delay = delay
+        self._calls = 0
+
+    def __call__(self, *args: object, **kwargs: object) -> object:
+        if self._calls:
+            time.sleep(self._delay)
+        self._calls += 1
+        return self._opener(*args, **kwargs)
+
+
+def _sha256_bytes(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def _atomic_bytes(
+    path: Path,
+    data: bytes,
+    validator: Callable[[bytes], None] | None = None,
+) -> str:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f".{path.name}.{os.getpid()}.{time.time_ns()}.tmp")
+    try:
+        temporary.write_bytes(data)
+        if validator is not None:
+            validator(data)
+        temporary.replace(path)
+    except BaseException:
+        temporary.unlink(missing_ok=True)
+        raise
+    return _sha256_bytes(data)
+
+
+def _read_manifest_entries(output_dir: Path) -> dict[str, str]:
+    path = output_dir / "MANIFEST_SHA256.json"
+    if not path.is_file():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError, UnicodeError):
+        return {}
+    if not isinstance(payload, dict) or not isinstance(payload.get("files"), list):
+        return {}
+    entries: dict[str, str] = {}
+    for item in payload["files"]:
+        if isinstance(item, dict) and isinstance(item.get("path"), str) and isinstance(
+            item.get("sha256"), str
+        ):
+            entries[item["path"]] = item["sha256"]
+    return entries
+
+
+def _write_manifest_entries(output_dir: Path, entries: dict[str, str]) -> None:
+    payload = {
+        "algorithm": "SHA256",
+        "files": [
+            {"path": path, "sha256": entries[path]}
+            for path in sorted(entries)
+        ],
+    }
+    rendered = (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode()
+    _atomic_bytes(output_dir / "MANIFEST_SHA256.json", rendered)
+
+
+def _manifest_artifact(output_dir: Path, path: Path, digest: str) -> None:
+    relative = path.relative_to(output_dir).as_posix()
+    entries = _read_manifest_entries(output_dir)
+    entries[relative] = digest
+    _write_manifest_entries(output_dir, entries)
+
+
+def _urlopen_bytes(
+    opener: Callable[..., object],
+    endpoint: str,
+    parameters: dict[str, object],
+) -> bytes:
+    url = f"{endpoint}?{urllib.parse.urlencode(parameters)}"
+    request = urllib.request.Request(url, headers={"User-Agent": f"{TOOL_NAME}/{TOOL_VERSION}"})
+    try:
+        response = opener(request, timeout=60)
+        if hasattr(response, "__enter__"):
+            with response as opened:
+                data = opened.read()
+        else:
+            data = response.read()
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, OSError) as error:
+        raise DiscoveryExecutionError(
+            f"network request failed: {type(error).__name__}: {error}"
+        ) from error
+    if not isinstance(data, bytes):
+        raise DiscoveryExecutionError("network response was not bytes")
+    return data
+
+
+def _parse_esearch(data: bytes) -> tuple[int, str, str]:
+    try:
+        payload = json.loads(data.decode("utf-8"))
+        result = payload["esearchresult"]
+        count = int(result["count"])
+        webenv = str(result["webenv"])
+        query_key = str(result["querykey"])
+    except (UnicodeError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        raise DiscoveryExecutionError("malformed PubMed ESearch JSON") from error
+    if count < 0 or not webenv or not query_key:
+        raise DiscoveryExecutionError("malformed PubMed ESearch JSON")
+    return count, webenv, query_key
+
+
+def _parse_pubmed_page(data: bytes) -> tuple[ET.Element, int]:
+    try:
+        root = ET.fromstring(data)
+    except ET.ParseError as error:
+        raise DiscoveryExecutionError("malformed PubMed EFetch XML") from error
+    if root.tag.rsplit("}", 1)[-1] != "PubmedArticleSet":
+        raise DiscoveryExecutionError("malformed PubMed EFetch XML")
+    count = sum(
+        child.tag.rsplit("}", 1)[-1] in {"PubmedArticle", "PubmedBookArticle"}
+        for child in root
+    )
+    return root, count
+
+
+def execute_pubmed_cell(
+    cell: SearchCell,
+    output_dir: Path,
+    email: str,
+    api_key: str | None = None,
+    opener: Callable[..., object] = urllib.request.urlopen,
+) -> dict[str, object]:
+    """Execute one PubMed root, recursively splitting oversized date intervals."""
+    output_dir = Path(output_dir)
+    raw_dir = output_dir / "raw"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    request_number = 0
+    try:
+        id_prefix, id_suffix = cell.search_id.rsplit("-", 1)
+        next_suffix = int(id_suffix) + 1
+    except (TypeError, ValueError) as error:
+        raise DiscoveryExecutionError("invalid PubMed search ID") from error
+
+    def request(endpoint: str, parameters: dict[str, object]) -> bytes:
+        nonlocal request_number
+        if request_number and not getattr(opener, "_discovery_handles_pacing", False):
+            time.sleep(0.11 if api_key else 0.34)
+        request_number += 1
+        if api_key:
+            parameters = {**parameters, "api_key": api_key}
+        return _urlopen_bytes(opener, endpoint, parameters)
+
+    def allocate_search_id() -> str:
+        nonlocal next_suffix
+        allocated = f"{id_prefix}-{next_suffix:02d}"
+        next_suffix += 1
+        return allocated
+
+    def query_for_interval(query: str, start: date, end: date) -> str:
+        replacement = (
+            f'("{start:%Y/%m/%d}"[Date - Publication] : '
+            f'"{end:%Y/%m/%d}"[Date - Publication])'
+        )
+        updated, replacements = re.subn(
+            r'\("\d{4}/\d{2}/\d{2}"\[Date - Publication\]\s*:\s*'
+            r'"\d{4}/\d{2}/\d{2}"\[Date - Publication\]\)\s*$',
+            replacement,
+            query,
+        )
+        if replacements != 1:
+            raise DiscoveryExecutionError("PubMed query lacks terminal date interval")
+        return updated
+
+    def split_intervals(start: date, end: date) -> list[tuple[date, date]]:
+        if start.year != end.year:
+            return [
+                (
+                    max(start, date(year, 1, 1)),
+                    min(end, date(year, 12, 31)),
+                )
+                for year in range(start.year, end.year + 1)
+            ]
+        if start.month != end.month:
+            intervals: list[tuple[date, date]] = []
+            for month in range(start.month, end.month + 1):
+                month_end = date(start.year, month, calendar.monthrange(start.year, month)[1])
+                intervals.append(
+                    (
+                        max(start, date(start.year, month, 1)),
+                        min(end, month_end),
+                    )
+                )
+            return intervals
+        if start != end:
+            return [
+                (start + timedelta(days=offset), start + timedelta(days=offset))
+                for offset in range((end - start).days + 1)
+            ]
+        return []
+
+    def execute_interval(current: SearchCell) -> dict[str, object]:
+        esearch_data = request(
+            PUBMED_ESEARCH_URL,
+            {
+                "db": "pubmed",
+                "term": current.query,
+                "retmode": "json",
+                "retmax": 0,
+                "usehistory": "y",
+                "tool": TOOL_NAME,
+                "email": email,
+            },
+        )
+        count, webenv, query_key = _parse_esearch(esearch_data)
+        esearch_path = raw_dir / f"{current.search_id}.esearch.json"
+        esearch_sha = _atomic_bytes(
+            esearch_path, esearch_data, lambda data: _parse_esearch(data)
+        )
+        _manifest_artifact(output_dir, esearch_path, esearch_sha)
+        common: dict[str, object] = {
+            "search_id": current.search_id,
+            "lane": current.lane,
+            "family": current.family,
+            "query": current.query,
+            "date_start": current.date_start,
+            "date_end": current.date_end,
+            "reported_count": count,
+            "parent_search_id": current.parent_search_id,
+            "esearch_path": esearch_path.relative_to(output_dir).as_posix(),
+            "esearch_sha256": esearch_sha,
+            "status": "complete",
+        }
+        if count >= 10000:
+            start = _parse_date(current.date_start)
+            end = _parse_date(current.date_end)
+            if start is None or end is None:
+                raise DiscoveryExecutionError("invalid PubMed split interval")
+            intervals = split_intervals(start, end)
+            if not intervals:
+                raise DiscoveryExecutionError("unsplittable PubMed cell")
+            children: list[dict[str, object]] = []
+            for child_start, child_end in intervals:
+                child = SearchCell(
+                    search_id=allocate_search_id(),
+                    lane=current.lane,
+                    family=current.family,
+                    source=current.source,
+                    query=query_for_interval(current.query, child_start, child_end),
+                    parent_search_id=current.search_id,
+                    date_start=f"{child_start:%Y/%m/%d}",
+                    date_end=f"{child_end:%Y/%m/%d}",
+                )
+                children.append(execute_interval(child))
+            if sum(int(child["reported_count"]) for child in children) != count:
+                raise DiscoveryExecutionError("PubMed split count mismatch")
+            return {
+                **common,
+                "cell_type": "split_parent",
+                "retrieved_count": 0,
+                "children": children,
+            }
+
+        pages: list[dict[str, object]] = []
+        page_finals: list[Path] = []
+        retrieved = 0
+        try:
+            for retstart in range(0, count, 200):
+                retmax = min(200, count - retstart)
+                page_data = request(
+                    PUBMED_EFETCH_URL,
+                    {
+                        "db": "pubmed",
+                        "retmode": "xml",
+                        "rettype": "abstract",
+                        "WebEnv": webenv,
+                        "query_key": query_key,
+                        "retstart": retstart,
+                        "retmax": retmax,
+                        "tool": TOOL_NAME,
+                        "email": email,
+                    },
+                )
+                _, parsed_count = _parse_pubmed_page(page_data)
+                page_path = raw_dir / (
+                    f"{current.search_id}.efetch.{retstart:09d}-"
+                    f"{retstart + retmax - 1:09d}.xml"
+                )
+                digest = _atomic_bytes(
+                    page_path, page_data, lambda data: _parse_pubmed_page(data)
+                )
+                page_finals.append(page_path)
+                pages.append(
+                    {
+                        "retstart": retstart,
+                        "retmax": retmax,
+                        "path": page_path.relative_to(output_dir).as_posix(),
+                        "sha256": digest,
+                        "parsed_count": parsed_count,
+                    }
+                )
+                retrieved += parsed_count
+            if retrieved != count:
+                raise DiscoveryExecutionError(
+                    f"PubMed count mismatch: reported {count}, retrieved {retrieved}"
+                )
+        except BaseException:
+            entries = _read_manifest_entries(output_dir)
+            for path in page_finals:
+                entries.pop(path.relative_to(output_dir).as_posix(), None)
+                path.unlink(missing_ok=True)
+            _write_manifest_entries(output_dir, entries)
+            raise
+        for page in pages:
+            _manifest_artifact(
+                output_dir,
+                output_dir / str(page["path"]),
+                str(page["sha256"]),
+            )
+        return {
+            **common,
+            "cell_type": "leaf",
+            "usehistory": True,
+            "webenv": webenv,
+            "query_key": query_key,
+            "retrieved_count": retrieved,
+            "efetch_pages": pages,
+        }
+
+    return execute_interval(cell)
+
+
+def _tree_artifact_receipts(cell: object) -> list[tuple[str, str, str]]:
+    if not isinstance(cell, dict):
+        return []
+    artifacts: list[tuple[str, str, str]] = []
+    if isinstance(cell.get("esearch_path"), str) and isinstance(
+        cell.get("esearch_sha256"), str
+    ):
+        artifacts.append(
+            (str(cell["esearch_path"]), str(cell["esearch_sha256"]), "esearch")
+        )
+    if cell.get("cell_type") == "leaf":
+        pages = cell.get("efetch_pages")
+        if isinstance(pages, list):
+            for page in pages:
+                if isinstance(page, dict) and isinstance(page.get("path"), str) and isinstance(
+                    page.get("sha256"), str
+                ):
+                    artifacts.append((str(page["path"]), str(page["sha256"]), "page"))
+    elif cell.get("cell_type") == "split_parent":
+        children = cell.get("children")
+        if isinstance(children, list):
+            for child in children:
+                artifacts.extend(_tree_artifact_receipts(child))
+    return artifacts
+
+
+def _resumable_root_matches(
+    expected: SearchCell,
+    existing: object,
+    output_dir: Path,
+) -> bool:
+    if not isinstance(existing, dict):
+        return False
+    for field in (
+        "search_id", "lane", "family", "query", "parent_search_id", "date_start",
+        "date_end",
+    ):
+        if existing.get(field) != getattr(expected, field):
+            return False
+    if existing.get("status") != "complete":
+        return False
+    artifacts = _tree_artifact_receipts(existing)
+    if not artifacts:
+        return False
+    manifest = _read_manifest_entries(output_dir)
+    for relative, expected_sha, kind in artifacts:
+        safe = _safe_relative(relative)
+        if safe is None or manifest.get(safe) != expected_sha:
+            return False
+        path = output_dir / safe
+        try:
+            if hashlib.sha256(path.read_bytes()).hexdigest() != expected_sha:
+                return False
+            if kind == "page":
+                _parse_pubmed_page(path.read_bytes())
+        except (OSError, DiscoveryExecutionError):
+            return False
+    leaves = _leaf_receipts([existing])
+    if not leaves:
+        return False
+    for leaf in leaves:
+        pages = leaf.get("efetch_pages")
+        if not isinstance(pages, list):
+            return False
+        parsed = sum(
+            int(page.get("parsed_count", -1))
+            for page in pages
+            if isinstance(page, dict)
+        )
+        if parsed != leaf.get("reported_count") or parsed != leaf.get("retrieved_count"):
+            return False
+    return not _validate_cell(
+        output_dir,
+        existing,
+        manifest,
+        set(),
+        set(),
+        set(),
+        set(),
+        expected.source,
+    )
+
+
+def _remove_root_artifacts(output_dir: Path, root_search_id: str) -> None:
+    prefix = root_search_id.rsplit("-", 1)[0] + "-"
+    entries = _read_manifest_entries(output_dir)
+    raw = output_dir / "raw"
+    if raw.is_dir():
+        for path in raw.iterdir():
+            if path.is_file() and (
+                path.name.startswith(prefix)
+                or (path.name.startswith(f".{prefix}") and path.name.endswith(".tmp"))
+            ):
+                try:
+                    relative = path.relative_to(output_dir).as_posix()
+                except ValueError:
+                    continue
+                entries.pop(relative, None)
+                path.unlink(missing_ok=True)
+    _write_manifest_entries(output_dir, entries)
+
+
+def _configuration_receipts(root: Path, extra: Sequence[Path] = ()) -> list[dict[str, str]]:
+    receipts: list[dict[str, str]] = []
+    for relative in (PROTOCOL_PATH, QUERY_CONFIG_PATH, JOURNAL_REGISTRY_PATH, *extra):
+        path = root / relative
+        try:
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        except OSError as error:
+            raise DiscoveryExecutionError(f"configuration file missing: {relative}") from error
+        receipts.append({"path": Path(relative).as_posix(), "sha256": digest})
+    return receipts
+
+
+def _write_json_atomic(path: Path, payload: object) -> None:
+    _atomic_bytes(
+        path,
+        (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode("utf-8"),
+    )
+
+
+def execute_pubmed_run(
+    root: Path,
+    cells: Sequence[SearchCell],
+    output_dir: Path,
+    email: str,
+    api_key: str | None = None,
+    opener: Callable[..., object] = urllib.request.urlopen,
+    extra_configuration: Sequence[Path] = (),
+    empty_reason: str = "",
+) -> dict[str, object]:
+    """Execute root cells, preserving verified roots and restarting invalid roots."""
+    root = Path(root)
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    receipt_path = output_dir / "RUN_RECEIPT.json"
+    existing_cells: dict[str, dict[str, object]] = {}
+    existing_executed_at = ""
+    if receipt_path.is_file():
+        try:
+            existing = json.loads(receipt_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError, UnicodeError):
+            existing = None
+        if isinstance(existing, dict) and isinstance(existing.get("cells"), list):
+            existing_executed_at = str(existing.get("executed_at", ""))
+            existing_cells = {
+                str(item.get("search_id")): item
+                for item in existing["cells"]
+                if isinstance(item, dict) and isinstance(item.get("search_id"), str)
+            }
+    completed: list[dict[str, object]] = []
+    executed_at = existing_executed_at or datetime.now(ZoneInfo("Asia/Shanghai")).isoformat()
+    receipt: dict[str, object] = {
+        "schema_version": 1,
+        "executed_at": executed_at,
+        "timezone": "Asia/Shanghai",
+        "tool_version": TOOL_VERSION,
+        "source": "pubmed",
+        "configuration_files": _configuration_receipts(root, extra_configuration),
+        "cells": completed,
+    }
+    if empty_reason:
+        receipt["empty_reason"] = empty_reason
+    paced_opener = _PacedOpener(opener, 0.11 if api_key else 0.34)
+    for cell in cells:
+        old = existing_cells.get(cell.search_id)
+        if _resumable_root_matches(cell, old, output_dir):
+            completed.append(old)
+        else:
+            _remove_root_artifacts(output_dir, cell.search_id)
+            completed.append(
+                execute_pubmed_cell(
+                    cell,
+                    output_dir,
+                    email,
+                    api_key=api_key,
+                    opener=paced_opener,
+                )
+            )
+        _write_json_atomic(receipt_path, receipt)
+    if not cells:
+        _write_json_atomic(receipt_path, receipt)
+    compile_pubmed_candidates(output_dir)
+    return receipt
+
+
+def resolve_crossref_candidates(
+    query_id: str,
+    bibliographic_query: str,
+    output_dir: Path,
+    email: str,
+    opener: Callable[..., object] = urllib.request.urlopen,
+) -> dict[str, object]:
+    """Freeze one bounded Crossref bibliographic candidate response."""
+    output_dir = Path(output_dir)
+    data = _urlopen_bytes(
+        opener,
+        CROSSREF_WORKS_URL,
+        {
+            "query.bibliographic": bibliographic_query,
+            "rows": 5,
+            "select": "DOI,title,published,container-title,author,type,URL",
+            "mailto": email,
+        },
+    )
+    try:
+        payload = json.loads(data.decode("utf-8"))
+        message = payload["message"]
+        items = message["items"]
+        total_results = int(message["total-results"])
+    except (UnicodeError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        raise DiscoveryExecutionError("malformed Crossref response JSON") from error
+    if (
+        not isinstance(message, dict)
+        or not isinstance(items, list)
+        or len(items) > 5
+        or not all(isinstance(item, dict) for item in items)
+        or total_results < 0
+    ):
+        raise DiscoveryExecutionError("malformed Crossref response JSON")
+    safe_id = re.sub(r"[^A-Za-z0-9_.-]+", "_", query_id)
+    response_path = output_dir / "raw" / f"{safe_id}.crossref.json"
+    digest = _atomic_bytes(
+        response_path,
+        data,
+        lambda raw: json.loads(raw.decode("utf-8")),
+    )
+    _manifest_artifact(output_dir, response_path, digest)
+    relative = response_path.relative_to(output_dir).as_posix()
+    return {
+        "query_id": query_id,
+        "source": "crossref",
+        "query": bibliographic_query,
+        "reported_count": total_results,
+        "raw_path": relative,
+        "raw_sha256": digest,
+        "status": "complete",
+        "response_path": relative,
+        "response_sha256": digest,
+        "returned_candidate_count": len(items),
+        "total_results": total_results,
+        "rows": 5,
+    }
+
+
+def _validate_wave_two_registry(
+    path: Path,
+    root: Path | None = None,
+) -> tuple[list[dict[str, str]], list[str]]:
+    headers, rows, errors = _read_csv(path, "invalid Wave 2 query registry")
+    if errors:
+        return rows, errors
+    if headers != list(WAVE_TWO_QUERY_HEADERS):
+        return rows, ["Wave 2 query registry header mismatch"]
+    families = [row.get("family", "") for row in rows]
+    if len(rows) != len(FAMILIES) or set(families) != FAMILIES or len(families) != len(
+        set(families)
+    ):
+        errors.append("Wave 2 family set mismatch")
+    seen_ids: set[str] = set()
+    infectious_block = ""
+    if root is not None:
+        config_object, config_errors = _read_json(
+            Path(root) / QUERY_CONFIG_PATH, "invalid discovery query JSON"
+        )
+        errors.extend(config_errors)
+        if isinstance(config_object, dict) and isinstance(
+            config_object.get("infectious_disease_block"), str
+        ):
+            infectious_block = str(config_object["infectious_disease_block"])
+    for row in rows:
+        family = row.get("family", "")
+        status_value = row.get("status", "")
+        if status_value not in {"executed", "no_expansion_needed"}:
+            errors.append(f"invalid Wave 2 status: {family}")
+            continue
+        if not row.get("rationale", "").strip() or not row.get(
+            "source_candidate_keys", ""
+        ).strip() or not row.get("reviewer", "").strip():
+            errors.append(f"incomplete Wave 2 rationale provenance: {family}")
+        execution_fields = (
+            "search_id", "source", "query", "date_start", "date_end"
+        )
+        if status_value == "executed":
+            if any(not row.get(field, "").strip() for field in execution_fields) or not row.get(
+                "new_synonyms", ""
+            ).strip():
+                errors.append(f"incomplete executed Wave 2 row: {family}")
+            if row.get("source") != "pubmed":
+                errors.append(f"invalid Wave 2 source: {family}")
+            search_id = row.get("search_id", "")
+            if search_id in seen_ids:
+                errors.append("duplicate Wave 2 search_id")
+            seen_ids.add(search_id)
+            expected_token = FAMILY_TOKENS.get(family, "")
+            if re.fullmatch(
+                rf"SEARCH-\d{{8}}-PUBMED-(?:FAMILY|VENUE)-"
+                rf"{re.escape(expected_token)}-\d{{2}}",
+                search_id,
+            ) is None:
+                errors.append(f"Wave 2 search_id family mismatch: {family}")
+            start = _parse_date(row.get("date_start"))
+            end = _parse_date(row.get("date_end"))
+            if start is None or end is None or start > end:
+                errors.append(f"invalid Wave 2 date interval: {family}")
+            if _query_date_interval(row.get("query")) != (
+                row.get("date_start"),
+                row.get("date_end"),
+            ):
+                errors.append(f"Wave 2 query date mismatch: {family}")
+            if infectious_block and infectious_block not in row.get("query", ""):
+                errors.append(f"Wave 2 infectious block mismatch: {family}")
+        elif any(row.get(field, "") for field in (*execution_fields, "new_synonyms")):
+            errors.append(f"no-expansion Wave 2 row contains execution field: {family}")
+    return rows, list(dict.fromkeys(errors))
+
+
+def _write_header_only_csv(path: Path, headers: Sequence[str]) -> None:
+    temporary = path.with_name(f".{path.name}.{os.getpid()}.{time.time_ns()}.tmp")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with temporary.open("w", encoding="utf-8", newline="") as handle:
+            csv.writer(handle).writerow(headers)
+        temporary.replace(path)
+    except BaseException:
+        temporary.unlink(missing_ok=True)
+        raise
+
+
+def execute_wave(
+    root: Path,
+    query_registry: Path,
+    output_dir: Path,
+    email: str,
+    api_key: str | None = None,
+    opener: Callable[..., object] = urllib.request.urlopen,
+) -> dict[str, object]:
+    """Validate and execute the bounded Wave 2 synonym registry."""
+    root = Path(root)
+    query_registry = Path(query_registry)
+    output_dir = Path(output_dir)
+    rows, errors = _validate_wave_two_registry(query_registry, root)
+    if errors:
+        raise DiscoveryExecutionError("; ".join(errors))
+    try:
+        registry_relative_root = query_registry.relative_to(root)
+        query_registry.relative_to(output_dir)
+    except ValueError as error:
+        raise DiscoveryExecutionError("Wave 2 registry must be inside the Library run") from error
+    cells = [
+        SearchCell(
+            search_id=row["search_id"],
+            lane="FAMILY",
+            family=row["family"],
+            source="pubmed",
+            query=row["query"],
+            parent_search_id="",
+            date_start=row["date_start"],
+            date_end=row["date_end"],
+        )
+        for row in sorted(rows, key=lambda item: item["family"])
+        if row["status"] == "executed"
+    ]
+    empty_reason = "all_families_no_expansion_needed" if not cells else ""
+    receipt = execute_pubmed_run(
+        root,
+        cells,
+        output_dir,
+        email,
+        api_key=api_key,
+        opener=opener,
+        extra_configuration=(registry_relative_root,),
+        empty_reason=empty_reason,
+    )
+    _manifest_artifact(
+        output_dir,
+        query_registry,
+        hashlib.sha256(query_registry.read_bytes()).hexdigest(),
+    )
+    if not cells:
+        for filename, headers in (
+            ("screened_candidates.csv", SCREENED_HEADERS),
+            ("screening_audit.csv", AUDIT_HEADERS),
+        ):
+            path = output_dir / filename
+            _write_header_only_csv(path, headers)
+            _manifest_artifact(
+                output_dir, path, hashlib.sha256(path.read_bytes()).hexdigest()
+            )
+    return receipt
+
+
+def _empty_wave_contract_errors(run_dir: Path) -> list[str] | None:
+    receipt_path = run_dir / "RUN_RECEIPT.json"
+    if not receipt_path.is_file():
+        return None
+    payload, read_errors = _read_json(receipt_path, "invalid run receipt")
+    if read_errors or not isinstance(payload, dict):
+        return None
+    declared = payload.get("empty_reason") == "all_families_no_expansion_needed"
+    if not declared:
+        return None
+    errors: list[str] = []
+    if payload.get("cells") != []:
+        errors.append("empty Wave 2 contains search cells")
+    raw = run_dir / "raw"
+    if raw.exists() and (not raw.is_dir() or any(raw.iterdir())):
+        errors.append("empty Wave 2 contains raw artifacts")
+    manifest_errors, manifest = _validate_manifest(run_dir)
+    errors.extend(manifest_errors)
+    required = {
+        "QUERY_REGISTRY.csv",
+        "compiled_candidates_raw.csv",
+        "screened_candidates.csv",
+        "screening_audit.csv",
+    }
+    if not required.issubset(manifest):
+        errors.append("empty Wave 2 manifest coverage mismatch")
+    if any(path.startswith("raw/") for path in manifest):
+        errors.append("empty Wave 2 manifest contains raw artifact")
+    rows, registry_errors = _validate_wave_two_registry(
+        run_dir / "QUERY_REGISTRY.csv", _configuration_root(run_dir)
+    )
+    errors.extend(registry_errors)
+    if rows and any(row.get("status") != "no_expansion_needed" for row in rows):
+        errors.append("empty Wave 2 registry contains executed row")
+    for filename, headers in (
+        ("compiled_candidates_raw.csv", COMPILED_HEADERS),
+        ("screened_candidates.csv", SCREENED_HEADERS),
+        ("screening_audit.csv", AUDIT_HEADERS),
+    ):
+        received_headers, rows, csv_errors = _read_csv(
+            run_dir / filename, f"invalid empty Wave 2 {filename}"
+        )
+        errors.extend(csv_errors)
+        if received_headers != list(headers) or rows:
+            errors.append(f"empty Wave 2 table mismatch: {filename}")
+    return list(dict.fromkeys(errors))
+
+
+def _validate_lineage_registry(path: Path) -> tuple[list[dict[str, str]], list[str]]:
+    headers, rows, errors = _read_csv(path, "invalid lineage query registry")
+    if errors:
+        return rows, errors
+    if headers != list(LINEAGE_REGISTRY_HEADERS):
+        return rows, ["lineage query registry header mismatch"]
+    if not rows:
+        errors.append("lineage query registry is empty")
+    seen_queries: set[str] = set()
+    groups: dict[str, list[dict[str, str]]] = {}
+    for row in rows:
+        query_id = row.get("query_id", "")
+        named_source_id = row.get("named_source_id", "")
+        family = row.get("family", "")
+        if not query_id or query_id in seen_queries:
+            errors.append("duplicate or blank lineage registry query_id")
+        else:
+            seen_queries.add(query_id)
+        token = FAMILY_TOKENS.get(family, "")
+        if not token or re.fullmatch(
+            rf"SEARCH-\d{{8}}-LINEAGE-{re.escape(token)}-\d{{2}}", query_id
+        ) is None:
+            errors.append(f"invalid lineage query_id: {query_id}")
+        if not named_source_id:
+            errors.append("blank lineage named_source_id")
+        groups.setdefault(named_source_id, []).append(row)
+        if family not in FAMILIES:
+            errors.append(f"invalid lineage family: {query_id}")
+        if row.get("source") not in LINEAGE_SOURCES:
+            errors.append(f"invalid lineage source: {query_id}")
+        if row.get("query_variant") not in LINEAGE_QUERY_VARIANTS:
+            errors.append(f"invalid lineage query variant: {query_id}")
+        if row.get("source_role") not in LINEAGE_SOURCE_ROLES:
+            errors.append(f"invalid lineage source role: {query_id}")
+        for field in (
+            "method_label", "canonical_name", "query", "seed_candidate_keys", "reviewer"
+        ):
+            if not row.get(field, "").strip():
+                errors.append(f"blank lineage registry field: {query_id}: {field}")
+    for named_source_id, group in groups.items():
+        if len(group) > 3:
+            errors.append(
+                f"lineage named source has over three queries: {named_source_id}"
+            )
+        variants = [row.get("query_variant", "") for row in group]
+        if len(variants) != len(set(variants)):
+            errors.append(f"duplicate lineage query variant: {named_source_id}")
+        try:
+            ranks = [LINEAGE_QUERY_VARIANTS.index(variant) for variant in variants]
+        except ValueError:
+            ranks = []
+        if ranks and ranks != sorted(ranks):
+            errors.append(f"lineage query variants out of order: {named_source_id}")
+        for field in ("method_label", "canonical_name", "family", "source_role"):
+            if len({row.get(field, "") for row in group}) != 1:
+                errors.append(f"lineage named source field mismatch: {named_source_id}: {field}")
+    return rows, list(dict.fromkeys(errors))
+
+
+def _execute_pubmed_lineage_query(
+    query_id: str,
+    query: str,
+    output_dir: Path,
+    email: str,
+    api_key: str | None,
+    opener: Callable[..., object],
+) -> dict[str, object]:
+    request_number = 0
+
+    def request(endpoint: str, parameters: dict[str, object]) -> bytes:
+        nonlocal request_number
+        if request_number and not getattr(opener, "_discovery_handles_pacing", False):
+            time.sleep(0.11 if api_key else 0.34)
+        request_number += 1
+        if api_key:
+            parameters = {**parameters, "api_key": api_key}
+        return _urlopen_bytes(opener, endpoint, parameters)
+
+    esearch_data = request(
+        PUBMED_ESEARCH_URL,
+        {
+            "db": "pubmed",
+            "term": query,
+            "retmode": "json",
+            "retmax": 0,
+            "usehistory": "y",
+            "tool": TOOL_NAME,
+            "email": email,
+        },
+    )
+    count, webenv, query_key = _parse_esearch(esearch_data)
+    esearch_path = output_dir / "raw" / f"{query_id}.esearch.json"
+    esearch_sha = _atomic_bytes(
+        esearch_path, esearch_data, lambda raw: _parse_esearch(raw)
+    )
+    _manifest_artifact(output_dir, esearch_path, esearch_sha)
+    if count >= 10000:
+        raise DiscoveryExecutionError("overbroad lineage identity query")
+    pages: list[dict[str, object]] = []
+    page_finals: list[Path] = []
+    retrieved = 0
+    try:
+        for retstart in range(0, count, 200):
+            retmax = min(200, count - retstart)
+            data = request(
+                PUBMED_EFETCH_URL,
+                {
+                    "db": "pubmed",
+                    "retmode": "xml",
+                    "rettype": "abstract",
+                    "WebEnv": webenv,
+                    "query_key": query_key,
+                    "retstart": retstart,
+                    "retmax": retmax,
+                    "tool": TOOL_NAME,
+                    "email": email,
+                },
+            )
+            _, parsed_count = _parse_pubmed_page(data)
+            page_path = output_dir / "raw" / (
+                f"{query_id}.efetch.{retstart:09d}-{retstart + retmax - 1:09d}.xml"
+            )
+            page_sha = _atomic_bytes(
+                page_path, data, lambda raw: _parse_pubmed_page(raw)
+            )
+            page_finals.append(page_path)
+            pages.append(
+                {
+                    "retstart": retstart,
+                    "retmax": retmax,
+                    "path": page_path.relative_to(output_dir).as_posix(),
+                    "sha256": page_sha,
+                    "parsed_count": parsed_count,
+                }
+            )
+            retrieved += parsed_count
+        if retrieved != count:
+            raise DiscoveryExecutionError(
+                f"PubMed count mismatch: reported {count}, retrieved {retrieved}"
+            )
+    except BaseException:
+        entries = _read_manifest_entries(output_dir)
+        for page_path in page_finals:
+            entries.pop(page_path.relative_to(output_dir).as_posix(), None)
+            page_path.unlink(missing_ok=True)
+        _write_manifest_entries(output_dir, entries)
+        raise
+    for page in pages:
+        _manifest_artifact(
+            output_dir, output_dir / str(page["path"]), str(page["sha256"])
+        )
+    relative = esearch_path.relative_to(output_dir).as_posix()
+    return {
+        "query_id": query_id,
+        "source": "pubmed",
+        "query": query,
+        "reported_count": count,
+        "raw_path": relative,
+        "raw_sha256": esearch_sha,
+        "status": "complete",
+        "date_start": "",
+        "date_end": "",
+        "query_scope": "unbounded_identity",
+        "esearch_path": relative,
+        "esearch_sha256": esearch_sha,
+        "usehistory": True,
+        "webenv": webenv,
+        "query_key": query_key,
+        "efetch_pages": pages,
+    }
+
+
+def _write_rows_atomic(
+    path: Path,
+    headers: Sequence[str],
+    rows: Sequence[dict[str, str]],
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f".{path.name}.{os.getpid()}.{time.time_ns()}.tmp")
+    try:
+        with temporary.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=headers)
+            writer.writeheader()
+            writer.writerows(rows)
+        temporary.replace(path)
+    except BaseException:
+        temporary.unlink(missing_ok=True)
+        raise
+
+
+def _pubmed_lineage_candidate_rows(
+    registry: dict[str, str],
+    receipt: dict[str, object],
+    output_dir: Path,
+) -> list[dict[str, str]]:
+    rows: list[dict[str, str]] = []
+    rank = 0
+    for page in receipt.get("efetch_pages", []):
+        if not isinstance(page, dict):
+            continue
+        path = output_dir / str(page.get("path", ""))
+        root, _ = _parse_pubmed_page(path.read_bytes())
+        for record in root:
+            if record.tag.rsplit("}", 1)[-1] not in {
+                "PubmedArticle", "PubmedBookArticle"
+            }:
+                continue
+            rank += 1
+            fields = _pubmed_record_fields(record)
+            key, _ = _candidate_key(fields)
+            rows.append(
+                {
+                    "candidate_key": key,
+                    "query_id": registry["query_id"],
+                    "named_source_id": registry["named_source_id"],
+                    "candidate_rank": str(rank),
+                    "pmid": fields["pmid"],
+                    "doi": fields["doi"],
+                    "title": fields["title"],
+                    "year": fields["year"],
+                    "journal": fields["journal"],
+                    "authors": fields["authors"],
+                    "source_url": (
+                        f"https://pubmed.ncbi.nlm.nih.gov/{fields['pmid']}/"
+                        if fields["pmid"]
+                        else f"https://doi.org/{fields['doi']}" if fields["doi"] else ""
+                    ),
+                    "raw_path": str(page["path"]),
+                    "raw_sha256": str(page["sha256"]),
+                }
+            )
+    return rows
+
+
+def _crossref_lineage_candidate_rows(
+    registry: dict[str, str],
+    receipt: dict[str, object],
+    output_dir: Path,
+) -> list[dict[str, str]]:
+    try:
+        payload = json.loads(
+            (output_dir / str(receipt["response_path"])).read_text(encoding="utf-8")
+        )
+        items = payload["message"]["items"]
+    except (OSError, UnicodeError, json.JSONDecodeError, KeyError, TypeError) as error:
+        raise DiscoveryExecutionError("malformed Crossref response JSON") from error
+    rows: list[dict[str, str]] = []
+    for rank, item in enumerate(items, 1):
+        doi = _normalize_doi(str(item.get("DOI", "")))
+        titles = item.get("title", [])
+        containers = item.get("container-title", [])
+        authors = item.get("author", [])
+        date_parts = item.get("published", {}).get("date-parts", []) if isinstance(
+            item.get("published"), dict
+        ) else []
+        title = _normalize_whitespace(str(titles[0])) if isinstance(titles, list) and titles else ""
+        container = _normalize_whitespace(str(containers[0])) if isinstance(
+            containers, list
+        ) and containers else ""
+        first_author = ""
+        if isinstance(authors, list) and authors and isinstance(authors[0], dict):
+            first_author = _normalize_whitespace(
+                " ".join(
+                    str(authors[0].get(field, ""))
+                    for field in ("given", "family")
+                    if authors[0].get(field)
+                )
+            )
+        year = ""
+        if (
+            isinstance(date_parts, list)
+            and date_parts
+            and isinstance(date_parts[0], list)
+            and date_parts[0]
+        ):
+            year = str(date_parts[0][0])
+        key = f"DOI:{doi}" if doi else f"CROSSREF:{registry['query_id']}:{rank:03d}"
+        rows.append(
+            {
+                "candidate_key": key,
+                "query_id": registry["query_id"],
+                "named_source_id": registry["named_source_id"],
+                "bibliographic_query": registry["query"],
+                "candidate_rank": str(rank),
+                "doi": doi,
+                "title": title,
+                "year": year,
+                "container_title": container,
+                "first_author": first_author,
+                "type": str(item.get("type", "")),
+                "url": str(item.get("URL", "")),
+                "raw_path": str(receipt["response_path"]),
+                "raw_sha256": str(receipt["response_sha256"]),
+            }
+        )
+    return rows
+
+
+def _lineage_query_resumable(
+    registry: dict[str, str],
+    receipt: object,
+    output_dir: Path,
+) -> bool:
+    if not isinstance(receipt, dict):
+        return False
+    for field in ("query_id", "source", "query"):
+        if receipt.get(field) != registry.get(field):
+            return False
+    if receipt.get("status") != "complete" or not _integer(
+        receipt.get("reported_count")
+    ):
+        return False
+    manifest = _read_manifest_entries(output_dir)
+    raw_path = _safe_relative(receipt.get("raw_path"))
+    raw_sha = receipt.get("raw_sha256")
+    if (
+        raw_path is None
+        or not isinstance(raw_sha, str)
+        or manifest.get(raw_path) != raw_sha
+    ):
+        return False
+    try:
+        raw_data = (output_dir / raw_path).read_bytes()
+    except OSError:
+        return False
+    if hashlib.sha256(raw_data).hexdigest() != raw_sha:
+        return False
+    count = int(receipt["reported_count"])
+    if registry["source"] == "crossref":
+        prohibited = {
+            "esearch_path", "esearch_sha256", "usehistory", "webenv",
+            "query_key", "efetch_pages",
+        }
+        if prohibited & set(receipt):
+            return False
+        if (
+            receipt.get("response_path") != raw_path
+            or receipt.get("response_sha256") != raw_sha
+            or receipt.get("rows") != 5
+        ):
+            return False
+        try:
+            payload = json.loads(raw_data.decode("utf-8"))
+            message = payload["message"]
+            items = message["items"]
+            total = int(message["total-results"])
+        except (UnicodeError, json.JSONDecodeError, KeyError, TypeError, ValueError):
+            return False
+        return (
+            isinstance(items, list)
+            and len(items) <= 5
+            and receipt.get("returned_candidate_count") == len(items)
+            and receipt.get("total_results") == total
+            and count == total
+        )
+    if registry["source"] != "pubmed":
+        return False
+    try:
+        raw_count, raw_webenv, raw_query_key = _parse_esearch(raw_data)
+    except DiscoveryExecutionError:
+        return False
+    if (
+        count >= 10000
+        or raw_count != count
+        or receipt.get("raw_path") != receipt.get("esearch_path")
+        or receipt.get("raw_sha256") != receipt.get("esearch_sha256")
+        or receipt.get("date_start") != ""
+        or receipt.get("date_end") != ""
+        or receipt.get("query_scope") != "unbounded_identity"
+        or receipt.get("usehistory") is not True
+        or receipt.get("webenv") != raw_webenv
+        or receipt.get("query_key") != raw_query_key
+    ):
+        return False
+    return not _validate_pages(
+        output_dir,
+        receipt.get("efetch_pages"),
+        count,
+        manifest,
+        set(),
+        {raw_path},
+    )
+
+
+def _remove_lineage_query_artifacts(output_dir: Path, query_id: str) -> None:
+    entries = _read_manifest_entries(output_dir)
+    raw_dir = output_dir / "raw"
+    if raw_dir.is_dir():
+        for path in raw_dir.iterdir():
+            if path.is_file() and (
+                path.name.startswith(query_id)
+                or (path.name.startswith(f".{query_id}") and path.name.endswith(".tmp"))
+            ):
+                entries.pop(path.relative_to(output_dir).as_posix(), None)
+                path.unlink(missing_ok=True)
+    _write_manifest_entries(output_dir, entries)
+
+
+def _publish_lineage_candidate_tables(
+    output_dir: Path,
+    pubmed_candidates: Sequence[dict[str, str]],
+    crossref_candidates: Sequence[dict[str, str]],
+) -> None:
+    for filename, headers, candidate_rows in (
+        ("pubmed_lineage_candidates.csv", PUBMED_LINEAGE_HEADERS, pubmed_candidates),
+        ("crossref_candidates.csv", CROSSREF_LINEAGE_HEADERS, crossref_candidates),
+    ):
+        path = output_dir / filename
+        _write_rows_atomic(path, headers, candidate_rows)
+        _manifest_artifact(
+            output_dir, path, hashlib.sha256(path.read_bytes()).hexdigest()
+        )
+
+
+def execute_lineage(
+    root: Path,
+    query_registry: Path,
+    output_dir: Path,
+    email: str,
+    api_key: str | None = None,
+    opener: Callable[..., object] = urllib.request.urlopen,
+) -> dict[str, object]:
+    """Execute a frozen heterogeneous lineage identity query registry."""
+    root = Path(root)
+    query_registry = Path(query_registry)
+    output_dir = Path(output_dir)
+    rows, errors = _validate_lineage_registry(query_registry)
+    if errors:
+        raise DiscoveryExecutionError("; ".join(errors))
+    try:
+        registry_relative_root = query_registry.relative_to(root)
+    except ValueError as error:
+        raise DiscoveryExecutionError("lineage registry must be inside the Library") from error
+    output_dir.mkdir(parents=True, exist_ok=True)
+    receipt_path = output_dir / "LINEAGE_RUN_RECEIPT.json"
+    existing_queries: dict[str, dict[str, object]] = {}
+    existing_executed_at = ""
+    if receipt_path.is_file():
+        try:
+            existing_payload = json.loads(receipt_path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, json.JSONDecodeError):
+            existing_payload = None
+        if isinstance(existing_payload, dict) and isinstance(
+            existing_payload.get("queries"), list
+        ):
+            existing_executed_at = str(existing_payload.get("executed_at", ""))
+            existing_queries = {
+                str(item.get("query_id")): item
+                for item in existing_payload["queries"]
+                if isinstance(item, dict) and isinstance(item.get("query_id"), str)
+            }
+    _manifest_artifact(
+        output_dir,
+        query_registry,
+        hashlib.sha256(query_registry.read_bytes()).hexdigest(),
+    )
+    queries: list[dict[str, object]] = []
+    pubmed_candidates: list[dict[str, str]] = []
+    crossref_candidates: list[dict[str, str]] = []
+    receipt: dict[str, object] = {
+        "schema_version": 1,
+        "executed_at": existing_executed_at
+        or datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(),
+        "timezone": "Asia/Shanghai",
+        "tool_version": TOOL_VERSION,
+        "configuration_files": _configuration_receipts(
+            root, (registry_relative_root,)
+        ),
+        "queries": queries,
+    }
+    paced_opener = _PacedOpener(opener, 0.11 if api_key else 0.34)
+    _publish_lineage_candidate_tables(
+        output_dir, pubmed_candidates, crossref_candidates
+    )
+    _write_json_atomic(receipt_path, receipt)
+    for row in rows:
+        old = existing_queries.get(row["query_id"])
+        if _lineage_query_resumable(row, old, output_dir):
+            query_receipt = old
+        else:
+            _remove_lineage_query_artifacts(output_dir, row["query_id"])
+            if row["source"] == "pubmed":
+                query_receipt = _execute_pubmed_lineage_query(
+                    row["query_id"],
+                    row["query"],
+                    output_dir,
+                    email,
+                    api_key,
+                    paced_opener,
+                )
+            else:
+                query_receipt = resolve_crossref_candidates(
+                    row["query_id"],
+                    row["query"],
+                    output_dir,
+                    email,
+                    opener=paced_opener,
+                )
+        if row["source"] == "pubmed":
+            pubmed_candidates.extend(
+                _pubmed_lineage_candidate_rows(row, query_receipt, output_dir)
+            )
+        else:
+            crossref_candidates.extend(
+                _crossref_lineage_candidate_rows(row, query_receipt, output_dir)
+            )
+        queries.append(query_receipt)
+        _publish_lineage_candidate_tables(
+            output_dir, pubmed_candidates, crossref_candidates
+        )
+        _write_json_atomic(receipt_path, receipt)
+    return receipt
+
+
+def _text(element: ET.Element, path: str) -> str:
+    found = element.find(path)
+    return "" if found is None else "".join(found.itertext()).strip()
+
+
+def _normalize_whitespace(value: str) -> str:
+    return " ".join(value.split())
+
+
+def _normalize_title(value: str) -> str:
+    return _normalize_whitespace(unicodedata.normalize("NFKC", value)).casefold()
+
+
+def _normalize_doi(value: str) -> str:
+    normalized = value.strip().casefold()
+    for prefix in ("https://doi.org/", "http://doi.org/", "doi:"):
+        if normalized.startswith(prefix):
+            normalized = normalized[len(prefix):]
+    return normalized.strip()
+
+
+def _pubmed_record_fields(record: ET.Element) -> dict[str, str]:
+    pmid = _normalize_whitespace(_text(record, ".//PMID"))
+    doi = ""
+    for item in record.findall(".//ArticleId"):
+        if str(item.attrib.get("IdType", "")).casefold() == "doi":
+            doi = _normalize_doi("".join(item.itertext()))
+            break
+    if not doi:
+        for item in record.findall(".//ELocationID"):
+            if str(item.attrib.get("EIdType", "")).casefold() == "doi":
+                doi = _normalize_doi("".join(item.itertext()))
+                break
+    title = _normalize_whitespace(_text(record, ".//ArticleTitle"))
+    year = _normalize_whitespace(_text(record, ".//PubDate/Year"))
+    if not year:
+        medline_date = _text(record, ".//PubDate/MedlineDate")
+        matched = re.search(r"(?:19|20)\d{2}", medline_date)
+        year = matched.group(0) if matched else ""
+    journal = _normalize_whitespace(
+        _text(record, ".//Journal/Title") or _text(record, ".//Journal/ISOAbbreviation")
+    )
+    authors: list[str] = []
+    for author in record.findall(".//AuthorList/Author"):
+        collective = _normalize_whitespace(_text(author, "./CollectiveName"))
+        personal = _normalize_whitespace(
+            " ".join(
+                part
+                for part in (_text(author, "./ForeName"), _text(author, "./LastName"))
+                if part
+            )
+        )
+        if collective or personal:
+            authors.append(collective or personal)
+    abstract = _normalize_whitespace(
+        " ".join("".join(item.itertext()) for item in record.findall(".//AbstractText"))
+    )
+    publication_types = sorted(
+        {
+            _normalize_whitespace("".join(item.itertext()))
+            for item in record.findall(".//PublicationType")
+            if _normalize_whitespace("".join(item.itertext()))
+        }
+    )
+    return {
+        "pmid": pmid,
+        "doi": doi,
+        "title": title,
+        "year": year,
+        "journal": journal,
+        "authors": "; ".join(authors),
+        "abstract": abstract,
+        "publication_types": "|".join(publication_types),
+    }
+
+
+def _leaf_receipts(cells: object) -> list[dict[str, object]]:
+    leaves: list[dict[str, object]] = []
+    if not isinstance(cells, list):
+        return leaves
+    for cell in cells:
+        if not isinstance(cell, dict):
+            continue
+        if cell.get("cell_type") == "leaf":
+            leaves.append(cell)
+        elif cell.get("cell_type") == "split_parent":
+            leaves.extend(_leaf_receipts(cell.get("children")))
+    return leaves
+
+
+def _candidate_key(fields: dict[str, str]) -> tuple[str, str]:
+    if fields["pmid"]:
+        return f"PMID:{fields['pmid']}", "pmid"
+    if fields["doi"]:
+        return f"DOI:{fields['doi']}", "doi"
+    fallback = "|".join(
+        (_normalize_title(fields["title"]), fields["year"], _normalize_title(fields["journal"]))
+    )
+    return f"TITLE:{hashlib.sha256(fallback.encode()).hexdigest()[:16]}", "title_year_journal"
+
+
+def compile_pubmed_candidates(run_dir: Path) -> list[dict[str, str]]:
+    """Compile all manifested PubMed pages into a deterministic raw candidate table."""
+    run_dir = Path(run_dir)
+    try:
+        receipt = json.loads((run_dir / "RUN_RECEIPT.json").read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError, UnicodeError) as error:
+        raise DiscoveryExecutionError("invalid run receipt for compilation") from error
+    manifest = _read_manifest_entries(run_dir)
+    observations: list[dict[str, str]] = []
+    for leaf in _leaf_receipts(receipt.get("cells")):
+        pages = leaf.get("efetch_pages")
+        if not isinstance(pages, list):
+            raise DiscoveryExecutionError("invalid EFetch page receipt for compilation")
+        for page in pages:
+            if not isinstance(page, dict) or _safe_relative(page.get("path")) is None:
+                raise DiscoveryExecutionError("invalid EFetch page receipt for compilation")
+            relative = str(page["path"])
+            expected_sha = page.get("sha256")
+            if (
+                not isinstance(expected_sha, str)
+                or manifest.get(relative) != expected_sha
+            ):
+                raise DiscoveryExecutionError(
+                    f"compile input checksum mismatch: {relative}"
+                )
+            page_path = run_dir / relative
+            try:
+                page_bytes = page_path.read_bytes()
+            except OSError as error:
+                raise DiscoveryExecutionError("missing EFetch page for compilation") from error
+            if hashlib.sha256(page_bytes).hexdigest() != expected_sha:
+                raise DiscoveryExecutionError(
+                    f"compile input checksum mismatch: {relative}"
+                )
+            root, _ = _parse_pubmed_page(page_bytes)
+            for record in root:
+                if record.tag.rsplit("}", 1)[-1] not in {"PubmedArticle", "PubmedBookArticle"}:
+                    continue
+                fields = _pubmed_record_fields(record)
+                fields.update(
+                    search_ids=str(leaf.get("search_id", "")),
+                    lanes=str(leaf.get("lane", "")),
+                    preliminary_families=str(leaf.get("family", "")),
+                )
+                observations.append(fields)
+
+    groups: list[list[dict[str, str]]] = []
+    for observation in observations:
+        matched_groups = [
+            group
+            for group in groups
+            if any(
+                (observation["pmid"] and observation["pmid"] == member["pmid"])
+                or (observation["doi"] and observation["doi"] == member["doi"])
+                for member in group
+            )
+        ]
+        if not matched_groups:
+            groups.append([observation])
+            continue
+        primary = matched_groups[0]
+        primary.append(observation)
+        for redundant in matched_groups[1:]:
+            primary.extend(redundant)
+            groups.remove(redundant)
+
+    rows: list[dict[str, str]] = []
+    for group in groups:
+        representative = min(
+            group,
+            key=lambda item: (
+                not bool(item["pmid"]),
+                not bool(item["doi"]),
+                _normalize_title(item["title"]),
+            ),
+        )
+        fields = {
+            name: representative[name]
+            for name in (
+                "pmid", "doi", "title", "year", "journal", "authors", "abstract",
+                "publication_types",
+            )
+        }
+        for provenance in ("search_ids", "lanes", "preliminary_families"):
+            fields[provenance] = "|".join(
+                sorted(
+                    {
+                        value
+                        for item in group
+                        for value in item[provenance].split("|")
+                        if value
+                    }
+                )
+            )
+        key, basis = _candidate_key(fields)
+        if len(group) > 1:
+            pmids = [item["pmid"] for item in group if item["pmid"]]
+            dois = [item["doi"] for item in group if item["doi"]]
+            if len(pmids) != len(set(pmids)):
+                basis = "pmid"
+            elif len(dois) != len(set(dois)):
+                basis = "doi"
+        fields.update(
+            candidate_key=key,
+            source_url=(
+                f"https://pubmed.ncbi.nlm.nih.gov/{fields['pmid']}/"
+                if fields["pmid"]
+                else f"https://doi.org/{fields['doi']}" if fields["doi"] else ""
+            ),
+            deduplication_basis=basis,
+            possible_duplicate_group="",
+        )
+        rows.append(fields)
+
+    by_title: dict[str, list[dict[str, str]]] = {}
+    for row in rows:
+        normalized = _normalize_title(row["title"])
+        if normalized:
+            by_title.setdefault(normalized, []).append(row)
+    for normalized, same_title in by_title.items():
+        if len(same_title) > 1:
+            group_id = f"TITLE-DUP:{hashlib.sha256(normalized.encode()).hexdigest()[:16]}"
+            for row in same_title:
+                row["possible_duplicate_group"] = group_id
+
+    rows.sort(key=lambda item: item["candidate_key"])
+    for row in rows:
+        hash_fields = {header: row.get(header, "") for header in COMPILED_HEADERS if header != "row_sha256"}
+        row["row_sha256"] = hashlib.sha256(
+            json.dumps(
+                hash_fields,
+                ensure_ascii=False,
+                sort_keys=True,
+                separators=(",", ":"),
+            ).encode("utf-8")
+        ).hexdigest()
+    path = run_dir / "compiled_candidates_raw.csv"
+    temporary = path.with_name(f".{path.name}.{os.getpid()}.{time.time_ns()}.tmp")
+    try:
+        with temporary.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=COMPILED_HEADERS)
+            writer.writeheader()
+            writer.writerows(rows)
+        temporary.replace(path)
+    except BaseException:
+        temporary.unlink(missing_ok=True)
+        raise
+    _manifest_artifact(run_dir, path, hashlib.sha256(path.read_bytes()).hexdigest())
+    return rows
 
 
 def _error(kind: str, path: Path, error: BaseException) -> str:
@@ -816,6 +2405,7 @@ def _validate_cell(
         )
     )
     esearch_path = _safe_relative(cell["esearch_path"])
+    esearch_result: tuple[int, str, str] | None = None
     if esearch_path is not None:
         if esearch_path in owned_esearch_paths:
             errors.append(f"duplicate esearch path: {esearch_path}")
@@ -825,6 +2415,16 @@ def _validate_cell(
             errors.append(f"duplicate raw artifact path: {esearch_path}")
         else:
             owned_raw_paths.add(esearch_path)
+        if esearch_path in manifest:
+            try:
+                esearch_result = _parse_esearch(
+                    (run_dir / esearch_path).read_bytes()
+                )
+            except (OSError, DiscoveryExecutionError):
+                errors.append(f"invalid PubMed ESearch JSON: {esearch_path}")
+            else:
+                if esearch_result[0] != reported_count:
+                    errors.append("esearch reported count mismatch")
     cell_type = cell["cell_type"]
     if cell_type == "leaf":
         for field in LEAF_REQUIRED_FIELDS:
@@ -839,6 +2439,11 @@ def _validate_cell(
         for field in ("webenv", "query_key"):
             if not isinstance(cell[field], str) or not cell[field].strip():
                 errors.append(f"blank leaf receipt field: {field}")
+        if esearch_result is not None and (
+            cell.get("webenv") != esearch_result[1]
+            or cell.get("query_key") != esearch_result[2]
+        ):
+            errors.append("esearch history mismatch")
         retrieved_count = cell["retrieved_count"]
         if not _integer(retrieved_count):
             errors.append("invalid nonnegative integer count: retrieved_count")
@@ -1097,6 +2702,9 @@ def validate_search_run(run_dir: Path) -> list[str]:
             )
     if "compiled_candidates_raw.csv" not in manifest:
         errors.append("compiled_candidates_raw.csv absent from manifest")
+    empty_errors = _empty_wave_contract_errors(run_dir)
+    if empty_errors is not None:
+        errors.extend(empty_errors)
     return list(dict.fromkeys(errors))
 
 
@@ -1197,6 +2805,21 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
                 errors.append("PubMed lineage raw/esearch mismatch")
             if row["usehistory"] is not True or not str(row["webenv"]).strip() or not str(row["query_key"]).strip():
                 errors.append("invalid PubMed lineage history fields")
+            raw_relative = _safe_relative(row["raw_path"])
+            if raw_relative is not None and raw_relative in manifest:
+                try:
+                    raw_count, raw_webenv, raw_query_key = _parse_esearch(
+                        (run_dir / raw_relative).read_bytes()
+                    )
+                except (OSError, DiscoveryExecutionError):
+                    errors.append("invalid PubMed lineage ESearch JSON")
+                else:
+                    if (
+                        raw_count != reported_count
+                        or raw_webenv != row["webenv"]
+                        or raw_query_key != row["query_key"]
+                    ):
+                        errors.append("PubMed lineage esearch mismatch")
             if reported_count >= 10000:
                 errors.append("overbroad lineage identity query")
             else:
@@ -1220,7 +2843,10 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
                     errors.append(f"missing Crossref lineage field: {field}")
             for field in ("esearch_path", "esearch_sha256", "usehistory", "webenv", "query_key", "efetch_pages"):
                 if field in row:
-                    errors.append(f"prohibited crossref field: {field}")
+                    errors.append(
+                        "crossref receipt contains pubmed field: "
+                        f"{field} (prohibited crossref field)"
+                    )
             if any(field not in row for field in required):
                 continue
             if row["raw_path"] != row["response_path"] or row["raw_sha256"] != row["response_sha256"]:
@@ -1230,6 +2856,33 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
             for field in ("returned_candidate_count", "total_results"):
                 if not _integer(row[field]):
                     errors.append(f"invalid nonnegative integer count: {field}")
+            raw_relative = _safe_relative(row["raw_path"])
+            if raw_relative is not None and raw_relative in manifest:
+                try:
+                    raw_payload = json.loads(
+                        (run_dir / raw_relative).read_text(encoding="utf-8")
+                    )
+                    raw_message = raw_payload["message"]
+                    raw_items = raw_message["items"]
+                    raw_total = int(raw_message["total-results"])
+                except (
+                    OSError,
+                    UnicodeError,
+                    json.JSONDecodeError,
+                    KeyError,
+                    TypeError,
+                    ValueError,
+                ):
+                    errors.append("invalid Crossref lineage response JSON")
+                else:
+                    if (
+                        not isinstance(raw_items, list)
+                        or len(raw_items) > 5
+                        or row["returned_candidate_count"] != len(raw_items)
+                        or row["total_results"] != raw_total
+                        or reported_count != raw_total
+                    ):
+                        errors.append("Crossref lineage raw count mismatch")
         else:
             errors.append("invalid lineage source")
     for table in ("pubmed_lineage_candidates.csv", "crossref_candidates.csv"):
@@ -1272,9 +2925,7 @@ def _validate_lineage_decisions(
         registry_rows: list[dict[str, str]] = []
         errors.append("lineage query registry missing")
     else:
-        registry_rows, registry_errors = _rows_with_headers(
-            registry_path, LINEAGE_REGISTRY_HEADERS, "lineage query registry"
-        )
+        registry_rows, registry_errors = _validate_lineage_registry(registry_path)
         errors.extend(registry_errors)
     registry_by_query: dict[str, dict[str, str]] = {}
     for row in registry_rows:
@@ -1295,6 +2946,10 @@ def _validate_lineage_decisions(
 
     candidates_by_query: dict[str, list[dict[str, str]]] = {}
     candidates_by_key: dict[str, list[dict[str, str]]] = {}
+    table_rows_by_source: dict[str, list[dict[str, str]]] = {
+        "pubmed": [],
+        "crossref": [],
+    }
     for filename, headers in (
         ("pubmed_lineage_candidates.csv", PUBMED_LINEAGE_HEADERS),
         ("crossref_candidates.csv", CROSSREF_LINEAGE_HEADERS),
@@ -1304,6 +2959,7 @@ def _validate_lineage_decisions(
         )
         errors.extend(row_errors)
         source = "pubmed" if filename.startswith("pubmed") else "crossref"
+        table_rows_by_source[source] = rows
         for row in rows:
             query_id = row.get("query_id", "")
             key = row.get("candidate_key", "")
@@ -1334,6 +2990,38 @@ def _validate_lineage_decisions(
                     errors.append(f"lineage candidate provenance mismatch: {key}")
             candidates_by_query.setdefault(query_id, []).append(row)
             candidates_by_key.setdefault(key, []).append(row)
+
+    expected_rows_by_source: dict[str, list[dict[str, str]]] = {
+        "pubmed": [],
+        "crossref": [],
+    }
+    for query_id, registry in registry_by_query.items():
+        receipt = receipt_queries.get(query_id)
+        if receipt is None:
+            continue
+        try:
+            if registry.get("source") == "pubmed":
+                expected_rows_by_source["pubmed"].extend(
+                    _pubmed_lineage_candidate_rows(registry, receipt, run_dir)
+                )
+            elif registry.get("source") == "crossref":
+                expected_rows_by_source["crossref"].extend(
+                    _crossref_lineage_candidate_rows(registry, receipt, run_dir)
+                )
+        except (DiscoveryExecutionError, OSError, UnicodeError) as error:
+            errors.append(
+                "lineage candidate table cannot be recomputed: "
+                f"{query_id}: {error}"
+            )
+    for source in ("pubmed", "crossref"):
+        headers = (
+            PUBMED_LINEAGE_HEADERS if source == "pubmed" else CROSSREF_LINEAGE_HEADERS
+        )
+        normalize = lambda row: tuple(row.get(field, "") for field in headers)
+        if sorted(map(normalize, table_rows_by_source[source])) != sorted(
+            map(normalize, expected_rows_by_source[source])
+        ):
+            errors.append(f"lineage candidate table content mismatch: {source}")
 
     audit_rows, audit_errors = _rows_with_headers(
         run_dir / "lineage_identity_audit.csv",
@@ -1562,6 +3250,9 @@ def _primary_index(run_dir: Path) -> tuple[dict[str, dict[str, str]], list[str]]
 
 def validate_screening(run_dir: Path) -> list[str]:
     run_dir = Path(run_dir)
+    empty_errors = _empty_wave_contract_errors(run_dir)
+    if empty_errors is not None:
+        return empty_errors
     compiled, errors = _compiled_index(run_dir)
     primary, primary_errors = _primary_index(run_dir)
     errors.extend(primary_errors)
@@ -1645,6 +3336,9 @@ def _audit_stratum(row: dict[str, str], compiled: dict[str, dict[str, str]]) -> 
 
 def validate_screening_audit(run_dir: Path) -> list[str]:
     run_dir = Path(run_dir)
+    empty_errors = _empty_wave_contract_errors(run_dir)
+    if empty_errors is not None:
+        return empty_errors
     compiled, errors = _compiled_index(run_dir)
     primary, primary_errors = _primary_index(run_dir)
     errors.extend(primary_errors)
@@ -2058,7 +3752,53 @@ def main(argv: Sequence[str] | None = None) -> int:
         return _emit(validate_all(args.root, args.run_dir))
     if args.command == "verify-external-boundary":
         return _emit(validate_external_boundary(args.root, args.source_root))
-    return _emit([f"{args.command} is deferred to the retrieval implementation task"])
+    try:
+        if args.command == "run":
+            errors = validate_configuration(args.root)
+            if errors:
+                return _emit(errors)
+            cells = build_search_cells(args.root, args.date)
+            execute_pubmed_run(
+                args.root,
+                cells,
+                args.output,
+                args.email,
+                api_key=args.api_key,
+                opener=urllib.request.urlopen,
+            )
+            return _emit(validate_search_run(args.output))
+        if args.command == "run-wave":
+            errors = validate_configuration(args.root)
+            if errors:
+                return _emit(errors)
+            execute_wave(
+                args.root,
+                args.query_registry,
+                args.output,
+                args.email,
+                api_key=args.api_key,
+                opener=urllib.request.urlopen,
+            )
+            return _emit(validate_search_run(args.output))
+        if args.command == "run-lineage":
+            errors = validate_configuration(args.root)
+            if errors:
+                return _emit(errors)
+            execute_lineage(
+                args.root,
+                args.query_registry,
+                args.output,
+                args.email,
+                api_key=args.api_key,
+                opener=urllib.request.urlopen,
+            )
+            return _emit([])
+        if args.command == "compile":
+            compile_pubmed_candidates(args.run_dir)
+            return _emit([])
+    except (DiscoveryExecutionError, OSError, UnicodeError, ValueError) as error:
+        return _emit([str(error)])
+    return _emit([f"unsupported discovery command: {args.command}"])
 
 
 if __name__ == "__main__":
