@@ -4,6 +4,7 @@ import argparse
 import csv
 from dataclasses import dataclass
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import re
@@ -282,9 +283,14 @@ REQUIRED_PATHS = (
     "00_governance/REGISTRY_SCHEMA.md",
     "00_governance/RESUME_PROMPT.md",
     "01_search/SEARCH_LOG_TEMPLATE.md",
+    "01_search/PAPER_DISCOVERY_RECORD_TEMPLATE.md",
+    "01_search/METHOD_DISCOVERY_RECORD_TEMPLATE.md",
     "01_search/search_protocols/README.md",
+    "01_search/search_protocols/2026-07-20-broad-methods-discovery-protocol.md",
+    "01_search/search_protocols/discovery_queries.json",
     "01_search/search_logs/README.md",
     "01_search/journal_registry/README.md",
+    "01_search/journal_registry/journals.csv",
     "01_search/seed_scans/SEED_SCAN_PROVENANCE.md",
     "01_search/seed_scans/MANIFEST_SHA256.json",
     "02_method_library/METHOD_CARD_TEMPLATE.md",
@@ -305,7 +311,9 @@ REQUIRED_PATHS = (
     "06_simulation_lab/tests/README.md",
     "06_simulation_lab/reports/README.md",
     "07_reviews/REVIEW_TEMPLATE.md",
+    "07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_BASELINE.json",
     "99_archive/README.md",
+    "00_governance/scripts/discovery_search.py",
     "docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md",
     "docs/superpowers/plans/2026-07-20-library-bootstrap-implementation.md",
 )
@@ -561,6 +569,26 @@ def validate_seed_checksum(root: Path) -> list[str]:
     return errors
 
 
+def validate_discovery_configuration(root: Path) -> list[str]:
+    module_path = Path(__file__).with_name("discovery_search.py")
+    spec = importlib.util.spec_from_file_location(
+        "_library_discovery_search_validator", module_path
+    )
+    if spec is None or spec.loader is None:
+        return ["discovery configuration: validator import failed"]
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    try:
+        spec.loader.exec_module(module)
+        validation_errors = module.validate_configuration(root)
+    except (ImportError, OSError, AttributeError) as error:
+        return [
+            "discovery configuration: "
+            + _read_error("validator import failed", module_path, error)
+        ]
+    return [f"discovery configuration: {error}" for error in validation_errors]
+
+
 def validate_repository(root: Path) -> list[str]:
     try:
         root = root.resolve()
@@ -577,6 +605,7 @@ def validate_repository(root: Path) -> list[str]:
     if (root / DESIGN_PATH).is_file():
         errors.extend(validate_design_checksum(root))
     errors.extend(validate_seed_checksum(root))
+    errors.extend(validate_discovery_configuration(root))
     return list(dict.fromkeys(errors))
 
 
