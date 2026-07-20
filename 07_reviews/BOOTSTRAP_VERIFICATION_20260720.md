@@ -390,3 +390,20 @@ e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57  docs/superpowe
 The design comparison against approved commit `c708ac2402431202c8b1af4c5fd87035460249ab` and the seed comparison against the named `Surveillance_AMR` source each exited `0`. The fresh filtered `Surveillance_AMR` status still matched the 16-line Task 7 baseline with `diff -u` exit `0`; the exact pointer status remained `?? ID_EPI_METHODS_LIBRARY_POINTER.md`; the source index had zero staged paths; and source HEAD remained `eb5d15656b8fe69a8359705c80125d695a1c0782`. This remains path/status proof, not byte-identity proof for paths already dirty before Task 7.
 
 At `2026-07-20 08:18:26 CST +0800`, the full `git ls-remote origin` query exited `0` with no output, so the remote remained empty. This wave did not push, merge, create a pull request, modify `main`, run a search, download data, execute a simulation, select a flagship, or write any `Surveillance_AMR` file. The next action is whole-branch re-review, followed by the final validation/merge/publication gate.
+
+## Final whole-branch re-review pass addendum — 2026-07-20
+
+Final whole-branch re-review of commit `13e133417e44c6b869dca40b7fff2afd046bf42b` passed with the following verdict:
+
+```text
+Ready to merge: Yes
+Critical findings: 0
+Important findings: 0
+Deferred non-blocking Minor findings: 1
+```
+
+The deferred Minor concerns redundant `try`/`except` plus `self.fail` wrappers in several new validator tests. It is a test-cleanliness observation, does not change runtime behavior, and does not block the merge gate.
+
+This receipt records review acceptance only. It does not claim that final controller validation, merge to `main`, post-merge validation, push, or publication has occurred. Those actions remain sequentially pending. No broad scientific search, data download, simulation, or flagship-selection work has started.
+
+The exact next action is controller-owned final validation of the reviewed branch, followed by merge to `main`, post-merge validation, and push of only verified `main` with an exact remote-SHA equality receipt.
