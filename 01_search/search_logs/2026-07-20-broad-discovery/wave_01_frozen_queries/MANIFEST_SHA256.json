@@ -2,12 +2,16 @@
   "algorithm": "SHA256",
   "files": [
     {
+      "path": ".gitattributes",
+      "sha256": "e067b7b82dbc53f41f26248a77a21ce023cdc7886e2be4f96410228d2cb88322"
+    },
+    {
       "path": "COUNT_RECONCILIATION.txt",
       "sha256": "ba644c51c1f4c17461daa9e24727d3a7ad0df617b33ada05cf2c22ec427d0f90"
     },
     {
       "path": "compiled_candidates_raw.csv",
-      "sha256": "ddd56d3eed2c63510457e17198087ae755e9c9cc3b1b6b3ccad7eadd511c9a3f"
+      "sha256": "77c22f957e0a96d437056eeb7f9e5b2f859d6e1d29d5893a766bbafaf422777d"
     },
     {
       "path": "raw/SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01.efetch.000000000-000000199.xml",
