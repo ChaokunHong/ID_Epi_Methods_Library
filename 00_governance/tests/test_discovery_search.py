@@ -722,6 +722,34 @@ class DiscoverySearchTests(unittest.TestCase):
         self.write_journals(rows)
         self.assertIn("duplicate pubmed_token", "\n".join(search.validate_configuration(self.root)))
 
+    def test_journal_registry_requires_the_approved_active_coverage(self):
+        self.copy_configuration()
+        self.write_journals([])
+        rendered = "\n".join(search.validate_configuration(self.root))
+        self.assertIn("journal registry must contain exactly 22 active rows", rendered)
+        with self.assertRaisesRegex(ValueError, "active journal registry is empty"):
+            search.build_search_cells(self.root, date(2026, 7, 20))
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            result = search.main(
+                ["list-cells", "--root", str(self.root), "--date", "2026-07-20"]
+            )
+        self.assertEqual(result, 1)
+        self.assertIn("DISCOVERY FAIL", output.getvalue())
+        self.assertNotIn("()", output.getvalue())
+
+    def test_journal_registry_rejects_duplicate_ids_and_unapproved_titles(self):
+        self.copy_configuration()
+        path = self.root / search.JOURNAL_REGISTRY_PATH
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[1]["journal_id"] = rows[0]["journal_id"]
+        rows[2]["title"] = "Unapproved Journal"
+        self.write_journals(rows)
+        rendered = "\n".join(search.validate_configuration(self.root))
+        self.assertIn("duplicate journal_id", rendered)
+        self.assertIn("approved journal title set mismatch", rendered)
+
     def test_configuration_csv_rejects_short_rows_without_traceback(self):
         self.copy_configuration()
         self.shorten_first_csv_row(self.root / search.JOURNAL_REGISTRY_PATH)
@@ -786,6 +814,21 @@ class DiscoverySearchTests(unittest.TestCase):
         receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
         self.assertIn(
             "configuration file checksum mismatch",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
+    def test_configuration_receipts_are_confined_without_following_parent_symlinks(self):
+        run_dir = self.make_valid_run()
+        self.assertEqual(search.validate_search_run(run_dir), [])
+
+        outside_configuration = self.root.parent / "outside-configuration"
+        (self.root / "01_search").rename(outside_configuration)
+        (self.root / "01_search").symlink_to(
+            outside_configuration,
+            target_is_directory=True,
+        )
+        self.assertIn(
+            "configuration path contains symlink",
             "\n".join(search.validate_search_run(run_dir)),
         )
 

@@ -67,6 +67,32 @@ JOURNAL_GROUPS = frozenset(
 )
 JOURNAL_SEARCH_ROLES = frozenset({"applied_seed", "method_source", "both"})
 JOURNAL_STATUSES = frozenset({"active", "inactive"})
+APPROVED_JOURNAL_TITLES = frozenset(
+    {
+        "The Lancet",
+        "New England Journal of Medicine",
+        "JAMA",
+        "BMJ",
+        "PLOS Medicine",
+        "Nature",
+        "Science",
+        "Proceedings of the National Academy of Sciences",
+        "Nature Medicine",
+        "The Lancet Infectious Diseases",
+        "Clinical Infectious Diseases",
+        "Nature Microbiology",
+        "Emerging Infectious Diseases",
+        "Eurosurveillance",
+        "The Lancet Global Health",
+        "Epidemiology",
+        "International Journal of Epidemiology",
+        "American Journal of Epidemiology",
+        "npj Digital Medicine",
+        "npj Vaccines",
+        "npj Biofilms and Microbiomes",
+        "npj Systems Biology and Applications",
+    }
+)
 SHA256_PATTERN = re.compile(r"^[0-9a-f]{64}$")
 JOURNAL_ID_PATTERN = re.compile(r"^J-[A-Z]+-[0-9]{3}$")
 
@@ -404,13 +430,25 @@ def validate_configuration(root: Path) -> list[str]:
         errors.append("journal header mismatch")
         return list(dict.fromkeys(errors))
 
+    active_rows = [row for row in journals if (row.get("status") or "").strip() == "active"]
+    if len(journals) != 22 or len(active_rows) != 22:
+        errors.append("journal registry must contain exactly 22 active rows")
+    titles = {(row.get("title") or "").strip() for row in journals}
+    if titles != APPROVED_JOURNAL_TITLES:
+        errors.append("approved journal title set mismatch")
+    seen_ids: set[str] = set()
     seen_tokens: set[str] = set()
     for row in journals:
         status_value = (row.get("status") or "").strip()
         if status_value not in JOURNAL_STATUSES:
             errors.append("invalid journal status")
-        if JOURNAL_ID_PATTERN.fullmatch((row.get("journal_id") or "").strip()) is None:
+        journal_id = (row.get("journal_id") or "").strip()
+        if JOURNAL_ID_PATTERN.fullmatch(journal_id) is None:
             errors.append("invalid journal_id")
+        elif journal_id in seen_ids:
+            errors.append("duplicate journal_id")
+        else:
+            seen_ids.add(journal_id)
         if (row.get("group") or "").strip() not in JOURNAL_GROUPS:
             errors.append("invalid journal group")
         if (row.get("search_role") or "").strip() not in JOURNAL_SEARCH_ROLES:
@@ -453,6 +491,8 @@ def build_search_cells(root: Path, executed_date: date) -> list[SearchCell]:
         for row in journals
         if (row.get("status") or "").strip() == "active"
     )
+    if not journal_tokens:
+        raise ValueError("active journal registry is empty")
     journal_block = "(" + " OR ".join(f'"{token}"[Journal]' for token in journal_tokens) + ")"
     families = [row for row in config["families"] if isinstance(row, dict)]
     cells: list[SearchCell] = []
@@ -491,22 +531,26 @@ def _safe_relative(raw: object) -> str | None:
     return path.as_posix()
 
 
-def _manifest_artifact_sha256(run_dir: Path, relative: str) -> tuple[str | None, str | None]:
+def _confined_artifact_sha256(
+    root: Path,
+    relative: str,
+    kind: str,
+) -> tuple[str | None, str | None]:
     parts = PurePosixPath(relative).parts
     open_fds: list[int] = []
     try:
-        current_fd = os.open(run_dir, os.O_RDONLY | os.O_DIRECTORY)
+        current_fd = os.open(root, os.O_RDONLY | os.O_DIRECTORY)
         open_fds.append(current_fd)
         for index, part in enumerate(parts):
             try:
                 mode = os.stat(part, dir_fd=current_fd, follow_symlinks=False).st_mode
             except FileNotFoundError:
-                return None, f"manifest file missing: {relative}"
+                return None, f"{kind} file missing: {relative}"
             if stat.S_ISLNK(mode):
-                return None, f"manifest path contains symlink: {relative}"
+                return None, f"{kind} path contains symlink: {relative}"
             if index < len(parts) - 1:
                 if not stat.S_ISDIR(mode):
-                    return None, f"manifest parent is not a directory: {relative}"
+                    return None, f"{kind} parent is not a directory: {relative}"
                 try:
                     current_fd = os.open(
                         part,
@@ -514,11 +558,11 @@ def _manifest_artifact_sha256(run_dir: Path, relative: str) -> tuple[str | None,
                         dir_fd=current_fd,
                     )
                 except OSError:
-                    return None, f"manifest path contains symlink: {relative}"
+                    return None, f"{kind} path contains symlink: {relative}"
                 open_fds.append(current_fd)
                 continue
             if not stat.S_ISREG(mode):
-                return None, f"manifest path is not a regular file: {relative}"
+                return None, f"{kind} path is not a regular file: {relative}"
             try:
                 artifact_fd = os.open(
                     part,
@@ -526,16 +570,16 @@ def _manifest_artifact_sha256(run_dir: Path, relative: str) -> tuple[str | None,
                     dir_fd=current_fd,
                 )
             except OSError:
-                return None, f"manifest path contains symlink: {relative}"
+                return None, f"{kind} path contains symlink: {relative}"
             open_fds.append(artifact_fd)
             if not stat.S_ISREG(os.fstat(artifact_fd).st_mode):
-                return None, f"manifest path is not a regular file: {relative}"
+                return None, f"{kind} path is not a regular file: {relative}"
             digest = hashlib.sha256()
             while chunk := os.read(artifact_fd, 1024 * 1024):
                 digest.update(chunk)
             return digest.hexdigest(), None
     except OSError as error:
-        return None, _error("manifest file unreadable", Path(relative), error)
+        return None, _error(f"{kind} file unreadable", Path(relative), error)
     finally:
         for descriptor in reversed(open_fds):
             try:
@@ -570,7 +614,11 @@ def _validate_manifest(run_dir: Path) -> tuple[list[str], dict[str, str]]:
             errors.append(f"invalid manifest sha256: {relative}")
             continue
         entries[relative] = digest
-        actual, artifact_error = _manifest_artifact_sha256(run_dir, relative)
+        actual, artifact_error = _confined_artifact_sha256(
+            run_dir,
+            relative,
+            "manifest",
+        )
         if artifact_error is not None:
             errors.append(artifact_error)
             continue
@@ -918,14 +966,13 @@ def _validate_configuration_file_hashes(
         if relative is None:
             errors.append("configuration file path traversal")
             continue
-        path = root / relative
-        if not path.is_file() or path.is_symlink():
-            errors.append(f"configuration file missing: {relative}")
-            continue
-        try:
-            digest = hashlib.sha256(path.read_bytes()).hexdigest()
-        except OSError as error:
-            errors.append(_error("configuration file unreadable", Path(relative), error))
+        digest, artifact_error = _confined_artifact_sha256(
+            root,
+            relative,
+            "configuration",
+        )
+        if artifact_error is not None:
+            errors.append(artifact_error)
             continue
         if digest != item.get("sha256"):
             errors.append(f"configuration file checksum mismatch: {relative}")
