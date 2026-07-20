@@ -4,7 +4,11 @@ Date: 2026-07-20
 
 The raw compiler created title-only possible-duplicate groups without collapsing them. There are 40 groups containing 81 PMID records. Primary readers compared available bibliographic metadata before using `X_DUPLICATE`; the independent audit then received every group member plus the other members' title, year, journal, authors, PMID, DOI, and source URL.
 
-Primary screening assigned `X_DUPLICATE` to 25 rows. The independent audit assigned it to 49 rows. A duplicate classification entered the final screened ledger only when the complete decision/reason/type triples agreed; disagreements remain open primary-record conflicts. The final ledger therefore contains 23 agreed `X_DUPLICATE` exclusions and does not collapse any open-conflict pair.
+Primary screening assigns `X_DUPLICATE` to 26 rows. The recomputed independent audit assigns it to 48 rows. A duplicate classification enters the final screened ledger only when the complete decision/reason/type triples agree; disagreements remain open primary-record conflicts. The final ledger therefore contains 24 agreed `X_DUPLICATE` exclusions and does not collapse any open-conflict pair.
+
+The post-review reread corrected the false duplicate in `TITLE-DUP:59dc520eb78ae555`. `PMID:20826636` is the original retracted Candida surveillance study with DOI `10.1128/jcm.00920-10`; `PMID:21372330` is the distinct retraction notice with DOI `10.1128/jcm.00006-11`. The repaired primary and independent Reader B agree that the first is an `applied_seed` and the second is a `correction` lead. Neither points to the other through `retained_candidate_key`.
+
+The same reread confirmed two true preprint-to-journal bibliographic pairs. `PMID:37131700` is the bioRxiv version of the journal record `PMID:37934786`, and `PMID:37873426` is the bioRxiv version of `PMID:38271453`; both duplicate decisions carry title, DOI, author, and abstract evidence and passed independent agreement. A canonical journal peer may itself be excluded or remain uncertain on scope; bibliographic identity and scope eligibility are separate decisions.
 
 | Group | Candidate keys |
 |---|---|
