@@ -65,6 +65,18 @@ class DiscoverySearchTests(unittest.TestCase):
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(PROJECT_ROOT / relative, destination)
 
+    def copy_repository_validation_fixture(self) -> None:
+        for relative in (*validator.REQUIRED_PATHS, validator.SEED_PATH):
+            source = PROJECT_ROOT / relative
+            destination = self.root / relative
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, destination)
+        for registry_spec in validator.REGISTRY_SPECS:
+            source = PROJECT_ROOT / registry_spec.path
+            destination = self.root / registry_spec.path
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, destination)
+
     def write_journals(self, rows: list[dict[str, str]]) -> None:
         self.write_csv(
             self.root / search.JOURNAL_REGISTRY_PATH,
@@ -135,7 +147,11 @@ class DiscoverySearchTests(unittest.TestCase):
             "search_id": search_id,
             "lane": "FAMILY",
             "family": "causal_policy",
-            "query": "test query",
+            "source": "pubmed",
+            "query": (
+                f'test query AND ("{date_start}"[Date - Publication] : '
+                f'"{date_end}"[Date - Publication])'
+            ),
             "date_start": date_start,
             "date_end": date_end,
             "reported_count": reported_count,
@@ -193,7 +209,11 @@ class DiscoverySearchTests(unittest.TestCase):
             "search_id": "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
             "lane": "FAMILY",
             "family": "causal_policy",
-            "query": "test query",
+            "source": "pubmed",
+            "query": (
+                'test query AND ("2020/01/01"[Date - Publication] : '
+                '"2020/12/31"[Date - Publication])'
+            ),
             "date_start": "2020/01/01",
             "date_end": "2020/12/31",
             "reported_count": 10000,
@@ -306,16 +326,78 @@ class DiscoverySearchTests(unittest.TestCase):
 
     def make_valid_lineage_run(self, parent: Path) -> Path:
         self.copy_configuration()
-        lineage_registry = self.root / "LINEAGE_QUERY_REGISTRY.csv"
-        if not lineage_registry.exists():
-            lineage_registry.write_text("query_id\n", encoding="utf-8")
         run_dir = parent / "wave_03_lineage_resolution"
         run_dir.mkdir(parents=True)
-        pubmed = self.add_artifact(run_dir, "pubmed_lineage_candidates.csv", b"candidate_key\n")
-        crossref = self.add_artifact(run_dir, "crossref_candidates.csv", b"candidate_key\n")
-        (run_dir / "MANIFEST_SHA256.json").write_text(
-            json.dumps({"algorithm": "SHA256", "files": [pubmed, crossref]}), encoding="utf-8"
+        query_id = "SEARCH-20260720-LINEAGE-CAUSAL-01"
+        named_source_id = "NS-CAUSAL-001"
+        candidate_key = "DOI:10.1234/example"
+        response = self.add_artifact(run_dir, "raw/crossref.json", b"{}")
+        pubmed_headers = [
+            "candidate_key", "query_id", "named_source_id", "candidate_rank",
+            "pmid", "doi", "title", "year", "journal", "authors", "source_url",
+            "raw_path", "raw_sha256",
+        ]
+        crossref_headers = [
+            "candidate_key", "query_id", "named_source_id", "bibliographic_query",
+            "candidate_rank", "doi", "title", "year", "container_title",
+            "first_author", "type", "url", "raw_path", "raw_sha256",
+        ]
+        self.write_csv(run_dir / "pubmed_lineage_candidates.csv", pubmed_headers, [])
+        self.write_csv(
+            run_dir / "crossref_candidates.csv",
+            crossref_headers,
+            [{
+                "candidate_key": candidate_key,
+                "query_id": query_id,
+                "named_source_id": named_source_id,
+                "bibliographic_query": "Example method Smith 2020",
+                "candidate_rank": "1",
+                "doi": "10.1234/example",
+                "title": "Example method",
+                "year": "2020",
+                "container_title": "Example Journal",
+                "first_author": "Smith",
+                "type": "journal-article",
+                "url": "https://doi.org/10.1234/example",
+                "raw_path": response["path"],
+                "raw_sha256": response["sha256"],
+            }],
         )
+        pubmed = {
+            "path": "pubmed_lineage_candidates.csv",
+            "sha256": self.sha(run_dir / "pubmed_lineage_candidates.csv"),
+        }
+        crossref = {
+            "path": "crossref_candidates.csv",
+            "sha256": self.sha(run_dir / "crossref_candidates.csv"),
+        }
+        (run_dir / "MANIFEST_SHA256.json").write_text(
+            json.dumps({"algorithm": "SHA256", "files": [response, pubmed, crossref]}), encoding="utf-8"
+        )
+        lineage_registry = run_dir / "LINEAGE_QUERY_REGISTRY.csv"
+        registry_headers = [
+            "query_id", "named_source_id", "method_label", "canonical_name", "family",
+            "source_role", "source", "query_variant", "query", "seed_candidate_keys",
+            "reviewer",
+        ]
+        self.write_csv(
+            lineage_registry,
+            registry_headers,
+            [{
+                "query_id": query_id,
+                "named_source_id": named_source_id,
+                "method_label": "Example method",
+                "canonical_name": "Example method",
+                "family": "causal_policy",
+                "source_role": "original_candidate",
+                "source": "crossref",
+                "query_variant": "exact_title",
+                "query": "Example method Smith 2020",
+                "seed_candidate_keys": "PMID:1",
+                "reviewer": "reviewer-a",
+            }],
+        )
+        registry_relative = lineage_registry.relative_to(self.root).as_posix()
         receipt = {
             "schema_version": 1,
             "executed_at": "2026-07-20T12:00:00+08:00",
@@ -325,16 +407,93 @@ class DiscoverySearchTests(unittest.TestCase):
                 {"path": str(search.PROTOCOL_PATH), "sha256": self.sha(self.root / search.PROTOCOL_PATH)},
                 {"path": str(search.QUERY_CONFIG_PATH), "sha256": self.sha(self.root / search.QUERY_CONFIG_PATH)},
                 {"path": str(search.JOURNAL_REGISTRY_PATH), "sha256": self.sha(self.root / search.JOURNAL_REGISTRY_PATH)},
-                {"path": "LINEAGE_QUERY_REGISTRY.csv", "sha256": self.sha(self.root / "LINEAGE_QUERY_REGISTRY.csv")},
+                {"path": registry_relative, "sha256": self.sha(lineage_registry)},
             ],
-            "queries": [],
+            "queries": [{
+                "query_id": query_id,
+                "source": "crossref",
+                "query": "Example method Smith 2020",
+                "reported_count": 10,
+                "raw_path": response["path"],
+                "raw_sha256": response["sha256"],
+                "status": "complete",
+                "response_path": response["path"],
+                "response_sha256": response["sha256"],
+                "returned_candidate_count": 1,
+                "total_results": 10,
+                "rows": 5,
+            }],
         }
         (run_dir / "LINEAGE_RUN_RECEIPT.json").write_text(json.dumps(receipt), encoding="utf-8")
+        identity_headers = [
+            "identity_decision_id", "named_source_id", "supporting_query_ids",
+            "candidate_keys_considered", "primary_selected_candidate_key",
+            "primary_decision", "primary_reason", "primary_reviewer",
+            "audit_selected_candidate_key", "audit_decision", "audit_reason",
+            "audit_reviewer", "conflict_status", "adjudicator",
+            "final_selected_candidate_key", "final_decision", "final_reason",
+            "inspected_primary_url",
+        ]
+        self.write_csv(
+            run_dir / "lineage_identity_audit.csv",
+            identity_headers,
+            [{
+                "identity_decision_id": "ID-DEC-001",
+                "named_source_id": named_source_id,
+                "supporting_query_ids": query_id,
+                "candidate_keys_considered": candidate_key,
+                "primary_selected_candidate_key": candidate_key,
+                "primary_decision": "resolved",
+                "primary_reason": "The candidate identity matches the inspected record.",
+                "primary_reviewer": "reviewer-a",
+                "audit_selected_candidate_key": candidate_key,
+                "audit_decision": "resolved",
+                "audit_reason": "Independent inspection confirms the identity.",
+                "audit_reviewer": "reviewer-b",
+                "conflict_status": "none",
+                "adjudicator": "",
+                "final_selected_candidate_key": candidate_key,
+                "final_decision": "resolved",
+                "final_reason": "Independent inspection confirms the identity.",
+                "inspected_primary_url": "https://doi.org/10.1234/example",
+            }],
+        )
+        global_dir = parent / "global"
+        ledger_headers = [
+            "identity_decision_id", "named_source_id", "final_candidate_key",
+            "method_label", "canonical_name", "family", "source_role", "title",
+            "year", "doi", "pmid", "primary_url", "discovery_route",
+            "bibliographic_role_evidence", "verification_state", "search_ids",
+            "status", "notes",
+        ]
+        self.write_csv(
+            global_dir / "lineage_ledger.csv",
+            ledger_headers,
+            [{
+                "identity_decision_id": "ID-DEC-001",
+                "named_source_id": named_source_id,
+                "final_candidate_key": candidate_key,
+                "method_label": "Example method",
+                "canonical_name": "Example method",
+                "family": "causal_policy",
+                "source_role": "original_candidate",
+                "title": "Example method",
+                "year": "2020",
+                "doi": "10.1234/example",
+                "pmid": "",
+                "primary_url": "https://doi.org/10.1234/example",
+                "discovery_route": "lineage query",
+                "bibliographic_role_evidence": "Title and publisher record inspected.",
+                "verification_state": "discovery",
+                "search_ids": query_id,
+                "status": "resolved_identity_role_unverified",
+                "notes": "",
+            }],
+        )
         return run_dir
 
     def make_valid_phase_run(self) -> Path:
-        self.copy_configuration()
-        (self.root / "LINEAGE_QUERY_REGISTRY.csv").write_text("query_id\n", encoding="utf-8")
+        self.copy_repository_validation_fixture()
         phase = self.root / "phase"
         phase.mkdir()
         for wave in ("wave_01_frozen_queries", "wave_02_synonym_expansion"):
@@ -393,6 +552,30 @@ class DiscoverySearchTests(unittest.TestCase):
                 )
                 receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
         self.make_valid_lineage_run(phase)
+        global_dir = phase / "global"
+        global_headers = [
+            "candidate_key", "waves", "wave_source_row_sha256s", "screening_path",
+            "final_decision", "final_proposed_record_type", "final_reason_code",
+            "duplicate_disposition",
+        ]
+        self.write_csv(
+            global_dir / "candidates_through_wave_02.csv",
+            global_headers,
+            [{
+                "candidate_key": "PMID:1",
+                "waves": "wave_01|wave_02",
+                "wave_source_row_sha256s": f"wave_01:{'d' * 64}|wave_02:{'d' * 64}",
+                "screening_path": "wave_01_frozen_queries/screened_candidates.csv",
+                "final_decision": "include_applied_seed",
+                "final_proposed_record_type": "applied_seed",
+                "final_reason_code": "I_APPLIED_TRANSFERABLE_DESIGN",
+                "duplicate_disposition": "screened_in_wave_01",
+            }],
+        )
+        (global_dir / "GLOBAL_KEY_RECONCILIATION.txt").write_text(
+            "ALL WAVE, SCREENING, REGISTRY, AND LINEAGE KEYS RECONCILE\n",
+            encoding="utf-8",
+        )
         return phase
 
     def make_external_boundary_fixture(self) -> None:
@@ -459,6 +642,27 @@ class DiscoverySearchTests(unittest.TestCase):
         (self.root / search.QUERY_CONFIG_PATH).write_text(json.dumps(config))
         self.assertIn("family set mismatch", "\n".join(search.validate_configuration(self.root)))
 
+    def test_configuration_rejects_malformed_family_without_cli_traceback(self):
+        self.copy_configuration()
+        path = self.root / search.QUERY_CONFIG_PATH
+        config = json.loads(path.read_text())
+        del config["families"][0]["method_block"]
+        path.write_text(json.dumps(config), encoding="utf-8")
+        self.assertIn(
+            "malformed family configuration",
+            "\n".join(search.validate_configuration(self.root)),
+        )
+        output = io.StringIO()
+        try:
+            with contextlib.redirect_stdout(output):
+                result = search.main(
+                    ["list-cells", "--root", str(self.root), "--date", "2026-07-20"]
+                )
+        except Exception as error:
+            self.fail(f"list-cells raised {type(error).__name__}: {error}")
+        self.assertEqual(result, 1)
+        self.assertIn("DISCOVERY FAIL", output.getvalue())
+
     def test_journal_tokens_must_be_unique_and_nonblank(self):
         self.copy_configuration()
         path = self.root / search.JOURNAL_REGISTRY_PATH
@@ -514,7 +718,10 @@ class DiscoverySearchTests(unittest.TestCase):
         receipt = json.loads(receipt_path.read_text())
         receipt["configuration_files"][-1] = {
             "path": "LINEAGE_QUERY_REGISTRY.csv",
-            "sha256": self.sha(self.root / "LINEAGE_QUERY_REGISTRY.csv"),
+            "sha256": self.sha(
+                phase_dir
+                / "wave_03_lineage_resolution/LINEAGE_QUERY_REGISTRY.csv"
+            ),
         }
         receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
         self.assertIn(
@@ -565,6 +772,19 @@ class DiscoverySearchTests(unittest.TestCase):
             "\n".join(search.validate_search_run(run_dir)),
         )
 
+    def test_raw_artifact_cannot_cross_esearch_and_page_roles(self):
+        run_dir = self.make_valid_run()
+        receipt_path = run_dir / "RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        page = receipt["cells"][0]["efetch_pages"][0]
+        receipt["cells"][0]["esearch_path"] = page["path"]
+        receipt["cells"][0]["esearch_sha256"] = page["sha256"]
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        self.assertIn(
+            "duplicate raw artifact path",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
     def test_split_parent_requires_contiguous_nonoverlapping_children(self):
         run_dir = self.make_valid_split_run()
         self.assertEqual(search.validate_search_run(run_dir), [])
@@ -605,6 +825,28 @@ class DiscoverySearchTests(unittest.TestCase):
             "invalid cell receipt",
             "\n".join(search.validate_search_run(run_dir)),
         )
+
+    def test_split_children_inherit_semantic_core_and_valid_dates(self):
+        run_dir = self.make_valid_split_run()
+        receipt_path = run_dir / "RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        child = receipt["cells"][0]["children"][1]
+        child.update(
+            lane="VENUE",
+            family="spatial_transmission",
+            source="crossref",
+            query="different method core",
+            date_start="2021/01/01",
+            date_end="2020/12/31",
+        )
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        rendered = "\n".join(search.validate_search_run(run_dir))
+        self.assertIn("cell date range inverted", rendered)
+        self.assertIn("child lane mismatch", rendered)
+        self.assertIn("child family mismatch", rendered)
+        self.assertIn("child source mismatch", rendered)
+        self.assertIn("child query semantic core mismatch", rendered)
+        self.assertIn("child query date interval mismatch", rendered)
 
     def test_leaf_requires_history_and_page_fields(self):
         run_dir = self.make_valid_run()
@@ -672,6 +914,50 @@ class DiscoverySearchTests(unittest.TestCase):
             "\n".join(search.validate_lineage(self.root, run_dir)),
         )
 
+    def test_lineage_rejects_empty_query_and_decision_coverage(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        receipt_path = run_dir / "LINEAGE_RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        receipt["queries"] = []
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+        self.assertIn("lineage query coverage missing", rendered)
+
+    def test_lineage_requires_identity_audit_and_query_registry_coverage(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        (run_dir / "lineage_identity_audit.csv").unlink()
+        self.assertIn(
+            "lineage identity audit missing",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+    def test_lineage_rejects_same_reviewer_and_borrowed_candidate(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        path = run_dir / "lineage_identity_audit.csv"
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["audit_reviewer"] = rows[0]["primary_reviewer"]
+        rows[0]["candidate_keys_considered"] = "DOI:10.9999/borrowed"
+        rows[0]["primary_selected_candidate_key"] = "DOI:10.9999/borrowed"
+        rows[0]["audit_selected_candidate_key"] = "DOI:10.9999/borrowed"
+        rows[0]["final_selected_candidate_key"] = "DOI:10.9999/borrowed"
+        self.write_csv(path, list(rows[0]), rows)
+        rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+        self.assertIn("lineage audit reviewer is not independent", rendered)
+        self.assertIn("lineage candidate provenance mismatch", rendered)
+
+    def test_lineage_ledger_must_match_final_decision(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        path = run_dir.parent / "global/lineage_ledger.csv"
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["final_candidate_key"] = "DOI:10.9999/wrong"
+        self.write_csv(path, list(rows[0]), rows)
+        self.assertIn(
+            "lineage ledger final key mismatch",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
     def test_external_boundary_rejects_filtered_status_change(self):
         self.make_external_boundary_fixture()
         self.assertEqual(search.validate_external_boundary(self.root, self.source_root), [])
@@ -713,6 +999,26 @@ class DiscoverySearchTests(unittest.TestCase):
         self.assertEqual(search.validate_screening_audit(run_dir), [])
         self.delete_one_required_audit_row(run_dir)
         self.assertIn("missing required audit key", "\n".join(search.validate_screening_audit(run_dir)))
+
+    def test_screened_audit_status_has_bidirectional_row_coverage(self):
+        run_dir = self.make_valid_screened_run()
+        self.delete_one_required_audit_row(run_dir)
+        self.assertIn(
+            "missing audit row for screened status",
+            "\n".join(search.validate_screening(run_dir)),
+        )
+
+    def test_not_selected_screening_rejects_an_audit_row(self):
+        run_dir = self.make_valid_screened_run()
+        path = run_dir / "screened_candidates.csv"
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["audit_status"] = "not_selected"
+        self.write_csv(path, list(search.SCREENED_HEADERS), rows)
+        self.assertIn(
+            "unexpected audit row for not_selected",
+            "\n".join(search.validate_screening(run_dir)),
+        )
 
     def test_audit_rejects_a_disagreement_marked_as_no_conflict(self):
         run_dir = self.make_valid_screened_run()
@@ -786,6 +1092,18 @@ class DiscoverySearchTests(unittest.TestCase):
         self.assertEqual(search.validate_all(self.root, phase_dir), [])
         (phase_dir / "wave_02_synonym_expansion" / "RUN_RECEIPT.json").unlink()
         self.assertIn("wave_02", "\n".join(search.validate_all(self.root, phase_dir)))
+
+    def test_verify_all_requires_global_reconciliation_and_repository_validation(self):
+        phase_dir = self.make_valid_phase_run()
+        reconciliation = phase_dir / "global/GLOBAL_KEY_RECONCILIATION.txt"
+        reconciliation.unlink()
+        self.assertIn("global reconciliation missing", "\n".join(search.validate_all(self.root, phase_dir)))
+        reconciliation.write_text(
+            "ALL WAVE, SCREENING, REGISTRY, AND LINEAGE KEYS RECONCILE\n",
+            encoding="utf-8",
+        )
+        (self.root / "README.md").unlink()
+        self.assertIn("repository: required file missing: README.md", "\n".join(search.validate_all(self.root, phase_dir)))
 
     def test_validation_cli_contract(self):
         self.copy_configuration()

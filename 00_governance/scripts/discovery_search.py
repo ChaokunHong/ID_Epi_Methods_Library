@@ -5,6 +5,7 @@ import csv
 from dataclasses import asdict, dataclass
 from datetime import date, datetime, timedelta
 import hashlib
+import importlib.util
 import json
 import math
 from pathlib import Path, PurePosixPath
@@ -81,6 +82,7 @@ CELL_REQUIRED_FIELDS = (
     "search_id",
     "lane",
     "family",
+    "source",
     "query",
     "date_start",
     "date_end",
@@ -115,6 +117,42 @@ LINEAGE_QUERY_FIELDS = (
     "raw_path",
     "raw_sha256",
     "status",
+)
+LINEAGE_REGISTRY_HEADERS = (
+    "query_id", "named_source_id", "method_label", "canonical_name", "family",
+    "source_role", "source", "query_variant", "query", "seed_candidate_keys",
+    "reviewer",
+)
+PUBMED_LINEAGE_HEADERS = (
+    "candidate_key", "query_id", "named_source_id", "candidate_rank", "pmid",
+    "doi", "title", "year", "journal", "authors", "source_url", "raw_path",
+    "raw_sha256",
+)
+CROSSREF_LINEAGE_HEADERS = (
+    "candidate_key", "query_id", "named_source_id", "bibliographic_query",
+    "candidate_rank", "doi", "title", "year", "container_title", "first_author",
+    "type", "url", "raw_path", "raw_sha256",
+)
+LINEAGE_AUDIT_HEADERS = (
+    "identity_decision_id", "named_source_id", "supporting_query_ids",
+    "candidate_keys_considered", "primary_selected_candidate_key",
+    "primary_decision", "primary_reason", "primary_reviewer",
+    "audit_selected_candidate_key", "audit_decision", "audit_reason",
+    "audit_reviewer", "conflict_status", "adjudicator",
+    "final_selected_candidate_key", "final_decision", "final_reason",
+    "inspected_primary_url",
+)
+LINEAGE_LEDGER_HEADERS = (
+    "identity_decision_id", "named_source_id", "final_candidate_key",
+    "method_label", "canonical_name", "family", "source_role", "title", "year",
+    "doi", "pmid", "primary_url", "discovery_route",
+    "bibliographic_role_evidence", "verification_state", "search_ids", "status",
+    "notes",
+)
+GLOBAL_INDEX_HEADERS = (
+    "candidate_key", "waves", "wave_source_row_sha256s", "screening_path",
+    "final_decision", "final_proposed_record_type", "final_reason_code",
+    "duplicate_disposition",
 )
 
 COMPILED_HEADERS = (
@@ -275,6 +313,17 @@ def validate_configuration(root: Path) -> list[str]:
     }
     if names != FAMILIES or len(families) != len(FAMILIES):
         errors.append("family set mismatch")
+    for family in families:
+        if (
+            not isinstance(family, dict)
+            or set(family) != {"family", "token", "method_block"}
+            or any(
+                not isinstance(family.get(field), str)
+                or not family.get(field, "").strip()
+                for field in ("family", "token", "method_block")
+            )
+        ):
+            errors.append("malformed family configuration")
     tokens = [
         str(row.get("token", "")).strip()
         for row in families
@@ -458,12 +507,35 @@ def _parse_date(value: object) -> date | None:
         return None
 
 
+def _query_semantic_core(value: object) -> str:
+    if not isinstance(value, str):
+        return ""
+    return re.sub(
+        r'\s+AND\s+\("\d{4}/\d{2}/\d{2}"\[Date - Publication\]\s*:\s*'
+        r'"\d{4}/\d{2}/\d{2}"\[Date - Publication\]\)',
+        "",
+        value,
+    ).strip()
+
+
+def _query_date_interval(value: object) -> tuple[str, str] | None:
+    if not isinstance(value, str):
+        return None
+    matched = re.search(
+        r'\("(\d{4}/\d{2}/\d{2})"\[Date - Publication\]\s*:\s*'
+        r'"(\d{4}/\d{2}/\d{2})"\[Date - Publication\]\)\s*$',
+        value,
+    )
+    return matched.groups() if matched else None
+
+
 def _validate_pages(
     run_dir: Path,
     pages: object,
     source_count: int,
     manifest: dict[str, str],
     owned_page_paths: set[str],
+    owned_raw_paths: set[str],
 ) -> list[str]:
     if not isinstance(pages, list):
         return ["missing leaf receipt field: efetch_pages"]
@@ -504,6 +576,10 @@ def _validate_pages(
                 errors.append(f"duplicate raw page path: {relative}")
             else:
                 owned_page_paths.add(relative)
+            if relative in owned_raw_paths:
+                errors.append(f"duplicate raw artifact path: {relative}")
+            else:
+                owned_raw_paths.add(relative)
         if relative is not None and relative in manifest:
             try:
                 actual_count = _count_xml_records(run_dir / relative)
@@ -524,7 +600,8 @@ def _validate_cell(
     search_ids: set[str],
     owned_esearch_paths: set[str],
     owned_page_paths: set[str],
-    expected_parent: str = "",
+    owned_raw_paths: set[str],
+    expected_parent: dict[str, object] | None = None,
 ) -> list[str]:
     if not isinstance(cell, dict):
         return ["invalid cell receipt"]
@@ -541,13 +618,34 @@ def _validate_cell(
         errors.append("duplicate search_id")
     else:
         search_ids.add(search_id)
-    if cell["parent_search_id"] != expected_parent:
+    expected_parent_id = str(expected_parent["search_id"]) if expected_parent else ""
+    if cell["parent_search_id"] != expected_parent_id:
         errors.append(f"parent_search_id mismatch: {search_id}")
+    if expected_parent is not None:
+        for field in ("lane", "family", "source"):
+            if cell[field] != expected_parent[field]:
+                errors.append(f"child {field} mismatch: {search_id}")
+        if _query_semantic_core(cell["query"]) != _query_semantic_core(
+            expected_parent["query"]
+        ):
+            errors.append(f"child query semantic core mismatch: {search_id}")
+        if _query_date_interval(cell["query"]) != (
+            cell["date_start"],
+            cell["date_end"],
+        ):
+            errors.append(f"child query date interval mismatch: {search_id}")
     if cell["status"] != "complete":
         errors.append(f"invalid cell status: {search_id}")
-    for field in ("date_start", "date_end"):
-        if _parse_date(cell[field]) is None:
+    parsed_dates = {field: _parse_date(cell[field]) for field in ("date_start", "date_end")}
+    for field, parsed in parsed_dates.items():
+        if parsed is None:
             errors.append(f"blank or invalid cell date: {field}")
+    if (
+        parsed_dates["date_start"] is not None
+        and parsed_dates["date_end"] is not None
+        and parsed_dates["date_start"] > parsed_dates["date_end"]
+    ):
+        errors.append("cell date range inverted")
     reported_count = cell["reported_count"]
     if not _integer(reported_count):
         errors.append("invalid nonnegative integer count: reported_count")
@@ -563,6 +661,10 @@ def _validate_cell(
             errors.append(f"duplicate esearch path: {esearch_path}")
         else:
             owned_esearch_paths.add(esearch_path)
+        if esearch_path in owned_raw_paths:
+            errors.append(f"duplicate raw artifact path: {esearch_path}")
+        else:
+            owned_raw_paths.add(esearch_path)
     cell_type = cell["cell_type"]
     if cell_type == "leaf":
         for field in LEAF_REQUIRED_FIELDS:
@@ -589,6 +691,7 @@ def _validate_cell(
                 reported_count,
                 manifest,
                 owned_page_paths,
+                owned_raw_paths,
             )
         )
     elif cell_type == "split_parent":
@@ -628,7 +731,8 @@ def _validate_cell(
                     search_ids,
                     owned_esearch_paths,
                     owned_page_paths,
-                    str(search_id),
+                    owned_raw_paths,
+                    cell,
                 )
             )
         if (
@@ -817,6 +921,7 @@ def validate_search_run(run_dir: Path) -> list[str]:
         search_ids: set[str] = set()
         owned_esearch_paths: set[str] = set()
         owned_page_paths: set[str] = set()
+        owned_raw_paths: set[str] = set()
         for cell in cells:
             errors.extend(
                 _validate_cell(
@@ -826,6 +931,7 @@ def validate_search_run(run_dir: Path) -> list[str]:
                     search_ids,
                     owned_esearch_paths,
                     owned_page_paths,
+                    owned_raw_paths,
                 )
             )
     if "compiled_candidates_raw.csv" not in manifest:
@@ -839,9 +945,15 @@ def _validate_lineage_pages(
     count: int,
     manifest: dict[str, str],
     owned_page_paths: set[str],
+    owned_raw_paths: set[str],
 ) -> list[str]:
     return _validate_pages(
-        run_dir, row.get("efetch_pages"), count, manifest, owned_page_paths
+        run_dir,
+        row.get("efetch_pages"),
+        count,
+        manifest,
+        owned_page_paths,
+        owned_raw_paths,
     )
 
 
@@ -872,6 +984,7 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
         errors.append("invalid lineage queries")
         queries = []
     seen: set[str] = set()
+    receipt_queries: dict[str, dict[str, object]] = {}
     owned_page_paths: set[str] = set()
     owned_raw_paths: set[str] = set()
     for row in queries:
@@ -890,6 +1003,7 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
             errors.append("duplicate lineage query_id")
         else:
             seen.add(query_id)
+            receipt_queries[query_id] = row
         reported_count = row["reported_count"]
         if not _integer(reported_count):
             errors.append("invalid nonnegative integer count: reported_count")
@@ -927,7 +1041,12 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
             else:
                 errors.extend(
                     _validate_lineage_pages(
-                        run_dir, row, reported_count, manifest, owned_page_paths
+                        run_dir,
+                        row,
+                        reported_count,
+                        manifest,
+                        owned_page_paths,
+                        owned_raw_paths,
                     )
                 )
         elif source == "crossref":
@@ -955,6 +1074,266 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
     for table in ("pubmed_lineage_candidates.csv", "crossref_candidates.csv"):
         if table not in manifest:
             errors.append(f"lineage candidate table absent from manifest: {table}")
+    errors.extend(
+        _validate_lineage_decisions(
+            root, run_dir, manifest, payload["configuration_files"], receipt_queries
+        )
+    )
+    return list(dict.fromkeys(errors))
+
+
+def _pipe_values(value: object) -> list[str]:
+    if not isinstance(value, str) or not value:
+        return []
+    return [part for part in value.split("|") if part]
+
+
+def _validate_lineage_decisions(
+    root: Path,
+    run_dir: Path,
+    manifest: dict[str, str],
+    configuration_files: object,
+    receipt_queries: dict[str, dict[str, object]],
+) -> list[str]:
+    errors: list[str] = []
+    if not receipt_queries:
+        errors.append("lineage query coverage missing")
+
+    registry_path: Path | None = None
+    if isinstance(configuration_files, list):
+        for item in configuration_files:
+            if isinstance(item, dict) and str(item.get("path", "")).endswith(
+                "LINEAGE_QUERY_REGISTRY.csv"
+            ):
+                registry_path = root / str(item["path"])
+                break
+    if registry_path is None:
+        registry_rows: list[dict[str, str]] = []
+        errors.append("lineage query registry missing")
+    else:
+        registry_rows, registry_errors = _rows_with_headers(
+            registry_path, LINEAGE_REGISTRY_HEADERS, "lineage query registry"
+        )
+        errors.extend(registry_errors)
+    registry_by_query: dict[str, dict[str, str]] = {}
+    for row in registry_rows:
+        query_id = row.get("query_id", "")
+        if not query_id or query_id in registry_by_query:
+            errors.append("duplicate or blank lineage registry query_id")
+        else:
+            registry_by_query[query_id] = row
+    if set(registry_by_query) != set(receipt_queries):
+        errors.append("lineage query registry coverage mismatch")
+    for query_id, receipt in receipt_queries.items():
+        registry = registry_by_query.get(query_id)
+        if registry is None:
+            continue
+        for field in ("source", "query"):
+            if registry.get(field) != receipt.get(field):
+                errors.append(f"lineage query registry field mismatch: {query_id}: {field}")
+
+    candidates_by_query: dict[str, list[dict[str, str]]] = {}
+    candidates_by_key: dict[str, list[dict[str, str]]] = {}
+    for filename, headers in (
+        ("pubmed_lineage_candidates.csv", PUBMED_LINEAGE_HEADERS),
+        ("crossref_candidates.csv", CROSSREF_LINEAGE_HEADERS),
+    ):
+        rows, row_errors = _rows_with_headers(
+            run_dir / filename, headers, "lineage candidate table"
+        )
+        errors.extend(row_errors)
+        source = "pubmed" if filename.startswith("pubmed") else "crossref"
+        for row in rows:
+            query_id = row.get("query_id", "")
+            key = row.get("candidate_key", "")
+            registry = registry_by_query.get(query_id)
+            receipt = receipt_queries.get(query_id)
+            if registry is None or receipt is None or registry.get("source") != source:
+                errors.append(f"lineage candidate query provenance mismatch: {key}")
+                continue
+            if row.get("named_source_id") != registry.get("named_source_id"):
+                errors.append(f"lineage candidate named source mismatch: {key}")
+            errors.extend(
+                _reference_errors(
+                    row.get("raw_path"), row.get("raw_sha256"), manifest, "lineage candidate"
+                )
+            )
+            if source == "crossref":
+                if row.get("raw_path") != receipt.get("response_path") or row.get(
+                    "raw_sha256"
+                ) != receipt.get("response_sha256"):
+                    errors.append(f"lineage candidate provenance mismatch: {key}")
+            else:
+                page_pairs = {
+                    (page.get("path"), page.get("sha256"))
+                    for page in receipt.get("efetch_pages", [])
+                    if isinstance(page, dict)
+                }
+                if (row.get("raw_path"), row.get("raw_sha256")) not in page_pairs:
+                    errors.append(f"lineage candidate provenance mismatch: {key}")
+            candidates_by_query.setdefault(query_id, []).append(row)
+            candidates_by_key.setdefault(key, []).append(row)
+
+    audit_rows, audit_errors = _rows_with_headers(
+        run_dir / "lineage_identity_audit.csv",
+        LINEAGE_AUDIT_HEADERS,
+        "lineage identity audit",
+    )
+    errors.extend(audit_errors)
+    if not (run_dir / "lineage_identity_audit.csv").is_file():
+        errors.append("lineage identity audit missing")
+    ledger_path = run_dir.parent / "global/lineage_ledger.csv"
+    ledger_rows, ledger_errors = _rows_with_headers(
+        ledger_path, LINEAGE_LEDGER_HEADERS, "lineage ledger"
+    )
+    errors.extend(ledger_errors)
+    if not ledger_path.is_file():
+        errors.append("lineage ledger missing")
+    ledger_by_decision: dict[str, dict[str, str]] = {}
+    for row in ledger_rows:
+        decision_id = row.get("identity_decision_id", "")
+        if not decision_id or decision_id in ledger_by_decision:
+            errors.append("duplicate or blank lineage ledger decision")
+        else:
+            ledger_by_decision[decision_id] = row
+
+    named_queries: dict[str, set[str]] = {}
+    for query_id, registry in registry_by_query.items():
+        named_queries.setdefault(registry.get("named_source_id", ""), set()).add(query_id)
+    covered_queries: list[str] = []
+    seen_decisions: set[str] = set()
+    seen_named: set[str] = set()
+    allowed_decisions = {"resolved", "ambiguous", "rejected", "unresolved_after_three_queries"}
+    for audit in audit_rows:
+        decision_id = audit.get("identity_decision_id", "")
+        named_source = audit.get("named_source_id", "")
+        if not decision_id or decision_id in seen_decisions or not named_source or named_source in seen_named:
+            errors.append("duplicate or blank lineage identity decision")
+            continue
+        seen_decisions.add(decision_id)
+        seen_named.add(named_source)
+        supporting = _pipe_values(audit.get("supporting_query_ids"))
+        if (
+            supporting != sorted(supporting)
+            or len(supporting) != len(set(supporting))
+            or set(supporting) != named_queries.get(named_source, set())
+        ):
+            errors.append(f"lineage supporting query coverage mismatch: {decision_id}")
+        covered_queries.extend(supporting)
+        available_keys = {
+            row.get("candidate_key", "")
+            for query_id in supporting
+            for row in candidates_by_query.get(query_id, [])
+        }
+        considered = _pipe_values(audit.get("candidate_keys_considered"))
+        if (
+            considered != sorted(considered)
+            or len(considered) != len(set(considered))
+            or not set(considered).issubset(available_keys)
+        ):
+            errors.append(f"lineage candidate provenance mismatch: {decision_id}")
+        if audit.get("audit_reviewer") == audit.get("primary_reviewer"):
+            errors.append(f"lineage audit reviewer is not independent: {decision_id}")
+        stages = (
+            ("primary", "primary_selected_candidate_key"),
+            ("audit", "audit_selected_candidate_key"),
+            ("final", "final_selected_candidate_key"),
+        )
+        for stage, selected_field in stages:
+            stage_decision = audit.get(f"{stage}_decision", "")
+            selected = audit.get(selected_field, "")
+            if not audit.get(f"{stage}_reason", "").strip():
+                errors.append(f"blank lineage {stage} reason: {decision_id}")
+            if stage_decision not in allowed_decisions:
+                errors.append(f"invalid lineage {stage} decision: {decision_id}")
+            if stage_decision == "resolved":
+                if not selected or selected not in considered or selected not in available_keys:
+                    errors.append(f"lineage candidate provenance mismatch: {decision_id}")
+            elif selected:
+                errors.append(f"invalid lineage selected key: {decision_id}: {stage}")
+        conflict = audit.get("conflict_status", "")
+        primary_pair = (
+            audit.get("primary_decision"),
+            audit.get("primary_selected_candidate_key"),
+        )
+        audit_pair = (
+            audit.get("audit_decision"),
+            audit.get("audit_selected_candidate_key"),
+        )
+        final_pair = (
+            audit.get("final_decision"),
+            audit.get("final_selected_candidate_key"),
+        )
+        if conflict == "none" and (primary_pair != audit_pair or final_pair != audit_pair):
+            errors.append(f"lineage conflict mismatch: {decision_id}")
+        elif conflict == "open":
+            if primary_pair == audit_pair or final_pair != ("ambiguous", ""):
+                errors.append(f"open lineage conflict resolved improperly: {decision_id}")
+        elif conflict == "resolved":
+            if primary_pair == audit_pair:
+                errors.append(f"lineage conflict mismatch: {decision_id}")
+            if not audit.get("adjudicator", "").strip():
+                errors.append(f"resolved lineage conflict missing adjudicator: {decision_id}")
+            if not audit.get("final_reason", "").strip():
+                errors.append(f"resolved lineage conflict missing final reason: {decision_id}")
+        elif conflict not in {"none", "open", "resolved"}:
+            errors.append(f"invalid lineage conflict status: {decision_id}")
+        if audit.get("final_decision") == "resolved" and not audit.get(
+            "inspected_primary_url", ""
+        ).strip():
+            errors.append(f"resolved lineage identity missing primary URL: {decision_id}")
+
+        ledger = ledger_by_decision.get(decision_id)
+        if ledger is None or ledger.get("named_source_id") != named_source:
+            errors.append(f"lineage ledger decision missing: {decision_id}")
+            continue
+        final_key = audit.get("final_selected_candidate_key", "")
+        if ledger.get("final_candidate_key") != final_key:
+            errors.append(f"lineage ledger final key mismatch: {decision_id}")
+        if ledger.get("search_ids") != "|".join(sorted(supporting)):
+            errors.append(f"lineage ledger search coverage mismatch: {decision_id}")
+        registry = registry_by_query.get(supporting[0]) if supporting else None
+        if registry is not None:
+            for field in ("method_label", "canonical_name", "family", "source_role"):
+                if ledger.get(field) != registry.get(field):
+                    errors.append(
+                        f"lineage ledger registry mismatch: {decision_id}: {field}"
+                    )
+        expected_status = (
+            "resolved_identity_role_unverified"
+            if audit.get("final_decision") == "resolved"
+            else audit.get("final_decision")
+        )
+        if ledger.get("status") != expected_status or ledger.get("verification_state") != "discovery":
+            errors.append(f"lineage ledger status mismatch: {decision_id}")
+        if final_key:
+            candidate_rows = [
+                row
+                for query_id in supporting
+                for row in candidates_by_query.get(query_id, [])
+                if row.get("candidate_key") == final_key
+            ]
+            candidate = candidate_rows[0] if candidate_rows else None
+            if candidate is None:
+                errors.append(f"lineage candidate provenance mismatch: {decision_id}")
+            else:
+                expected_url = candidate.get("url") or candidate.get("source_url") or ""
+                for field in ("title", "year", "doi", "pmid"):
+                    if ledger.get(field, "") != candidate.get(field, ""):
+                        errors.append(f"lineage ledger candidate mismatch: {decision_id}: {field}")
+                if (
+                    ledger.get("primary_url") != expected_url
+                    or ledger.get("primary_url") != audit.get("inspected_primary_url")
+                ):
+                    errors.append(f"lineage ledger primary URL mismatch: {decision_id}")
+    if sorted(covered_queries) != sorted(receipt_queries) or len(covered_queries) != len(
+        set(covered_queries)
+    ):
+        errors.append("lineage query decision coverage mismatch")
+    if seen_named != set(named_queries):
+        errors.append("lineage named source decision coverage mismatch")
+    if set(ledger_by_decision) != seen_decisions:
+        errors.append("lineage ledger decision coverage mismatch")
     return list(dict.fromkeys(errors))
 
 
@@ -1022,6 +1401,15 @@ def validate_screening(run_dir: Path) -> list[str]:
         run_dir / "screened_candidates.csv", SCREENED_HEADERS, "screened candidates"
     )
     errors.extend(screened_errors)
+    audit_rows, audit_errors = _rows_with_headers(
+        run_dir / "screening_audit.csv", AUDIT_HEADERS, "screening audit"
+    )
+    errors.extend(audit_errors)
+    audit_keys = {
+        row.get("candidate_key", "")
+        for row in audit_rows
+        if row.get("candidate_key", "")
+    }
     screened: dict[str, dict[str, str]] = {}
     for key, raw in primary.items():
         if key not in compiled:
@@ -1071,6 +1459,10 @@ def validate_screening(run_dir: Path) -> list[str]:
             or row.get("final_reason") != row.get("primary_reason")
         ):
             errors.append(f"unaudited final result mismatch: {key}")
+        if row.get("audit_status") == "not_selected" and key in audit_keys:
+            errors.append(f"unexpected audit row for not_selected: {key}")
+        if row.get("audit_status") in {"agree", "conflict_open", "conflict_resolved"} and key not in audit_keys:
+            errors.append(f"missing audit row for screened status: {key}")
     for key in sorted(set(compiled) - set(primary)):
         errors.append(f"missing primary screening key: {key}")
     for key in sorted(set(compiled) - set(screened)):
@@ -1277,6 +1669,124 @@ def validate_external_boundary(root: Path, source_root: Path) -> list[str]:
     return list(dict.fromkeys(errors))
 
 
+def validate_global_reconciliation(phase_run_dir: Path) -> list[str]:
+    phase_run_dir = Path(phase_run_dir)
+    errors: list[str] = []
+    global_dir = phase_run_dir / "global"
+    rows, row_errors = _rows_with_headers(
+        global_dir / "candidates_through_wave_02.csv",
+        GLOBAL_INDEX_HEADERS,
+        "global candidate index",
+    )
+    errors.extend(row_errors)
+    reconciliation = global_dir / "GLOBAL_KEY_RECONCILIATION.txt"
+    terminal_marker = "ALL WAVE, SCREENING, REGISTRY, AND LINEAGE KEYS RECONCILE"
+    if not reconciliation.is_file():
+        errors.append("global reconciliation missing")
+    else:
+        try:
+            reconciliation_lines = reconciliation.read_text(encoding="utf-8").splitlines()
+        except OSError as error:
+            errors.append(_error("invalid global reconciliation", reconciliation, error))
+        else:
+            if not reconciliation_lines or reconciliation_lines[-1] != terminal_marker:
+                errors.append("global reconciliation terminal marker missing")
+
+    wave_rows: dict[str, dict[str, dict[str, str]]] = {}
+    wave_screened: dict[str, dict[str, dict[str, str]]] = {}
+    wave_directories = (
+        ("wave_01", "wave_01_frozen_queries"),
+        ("wave_02", "wave_02_synonym_expansion"),
+    )
+    for wave, directory_name in wave_directories:
+        directory = phase_run_dir / directory_name
+        compiled, compiled_errors = _compiled_index(directory)
+        errors.extend(f"{wave} compiled: {error}" for error in compiled_errors)
+        screened_rows, screened_errors = _rows_with_headers(
+            directory / "screened_candidates.csv",
+            SCREENED_HEADERS,
+            f"{wave} screened candidates",
+        )
+        errors.extend(screened_errors)
+        screened: dict[str, dict[str, str]] = {}
+        for screened_row in screened_rows:
+            key = screened_row.get("candidate_key", "")
+            if not key or key in screened:
+                errors.append(f"duplicate or blank {wave} screened candidate key")
+            else:
+                screened[key] = screened_row
+        wave_rows[wave] = compiled
+        wave_screened[wave] = screened
+
+    global_by_key: dict[str, dict[str, str]] = {}
+    for row in rows:
+        key = row.get("candidate_key", "")
+        if not key or key in global_by_key:
+            errors.append("duplicate or blank global candidate key")
+        else:
+            global_by_key[key] = row
+    all_keys = set().union(*(set(index) for index in wave_rows.values()))
+    if set(global_by_key) != all_keys:
+        errors.append("global candidate key coverage mismatch")
+
+    directory_by_wave = dict(wave_directories)
+    for key in sorted(all_keys & set(global_by_key)):
+        row = global_by_key[key]
+        contributing = sorted(wave for wave, index in wave_rows.items() if key in index)
+        expected_waves = "|".join(contributing)
+        if row.get("waves") != expected_waves:
+            errors.append(f"global contributing waves mismatch: {key}")
+        expected_hashes = "|".join(
+            f"{wave}:{wave_rows[wave][key].get('row_sha256', '')}"
+            for wave in contributing
+        )
+        if row.get("wave_source_row_sha256s") != expected_hashes:
+            errors.append(f"global source row SHA coverage mismatch: {key}")
+
+        screening_wave = "wave_01" if "wave_01" in contributing else contributing[0]
+        expected_screening_path = (
+            f"{directory_by_wave[screening_wave]}/screened_candidates.csv"
+        )
+        if row.get("screening_path") != expected_screening_path:
+            errors.append(f"global screening path mismatch: {key}")
+        screened = wave_screened[screening_wave].get(key)
+        if screened is None:
+            errors.append(f"global screening decision missing: {key}")
+        else:
+            for global_field, screened_field in (
+                ("final_decision", "final_decision"),
+                ("final_proposed_record_type", "final_proposed_record_type"),
+                ("final_reason_code", "final_reason_code"),
+            ):
+                if row.get(global_field) != screened.get(screened_field):
+                    errors.append(f"global final decision mismatch: {key}: {global_field}")
+        expected_disposition = (
+            "screened_in_wave_01"
+            if contributing == ["wave_01", "wave_02"]
+            else ""
+        )
+        if row.get("duplicate_disposition") != expected_disposition:
+            errors.append(f"global duplicate disposition mismatch: {key}")
+    return list(dict.fromkeys(errors))
+
+
+def _validate_repository_for_all(root: Path) -> list[str]:
+    module_path = Path(__file__).with_name("validate_library.py")
+    spec = importlib.util.spec_from_file_location(
+        "_discovery_library_repository_validator", module_path
+    )
+    if spec is None or spec.loader is None:
+        return ["repository validator import failed"]
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    try:
+        spec.loader.exec_module(module)
+        repository_errors = module.validate_repository(root)
+    except (ImportError, OSError, AttributeError) as error:
+        return [_error("repository validator import failed", module_path, error)]
+    return list(repository_errors)
+
+
 def validate_all(root: Path, phase_run_dir: Path) -> list[str]:
     root = Path(root)
     phase_run_dir = Path(phase_run_dir)
@@ -1290,6 +1800,10 @@ def validate_all(root: Path, phase_run_dir: Path) -> list[str]:
         errors.extend(f"{label} audit: {error}" for error in validate_screening_audit(directory))
     lineage = phase_run_dir / "wave_03_lineage_resolution"
     errors.extend(f"wave_03 lineage: {error}" for error in validate_lineage(root, lineage))
+    errors.extend(
+        f"global: {error}" for error in validate_global_reconciliation(phase_run_dir)
+    )
+    errors.extend(f"repository: {error}" for error in _validate_repository_for_all(root))
     return list(dict.fromkeys(errors))
 
 
