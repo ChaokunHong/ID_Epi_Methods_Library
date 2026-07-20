@@ -6,6 +6,7 @@ import csv
 from dataclasses import asdict, dataclass
 from datetime import date, datetime, timedelta
 import hashlib
+import http.client
 import importlib.util
 import io
 import json
@@ -437,7 +438,13 @@ def _urlopen_bytes(
                 data = opened.read()
         else:
             data = response.read()
-    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, OSError) as error:
+    except (
+        urllib.error.HTTPError,
+        urllib.error.URLError,
+        http.client.HTTPException,
+        TimeoutError,
+        OSError,
+    ) as error:
         raise DiscoveryExecutionError(
             f"network request failed: {type(error).__name__}: {error}"
         ) from error
@@ -1345,7 +1352,7 @@ def _write_rows_atomic(
     temporary = path.with_name(f".{path.name}.{os.getpid()}.{time.time_ns()}.tmp")
     try:
         with temporary.open("w", encoding="utf-8", newline="") as handle:
-            writer = csv.DictWriter(handle, fieldnames=headers)
+            writer = csv.DictWriter(handle, fieldnames=headers, lineterminator="\n")
             writer.writeheader()
             writer.writerows(rows)
         temporary.replace(path)
@@ -1746,6 +1753,7 @@ def _normalize_doi(value: str) -> str:
 
 
 def _pubmed_record_fields(record: ET.Element) -> dict[str, str]:
+    is_book_article = record.tag.rsplit("}", 1)[-1] == "PubmedBookArticle"
     pmid = _normalize_whitespace(_text(record, ".//PMID"))
     doi = ""
     for item in record.findall(".//ArticleId"):
@@ -1758,6 +1766,10 @@ def _pubmed_record_fields(record: ET.Element) -> dict[str, str]:
                 doi = _normalize_doi("".join(item.itertext()))
                 break
     title = _normalize_whitespace(_text(record, ".//ArticleTitle"))
+    if not title and is_book_article:
+        title = _normalize_whitespace(
+            _text(record, "./BookDocument/Book/BookTitle")
+        )
     year = _normalize_whitespace(_text(record, ".//PubDate/Year"))
     if not year:
         medline_date = _text(record, ".//PubDate/MedlineDate")
@@ -1766,6 +1778,10 @@ def _pubmed_record_fields(record: ET.Element) -> dict[str, str]:
     journal = _normalize_whitespace(
         _text(record, ".//Journal/Title") or _text(record, ".//Journal/ISOAbbreviation")
     )
+    if not journal and is_book_article:
+        journal = _normalize_whitespace(
+            _text(record, "./BookDocument/Book/CollectionTitle")
+        )
     authors: list[str] = []
     for author in record.findall(".//AuthorList/Author"):
         collective = _normalize_whitespace(_text(author, "./CollectiveName"))
@@ -1970,7 +1986,9 @@ def _derive_pubmed_candidates(run_dir: Path) -> list[dict[str, str]]:
 
 def _render_compiled_candidates(rows: Sequence[dict[str, str]]) -> bytes:
     buffer = io.StringIO(newline="")
-    writer = csv.DictWriter(buffer, fieldnames=COMPILED_HEADERS)
+    writer = csv.DictWriter(
+        buffer, fieldnames=COMPILED_HEADERS, lineterminator="\n"
+    )
     writer.writeheader()
     writer.writerows(rows)
     return buffer.getvalue().encode("utf-8")

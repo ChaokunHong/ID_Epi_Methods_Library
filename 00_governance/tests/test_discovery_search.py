@@ -4,6 +4,7 @@ import contextlib
 import csv
 from datetime import date
 import hashlib
+import http.client
 import importlib.util
 import io
 import json
@@ -15,6 +16,7 @@ import tempfile
 import unittest
 import urllib.error
 import urllib.parse
+import xml.etree.ElementTree as ET
 from unittest import mock
 
 
@@ -938,6 +940,226 @@ class DiscoverySearchTests(unittest.TestCase):
         )
         self.assertEqual(compiled_entry["sha256"], self.sha(run_dir / compiled_entry["path"]))
 
+    def test_pubmed_book_articles_use_book_title_and_only_real_collection_container(self):
+        with_collection = ET.fromstring(
+            """<PubmedBookArticle><BookDocument><PMID>1</PMID><Book>
+            <Publisher><PublisherName>Not a journal</PublisherName></Publisher>
+            <BookTitle>Real book title</BookTitle><PubDate>202401</PubDate>
+            <CollectionTitle>Real collection title</CollectionTitle>
+            </Book></BookDocument></PubmedBookArticle>"""
+        )
+        without_collection = ET.fromstring(
+            """<PubmedBookArticle><BookDocument><PMID>2</PMID><Book>
+            <Publisher><PublisherName>Publisher must not become journal</PublisherName></Publisher>
+            <BookTitle>Standalone book title</BookTitle><PubDate>202402</PubDate>
+            </Book></BookDocument></PubmedBookArticle>"""
+        )
+
+        collected = search._pubmed_record_fields(with_collection)
+        standalone = search._pubmed_record_fields(without_collection)
+
+        self.assertEqual(collected["title"], "Real book title")
+        self.assertEqual(collected["journal"], "Real collection title")
+        self.assertEqual(standalone["title"], "Standalone book title")
+        self.assertEqual(standalone["journal"], "")
+        self.assertNotEqual(standalone["journal"], "Publisher must not become journal")
+        self.assertNotEqual(standalone["journal"], standalone["title"])
+
+        live_run = (
+            PROJECT_ROOT
+            / "01_search/search_logs/2026-07-20-broad-discovery/wave_01_frozen_queries"
+        )
+        live_rows = {
+            row["pmid"]: row
+            for row in search._derive_pubmed_candidates(live_run)
+            if row["pmid"] in {"30620515", "24049867", "38154011", "33030851"}
+        }
+        self.assertEqual(
+            set(live_rows), {"30620515", "24049867", "38154011", "33030851"}
+        )
+        self.assertTrue(all(row["title"] for row in live_rows.values()))
+        self.assertEqual(live_rows["30620515"]["journal"], "Public Health Research")
+        self.assertEqual(
+            live_rows["24049867"]["journal"],
+            "WHO Guidelines Approved by the Guidelines Review Committee",
+        )
+        self.assertEqual(
+            live_rows["38154011"]["journal"], "NICE Evidence Reviews Collection"
+        )
+        self.assertEqual(live_rows["33030851"]["journal"], "")
+
+    def test_production_csv_writers_are_lf_only_and_compile_is_byte_idempotent(self):
+        run_dir = self.root / "lf-compile"
+        run_dir.mkdir()
+        page = self.add_artifact(
+            run_dir,
+            "raw/page.xml",
+            self.pubmed_xml([{"pmid": "1", "title": "LF-only candidate"}]),
+        )
+        (run_dir / "RUN_RECEIPT.json").write_text(
+            json.dumps(
+                {
+                    "cells": [
+                        {
+                            "search_id": "SEARCH-A",
+                            "lane": "FAMILY",
+                            "family": "causal_policy",
+                            "cell_type": "leaf",
+                            "efetch_pages": [page],
+                        }
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+        (run_dir / "MANIFEST_SHA256.json").write_text(
+            json.dumps({"algorithm": "SHA256", "files": [page]}),
+            encoding="utf-8",
+        )
+
+        search.compile_pubmed_candidates(run_dir)
+        first_bytes = (run_dir / "compiled_candidates_raw.csv").read_bytes()
+        first_sha = self.sha(run_dir / "compiled_candidates_raw.csv")
+        search.compile_pubmed_candidates(run_dir)
+        second_bytes = (run_dir / "compiled_candidates_raw.csv").read_bytes()
+        second_sha = self.sha(run_dir / "compiled_candidates_raw.csv")
+
+        self.assertNotIn(b"\r", first_bytes)
+        self.assertEqual(second_bytes, first_bytes)
+        self.assertEqual(second_sha, first_sha)
+        compiled_receipt = next(
+            item
+            for item in json.loads((run_dir / "MANIFEST_SHA256.json").read_text())["files"]
+            if item["path"] == "compiled_candidates_raw.csv"
+        )
+        self.assertEqual(compiled_receipt["sha256"], first_sha)
+
+        other_csv = self.root / "lineage-candidates.csv"
+        search._write_rows_atomic(other_csv, ("key", "value"), [{"key": "a", "value": "b"}])
+        self.assertNotIn(b"\r", other_csv.read_bytes())
+
+    def test_incomplete_http_stream_is_stable_atomic_and_resumes_with_fresh_history(self):
+        self.copy_configuration()
+        output = self.root / "retry-run"
+        cell = search.SearchCell(
+            "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
+            "FAMILY",
+            "causal_policy",
+            "pubmed",
+            'method AND ("2020/01/01"[Date - Publication] : '
+            '"2020/12/31"[Date - Publication])',
+            "",
+            "2020/01/01",
+            "2020/12/31",
+        )
+
+        class IncompleteResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self):
+                raise http.client.IncompleteRead(b"partial", 100)
+
+        def incomplete_opener(request, timeout=0):
+            del timeout
+            path = urllib.parse.urlparse(request.full_url).path
+            if path.endswith("esearch.fcgi"):
+                return self.fake_response(
+                    json.dumps(
+                        {
+                            "esearchresult": {
+                                "count": "1",
+                                "webenv": "ENV-OLD",
+                                "querykey": "1",
+                            }
+                        }
+                    ).encode()
+                )
+            return IncompleteResponse()
+
+        first_stdout = io.StringIO()
+        with mock.patch.object(search, "build_search_cells", return_value=[cell]):
+            with mock.patch.object(
+                search.urllib.request, "urlopen", side_effect=incomplete_opener
+            ):
+                with mock.patch("time.sleep"):
+                    with contextlib.redirect_stdout(first_stdout):
+                        first_result = search.main(
+                            [
+                                "run",
+                                "--root",
+                                str(self.root),
+                                "--date",
+                                "2026-07-20",
+                                "--email",
+                                "test@example.invalid",
+                                "--output",
+                                str(output),
+                            ]
+                        )
+
+        self.assertEqual(first_result, 1)
+        self.assertIn("DISCOVERY FAIL", first_stdout.getvalue())
+        self.assertIn("IncompleteRead", first_stdout.getvalue())
+        self.assertNotIn("Traceback", first_stdout.getvalue())
+        self.assertFalse((output / "RUN_RECEIPT.json").exists())
+        self.assertEqual(list(output.rglob("*.tmp")), [])
+        self.assertEqual(list((output / "raw").glob("*.xml")), [])
+        old_esearch = next((output / "raw").glob("*.esearch.json"))
+        old_esearch_sha = self.sha(old_esearch)
+
+        def fresh_opener(request, timeout=0):
+            del timeout
+            path = urllib.parse.urlparse(request.full_url).path
+            if path.endswith("esearch.fcgi"):
+                return self.fake_response(
+                    json.dumps(
+                        {
+                            "esearchresult": {
+                                "count": "1",
+                                "webenv": "ENV-FRESH",
+                                "querykey": "7",
+                            }
+                        }
+                    ).encode()
+                )
+            return self.fake_response(
+                self.pubmed_xml([{"pmid": "1", "title": "Recovered candidate"}])
+            )
+
+        second_stdout = io.StringIO()
+        with mock.patch.object(search, "build_search_cells", return_value=[cell]):
+            with mock.patch.object(search.urllib.request, "urlopen", side_effect=fresh_opener):
+                with mock.patch("time.sleep"):
+                    with contextlib.redirect_stdout(second_stdout):
+                        second_result = search.main(
+                            [
+                                "run",
+                                "--root",
+                                str(self.root),
+                                "--date",
+                                "2026-07-20",
+                                "--email",
+                                "test@example.invalid",
+                                "--output",
+                                str(output),
+                            ]
+                        )
+
+        self.assertEqual(second_result, 0)
+        self.assertEqual(second_stdout.getvalue().strip(), "DISCOVERY PASS")
+        receipt = json.loads((output / "RUN_RECEIPT.json").read_text())
+        self.assertEqual(receipt["cells"][0]["webenv"], "ENV-FRESH")
+        fresh_esearch = next((output / "raw").glob("*.esearch.json"))
+        self.assertNotEqual(self.sha(fresh_esearch), old_esearch_sha)
+        self.assertEqual(len(list((output / "raw").glob("*.esearch.json"))), 1)
+        self.assertEqual(len(list((output / "raw").glob("*.xml"))), 1)
+        self.assertEqual(list(output.rglob("*.tmp")), [])
+        self.assertEqual(search.validate_search_run(output), [])
+
     def test_pubmed_http_and_timeout_failures_are_stable_and_atomic(self):
         cell = search.SearchCell(
             "SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01",
@@ -947,6 +1169,7 @@ class DiscoverySearchTests(unittest.TestCase):
         failures = (
             urllib.error.HTTPError("https://example.invalid", 503, "unavailable", {}, None),
             TimeoutError("timed out"),
+            http.client.RemoteDisconnected("remote closed connection"),
         )
         for index, failure in enumerate(failures):
             with self.subTest(failure=type(failure).__name__):
