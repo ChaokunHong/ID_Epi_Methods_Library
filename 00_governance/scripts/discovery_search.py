@@ -1090,21 +1090,30 @@ def execute_wave(
 
 
 def _empty_wave_contract_errors(run_dir: Path) -> list[str] | None:
+    if run_dir.name != "wave_02_synonym_expansion":
+        return None
     receipt_path = run_dir / "RUN_RECEIPT.json"
     if not receipt_path.is_file():
-        return None
+        return ["RUN_RECEIPT.json missing"]
     payload, read_errors = _read_json(receipt_path, "invalid run receipt")
     if read_errors or not isinstance(payload, dict):
+        return read_errors or ["invalid run receipt shape"]
+    rows, registry_errors = _validate_wave_two_registry(
+        run_dir / "QUERY_REGISTRY.csv", _configuration_root(run_dir)
+    )
+    if registry_errors:
+        return registry_errors
+    executed_count = sum(row.get("status") == "executed" for row in rows)
+    if executed_count:
+        if "empty_reason" in payload:
+            return ["non-empty Wave 2 contains empty_reason"]
         return None
-    declared = payload.get("empty_reason") == "all_families_no_expansion_needed"
-    if not declared:
-        return None
+
     errors: list[str] = []
+    if payload.get("empty_reason") != "all_families_no_expansion_needed":
+        errors.append("empty Wave 2 reason mismatch")
     if payload.get("cells") != []:
         errors.append("empty Wave 2 contains search cells")
-    raw = run_dir / "raw"
-    if raw.exists() and (not raw.is_dir() or any(raw.iterdir())):
-        errors.append("empty Wave 2 contains raw artifacts")
     manifest_errors, manifest = _validate_manifest(run_dir)
     errors.extend(manifest_errors)
     required = {
@@ -1113,16 +1122,31 @@ def _empty_wave_contract_errors(run_dir: Path) -> list[str] | None:
         "screened_candidates.csv",
         "screening_audit.csv",
     }
-    if not required.issubset(manifest):
+    if set(manifest) != required:
         errors.append("empty Wave 2 manifest coverage mismatch")
-    if any(path.startswith("raw/") for path in manifest):
-        errors.append("empty Wave 2 manifest contains raw artifact")
-    rows, registry_errors = _validate_wave_two_registry(
-        run_dir / "QUERY_REGISTRY.csv", _configuration_root(run_dir)
-    )
-    errors.extend(registry_errors)
-    if rows and any(row.get("status") != "no_expansion_needed" for row in rows):
-        errors.append("empty Wave 2 registry contains executed row")
+    raw_errors = _raw_artifact_closure_errors(run_dir, manifest, set())
+    errors.extend(raw_errors)
+    if raw_errors:
+        errors.append("empty Wave 2 contains raw artifacts")
+    screening_batches = run_dir / "screening_batches"
+    if screening_batches.exists():
+        errors.append("empty Wave 2 contains screening batches")
+    allowed_top_level = {
+        "RUN_RECEIPT.json",
+        "MANIFEST_SHA256.json",
+        "QUERY_REGISTRY.csv",
+        "compiled_candidates_raw.csv",
+        "screened_candidates.csv",
+        "screening_audit.csv",
+        "raw",
+    }
+    try:
+        top_level = set(os.listdir(run_dir))
+    except OSError as error:
+        errors.append(_error("empty Wave 2 directory unreadable", run_dir, error))
+    else:
+        for name in sorted(top_level - allowed_top_level):
+            errors.append(f"empty Wave 2 unexpected artifact: {name}")
     for filename, headers in (
         ("compiled_candidates_raw.csv", COMPILED_HEADERS),
         ("screened_candidates.csv", SCREENED_HEADERS),
@@ -1176,6 +1200,9 @@ def _validate_lineage_registry(path: Path) -> tuple[list[dict[str, str]], list[s
         ):
             if not row.get(field, "").strip():
                 errors.append(f"blank lineage registry field: {query_id}: {field}")
+        reviewer = row.get("reviewer", "")
+        if reviewer and reviewer != reviewer.strip():
+            errors.append(f"noncanonical lineage registry reviewer: {query_id}")
     for named_source_id, group in groups.items():
         if len(group) > 3:
             errors.append(
@@ -1334,10 +1361,27 @@ def _pubmed_lineage_candidate_rows(
 ) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
     rank = 0
-    for page in receipt.get("efetch_pages", []):
-        if not isinstance(page, dict):
-            continue
-        relative = str(page.get("path", ""))
+    pages = receipt.get("efetch_pages")
+    if not isinstance(pages, list):
+        raise DiscoveryExecutionError("invalid PubMed lineage page receipts")
+    for page_index, page in enumerate(pages, 1):
+        if not isinstance(page, dict) or any(
+            field not in page for field in PAGE_REQUIRED_FIELDS
+        ):
+            raise DiscoveryExecutionError(
+                f"invalid PubMed lineage page receipt: {page_index}"
+            )
+        relative_raw = page.get("path")
+        digest_raw = page.get("sha256")
+        if (
+            _safe_relative(relative_raw) is None
+            or not isinstance(digest_raw, str)
+            or SHA256_PATTERN.fullmatch(digest_raw) is None
+        ):
+            raise DiscoveryExecutionError(
+                f"invalid PubMed lineage page receipt: {page_index}"
+            )
+        relative = str(relative_raw)
         page_bytes, confined_error = _confined_artifact_bytes(
             output_dir, relative, "PubMed lineage raw"
         )
@@ -1357,8 +1401,8 @@ def _pubmed_lineage_candidate_rows(
             rows.append(
                 {
                     "candidate_key": key,
-                    "query_id": registry["query_id"],
-                    "named_source_id": registry["named_source_id"],
+                    "query_id": str(registry.get("query_id", "")),
+                    "named_source_id": str(registry.get("named_source_id", "")),
                     "candidate_rank": str(rank),
                     "pmid": fields["pmid"],
                     "doi": fields["doi"],
@@ -1371,8 +1415,8 @@ def _pubmed_lineage_candidate_rows(
                         if fields["pmid"]
                         else f"https://doi.org/{fields['doi']}" if fields["doi"] else ""
                     ),
-                    "raw_path": str(page["path"]),
-                    "raw_sha256": str(page["sha256"]),
+                    "raw_path": relative,
+                    "raw_sha256": digest_raw,
                 }
             )
     return rows
@@ -1383,7 +1427,15 @@ def _crossref_lineage_candidate_rows(
     receipt: dict[str, object],
     output_dir: Path,
 ) -> list[dict[str, str]]:
-    relative = str(receipt.get("response_path", ""))
+    response_path = receipt.get("response_path")
+    response_sha = receipt.get("response_sha256")
+    if (
+        _safe_relative(response_path) is None
+        or not isinstance(response_sha, str)
+        or SHA256_PATTERN.fullmatch(response_sha) is None
+    ):
+        raise DiscoveryExecutionError("invalid Crossref lineage response receipt")
+    relative = str(response_path)
     response_bytes, confined_error = _confined_artifact_bytes(
         output_dir, relative, "Crossref lineage raw"
     )
@@ -1432,13 +1484,14 @@ def _crossref_lineage_candidate_rows(
             and date_parts[0]
         ):
             year = str(date_parts[0][0])
-        key = f"DOI:{doi}" if doi else f"CROSSREF:{registry['query_id']}:{rank:03d}"
+        query_id = str(registry.get("query_id", ""))
+        key = f"DOI:{doi}" if doi else f"CROSSREF:{query_id}:{rank:03d}"
         rows.append(
             {
                 "candidate_key": key,
-                "query_id": registry["query_id"],
-                "named_source_id": registry["named_source_id"],
-                "bibliographic_query": registry["query"],
+                "query_id": query_id,
+                "named_source_id": str(registry.get("named_source_id", "")),
+                "bibliographic_query": str(registry.get("query", "")),
                 "candidate_rank": str(rank),
                 "doi": doi,
                 "title": title,
@@ -1447,8 +1500,8 @@ def _crossref_lineage_candidate_rows(
                 "first_author": first_author,
                 "type": str(item.get("type", "")),
                 "url": str(item.get("URL", "")),
-                "raw_path": str(receipt["response_path"]),
-                "raw_sha256": str(receipt["response_sha256"]),
+                "raw_path": relative,
+                "raw_sha256": response_sha,
             }
         )
     return rows
@@ -2279,6 +2332,103 @@ def _confined_artifact_bytes(
                 pass
 
 
+def _enumerate_raw_regular_files(run_dir: Path) -> tuple[set[str], list[str]]:
+    """Enumerate only direct regular files in raw without following links."""
+    files: set[str] = set()
+    errors: list[str] = []
+    descriptors: list[int] = []
+    try:
+        root_fd = os.open(run_dir, os.O_RDONLY | os.O_DIRECTORY)
+        descriptors.append(root_fd)
+        try:
+            raw_mode = os.stat("raw", dir_fd=root_fd, follow_symlinks=False).st_mode
+        except FileNotFoundError:
+            return files, errors
+        if stat.S_ISLNK(raw_mode):
+            return files, ["raw directory is symlink"]
+        if not stat.S_ISDIR(raw_mode):
+            return files, ["raw path is not a directory"]
+        raw_fd = os.open(
+            "raw",
+            os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW,
+            dir_fd=root_fd,
+        )
+        descriptors.append(raw_fd)
+        for name in sorted(os.listdir(raw_fd)):
+            relative = f"raw/{name}"
+            try:
+                mode = os.stat(name, dir_fd=raw_fd, follow_symlinks=False).st_mode
+            except OSError as error:
+                errors.append(_error("raw artifact unreadable", Path(relative), error))
+                continue
+            if stat.S_ISLNK(mode):
+                errors.append(f"raw artifact is symlink: {relative}")
+            elif stat.S_ISDIR(mode):
+                errors.append(f"raw contains extra directory: {relative}")
+            elif not stat.S_ISREG(mode):
+                errors.append(f"raw artifact is not a regular file: {relative}")
+            else:
+                artifact_fd: int | None = None
+                try:
+                    artifact_fd = os.open(
+                        name,
+                        os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW,
+                        dir_fd=raw_fd,
+                    )
+                    if not stat.S_ISREG(os.fstat(artifact_fd).st_mode):
+                        errors.append(
+                            f"raw artifact is not a regular file: {relative}"
+                        )
+                        continue
+                    files.add(relative)
+                    if (
+                        name.startswith(".")
+                        or name.endswith(".tmp")
+                        or ".tmp." in name
+                    ):
+                        errors.append(f"temporary raw artifact: {relative}")
+                except OSError as error:
+                    errors.append(
+                        _error("raw artifact unreadable", Path(relative), error)
+                    )
+                finally:
+                    if artifact_fd is not None:
+                        try:
+                            os.close(artifact_fd)
+                        except OSError:
+                            pass
+    except OSError as error:
+        errors.append(_error("raw directory unreadable", run_dir / "raw", error))
+    finally:
+        for descriptor in reversed(descriptors):
+            try:
+                os.close(descriptor)
+            except OSError:
+                pass
+    return files, errors
+
+
+def _raw_artifact_closure_errors(
+    run_dir: Path,
+    manifest: dict[str, str],
+    receipt_owned: set[str],
+) -> list[str]:
+    actual, errors = _enumerate_raw_regular_files(run_dir)
+    manifested = {path for path in manifest if path.startswith("raw/")}
+    owned = {path for path in receipt_owned if path.startswith("raw/")}
+    for path in sorted(receipt_owned - owned):
+        errors.append(f"receipt raw path outside raw directory: {path}")
+    for path in sorted(actual - manifested):
+        errors.append(f"unmanifested raw artifact: {path}")
+    for path in sorted(manifested - actual):
+        errors.append(f"manifest raw artifact is not a regular file: {path}")
+    for path in sorted(manifested - owned):
+        errors.append(f"unowned manifest raw artifact: {path}")
+    for path in sorted(owned - manifested):
+        errors.append(f"receipt-owned raw artifact absent from manifest: {path}")
+    return list(dict.fromkeys(errors))
+
+
 def _validate_manifest(run_dir: Path) -> tuple[list[str], dict[str, str]]:
     path = run_dir / "MANIFEST_SHA256.json"
     if not path.is_file():
@@ -2849,9 +2999,9 @@ def validate_search_run(run_dir: Path) -> list[str]:
             )
     if "compiled_candidates_raw.csv" not in manifest:
         errors.append("compiled_candidates_raw.csv absent from manifest")
-    manifest_raw_paths = {path for path in manifest if path.startswith("raw/")}
-    for path in sorted(manifest_raw_paths - owned_raw_paths):
-        errors.append(f"unowned manifest raw artifact: {path}")
+    errors.extend(
+        _raw_artifact_closure_errors(run_dir, manifest, owned_raw_paths)
+    )
     try:
         expected_compiled = _derive_pubmed_candidates(run_dir)
     except DiscoveryExecutionError as error:
@@ -2919,6 +3069,7 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
         queries = []
     seen: set[str] = set()
     receipt_queries: dict[str, dict[str, object]] = {}
+    recomputable_query_ids: set[str] = set()
     owned_page_paths: set[str] = set()
     owned_raw_paths: set[str] = set()
     for row in queries:
@@ -2938,6 +3089,7 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
         else:
             seen.add(query_id)
             receipt_queries[query_id] = row
+        query_validation_start = len(errors)
         reported_count = row["reported_count"]
         if not _integer(reported_count):
             errors.append("invalid nonnegative integer count: reported_count")
@@ -3019,6 +3171,14 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
                     )
             if any(field not in row for field in required):
                 continue
+            errors.extend(
+                _reference_errors(
+                    row.get("response_path"),
+                    row.get("response_sha256"),
+                    manifest,
+                    "Crossref response",
+                )
+            )
             if row["raw_path"] != row["response_path"] or row["raw_sha256"] != row["response_sha256"]:
                 errors.append("Crossref lineage raw/response mismatch")
             if row["rows"] != 5:
@@ -3061,12 +3221,26 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
                         errors.append("Crossref lineage raw count mismatch")
         else:
             errors.append("invalid lineage source")
+        if (
+            isinstance(query_id, str)
+            and query_id in receipt_queries
+            and len(errors) == query_validation_start
+        ):
+            recomputable_query_ids.add(query_id)
+    errors.extend(
+        _raw_artifact_closure_errors(run_dir, manifest, owned_raw_paths)
+    )
     for table in ("pubmed_lineage_candidates.csv", "crossref_candidates.csv"):
         if table not in manifest:
             errors.append(f"lineage candidate table absent from manifest: {table}")
     errors.extend(
         _validate_lineage_decisions(
-            root, run_dir, manifest, payload["configuration_files"], receipt_queries
+            root,
+            run_dir,
+            manifest,
+            payload["configuration_files"],
+            receipt_queries,
+            recomputable_query_ids,
         )
     )
     return list(dict.fromkeys(errors))
@@ -3084,6 +3258,7 @@ def _validate_lineage_decisions(
     manifest: dict[str, str],
     configuration_files: object,
     receipt_queries: dict[str, dict[str, object]],
+    recomputable_query_ids: set[str],
 ) -> list[str]:
     errors: list[str] = []
     if not receipt_queries:
@@ -3157,9 +3332,12 @@ def _validate_lineage_decisions(
                 ) != receipt.get("response_sha256"):
                     errors.append(f"lineage candidate provenance mismatch: {key}")
             else:
+                receipt_pages = receipt.get("efetch_pages")
+                if not isinstance(receipt_pages, list):
+                    receipt_pages = []
                 page_pairs = {
                     (page.get("path"), page.get("sha256"))
-                    for page in receipt.get("efetch_pages", [])
+                    for page in receipt_pages
                     if isinstance(page, dict)
                 }
                 if (row.get("raw_path"), row.get("raw_sha256")) not in page_pairs:
@@ -3173,7 +3351,7 @@ def _validate_lineage_decisions(
     }
     for query_id, registry in registry_by_query.items():
         receipt = receipt_queries.get(query_id)
-        if receipt is None:
+        if receipt is None or query_id not in recomputable_query_ids:
             continue
         try:
             if registry.get("source") == "pubmed":
@@ -3257,11 +3435,22 @@ def _validate_lineage_decisions(
             or not set(considered).issubset(available_keys)
         ):
             errors.append(f"lineage candidate provenance mismatch: {decision_id}")
-        if not audit.get("primary_reviewer", "").strip():
+        primary_reviewer = audit.get("primary_reviewer", "")
+        audit_reviewer = audit.get("audit_reviewer", "")
+        if not primary_reviewer.strip():
             errors.append(f"blank lineage primary reviewer: {decision_id}")
-        if not audit.get("audit_reviewer", "").strip():
+        elif primary_reviewer != primary_reviewer.strip():
+            errors.append(f"noncanonical lineage primary reviewer: {decision_id}")
+        if not audit_reviewer.strip():
             errors.append(f"blank lineage audit reviewer: {decision_id}")
-        if audit.get("audit_reviewer") == audit.get("primary_reviewer"):
+        elif audit_reviewer != audit_reviewer.strip():
+            errors.append(f"noncanonical lineage audit reviewer: {decision_id}")
+        if (
+            primary_reviewer.strip()
+            and audit_reviewer.strip()
+            and primary_reviewer.strip().casefold()
+            == audit_reviewer.strip().casefold()
+        ):
             errors.append(f"lineage audit reviewer is not independent: {decision_id}")
         stages = (
             ("primary", "primary_selected_candidate_key"),

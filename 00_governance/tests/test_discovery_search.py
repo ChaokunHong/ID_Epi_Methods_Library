@@ -1471,6 +1471,53 @@ class DiscoverySearchTests(unittest.TestCase):
         self.assertEqual(search.validate_screening(output), [])
         self.assertEqual(search.validate_screening_audit(output), [])
 
+    def test_wave_two_empty_state_is_registry_derived_and_exact(self):
+        self.copy_configuration()
+        output = self.root / "wave_02_synonym_expansion"
+        registry = output / "QUERY_REGISTRY.csv"
+        self.write_csv(
+            registry,
+            list(search.WAVE_TWO_QUERY_HEADERS),
+            self.wave_two_rows({}),
+        )
+        search.execute_wave(
+            self.root,
+            registry,
+            output,
+            "test@example.invalid",
+            opener=lambda *_args, **_kwargs: self.fail("empty wave called network"),
+        )
+        receipt_path = output / "RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        del receipt["empty_reason"]
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        (output / "screening_batches").mkdir()
+        (output / "screening_batches/.keep").write_text("", encoding="utf-8")
+        for validator_call in (
+            lambda: search.validate_search_run(output),
+            lambda: search.validate_screening(output),
+            lambda: search.validate_screening_audit(output),
+        ):
+            rendered = "\n".join(validator_call())
+            self.assertIn("empty Wave 2 reason mismatch", rendered)
+            self.assertIn("empty Wave 2 contains screening batches", rendered)
+
+        phase = self.make_valid_phase_run()
+        nonempty = phase / "wave_02_synonym_expansion"
+        receipt_path = nonempty / "RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        receipt["empty_reason"] = "all_families_no_expansion_needed"
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        for validator_call in (
+            lambda: search.validate_search_run(nonempty),
+            lambda: search.validate_screening(nonempty),
+            lambda: search.validate_screening_audit(nonempty),
+        ):
+            self.assertIn(
+                "non-empty Wave 2 contains empty_reason",
+                "\n".join(validator_call()),
+            )
+
     def lineage_registry_rows(self) -> list[dict[str, str]]:
         return [
             {
@@ -2522,6 +2569,171 @@ class DiscoverySearchTests(unittest.TestCase):
         (run_dir / "LINEAGE_RUN_RECEIPT.json").write_text(json.dumps(receipt))
         self.assertIn("prohibited crossref field", "\n".join(search.validate_lineage(self.root, run_dir)))
 
+    def test_lineage_missing_source_fields_never_enter_recomputation(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        receipt_path = run_dir / "LINEAGE_RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        del receipt["queries"][0]["response_sha256"]
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        with mock.patch.object(
+            search,
+            "_crossref_lineage_candidate_rows",
+            side_effect=AssertionError("invalid Crossref receipt was recomputed"),
+        ):
+            try:
+                rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+            except Exception as error:
+                self.fail(f"missing Crossref field raised {type(error).__name__}: {error}")
+        self.assertIn("missing Crossref lineage field: response_sha256", rendered)
+
+        run_dir = self.make_valid_lineage_run(self.root / "pubmed-missing-page")
+        receipt_path = run_dir / "LINEAGE_RUN_RECEIPT.json"
+        receipt = json.loads(receipt_path.read_text())
+        query = receipt["queries"][0]
+        raw_path = run_dir / query["raw_path"]
+        raw_path.write_text(
+            json.dumps(
+                {"esearchresult": {"count": "1", "webenv": "ENV", "querykey": "1"}}
+            ),
+            encoding="utf-8",
+        )
+        raw_sha = self.sha(raw_path)
+        query.clear()
+        query.update(
+            query_id="SEARCH-20260720-LINEAGE-CAUSAL-01",
+            source="pubmed",
+            query='"Example method"[Title]',
+            reported_count=1,
+            raw_path="raw/crossref.json",
+            raw_sha256=raw_sha,
+            status="complete",
+            date_start="",
+            date_end="",
+            query_scope="unbounded_identity",
+            esearch_path="raw/crossref.json",
+            esearch_sha256=raw_sha,
+            usehistory=True,
+            webenv="ENV",
+            query_key="1",
+            efetch_pages=[
+                {"retstart": 0, "retmax": 1, "sha256": "a" * 64, "parsed_count": 1}
+            ],
+        )
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        next(
+            item for item in manifest["files"] if item["path"] == "raw/crossref.json"
+        )["sha256"] = raw_sha
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        registry = run_dir / "LINEAGE_QUERY_REGISTRY.csv"
+        with registry.open(encoding="utf-8", newline="") as handle:
+            registry_rows = list(csv.DictReader(handle))
+        registry_rows[0]["source"] = "pubmed"
+        registry_rows[0]["query"] = query["query"]
+        self.write_csv(registry, list(search.LINEAGE_REGISTRY_HEADERS), registry_rows)
+        receipt = json.loads(receipt_path.read_text())
+        receipt["configuration_files"][-1]["sha256"] = self.sha(registry)
+        receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+        with mock.patch.object(
+            search,
+            "_pubmed_lineage_candidate_rows",
+            side_effect=AssertionError("invalid PubMed page was recomputed"),
+        ):
+            try:
+                rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+            except Exception as error:
+                self.fail(f"missing PubMed page field raised {type(error).__name__}: {error}")
+        self.assertIn("missing page receipt field: path", rendered)
+        with self.assertRaises(search.DiscoveryExecutionError):
+            search._crossref_lineage_candidate_rows({}, {}, run_dir)
+        with self.assertRaises(search.DiscoveryExecutionError):
+            search._pubmed_lineage_candidate_rows({}, {}, run_dir)
+
+    def test_raw_artifacts_have_three_way_closed_ownership(self):
+        run_dir = self.make_valid_run(self.root / "unmanifested")
+        self.add_artifact(run_dir, "raw/UNMANIFESTED.json", b"{}")
+        self.assertIn(
+            "unmanifested raw artifact",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
+        run_dir = self.make_valid_run(self.root / "receipt-owned-unmanifested")
+        receipt = json.loads((run_dir / "RUN_RECEIPT.json").read_text())
+        owned_page = receipt["cells"][0]["efetch_pages"][0]["path"]
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        manifest["files"] = [
+            item for item in manifest["files"] if item["path"] != owned_page
+        ]
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        self.assertIn(
+            "receipt-owned raw artifact absent from manifest",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
+        run_dir = self.make_valid_run(self.root / "temporary")
+        self.add_artifact(run_dir, "raw/.partial.tmp", b"partial")
+        self.assertIn(
+            "temporary raw artifact",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
+        run_dir = self.make_valid_run(self.root / "extra-directory")
+        (run_dir / "raw/extra").mkdir()
+        self.assertIn(
+            "raw contains extra directory",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
+        run_dir = self.make_valid_run(self.root / "symlink")
+        outside = self.root / "outside-raw.json"
+        outside.write_text("{}", encoding="utf-8")
+        (run_dir / "raw/LINK.json").symlink_to(outside)
+        self.assertIn(
+            "raw artifact is symlink",
+            "\n".join(search.validate_search_run(run_dir)),
+        )
+
+        run_dir = self.make_valid_lineage_run(self.root / "lineage-manifest-orphan")
+        orphan = self.add_artifact(run_dir, "raw/ORPHAN.json", b"{}")
+        manifest_path = run_dir / "MANIFEST_SHA256.json"
+        manifest = json.loads(manifest_path.read_text())
+        manifest["files"].append(orphan)
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        self.assertIn(
+            "unowned manifest raw artifact",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+        run_dir = self.make_valid_lineage_run(self.root / "lineage-unmanifested")
+        self.add_artifact(run_dir, "raw/UNMANIFESTED.json", b"{}")
+        self.assertIn(
+            "unmanifested raw artifact",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+        run_dir = self.make_valid_lineage_run(self.root / "lineage-temporary")
+        self.add_artifact(run_dir, "raw/.partial.tmp", b"partial")
+        self.assertIn(
+            "temporary raw artifact",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+        run_dir = self.make_valid_lineage_run(self.root / "lineage-extra-directory")
+        (run_dir / "raw/extra").mkdir()
+        self.assertIn(
+            "raw contains extra directory",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
+        run_dir = self.make_valid_lineage_run(self.root / "lineage-symlink")
+        (run_dir / "raw/LINK.json").symlink_to(outside)
+        self.assertIn(
+            "raw artifact is symlink",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
+
     def test_lineage_rejects_non_string_query_id_without_exception(self):
         run_dir = self.make_valid_lineage_run(self.root)
         receipt_path = run_dir / "LINEAGE_RUN_RECEIPT.json"
@@ -2681,6 +2893,26 @@ class DiscoverySearchTests(unittest.TestCase):
             rendered,
         )
         self.assertIn("blank lineage primary reviewer", rendered)
+
+    def test_lineage_reviewers_are_canonical_and_independent_after_normalization(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        audit_path = run_dir / "lineage_identity_audit.csv"
+        with audit_path.open(encoding="utf-8", newline="") as handle:
+            audit_rows = list(csv.DictReader(handle))
+        audit_rows[0]["primary_reviewer"] = " reviewer-a "
+        audit_rows[0]["audit_reviewer"] = "reviewer-a"
+        self.write_csv(audit_path, list(search.LINEAGE_AUDIT_HEADERS), audit_rows)
+        rendered = "\n".join(search.validate_lineage(self.root, run_dir))
+        self.assertIn("noncanonical lineage primary reviewer", rendered)
+        self.assertIn("lineage audit reviewer is not independent", rendered)
+
+        audit_rows[0]["primary_reviewer"] = "reviewer-a"
+        audit_rows[0]["audit_reviewer"] = " reviewer-b "
+        self.write_csv(audit_path, list(search.LINEAGE_AUDIT_HEADERS), audit_rows)
+        self.assertIn(
+            "noncanonical lineage audit reviewer",
+            "\n".join(search.validate_lineage(self.root, run_dir)),
+        )
 
     def test_external_boundary_rejects_filtered_status_change(self):
         self.make_external_boundary_fixture()
