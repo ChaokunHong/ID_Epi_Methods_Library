@@ -14,7 +14,7 @@ The project is methods-first. Geography, LMIC relevance, AMR relevance, public-d
 
 ## Current phase
 
-Bootstrap. The approved design is `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, approved by the owner on 2026-07-20 and governed for bootstrap by `docs/superpowers/plans/2026-07-20-library-bootstrap-implementation.md`. No flagship study has been selected and the broad search has not yet been executed.
+Bootstrap implementation plus the schema-hardening correction are complete locally. Whole-branch re-review, final validation, merge to `main`, and publication remain pending. The approved design is `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, approved by the owner on 2026-07-20 and governed for bootstrap by `docs/superpowers/plans/2026-07-20-library-bootstrap-implementation.md`. No flagship study has been selected and the broad search has not been executed.
 
 ## Related project
 

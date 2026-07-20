@@ -298,3 +298,55 @@ The following work was not performed by Task 8:
 No candidate dataset was downloaded and no simulation was executed during bootstrap. Dataset acquisition and simulation execution remain deferred to separately approved plans after the applicable evidence, feasibility, and specification gates.
 
 The exact next operational action is the controller-owned whole-branch review. Only after reviewed `main` is merged, revalidated, and published may the next scientific action begin: draft the separate broad-search execution plan for owner review. That future plan must remain methods/problem first; combine applied seeds with authoritative method lineage; preserve a portfolio of multiple flagship candidates, one or two lower-risk public-data projects, and a non-AMR infectious-disease route; and require a broad structural contribution for any pure-simulation flagship.
+
+## Whole-branch review correction addendum — 2026-07-20
+
+This addendum records the single owner-approved correction wave based on `0864f98f651965903e712d171d5813b7edbcb5ed`. It supplements and does not rewrite the historical Task 8 receipts above. The correction adds normalized relationship registries and hardens validation; it does not provide whole-branch re-review or publication authority.
+
+### TDD and validator receipt
+
+The focused RED command was:
+
+```bash
+python3 -m unittest 00_governance/tests/test_validate_library.py -v
+```
+
+Against the unchanged validator, it exited `1` after `Ran 19 tests` with `FAILED (failures=19)`. The expected failures demonstrated absent handling for non-object manifests, surplus and missing CSV fields, required fields, paper year consistency, method/candidate/simulation prefix consistency, composite-link uniqueness, all four new link-table foreign keys, design checksum validation, taxonomy README requirements, and the ten-registry minimal valid case.
+
+After the minimum implementation, the same command exited `0`: `Ran 19 tests in 0.039s` and `OK`. The public signatures of `validate_repository`, `validate_csv`, `validate_foreign_keys`, `validate_seed_checksum`, and `main` remain unchanged.
+
+Repository validation:
+
+```bash
+python3 00_governance/scripts/validate_library.py --root .
+```
+
+Exit code: `0`. Output: `VALIDATION PASS`.
+
+An empty temporary root exercised the invalid CLI path: output began `VALIDATION FAIL` and the command exited `1`. The live repository path printed `VALIDATION PASS` and exited `0`.
+
+### Registry and architecture receipt
+
+The correction adds these four files, each with one header line and zero data rows:
+
+- `03_evidence_tables/candidate_method_links.csv`
+- `03_evidence_tables/candidate_dataset_links.csv`
+- `03_evidence_tables/simulation_method_links.csv`
+- `03_evidence_tables/simulation_candidate_links.csv`
+
+The six pre-existing registries also remain one line with zero data rows. A ten-path `wc -l` loop exited `0` and reported `lines=1 data_rows=0` for every registry. After staging the four additions, `git ls-files | wc -l` reported 51 tracked paths. The sorted index-plus-untracked candidate inventory byte-matched the sorted filesystem architecture inventory after pruning `.git`, `.superpowers`, and Python bytecode caches; both contained 51 paths and `diff -u` exited `0`.
+
+### Immutable-artifact receipt
+
+```text
+e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57  docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md
+520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55  01_search/seed_scans/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md
+```
+
+`cmp` of the design against approved commit `c708ac2402431202c8b1af4c5fd87035460249ab` exited `0`. `cmp` of the Library seed against the named `Surveillance_AMR` source exited `0`. `git diff --exit-code 0864f98f651965903e712d171d5813b7edbcb5ed --` for the approved design and implementation plan exited `0`.
+
+### Reciprocal pointer, remote, and scope boundary
+
+The reciprocal pointer remains present and untracked. The Task 7 filtered baseline and the fresh filtered `Surveillance_AMR` porcelain status both had SHA256 `e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e`, 16 lines, and `diff -u` exit `0`. The exact pointer status remained `?? ID_EPI_METHODS_LIBRARY_POINTER.md`; `git ls-files --error-unmatch` exited `1`; the source index contained no staged paths; and source HEAD remained `eb5d15656b8fe69a8359705c80125d695a1c0782`. This proves unchanged path/status state after excluding the pointer, not byte identity for paths that were already dirty before Task 7.
+
+At `2026-07-20 08:02:49 CST +0800`, the full command `git ls-remote origin` exited `0` with no output, so the remote still had no refs. This correction wave did not push, merge, create a pull request, modify `main`, run a literature search, download candidate data, execute simulations, select a flagship, or write any `Surveillance_AMR` file. The exact next action remains whole-branch re-review followed by the final validation/publication gate.
