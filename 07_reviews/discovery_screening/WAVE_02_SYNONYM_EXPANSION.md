@@ -31,6 +31,8 @@ Independent audit selection uses the same strict union contract as Wave 1: plan 
 
 ## Closure results
 
+The counts in this subsection record the original closure and historical second-repair recomputation. They are superseded by the exhaustive third-repair state below.
+
 All 3,379 cross-wave delta keys were semantically read in 23 complete manifests (22 of 150 records and one of 79). Together with the 192 identifier-confirmed Wave 1 overlaps, primary screening covers all 3,571 Wave 2 keys. Twenty-three fresh semantic-reader identities cover the delta manifests; the deterministic identifier-deduplication reader is recorded separately. Every complete batch passed exact key order, decision/code/type mapping, concrete-reason, and source-SHA checks before integration. Two transport reconnects occurred inside the batch 011 client session, but only its eventual complete 150-row response was imported; no partial transport output was reused.
 
 Primary decisions are 1,438 applied seeds, 379 diagnostic/correction leads, 323 method-source leads, 527 simulation/mechanistic leads, 898 exclusions, and 6 primary-record uncertainties. The 898 exclusions comprise 39 commentary-only, 326 descriptive-only, 218 duplicates (including all 192 exact Wave 1 identifier matches), 293 not-infectious/transferable, and 22 wrong-record-type decisions.
@@ -52,6 +54,24 @@ Every conflict remains `conflict_status=open` with `final_decision=uncertain_ret
 - `validate-audit`: `DISCOVERY PASS`.
 
 The second scope repair semantically reread 454 Wave 2 locator records instead of applying keyword exclusions. Their repaired primary state contains 220 applied seeds, 53 diagnostic/correction leads, 46 method-source leads, 87 simulation/mechanistic leads, and 48 exclusions. This is the Wave 2 portion of the frozen 1,465-record universe documented in the Wave 1 semantic-screening record and `TASK_5_SECOND_REPAIR_PROVENANCE.md`.
+
+## Exhaustive third-repair state
+
+The exhaustive third-repair universe includes 2,747 Wave 2 rows. Every universe row received two fresh complete semantic reads; disagreements were handled in the fresh blind-adjudication layer described in `TASK_5_THIRD_REPAIR_PROVENANCE.md`. The authoritative Wave 2 primary ledger now contains 1,378 applied seeds, 313 diagnostic/correction leads, 263 method-source leads, 501 simulation/mechanistic leads, 1,111 exclusions, and 5 primary-record uncertainties. The exclusions comprise 44 commentary-only, 468 descriptive-only, 224 duplicates, 357 not-infectious/transferable, and 18 wrong-record-type decisions.
+
+Identifier-only reconciliation remains separate from semantic scope. All 192 exact Wave 1 key overlaps remain Wave 2 `exclude / blank type / X_DUPLICATE` primaries retaining the same key. Forty-eight were selected by the recomputed audit formula; all 48 received matching `X_DUPLICATE` audits. The other 144 were unselected and retained their deterministic primaries. Consequently all 192 remain `X_DUPLICATE` in the authoritative final Wave 2 ledger and the global overlap count remains 192.
+
+The authoritative strict audit union selects 886 keys: 45 plan strata require 854 keys, 51 validator strata require 861, and their formula union contains 862. Adding 24 otherwise unselected possible-title-duplicate rows yields the 886-row complete selection in 12 source batches. It covers all 362 primary uncertain or `X_NOT_INFECTIOUS_TRANSFERABLE` rows and all 38 possible-title-duplicate rows. The ordered audit-key-list SHA256 is `00ef9560626ee5e336d999d6d6f092d49c76979131e853537b655260c2373ccd`.
+
+Fresh independent audit produced 614 complete decision/reason/type agreements and 272 open conflicts, with no resolved conflicts. Audit decisions are 420 exclusions, 209 applied seeds, 63 diagnostic/correction leads, 66 method-source leads, 122 simulation/mechanistic leads, and 6 explicit primary-record uncertainties. Every mismatch remains `uncertain_retrieve_primary / blank type / U_PRIMARY_RECORD_NEEDED` with a blank adjudicator.
+
+The authoritative final ledger contains 1,327 applied seeds, 294 diagnostic/correction leads, 245 method-source leads, 494 simulation/mechanistic leads, 934 exclusions, and 277 primary-record uncertainties.
+
+The newly named mass-spectrometry feature `PMID:28854802` was semantically read rather than keyword-excluded. Its primary triple is `exclude / blank type / X_NOT_INFECTIOUS_TRANSFERABLE`; the fresh auditor returned `exclude / blank type / X_DESCRIPTIVE_ONLY`. Because the reason-code triples differ, the final row honestly remains an open `uncertain_retrieve_primary / blank type / U_PRIMARY_RECORD_NEEDED` conflict.
+
+- `screened_candidates.csv` SHA256: `1f309662e076ae9e367dbd5027d63176f7374ed5c4e7b2dd0c5868986765e1bb`.
+- `screening_audit.csv` SHA256: `073be8cb6f18a211b7b46c75ad61ddea303ba40639c77b6452d58f3325c992d2`.
+- Combined two-wave audit selection: 2,542 fresh rows in 34 immutable sessions, with zero semantic-reader, blind-adjudicator, prior-auditor, or prior-Task-5 session reuse.
 
 ## Claim boundary
 
