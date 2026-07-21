@@ -8,30 +8,42 @@
 - First repair SHA: `b167cb6fe583c4f3dce3a5e0dc22d3ae2a54d5a9`
 - Root orchestration checkpoint SHA: `a7af704ad65219c65b7aebe529cc77e3de032292`
 - Second repair SHA: `29ddc3b4f606c11d191e9a16620ac5ba817f19c2`
-- Exact re-reviewed head: `29ddc3b4f606c11d191e9a16620ac5ba817f19c2`
+- Root second-review checkpoint SHA: `9056bf40aca4780c77ffbf32b3a4e952e87eb8c0`
+- Third repair SHA: `9d89eb7656dab1acd576cb543070cb3b6dd5eb20`
+- Exact head submitted for complete re-review: `9d89eb7656dab1acd576cb543070cb3b6dd5eb20`
 - Required implementation subject: `screen broad methods discovery records`
 - First repair subject: `repair Task 5 semantic screening scope`
 - Second repair subject: `repair Task 5 semantic scope and provenance`
+- Third repair subject: `repair Task 5 complete semantic scope`
 - Initial diff package: `.superpowers/sdd/review-961cdf8..bf1a8d2.diff`
 - Initial diff SHA256: `f54492223cf3a2de6da5fff8869e4c1b953a5dbf1f1fabd69c2555fcae0f57fb`
 - Fixed full-range diff package: `.superpowers/sdd/review-961cdf8..29ddc3b.diff`
 - Fixed full-range diff SHA256: `b220ef81a45fc27a472341994e1567c4cbdbe3dbb8acdea562a1a83ec868186d`
 - Fixed full-range diff bytes: 22,665,060
 - Fixed full-range commits: 4
+- Third-repair full-range diff package: `.superpowers/sdd/review-961cdf8..9d89eb7.diff`
+- Third-repair full-range diff SHA256: `756aa982a3da4eec7d51a434a4e6040fba6de56e37db879278d671f66b20c36e`
+- Third-repair full-range diff bytes: 55,131,691
+- Third-repair full-range commits: 6
 - Implementer report: `.superpowers/sdd/task-5-report.md`
 - Implementer report SHA256: `407674453ec6caba8a4520292ffc10fa390f857f39711fcb8f11e541518325a0`
+- Current implementer report SHA256: `cf080446e0346c47a24f0fee20c5ed3d2757470be65516eeee00c844828a269e`
+- Third-repair provenance: `07_reviews/discovery_screening/TASK_5_THIRD_REPAIR_PROVENANCE.md`
+- Third-repair provenance SHA256: `7b2c674702e45fdc3eb50b05761722914bf06d11977a71f26736842aee7f0e74`
+- Final verification receipt: `.superpowers/sdd/task5_fix3/final_verification_receipt.json`
+- Final verification receipt SHA256: `1a98f7df65ab32acf4e597a04a7ee66f8bb558374e63f637fa9b98b9a09d4d40`
 - Approved plan SHA256: `671f24a245c48a9c3661ecf176081f72948c5cdc0c3157df85d3781774ee4209`
 
 ## Exact scope
 
-The complete base-to-head range contains 190 paths: 187 additions and three modifications. The modified pre-existing paths are Wave 1 `MANIFEST_SHA256.json`, plus root-owned `HANDOFF.md` and `07_reviews/discovery_tasks/EXECUTION_LEDGER.md` in orchestration commit `a7af704`. The Task 5 implementation/repair paths remain confined to:
+The complete `961cdf8..9d89eb7` range contains 193 paths: 190 additions and three modifications. The modified pre-existing paths are Wave 1 `MANIFEST_SHA256.json`, plus root-owned `HANDOFF.md` and `07_reviews/discovery_tasks/EXECUTION_LEDGER.md` in orchestration commits. The Task 5 implementation/repair paths remain confined to:
 
 - Wave 1 primary batch manifests/CSVs, `screened_candidates.csv`, and `screening_audit.csv`;
 - the complete Wave 2 query registry, receipt, raw PubMed pages, compiled candidates, primary batches, screening/audit ledgers, manifest, and narrow raw-XML `.gitattributes`;
 - `global/candidates_through_wave_02.csv`;
-- four planned `07_reviews/discovery_screening/*.md` implementation-evidence records plus one second-repair durable provenance record.
+- the planned `07_reviews/discovery_screening/*.md` implementation-evidence records plus second- and third-repair durable provenance records.
 
-No paper, method, dataset, translation, simulation, or shortlist registry changed. No production code or test file changed. The exact base-to-head name/status list reports 187 `A` and three `M`; complete-range `git diff --check` is silent.
+No paper, method, dataset, translation, simulation, or shortlist registry changed. No production code or test file changed. The exact base-to-head name/status list reports 190 `A` and three `M`; complete-range `git diff --check` is silent.
 
 ## Initial Wave 1 result at `bf1a8d2` (superseded)
 
@@ -250,3 +262,35 @@ The same independent reviewer completed the full `961cdf8..29ddc3b` re-review an
 4. Minor: three archived rejected receipts retain nine embedded paths that resolve to accepted retry files and therefore fail their adjacent SHAs. The archived bytes and tracked provenance are correct and zero rejected rows were adopted, but the paths must be corrected during the mandatory repair.
 
 The reviewer independently reproduced the 1,465-key universe, all 45 accepted and three rejected real session UUIDs, the 2,391-row audit and its provenance split, both manifested waves, and the 10,525-row/192-overlap global index. It reran 114 tests plus 15 subtests, eight discovery checks, the Library validator, whitespace checks, and seed comparison successfully. These mechanical passes do not override the remaining semantic findings.
+
+## Third repair result at `9d89eb7` — submitted for complete re-review
+
+Commit `9d89eb7656dab1acd576cb543070cb3b6dd5eb20` is a bounded Task 5 repair with exact parent `9056bf40aca4780c77ffbf32b3a4e952e87eb8c0`. It addresses every finding from the `29ddc3b` review and makes no registry promotion, substantive verification claim, flagship selection, dataset download, or formal simulation.
+
+- Exhaustive semantic universe: 8,984 `(wave, candidate_key)` rows, W1 6,237 and W2 2,747. It deterministically unions every current primary/final inclusion, every correction/retraction candidate, the prior 1,465-row universe, and all named findings/reviewer-axis examples. Universe SHA256: `20121c35624169c8a4743d3373140b64e8efb858ee213a583f7cea342f5fba8e`.
+- Reader A and Reader B each independently read all 8,984 records in 240 accepted, unique, A/B-disjoint sessions. They agreed on 7,985 complete triples; all 999 disagreements were resolved by 20 fresh decision-blind sessions. No prior/rejected/interrupted session was reused.
+- The final semantic ledger evaluates all 8,984 rows: 8,978 semantic dispositions adopted plus six W2 dispositions deliberately held at deterministic identifier-only deduplication. All 192 W1/W2 identifier overlaps remain W2 `exclude / blank type / X_DUPLICATE`, retaining the same key.
+- The first 2,544-row formal-audit run was superseded with zero final adoption after the implementer detected the six identifier-layer overwrites. Its immutable artifacts remain auditable. A corrected 2,542-row selection—W1 1,656 and W2 886—was independently read from scratch in 34 fresh decision-blind sessions: 1,644 agreements, 898 open conflicts, zero resolved conflicts. Every mismatch remains final uncertain with blank type and adjudicator.
+- `PMID:21372330` is now a distinct `include_diagnostic_or_correction_lead / correction / I_DIAGNOSTIC_CORRECTION` record. All seven previously missed records and both additional reviewer-axis records have explicit fresh semantic outcomes; the exact named results appear in `TASK_5_THIRD_REPAIR_PROVENANCE.md`.
+- Prior rejected receipt paths were repaired without adopting rejected content. The tracked third-repair provenance records accepted, rejected, interrupted, retried, and superseded sessions with exact UUIDs, paths, SHAs, and adoption status.
+- Post-commit verification receipt `1a98f7df65ab32acf4e597a04a7ee66f8bb558374e63f637fa9b98b9a09d4d40` records 17/17 PASS: 89 discovery tests plus five subtests; 25 Library tests plus ten subtests; config, both wave verifiers/screening/audit validators, Library validator, external boundary, seed `cmp`, focused verification, repair-boundary verification, and both diff checks.
+
+### Required independent re-review at `9d89eb7`
+
+The same independent reviewer must inspect the complete `961cdf8..9d89eb7` range, the 55,131,691-byte diff package, the current report, the tracked third-repair provenance, and live artifacts. The review must check both spec compliance and task quality and must independently:
+
+1. retest every prior Critical/Important/Minor finding, especially complete semantic coverage, the Retraction Notice classification, continuity state, and repaired rejected-receipt paths;
+2. reconstruct the 8,984-row universe and A/B/blind coverage, verify session disjointness and zero adoption from all rejected/interrupted/superseded attempts, and adversarially sample decisions across every family and inclusion/exclusion class;
+3. reconstruct the corrected W1/W2 audit selection and all 2,542 audit rows, prove all 898 mismatches remain open/uncertain, and prove the superseded 2,544-row audit contributes zero final rows;
+4. verify all 192 cross-wave identifier overlaps, the 10,525-key global index, manifests, immutable retrieval baselines, raw/out-of-scope boundaries, and unchanged `Surveillance_AMR` status;
+5. rerun the full test and validator suite rather than accepting the implementer receipt alone.
+
+Task 5 remains blocked until this reviewer returns `PASS — no remaining Critical or Important findings`. Any Critical or Important finding returns to the same implementation agent for a focused fix and another complete exact-head review.
+
+## Independent review result at `9d89eb7`
+
+The complete integrated re-review returned `NEEDS FIXES — 0 Critical / 1 Important / 0 Minor`. Standards/quality passed with 0/0/0; spec compliance found one Important semantic-scope defect.
+
+Forty-eight rows were independently included by both fresh semantic readers and then excluded by the blind adjudicator. At least `PMID:41665488`, `PMID:32928108`, `PMID:38823290`, `PMID:40883247`, and `PMID:40893944` are unambiguous reproducibility or method-comparison discovery leads under the approved protocol. A fresh scope-specific adjudicator must re-review all 48 without treating the five named examples as an automatic decision rule. Dependent screening, audit, global, manifest, and provenance artifacts must then be regenerated and completely re-reviewed.
+
+All prior Important and Minor findings were independently confirmed closed. All mechanical tests, validators, manifests, global/overlap reconstruction, seed comparison, and external-boundary checks passed. Task 6 remains blocked pending another complete fixed-head PASS.
