@@ -1,4 +1,4 @@
-# Task 6 Semantic Runtime Preflight Blocker
+# Task 6 Semantic Runtime Preflight History and Supersession
 
 Date: 2026-07-21
 
@@ -6,9 +6,17 @@ Branch: `codex/broad-methods-discovery`
 
 Tracked HEAD entering the blocker checkpoint: `a466095da7a49810102f63c2cefc0282d5c25d11`
 
-## Verdict
+## 2026-07-22 owner clarification and current status
 
-**BLOCK — do not create or execute `frozen_002`.** The installed Codex runtime cannot presently prove that the semantic readers receive an empty model-callable tool set. Replacing that requirement with a post-hoc assertion that no tool call was observed would relax the predeclared gate and is not permitted.
+The owner clarified that tools are legitimate when they serve the scientific objective. The approved design, broad-discovery plan, and protocol do not require a capability-empty model request. Under `DEC-20260722-007`, orchestration, validation, file I/O, and formal Wave 3 PubMed/Crossref/primary-record retrieval may use tools. Blind A/B canonical-concept readers must base judgments only on their manifested frozen batch, catalog, and prompt. A session fails closed only when observed behavior breaches that isolation: unauthorized repository/material reads, blind-assignment web/network enrichment, inter-reader communication, mutation of frozen inputs or gates, or review bypass. Mere capability exposure and benign control-plane events are not failures; complete event evidence remains mandatory.
+
+An independent policy/spec audit returned **PASS** on this clarification and **ACK withheld** on formal execution with **0 Critical / 2 Important / 0 Minor** until (1) this tracked checkpoint was superseded consistently and (2) the ignored runtime validator implements the behavior/boundary policy with tests. The tracked repair is recorded here, in `HANDOFF.md`, `EXECUTION_LEDGER.md`, and `DEC-20260722-007`; after two Important corrections, its independent re-review returned **PASS — 0 Critical / 0 Important / 0 Minor**. The runtime repair and integrated independent review remain in progress.
+
+**Current gate: do not create or execute `frozen_002` until the complete updated semantic suite passes on exact hashes and an integrated independent preflight review returns ACK/PASS with no Critical or Important finding.** Direct Codex execution requires no OpenAI API key. The older capability-exposure diagnostics below remain historically valid, but capability exposure is no longer a blocker.
+
+## Historical 2026-07-21 verdict
+
+**Then-current BLOCK — do not create or execute `frozen_002`.** The ignored local execution contract categorically prohibited actual tool/web use and events. The 2026-07-21 reviewer/checkpoint inferred from that ban a stronger capability-empty requirement, and the installed Codex runtime could not prove an empty model-callable tool set. The owner and independent policy/spec audit later determined that this inferred requirement over-strengthened the approved plan; the current policy is stated above.
 
 Task 6 remains incomplete. Tasks 7 and 8 must not start. No formal Task 6 semantic output, lineage run, discovery registry row, implementation commit, or Task 6 PASS receipt exists.
 
@@ -18,9 +26,9 @@ The third independent Task 6 preflight review examined tracked HEAD `a466095da7a
 
 1. non-canary bulk QA was fail-open;
 2. pure transport failure lacked a recoverable journal and made the same execution ID unsafe to retry;
-3. the declared capability-empty runtime was not enforced by the actual Codex request.
+3. the reviewer/checkpoint inferred a capability-empty runtime from the local categorical event ban, and the actual Codex request did not satisfy that inferred requirement; this interpretation was superseded on 2026-07-22.
 
-The original Task 6 implementation agent fixed findings 1 and 2 with RED-to-GREEN tests. Finding 3 remains open because it cannot be closed through a supported configuration of the installed CLI.
+The original Task 6 implementation agent fixed findings 1 and 2 with RED-to-GREEN tests. Finding 3 remained open under the 2026-07-21 local contract because it could not be closed through a supported configuration of the installed CLI; the owner superseded that capability-empty interpretation on 2026-07-22.
 
 ## Frozen post-I2 implementation checkpoint
 
@@ -38,7 +46,7 @@ I1 now applies the same deterministic duplicate-rationale, invalid-evidence, and
 
 I2 now distinguishes retryable transport failure from substantive invalidity, hashes partial-output evidence before safely removing non-adoptable partial files, permits the same execution ID to retry, and binds a signed per-execution transport journal into completion. Reader and resolver paths share this behavior; journal tampering prevents relaunch.
 
-No full-suite PASS is claimed for the post-I2 checkpoint because launch finding I3 remains open. The prior exact-SHA baseline completed 61 tests in 596.602 seconds with `OK`; that baseline predates the I1/I2 repair.
+No full-suite PASS was claimed for the post-I2 checkpoint because the then-current launch finding I3 remained open. The prior exact-SHA baseline completed 61 tests in 596.602 seconds with `OK`; that baseline predates the I1/I2 repair and the 2026-07-22 policy correction.
 
 ## Runtime and request evidence
 
@@ -87,20 +95,13 @@ A read-only delta reconstruction removed exactly that one default entry, and exa
 - seed SHA256: `520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55`; byte comparison with the named source returned `cmp=0`.
 - local `main`, `origin/main`, and GitHub `refs/heads/main` all resolve to `e161163d5ba3682395ca3e4846b81e355b7cd0b9`.
 
-The post-I2 semantic-pipeline tests are reported separately above. These repository tests do not close I3 and must not be used to authorize formal semantic execution.
+The post-I2 semantic-pipeline tests are reported separately above. Those repository tests did not close the historical I3 and do not authorize formal semantic execution under the current gate either; authorization requires the updated behavior/boundary suite and integrated review described below.
 
-## Safe resume gate
+## Current safe resume gate
 
-Task 6 may resume only through a separately reviewed execution-path decision that satisfies one of these conditions without weakening the gate:
+Task 6 may resume directly in Codex after the ignored runtime validator and RED/GREEN tests implement `DEC-20260722-007`. The event evidence must bind tool name, arguments, target, result, session identity, role/stage, and frozen input/prompt/schema hashes strongly enough to distinguish benign control-plane use from an actual isolation breach. A real breach rejects the affected session with zero adoption; a fresh isolated session may retry unchanged, uncompromised frozen inputs. Supersede the package only when shared frozen inputs, gates, or package state were mutated or otherwise compromised. Mere capability exposure does not reject either a session or package.
 
-1. a direct Responses API executor sends `tools=[]` (or omits tools), sets or proves `tool_choice=none`, exposes no `additional_tools`, and produces immutable request/runtime attestations; or
-2. an installed and independently verified Codex CLI version supports a true built-in allow-none configuration, with a loopback capture proving no top-level tools, no dynamic/additional tools, and no inherited project/thread context.
-
-The current environment has no `OPENAI_API_KEY`, so the direct API option adds a credential and authorization boundary. Updating or replacing the installed CLI is also an external runtime change. Either path requires owner direction and a focused reviewed amendment before execution.
-
-Closing I3 alone is not sufficient. After the runtime amendment is implemented, the complete current 65-test suite must pass on the exact pipeline and test SHAs. The independent preflight reviewer must then re-review I1, I2, and I3 as one integrated package and issue ACK/PASS with no remaining Critical or Important finding. If the original reviewer is unavailable, a fresh independent reviewer must reconstruct the complete preflight review rather than review only the runtime delta. Only after that receipt exists may a new `frozen_002` be created or executed.
-
-An event allowlist remains necessary but insufficient. It can prove that one run emitted only allowed message/reasoning lifecycle events; it cannot prove that the model was never given tool capability.
+The complete updated semantic suite must pass on exact pipeline and test SHAs. A fresh independent preflight reviewer must reconstruct bulk QA, transport/retry safety, role-aware isolation enforcement, provenance, and zero-adoption behavior as one integrated package and issue ACK/PASS with no remaining Critical or Important finding. Only after that receipt exists may a new `frozen_002` be created or executed. `frozen_001` remains immutable and zero-adoption.
 
 ## Blocker-checkpoint review receipt
 
@@ -108,4 +109,4 @@ A fresh independent checkpoint reviewer, with a separate fresh specification-axi
 
 Final checkpoint verdict: **PASS — 0 Critical / 0 Important / 0 Minor** on both spec/plan compliance and checkpoint quality.
 
-This receipt accepts only the accuracy and recoverability of the blocker checkpoint. It does not change the underlying Task 6 preflight verdict of FAIL / ACK withheld, does not close I3, and does not authorize `frozen_002` or formal execution.
+This historical receipt accepted only the accuracy and recoverability of the 2026-07-21 blocker checkpoint under its then-declared local gate. It does not override the owner's 2026-07-22 clarification, does not authorize `frozen_002`, and is superseded for current runtime-policy interpretation by the dated section at the top of this file and `DEC-20260722-007`.
