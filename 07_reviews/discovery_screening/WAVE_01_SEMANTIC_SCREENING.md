@@ -47,7 +47,7 @@ The corrected simulation boundary is the approved four-part track: epidemiologic
 
 No partial row from a failed semantic response was reused. During the second repair, Reader A batch 020 and Reader B batch 007 each failed exact response identity/order checks; blind-adjudicator batch 001 supplied duplicate-only fields for a nonduplicate row. Each complete response was rejected with zero adoption and replaced by a genuinely fresh session. Exact rejected prompt/input/output/receipt paths, SHAs, session UUIDs, and rejection reasons are durable in `TASK_5_SECOND_REPAIR_PROVENANCE.md`.
 
-## Exhaustive third repair and authoritative state
+## Exhaustive third repair (historical base)
 
 The third repair eliminated the incomplete locator class. Its frozen universe is the deterministic union of every Wave 1/2 current primary or final inclusion, every correction/retraction-status metadata candidate, every prior 1,465-key second-repair member, and every named Task 5 finding or reviewer-axis example. The result contains 8,984 unique `(wave, candidate_key)` rows: W1 6,237 and W2 2,747. The universe SHA256 is `20121c35624169c8a4743d3373140b64e8efb858ee213a583f7cea342f5fba8e`; ordered-key SHA256 is `b0ffef5fda997c9aaecdcf7524a53d6063a818c4fd71524905063318919518b0`; ordered-record SHA256 is `919d07fbea814f994385a92da83c628f546c55927dc3eb77a196f98b6e6e4484`; ordered raw-content SHA256 is `e2265c97c5829fae2adb8186225dbbc31d3cc029c6d4616b23eb24a397e20588`. Membership routed reading only and never decided a disposition.
 
@@ -55,15 +55,27 @@ Reader A and Reader B each semantically read all 8,984 rows in 120 accepted batc
 
 All 8,984 universe rows were evaluated. Their semantic dispositions were adopted for 8,978 rows. Six Wave 2 rows remained deterministic identifier-only duplicates because the same candidate keys occur in Wave 1; this preserves the identifier layer rather than changing the semantic ledger. All 192 Wave 1/Wave 2 exact identifier overlaps remain Wave 2 `exclude / blank type / X_DUPLICATE` primaries retaining the identical Wave 1 key. The superseded pre-identity application and superseded audit are retained with zero final adoption in `TASK_5_THIRD_REPAIR_PROVENANCE.md`.
 
-The authoritative Wave 1 primary ledger now contains 2,913 applied seeds, 677 diagnostic/correction leads, 696 method-source leads, 1,236 simulation/mechanistic leads, 1,584 exclusions, and 40 primary-record uncertainties. A fresh audit of the entire recomputed 1,656-row Wave 1 selection reached 1,030 complete decision/reason/type agreements and 626 open conflicts. No conflict was automatically resolved.
+At third-repair close, the Wave 1 primary ledger contained 2,913 applied seeds, 677 diagnostic/correction leads, 696 method-source leads, 1,236 simulation/mechanistic leads, 1,584 exclusions, and 40 primary-record uncertainties. A fresh audit of that 1,656-row Wave 1 selection reached 1,030 complete decision/reason/type agreements and 626 open conflicts. No conflict was automatically resolved.
 
-The authoritative 7,146-row final ledger comprises 2,882 applied seeds, 621 diagnostic/correction leads, 671 method-source leads, 1,203 simulation/mechanistic leads, 1,143 exclusions, and 626 honest primary-record uncertainties. The uncertainty rows are exactly the open independent-audit conflicts.
+The third-repair 7,146-row final ledger comprised 2,882 applied seeds, 621 diagnostic/correction leads, 671 method-source leads, 1,203 simulation/mechanistic leads, 1,143 exclusions, and 626 honest primary-record uncertainties. The uncertainty rows were exactly the open independent-audit conflicts.
 
 The six newly named Wave 1 scope misses were not forced to a predetermined result. Both-reader/blind semantic handling classified `PMID:25450804`, `PMID:26014946`, `PMID:28358222`, `PMID:30221005`, `PMID:24731529`, and `PMID:33024578` as `exclude / blank type / X_DESCRIPTIVE_ONLY`, consistent with therapeutic-product optimization, preclinical host physiology, or molecular/pathogenesis work rather than one of the approved epidemiological simulation forms. `PMID:25450804` was in the recomputed audit and received the same triple; the other five were not formula-selected and retain their primary triples.
 
-- `screening_audit.csv` SHA256: `d4540fb9bbe5f9150d72db1a1d0f35e707a4739dfad482964c39eb0cf7e2f010`.
-- `screened_candidates.csv` SHA256: `728d8297273fb4d27294bc23bed1ebe49cce3393a92b525526966b0bdd9423cc`.
-- Complete executable/session/artifact provenance: `TASK_5_THIRD_REPAIR_PROVENANCE.md`.
+- Historical third-repair `screening_audit.csv` SHA256: `d4540fb9bbe5f9150d72db1a1d0f35e707a4739dfad482964c39eb0cf7e2f010`.
+- Historical third-repair `screened_candidates.csv` SHA256: `728d8297273fb4d27294bc23bed1ebe49cce3393a92b525526966b0bdd9423cc`.
+- Complete historical executable/session/artifact provenance: `TASK_5_THIRD_REPAIR_PROVENANCE.md`.
+
+## Fourth-repair authoritative state
+
+Fixed-head review identified exactly 48 third-repair blind exclusions that both independent readers had classified as inclusions. A fresh decision-blind fourth-repair package reread those exact records with two new independent readers; 36 complete triples agreed and 12 disagreements received a third fresh blind resolver. The ordered 48-key SHA256 is `9af5818c90c9644cf30e0006adce5ae65efca52bd7a548e2b5d4afb967b910d4`; the accepted 48-row ledger SHA256 is `e5dd0e9e97e8114906ed62e38dfced3b8ee1b2720897e6e146cc09c662c72007`; the rebuilt 8,984-row semantic ledger SHA256 is `3e93fb841462f6c38fbd31d0bff5ddf3d179007c534de877ef58a89a38c07006`. Exactly 48 rows were replaced and the other 8,936 semantic rows were preserved.
+
+The authoritative Wave 1 primary ledger now contains 2,923 applied seeds, 679 diagnostic/correction leads, 698 method-source leads, 1,246 simulation/mechanistic leads, 1,560 exclusions, and 40 primary-record uncertainties. The recomputed 1,653-row audit contains 1,032 complete agreements and 621 open conflicts. Reuse was permitted only under explicit equality and independence proof; newly changed/selected audit rows received a fresh independent read. No conflict was automatically resolved.
+
+The authoritative 7,146-row final ledger contains 2,892 applied seeds, 623 diagnostic/correction leads, 673 method-source leads, 1,213 simulation/mechanistic leads, 1,124 exclusions, and 621 honest primary-record uncertainties. The five fixed-head unambiguous examples `PMID:41665488`, `PMID:32928108`, `PMID:38823290`, `PMID:40883247`, and `PMID:40893944`, plus the explicitly borderline `PMID:41540427`, each now carries `include_simulation_or_mechanistic_lead / method_source / I_SIMULATION_MECHANISTIC` and was not audit-selected, so the same triple is final.
+
+- `screening_audit.csv` SHA256: `08316f05366e27c54ec03ab10b3de1faea843dfe23d71468a976e4378eafd671`.
+- `screened_candidates.csv` SHA256: `699eb12f8d746fd559d048875ee8b96afda36394e4882d313ce6d6907012d62c`.
+- Complete fourth-repair execution, audit-reuse, fresh-audit, and artifact provenance: `TASK_5_FOURTH_REPAIR_PROVENANCE.md`.
 
 ## Claim boundary
 
