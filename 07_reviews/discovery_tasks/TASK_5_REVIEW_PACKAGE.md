@@ -10,11 +10,14 @@
 - Second repair SHA: `29ddc3b4f606c11d191e9a16620ac5ba817f19c2`
 - Root second-review checkpoint SHA: `9056bf40aca4780c77ffbf32b3a4e952e87eb8c0`
 - Third repair SHA: `9d89eb7656dab1acd576cb543070cb3b6dd5eb20`
-- Exact head submitted for complete re-review: `9d89eb7656dab1acd576cb543070cb3b6dd5eb20`
+- Root third-review checkpoint SHA: `51059b95ce846b24abc44fee24ce137d201a0d10`
+- Fourth repair SHA: `b976d3baede36e7d82a1d9b86e57d48c0101f21a`
+- Exact head submitted for complete re-review: `b976d3baede36e7d82a1d9b86e57d48c0101f21a`
 - Required implementation subject: `screen broad methods discovery records`
 - First repair subject: `repair Task 5 semantic screening scope`
 - Second repair subject: `repair Task 5 semantic scope and provenance`
 - Third repair subject: `repair Task 5 complete semantic scope`
+- Fourth repair subject: `repair Task 5 scope adjudication`
 - Initial diff package: `.superpowers/sdd/review-961cdf8..bf1a8d2.diff`
 - Initial diff SHA256: `f54492223cf3a2de6da5fff8869e4c1b953a5dbf1f1fabd69c2555fcae0f57fb`
 - Fixed full-range diff package: `.superpowers/sdd/review-961cdf8..29ddc3b.diff`
@@ -25,25 +28,35 @@
 - Third-repair full-range diff SHA256: `756aa982a3da4eec7d51a434a4e6040fba6de56e37db879278d671f66b20c36e`
 - Third-repair full-range diff bytes: 55,131,691
 - Third-repair full-range commits: 6
+- Fourth-repair full-range diff package: `.superpowers/sdd/review-961cdf8..b976d3b.diff`
+- Fourth-repair full-range diff SHA256: `adc02dcbfc1703c9f8cab2b32fa2ae9adcf44e26c35d6e940a4f4bece6dbde59`
+- Fourth-repair full-range diff bytes: 22,930,659
+- Fourth-repair full-range commits: 8
 - Implementer report: `.superpowers/sdd/task-5-report.md`
 - Implementer report SHA256: `407674453ec6caba8a4520292ffc10fa390f857f39711fcb8f11e541518325a0`
 - Current implementer report SHA256: `cf080446e0346c47a24f0fee20c5ed3d2757470be65516eeee00c844828a269e`
 - Third-repair provenance: `07_reviews/discovery_screening/TASK_5_THIRD_REPAIR_PROVENANCE.md`
-- Third-repair provenance SHA256: `7b2c674702e45fdc3eb50b05761722914bf06d11977a71f26736842aee7f0e74`
-- Final verification receipt: `.superpowers/sdd/task5_fix3/final_verification_receipt.json`
-- Final verification receipt SHA256: `1a98f7df65ab32acf4e597a04a7ee66f8bb558374e63f637fa9b98b9a09d4d40`
+- Third-repair provenance SHA256 at `9d89eb7`: `7b2c674702e45fdc3eb50b05761722914bf06d11977a71f26736842aee7f0e74`
+- Corrected current third-repair provenance SHA256: `9482b5efe329a9d3529a18ea384db5a531a9bee1565dfc856cf9a67906ae9da0`
+- Fourth-repair provenance: `07_reviews/discovery_screening/TASK_5_FOURTH_REPAIR_PROVENANCE.md`
+- Fourth-repair provenance SHA256: `7860d3b6ab9f6578d08e1b3483ca5c02fa1e3bd07386d41ecbae4ec42b7698b3`
+- Fourth-repair focused receipt: `.superpowers/sdd/task5_fix4/focused_verification_receipt.json` / `546fb12646375c933be1f1e074903fbc5491afae5747a38ceb0f02bcfbafcbfb`
+- Fourth-repair boundary receipt: `.superpowers/sdd/task5_fix4/boundary_verification.json` / `c20e165a6177f9763e58c5c6b6996404fa189fc430341abffdf0333aedda5196`
+- Fourth-repair reconstruction receipt: `.superpowers/sdd/task5_fix4/reconstruction_verification.json` / `720629b3247dcf5f3f3d9667c26e42b31d9a0e652b2780cc6a0f9bd2a254aa4c`
+- Third-repair final verification receipt: `.superpowers/sdd/task5_fix3/final_verification_receipt.json`
+- Third-repair final verification receipt SHA256: `1a98f7df65ab32acf4e597a04a7ee66f8bb558374e63f637fa9b98b9a09d4d40`
 - Approved plan SHA256: `671f24a245c48a9c3661ecf176081f72948c5cdc0c3157df85d3781774ee4209`
 
 ## Exact scope
 
-The complete `961cdf8..9d89eb7` range contains 193 paths: 190 additions and three modifications. The modified pre-existing paths are Wave 1 `MANIFEST_SHA256.json`, plus root-owned `HANDOFF.md` and `07_reviews/discovery_tasks/EXECUTION_LEDGER.md` in orchestration commits. The Task 5 implementation/repair paths remain confined to:
+The complete `961cdf8..b976d3b` range contains 194 paths: 191 additions and three modifications. The modified pre-existing paths are Wave 1 `MANIFEST_SHA256.json`, plus root-owned `HANDOFF.md` and `07_reviews/discovery_tasks/EXECUTION_LEDGER.md` in orchestration commits. The Task 5 implementation/repair paths remain confined to:
 
 - Wave 1 primary batch manifests/CSVs, `screened_candidates.csv`, and `screening_audit.csv`;
 - the complete Wave 2 query registry, receipt, raw PubMed pages, compiled candidates, primary batches, screening/audit ledgers, manifest, and narrow raw-XML `.gitattributes`;
 - `global/candidates_through_wave_02.csv`;
-- the planned `07_reviews/discovery_screening/*.md` implementation-evidence records plus second- and third-repair durable provenance records.
+- the planned `07_reviews/discovery_screening/*.md` implementation-evidence records plus second-, third-, and fourth-repair durable provenance records.
 
-No paper, method, dataset, translation, simulation, or shortlist registry changed. No production code or test file changed. The exact base-to-head name/status list reports 190 `A` and three `M`; complete-range `git diff --check` is silent.
+No paper, method, dataset, translation, simulation, or shortlist registry changed. No production code or test file changed. The exact base-to-head name/status list reports 191 `A` and three `M`; complete-range `git diff --check` is silent.
 
 ## Initial Wave 1 result at `bf1a8d2` (superseded)
 
@@ -294,3 +307,63 @@ The complete integrated re-review returned `NEEDS FIXES — 0 Critical / 1 Impor
 Forty-eight rows were independently included by both fresh semantic readers and then excluded by the blind adjudicator. At least `PMID:41665488`, `PMID:32928108`, `PMID:38823290`, `PMID:40883247`, and `PMID:40893944` are unambiguous reproducibility or method-comparison discovery leads under the approved protocol. A fresh scope-specific adjudicator must re-review all 48 without treating the five named examples as an automatic decision rule. Dependent screening, audit, global, manifest, and provenance artifacts must then be regenerated and completely re-reviewed.
 
 All prior Important and Minor findings were independently confirmed closed. All mechanical tests, validators, manifests, global/overlap reconstruction, seed comparison, and external-boundary checks passed. Task 6 remains blocked pending another complete fixed-head PASS.
+
+## Fourth repair result at `b976d3b` — submitted for complete re-review
+
+Commit `b976d3baede36e7d82a1d9b86e57d48c0101f21a` has exact parent `51059b95ce846b24abc44fee24ce137d201a0d10` and contains 42 paths: 29 affected primary-batch CSVs, both waves' screened/audit/manifests, the global index, five refreshed screening records, the corrected third-repair provenance, and one new fourth-repair provenance record. It changes no raw retrieval/query artifact, compiled raw table, approved design/plan/protocol, production code/test, normalized registry, card, dataset, translation, simulation, or external-project file.
+
+### Fresh 48-row scope adjudication
+
+- The review-defined set contains exactly 48 records that third-repair Reader A and Reader B both included before the blind adjudicator excluded them. The ordered-key SHA256 is `9af5818c90c9644cf30e0006adce5ae65efca52bd7a548e2b5d4afb967b910d4`.
+- Two new accepted, decision-blind readers each covered all 48 records. They agreed on 36 complete triples; all 12 disagreements went to a third new decision-blind resolver. The resolver returned nine inclusions and three exclusions. Reader, resolver, and prior Task 5 session inventories are disjoint and recorded in immutable receipts.
+- The final 48-row ledger SHA256 is `e5dd0e9e97e8114906ed62e38dfced3b8ee1b2720897e6e146cc09c662c72007`; the rebuilt 8,984-row semantic ledger SHA256 is `3e93fb841462f6c38fbd31d0bff5ddf3d179007c534de877ef58a89a38c07006`. Exactly those 48 lines changed; the other 8,936 lines retained their identities, source SHAs, and bytes.
+- The five unambiguous review examples and borderline `PMID:41540427` now carry `include_simulation_or_mechanistic_lead / method_source / I_SIMULATION_MECHANISTIC`. The result came from the blind package rather than a named-example override.
+- The 48 rows intersect none of the 192 exact cross-wave identifier duplicates. All duplicate identities and dispositions remain unchanged.
+
+### Recomputed audit and rendered outputs
+
+- The deterministic audit selection now contains 2,535 rows: W1 1,653 and W2 882. Relative to the definitive third-repair audit, 2,529 rows satisfy exact source-SHA, primary-triple, primary-reviewer, selection-membership, and reviewer-independence reuse proof; six changed/newly selected rows received a fresh decision-blind audit in a session disjoint from all semantic sessions.
+- The final audit contains 1,647 complete agreements and 888 open conflicts. Every mismatch remains `conflict_open`, final uncertain, and blank-adjudicator; no mismatch was automatically resolved.
+- W1 screened/audit/manifest SHAs are `699eb12f8d746fd559d048875ee8b96afda36394e4882d313ce6d6907012d62c`, `08316f05366e27c54ec03ab10b3de1faea843dfe23d71468a976e4378eafd671`, and `5eae2041ee03bd6f6bdfec01a94c3f72b9f9231a3699a78c5407e0fd46428890`.
+- W2 screened/audit/manifest SHAs are `19c48b7b27b8ce79fc49f9cfa66bbcbcf226b1f1c625ba17cb98223c8b0db5d6`, `613e8476e8e9e39b11b956710c4010b0bc6e081cf2f4b6587d79239b3fc39ece`, and `d61d218f7e9e551efb48adc338cbd620870c329f6259f35b6f0938da8fb107fa`.
+- The reconstructed global index has 10,525 rows and 192 overlaps, SHA256 `fccb499f711bc7858f8f9ac1825d03877f169f3b80a5fcc9097e1390167102dd`.
+
+### Fresh implementation and root verification
+
+The implementation agent and root agent separately ran the current bytes before commit; the exact commit was then checked for its parent, subject, 42-path boundary, and clean status.
+
+- Focused fourth-repair verifier: PASS for 48-row coverage, two readers, 36 agreements, 12 resolver rows, 8,936 unchanged semantic rows, 48 primary changes, 192 duplicate preservation, 2,535 audit rows, 2,529 reuse proofs, six fresh audits, 1,647 agreements, 888 open conflicts, and 10,525/192 global reconstruction.
+- Discovery tests: 89 passed plus five subtests. Library tests: 25 passed plus ten subtests.
+- Configuration, W1 verify/screen/audit, and W2 verify/screen/audit: seven `DISCOVERY PASS` results.
+- Library validator: `VALIDATION PASS`. External-boundary validator: `DISCOVERY PASS`.
+- Seed SHA256 and byte comparison: both copies equal `520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55`; `cmp -s` passed.
+- Reconstruction and boundary verifiers passed. The boundary covers 246 immutable files, four root-owned paths, exactly 42 implementation paths, source HEAD `eb5d15656b8fe69a8359705c80125d695a1c0782`, and all four frozen external status digests.
+- `git diff --check` passed for both `51059b9..b976d3b` and the complete `961cdf8..b976d3b` range.
+
+### Required independent re-review at `b976d3b`
+
+The same independent reviewer must return separate spec-compliance and standards/quality findings, each classified Critical, Important, or Minor. It must inspect live artifacts rather than accept this package or any receipt as authority and must at minimum:
+
+1. verify exact head `b976d3b`, parent `51059b9`, complete base `961cdf8`, the 194-path full range, the 42-path fourth-repair commit, and the diff-package SHA/size above;
+2. reconstruct the exact 48-row set from third-repair reader/adjudicator ledgers; inspect both accepted reader packages and the resolver package for decision blindness, exact identity/order, complete coverage, fresh/disjoint session identities, valid receipts/events, and zero adoption from rejected or failed attempts;
+3. independently assess all 48 new scope decisions against the approved design and protocol, including the five unambiguous cases and `PMID:41540427`, without treating identity or the prior finding as an automatic outcome;
+4. prove exactly 48 semantic lines changed and the other 8,936 remained byte-identical; verify all 29 primary batches and every source SHA, and prove no cross-wave duplicate was overwritten;
+5. recompute the 2,535-row audit selection and every reuse condition; verify the six fresh audit rows and session independence, and prove all 888 mismatches remain open/final uncertain with blank adjudicator;
+6. independently regenerate/reconcile both manifests, screened/audit outputs, the 10,525-row global index, and all 192 overlap dispositions; rehash every referenced fourth-repair provenance path;
+7. rerun both full test suites, seven discovery checks, Library validator, external-boundary validator, seed SHA/`cmp`, focused/reconstruction checks, and both diff checks; verify the fourth-repair boundary against exact committed head `b976d3b` and then inspect the three expected root-owned unstaged continuity edits separately, because the immutable boundary receipt was generated before those root-owned package updates;
+8. confirm the implementation did not verify substantive method claims, promote a registry record, select a flagship, download a candidate dataset, run a formal simulation, alter the approved gate, or modify `Surveillance_AMR`.
+
+Any Critical or Important finding requires a focused repair by the Task 5 implementation agent and another complete fixed-range review. Task 6 must not start until a durable Task 5 review receipt records PASS.
+
+## Independent review result at `b976d3b`
+
+The same independent reviewer completed the exact `961cdf8..b976d3b` review, while a newly isolated read-only subreviewer independently assessed specification compliance.
+
+- Standards/quality: `PASS — 0 Critical / 0 Important / 0 Minor`.
+- Spec compliance: `PASS — 0 Critical / 0 Important / 0 Minor`.
+- Aggregate gate: `PASS`; no remaining Critical, Important, or Minor finding.
+- The prior Important semantic-scope finding is closed.
+
+The reviewers independently reconstructed the exact 48-row set and reread every available title/abstract; verified the 2 x 48 blind-reader coverage, 36 agreements, 12 resolver rows, 8,936 unchanged semantic lines, 48 primary changes in 29 batches, all accepted/rejected sessions and zero-adoption evidence, 2,535-row audit selection with 2,529 strict reuse proofs and six fresh audits, all 888 open conflicts, both complete manifests, the 10,525-key/192-overlap global index, 60/60 provenance hashes, and the exact implementation/external boundary. The full test and validator matrix, both diff checks, and seed SHA/byte comparison all exited zero. The durable axis-separated verdict and evidence are recorded in `07_reviews/discovery_tasks/TASK_5_REVIEW.md`.
+
+Task 5 is accepted. Task 6 may start after the receipt, ledger, package, and handoff are committed together.
