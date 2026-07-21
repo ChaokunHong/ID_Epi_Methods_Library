@@ -18,34 +18,36 @@ Every semantic reader received the exact manifested title and available abstract
 
 | Decision | Count |
 |---|---:|
-| `include_applied_seed` | 2,904 |
-| `include_method_source_lead` | 1,223 |
-| `include_diagnostic_or_correction_lead` | 793 |
-| `include_simulation_or_mechanistic_lead` | 1,163 |
+| `include_applied_seed` | 2,891 |
+| `include_method_source_lead` | 1,128 |
+| `include_diagnostic_or_correction_lead` | 815 |
+| `include_simulation_or_mechanistic_lead` | 1,110 |
 | `uncertain_retrieve_primary` | 41 |
-| `exclude` | 1,022 |
+| `exclude` | 1,161 |
 
-Primary reason-code counts are: `I_APPLIED_TRANSFERABLE_DESIGN` 2,904; `I_METHOD_SOURCE` 1,223; `I_DIAGNOSTIC_CORRECTION` 793; `I_SIMULATION_MECHANISTIC` 1,163; `U_PRIMARY_RECORD_NEEDED` 41; `X_NOT_INFECTIOUS_TRANSFERABLE` 541; `X_DESCRIPTIVE_ONLY` 297; `X_COMMENTARY_ONLY` 97; `X_WRONG_RECORD_TYPE` 61; and `X_DUPLICATE` 26.
+Primary reason-code counts are: `I_APPLIED_TRANSFERABLE_DESIGN` 2,891; `I_METHOD_SOURCE` 1,128; `I_DIAGNOSTIC_CORRECTION` 815; `I_SIMULATION_MECHANISTIC` 1,110; `U_PRIMARY_RECORD_NEEDED` 41; `X_NOT_INFECTIOUS_TRANSFERABLE` 558; `X_DESCRIPTIVE_ONLY` 401; `X_COMMENTARY_ONLY` 102; `X_WRONG_RECORD_TYPE` 66; and `X_DUPLICATE` 34.
 
 ## Post-review scope correction
 
-The first Task 5 review found that `PMID:20826636` had been incorrectly collapsed into the distinct retraction notice `PMID:21372330` and that molecular docking, product-design, structural-biology, and vaccine-construction records had drifted into the simulation track. The correction did not use keywords as exclusion rules. It froze and semantically reread an exact 256-record locator universe: all 205 Wave 1 and 51 Wave 2 records matching the review locator, plus the explicit `PMID:20826636`/`PMID:21372330` pair. The frozen universe SHA256 is `e118c48e685c7c69cb64fd1667e93ea1aed4ceaaddf7304e4b4389eb505228bd`; its ordered-record SHA256 is `499feffa6c00fd722191fdf77d26ab43128b2becb2574fbbc6bcad9776097137`.
+The fixed-head review found that the first 256-record locator was incomplete: it missed retained preclinical efficacy, host-biology, product-development, vaccine/therapeutic/antigen, and related laboratory records outside the approved epidemiological-method boundary. It also found that 25 adopted rows carried a nonexistent adjudicator alias. The second repair therefore began from every Wave 1/2 primary or final inclusion, applied conservative locator patterns to normalized title plus abstract text, and unioned the complete earlier 256-row universe, the 25 invalid-provenance rows, and all three confirmed examples. Locator membership never decided disposition.
 
-Two independent title-and-abstract readers reread all 256 records. Reader A initially retained 138 and excluded 118; Reader B retained 134 and excluded 122. Their 25 complete-triple disagreements were frozen before a separate blind adjudicator received only raw bibliographic records and duplicate peers. Twenty of those 25 triples changed at adjudication. The corrected 256-record primary state retains 132 and excludes 124: Wave 1 retains 86 and excludes 119; Wave 2 retains 46 and excludes 5. Reader B agrees with the repaired primary triple on 247 of 256 records; the remaining nine semantic disagreements were not silently resolved.
+The resulting frozen universe contains 1,465 unique `(wave, candidate_key)` rows: W1 1,011 and W2 454. Its file SHA256 is `c71762e584dc53771318bcb6899ffd26aab9c362dea73773df70b03a65839abb`; ordered-record SHA256 is `0e0acd5a50a6ed833ae0153934401daeba919cd713de361a6be54a76fe9e2ce4`; ordered-entry SHA256 is `144e7fee78298266bfbd45ddc5bbf5810ec4e0fed6e53e9e9b344aa1eee62407`. Exact construction, patterns, reason incidences, source-row SHAs, and per-session receipts are recorded in `TASK_5_SECOND_REPAIR_PROVENANCE.md`.
 
-The adopted blind-adjudication response SHA256 is `7afcd19ca5069bbc2cac4fda8f74411f28d214040f4a2cddb8c364065275282f`; its validation/application receipt SHA256 is `915fc3ea6c9eb5896d0404af0b7d15f5afd3fc4e61b21296bc7ad6aabc1f4f39`. Three earlier adjudication attempts were rejected with zero adoption: one exposed reader labels, one named the wrong approved plan, and one misapplied `X_NOT_INFECTIOUS_TRANSFERABLE` and treated retraction status as `X_WRONG_RECORD_TYPE`.
+Two independent decision-blind, locator-blind reader sets each reread all 1,465 records in 20 batches and 40 unique read-only CLI sessions, with no session reuse. Their complete decision/code/type triples agreed for 1,287 rows and conflicted for 178. The fresh blind-adjudication set was the exact union of those 178 conflicts and all 25 invalid-provenance rows: 195 rows because eight belonged to both sets. Four new adjudicator sessions covered 195/195, shared no reader session, and saw raw records plus needed duplicate peers but no reader decisions. The final application used Reader A only for 1,270 non-conflict complete-triple agreements and fresh adjudication for the remaining 195 rows.
+
+The repaired 1,465-row state contains 573 applied seeds, 101 method-source leads, 166 diagnostic/correction leads, 319 simulation/mechanistic leads, and 306 exclusions. Its decision-ledger SHA256 is `206d534aca05ed5a5fef24311e7f14196bcdcb813ab4e9a871c837a31d73e677`; the accepted blind-adjudication output SHA256 is `7bb18b4c4c06ce6de2d611e8760fc8deb0d1f77d989f2cfdce54fbe60e67920b`. All 25 invalid first-repair adjudications were replaced, and the nonexistent reviewer suffix is absent from the repaired primaries.
 
 The corrected simulation boundary is the approved four-part track: epidemiological estimator evaluation, new estimator/diagnostic/uncertainty development, reproducible analytical-practice benchmarking, or mechanistic transmission/selection/surveillance/agent-based modelling. Infection-related molecular simulation alone is not sufficient.
 
 ## Rejected outputs and recovery rule
 
-No partial row from a failed semantic response was reused. Two initial collaboration-reader attempts produced zero usable rows. Later failures included transport interruption, missing/duplicated keys, and illegal decision mappings in batches 033, 034, 037, 040, and 041. Each affected complete batch was rejected, preserved in the ignored execution record, and reread through a fresh schema-constrained session or fresh contiguous subparts. The final 48 CSVs each passed the complete-manifest validator.
+No partial row from a failed semantic response was reused. During the second repair, Reader A batch 020 and Reader B batch 007 each failed exact response identity/order checks; blind-adjudicator batch 001 supplied duplicate-only fields for a nonduplicate row. Each complete response was rejected with zero adoption and replaced by a genuinely fresh session. Exact rejected prompt/input/output/receipt paths, SHAs, session UUIDs, and rejection reasons are durable in `TASK_5_SECOND_REPAIR_PROVENANCE.md`.
 
 ## Post-audit final state
 
-After recomputing the complete audit selection from the repaired primary ledger, the 7,146 final rows comprise 2,853 applied seeds, 1,108 method-source leads, 706 diagnostic/correction leads, 1,119 simulation/mechanistic leads, 740 exclusions, and 620 honest primary-record uncertainties. The uncertainty rows are caused only by open independent-reader conflicts; none was automatically adjudicated.
+After recomputing the complete audit selection from the repaired primary ledger, the 7,146 final rows comprise 2,846 applied seeds, 1,022 method-source leads, 738 diagnostic/correction leads, 1,077 simulation/mechanistic leads, 884 exclusions, and 579 honest primary-record uncertainties. The uncertainty rows are caused only by open independent-reader conflicts; none was automatically adjudicated.
 
-`screened_candidates.csv` SHA256: `32dd0d346960932be91bfafefd001783bd62fcef6e3aa1d7e21d69eed23b2e3a`.
+`screened_candidates.csv` SHA256: `27fe02f20391a101e6ef5e57828a92c1306398a4e3b2f986c846ddbdb3b95e2b`.
 
 ## Claim boundary
 
