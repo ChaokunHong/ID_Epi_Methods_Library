@@ -2772,14 +2772,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-54",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-121",
         "query_variant": "exact_title",
         "query": "Healthcare[Title] AND associated[Title] AND outbreaks[Title] AND bacterial[Title] AND infections[Title] AND Africa[Title] AND 2009[Title] AND 2018[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-54",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-121",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33333248",
         "candidate_rank": "1",
@@ -2807,14 +2807,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-55",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-122",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND Influenza[Title] AND Vaccine[Title] AND Effectiveness[Title] AND Test[Title] AND Negative[Title] AND Design[Title] AND Using[Title] AND Alternative[Title] AND Control[Title] AND Groups[Title] AND Systematic[Title] AND Review[Title] AND Meta[Title] AND Analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-55",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-122",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28641373",
         "candidate_rank": "1",
@@ -2842,19 +2842,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-56",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-124",
         "query_variant": "title_first_author",
         "query": "interventions[Title] AND bloodstream[Title] AND improvement[Title] AND Prevention[Title] AND Blot[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-56",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-123",
         "query_variant": "exact_title",
         "query": "Prevention[Title] AND central[Title] AND line[Title] AND associated[Title] AND bloodstream[Title] AND infections[Title] AND through[Title] AND quality[Title] AND improvement[Title] AND interventions[Title] AND systematic[Title] AND review[Title] AND meta[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-56",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-124",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:24723276",
         "candidate_rank": "1",
@@ -2882,14 +2882,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-57",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-125",
         "query_variant": "exact_title",
         "query": "Generalizing[Title] AND evidence[Title] AND randomized[Title] AND clinical[Title] AND trials[Title] AND target[Title] AND populations[Title] AND ACTG[Title] AND 320[Title] AND trial[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-57",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-125",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20547574",
         "candidate_rank": "1",
@@ -2917,19 +2917,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-58",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-127",
         "query_variant": "title_first_author",
         "query": "relationship[Title] AND antibodies[Title] AND Plasmodium[Title] AND falciparum[Title] AND Fowkes[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-58",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-126",
         "query_variant": "exact_title",
         "query": "relationship[Title] AND between[Title] AND anti[Title] AND merozoite[Title] AND antibodies[Title] AND incidence[Title] AND Plasmodium[Title] AND falciparum[Title] AND malaria[Title] AND systematic[Title] AND review[Title] AND meta[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-58",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-127",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:20098724",
         "candidate_rank": "1",
@@ -2957,19 +2957,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-59",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-129",
         "query_variant": "title_first_author",
         "query": "denominator[Title] AND acceptance[Title] AND literature[Title] AND vaccine[Title] AND Adhikari[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-59",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-128",
         "query_variant": "exact_title",
         "query": "Trust[Title] AND is[Title] AND common[Title] AND denominator[Title] AND COVID[Title] AND 19[Title] AND vaccine[Title] AND acceptance[Title] AND literature[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-59",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-129",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:36217424",
         "candidate_rank": "1",
@@ -2997,14 +2997,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-01",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-90",
         "query_variant": "exact_title",
         "query": "Forecasting[Title] AND Influenza[Title] AND Epidemics[Title] AND Pandemics[Title] AND Age[Title] AND AI[Title] AND Machine[Title] AND Learning[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-01",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-90",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41555591",
         "candidate_rank": "1",
@@ -3032,14 +3032,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-02",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-91",
         "query_variant": "exact_title",
         "query": "Automated[Title] AND detection[Title] AND infectious[Title] AND disease[Title] AND outbreaks[Title] AND hospitals[Title] AND retrospective[Title] AND cohort[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-02",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-91",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20186274",
         "candidate_rank": "1",
@@ -3067,14 +3067,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-03",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-92",
         "query_variant": "exact_title",
         "query": "Clustering[Title] AND antimicrobial[Title] AND resistance[Title] AND outbreaks[Title] AND across[Title] AND bacterial[Title] AND species[Title] AND intensive[Title] AND care[Title] AND unit[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-03",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-92",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23549524",
         "candidate_rank": "1",
@@ -3102,14 +3102,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-04",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-93",
         "query_variant": "exact_title",
         "query": "Transmissibility[Title] AND 2009[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND New[Title] AND Zealand[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND influence[Title] AND age[Title] AND ethnicity[Title] AND importations[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-04",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-93",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20576236",
         "candidate_rank": "1",
@@ -3137,14 +3137,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-05",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-94",
         "query_variant": "exact_title",
         "query": "Outbreak[Title] AND 2009[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND Los[Title] AND Lagos[Title] AND Chile[Title] AND April[Title] AND June[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-05",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-94",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20067745",
         "candidate_rank": "1",
@@ -3172,14 +3172,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-06",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-95",
         "query_variant": "exact_title",
         "query": "Co[Title] AND designing[Title] AND building[Title] AND expert[Title] AND elicited[Title] AND non[Title] AND parametric[Title] AND Bayesian[Title] AND network[Title] AND model[Title] AND demonstrating[Title] AND methodology[Title] AND using[Title] AND Bonamia[Title] AND Ostreae[Title] AND spread[Title] AND risk[Title] AND case[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-06",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-95",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35187670",
         "candidate_rank": "1",
@@ -3207,14 +3207,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-07",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-96",
         "query_variant": "exact_title",
         "query": "Use[Title] AND Bayesian[Title] AND network[Title] AND model[Title] AND identify[Title] AND factors[Title] AND associated[Title] AND presence[Title] AND tick[Title] AND Ornithodoros[Title] AND erraticus[Title] AND pig[Title] AND farms[Title] AND southern[Title] AND Portugal[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-07",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-96",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23499360",
         "candidate_rank": "1",
@@ -3242,14 +3242,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-08",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-97",
         "query_variant": "exact_title",
         "query": "Application[Title] AND change[Title] AND point[Title] AND analysis[Title] AND daily[Title] AND influenza[Title] AND like[Title] AND illness[Title] AND emergency[Title] AND department[Title] AND visits[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-08",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-97",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22759619",
         "candidate_rank": "1",
@@ -3277,14 +3277,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-09",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-98",
         "query_variant": "exact_title",
         "query": "Reduced[Title] AND Dose[Title] AND Schedule[Title] AND Prophylaxis[Title] AND Based[Title] AND Local[Title] AND Data[Title] AND Provides[Title] AND Near[Title] AND Optimal[Title] AND Protection[Title] AND Against[Title] AND Respiratory[Title] AND Syncytial[Title] AND Virus[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-09",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-98",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25904370",
         "candidate_rank": "1",
@@ -3312,14 +3312,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-10",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-99",
         "query_variant": "exact_title",
         "query": "Early[Title] AND warning[Title] AND signs[Title] AND saddle[Title] AND escape[Title] AND transitions[Title] AND complex[Title] AND networks[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-10",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-99",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26294271",
         "candidate_rank": "1",
@@ -3347,14 +3347,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-11",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-100",
         "query_variant": "exact_title",
         "query": "Critical[Title] AND dynamics[Title] AND population[Title] AND vaccinating[Title] AND behavior[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-11",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-100",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29229821",
         "candidate_rank": "1",
@@ -3382,19 +3382,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-12",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-102",
         "query_variant": "title_first_author",
         "query": "applicability[Title] AND algorithms[Title] AND infectious[Title] AND outbreaks[Title] AND Zhang[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-12",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-101",
         "query_variant": "exact_title",
         "query": "study[Title] AND regarding[Title] AND applicability[Title] AND WSARE[Title] AND algorithms[Title] AND early[Title] AND warning[Title] AND system[Title] AND infectious[Title] AND disease[Title] AND outbreaks[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-12",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-102",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:21176699",
         "candidate_rank": "1",
@@ -3422,14 +3422,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-13",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-103",
         "query_variant": "exact_title",
         "query": "Vomiting[Title] AND calls[Title] AND NHS[Title] AND Direct[Title] AND provide[Title] AND early[Title] AND warning[Title] AND norovirus[Title] AND outbreaks[Title] AND hospitals[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-13",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-103",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20172625",
         "candidate_rank": "1",
@@ -3457,14 +3457,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-14",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-104",
         "query_variant": "exact_title",
         "query": "Estimation[Title] AND HIV[Title] AND basic[Title] AND reproduction[Title] AND number[Title] AND rural[Title] AND south[Title] AND west[Title] AND Uganda[Title] AND 1991[Title] AND 2008[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-14",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-104",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24404138",
         "candidate_rank": "1",
@@ -3492,19 +3492,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-15",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-106",
         "query_variant": "title_first_author",
         "query": "transmissibility[Title] AND successive[Title] AND Estimates[Title] AND influenza[Title] AND Jackson[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-15",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-105",
         "query_variant": "exact_title",
         "query": "Estimates[Title] AND transmissibility[Title] AND 1968[Title] AND Hong[Title] AND Kong[Title] AND influenza[Title] AND pandemic[Title] AND evidence[Title] AND increased[Title] AND between[Title] AND successive[Title] AND waves[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-15",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-106",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:20007674",
         "candidate_rank": "1",
@@ -3532,14 +3532,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-16",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-107",
         "query_variant": "exact_title",
         "query": "Ensemble[Title] AND forecast[Title] AND human[Title] AND West[Title] AND Nile[Title] AND virus[Title] AND cases[Title] AND mosquito[Title] AND infection[Title] AND rates[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-16",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-107",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28233783",
         "candidate_rank": "1",
@@ -3567,14 +3567,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-17",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-108",
         "query_variant": "exact_title",
         "query": "Ensemble[Title] AND forecast[Title] AND parameter[Title] AND inference[Title] AND childhood[Title] AND diarrhea[Title] AND Chobe[Title] AND District[Title] AND Botswana[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-17",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-108",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31551173",
         "candidate_rank": "1",
@@ -3602,14 +3602,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-18",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-109",
         "query_variant": "exact_title",
         "query": "Use[Title] AND moving[Title] AND epidemic[Title] AND method[Title] AND MEM[Title] AND assess[Title] AND national[Title] AND surveillance[Title] AND data[Title] AND respiratory[Title] AND syncytial[Title] AND virus[Title] AND RSV[Title] AND Netherlands[Title] AND 2005[Title] AND 2017[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-18",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-109",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31115311",
         "candidate_rank": "1",
@@ -3637,19 +3637,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-19",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-111",
         "query_variant": "title_first_author",
         "query": "Surveillance[Title] AND harmonize[Title] AND influenza[Title] AND intensity[Title] AND Bangert[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-19",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-110",
         "query_variant": "exact_title",
         "query": "Pilot[Title] AND study[Title] AND harmonize[Title] AND reported[Title] AND influenza[Title] AND intensity[Title] AND levels[Title] AND within[Title] AND Spanish[Title] AND Sentinel[Title] AND Surveillance[Title] AND System[Title] AND SISSS[Title] AND using[Title] AND Moving[Title] AND Epidemic[Title] AND Method[Title] AND MEM[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-19",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-111",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:27916023",
         "candidate_rank": "1",
@@ -3677,14 +3677,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-20",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-112",
         "query_variant": "exact_title",
         "query": "exact[Title] AND method[Title] AND quantifying[Title] AND reliability[Title] AND end[Title] AND epidemic[Title] AND declarations[Title] AND real[Title] AND time[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-20",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-112",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33253158",
         "candidate_rank": "1",
@@ -3712,14 +3712,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-21",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-113",
         "query_variant": "exact_title",
         "query": "Collaborative[Title] AND nowcasting[Title] AND COVID[Title] AND 19[Title] AND hospitalization[Title] AND incidences[Title] AND Germany[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-21",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-113",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37566642",
         "candidate_rank": "1",
@@ -3747,14 +3747,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-22",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-114",
         "query_variant": "exact_title",
         "query": "Utility[Title] AND Whole[Title] AND Genome[Title] AND Sequencing[Title] AND Escherichia[Title] AND coli[Title] AND O157[Title] AND Outbreak[Title] AND Detection[Title] AND Epidemiological[Title] AND Surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-22",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-114",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26354815",
         "candidate_rank": "1",
@@ -3782,19 +3782,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-23",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-116",
         "query_variant": "title_first_author",
         "query": "Interventional[Title] AND Enterococcus[Title] AND Surveillance[Title] AND Vancomycin[Title] AND Sundermann[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-23",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-115",
         "query_variant": "exact_title",
         "query": "Outbreak[Title] AND Vancomycin[Title] AND resistant[Title] AND Enterococcus[Title] AND faecium[Title] AND Interventional[Title] AND Radiology[Title] AND Detection[Title] AND Through[Title] AND Whole[Title] AND genome[Title] AND Sequencing[Title] AND based[Title] AND Surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-23",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-116",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:31312842",
         "candidate_rank": "1",
@@ -3822,14 +3822,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-24",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-117",
         "query_variant": "exact_title",
         "query": "Characterization[Title] AND Foodborne[Title] AND Outbreaks[Title] AND Salmonella[Title] AND enterica[Title] AND Serovar[Title] AND Enteritidis[Title] AND Whole[Title] AND Genome[Title] AND Sequencing[Title] AND Single[Title] AND Nucleotide[Title] AND Polymorphism[Title] AND Based[Title] AND Analysis[Title] AND Surveillance[Title] AND Outbreak[Title] AND Detection[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-24",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-117",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26269623",
         "candidate_rank": "1",
@@ -3857,14 +3857,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-25",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-118",
         "query_variant": "exact_title",
         "query": "pilot[Title] AND study[Title] AND rapid[Title] AND benchtop[Title] AND sequencing[Title] AND Staphylococcus[Title] AND aureus[Title] AND Clostridium[Title] AND difficile[Title] AND outbreak[Title] AND detection[Title] AND surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-25",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-118",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22674929",
         "candidate_rank": "1",
@@ -3892,19 +3892,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-26",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-120",
         "query_variant": "title_first_author",
         "query": "immunologic[Title] AND Adherence[Title] AND indicator[Title] AND virologic[Title] AND Khatib[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-26",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-119",
         "query_variant": "exact_title",
         "query": "Adherence[Title] AND drug[Title] AND refill[Title] AND is[Title] AND useful[Title] AND early[Title] AND warning[Title] AND indicator[Title] AND virologic[Title] AND immunologic[Title] AND failure[Title] AND HIV[Title] AND patients[Title] AND first[Title] AND line[Title] AND ART[Title] AND South[Title] AND Africa[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-26",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-120",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:21408071",
         "candidate_rank": "1",
@@ -3932,14 +3932,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-27",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-121",
         "query_variant": "exact_title",
         "query": "Population[Title] AND based[Title] AND monitoring[Title] AND HIV[Title] AND drug[Title] AND resistance[Title] AND Namibia[Title] AND early[Title] AND warning[Title] AND indicators[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-27",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-121",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20838224",
         "candidate_rank": "1",
@@ -3967,14 +3967,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-28",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-122",
         "query_variant": "exact_title",
         "query": "nowcast[Title] AND model[Title] AND predict[Title] AND outdoor[Title] AND flea[Title] AND activity[Title] AND real[Title] AND time[Title] AND contiguous[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-28",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-122",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38254213",
         "candidate_rank": "1",
@@ -4002,14 +4002,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-29",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-123",
         "query_variant": "exact_title",
         "query": "Forecasting[Title] AND probability[Title] AND local[Title] AND dengue[Title] AND outbreaks[Title] AND Queensland[Title] AND Australia[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-29",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-123",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33340847",
         "candidate_rank": "1",
@@ -4037,19 +4037,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-30",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-125",
         "query_variant": "title_first_author",
         "query": "multicountry[Title] AND forecasting[Title] AND integrated[Title] AND evaluation[Title] AND Moncayo[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-30",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-124",
         "query_variant": "exact_title",
         "query": "Can[Title] AND primary[Title] AND health[Title] AND care[Title] AND mitigate[Title] AND effects[Title] AND economic[Title] AND crises[Title] AND child[Title] AND Latin[Title] AND America[Title] AND integrated[Title] AND multicountry[Title] AND evaluation[Title] AND forecasting[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-30",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-125",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:38762296",
         "candidate_rank": "1",
@@ -4077,14 +4077,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-31",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-126",
         "query_variant": "exact_title",
         "query": "Evaluating[Title] AND impact[Title] AND two[Title] AND decades[Title] AND USAID[Title] AND interventions[Title] AND projecting[Title] AND effects[Title] AND defunding[Title] AND mortality[Title] AND up[Title] AND 2030[Title] AND retrospective[Title] AND evaluation[Title] AND forecasting[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-31",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-126",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40609560",
         "candidate_rank": "1",
@@ -4112,14 +4112,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-32",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-127",
         "query_variant": "exact_title",
         "query": "Prospects[Title] AND elimination[Title] AND HIV[Title] AND test[Title] AND treat[Title] AND strategy[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-32",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-127",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24009342",
         "candidate_rank": "1",
@@ -4147,14 +4147,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-33",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-128",
         "query_variant": "exact_title",
         "query": "Identifying[Title] AND host[Title] AND species[Title] AND driving[Title] AND transmission[Title] AND schistosomiasis[Title] AND japonica[Title] AND multihost[Title] AND parasite[Title] AND system[Title] AND China[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-33",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-128",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23798418",
         "candidate_rank": "1",
@@ -4182,14 +4182,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-34",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-129",
         "query_variant": "exact_title",
         "query": "framework[Title] AND counterfactual[Title] AND analysis[Title] AND strategy[Title] AND evaluation[Title] AND control[Title] AND epidemics[Title] AND using[Title] AND reproduction[Title] AND number[Title] AND estimates[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-34",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-129",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39565799",
         "candidate_rank": "1",
@@ -4217,19 +4217,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-35",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-131",
         "query_variant": "title_first_author",
         "query": "effectiveness[Title] AND interventions[Title] AND reproduction[Title] AND epidemics[Title] AND Chowell[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-35",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-130",
         "query_variant": "exact_title",
         "query": "basic[Title] AND reproduction[Title] AND number[Title] AND R0[Title] AND effectiveness[Title] AND reactive[Title] AND interventions[Title] AND during[Title] AND dengue[Title] AND epidemics[Title] AND 2002[Title] AND outbreak[Title] AND Easter[Title] AND Island[Title] AND Chile[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-35",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-131",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:24245625",
         "candidate_rank": "1",
@@ -4257,14 +4257,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-36",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-132",
         "query_variant": "exact_title",
         "query": "Optimized[Title] AND Neural[Title] AND Network[Title] AND Based[Title] AND Genetic[Title] AND Algorithm[Title] AND Construct[Title] AND Hand[Title] AND Foot[Title] AND Mouth[Title] AND Disease[Title] AND Prediction[Title] AND Early[Title] AND Warning[Title] AND Model[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-36",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-132",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33799332",
         "candidate_rank": "1",
@@ -4292,14 +4292,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-37",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-133",
         "query_variant": "exact_title",
         "query": "Machine[Title] AND Learning[Title] AND Potential[Title] AND Identifying[Title] AND Forecasting[Title] AND Complex[Title] AND Environmental[Title] AND Drivers[Title] AND Vibrio[Title] AND vulnificus[Title] AND Infections[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-37",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-133",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39847704",
         "candidate_rank": "1",
@@ -4327,14 +4327,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-38",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-134",
         "query_variant": "exact_title",
         "query": "Predicting[Title] AND re[Title] AND emergence[Title] AND times[Title] AND dengue[Title] AND epidemics[Title] AND low[Title] AND reproductive[Title] AND numbers[Title] AND DENV1[Title] AND Rio[Title] AND de[Title] AND Janeiro[Title] AND 1986[Title] AND 1990[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-38",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-134",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32574544",
         "candidate_rank": "1",
@@ -4362,14 +4362,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-39",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-135",
         "query_variant": "exact_title",
         "query": "mechanistic[Title] AND data[Title] AND driven[Title] AND reconstruction[Title] AND time[Title] AND varying[Title] AND reproduction[Title] AND number[Title] AND Application[Title] AND COVID[Title] AND 19[Title] AND epidemic[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-39",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-135",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34310593",
         "candidate_rank": "1",
@@ -4397,14 +4397,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-40",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-136",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND Effect[Title] AND Social[Title] AND Distancing[Title] AND Interventions[Title] AND COVID[Title] AND 19[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-40",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-136",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33406533",
         "candidate_rank": "1",
@@ -4432,14 +4432,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-41",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-137",
         "query_variant": "exact_title",
         "query": "Molecular[Title] AND typing[Title] AND methods[Title] AND outbreak[Title] AND detection[Title] AND surveillance[Title] AND invasive[Title] AND disease[Title] AND caused[Title] AND Neisseria[Title] AND meningitidis[Title] AND Haemophilus[Title] AND influenzae[Title] AND Streptococcus[Title] AND pneumoniae[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-41",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-137",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21622526",
         "candidate_rank": "1",
@@ -4467,14 +4467,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-42",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-138",
         "query_variant": "exact_title",
         "query": "Assessment[Title] AND basic[Title] AND reproduction[Title] AND number[Title] AND R0[Title] AND spatial[Title] AND temporal[Title] AND epidemiological[Title] AND determinants[Title] AND genetic[Title] AND characterization[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND Bangladesh[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-42",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-138",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33930563",
         "candidate_rank": "1",
@@ -4502,14 +4502,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-43",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-139",
         "query_variant": "exact_title",
         "query": "Identifying[Title] AND key[Title] AND aspects[Title] AND enhance[Title] AND predictive[Title] AND modeling[Title] AND early[Title] AND identification[Title] AND schistosomiasis[Title] AND hotspots[Title] AND guide[Title] AND mass[Title] AND drug[Title] AND administration[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-43",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-139",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40668876",
         "candidate_rank": "1",
@@ -4537,14 +4537,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-44",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-140",
         "query_variant": "exact_title",
         "query": "Inferring[Title] AND pathogen[Title] AND superspreading[Title] AND potential[Title] AND using[Title] AND early[Title] AND spatial[Title] AND spread[Title] AND patterns[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-44",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-140",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41282876",
         "candidate_rank": "1",
@@ -4579,14 +4579,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-54",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-121",
         "query_variant": "exact_title",
         "query": "Healthcare[Title] AND associated[Title] AND outbreaks[Title] AND bacterial[Title] AND infections[Title] AND Africa[Title] AND 2009[Title] AND 2018[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-54",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-121",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33333248",
         "candidate_rank": "1",
@@ -4614,14 +4614,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-55",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-122",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND Influenza[Title] AND Vaccine[Title] AND Effectiveness[Title] AND Test[Title] AND Negative[Title] AND Design[Title] AND Using[Title] AND Alternative[Title] AND Control[Title] AND Groups[Title] AND Systematic[Title] AND Review[Title] AND Meta[Title] AND Analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-55",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-122",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28641373",
         "candidate_rank": "1",
@@ -4649,19 +4649,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-56",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-124",
         "query_variant": "title_first_author",
         "query": "interventions[Title] AND bloodstream[Title] AND improvement[Title] AND Prevention[Title] AND Blot[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-56",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-123",
         "query_variant": "exact_title",
         "query": "Prevention[Title] AND central[Title] AND line[Title] AND associated[Title] AND bloodstream[Title] AND infections[Title] AND through[Title] AND quality[Title] AND improvement[Title] AND interventions[Title] AND systematic[Title] AND review[Title] AND meta[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-56",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-124",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:24723276",
         "candidate_rank": "1",
@@ -4689,14 +4689,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-57",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-125",
         "query_variant": "exact_title",
         "query": "Generalizing[Title] AND evidence[Title] AND randomized[Title] AND clinical[Title] AND trials[Title] AND target[Title] AND populations[Title] AND ACTG[Title] AND 320[Title] AND trial[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-57",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-125",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20547574",
         "candidate_rank": "1",
@@ -4724,19 +4724,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-58",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-127",
         "query_variant": "title_first_author",
         "query": "relationship[Title] AND antibodies[Title] AND Plasmodium[Title] AND falciparum[Title] AND Fowkes[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-58",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-126",
         "query_variant": "exact_title",
         "query": "relationship[Title] AND between[Title] AND anti[Title] AND merozoite[Title] AND antibodies[Title] AND incidence[Title] AND Plasmodium[Title] AND falciparum[Title] AND malaria[Title] AND systematic[Title] AND review[Title] AND meta[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-58",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-127",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:20098724",
         "candidate_rank": "1",
@@ -4764,19 +4764,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-59",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-129",
         "query_variant": "title_first_author",
         "query": "denominator[Title] AND acceptance[Title] AND literature[Title] AND vaccine[Title] AND Adhikari[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-59",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-128",
         "query_variant": "exact_title",
         "query": "Trust[Title] AND is[Title] AND common[Title] AND denominator[Title] AND COVID[Title] AND 19[Title] AND vaccine[Title] AND acceptance[Title] AND literature[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-59",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-129",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:36217424",
         "candidate_rank": "1",
@@ -4804,14 +4804,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-01",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-90",
         "query_variant": "exact_title",
         "query": "Forecasting[Title] AND Influenza[Title] AND Epidemics[Title] AND Pandemics[Title] AND Age[Title] AND AI[Title] AND Machine[Title] AND Learning[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-01",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-90",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41555591",
         "candidate_rank": "1",
@@ -4839,14 +4839,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-02",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-91",
         "query_variant": "exact_title",
         "query": "Automated[Title] AND detection[Title] AND infectious[Title] AND disease[Title] AND outbreaks[Title] AND hospitals[Title] AND retrospective[Title] AND cohort[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-02",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-91",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20186274",
         "candidate_rank": "1",
@@ -4874,14 +4874,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-03",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-92",
         "query_variant": "exact_title",
         "query": "Clustering[Title] AND antimicrobial[Title] AND resistance[Title] AND outbreaks[Title] AND across[Title] AND bacterial[Title] AND species[Title] AND intensive[Title] AND care[Title] AND unit[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-03",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-92",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23549524",
         "candidate_rank": "1",
@@ -4909,14 +4909,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-04",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-93",
         "query_variant": "exact_title",
         "query": "Transmissibility[Title] AND 2009[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND New[Title] AND Zealand[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND influence[Title] AND age[Title] AND ethnicity[Title] AND importations[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-04",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-93",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20576236",
         "candidate_rank": "1",
@@ -4944,14 +4944,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-05",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-94",
         "query_variant": "exact_title",
         "query": "Outbreak[Title] AND 2009[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND Los[Title] AND Lagos[Title] AND Chile[Title] AND April[Title] AND June[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-05",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-94",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20067745",
         "candidate_rank": "1",
@@ -4979,14 +4979,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-06",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-95",
         "query_variant": "exact_title",
         "query": "Co[Title] AND designing[Title] AND building[Title] AND expert[Title] AND elicited[Title] AND non[Title] AND parametric[Title] AND Bayesian[Title] AND network[Title] AND model[Title] AND demonstrating[Title] AND methodology[Title] AND using[Title] AND Bonamia[Title] AND Ostreae[Title] AND spread[Title] AND risk[Title] AND case[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-06",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-95",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35187670",
         "candidate_rank": "1",
@@ -5014,14 +5014,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-07",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-96",
         "query_variant": "exact_title",
         "query": "Use[Title] AND Bayesian[Title] AND network[Title] AND model[Title] AND identify[Title] AND factors[Title] AND associated[Title] AND presence[Title] AND tick[Title] AND Ornithodoros[Title] AND erraticus[Title] AND pig[Title] AND farms[Title] AND southern[Title] AND Portugal[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-07",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-96",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23499360",
         "candidate_rank": "1",
@@ -5049,14 +5049,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-08",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-97",
         "query_variant": "exact_title",
         "query": "Application[Title] AND change[Title] AND point[Title] AND analysis[Title] AND daily[Title] AND influenza[Title] AND like[Title] AND illness[Title] AND emergency[Title] AND department[Title] AND visits[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-08",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-97",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22759619",
         "candidate_rank": "1",
@@ -5084,14 +5084,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-09",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-98",
         "query_variant": "exact_title",
         "query": "Reduced[Title] AND Dose[Title] AND Schedule[Title] AND Prophylaxis[Title] AND Based[Title] AND Local[Title] AND Data[Title] AND Provides[Title] AND Near[Title] AND Optimal[Title] AND Protection[Title] AND Against[Title] AND Respiratory[Title] AND Syncytial[Title] AND Virus[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-09",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-98",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25904370",
         "candidate_rank": "1",
@@ -5119,14 +5119,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-10",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-99",
         "query_variant": "exact_title",
         "query": "Early[Title] AND warning[Title] AND signs[Title] AND saddle[Title] AND escape[Title] AND transitions[Title] AND complex[Title] AND networks[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-10",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-99",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26294271",
         "candidate_rank": "1",
@@ -5154,14 +5154,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-11",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-100",
         "query_variant": "exact_title",
         "query": "Critical[Title] AND dynamics[Title] AND population[Title] AND vaccinating[Title] AND behavior[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-11",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-100",
         "query_variant": "exact_title",
 
 exec
@@ -5194,19 +5194,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-12",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-102",
         "query_variant": "title_first_author",
         "query": "applicability[Title] AND algorithms[Title] AND infectious[Title] AND outbreaks[Title] AND Zhang[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-12",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-101",
         "query_variant": "exact_title",
         "query": "study[Title] AND regarding[Title] AND applicability[Title] AND WSARE[Title] AND algorithms[Title] AND early[Title] AND warning[Title] AND system[Title] AND infectious[Title] AND disease[Title] AND outbreaks[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-12",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-102",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:21176699",
         "candidate_rank": "1",
@@ -5234,14 +5234,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-13",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-103",
         "query_variant": "exact_title",
         "query": "Vomiting[Title] AND calls[Title] AND NHS[Title] AND Direct[Title] AND provide[Title] AND early[Title] AND warning[Title] AND norovirus[Title] AND outbreaks[Title] AND hospitals[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-13",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-103",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20172625",
         "candidate_rank": "1",
@@ -5269,14 +5269,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-14",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-104",
         "query_variant": "exact_title",
         "query": "Estimation[Title] AND HIV[Title] AND basic[Title] AND reproduction[Title] AND number[Title] AND rural[Title] AND south[Title] AND west[Title] AND Uganda[Title] AND 1991[Title] AND 2008[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-14",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-104",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24404138",
         "candidate_rank": "1",
@@ -5304,19 +5304,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-15",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-106",
         "query_variant": "title_first_author",
         "query": "transmissibility[Title] AND successive[Title] AND Estimates[Title] AND influenza[Title] AND Jackson[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-15",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-105",
         "query_variant": "exact_title",
         "query": "Estimates[Title] AND transmissibility[Title] AND 1968[Title] AND Hong[Title] AND Kong[Title] AND influenza[Title] AND pandemic[Title] AND evidence[Title] AND increased[Title] AND between[Title] AND successive[Title] AND waves[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-15",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-106",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:20007674",
         "candidate_rank": "1",
@@ -5344,14 +5344,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-16",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-107",
         "query_variant": "exact_title",
         "query": "Ensemble[Title] AND forecast[Title] AND human[Title] AND West[Title] AND Nile[Title] AND virus[Title] AND cases[Title] AND mosquito[Title] AND infection[Title] AND rates[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-16",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-107",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28233783",
         "candidate_rank": "1",
@@ -5379,14 +5379,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-17",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-108",
         "query_variant": "exact_title",
         "query": "Ensemble[Title] AND forecast[Title] AND parameter[Title] AND inference[Title] AND childhood[Title] AND diarrhea[Title] AND Chobe[Title] AND District[Title] AND Botswana[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-17",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-108",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31551173",
         "candidate_rank": "1",
@@ -5414,14 +5414,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-18",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-109",
         "query_variant": "exact_title",
         "query": "Use[Title] AND moving[Title] AND epidemic[Title] AND method[Title] AND MEM[Title] AND assess[Title] AND national[Title] AND surveillance[Title] AND data[Title] AND respiratory[Title] AND syncytial[Title] AND virus[Title] AND RSV[Title] AND Netherlands[Title] AND 2005[Title] AND 2017[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-18",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-109",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31115311",
         "candidate_rank": "1",
@@ -5449,19 +5449,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-19",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-111",
         "query_variant": "title_first_author",
         "query": "Surveillance[Title] AND harmonize[Title] AND influenza[Title] AND intensity[Title] AND Bangert[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-19",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-110",
         "query_variant": "exact_title",
         "query": "Pilot[Title] AND study[Title] AND harmonize[Title] AND reported[Title] AND influenza[Title] AND intensity[Title] AND levels[Title] AND within[Title] AND Spanish[Title] AND Sentinel[Title] AND Surveillance[Title] AND System[Title] AND SISSS[Title] AND using[Title] AND Moving[Title] AND Epidemic[Title] AND Method[Title] AND MEM[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-19",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-111",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:27916023",
         "candidate_rank": "1",
@@ -5489,14 +5489,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-20",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-112",
         "query_variant": "exact_title",
         "query": "exact[Title] AND method[Title] AND quantifying[Title] AND reliability[Title] AND end[Title] AND epidemic[Title] AND declarations[Title] AND real[Title] AND time[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-20",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-112",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33253158",
         "candidate_rank": "1",
@@ -5524,14 +5524,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-21",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-113",
         "query_variant": "exact_title",
         "query": "Collaborative[Title] AND nowcasting[Title] AND COVID[Title] AND 19[Title] AND hospitalization[Title] AND incidences[Title] AND Germany[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-21",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-113",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37566642",
         "candidate_rank": "1",
@@ -5559,14 +5559,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-22",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-114",
         "query_variant": "exact_title",
         "query": "Utility[Title] AND Whole[Title] AND Genome[Title] AND Sequencing[Title] AND Escherichia[Title] AND coli[Title] AND O157[Title] AND Outbreak[Title] AND Detection[Title] AND Epidemiological[Title] AND Surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-22",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-114",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26354815",
         "candidate_rank": "1",
@@ -5594,19 +5594,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-23",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-116",
         "query_variant": "title_first_author",
         "query": "Interventional[Title] AND Enterococcus[Title] AND Surveillance[Title] AND Vancomycin[Title] AND Sundermann[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-23",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-115",
         "query_variant": "exact_title",
         "query": "Outbreak[Title] AND Vancomycin[Title] AND resistant[Title] AND Enterococcus[Title] AND faecium[Title] AND Interventional[Title] AND Radiology[Title] AND Detection[Title] AND Through[Title] AND Whole[Title] AND genome[Title] AND Sequencing[Title] AND based[Title] AND Surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-23",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-116",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:31312842",
         "candidate_rank": "1",
@@ -5634,14 +5634,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-24",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-117",
         "query_variant": "exact_title",
         "query": "Characterization[Title] AND Foodborne[Title] AND Outbreaks[Title] AND Salmonella[Title] AND enterica[Title] AND Serovar[Title] AND Enteritidis[Title] AND Whole[Title] AND Genome[Title] AND Sequencing[Title] AND Single[Title] AND Nucleotide[Title] AND Polymorphism[Title] AND Based[Title] AND Analysis[Title] AND Surveillance[Title] AND Outbreak[Title] AND Detection[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-24",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-117",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26269623",
         "candidate_rank": "1",
@@ -5669,14 +5669,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-25",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-118",
         "query_variant": "exact_title",
         "query": "pilot[Title] AND study[Title] AND rapid[Title] AND benchtop[Title] AND sequencing[Title] AND Staphylococcus[Title] AND aureus[Title] AND Clostridium[Title] AND difficile[Title] AND outbreak[Title] AND detection[Title] AND surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-25",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-118",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22674929",
         "candidate_rank": "1",
@@ -5704,19 +5704,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-26",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-120",
         "query_variant": "title_first_author",
         "query": "immunologic[Title] AND Adherence[Title] AND indicator[Title] AND virologic[Title] AND Khatib[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-26",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-119",
         "query_variant": "exact_title",
         "query": "Adherence[Title] AND drug[Title] AND refill[Title] AND is[Title] AND useful[Title] AND early[Title] AND warning[Title] AND indicator[Title] AND virologic[Title] AND immunologic[Title] AND failure[Title] AND HIV[Title] AND patients[Title] AND first[Title] AND line[Title] AND ART[Title] AND South[Title] AND Africa[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-26",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-120",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:21408071",
         "candidate_rank": "1",
@@ -5744,14 +5744,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-27",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-121",
         "query_variant": "exact_title",
         "query": "Population[Title] AND based[Title] AND monitoring[Title] AND HIV[Title] AND drug[Title] AND resistance[Title] AND Namibia[Title] AND early[Title] AND warning[Title] AND indicators[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-27",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-121",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20838224",
         "candidate_rank": "1",
@@ -5784,14 +5784,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-28",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-122",
         "query_variant": "exact_title",
         "query": "nowcast[Title] AND model[Title] AND predict[Title] AND outdoor[Title] AND flea[Title] AND activity[Title] AND real[Title] AND time[Title] AND contiguous[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-28",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-122",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38254213",
         "candidate_rank": "1",
@@ -5819,14 +5819,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-29",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-123",
         "query_variant": "exact_title",
         "query": "Forecasting[Title] AND probability[Title] AND local[Title] AND dengue[Title] AND outbreaks[Title] AND Queensland[Title] AND Australia[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-29",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-123",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33340847",
         "candidate_rank": "1",
@@ -5854,19 +5854,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-30",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-125",
         "query_variant": "title_first_author",
         "query": "multicountry[Title] AND forecasting[Title] AND integrated[Title] AND evaluation[Title] AND Moncayo[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-30",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-124",
         "query_variant": "exact_title",
         "query": "Can[Title] AND primary[Title] AND health[Title] AND care[Title] AND mitigate[Title] AND effects[Title] AND economic[Title] AND crises[Title] AND child[Title] AND Latin[Title] AND America[Title] AND integrated[Title] AND multicountry[Title] AND evaluation[Title] AND forecasting[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-30",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-125",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:38762296",
         "candidate_rank": "1",
@@ -5894,14 +5894,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-31",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-126",
         "query_variant": "exact_title",
         "query": "Evaluating[Title] AND impact[Title] AND two[Title] AND decades[Title] AND USAID[Title] AND interventions[Title] AND projecting[Title] AND effects[Title] AND defunding[Title] AND mortality[Title] AND up[Title] AND 2030[Title] AND retrospective[Title] AND evaluation[Title] AND forecasting[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-31",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-126",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40609560",
         "candidate_rank": "1",
@@ -5929,14 +5929,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-32",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-127",
         "query_variant": "exact_title",
         "query": "Prospects[Title] AND elimination[Title] AND HIV[Title] AND test[Title] AND treat[Title] AND strategy[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-32",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-127",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24009342",
         "candidate_rank": "1",
@@ -5964,14 +5964,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-33",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-128",
         "query_variant": "exact_title",
         "query": "Identifying[Title] AND host[Title] AND species[Title] AND driving[Title] AND transmission[Title] AND schistosomiasis[Title] AND japonica[Title] AND multihost[Title] AND parasite[Title] AND system[Title] AND China[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-33",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-128",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23798418",
         "candidate_rank": "1",
@@ -5999,14 +5999,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-34",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-129",
         "query_variant": "exact_title",
         "query": "framework[Title] AND counterfactual[Title] AND analysis[Title] AND strategy[Title] AND evaluation[Title] AND control[Title] AND epidemics[Title] AND using[Title] AND reproduction[Title] AND number[Title] AND estimates[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-34",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-129",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39565799",
         "candidate_rank": "1",
@@ -6034,19 +6034,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-35",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-131",
         "query_variant": "title_first_author",
         "query": "effectiveness[Title] AND interventions[Title] AND reproduction[Title] AND epidemics[Title] AND Chowell[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-35",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-130",
         "query_variant": "exact_title",
         "query": "basic[Title] AND reproduction[Title] AND number[Title] AND R0[Title] AND effectiveness[Title] AND reactive[Title] AND interventions[Title] AND during[Title] AND dengue[Title] AND epidemics[Title] AND 2002[Title] AND outbreak[Title] AND Easter[Title] AND Island[Title] AND Chile[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-35",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-131",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:24245625",
         "candidate_rank": "1",
@@ -6074,14 +6074,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-36",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-132",
         "query_variant": "exact_title",
         "query": "Optimized[Title] AND Neural[Title] AND Network[Title] AND Based[Title] AND Genetic[Title] AND Algorithm[Title] AND Construct[Title] AND Hand[Title] AND Foot[Title] AND Mouth[Title] AND Disease[Title] AND Prediction[Title] AND Early[Title] AND Warning[Title] AND Model[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-36",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-132",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33799332",
         "candidate_rank": "1",
@@ -6109,14 +6109,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-37",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-133",
         "query_variant": "exact_title",
         "query": "Machine[Title] AND Learning[Title] AND Potential[Title] AND Identifying[Title] AND Forecasting[Title] AND Complex[Title] AND Environmental[Title] AND Drivers[Title] AND Vibrio[Title] AND vulnificus[Title] AND Infections[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-37",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-133",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39847704",
         "candidate_rank": "1",
@@ -6144,14 +6144,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-38",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-134",
         "query_variant": "exact_title",
         "query": "Predicting[Title] AND re[Title] AND emergence[Title] AND times[Title] AND dengue[Title] AND epidemics[Title] AND low[Title] AND reproductive[Title] AND numbers[Title] AND DENV1[Title] AND Rio[Title] AND de[Title] AND Janeiro[Title] AND 1986[Title] AND 1990[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-38",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-134",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32574544",
         "candidate_rank": "1",
@@ -6179,14 +6179,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-39",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-135",
         "query_variant": "exact_title",
         "query": "mechanistic[Title] AND data[Title] AND driven[Title] AND reconstruction[Title] AND time[Title] AND varying[Title] AND reproduction[Title] AND number[Title] AND Application[Title] AND COVID[Title] AND 19[Title] AND epidemic[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-39",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-135",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34310593",
         "candidate_rank": "1",
@@ -6214,14 +6214,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-40",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-136",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND Effect[Title] AND Social[Title] AND Distancing[Title] AND Interventions[Title] AND COVID[Title] AND 19[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-40",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-136",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33406533",
         "candidate_rank": "1",
@@ -6249,14 +6249,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-41",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-137",
         "query_variant": "exact_title",
         "query": "Molecular[Title] AND typing[Title] AND methods[Title] AND outbreak[Title] AND detection[Title] AND surveillance[Title] AND invasive[Title] AND disease[Title] AND caused[Title] AND Neisseria[Title] AND meningitidis[Title] AND Haemophilus[Title] AND influenzae[Title] AND Streptococcus[Title] AND pneumoniae[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-41",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-137",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21622526",
         "candidate_rank": "1",
@@ -6284,14 +6284,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-42",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-138",
         "query_variant": "exact_title",
         "query": "Assessment[Title] AND basic[Title] AND reproduction[Title] AND number[Title] AND R0[Title] AND spatial[Title] AND temporal[Title] AND epidemiological[Title] AND determinants[Title] AND genetic[Title] AND characterization[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND Bangladesh[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-42",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-138",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33930563",
         "candidate_rank": "1",
@@ -6319,14 +6319,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-43",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-139",
         "query_variant": "exact_title",
         "query": "Identifying[Title] AND key[Title] AND aspects[Title] AND enhance[Title] AND predictive[Title] AND modeling[Title] AND early[Title] AND identification[Title] AND schistosomiasis[Title] AND hotspots[Title] AND guide[Title] AND mass[Title] AND drug[Title] AND administration[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-43",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-139",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40668876",
         "candidate_rank": "1",
@@ -6354,14 +6354,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-44",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-140",
         "query_variant": "exact_title",
         "query": "Inferring[Title] AND pathogen[Title] AND superspreading[Title] AND potential[Title] AND using[Title] AND early[Title] AND spatial[Title] AND spread[Title] AND patterns[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-44",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-140",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41282876",
         "candidate_rank": "1",

@@ -14,14 +14,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-45",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-141",
         "query_variant": "exact_title",
         "query": "COVID[Title] AND 19[Title] AND outbreak[Title] AND reproduction[Title] AND number[Title] AND estimations[Title] AND forecasting[Title] AND Marche[Title] AND Italy[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-45",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-141",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32437930",
         "candidate_rank": "1",
@@ -49,14 +49,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-46",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-142",
         "query_variant": "exact_title",
         "query": "Using[Title] AND exceedance[Title] AND probabilities[Title] AND detect[Title] AND anomalies[Title] AND routinely[Title] AND recorded[Title] AND animal[Title] AND health[Title] AND data[Title] AND particular[Title] AND reference[Title] AND foot[Title] AND mouth[Title] AND disease[Title] AND Viet[Title] AND Nam[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-46",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-142",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25457601",
         "candidate_rank": "1",
@@ -84,14 +84,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-47",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-143",
         "query_variant": "exact_title",
         "query": "Fully[Title] AND Integrated[Title] AND Real[Title] AND Time[Title] AND Detection[Title] AND Diagnosis[Title] AND Control[Title] AND Community[Title] AND Diarrheal[Title] AND Disease[Title] AND Clusters[Title] AND Outbreaks[Title] AND INTEGRATE[Title] AND Project[Title] AND Protocol[Title] AND Enhanced[Title] AND Surveillance[Title] AND System[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-47",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-143",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31573952",
         "candidate_rank": "1",
@@ -119,14 +119,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-48",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-144",
         "query_variant": "exact_title",
         "query": "Bayesian[Title] AND spatio[Title] AND temporal[Title] AND method[Title] AND disease[Title] AND outbreak[Title] AND detection[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-48",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-144",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20595315",
         "candidate_rank": "1",
@@ -154,14 +154,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-49",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-145",
         "query_variant": "exact_title",
         "query": "Correction[Title] AND Using[Title] AND decision[Title] AND fusion[Title] AND methods[Title] AND improve[Title] AND outbreak[Title] AND detection[Title] AND disease[Title] AND surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-49",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-145",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30922348",
         "candidate_rank": "1",
@@ -189,19 +189,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-50",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-147",
         "query_variant": "title_first_author",
         "query": "performance[Title] AND Comparison[Title] AND Infectious[Title] AND detection[Title] AND Li[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-50",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-146",
         "query_variant": "exact_title",
         "query": "Comparison[Title] AND performance[Title] AND both[Title] AND temporal[Title] AND spatial[Title] AND models[Title] AND outbreak[Title] AND detection[Title] AND through[Title] AND China[Title] AND Infectious[Title] AND Diseases[Title] AND Automated[Title] AND alert[Title] AND Response[Title] AND System[Title] AND CIDARS[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-50",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-147",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:21781476",
         "candidate_rank": "1",
@@ -213,7 +213,7 @@
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21781476/"
       },
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-50",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-147",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:21569721",
         "candidate_rank": "2",
@@ -241,14 +241,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-51",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-148",
         "query_variant": "exact_title",
         "query": "Dynamics[Title] AND Escherichia[Title] AND coli[Title] AND O157[Title] AND H7[Title] AND outbreak[Title] AND detection[Title] AND investigation[Title] AND Minnesota[Title] AND 2000[Title] AND 2008[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-51",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-148",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22093879",
         "candidate_rank": "1",
@@ -276,14 +276,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-52",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-149",
         "query_variant": "exact_title",
         "query": "Text[Title] AND message[Title] AND surveillance[Title] AND rapid[Title] AND salmonella[Title] AND outbreak[Title] AND detection[Title] AND novel[Title] AND public[Title] AND health[Title] AND approach[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-52",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-149",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41020301",
         "candidate_rank": "1",
@@ -311,14 +311,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-53",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-150",
         "query_variant": "exact_title",
         "query": "Global[Title] AND capacity[Title] AND emerging[Title] AND infectious[Title] AND disease[Title] AND detection[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-53",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-150",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27649306",
         "candidate_rank": "1",
@@ -330,7 +330,7 @@
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27649306/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-53",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-150",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21115835",
         "candidate_rank": "2",
@@ -358,14 +358,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-54",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-151",
         "query_variant": "exact_title",
         "query": "IDEA[Title] AND short[Title] AND term[Title] AND outbreak[Title] AND projection[Title] AND nearcasting[Title] AND using[Title] AND basic[Title] AND reproduction[Title] AND number[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-54",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-151",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24391797",
         "candidate_rank": "1",
@@ -393,14 +393,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-55",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-152",
         "query_variant": "exact_title",
         "query": "Using[Title] AND time[Title] AND dependent[Title] AND reproduction[Title] AND number[Title] AND predict[Title] AND turning[Title] AND points[Title] AND COVID[Title] AND 19[Title] AND outbreak[Title] AND Dalian[Title] AND Liaoning[Title] AND province[Title] AND China[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-55",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-152",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36496364",
         "candidate_rank": "1",
@@ -428,14 +428,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-56",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-153",
         "query_variant": "exact_title",
         "query": "Pros[Title] AND cons[Title] AND estimating[Title] AND reproduction[Title] AND number[Title] AND early[Title] AND epidemic[Title] AND growth[Title] AND rate[Title] AND influenza[Title] AND H1N1[Title] AND 2009[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-56",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-153",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20056004",
         "candidate_rank": "1",
@@ -463,19 +463,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-57",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-155",
         "query_variant": "title_first_author",
         "query": "Pharmaceutical[Title] AND Interventions[Title] AND Transmission[Title] AND Pandemic[Title] AND Lee[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-57",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-154",
         "query_variant": "exact_title",
         "query": "COVID[Title] AND 19[Title] AND Transmission[Title] AND Potential[Title] AND Non[Title] AND Pharmaceutical[Title] AND Interventions[Title] AND Maine[Title] AND During[Title] AND Pandemic[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-57",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-155",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:41011793",
         "candidate_rank": "1",
@@ -503,14 +503,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-58",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-156",
         "query_variant": "exact_title",
         "query": "Forecasting[Title] AND Covid[Title] AND 19[Title] AND United[Title] AND Kingdom[Title] AND dynamic[Title] AND SIRD[Title] AND model[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-58",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-156",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35947603",
         "candidate_rank": "1",
@@ -538,14 +538,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-59",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-157",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND future[Title] AND number[Title] AND cases[Title] AND Ebola[Title] AND epidemic[Title] AND Liberia[Title] AND Sierra[Title] AND Leone[Title] AND 2014[Title] AND 2015[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-59",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-157",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25254986",
         "candidate_rank": "1",
@@ -573,19 +573,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-60",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-159",
         "query_variant": "title_first_author",
         "query": "transmissibility[Title] AND infectious[Title] AND quantity[Title] AND estimate[Title] AND Becker[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-60",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-158",
         "query_variant": "exact_title",
         "query": "Type[Title] AND quantity[Title] AND data[Title] AND needed[Title] AND early[Title] AND estimate[Title] AND transmissibility[Title] AND when[Title] AND infectious[Title] AND disease[Title] AND emerges[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-60",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-159",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:20619130",
         "candidate_rank": "1",
@@ -613,14 +613,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-61",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-160",
         "query_variant": "exact_title",
         "query": "Interhuman[Title] AND transmissibility[Title] AND Middle[Title] AND East[Title] AND respiratory[Title] AND syndrome[Title] AND coronavirus[Title] AND estimation[Title] AND pandemic[Title] AND risk[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-61",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-160",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23831141",
         "candidate_rank": "1",
@@ -648,14 +648,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-62",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-161",
         "query_variant": "exact_title",
         "query": "Correcting[Title] AND actual[Title] AND reproduction[Title] AND number[Title] AND simple[Title] AND method[Title] AND estimate[Title] AND R[Title] AND 0[Title] AND early[Title] AND epidemic[Title] AND growth[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-62",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-161",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20195446",
         "candidate_rank": "1",
@@ -683,14 +683,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-63",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-162",
         "query_variant": "exact_title",
         "query": "application[Title] AND next[Title] AND generation[Title] AND matrix[Title] AND calculation[Title] AND basic[Title] AND reproduction[Title] AND number[Title] AND COVID[Title] AND 19[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-63",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-162",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37994774",
         "candidate_rank": "1",
@@ -718,14 +718,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-64",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-163",
         "query_variant": "exact_title",
         "query": "Statistical[Title] AND Estimation[Title] AND Reproductive[Title] AND Number[Title] AND Case[Title] AND Notification[Title] AND Data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-64",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-163",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33034345",
         "candidate_rank": "1",
@@ -753,14 +753,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-65",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-164",
         "query_variant": "exact_title",
         "query": "Pandemic[Title] AND influenza[Title] AND H1N1[Title] AND reconciling[Title] AND serosurvey[Title] AND data[Title] AND estimates[Title] AND reproduction[Title] AND number[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-65",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-164",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22089631",
         "candidate_rank": "1",
@@ -788,14 +788,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-66",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-165",
         "query_variant": "exact_title",
         "query": "Epidemic[Title] AND growth[Title] AND rate[Title] AND household[Title] AND reproduction[Title] AND number[Title] AND communities[Title] AND households[Title] AND schools[Title] AND workplaces[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-66",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-165",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21120484",
         "candidate_rank": "1",
@@ -823,14 +823,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-67",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-166",
         "query_variant": "exact_title",
         "query": "Bidirectional[Title] AND impact[Title] AND imperfect[Title] AND mask[Title] AND use[Title] AND reproduction[Title] AND number[Title] AND COVID[Title] AND 19[Title] AND next[Title] AND generation[Title] AND matrix[Title] AND approach[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-67",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-166",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32691014",
         "candidate_rank": "1",
@@ -858,14 +858,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-68",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-167",
         "query_variant": "exact_title",
         "query": "Genealogy[Title] AND seasonality[Title] AND basic[Title] AND reproduction[Title] AND number[Title] AND influenza[Title] AND pandemic[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-68",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-167",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20607242",
         "candidate_rank": "1",
@@ -893,19 +893,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-69",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-169",
         "query_variant": "title_first_author",
         "query": "reproduction[Title] AND epidemic[Title] AND relation[Title] AND number[Title] AND Andreasen[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-69",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-168",
         "query_variant": "exact_title",
         "query": "final[Title] AND size[Title] AND epidemic[Title] AND its[Title] AND relation[Title] AND basic[Title] AND reproduction[Title] AND number[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-69",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-169",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:21210241",
         "candidate_rank": "1",
@@ -933,14 +933,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-70",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-170",
         "query_variant": "exact_title",
         "query": "Constructing[Title] AND adjusting[Title] AND estimates[Title] AND household[Title] AND transmission[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND prior[Title] AND studies[Title] AND widespread[Title] AND testing[Title] AND contact[Title] AND tracing[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-70",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-170",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34151970",
         "candidate_rank": "1",
@@ -968,14 +968,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-71",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-171",
         "query_variant": "exact_title",
         "query": "Estimates[Title] AND reproduction[Title] AND number[Title] AND seasonal[Title] AND pandemic[Title] AND zoonotic[Title] AND influenza[Title] AND systematic[Title] AND review[Title] AND literature[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-71",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-171",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25186370",
         "candidate_rank": "1",
@@ -1003,14 +1003,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-72",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-172",
         "query_variant": "exact_title",
         "query": "Enhanced[Title] AND Sentinel[Title] AND Surveillance[Title] AND System[Title] AND COVID[Title] AND 19[Title] AND Outbreak[Title] AND Prediction[Title] AND Large[Title] AND European[Title] AND Dialysis[Title] AND Clinics[Title] AND Network[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-72",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-172",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34574664",
         "candidate_rank": "1",
@@ -1038,14 +1038,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-73",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-173",
         "query_variant": "exact_title",
         "query": "Sentinel[Title] AND surveillance[Title] AND system[Title] AND early[Title] AND outbreak[Title] AND detection[Title] AND Madagascar[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-73",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-173",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20092624",
         "candidate_rank": "1",
@@ -1073,14 +1073,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-74",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-174",
         "query_variant": "exact_title",
         "query": "Development[Title] AND time[Title] AND trend[Title] AND model[Title] AND analyzing[Title] AND predicting[Title] AND case[Title] AND pattern[Title] AND Lassa[Title] AND fever[Title] AND epidemics[Title] AND Liberia[Title] AND 2013[Title] AND 2017[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-74",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-174",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25693816",
         "candidate_rank": "1",
@@ -1108,14 +1108,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-75",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-175",
         "query_variant": "exact_title",
         "query": "Forecasting[Title] AND weekly[Title] AND dengue[Title] AND incidence[Title] AND Sri[Title] AND Lanka[Title] AND Modified[Title] AND Autoregressive[Title] AND Integrated[Title] AND Moving[Title] AND Average[Title] AND modeling[Title] AND approach[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-75",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-175",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38457405",
         "candidate_rank": "1",
@@ -1143,14 +1143,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-76",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-176",
         "query_variant": "exact_title",
         "query": "CASE[Title] AND framework[Title] AND computer[Title] AND supported[Title] AND outbreak[Title] AND detection[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-76",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-176",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20226035",
         "candidate_rank": "1",
@@ -1178,14 +1178,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-77",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-177",
         "query_variant": "exact_title",
         "query": "Rates[Title] AND hospital[Title] AND acquired[Title] AND respiratory[Title] AND illness[Title] AND Bangladeshi[Title] AND tertiary[Title] AND care[Title] AND hospitals[Title] AND results[Title] AND low[Title] AND cost[Title] AND pilot[Title] AND surveillance[Title] AND strategy[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-77",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-177",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20210642",
         "candidate_rank": "1",
@@ -1213,19 +1213,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-78",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-179",
         "query_variant": "title_first_author",
         "query": "transmission[Title] AND Quantifying[Title] AND norovirus[Title] AND outbreak[Title] AND Heijne[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-78",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-178",
         "query_variant": "exact_title",
         "query": "Quantifying[Title] AND transmission[Title] AND norovirus[Title] AND during[Title] AND outbreak[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-78",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-179",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:22317811",
         "candidate_rank": "1",
@@ -1253,14 +1253,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-79",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-180",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND generation[Title] AND interval[Title] AND influenza[Title] AND H1N1[Title] AND range[Title] AND social[Title] AND settings[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-79",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-180",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23337238",
         "candidate_rank": "1",
@@ -1288,24 +1288,24 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260717-LINEAGE-FORECASTING-01",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-194",
         "query_variant": "method_author_year",
         "query": "(transmission dynamics[Title/Abstract] OR contact measurement[Title/Abstract] OR epidemic forecasting[Title/Abstract] OR social mixing[Title/Abstract]) AND Smieszek[Author] AND 2014[Date - Publication]"
       },
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-80",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-182",
         "query_variant": "title_first_author",
         "query": "comparing[Title] AND measured[Title] AND methods[Title] AND should[Title] AND Smieszek[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-80",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-181",
         "query_variant": "exact_title",
         "query": "How[Title] AND should[Title] AND social[Title] AND mixing[Title] AND be[Title] AND measured[Title] AND comparing[Title] AND web[Title] AND based[Title] AND survey[Title] AND sensor[Title] AND methods[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260717-LINEAGE-FORECASTING-01",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-194",
         "query_variant": "method_author_year",
         "candidate_key": "PMID:24612900",
         "candidate_rank": "1",
@@ -1333,14 +1333,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-81",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-183",
         "query_variant": "exact_title",
         "query": "Nowcasting[Title] AND spread[Title] AND chikungunya[Title] AND virus[Title] AND Americas[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-81",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-183",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25111394",
         "candidate_rank": "1",
@@ -1368,19 +1368,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-82",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-185",
         "query_variant": "title_first_author",
         "query": "interventions[Title] AND reproduction[Title] AND inference[Title] AND countries[Title] AND Karnakov[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-82",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-184",
         "query_variant": "exact_title",
         "query": "Data[Title] AND driven[Title] AND inference[Title] AND reproduction[Title] AND number[Title] AND COVID[Title] AND 19[Title] AND before[Title] AND after[Title] AND interventions[Title] AND 51[Title] AND European[Title] AND countries[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-82",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-185",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:32677705",
         "candidate_rank": "1",
@@ -1408,19 +1408,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-83",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-187",
         "query_variant": "title_first_author",
         "query": "Transmission[Title] AND screening[Title] AND influenza[Title] AND dynamics[Title] AND Yu[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-83",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-186",
         "query_variant": "exact_title",
         "query": "Transmission[Title] AND dynamics[Title] AND border[Title] AND entry[Title] AND screening[Title] AND school[Title] AND holidays[Title] AND during[Title] AND 2009[Title] AND influenza[Title] AND H1N1[Title] AND pandemic[Title] AND China[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-FORECASTING-83",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-187",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:22515989",
         "candidate_rank": "1",
@@ -1448,14 +1448,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-84",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-188",
         "query_variant": "exact_title",
         "query": "Probability[Title] AND estimated[Title] AND risk[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND transmission[Title] AND air[Title] AND travel[Title] AND system[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-84",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-188",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34182036",
         "candidate_rank": "1",
@@ -1483,14 +1483,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-85",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-189",
         "query_variant": "exact_title",
         "query": "Identifying[Title] AND climatic[Title] AND drivers[Title] AND respiratory[Title] AND syncytial[Title] AND virus[Title] AND RSV[Title] AND seasonality[Title] AND Antananarivo[Title] AND Madagascar[Title] AND 2011[Title] AND 2021[Title] AND sentinel[Title] AND surveillance[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-85",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-189",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40018634",
         "candidate_rank": "1",
@@ -1518,14 +1518,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-86",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-190",
         "query_variant": "exact_title",
         "query": "Dynamic[Title] AND modeling[Title] AND hepatitis[Title] AND C[Title] AND transmission[Title] AND people[Title] AND who[Title] AND inject[Title] AND drugs[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-86",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-190",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37039246",
         "candidate_rank": "1",
@@ -1537,7 +1537,7 @@
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37039246/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-86",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-190",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31864130",
         "candidate_rank": "2",
@@ -1565,14 +1565,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-87",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-191",
         "query_variant": "exact_title",
         "query": "Transmission[Title] AND dynamics[Title] AND underreporting[Title] AND Kala[Title] AND azar[Title] AND Indian[Title] AND state[Title] AND Bihar[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-87",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-191",
         "query_variant": "exact_title",
         "candidate_key": "PMID:19769990",
         "candidate_rank": "1",
@@ -1600,14 +1600,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-88",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-192",
         "query_variant": "exact_title",
         "query": "data[Title] AND driven[Title] AND change[Title] AND point[Title] AND epidemic[Title] AND model[Title] AND assessing[Title] AND impact[Title] AND large[Title] AND gathering[Title] AND subsequent[Title] AND movement[Title] AND control[Title] AND order[Title] AND COVID[Title] AND 19[Title] AND spread[Title] AND Malaysia[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-88",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-192",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34043676",
         "candidate_rank": "1",
@@ -1635,14 +1635,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-89",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-193",
         "query_variant": "exact_title",
         "query": "Projecting[Title] AND COVID[Title] AND 19[Title] AND intensive[Title] AND care[Title] AND admissions[Title] AND policy[Title] AND advice[Title] AND Netherlands[Title] AND February[Title] AND 2020[Title] AND January[Title] AND 2021[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-FORECASTING-89",
+        "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-193",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38456214",
         "candidate_rank": "1",
@@ -1670,14 +1670,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-01",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-35",
         "query_variant": "exact_title",
         "query": "Little[Title] AND Italy[Title] AND agent[Title] AND based[Title] AND approach[Title] AND estimation[Title] AND contact[Title] AND patterns[Title] AND fitting[Title] AND predicted[Title] AND matrices[Title] AND serological[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-01",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-35",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21152004",
         "candidate_rank": "1",
@@ -1705,14 +1705,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-02",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-36",
         "query_variant": "exact_title",
         "query": "Expanding[Title] AND access[Title] AND HAART[Title] AND cost[Title] AND effective[Title] AND approach[Title] AND treating[Title] AND preventing[Title] AND HIV[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-02",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-36",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20588171",
         "candidate_rank": "1",
@@ -1740,14 +1740,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-03",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-37",
         "query_variant": "exact_title",
         "query": "Designing[Title] AND isolation[Title] AND guidelines[Title] AND COVID[Title] AND 19[Title] AND patients[Title] AND utilizing[Title] AND rapid[Title] AND antigen[Title] AND tests[Title] AND simulation[Title] AND study[Title] AND using[Title] AND viral[Title] AND dynamics[Title] AND models[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-03",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-37",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35118478",
         "candidate_rank": "1",
@@ -1775,14 +1775,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-04",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-38",
         "query_variant": "exact_title",
         "query": "Interventions[Title] AND reduce[Title] AND verocytotoxigenic[Title] AND Escherichia[Title] AND coli[Title] AND ground[Title] AND beef[Title] AND Argentina[Title] AND simulation[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-04",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-38",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20031239",
         "candidate_rank": "1",
@@ -1810,14 +1810,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-05",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-39",
         "query_variant": "exact_title",
         "query": "Quality[Title] AND measurement[Title] AND benchmarking[Title] AND HPV[Title] AND vaccination[Title] AND services[Title] AND new[Title] AND approach[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-05",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-39",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24084361",
         "candidate_rank": "1",

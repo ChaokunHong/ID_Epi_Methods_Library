@@ -1739,7 +1739,7 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
                 "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41570185/"
             },
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-08",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-107",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:41281223",
                 "candidate_rank": "2",
@@ -1767,14 +1767,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-09",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-108",
                 "query_variant": "exact_title",
                 "query": "G[Title] AND Computation[Title] AND Causal[Title] AND Mediation[Title] AND Analysis[Title] AND Sequential[Title] AND Multiple[Title] AND Mediators[Title] AND Investigating[Title] AND Vulnerable[Title] AND Time[Title] AND Window[Title] AND HBV[Title] AND Activity[Title] AND Mechanism[Title] AND HCV[Title] AND Induced[Title] AND Hepatocellular[Title] AND Carcinoma[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-09",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-108",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:35071157",
                 "candidate_rank": "1",
@@ -1802,19 +1802,19 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-10",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-110",
                 "query_variant": "title_first_author",
                 "query": "Relationship[Title] AND Attendance[Title] AND Adolescent[Title] AND Prevention[Title] AND Stoner[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-10",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-109",
                 "query_variant": "exact_title",
                 "query": "Does[Title] AND Partner[Title] AND Selection[Title] AND Mediate[Title] AND Relationship[Title] AND Between[Title] AND School[Title] AND Attendance[Title] AND HIV[Title] AND Herpes[Title] AND Simplex[Title] AND Virus[Title] AND 2[Title] AND Adolescent[Title] AND Girls[Title] AND Young[Title] AND Women[Title] AND South[Title] AND Africa[Title] AND Analysis[Title] AND Prevention[Title] AND Trials[Title] AND Network[Title] AND 068[Title] AND Data[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-10",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-110",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:29847479",
                 "candidate_rank": "1",
@@ -1842,14 +1842,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-11",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-111",
                 "query_variant": "exact_title",
                 "query": "Triangulating[Title] AND Instrumental[Title] AND Variable[Title] AND confounder[Title] AND adjustment[Title] AND difference[Title] AND methods[Title] AND comparative[Title] AND effectiveness[Title] AND research[Title] AND observational[Title] AND data[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-11",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-111",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:41069648",
                 "candidate_rank": "1",
@@ -1877,14 +1877,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-12",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-112",
                 "query_variant": "exact_title",
                 "query": "targeted[Title] AND real[Title] AND time[Title] AND early[Title] AND warning[Title] AND score[Title] AND TREWScore[Title] AND septic[Title] AND shock[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-12",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-112",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:26246167",
                 "candidate_rank": "1",
@@ -1912,14 +1912,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-13",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-113",
                 "query_variant": "exact_title",
                 "query": "Early[Title] AND warning[Title] AND score[Title] AND dynamic[Title] AND marker[Title] AND severity[Title] AND prognosis[Title] AND patients[Title] AND Gram[Title] AND negative[Title] AND bacteraemia[Title] AND sepsis[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-13",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-113",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:27071911",
                 "candidate_rank": "1",
@@ -1947,14 +1947,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-14",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-114",
                 "query_variant": "exact_title",
                 "query": "impact[Title] AND removing[Title] AND financial[Title] AND incentives[Title] AND audit[Title] AND feedback[Title] AND chlamydia[Title] AND testing[Title] AND general[Title] AND practice[Title] AND cluster[Title] AND randomised[Title] AND controlled[Title] AND trial[Title] AND ACCEPt[Title] AND able[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-14",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-114",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:34982767",
                 "candidate_rank": "1",
@@ -1982,14 +1982,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-15",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-115",
                 "query_variant": "exact_title",
                 "query": "Multi[Title] AND faceted[Title] AND intervention[Title] AND improve[Title] AND management[Title] AND antibiotics[Title] AND children[Title] AND presenting[Title] AND primary[Title] AND care[Title] AND acute[Title] AND cough[Title] AND respiratory[Title] AND tract[Title] AND infection[Title] AND CHICO[Title] AND efficient[Title] AND cluster[Title] AND randomised[Title] AND controlled[Title] AND trial[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-15",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-115",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:37100446",
                 "candidate_rank": "1",
@@ -2017,14 +2017,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-16",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-116",
                 "query_variant": "exact_title",
                 "query": "impact[Title] AND primary[Title] AND health[Title] AND care[Title] AND AIDS[Title] AND incidence[Title] AND mortality[Title] AND cohort[Title] AND study[Title] AND 3[Title] AND 4[Title] AND million[Title] AND Brazilians[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-16",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-116",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:38991004",
                 "candidate_rank": "1",
@@ -2052,19 +2052,19 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-17",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-118",
                 "query_variant": "title_first_author",
                 "query": "municipalities[Title] AND Targeting[Title] AND Norwegian[Title] AND framework[Title] AND Danielsen[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-17",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-117",
                 "query_variant": "exact_title",
                 "query": "Targeting[Title] AND TB[Title] AND MRSA[Title] AND Norwegian[Title] AND municipalities[Title] AND during[Title] AND refugee[Title] AND crisis[Title] AND 2015[Title] AND framework[Title] AND priority[Title] AND setting[Title] AND screening[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-17",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-118",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:31552819",
                 "candidate_rank": "1",
@@ -2092,14 +2092,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-18",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-119",
                 "query_variant": "exact_title",
                 "query": "comparative[Title] AND interrupted[Title] AND time[Title] AND series[Title] AND design[Title] AND assessment[Title] AND diagnostic[Title] AND impact[Title] AND methodological[Title] AND considerations[Title] AND example[Title] AND using[Title] AND point[Title] AND care[Title] AND C[Title] AND reactive[Title] AND protein[Title] AND testing[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-18",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-119",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:35232491",
                 "candidate_rank": "1",
@@ -2127,14 +2127,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-19",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-120",
                 "query_variant": "exact_title",
                 "query": "Reducing[Title] AND Clostridium[Title] AND difficile[Title] AND infection[Title] AND acute[Title] AND care[Title] AND using[Title] AND improvement[Title] AND collaborative[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-19",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-120",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:20659985",
                 "candidate_rank": "1",
@@ -2162,19 +2162,19 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-20",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-122",
                 "query_variant": "title_first_author",
                 "query": "underreporting[Title] AND vaccination[Title] AND strategies[Title] AND impact[Title] AND Albani[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-20",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-121",
                 "query_variant": "exact_title",
                 "query": "COVID[Title] AND 19[Title] AND underreporting[Title] AND its[Title] AND impact[Title] AND vaccination[Title] AND strategies[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-20",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-122",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:34711190",
                 "candidate_rank": "1",
@@ -2202,14 +2202,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-21",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-123",
                 "query_variant": "exact_title",
                 "query": "Modelling[Title] AND impact[Title] AND extended[Title] AND vaccination[Title] AND strategies[Title] AND epidemiology[Title] AND pertussis[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-21",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-123",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:22115361",
                 "candidate_rank": "1",
@@ -2237,14 +2237,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-22",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-124",
                 "query_variant": "exact_title",
                 "query": "Dynamic[Title] AND borrowing[Title] AND historical[Title] AND controls[Title] AND adjusting[Title] AND covariates[Title] AND vaccine[Title] AND efficacy[Title] AND clinical[Title] AND trials[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-22",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-124",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:38591424",
                 "candidate_rank": "1",
@@ -2272,14 +2272,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-23",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-125",
                 "query_variant": "exact_title",
                 "query": "Comparative[Title] AND effectiveness[Title] AND tocilizumab[Title] AND vs[Title] AND standard[Title] AND care[Title] AND patients[Title] AND severe[Title] AND COVID[Title] AND 19[Title] AND related[Title] AND pneumonia[Title] AND retrospective[Title] AND cohort[Title] AND study[Title] AND utilizing[Title] AND registry[Title] AND data[Title] AND synthetic[Title] AND control[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-23",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-125",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:38049729",
                 "candidate_rank": "1",
@@ -2307,14 +2307,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-24",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-126",
                 "query_variant": "exact_title",
                 "query": "Long[Title] AND Term[Title] AND Effectiveness[Title] AND Financial[Title] AND Incentives[Title] AND Not[Title] AND Prescribing[Title] AND Unnecessary[Title] AND Antibiotics[Title] AND Children[Title] AND Acute[Title] AND Respiratory[Title] AND Gastrointestinal[Title] AND Infections[Title] AND Japan[Title] AND s[Title] AND Nationwide[Title] AND Quasi[Title] AND Experimental[Title] AND Study[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-24",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-126",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:39579079",
                 "candidate_rank": "1",
@@ -2342,14 +2342,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-25",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-127",
                 "query_variant": "exact_title",
                 "query": "Bayesian[Title] AND approach[Title] AND synthesize[Title] AND estimates[Title] AND size[Title] AND hidden[Title] AND populations[Title] AND Anchored[Title] AND Multiplier[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-25",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-127",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:29931067",
                 "candidate_rank": "1",
@@ -2377,19 +2377,19 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-26",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-129",
                 "query_variant": "title_first_author",
                 "query": "Triangulation[Title] AND Population[Title] AND Estimation[Title] AND Multiple[Title] AND Sulaberidze[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-26",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-128",
                 "query_variant": "exact_title",
                 "query": "Population[Title] AND Size[Title] AND Estimation[Title] AND Men[Title] AND Who[Title] AND Have[Title] AND Sex[Title] AND Tbilisi[Title] AND Georgia[Title] AND Multiple[Title] AND Methods[Title] AND Triangulation[Title] AND Findings[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-26",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-129",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:26828366",
                 "candidate_rank": "1",
@@ -2417,19 +2417,19 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-27",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-131",
                 "query_variant": "title_first_author",
                 "query": "instrumental[Title] AND preference[Title] AND Physician[Title] AND variable[Title] AND Boef[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-27",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-130",
                 "query_variant": "exact_title",
                 "query": "Physician[Title] AND s[Title] AND preference[Title] AND based[Title] AND instrumental[Title] AND variable[Title] AND analysis[Title] AND is[Title] AND it[Title] AND valid[Title] AND useful[Title] AND moderate[Title] AND sized[Title] AND study[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-27",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-131",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:26605813",
                 "candidate_rank": "1",
@@ -2441,7 +2441,7 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
                 "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26605813/"
             },
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-27",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-131",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:25051311",
                 "candidate_rank": "2",
@@ -2469,14 +2469,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-28",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-132",
                 "query_variant": "exact_title",
                 "query": "Analysis[Title] AND impact[Title] AND early[Title] AND surgery[Title] AND hospital[Title] AND mortality[Title] AND native[Title] AND valve[Title] AND endocarditis[Title] AND use[Title] AND propensity[Title] AND score[Title] AND instrumental[Title] AND variable[Title] AND methods[Title] AND adjust[Title] AND treatment[Title] AND selection[Title] AND bias[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-28",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-132",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:20159831",
                 "candidate_rank": "1",
@@ -2504,14 +2504,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-29",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-133",
                 "query_variant": "exact_title",
                 "query": "Integrating[Title] AND Global[Title] AND Public[Title] AND Health[Title] AND Intelligence[Title] AND Thematic[Title] AND Analysis[Title] AND WES[Title] AND Synthesis[Title] AND 2025[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-29",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-133",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:42179337",
                 "candidate_rank": "1",
@@ -2539,14 +2539,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-30",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-134",
                 "query_variant": "exact_title",
                 "query": "Modelling[Title] AND interrupted[Title] AND time[Title] AND series[Title] AND evaluate[Title] AND prevention[Title] AND control[Title] AND infection[Title] AND healthcare[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-30",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-134",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:22335933",
                 "candidate_rank": "1",
@@ -2574,14 +2574,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-31",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-135",
                 "query_variant": "exact_title",
                 "query": "Impact[Title] AND intervention[Title] AND control[Title] AND Clostridium[Title] AND difficile[Title] AND infection[Title] AND hospital[Title] AND community[Title] AND onset[Title] AND disease[Title] AND interrupted[Title] AND time[Title] AND series[Title] AND analysis[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-31",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-135",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:19832710",
                 "candidate_rank": "1",
@@ -2609,14 +2609,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-32",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-136",
                 "query_variant": "exact_title",
                 "query": "Pneumococcal[Title] AND serotypes[Title] AND children[Title] AND 4[Title] AND European[Title] AND countries[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-32",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-136",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:20735928",
                 "candidate_rank": "1",
@@ -2644,14 +2644,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-33",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-137",
                 "query_variant": "exact_title",
                 "query": "Impact[Title] AND conjugate[Title] AND 7[Title] AND valent[Title] AND vaccination[Title] AND Belgium[Title] AND addressing[Title] AND methodological[Title] AND challenges[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-33",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-137",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:21342667",
                 "candidate_rank": "1",
@@ -2679,19 +2679,19 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-34",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-139",
                 "query_variant": "title_first_author",
                 "query": "Relationship[Title] AND differences[Title] AND difference[Title] AND changing[Title] AND Heng[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-34",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-138",
                 "query_variant": "exact_title",
                 "query": "Relationship[Title] AND between[Title] AND changing[Title] AND malaria[Title] AND burden[Title] AND low[Title] AND birth[Title] AND weight[Title] AND sub[Title] AND Saharan[Title] AND Africa[Title] AND difference[Title] AND differences[Title] AND study[Title] AND via[Title] AND pair[Title] AND pairs[Title] AND approach[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-34",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-139",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:34259625",
                 "candidate_rank": "1",
@@ -2719,19 +2719,19 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-35",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-141",
                 "query_variant": "title_first_author",
                 "query": "involvement[Title] AND parental[Title] AND deter[Title] AND risky[Title] AND Colman[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-35",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-140",
                 "query_variant": "exact_title",
                 "query": "Do[Title] AND parental[Title] AND involvement[Title] AND laws[Title] AND deter[Title] AND risky[Title] AND teen[Title] AND sex[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-35",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-141",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:23892483",
                 "candidate_rank": "1",
@@ -2759,14 +2759,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-36",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-142",
                 "query_variant": "exact_title",
                 "query": "Using[Title] AND marginal[Title] AND structural[Title] AND measurement[Title] AND error[Title] AND models[Title] AND estimate[Title] AND long[Title] AND term[Title] AND effect[Title] AND antiretroviral[Title] AND therapy[Title] AND incident[Title] AND AIDS[Title] AND death[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-36",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-142",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:19934191",
                 "candidate_rank": "1",
@@ -2794,14 +2794,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-37",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-143",
                 "query_variant": "exact_title",
                 "query": "information[Title] AND criterion[Title] AND marginal[Title] AND structural[Title] AND models[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-37",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-143",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:23943549",
                 "candidate_rank": "1",
@@ -2813,7 +2813,7 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
                 "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23943549/"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-37",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-143",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:22972662",
                 "candidate_rank": "2",
@@ -2841,14 +2841,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-38",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-144",
                 "query_variant": "exact_title",
                 "query": "Big[Title] AND Data[Title] AND FRAM[Title] AND Based[Title] AND Model[Title] AND Epidemic[Title] AND Risk[Title] AND Analysis[Title] AND Infectious[Title] AND Diseases[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-38",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-144",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:39224172",
                 "candidate_rank": "1",
@@ -2876,14 +2876,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-39",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-145",
                 "query_variant": "exact_title",
                 "query": "Machine[Title] AND Learning[Title] AND Framework[Title] AND Meat[Title] AND Safety[Title] AND Risk[Title] AND Assessment[Title] AND Cross[Title] AND Domain[Title] AND Data[Title] AND Fusion[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-39",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-145",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:42092440",
                 "candidate_rank": "1",
@@ -2911,14 +2911,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-40",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-146",
                 "query_variant": "exact_title",
                 "query": "iCovidCare[Title] AND Intelligent[Title] AND health[Title] AND monitoring[Title] AND framework[Title] AND COVID[Title] AND 19[Title] AND using[Title] AND ensemble[Title] AND random[Title] AND forest[Title] AND edge[Title] AND networks[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-40",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-146",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:38620813",
                 "candidate_rank": "1",
@@ -2946,14 +2946,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-41",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-147",
                 "query_variant": "exact_title",
                 "query": "Construction[Title] AND effectiveness[Title] AND test[Title] AND multimodal[Title] AND data[Title] AND fusion[Title] AND prediction[Title] AND model[Title] AND intracranial[Title] AND infection[Title] AND after[Title] AND severe[Title] AND craniocerebral[Title] AND injury[Title] AND children[Title] AND based[Title] AND deep[Title] AND learning[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-41",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-147",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:41272576",
                 "candidate_rank": "1",
@@ -2981,14 +2981,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-42",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-148",
                 "query_variant": "exact_title",
                 "query": "Characterizing[Title] AND vaccine[Title] AND associated[Title] AND risks[Title] AND using[Title] AND cubic[Title] AND smoothing[Title] AND splines[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-42",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-148",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:23100246",
                 "candidate_rank": "1",
@@ -3016,14 +3016,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-43",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-149",
                 "query_variant": "exact_title",
                 "query": "Upgrading[Title] AND piped[Title] AND water[Title] AND supply[Title] AND intermittent[Title] AND continuous[Title] AND delivery[Title] AND association[Title] AND waterborne[Title] AND illness[Title] AND matched[Title] AND cohort[Title] AND study[Title] AND urban[Title] AND India[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-43",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-149",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:26505897",
                 "candidate_rank": "1",
@@ -3051,19 +3051,19 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-44",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-151",
                 "query_variant": "title_first_author",
                 "query": "antimicrobial[Title] AND resistance[Title] AND systematic[Title] AND Progress[Title] AND Chen[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-44",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-150",
                 "query_variant": "exact_title",
                 "query": "Progress[Title] AND gaps[Title] AND antimicrobial[Title] AND resistance[Title] AND research[Title] AND within[Title] AND One[Title] AND Health[Title] AND sectors[Title] AND China[Title] AND systematic[Title] AND analysis[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-44",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-151",
                 "query_variant": "title_first_author",
                 "candidate_key": "PMID:40681821",
                 "candidate_rank": "1",
@@ -3091,14 +3091,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-45",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-152",
                 "query_variant": "exact_title",
                 "query": "Identifiability[Title] AND Estimation[Title] AND Under[Title] AND Test[Title] AND negative[Title] AND Design[Title] AND Population[Title] AND Controls[Title] AND Goal[Title] AND Identifying[Title] AND Risk[Title] AND Preventive[Title] AND Factors[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND Infection[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-45",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-152",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:34183531",
                 "candidate_rank": "1",
@@ -3126,24 +3126,24 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260717-LINEAGE-CAUSAL-01",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-216",
                 "query_variant": "method_author_year",
                 "query": "(observational[Title/Abstract] OR effect estimation[Title/Abstract]) AND Branch-Elliman[Author] AND 2017[Date - Publication]"
             },
             {
-                "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-46",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-154",
                 "query_variant": "title_first_author",
                 "query": "retrospective[Title] AND Clostridium[Title] AND prophylaxis[Title] AND antibiotic[Title] AND Elliman[Author]"
             },
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-46",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-153",
                 "query_variant": "exact_title",
                 "query": "Risk[Title] AND surgical[Title] AND site[Title] AND infection[Title] AND acute[Title] AND kidney[Title] AND injury[Title] AND Clostridium[Title] AND difficile[Title] AND following[Title] AND antibiotic[Title] AND prophylaxis[Title] AND vancomycin[Title] AND plus[Title] AND beta[Title] AND lactam[Title] AND versus[Title] AND either[Title] AND drug[Title] AND alone[Title] AND national[Title] AND propensity[Title] AND score[Title] AND adjusted[Title] AND retrospective[Title] AND cohort[Title] AND study[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260717-LINEAGE-CAUSAL-01",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-216",
                 "query_variant": "method_author_year",
                 "candidate_key": "PMID:28692690",
                 "candidate_rank": "1",
@@ -3171,14 +3171,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-47",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-155",
                 "query_variant": "exact_title",
                 "query": "Social[Title] AND determinants[Title] AND adult[Title] AND COVID[Title] AND 19[Title] AND vaccine[Title] AND acceptance[Title] AND uptake[Title] AND Brazilian[Title] AND urban[Title] AND informal[Title] AND community[Title] AND longitudinal[Title] AND time[Title] AND event[Title] AND study[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-47",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-155",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:38076979",
                 "candidate_rank": "1",
@@ -3206,14 +3206,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-48",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-156",
                 "query_variant": "exact_title",
                 "query": "Long[Title] AND term[Title] AND Cardiovascular[Title] AND Cerebrovascular[Title] AND Other[Title] AND Thrombotic[Title] AND Complications[Title] AND COVID[Title] AND 19[Title] AND Survivors[Title] AND Retrospective[Title] AND Cohort[Title] AND Study[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-48",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-156",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:37746872",
                 "candidate_rank": "1",
@@ -3241,14 +3241,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-49",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-157",
                 "query_variant": "exact_title",
                 "query": "Impact[Title] AND health[Title] AND insurance[Title] AND coverage[Title] AND Helicobacter[Title] AND pylori[Title] AND gastritis[Title] AND trends[Title] AND eradication[Title] AND therapy[Title] AND Japan[Title] AND retrospective[Title] AND observational[Title] AND study[Title] AND simulation[Title] AND based[Title] AND real[Title] AND world[Title] AND data[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-49",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-157",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:28760790",
                 "candidate_rank": "1",
@@ -3276,14 +3276,14 @@ python3 -m json.tool 01_search/search_logs/2026-07-20-broad-discovery/wave_03_li
         },
         "supporting_queries": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-50",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-158",
                 "query_variant": "exact_title",
                 "query": "2016[Title] AND California[Title] AND policy[Title] AND eliminate[Title] AND nonmedical[Title] AND vaccine[Title] AND exemptions[Title] AND changes[Title] AND coverage[Title] AND empirical[Title] AND analysis[Title]"
             }
         ],
         "manifested_candidates": [
             {
-                "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-50",
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-158",
                 "query_variant": "exact_title",
                 "candidate_key": "PMID:31869328",
                 "candidate_rank": "1",
@@ -3304,106 +3304,106 @@ exec
 pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
 IDX=1 NS=NS-CAUSAL-001
 TARGET | HIV self-testing alone or with additional interventions, including financial incentives, and linkage to care or prevention among male partners of antenatal care clinic attendees in Malawi: An adaptive multi-arm, multi-stage cluster randomised trial. | FIRST=Augustine T Choko | YEAR=2019 | CONTEXT_KEY=PMID:30601823 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/30601823/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-01{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-98{exact_title}
 CANDS=1
-  PMID:30601823 | HIV self-testing alone or with additional interventions, including financial incentives, and linkage to care or prevention among male partners of antenatal care clinic attendees in Malawi: An adaptive multi-arm, multi-stage cluster randomised trial. | YEAR=2019 | AUTHORS=Augustine T Choko; Elizabeth L Corbett; Nigel Stallard; Hendramoorthy Maheswaran; Aurelia Lepine; Cheryl C Johnson; Doreen Sakala; Thokozani Kalua; Moses Kumwenda; Richard Hayes; Katherine Fielding | DOI=10.1371/journal.pmed.1002719 | PMID=30601823 | URL=https://pubmed.ncbi.nlm.nih.gov/30601823/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-01
+  PMID:30601823 | HIV self-testing alone or with additional interventions, including financial incentives, and linkage to care or prevention among male partners of antenatal care clinic attendees in Malawi: An adaptive multi-arm, multi-stage cluster randomised trial. | YEAR=2019 | AUTHORS=Augustine T Choko; Elizabeth L Corbett; Nigel Stallard; Hendramoorthy Maheswaran; Aurelia Lepine; Cheryl C Johnson; Doreen Sakala; Thokozani Kalua; Moses Kumwenda; Richard Hayes; Katherine Fielding | DOI=10.1371/journal.pmed.1002719 | PMID=30601823 | URL=https://pubmed.ncbi.nlm.nih.gov/30601823/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-98
 ---
 IDX=2 NS=NS-CAUSAL-002
 TARGET | An Adaptive Intervention Trial Design for Finding the Optimal Integrated Strategies for Malaria Control and Elimination in Africa: A Model Simulation Study. | FIRST=Guofa Zhou | YEAR=2021 | CONTEXT_KEY=PMID:34491227 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/34491227/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-02{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-99{exact_title}
 CANDS=1
-  PMID:34491227 | An Adaptive Intervention Trial Design for Finding the Optimal Integrated Strategies for Malaria Control and Elimination in Africa: A Model Simulation Study. | YEAR=2021 | AUTHORS=Guofa Zhou; Ming-Chieh Lee; Xiaoming Wang; Daibin Zhong; Elizabeth Hemming-Schroeder; Guiyun Yan | DOI=10.4269/ajtmh.20-0254 | PMID=34491227 | URL=https://pubmed.ncbi.nlm.nih.gov/34491227/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-02
+  PMID:34491227 | An Adaptive Intervention Trial Design for Finding the Optimal Integrated Strategies for Malaria Control and Elimination in Africa: A Model Simulation Study. | YEAR=2021 | AUTHORS=Guofa Zhou; Ming-Chieh Lee; Xiaoming Wang; Daibin Zhong; Elizabeth Hemming-Schroeder; Guiyun Yan | DOI=10.4269/ajtmh.20-0254 | PMID=34491227 | URL=https://pubmed.ncbi.nlm.nih.gov/34491227/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-99
 ---
 IDX=3 NS=NS-CAUSAL-003
 TARGET | Effect of an outpatient antimicrobial stewardship intervention on broad-spectrum antibiotic prescribing by primary care pediatricians: a randomized trial. | FIRST=Jeffrey S Gerber | YEAR=2013 | CONTEXT_KEY=PMID:23757082 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/23757082/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-03{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-100{exact_title}
 CANDS=1
-  PMID:23757082 | Effect of an outpatient antimicrobial stewardship intervention on broad-spectrum antibiotic prescribing by primary care pediatricians: a randomized trial. | YEAR=2013 | AUTHORS=Jeffrey S Gerber; Priya A Prasad; Alexander G Fiks; A Russell Localio; Robert W Grundmeier; Louis M Bell; Richard C Wasserman; Ron Keren; Theoklis E Zaoutis | DOI=10.1001/jama.2013.6287 | PMID=23757082 | URL=https://pubmed.ncbi.nlm.nih.gov/23757082/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-03
+  PMID:23757082 | Effect of an outpatient antimicrobial stewardship intervention on broad-spectrum antibiotic prescribing by primary care pediatricians: a randomized trial. | YEAR=2013 | AUTHORS=Jeffrey S Gerber; Priya A Prasad; Alexander G Fiks; A Russell Localio; Robert W Grundmeier; Louis M Bell; Richard C Wasserman; Ron Keren; Theoklis E Zaoutis | DOI=10.1001/jama.2013.6287 | PMID=23757082 | URL=https://pubmed.ncbi.nlm.nih.gov/23757082/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-100
 ---
 IDX=4 NS=NS-CAUSAL-004
 TARGET | Estimating viral prevalence with data fusion for adaptive two-phase pooled sampling. | FIRST=Andrew Hoegh | YEAR=2021 | CONTEXT_KEY=PMID:34707835 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/34707835/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-04{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-101{exact_title}
 CANDS=1
-  PMID:34707835 | Estimating viral prevalence with data fusion for adaptive two-phase pooled sampling. | YEAR=2021 | AUTHORS=Andrew Hoegh; Alison J Peel; Wyatt Madden; Manuel Ruiz Aravena; Aaron Morris; Alex Washburne; Raina K Plowright | DOI=10.1002/ece3.8107 | PMID=34707835 | URL=https://pubmed.ncbi.nlm.nih.gov/34707835/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-04
+  PMID:34707835 | Estimating viral prevalence with data fusion for adaptive two-phase pooled sampling. | YEAR=2021 | AUTHORS=Andrew Hoegh; Alison J Peel; Wyatt Madden; Manuel Ruiz Aravena; Aaron Morris; Alex Washburne; Raina K Plowright | DOI=10.1002/ece3.8107 | PMID=34707835 | URL=https://pubmed.ncbi.nlm.nih.gov/34707835/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-101
 ---
 IDX=5 NS=NS-CAUSAL-005
 TARGET | Bridged treatment comparisons: an illustrative application in HIV treatment. | FIRST=Paul N Zivich | YEAR=2025 | CONTEXT_KEY=PMID:39218437 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/39218437/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-05{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-102{exact_title}
 CANDS=1
-  PMID:39218437 | Bridged treatment comparisons: an illustrative application in HIV treatment. | YEAR=2025 | AUTHORS=Paul N Zivich; Stephen R Cole; Jessie K Edwards; Bonnie E Shook-Sa; Alexander Breskin; Michael G Hudgens | DOI=10.1093/aje/kwae340 | PMID=39218437 | URL=https://pubmed.ncbi.nlm.nih.gov/39218437/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-05
+  PMID:39218437 | Bridged treatment comparisons: an illustrative application in HIV treatment. | YEAR=2025 | AUTHORS=Paul N Zivich; Stephen R Cole; Jessie K Edwards; Bonnie E Shook-Sa; Alexander Breskin; Michael G Hudgens | DOI=10.1093/aje/kwae340 | PMID=39218437 | URL=https://pubmed.ncbi.nlm.nih.gov/39218437/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-102
 ---
 IDX=6 NS=NS-CAUSAL-006
 TARGET | Cost-effectiveness of adolescent pertussis vaccination for the Netherlands: using an individual-based dynamic model. | FIRST=Robin de Vries | YEAR=2010 | CONTEXT_KEY=PMID:20976213 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/20976213/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-06{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-103{exact_title}
 CANDS=1
-  PMID:20976213 | Cost-effectiveness of adolescent pertussis vaccination for the Netherlands: using an individual-based dynamic model. | YEAR=2010 | AUTHORS=Robin de Vries; Mirjam Kretzschmar; Joop F P Schellekens; Florens G A Versteegh; Tjalke A Westra; John J Roord; Maarten J Postma | DOI=10.1371/journal.pone.0013392 | PMID=20976213 | URL=https://pubmed.ncbi.nlm.nih.gov/20976213/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-06
+  PMID:20976213 | Cost-effectiveness of adolescent pertussis vaccination for the Netherlands: using an individual-based dynamic model. | YEAR=2010 | AUTHORS=Robin de Vries; Mirjam Kretzschmar; Joop F P Schellekens; Florens G A Versteegh; Tjalke A Westra; John J Roord; Maarten J Postma | DOI=10.1371/journal.pone.0013392 | PMID=20976213 | URL=https://pubmed.ncbi.nlm.nih.gov/20976213/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-103
 ---
 IDX=7 NS=NS-CAUSAL-007
 TARGET | Cost-effectiveness analysis of various pertussis vaccination strategies primarily aimed at protecting infants in the Netherlands. | FIRST=Tjalke A Westra | YEAR=2010 | CONTEXT_KEY=PMID:20728761 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/20728761/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-07{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-07{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-105{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-104{exact_title}
 CANDS=1
-  PMID:20728761 | Cost-effectiveness analysis of various pertussis vaccination strategies primarily aimed at protecting infants in the Netherlands. | YEAR=2010 | AUTHORS=Tjalke A Westra; Robin de Vries; Johannes J Tamminga; Christophe J Sauboin; Maarten J Postma | DOI=10.1016/j.clinthera.2010.07.017 | PMID=20728761 | URL=https://pubmed.ncbi.nlm.nih.gov/20728761/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-07
+  PMID:20728761 | Cost-effectiveness analysis of various pertussis vaccination strategies primarily aimed at protecting infants in the Netherlands. | YEAR=2010 | AUTHORS=Tjalke A Westra; Robin de Vries; Johannes J Tamminga; Christophe J Sauboin; Maarten J Postma | DOI=10.1016/j.clinthera.2010.07.017 | PMID=20728761 | URL=https://pubmed.ncbi.nlm.nih.gov/20728761/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-105
 ---
 IDX=8 NS=NS-CAUSAL-008
 TARGET | Defining and Estimating Outcomes Directly Averted by a Vaccination Program when Rollout Occurs Over Time. | FIRST=Katherine M Jia | YEAR=2026 | CONTEXT_KEY=PMID:41570185 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/41570185/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-08{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-08{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-107{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-106{exact_title}
 CANDS=2
-  PMID:41570185 | Defining and Estimating Outcomes Directly Averted by a Vaccination Program when Rollout Occurs Over Time. | YEAR=2026 | AUTHORS=Katherine M Jia; Christopher B Boyer; Alyssa Bilinski; Marc Lipsitch | DOI=10.1097/ede.0000000000001953 | PMID=41570185 | URL=https://pubmed.ncbi.nlm.nih.gov/41570185/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-08
-  PMID:41281223 | Defining and Estimating Outcomes Directly Averted by a Vaccination Program when Rollout Occurs Over Time. | YEAR=2025 | AUTHORS=Katherine M Jia; Christopher B Boyer; Alyssa Bilinski; Marc Lipsitch | DOI=10.1001/jamanetworkopen.2021.42725 | PMID=41281223 | URL=https://pubmed.ncbi.nlm.nih.gov/41281223/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-08
+  PMID:41570185 | Defining and Estimating Outcomes Directly Averted by a Vaccination Program when Rollout Occurs Over Time. | YEAR=2026 | AUTHORS=Katherine M Jia; Christopher B Boyer; Alyssa Bilinski; Marc Lipsitch | DOI=10.1097/ede.0000000000001953 | PMID=41570185 | URL=https://pubmed.ncbi.nlm.nih.gov/41570185/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-107
+  PMID:41281223 | Defining and Estimating Outcomes Directly Averted by a Vaccination Program when Rollout Occurs Over Time. | YEAR=2025 | AUTHORS=Katherine M Jia; Christopher B Boyer; Alyssa Bilinski; Marc Lipsitch | DOI=10.1001/jamanetworkopen.2021.42725 | PMID=41281223 | URL=https://pubmed.ncbi.nlm.nih.gov/41281223/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-107
 ---
 IDX=9 NS=NS-CAUSAL-009
 TARGET | G-Computation to Causal Mediation Analysis With Sequential Multiple Mediators-Investigating the Vulnerable Time Window of HBV Activity for the Mechanism of HCV Induced Hepatocellular Carcinoma. | FIRST=An-Shun Tai | YEAR=2021 | CONTEXT_KEY=PMID:35071157 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/35071157/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-09{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-108{exact_title}
 CANDS=1
-  PMID:35071157 | G-Computation to Causal Mediation Analysis With Sequential Multiple Mediators-Investigating the Vulnerable Time Window of HBV Activity for the Mechanism of HCV Induced Hepatocellular Carcinoma. | YEAR=2021 | AUTHORS=An-Shun Tai; Yen-Tsung Huang; Hwai-I Yang; Lauren V Lan; Sheng-Hsuan Lin | DOI=10.3389/fpubh.2021.757942 | PMID=35071157 | URL=https://pubmed.ncbi.nlm.nih.gov/35071157/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-09
+  PMID:35071157 | G-Computation to Causal Mediation Analysis With Sequential Multiple Mediators-Investigating the Vulnerable Time Window of HBV Activity for the Mechanism of HCV Induced Hepatocellular Carcinoma. | YEAR=2021 | AUTHORS=An-Shun Tai; Yen-Tsung Huang; Hwai-I Yang; Lauren V Lan; Sheng-Hsuan Lin | DOI=10.3389/fpubh.2021.757942 | PMID=35071157 | URL=https://pubmed.ncbi.nlm.nih.gov/35071157/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-108
 ---
 IDX=10 NS=NS-CAUSAL-010
 TARGET | Does Partner Selection Mediate the Relationship Between School Attendance and HIV/Herpes Simplex Virus-2 Among Adolescent Girls and Young Women in South Africa: An Analysis of HIV Prevention Trials Network 068 Data. | FIRST=Marie C D Stoner | YEAR=2018 | CONTEXT_KEY=PMID:29847479 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/29847479/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-10{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-10{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-110{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-109{exact_title}
 CANDS=1
-  PMID:29847479 | Does Partner Selection Mediate the Relationship Between School Attendance and HIV/Herpes Simplex Virus-2 Among Adolescent Girls and Young Women in South Africa: An Analysis of HIV Prevention Trials Network 068 Data. | YEAR=2018 | AUTHORS=Marie C D Stoner; Jessie K Edwards; William C Miller; Allison E Aiello; Carolyn T Halpern; Aimée Julien; Katherine B Rucinski; Amanda Selin; Rhian Twine; James P Hughes; Jing Wang; Yaw Agyei; Francesc Xavier Gómez-Olivé; Ryan G Wagner; Oliver Laeyendecker; Catherine Macphail; Kathleen Kahn; Audrey Pettifor | DOI=10.1097/qai.0000000000001766 | PMID=29847479 | URL=https://pubmed.ncbi.nlm.nih.gov/29847479/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-10
+  PMID:29847479 | Does Partner Selection Mediate the Relationship Between School Attendance and HIV/Herpes Simplex Virus-2 Among Adolescent Girls and Young Women in South Africa: An Analysis of HIV Prevention Trials Network 068 Data. | YEAR=2018 | AUTHORS=Marie C D Stoner; Jessie K Edwards; William C Miller; Allison E Aiello; Carolyn T Halpern; Aimée Julien; Katherine B Rucinski; Amanda Selin; Rhian Twine; James P Hughes; Jing Wang; Yaw Agyei; Francesc Xavier Gómez-Olivé; Ryan G Wagner; Oliver Laeyendecker; Catherine Macphail; Kathleen Kahn; Audrey Pettifor | DOI=10.1097/qai.0000000000001766 | PMID=29847479 | URL=https://pubmed.ncbi.nlm.nih.gov/29847479/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-110
 ---
 IDX=11 NS=NS-CAUSAL-011
 TARGET | Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data. | FIRST=Laura M Güdemann | YEAR=2025 | CONTEXT_KEY=PMID:41069648 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/41069648/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-11{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-111{exact_title}
 CANDS=1
-  PMID:41069648 | Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data. | YEAR=2025 | AUTHORS=Laura M Güdemann; John M Dennis; Andrew P McGovern; Lauren R Rodgers; Beverley M Shields; William Henley; Jack Bowden; MASTERMIND consortium | DOI=10.12688/wellcomeopenres.22955.2 | PMID=41069648 | URL=https://pubmed.ncbi.nlm.nih.gov/41069648/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-11
+  PMID:41069648 | Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data. | YEAR=2025 | AUTHORS=Laura M Güdemann; John M Dennis; Andrew P McGovern; Lauren R Rodgers; Beverley M Shields; William Henley; Jack Bowden; MASTERMIND consortium | DOI=10.12688/wellcomeopenres.22955.2 | PMID=41069648 | URL=https://pubmed.ncbi.nlm.nih.gov/41069648/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-111
 ---
 IDX=12 NS=NS-CAUSAL-012
 TARGET | A targeted real-time early warning score (TREWScore) for septic shock. | FIRST=Katharine E Henry | YEAR=2015 | CONTEXT_KEY=PMID:26246167 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/26246167/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-12{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-112{exact_title}
 CANDS=1
-  PMID:26246167 | A targeted real-time early warning score (TREWScore) for septic shock. | YEAR=2015 | AUTHORS=Katharine E Henry; David N Hager; Peter J Pronovost; Suchi Saria | DOI=10.1126/scitranslmed.aab3719 | PMID=26246167 | URL=https://pubmed.ncbi.nlm.nih.gov/26246167/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-12
+  PMID:26246167 | A targeted real-time early warning score (TREWScore) for septic shock. | YEAR=2015 | AUTHORS=Katharine E Henry; David N Hager; Peter J Pronovost; Suchi Saria | DOI=10.1126/scitranslmed.aab3719 | PMID=26246167 | URL=https://pubmed.ncbi.nlm.nih.gov/26246167/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-112
 ---
 IDX=13 NS=NS-CAUSAL-013
 TARGET | Early warning score: a dynamic marker of severity and prognosis in patients with Gram-negative bacteraemia and sepsis. | FIRST=Mahableshwar Albur | YEAR=2016 | CONTEXT_KEY=PMID:27071911 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/27071911/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-13{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-113{exact_title}
 CANDS=1
-  PMID:27071911 | Early warning score: a dynamic marker of severity and prognosis in patients with Gram-negative bacteraemia and sepsis. | YEAR=2016 | AUTHORS=Mahableshwar Albur; Fergus Hamilton; Alasdair P MacGowan | DOI=10.1186/s12941-016-0139-z | PMID=27071911 | URL=https://pubmed.ncbi.nlm.nih.gov/27071911/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-13
+  PMID:27071911 | Early warning score: a dynamic marker of severity and prognosis in patients with Gram-negative bacteraemia and sepsis. | YEAR=2016 | AUTHORS=Mahableshwar Albur; Fergus Hamilton; Alasdair P MacGowan | DOI=10.1186/s12941-016-0139-z | PMID=27071911 | URL=https://pubmed.ncbi.nlm.nih.gov/27071911/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-113
 ---
 IDX=14 NS=NS-CAUSAL-014
 TARGET | The impact of removing financial incentives and/or audit and feedback on chlamydia testing in general practice: A cluster randomised controlled trial (ACCEPt-able). | FIRST=Jane S Hocking | YEAR=2022 | CONTEXT_KEY=PMID:34982767 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/34982767/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-14{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-114{exact_title}
 CANDS=1
-  PMID:34982767 | The impact of removing financial incentives and/or audit and feedback on chlamydia testing in general practice: A cluster randomised controlled trial (ACCEPt-able). | YEAR=2022 | AUTHORS=Jane S Hocking; Anna Wood; Meredith Temple-Smith; Sabine Braat; Matthew Law; Liliana Bulfone; Callum Jones; Mieke van Driel; Christopher K Fairley; Basil Donovan; Rebecca Guy; Nicola Low; John Kaldor; Jane Gunn | DOI=10.1371/journal.pmed.1003858 | PMID=34982767 | URL=https://pubmed.ncbi.nlm.nih.gov/34982767/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-14
+  PMID:34982767 | The impact of removing financial incentives and/or audit and feedback on chlamydia testing in general practice: A cluster randomised controlled trial (ACCEPt-able). | YEAR=2022 | AUTHORS=Jane S Hocking; Anna Wood; Meredith Temple-Smith; Sabine Braat; Matthew Law; Liliana Bulfone; Callum Jones; Mieke van Driel; Christopher K Fairley; Basil Donovan; Rebecca Guy; Nicola Low; John Kaldor; Jane Gunn | DOI=10.1371/journal.pmed.1003858 | PMID=34982767 | URL=https://pubmed.ncbi.nlm.nih.gov/34982767/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-114
 ---
 IDX=15 NS=NS-CAUSAL-015
 TARGET | Multi-faceted intervention to improve management of antibiotics for children presenting to primary care with acute cough and respiratory tract infection (CHICO): efficient cluster randomised controlled trial. | FIRST=Peter S Blair | YEAR=2023 | CONTEXT_KEY=PMID:37100446 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/37100446/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-15{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-115{exact_title}
 CANDS=1
-  PMID:37100446 | Multi-faceted intervention to improve management of antibiotics for children presenting to primary care with acute cough and respiratory tract infection (CHICO): efficient cluster randomised controlled trial. | YEAR=2023 | AUTHORS=Peter S Blair; Grace Young; Clare Clement; P Dixon; Penny Seume; Jenny Ingram; Jodi Taylor; Christie Cabral; Patricia J Lucas; Elizabeth Beech; Jeremy Horwood; Martin Gulliford; Nick A Francis; Sam Creavin; Janet A Lane; Scott Bevan; Alastair D Hay | DOI=10.1136/bmj-2022-072488 | PMID=37100446 | URL=https://pubmed.ncbi.nlm.nih.gov/37100446/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-15
+  PMID:37100446 | Multi-faceted intervention to improve management of antibiotics for children presenting to primary care with acute cough and respiratory tract infection (CHICO): efficient cluster randomised controlled trial. | YEAR=2023 | AUTHORS=Peter S Blair; Grace Young; Clare Clement; P Dixon; Penny Seume; Jenny Ingram; Jodi Taylor; Christie Cabral; Patricia J Lucas; Elizabeth Beech; Jeremy Horwood; Martin Gulliford; Nick A Francis; Sam Creavin; Janet A Lane; Scott Bevan; Alastair D Hay | DOI=10.1136/bmj-2022-072488 | PMID=37100446 | URL=https://pubmed.ncbi.nlm.nih.gov/37100446/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-115
 ---
 IDX=16 NS=NS-CAUSAL-016
 TARGET | The impact of primary health care on AIDS incidence and mortality: A cohort study of 3.4 million Brazilians. | FIRST=Priscila F P S Pinto | YEAR=2024 | CONTEXT_KEY=PMID:38991004 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/38991004/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-16{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-116{exact_title}
 CANDS=1
-  PMID:38991004 | The impact of primary health care on AIDS incidence and mortality: A cohort study of 3.4 million Brazilians. | YEAR=2024 | AUTHORS=Priscila F P S Pinto; James Macinko; Andréa F Silva; Iracema Lua; Gabriela Jesus; Laio Magno; Carlos A S Teles Santos; Maria Yury Ichihara; Mauricio L Barreto; Corrina Moucheraud; Luis E Souza; Inês Dourado; Davide Rasella | DOI=10.1371/journal.pmed.1004302 | PMID=38991004 | URL=https://pubmed.ncbi.nlm.nih.gov/38991004/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-16
+  PMID:38991004 | The impact of primary health care on AIDS incidence and mortality: A cohort study of 3.4 million Brazilians. | YEAR=2024 | AUTHORS=Priscila F P S Pinto; James Macinko; Andréa F Silva; Iracema Lua; Gabriela Jesus; Laio Magno; Carlos A S Teles Santos; Maria Yury Ichihara; Mauricio L Barreto; Corrina Moucheraud; Luis E Souza; Inês Dourado; Davide Rasella | DOI=10.1371/journal.pmed.1004302 | PMID=38991004 | URL=https://pubmed.ncbi.nlm.nih.gov/38991004/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-116
 ---
 IDX=17 NS=NS-CAUSAL-017
 TARGET | Targeting TB or MRSA in Norwegian municipalities during 'the refugee crisis' of 2015: a framework for priority setting in screening. | FIRST=Anders Skyrud Danielsen | YEAR=2019 | CONTEXT_KEY=PMID:31552819 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/31552819/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-17{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-17{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-118{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-117{exact_title}
 CANDS=1
-  PMID:31552819 | Targeting TB or MRSA in Norwegian municipalities during 'the refugee crisis' of 2015: a framework for priority setting in screening. | YEAR=2019 | AUTHORS=Anders Skyrud Danielsen; Petter Elstrøm; Trude Margrete Arnesen; Unni Gopinathan; Oliver Kacelnik | DOI=10.2807/1560-7917.es.2019.24.38.1800676 | PMID=31552819 | URL=https://pubmed.ncbi.nlm.nih.gov/31552819/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-17
+  PMID:31552819 | Targeting TB or MRSA in Norwegian municipalities during 'the refugee crisis' of 2015: a framework for priority setting in screening. | YEAR=2019 | AUTHORS=Anders Skyrud Danielsen; Petter Elstrøm; Trude Margrete Arnesen; Unni Gopinathan; Oliver Kacelnik | DOI=10.2807/1560-7917.es.2019.24.38.1800676 | PMID=31552819 | URL=https://pubmed.ncbi.nlm.nih.gov/31552819/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-118
 ---
 
 exec
@@ -3412,106 +3412,106 @@ exec
 pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
 IDX=18 NS=NS-CAUSAL-018
 TARGET | The comparative interrupted time series design for assessment of diagnostic impact: methodological considerations and an example using point-of-care C-reactive protein testing. | FIRST=Thomas R Fanshawe | YEAR=2022 | CONTEXT_KEY=PMID:35232491 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/35232491/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-18{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-119{exact_title}
 CANDS=1
-  PMID:35232491 | The comparative interrupted time series design for assessment of diagnostic impact: methodological considerations and an example using point-of-care C-reactive protein testing. | YEAR=2022 | AUTHORS=Thomas R Fanshawe; Philip J Turner; Marjorie M Gillespie; Gail N Hayward | DOI=10.1186/s41512-022-00118-w | PMID=35232491 | URL=https://pubmed.ncbi.nlm.nih.gov/35232491/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-18
+  PMID:35232491 | The comparative interrupted time series design for assessment of diagnostic impact: methodological considerations and an example using point-of-care C-reactive protein testing. | YEAR=2022 | AUTHORS=Thomas R Fanshawe; Philip J Turner; Marjorie M Gillespie; Gail N Hayward | DOI=10.1186/s41512-022-00118-w | PMID=35232491 | URL=https://pubmed.ncbi.nlm.nih.gov/35232491/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-119
 ---
 IDX=19 NS=NS-CAUSAL-019
 TARGET | Reducing Clostridium difficile infection in acute care by using an improvement collaborative. | FIRST=Maxine Power | YEAR=2010 | CONTEXT_KEY=PMID:20659985 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/20659985/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-19{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-120{exact_title}
 CANDS=1
-  PMID:20659985 | Reducing Clostridium difficile infection in acute care by using an improvement collaborative. | YEAR=2010 | AUTHORS=Maxine Power; Neil Wigglesworth; Emma Donaldson; Paul Chadwick; Stephen Gillibrand; Donald Goldmann | DOI=10.1136/bmj.c3359 | PMID=20659985 | URL=https://pubmed.ncbi.nlm.nih.gov/20659985/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-19
+  PMID:20659985 | Reducing Clostridium difficile infection in acute care by using an improvement collaborative. | YEAR=2010 | AUTHORS=Maxine Power; Neil Wigglesworth; Emma Donaldson; Paul Chadwick; Stephen Gillibrand; Donald Goldmann | DOI=10.1136/bmj.c3359 | PMID=20659985 | URL=https://pubmed.ncbi.nlm.nih.gov/20659985/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-120
 ---
 IDX=20 NS=NS-CAUSAL-020
 TARGET | COVID-19 underreporting and its impact on vaccination strategies. | FIRST=Vinicius Albani | YEAR=2021 | CONTEXT_KEY=PMID:34711190 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/34711190/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-20{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-20{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-122{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-121{exact_title}
 CANDS=1
-  PMID:34711190 | COVID-19 underreporting and its impact on vaccination strategies. | YEAR=2021 | AUTHORS=Vinicius Albani; Jennifer Loria; Eduardo Massad; Jorge Zubelli | DOI=10.1186/s12879-021-06780-7 | PMID=34711190 | URL=https://pubmed.ncbi.nlm.nih.gov/34711190/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-20
+  PMID:34711190 | COVID-19 underreporting and its impact on vaccination strategies. | YEAR=2021 | AUTHORS=Vinicius Albani; Jennifer Loria; Eduardo Massad; Jorge Zubelli | DOI=10.1186/s12879-021-06780-7 | PMID=34711190 | URL=https://pubmed.ncbi.nlm.nih.gov/34711190/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-122
 ---
 IDX=21 NS=NS-CAUSAL-021
 TARGET | Modelling the impact of extended vaccination strategies on the epidemiology of pertussis. | FIRST=M H Rozenbaum | YEAR=2012 | CONTEXT_KEY=PMID:22115361 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/22115361/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-21{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-123{exact_title}
 CANDS=1
-  PMID:22115361 | Modelling the impact of extended vaccination strategies on the epidemiology of pertussis. | YEAR=2012 | AUTHORS=M H Rozenbaum; R De Vries; H H LE; M J Postma | DOI=10.1017/s0950268811002354 | PMID=22115361 | URL=https://pubmed.ncbi.nlm.nih.gov/22115361/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-21
+  PMID:22115361 | Modelling the impact of extended vaccination strategies on the epidemiology of pertussis. | YEAR=2012 | AUTHORS=M H Rozenbaum; R De Vries; H H LE; M J Postma | DOI=10.1017/s0950268811002354 | PMID=22115361 | URL=https://pubmed.ncbi.nlm.nih.gov/22115361/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-123
 ---
 IDX=22 NS=NS-CAUSAL-022
 TARGET | Dynamic borrowing of historical controls adjusting for covariates in vaccine efficacy clinical trials. | FIRST=Andrea Callegaro | YEAR=2024 | CONTEXT_KEY=PMID:38591424 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/38591424/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-22{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-124{exact_title}
 CANDS=1
-  PMID:38591424 | Dynamic borrowing of historical controls adjusting for covariates in vaccine efficacy clinical trials. | YEAR=2024 | AUTHORS=Andrea Callegaro; Yongyi Luo; Naveen Karkada; Toufik Zahaf | DOI=10.1002/pst.2384 | PMID=38591424 | URL=https://pubmed.ncbi.nlm.nih.gov/38591424/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-22
+  PMID:38591424 | Dynamic borrowing of historical controls adjusting for covariates in vaccine efficacy clinical trials. | YEAR=2024 | AUTHORS=Andrea Callegaro; Yongyi Luo; Naveen Karkada; Toufik Zahaf | DOI=10.1002/pst.2384 | PMID=38591424 | URL=https://pubmed.ncbi.nlm.nih.gov/38591424/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-124
 ---
 IDX=23 NS=NS-CAUSAL-023
 TARGET | Comparative effectiveness of tocilizumab vs standard care in patients with severe COVID-19-related pneumonia: a retrospective cohort study utilizing registry data as a synthetic control. | FIRST=Yukari Uemura | YEAR=2023 | CONTEXT_KEY=PMID:38049729 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/38049729/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-23{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-125{exact_title}
 CANDS=1
-  PMID:38049729 | Comparative effectiveness of tocilizumab vs standard care in patients with severe COVID-19-related pneumonia: a retrospective cohort study utilizing registry data as a synthetic control. | YEAR=2023 | AUTHORS=Yukari Uemura; Ryoto Ozaki; Tomohiro Shinozaki; Hiroshi Ohtsu; Yousuke Shimizu; Kazuo Izumi; Sho Saito; Nobuaki Matsunaga; Norio Ohmagari | DOI=10.1186/s12879-023-08840-6 | PMID=38049729 | URL=https://pubmed.ncbi.nlm.nih.gov/38049729/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-23
+  PMID:38049729 | Comparative effectiveness of tocilizumab vs standard care in patients with severe COVID-19-related pneumonia: a retrospective cohort study utilizing registry data as a synthetic control. | YEAR=2023 | AUTHORS=Yukari Uemura; Ryoto Ozaki; Tomohiro Shinozaki; Hiroshi Ohtsu; Yousuke Shimizu; Kazuo Izumi; Sho Saito; Nobuaki Matsunaga; Norio Ohmagari | DOI=10.1186/s12879-023-08840-6 | PMID=38049729 | URL=https://pubmed.ncbi.nlm.nih.gov/38049729/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-125
 ---
 IDX=24 NS=NS-CAUSAL-024
 TARGET | Long-Term Effectiveness of Financial Incentives for Not Prescribing Unnecessary Antibiotics to Children With Acute Respiratory and Gastrointestinal Infections: Japan's Nationwide Quasi-Experimental Study. | FIRST=Yusuke Okubo | YEAR=2025 | CONTEXT_KEY=PMID:39579079 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/39579079/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-24{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-126{exact_title}
 CANDS=1
-  PMID:39579079 | Long-Term Effectiveness of Financial Incentives for Not Prescribing Unnecessary Antibiotics to Children With Acute Respiratory and Gastrointestinal Infections: Japan's Nationwide Quasi-Experimental Study. | YEAR=2025 | AUTHORS=Yusuke Okubo; Kazuhiro Uda; Isao Miyairi | DOI=10.1093/cid/ciae577 | PMID=39579079 | URL=https://pubmed.ncbi.nlm.nih.gov/39579079/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-24
+  PMID:39579079 | Long-Term Effectiveness of Financial Incentives for Not Prescribing Unnecessary Antibiotics to Children With Acute Respiratory and Gastrointestinal Infections: Japan's Nationwide Quasi-Experimental Study. | YEAR=2025 | AUTHORS=Yusuke Okubo; Kazuhiro Uda; Isao Miyairi | DOI=10.1093/cid/ciae577 | PMID=39579079 | URL=https://pubmed.ncbi.nlm.nih.gov/39579079/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-126
 ---
 IDX=25 NS=NS-CAUSAL-025
 TARGET | A Bayesian approach to synthesize estimates of the size of hidden populations: the Anchored Multiplier. | FIRST=Paul D Wesson | YEAR=2018 | CONTEXT_KEY=PMID:29931067 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/29931067/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-25{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-127{exact_title}
 CANDS=1
-  PMID:29931067 | A Bayesian approach to synthesize estimates of the size of hidden populations: the Anchored Multiplier. | YEAR=2018 | AUTHORS=Paul D Wesson; Ali Mirzazadeh; Willi McFarland | DOI=10.1093/ije/dyy132 | PMID=29931067 | URL=https://pubmed.ncbi.nlm.nih.gov/29931067/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-25
+  PMID:29931067 | A Bayesian approach to synthesize estimates of the size of hidden populations: the Anchored Multiplier. | YEAR=2018 | AUTHORS=Paul D Wesson; Ali Mirzazadeh; Willi McFarland | DOI=10.1093/ije/dyy132 | PMID=29931067 | URL=https://pubmed.ncbi.nlm.nih.gov/29931067/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-127
 ---
 IDX=26 NS=NS-CAUSAL-026
 TARGET | Population Size Estimation of Men Who Have Sex with Men in Tbilisi, Georgia; Multiple Methods and Triangulation of Findings. | FIRST=Lela Sulaberidze | YEAR=2016 | CONTEXT_KEY=PMID:26828366 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/26828366/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-26{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-26{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-129{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-128{exact_title}
 CANDS=1
-  PMID:26828366 | Population Size Estimation of Men Who Have Sex with Men in Tbilisi, Georgia; Multiple Methods and Triangulation of Findings. | YEAR=2016 | AUTHORS=Lela Sulaberidze; Ali Mirzazadeh; Ivdity Chikovani; Natia Shengelia; Nino Tsereteli; George Gotsadze | DOI=10.1371/journal.pone.0147413 | PMID=26828366 | URL=https://pubmed.ncbi.nlm.nih.gov/26828366/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-26
+  PMID:26828366 | Population Size Estimation of Men Who Have Sex with Men in Tbilisi, Georgia; Multiple Methods and Triangulation of Findings. | YEAR=2016 | AUTHORS=Lela Sulaberidze; Ali Mirzazadeh; Ivdity Chikovani; Natia Shengelia; Nino Tsereteli; George Gotsadze | DOI=10.1371/journal.pone.0147413 | PMID=26828366 | URL=https://pubmed.ncbi.nlm.nih.gov/26828366/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-129
 ---
 IDX=27 NS=NS-CAUSAL-027
 TARGET | Physician's preference-based instrumental variable analysis: is it valid and useful in a moderate-sized study? | FIRST=Anna G C Boef | YEAR=2014 | CONTEXT_KEY=PMID:25051311 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/25051311/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-27{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-27{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-131{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-130{exact_title}
 CANDS=2
-  PMID:26605813 | Physician's Prescribing Preference as an Instrumental Variable: Exploring Assumptions Using Survey Data. | YEAR=2016 | AUTHORS=Anna G C Boef; Saskia le Cessie; Olaf M Dekkers; Peter Frey; Patricia M Kearney; Ngaire Kerse; Christian D Mallen; Vera J C McCarthy; Simon P Mooijaart; Christiane Muth; Nicolas Rodondi; Thomas Rosemann; Audrey Russell; Henk Schers; Vanessa Virgini; Margot W M de Waal; Alex Warner; Jacobijn Gussekloo; Wendy P J den Elzen | DOI=10.1097/ede.0000000000000425 | PMID=26605813 | URL=https://pubmed.ncbi.nlm.nih.gov/26605813/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-27
-  PMID:25051311 | Physician's preference-based instrumental variable analysis: is it valid and useful in a moderate-sized study? | YEAR=2014 | AUTHORS=Anna G C Boef; Judith van Paassen; M Sesmu Arbous; Arno Middelkoop; Jan P Vandenbroucke; Saskia le Cessie; Olaf M Dekkers | DOI=10.1097/ede.0000000000000151 | PMID=25051311 | URL=https://pubmed.ncbi.nlm.nih.gov/25051311/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-27
+  PMID:26605813 | Physician's Prescribing Preference as an Instrumental Variable: Exploring Assumptions Using Survey Data. | YEAR=2016 | AUTHORS=Anna G C Boef; Saskia le Cessie; Olaf M Dekkers; Peter Frey; Patricia M Kearney; Ngaire Kerse; Christian D Mallen; Vera J C McCarthy; Simon P Mooijaart; Christiane Muth; Nicolas Rodondi; Thomas Rosemann; Audrey Russell; Henk Schers; Vanessa Virgini; Margot W M de Waal; Alex Warner; Jacobijn Gussekloo; Wendy P J den Elzen | DOI=10.1097/ede.0000000000000425 | PMID=26605813 | URL=https://pubmed.ncbi.nlm.nih.gov/26605813/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-131
+  PMID:25051311 | Physician's preference-based instrumental variable analysis: is it valid and useful in a moderate-sized study? | YEAR=2014 | AUTHORS=Anna G C Boef; Judith van Paassen; M Sesmu Arbous; Arno Middelkoop; Jan P Vandenbroucke; Saskia le Cessie; Olaf M Dekkers | DOI=10.1097/ede.0000000000000151 | PMID=25051311 | URL=https://pubmed.ncbi.nlm.nih.gov/25051311/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-131
 ---
 IDX=28 NS=NS-CAUSAL-028
 TARGET | Analysis of the impact of early surgery on in-hospital mortality of native valve endocarditis: use of propensity score and instrumental variable methods to adjust for treatment-selection bias. | FIRST=Tahaniyat Lalani | YEAR=2010 | CONTEXT_KEY=PMID:20159831 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/20159831/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-28{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-132{exact_title}
 CANDS=1
-  PMID:20159831 | Analysis of the impact of early surgery on in-hospital mortality of native valve endocarditis: use of propensity score and instrumental variable methods to adjust for treatment-selection bias. | YEAR=2010 | AUTHORS=Tahaniyat Lalani; Christopher H Cabell; Daniel K Benjamin; Ovidiu Lasca; Christoph Naber; Vance G Fowler; G Ralph Corey; Vivian H Chu; Michael Fenely; Orathai Pachirat; Ru-San Tan; Richard Watkin; Adina Ionac; Asuncion Moreno; Carlos A Mestres; José Casabé; Natalia Chipigina; Damon P Eisen; Denis Spelman; Francois Delahaye; Gail Peterson; Lars Olaison; Andrew Wang; International Collaboration on Endocarditis-Prospective Cohort Study (ICE-PCS) Investigators | DOI=10.1161/circulationaha.109.864488 | PMID=20159831 | URL=https://pubmed.ncbi.nlm.nih.gov/20159831/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-28
+  PMID:20159831 | Analysis of the impact of early surgery on in-hospital mortality of native valve endocarditis: use of propensity score and instrumental variable methods to adjust for treatment-selection bias. | YEAR=2010 | AUTHORS=Tahaniyat Lalani; Christopher H Cabell; Daniel K Benjamin; Ovidiu Lasca; Christoph Naber; Vance G Fowler; G Ralph Corey; Vivian H Chu; Michael Fenely; Orathai Pachirat; Ru-San Tan; Richard Watkin; Adina Ionac; Asuncion Moreno; Carlos A Mestres; José Casabé; Natalia Chipigina; Damon P Eisen; Denis Spelman; Francois Delahaye; Gail Peterson; Lars Olaison; Andrew Wang; International Collaboration on Endocarditis-Prospective Cohort Study (ICE-PCS) Investigators | DOI=10.1161/circulationaha.109.864488 | PMID=20159831 | URL=https://pubmed.ncbi.nlm.nih.gov/20159831/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-132
 ---
 IDX=29 NS=NS-CAUSAL-029
 TARGET | Integrating Global Public Health Intelligence - Thematic Analysis from WES Synthesis 2025. | FIRST=K I Quintyne | YEAR=2026 | CONTEXT_KEY=PMID:42179337 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/42179337/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-29{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-133{exact_title}
 CANDS=1
-  PMID:42179337 | Integrating Global Public Health Intelligence - Thematic Analysis from WES Synthesis 2025. | YEAR=2026 | AUTHORS=K I Quintyne; R Parlour; M Williams; C Gilbourne; K Andersen; Z McCrystal | DOI= | PMID=42179337 | URL=https://pubmed.ncbi.nlm.nih.gov/42179337/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-29
+  PMID:42179337 | Integrating Global Public Health Intelligence - Thematic Analysis from WES Synthesis 2025. | YEAR=2026 | AUTHORS=K I Quintyne; R Parlour; M Williams; C Gilbourne; K Andersen; Z McCrystal | DOI= | PMID=42179337 | URL=https://pubmed.ncbi.nlm.nih.gov/42179337/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-133
 ---
 IDX=30 NS=NS-CAUSAL-030
 TARGET | Modelling interrupted time series to evaluate prevention and control of infection in healthcare. | FIRST=V Gebski | YEAR=2012 | CONTEXT_KEY=PMID:22335933 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/22335933/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-30{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-134{exact_title}
 CANDS=1
-  PMID:22335933 | Modelling interrupted time series to evaluate prevention and control of infection in healthcare. | YEAR=2012 | AUTHORS=V Gebski; K Ellingson; J Edwards; J Jernigan; D Kleinbaum | DOI=10.1017/s0950268812000179 | PMID=22335933 | URL=https://pubmed.ncbi.nlm.nih.gov/22335933/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-30
+  PMID:22335933 | Modelling interrupted time series to evaluate prevention and control of infection in healthcare. | YEAR=2012 | AUTHORS=V Gebski; K Ellingson; J Edwards; J Jernigan; D Kleinbaum | DOI=10.1017/s0950268812000179 | PMID=22335933 | URL=https://pubmed.ncbi.nlm.nih.gov/22335933/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-134
 ---
 IDX=31 NS=NS-CAUSAL-031
 TARGET | Impact of an intervention to control Clostridium difficile infection on hospital- and community-onset disease; an interrupted time series analysis. | FIRST=J Price | YEAR=2010 | CONTEXT_KEY=PMID:19832710 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/19832710/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-31{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-135{exact_title}
 CANDS=1
-  PMID:19832710 | Impact of an intervention to control Clostridium difficile infection on hospital- and community-onset disease; an interrupted time series analysis. | YEAR=2010 | AUTHORS=J Price; E Cheek; S Lippett; M Cubbon; D N Gerding; S P Sambol; D M Citron; M Llewelyn | DOI=10.1111/j.1469-0691.2009.03077.x | PMID=19832710 | URL=https://pubmed.ncbi.nlm.nih.gov/19832710/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-31
+  PMID:19832710 | Impact of an intervention to control Clostridium difficile infection on hospital- and community-onset disease; an interrupted time series analysis. | YEAR=2010 | AUTHORS=J Price; E Cheek; S Lippett; M Cubbon; D N Gerding; S P Sambol; D M Citron; M Llewelyn | DOI=10.1111/j.1469-0691.2009.03077.x | PMID=19832710 | URL=https://pubmed.ncbi.nlm.nih.gov/19832710/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-135
 ---
 IDX=32 NS=NS-CAUSAL-032
 TARGET | Pneumococcal serotypes in children in 4 European countries. | FIRST=Germaine Hanquet | YEAR=2010 | CONTEXT_KEY=PMID:20735928 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/20735928/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-32{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-136{exact_title}
 CANDS=1
-  PMID:20735928 | Pneumococcal serotypes in children in 4 European countries. | YEAR=2010 | AUTHORS=Germaine Hanquet; Esther Kissling; Asuncion Fenoll; Robert George; Agnes Lepoutre; Tinne Lernout; David Tarragó; Emmanuelle Varon; Jan Verhaegen | DOI=10.3201/eid1609.100102 | PMID=20735928 | URL=https://pubmed.ncbi.nlm.nih.gov/20735928/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-32
+  PMID:20735928 | Pneumococcal serotypes in children in 4 European countries. | YEAR=2010 | AUTHORS=Germaine Hanquet; Esther Kissling; Asuncion Fenoll; Robert George; Agnes Lepoutre; Tinne Lernout; David Tarragó; Emmanuelle Varon; Jan Verhaegen | DOI=10.3201/eid1609.100102 | PMID=20735928 | URL=https://pubmed.ncbi.nlm.nih.gov/20735928/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-136
 ---
 IDX=33 NS=NS-CAUSAL-033
 TARGET | Impact of conjugate 7-valent vaccination in Belgium: addressing methodological challenges. | FIRST=Germaine Hanquet | YEAR=2011 | CONTEXT_KEY=PMID:21342667 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/21342667/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-33{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-137{exact_title}
 CANDS=1
-  PMID:21342667 | Impact of conjugate 7-valent vaccination in Belgium: addressing methodological challenges. | YEAR=2011 | AUTHORS=Germaine Hanquet; Tinne Lernout; Anne Vergison; Jan Verhaegen; Esther Kissling; David Tuerlinckx; Anne Malfroot; Béatrice Swennen; Martine Sabbe; Belgian IPD Scientific Committee | DOI=10.1016/j.vaccine.2011.02.016 | PMID=21342667 | URL=https://pubmed.ncbi.nlm.nih.gov/21342667/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-33
+  PMID:21342667 | Impact of conjugate 7-valent vaccination in Belgium: addressing methodological challenges. | YEAR=2011 | AUTHORS=Germaine Hanquet; Tinne Lernout; Anne Vergison; Jan Verhaegen; Esther Kissling; David Tuerlinckx; Anne Malfroot; Béatrice Swennen; Martine Sabbe; Belgian IPD Scientific Committee | DOI=10.1016/j.vaccine.2011.02.016 | PMID=21342667 | URL=https://pubmed.ncbi.nlm.nih.gov/21342667/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-137
 ---
 IDX=34 NS=NS-CAUSAL-034
 TARGET | Relationship between changing malaria burden and low birth weight in sub-Saharan Africa: A difference-in-differences study via a pair-of-pairs approach. | FIRST=Siyu Heng | YEAR=2021 | CONTEXT_KEY=PMID:34259625 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/34259625/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-34{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-34{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-139{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-138{exact_title}
 CANDS=1
-  PMID:34259625 | Relationship between changing malaria burden and low birth weight in sub-Saharan Africa: A difference-in-differences study via a pair-of-pairs approach. | YEAR=2021 | AUTHORS=Siyu Heng; Wendy P O'Meara; Ryan A Simmons; Dylan S Small | DOI=10.7554/elife.65133 | PMID=34259625 | URL=https://pubmed.ncbi.nlm.nih.gov/34259625/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-34
+  PMID:34259625 | Relationship between changing malaria burden and low birth weight in sub-Saharan Africa: A difference-in-differences study via a pair-of-pairs approach. | YEAR=2021 | AUTHORS=Siyu Heng; Wendy P O'Meara; Ryan A Simmons; Dylan S Small | DOI=10.7554/elife.65133 | PMID=34259625 | URL=https://pubmed.ncbi.nlm.nih.gov/34259625/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-139
 ---
 
 exec
@@ -3520,100 +3520,100 @@ exec
 pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
 IDX=35 NS=NS-CAUSAL-035
 TARGET | Do parental involvement laws deter risky teen sex? | FIRST=Silvie Colman | YEAR=2013 | CONTEXT_KEY=PMID:23892483 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/23892483/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-35{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-35{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-141{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-140{exact_title}
 CANDS=1
-  PMID:23892483 | Do parental involvement laws deter risky teen sex? | YEAR=2013 | AUTHORS=Silvie Colman; Thomas S Dee; Ted Joyce | DOI=10.1016/j.jhealeco.2013.06.003 | PMID=23892483 | URL=https://pubmed.ncbi.nlm.nih.gov/23892483/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-35
+  PMID:23892483 | Do parental involvement laws deter risky teen sex? | YEAR=2013 | AUTHORS=Silvie Colman; Thomas S Dee; Ted Joyce | DOI=10.1016/j.jhealeco.2013.06.003 | PMID=23892483 | URL=https://pubmed.ncbi.nlm.nih.gov/23892483/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-141
 ---
 IDX=36 NS=NS-CAUSAL-036
 TARGET | Using marginal structural measurement-error models to estimate the long-term effect of antiretroviral therapy on incident AIDS or death. | FIRST=Stephen R Cole | YEAR=2010 | CONTEXT_KEY=PMID:19934191 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/19934191/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-36{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-142{exact_title}
 CANDS=1
-  PMID:19934191 | Using marginal structural measurement-error models to estimate the long-term effect of antiretroviral therapy on incident AIDS or death. | YEAR=2010 | AUTHORS=Stephen R Cole; Lisa P Jacobson; Phyllis C Tien; Lawrence Kingsley; Joan S Chmiel; Kathryn Anastos | DOI=10.1093/aje/kwp329 | PMID=19934191 | URL=https://pubmed.ncbi.nlm.nih.gov/19934191/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-36
+  PMID:19934191 | Using marginal structural measurement-error models to estimate the long-term effect of antiretroviral therapy on incident AIDS or death. | YEAR=2010 | AUTHORS=Stephen R Cole; Lisa P Jacobson; Phyllis C Tien; Lawrence Kingsley; Joan S Chmiel; Kathryn Anastos | DOI=10.1093/aje/kwp329 | PMID=19934191 | URL=https://pubmed.ncbi.nlm.nih.gov/19934191/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-142
 ---
 IDX=37 NS=NS-CAUSAL-037
 TARGET | An information criterion for marginal structural models. | FIRST=Robert W Platt | YEAR=2013 | CONTEXT_KEY=PMID:22972662 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/22972662/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-37{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-143{exact_title}
 CANDS=2
-  PMID:23943549 | Comments on 'An information criterion for marginal structural models' by R. W. Platt, M. A. Brookhart, S. R. Cole, D. Westreich, and E. F. Schisterman. | YEAR=2013 | AUTHORS=Masataka Taguri; Yutaka Matsuyama | DOI=10.1002/sim.5810 | PMID=23943549 | URL=https://pubmed.ncbi.nlm.nih.gov/23943549/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-37
-  PMID:22972662 | An information criterion for marginal structural models. | YEAR=2013 | AUTHORS=Robert W Platt; M Alan Brookhart; Stephen R Cole; Daniel Westreich; Enrique F Schisterman | DOI=10.1002/sim.5599 | PMID=22972662 | URL=https://pubmed.ncbi.nlm.nih.gov/22972662/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-37
+  PMID:23943549 | Comments on 'An information criterion for marginal structural models' by R. W. Platt, M. A. Brookhart, S. R. Cole, D. Westreich, and E. F. Schisterman. | YEAR=2013 | AUTHORS=Masataka Taguri; Yutaka Matsuyama | DOI=10.1002/sim.5810 | PMID=23943549 | URL=https://pubmed.ncbi.nlm.nih.gov/23943549/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-143
+  PMID:22972662 | An information criterion for marginal structural models. | YEAR=2013 | AUTHORS=Robert W Platt; M Alan Brookhart; Stephen R Cole; Daniel Westreich; Enrique F Schisterman | DOI=10.1002/sim.5599 | PMID=22972662 | URL=https://pubmed.ncbi.nlm.nih.gov/22972662/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-143
 ---
 IDX=38 NS=NS-CAUSAL-038
 TARGET | A Big Data and FRAM-Based Model for Epidemic Risk Analysis of Infectious Diseases. | FIRST=Junhua Zhu | YEAR=2024 | CONTEXT_KEY=PMID:39224172 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/39224172/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-38{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-144{exact_title}
 CANDS=1
-  PMID:39224172 | A Big Data and FRAM-Based Model for Epidemic Risk Analysis of Infectious Diseases. | YEAR=2024 | AUTHORS=Junhua Zhu; Yue Zhuang; Wenjing Li | DOI=10.2147/rmhp.s476794 | PMID=39224172 | URL=https://pubmed.ncbi.nlm.nih.gov/39224172/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-38
+  PMID:39224172 | A Big Data and FRAM-Based Model for Epidemic Risk Analysis of Infectious Diseases. | YEAR=2024 | AUTHORS=Junhua Zhu; Yue Zhuang; Wenjing Li | DOI=10.2147/rmhp.s476794 | PMID=39224172 | URL=https://pubmed.ncbi.nlm.nih.gov/39224172/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-144
 ---
 IDX=39 NS=NS-CAUSAL-039
 TARGET | A Machine Learning Framework for Meat Safety Risk Assessment with Cross-Domain Data Fusion. | FIRST=Liying Wu | YEAR=2026 | CONTEXT_KEY=PMID:42092440 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/42092440/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-39{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-145{exact_title}
 CANDS=1
-  PMID:42092440 | A Machine Learning Framework for Meat Safety Risk Assessment with Cross-Domain Data Fusion. | YEAR=2026 | AUTHORS=Liying Wu; Yanna Ke; Yiming Huang; Xiaosheng Wang; Chuanhai Ding; Xin Wang; Yu Ge | DOI=10.1016/j.jfp.2026.100802 | PMID=42092440 | URL=https://pubmed.ncbi.nlm.nih.gov/42092440/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-39
+  PMID:42092440 | A Machine Learning Framework for Meat Safety Risk Assessment with Cross-Domain Data Fusion. | YEAR=2026 | AUTHORS=Liying Wu; Yanna Ke; Yiming Huang; Xiaosheng Wang; Chuanhai Ding; Xin Wang; Yu Ge | DOI=10.1016/j.jfp.2026.100802 | PMID=42092440 | URL=https://pubmed.ncbi.nlm.nih.gov/42092440/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-145
 ---
 IDX=40 NS=NS-CAUSAL-040
 TARGET | iCovidCare: Intelligent health monitoring framework for COVID-19 using ensemble random forest in edge networks. | FIRST=Mainak Adhikari | YEAR=2021 | CONTEXT_KEY=PMID:38620813 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/38620813/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-40{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-146{exact_title}
 CANDS=1
-  PMID:38620813 | iCovidCare: Intelligent health monitoring framework for COVID-19 using ensemble random forest in edge networks. | YEAR=2021 | AUTHORS=Mainak Adhikari; Ambigavathi Munusamy | DOI=10.1016/j.iot.2021.100385 | PMID=38620813 | URL=https://pubmed.ncbi.nlm.nih.gov/38620813/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-40
+  PMID:38620813 | iCovidCare: Intelligent health monitoring framework for COVID-19 using ensemble random forest in edge networks. | YEAR=2021 | AUTHORS=Mainak Adhikari; Ambigavathi Munusamy | DOI=10.1016/j.iot.2021.100385 | PMID=38620813 | URL=https://pubmed.ncbi.nlm.nih.gov/38620813/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-146
 ---
 IDX=41 NS=NS-CAUSAL-041
 TARGET | Construction and effectiveness test of multimodal data fusion prediction model for intracranial infection after severe craniocerebral injury in children based on deep learning. | FIRST=Peiliang Zhang | YEAR=2025 | CONTEXT_KEY=PMID:41272576 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/41272576/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-41{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-147{exact_title}
 CANDS=1
-  PMID:41272576 | Construction and effectiveness test of multimodal data fusion prediction model for intracranial infection after severe craniocerebral injury in children based on deep learning. | YEAR=2025 | AUTHORS=Peiliang Zhang; Wenbo Zhang; Jianbin Weng; Zhipeng Shen | DOI=10.1186/s12883-025-04502-z | PMID=41272576 | URL=https://pubmed.ncbi.nlm.nih.gov/41272576/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-41
+  PMID:41272576 | Construction and effectiveness test of multimodal data fusion prediction model for intracranial infection after severe craniocerebral injury in children based on deep learning. | YEAR=2025 | AUTHORS=Peiliang Zhang; Wenbo Zhang; Jianbin Weng; Zhipeng Shen | DOI=10.1186/s12883-025-04502-z | PMID=41272576 | URL=https://pubmed.ncbi.nlm.nih.gov/41272576/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-147
 ---
 IDX=42 NS=NS-CAUSAL-042
 TARGET | Characterizing vaccine-associated risks using cubic smoothing splines. | FIRST=M Alan Brookhart | YEAR=2012 | CONTEXT_KEY=PMID:23100246 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/23100246/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-42{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-148{exact_title}
 CANDS=1
-  PMID:23100246 | Characterizing vaccine-associated risks using cubic smoothing splines. | YEAR=2012 | AUTHORS=M Alan Brookhart; Alexander M Walker; Yun Lu; Laura Polakowski; Jie Li; Corrie Paeglow; Tosmai Puenpatom; Hector Izurieta; Gregory W Daniel | DOI=10.1093/aje/kws158 | PMID=23100246 | URL=https://pubmed.ncbi.nlm.nih.gov/23100246/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-42
+  PMID:23100246 | Characterizing vaccine-associated risks using cubic smoothing splines. | YEAR=2012 | AUTHORS=M Alan Brookhart; Alexander M Walker; Yun Lu; Laura Polakowski; Jie Li; Corrie Paeglow; Tosmai Puenpatom; Hector Izurieta; Gregory W Daniel | DOI=10.1093/aje/kws158 | PMID=23100246 | URL=https://pubmed.ncbi.nlm.nih.gov/23100246/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-148
 ---
 IDX=43 NS=NS-CAUSAL-043
 TARGET | Upgrading a piped water supply from intermittent to continuous delivery and association with waterborne illness: a matched cohort study in urban India. | FIRST=Ayse Ercumen | YEAR=2015 | CONTEXT_KEY=PMID:26505897 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/26505897/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-43{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-149{exact_title}
 CANDS=1
-  PMID:26505897 | Upgrading a piped water supply from intermittent to continuous delivery and association with waterborne illness: a matched cohort study in urban India. | YEAR=2015 | AUTHORS=Ayse Ercumen; Benjamin F Arnold; Emily Kumpel; Zachary Burt; Isha Ray; Kara Nelson; John M Colford | DOI=10.1371/journal.pmed.1001892 | PMID=26505897 | URL=https://pubmed.ncbi.nlm.nih.gov/26505897/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-43
+  PMID:26505897 | Upgrading a piped water supply from intermittent to continuous delivery and association with waterborne illness: a matched cohort study in urban India. | YEAR=2015 | AUTHORS=Ayse Ercumen; Benjamin F Arnold; Emily Kumpel; Zachary Burt; Isha Ray; Kara Nelson; John M Colford | DOI=10.1371/journal.pmed.1001892 | PMID=26505897 | URL=https://pubmed.ncbi.nlm.nih.gov/26505897/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-149
 ---
 IDX=44 NS=NS-CAUSAL-044
 TARGET | Progress and gaps in antimicrobial resistance research within One Health sectors in China: a systematic analysis. | FIRST=Cai Chen | YEAR=2025 | CONTEXT_KEY=PMID:40681821 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/40681821/
-QUERIES=2: SEARCH-20260718-LINEAGE-CAUSAL-44{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-44{exact_title}
+QUERIES=2: SEARCH-20260722-LINEAGE-CAUSAL-151{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-150{exact_title}
 CANDS=1
-  PMID:40681821 | Progress and gaps in antimicrobial resistance research within One Health sectors in China: a systematic analysis. | YEAR=2025 | AUTHORS=Cai Chen; Shu-Le Li; Jue Liu; Sabiha Y Essack; Yi Luo; Mui-Choo Jong; Xiang-Yu Dai; Yao-Yang Xu; Lise Korsten; David W Graham; Yong-Guan Zhu | DOI=10.1007/s11427-025-2955-6 | PMID=40681821 | URL=https://pubmed.ncbi.nlm.nih.gov/40681821/ | QUERY=SEARCH-20260718-LINEAGE-CAUSAL-44
+  PMID:40681821 | Progress and gaps in antimicrobial resistance research within One Health sectors in China: a systematic analysis. | YEAR=2025 | AUTHORS=Cai Chen; Shu-Le Li; Jue Liu; Sabiha Y Essack; Yi Luo; Mui-Choo Jong; Xiang-Yu Dai; Yao-Yang Xu; Lise Korsten; David W Graham; Yong-Guan Zhu | DOI=10.1007/s11427-025-2955-6 | PMID=40681821 | URL=https://pubmed.ncbi.nlm.nih.gov/40681821/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-151
 ---
 IDX=45 NS=NS-CAUSAL-045
 TARGET | Identifiability and Estimation Under the Test-negative Design With Population Controls With the Goal of Identifying Risk and Preventive Factors for SARS-CoV-2 Infection. | FIRST=Mireille E Schnitzer | YEAR=2021 | CONTEXT_KEY=PMID:34183531 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/34183531/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-45{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-152{exact_title}
 CANDS=1
-  PMID:34183531 | Identifiability and Estimation Under the Test-negative Design With Population Controls With the Goal of Identifying Risk and Preventive Factors for SARS-CoV-2 Infection. | YEAR=2021 | AUTHORS=Mireille E Schnitzer; Daphna Harel; Vikki Ho; Anita Koushik; Joanna Merckx | DOI=10.1097/ede.0000000000001385 | PMID=34183531 | URL=https://pubmed.ncbi.nlm.nih.gov/34183531/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-45
+  PMID:34183531 | Identifiability and Estimation Under the Test-negative Design With Population Controls With the Goal of Identifying Risk and Preventive Factors for SARS-CoV-2 Infection. | YEAR=2021 | AUTHORS=Mireille E Schnitzer; Daphna Harel; Vikki Ho; Anita Koushik; Joanna Merckx | DOI=10.1097/ede.0000000000001385 | PMID=34183531 | URL=https://pubmed.ncbi.nlm.nih.gov/34183531/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-152
 ---
 IDX=46 NS=NS-CAUSAL-046
 TARGET | Risk of surgical site infection, acute kidney injury, and Clostridium difficile infection following antibiotic prophylaxis with vancomycin plus a beta-lactam versus either drug alone: A national propensity-score-adjusted retrospective cohort study. | FIRST=Westyn Branch-Elliman | YEAR=2017 | CONTEXT_KEY=PMID:28692690 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/28692690/
-QUERIES=3: SEARCH-20260717-LINEAGE-CAUSAL-01{method_author_year}; SEARCH-20260718-LINEAGE-CAUSAL-46{title_first_author}; SEARCH-20260719-LINEAGE-CAUSAL-46{exact_title}
+QUERIES=3: SEARCH-20260722-LINEAGE-CAUSAL-216{method_author_year}; SEARCH-20260722-LINEAGE-CAUSAL-154{title_first_author}; SEARCH-20260722-LINEAGE-CAUSAL-153{exact_title}
 CANDS=1
-  PMID:28692690 | Risk of surgical site infection, acute kidney injury, and Clostridium difficile infection following antibiotic prophylaxis with vancomycin plus a beta-lactam versus either drug alone: A national propensity-score-adjusted retrospective cohort study. | YEAR=2017 | AUTHORS=Westyn Branch-Elliman; John E Ripollone; William J O'Brien; Kamal M F Itani; Marin L Schweizer; Eli Perencevich; Judith Strymish; Kalpana Gupta | DOI=10.1371/journal.pmed.1002340 | PMID=28692690 | URL=https://pubmed.ncbi.nlm.nih.gov/28692690/ | QUERY=SEARCH-20260717-LINEAGE-CAUSAL-01
+  PMID:28692690 | Risk of surgical site infection, acute kidney injury, and Clostridium difficile infection following antibiotic prophylaxis with vancomycin plus a beta-lactam versus either drug alone: A national propensity-score-adjusted retrospective cohort study. | YEAR=2017 | AUTHORS=Westyn Branch-Elliman; John E Ripollone; William J O'Brien; Kamal M F Itani; Marin L Schweizer; Eli Perencevich; Judith Strymish; Kalpana Gupta | DOI=10.1371/journal.pmed.1002340 | PMID=28692690 | URL=https://pubmed.ncbi.nlm.nih.gov/28692690/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-216
 ---
 IDX=47 NS=NS-CAUSAL-047
 TARGET | Social determinants of adult COVID-19 vaccine acceptance and uptake in a Brazilian urban informal community: a longitudinal time-to-event study. | FIRST=Murilo Dorión | YEAR=2023 | CONTEXT_KEY=PMID:38076979 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/38076979/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-47{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-155{exact_title}
 CANDS=1
-  PMID:38076979 | Social determinants of adult COVID-19 vaccine acceptance and uptake in a Brazilian urban informal community: a longitudinal time-to-event study. | YEAR=2023 | AUTHORS=Murilo Dorión; Juan Pablo A Ticona; Mariam O Fofona; Margaret L Lind; Nivison Nery; Renato Victoriano; Ananias S do Aragão Filho; Mitermayer G Reis; Federico Costa; Albert I Ko | DOI=10.1101/2023.11.28.23298927 | PMID=38076979 | URL=https://pubmed.ncbi.nlm.nih.gov/38076979/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-47
+  PMID:38076979 | Social determinants of adult COVID-19 vaccine acceptance and uptake in a Brazilian urban informal community: a longitudinal time-to-event study. | YEAR=2023 | AUTHORS=Murilo Dorión; Juan Pablo A Ticona; Mariam O Fofona; Margaret L Lind; Nivison Nery; Renato Victoriano; Ananias S do Aragão Filho; Mitermayer G Reis; Federico Costa; Albert I Ko | DOI=10.1101/2023.11.28.23298927 | PMID=38076979 | URL=https://pubmed.ncbi.nlm.nih.gov/38076979/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-155
 ---
 IDX=48 NS=NS-CAUSAL-048
 TARGET | Long-term Cardiovascular, Cerebrovascular, and Other Thrombotic Complications in COVID-19 Survivors: A Retrospective Cohort Study. | FIRST=Jue Tao Lim | YEAR=2024 | CONTEXT_KEY=PMID:37746872 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/37746872/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-48{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-156{exact_title}
 CANDS=1
-  PMID:37746872 | Long-term Cardiovascular, Cerebrovascular, and Other Thrombotic Complications in COVID-19 Survivors: A Retrospective Cohort Study. | YEAR=2024 | AUTHORS=Jue Tao Lim; Wee Liang En; An Ting Tay; Deanette Pang; Calvin J Chiew; Benjamin Ong; David Chien Boon Lye; Kelvin Bryan Tan | DOI=10.1093/cid/ciad469 | PMID=37746872 | URL=https://pubmed.ncbi.nlm.nih.gov/37746872/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-48
+  PMID:37746872 | Long-term Cardiovascular, Cerebrovascular, and Other Thrombotic Complications in COVID-19 Survivors: A Retrospective Cohort Study. | YEAR=2024 | AUTHORS=Jue Tao Lim; Wee Liang En; An Ting Tay; Deanette Pang; Calvin J Chiew; Benjamin Ong; David Chien Boon Lye; Kelvin Bryan Tan | DOI=10.1093/cid/ciad469 | PMID=37746872 | URL=https://pubmed.ncbi.nlm.nih.gov/37746872/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-156
 ---
 IDX=49 NS=NS-CAUSAL-049
 TARGET | Impact of health insurance coverage for Helicobacter pylori gastritis on the trends in eradication therapy in Japan: retrospective observational study and simulation study based on real-world data. | FIRST=Shinzo Hiroi | YEAR=2017 | CONTEXT_KEY=PMID:28760790 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/28760790/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-49{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-157{exact_title}
 CANDS=1
-  PMID:28760790 | Impact of health insurance coverage for Helicobacter pylori gastritis on the trends in eradication therapy in Japan: retrospective observational study and simulation study based on real-world data. | YEAR=2017 | AUTHORS=Shinzo Hiroi; Kentaro Sugano; Shiro Tanaka; Koji Kawakami | DOI=10.1136/bmjopen-2017-015855 | PMID=28760790 | URL=https://pubmed.ncbi.nlm.nih.gov/28760790/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-49
+  PMID:28760790 | Impact of health insurance coverage for Helicobacter pylori gastritis on the trends in eradication therapy in Japan: retrospective observational study and simulation study based on real-world data. | YEAR=2017 | AUTHORS=Shinzo Hiroi; Kentaro Sugano; Shiro Tanaka; Koji Kawakami | DOI=10.1136/bmjopen-2017-015855 | PMID=28760790 | URL=https://pubmed.ncbi.nlm.nih.gov/28760790/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-157
 ---
 IDX=50 NS=NS-CAUSAL-050
 TARGET | The 2016 California policy to eliminate nonmedical vaccine exemptions and changes in vaccine coverage: An empirical policy analysis. | FIRST=Sindiso Nyathi | YEAR=2019 | CONTEXT_KEY=PMID:31869328 | CONTEXT_URL=https://pubmed.ncbi.nlm.nih.gov/31869328/
-QUERIES=1: SEARCH-20260719-LINEAGE-CAUSAL-50{exact_title}
+QUERIES=1: SEARCH-20260722-LINEAGE-CAUSAL-158{exact_title}
 CANDS=1
-  PMID:31869328 | The 2016 California policy to eliminate nonmedical vaccine exemptions and changes in vaccine coverage: An empirical policy analysis. | YEAR=2019 | AUTHORS=Sindiso Nyathi; Hannah C Karpel; Kristin L Sainani; Yvonne Maldonado; Peter J Hotez; Eran Bendavid; Nathan C Lo | DOI=10.1371/journal.pmed.1002994 | PMID=31869328 | URL=https://pubmed.ncbi.nlm.nih.gov/31869328/ | QUERY=SEARCH-20260719-LINEAGE-CAUSAL-50
+  PMID:31869328 | The 2016 California policy to eliminate nonmedical vaccine exemptions and changes in vaccine coverage: An empirical policy analysis. | YEAR=2019 | AUTHORS=Sindiso Nyathi; Hannah C Karpel; Kristin L Sainani; Yvonne Maldonado; Peter J Hotez; Eran Bendavid; Nathan C Lo | DOI=10.1371/journal.pmed.1002994 | PMID=31869328 | URL=https://pubmed.ncbi.nlm.nih.gov/31869328/ | QUERY=SEARCH-20260722-LINEAGE-CAUSAL-158
 ---
 
 exec

@@ -5,14 +5,26 @@
 - Family: `forecasting_dynamics`
 - Verification state: `discovery`
 - Assigned retained records: 25
-- Named lineage sources: 2
-- Unresolved lineage identities: 0
+- Assigned keyset SHA256: `3245a651a6532a29236e1697924d668f2b43a348ca64259e69f3b5334a59d033`
+- Named lineage sources: 3
+- Unresolved selected identities: 0
+
+## Source-role closure
+
+- original_candidate: not_directly_named_in_inspected_evidence
+- authoritative_candidate: named_source_queried
+- correction: not_directly_named_in_inspected_evidence
+- diagnostic: named_source_queried
+- guidance: named_source_queried
+- implementation: not_directly_named_in_inspected_evidence
+- infectious_application: not_directly_named_in_inspected_evidence
 
 ## Audited identity outcomes
 
-- NS-FORECASTING-050 | role=authoritative_candidate | status=resolved_identity_role_unverified | identity=PMID:21569721 | searches=SEARCH-20260718-LINEAGE-FORECASTING-50|SEARCH-20260719-LINEAGE-FORECASTING-50 | URL=https://pubmed.ncbi.nlm.nih.gov/21569721/
-- NS-FORECASTING-051 | role=infectious_application | status=resolved_identity_role_unverified | identity=PMID:22093879 | searches=SEARCH-20260719-LINEAGE-FORECASTING-51 | URL=https://pubmed.ncbi.nlm.nih.gov/22093879/
+- NS-FORECASTING-050 | role=diagnostic | status=resolved_identity_role_unverified | identity=PMID:21569721 | searches=SEARCH-20260722-LINEAGE-FORECASTING-146|SEARCH-20260722-LINEAGE-FORECASTING-147 | URL=https://pubmed.ncbi.nlm.nih.gov/21569721/
+- NS-FORECASTING-122 | role=authoritative_candidate | status=resolved_identity_role_unverified | identity=PMID:28095468 | searches=SEARCH-20260722-LINEAGE-FORECASTING-227 | URL=https://pubmed.ncbi.nlm.nih.gov/28095468/
+- NS-FORECASTING-123 | role=guidance | status=resolved_identity_role_unverified | identity=PMID:36158746 | searches=SEARCH-20260722-LINEAGE-FORECASTING-228 | URL=https://pubmed.ncbi.nlm.nih.gov/36158746/
 
 ## Boundary
 
-These are 100% audited bibliographic identity outcomes. Source role, priority, and substantive claims remain unverified and must not be copied into `paper_method_links.csv` before primary-source verification.
+These are independently audited bibliographic identity outcomes and explicit per-role discovery closures. Source role, priority, and substantive claims remain unverified and must not be copied into `paper_method_links.csv` before primary-source verification.

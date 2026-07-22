@@ -1646,14 +1646,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-06",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-40",
         "query_variant": "exact_title",
         "query": "Allocating[Title] AND scarce[Title] AND financial[Title] AND resources[Title] AND HIV[Title] AND treatment[Title] AND benchmarking[Title] AND prices[Title] AND antiretroviral[Title] AND medicines[Title] AND Latin[Title] AND America[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-06",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-40",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22367770",
         "candidate_rank": "1",
@@ -1681,19 +1681,19 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-07",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-42",
         "query_variant": "title_first_author",
         "query": "identifies[Title] AND ulcerative[Title] AND mortality[Title] AND learning[Title] AND Roy[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-07",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-41",
         "query_variant": "exact_title",
         "query": "machine[Title] AND learning[Title] AND approach[Title] AND identifies[Title] AND 5[Title] AND ASA[Title] AND ulcerative[Title] AND colitis[Title] AND being[Title] AND linked[Title] AND higher[Title] AND COVID[Title] AND 19[Title] AND mortality[Title] AND patients[Title] AND IBD[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-07",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-42",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:34389789",
         "candidate_rank": "1",
@@ -1721,19 +1721,19 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-08",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-44",
         "query_variant": "title_first_author",
         "query": "probability[Title] AND hepatitis[Title] AND infection[Title] AND injecting[Title] AND Boelen[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-08",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-43",
         "query_variant": "exact_title",
         "query": "Per[Title] AND event[Title] AND probability[Title] AND hepatitis[Title] AND C[Title] AND infection[Title] AND during[Title] AND sharing[Title] AND injecting[Title] AND equipment[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-08",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-44",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:25000496",
         "candidate_rank": "1",
@@ -1761,14 +1761,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-09",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-45",
         "query_variant": "exact_title",
         "query": "epidemicity[Title] AND index[Title] AND recurrent[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND infections[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-09",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-45",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33980858",
         "candidate_rank": "1",
@@ -1796,14 +1796,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-10",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-46",
         "query_variant": "exact_title",
         "query": "Genetic[Title] AND analysis[Title] AND tolerance[Title] AND infections[Title] AND using[Title] AND random[Title] AND regressions[Title] AND simulation[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-10",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-46",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21767462",
         "candidate_rank": "1",
@@ -1831,14 +1831,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-11",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-47",
         "query_variant": "exact_title",
         "query": "HBcrAg[Title] AND predicts[Title] AND hepatocellular[Title] AND carcinoma[Title] AND development[Title] AND analysis[Title] AND using[Title] AND time[Title] AND dependent[Title] AND receiver[Title] AND operating[Title] AND characteristics[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-11",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-47",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27034253",
         "candidate_rank": "1",
@@ -1866,14 +1866,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-12",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-48",
         "query_variant": "exact_title",
         "query": "Joint[Title] AND modeling[Title] AND clinical[Title] AND progression[Title] AND biomarkers[Title] AND dynamics[Title] AND using[Title] AND mechanistic[Title] AND model[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-12",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-48",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20377577",
         "candidate_rank": "1",
@@ -1901,14 +1901,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-13",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-49",
         "query_variant": "exact_title",
         "query": "Antibiotic[Title] AND control[Title] AND resistance[Title] AND hospitals[Title] AND simulation[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-13",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-49",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20738872",
         "candidate_rank": "1",
@@ -1936,14 +1936,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-14",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-50",
         "query_variant": "exact_title",
         "query": "Correction[Title] AND Effectiveness[Title] AND Secondary[Title] AND Risk[Title] AND Reducing[Title] AND Strategies[Title] AND Patients[Title] AND Unilateral[Title] AND Breast[Title] AND Cancer[Title] AND Pathogenic[Title] AND Variants[Title] AND BRCA1[Title] AND BRCA2[Title] AND Subjected[Title] AND Conserving[Title] AND Surgery[Title] AND Evidence[Title] AND Based[Title] AND Simulation[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-14",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-50",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36928234",
         "candidate_rank": "1",
@@ -1971,14 +1971,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-15",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-51",
         "query_variant": "exact_title",
         "query": "microsimulation[Title] AND cost[Title] AND effectiveness[Title] AND maraviroc[Title] AND antiretroviral[Title] AND treatment[Title] AND experienced[Title] AND HIV[Title] AND infected[Title] AND individuals[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-15",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-51",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20542845",
         "candidate_rank": "1",
@@ -2006,19 +2006,19 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-16",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-53",
         "query_variant": "title_first_author",
         "query": "computational[Title] AND surveillance[Title] AND framework[Title] AND sentinel[Title] AND Fairchild[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-16",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-52",
         "query_variant": "exact_title",
         "query": "How[Title] AND many[Title] AND suffice[Title] AND computational[Title] AND framework[Title] AND sizing[Title] AND sentinel[Title] AND surveillance[Title] AND networks[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-16",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-53",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:24321203",
         "candidate_rank": "1",
@@ -2046,14 +2046,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-17",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-54",
         "query_variant": "exact_title",
         "query": "Optimizing[Title] AND sentinel[Title] AND surveillance[Title] AND temporal[Title] AND network[Title] AND epidemiology[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-17",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-54",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28684777",
         "candidate_rank": "1",
@@ -2085,14 +2085,14 @@ exec
 /bin/zsh -lc "sed -n '451,900p' 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/identity_review_batches/identity_batch_06.json" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-18",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-55",
         "query_variant": "exact_title",
         "query": "Waterborne[Title] AND Disease[Title] AND Outbreak[Title] AND Detection[Title] AND Simulation[Title] AND Based[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-18",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-55",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30018195",
         "candidate_rank": "1",
@@ -2120,14 +2120,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-19",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-56",
         "query_variant": "exact_title",
         "query": "Donning[Title] AND doffing[Title] AND personal[Title] AND protective[Title] AND equipment[Title] AND health[Title] AND care[Title] AND workers[Title] AND tertiary[Title] AND hospital[Title] AND China[Title] AND simulation[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-19",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-56",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37812187",
         "candidate_rank": "1",
@@ -2155,14 +2155,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-20",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-57",
         "query_variant": "exact_title",
         "query": "Benchmarking[Title] AND antibiotic[Title] AND use[Title] AND Finnish[Title] AND acute[Title] AND care[Title] AND hospitals[Title] AND using[Title] AND patient[Title] AND case[Title] AND mix[Title] AND adjustment[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-20",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-57",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21846673",
         "candidate_rank": "1",
@@ -2190,14 +2190,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-21",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-58",
         "query_variant": "exact_title",
         "query": "Profiling[Title] AND Benchmarking[Title] AND Central[Title] AND Nervous[Title] AND System[Title] AND Infections[Title] AND Infectious[Title] AND Diseases[Title] AND Intensive[Title] AND Care[Title] AND Unit[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-21",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-58",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37455413",
         "candidate_rank": "1",
@@ -2225,19 +2225,19 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-22",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-60",
         "query_variant": "title_first_author",
         "query": "gastrointestinal[Title] AND Cryptosporidium[Title] AND Campylobacter[Title] AND Estimating[Title] AND Murphy[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-22",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-59",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND burden[Title] AND acute[Title] AND gastrointestinal[Title] AND illness[Title] AND due[Title] AND Giardia[Title] AND Cryptosporidium[Title] AND Campylobacter[Title] AND E[Title] AND coli[Title] AND O157[Title] AND norovirus[Title] AND associated[Title] AND private[Title] AND wells[Title] AND small[Title] AND water[Title] AND systems[Title] AND Canada[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-22",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-60",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:26564479",
         "candidate_rank": "1",
@@ -2265,14 +2265,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-23",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-61",
         "query_variant": "exact_title",
         "query": "cost[Title] AND benefit[Title] AND assessment[Title] AND Salmonella[Title] AND control[Title] AND strategies[Title] AND pigs[Title] AND reared[Title] AND United[Title] AND Kingdom[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-23",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-61",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30388998",
         "candidate_rank": "1",
@@ -2300,19 +2300,19 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-24",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-63",
         "query_variant": "title_first_author",
         "query": "algorithms[Title] AND Comparing[Title] AND detection[Title] AND optimized[Title] AND Wang[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-24",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-62",
         "query_variant": "exact_title",
         "query": "Comparing[Title] AND early[Title] AND outbreak[Title] AND detection[Title] AND algorithms[Title] AND based[Title] AND their[Title] AND optimized[Title] AND parameter[Title] AND values[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-24",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-63",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:19683069",
         "candidate_rank": "1",
@@ -2340,19 +2340,19 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-25",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-65",
         "query_variant": "title_first_author",
         "query": "benchmarking[Title] AND performance[Title] AND pessimistic[Title] AND Portuguese[Title] AND Vara[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-25",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-64",
         "query_variant": "exact_title",
         "query": "Assessing[Title] AND performance[Title] AND Portuguese[Title] AND public[Title] AND hospitals[Title] AND before[Title] AND during[Title] AND COVID[Title] AND 19[Title] AND outbreak[Title] AND optimistic[Title] AND pessimistic[Title] AND benchmarking[Title] AND approaches[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-25",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-65",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:39604723",
         "candidate_rank": "1",
@@ -2380,14 +2380,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-26",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-66",
         "query_variant": "exact_title",
         "query": "Inference[Title] AND epidemiological[Title] AND agent[Title] AND based[Title] AND models[Title] AND using[Title] AND ensemble[Title] AND data[Title] AND assimilation[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-26",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-66",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35245337",
         "candidate_rank": "1",
@@ -2415,14 +2415,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-27",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-67",
         "query_variant": "exact_title",
         "query": "Empirically[Title] AND evaluating[Title] AND decision[Title] AND analytic[Title] AND models[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-27",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-67",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20230547",
         "candidate_rank": "1",
@@ -2450,14 +2450,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-28",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-68",
         "query_variant": "exact_title",
         "query": "Quantity[Title] AND Versus[Title] AND Quality[Title] AND Survey[Title] AND Experiment[Title] AND Improve[Title] AND Network[Title] AND Scale[Title] AND up[Title] AND Method[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-28",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-68",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27015875",
         "candidate_rank": "1",
@@ -2485,14 +2485,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-29",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-69",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND epidemic[Title] AND risk[Title] AND using[Title] AND non[Title] AND uniformly[Title] AND sampled[Title] AND contact[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-29",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-69",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28855718",
         "candidate_rank": "1",
@@ -2520,14 +2520,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-30",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-70",
         "query_variant": "exact_title",
         "query": "RAPIDD[Title] AND Ebola[Title] AND forecasting[Title] AND challenge[Title] AND Model[Title] AND description[Title] AND synthetic[Title] AND data[Title] AND generation[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-30",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-70",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28951016",
         "candidate_rank": "1",
@@ -2559,14 +2559,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-31",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-71",
         "query_variant": "exact_title",
         "query": "Benchmark[Title] AND datasets[Title] AND phylogenomic[Title] AND pipeline[Title] AND validation[Title] AND applications[Title] AND foodborne[Title] AND pathogen[Title] AND surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-31",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-71",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29372115",
         "candidate_rank": "1",
@@ -2594,19 +2594,19 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-32",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-73",
         "query_variant": "title_first_author",
         "query": "Assumptions[Title] AND Transmitted[Title] AND Sustainable[Title] AND Population[Title] AND Vegvari[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-32",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-72",
         "query_variant": "exact_title",
         "query": "Impact[Title] AND Key[Title] AND Assumptions[Title] AND About[Title] AND Population[Title] AND Biology[Title] AND Soil[Title] AND Transmitted[Title] AND Helminths[Title] AND Sustainable[Title] AND Control[Title] AND Morbidity[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SIMULATION-32",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-73",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:33906237",
         "candidate_rank": "1",
@@ -2634,14 +2634,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-33",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-74",
         "query_variant": "exact_title",
         "query": "mathematical[Title] AND model[Title] AND H5N1[Title] AND influenza[Title] AND transmission[Title] AND US[Title] AND dairy[Title] AND cattle[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-33",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-74",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40341525",
         "candidate_rank": "1",
@@ -2669,14 +2669,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-34",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-75",
         "query_variant": "exact_title",
         "query": "Data[Title] AND driven[Title] AND approach[Title] AND compartmental[Title] AND epidemic[Title] AND model[Title] AND assess[Title] AND undocumented[Title] AND infections[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SIMULATION-34",
+        "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-75",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35996714",
         "candidate_rank": "1",
@@ -2704,14 +2704,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-01",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-58",
         "query_variant": "exact_title",
         "query": "new[Title] AND scale[Title] AND free[Title] AND network[Title] AND model[Title] AND simulating[Title] AND predicting[Title] AND epidemics[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-01",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-58",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23026767",
         "candidate_rank": "1",
@@ -2739,14 +2739,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-02",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-59",
         "query_variant": "exact_title",
         "query": "Evolutionary[Title] AND dynamics[Title] AND complex[Title] AND networks[Title] AND HIV[Title] AND drug[Title] AND resistant[Title] AND strains[Title] AND case[Title] AND San[Title] AND Francisco[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-02",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-59",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20075214",
         "candidate_rank": "1",
@@ -2774,14 +2774,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-03",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-60",
         "query_variant": "exact_title",
         "query": "new[Title] AND PSO[Title] AND optimized[Title] AND geometry[Title] AND spatial[Title] AND spatio[Title] AND temporal[Title] AND scan[Title] AND statistics[Title] AND disease[Title] AND outbreak[Title] AND detection[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-03",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-60",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32288990",
         "candidate_rank": "1",
@@ -2809,14 +2809,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-04",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-61",
         "query_variant": "exact_title",
         "query": "Exploratory[Title] AND space[Title] AND time[Title] AND analyses[Title] AND Rift[Title] AND Valley[Title] AND Fever[Title] AND South[Title] AND Africa[Title] AND 2008[Title] AND 2011[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-04",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-61",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22953020",
         "candidate_rank": "1",
@@ -2844,14 +2844,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-05",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-62",
         "query_variant": "exact_title",
         "query": "high[Title] AND resolution[Title] AND US[Title] AND scale[Title] AND digital[Title] AND similar[Title] AND interacting[Title] AND livestock[Title] AND wild[Title] AND birds[Title] AND human[Title] AND ecosystems[Title] AND multihost[Title] AND epidemic[Title] AND spread[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-05",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-62",
         "query_variant": "exact_title",
         "candidate_key": "PMID:42207910",
         "candidate_rank": "1",
@@ -2879,14 +2879,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-06",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-63",
         "query_variant": "exact_title",
         "query": "Spatial[Title] AND Temporal[Title] AND Epidemiology[Title] AND Lumpy[Title] AND Skin[Title] AND Disease[Title] AND Middle[Title] AND East[Title] AND 2012[Title] AND 2015[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-06",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-63",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26973845",
         "candidate_rank": "1",
@@ -2914,14 +2914,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-07",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-64",
         "query_variant": "exact_title",
         "query": "Use[Title] AND Spatial[Title] AND Spatiotemporal[Title] AND Modeling[Title] AND Surveillance[Title] AND H5N1[Title] AND Highly[Title] AND Pathogenic[Title] AND Avian[Title] AND Influenza[Title] AND Poultry[Title] AND Middle[Title] AND East[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-07",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-64",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27309050",
         "candidate_rank": "1",
@@ -2949,14 +2949,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-08",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-65",
         "query_variant": "exact_title",
         "query": "Spatial[Title] AND diffusion[Title] AND influenza[Title] AND outbreak[Title] AND related[Title] AND climate[Title] AND factors[Title] AND Chiang[Title] AND Mai[Title] AND Province[Title] AND Thailand[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-08",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-65",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23202819",
         "candidate_rank": "1",
@@ -2984,7 +2984,7 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-09",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-66",
         "query_variant": "exact_title",
         "query": "Spatiotemporal[Title] AND Patterns[Title] AND Diffusion[Title] AND 1918[Title] AND Influenza[Title] AND Pandemic[Title] AND British[Title] AND India[Title]"
       }
@@ -2995,7 +2995,7 @@ exec
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-09",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-66",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30252017",
         "candidate_rank": "1",
@@ -3023,14 +3023,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-10",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-67",
         "query_variant": "exact_title",
         "query": "marginal[Title] AND moment[Title] AND matching[Title] AND approach[Title] AND fitting[Title] AND endemic[Title] AND epidemic[Title] AND models[Title] AND underreported[Title] AND disease[Title] AND surveillance[Title] AND counts[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-10",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-67",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32920842",
         "candidate_rank": "1",
@@ -3058,14 +3058,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-11",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-68",
         "query_variant": "exact_title",
         "query": "Evolution[Title] AND COVID[Title] AND 19[Title] AND dynamics[Title] AND Guangdong[Title] AND Province[Title] AND China[Title] AND endemic[Title] AND epidemic[Title] AND modeling[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-11",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-68",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39358819",
         "candidate_rank": "1",
@@ -3093,19 +3093,19 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-12",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-70",
         "query_variant": "title_first_author",
         "query": "Interconnected[Title] AND Contamination[Title] AND Assessment[Title] AND Children[Title] AND Wang[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-12",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-69",
         "query_variant": "exact_title",
         "query": "Children[Title] AND Are[Title] AND Exposed[Title] AND Fecal[Title] AND Contamination[Title] AND via[Title] AND Multiple[Title] AND Interconnected[Title] AND Pathways[Title] AND Network[Title] AND Model[Title] AND Exposure[Title] AND Assessment[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-12",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-70",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:30053314",
         "candidate_rank": "1",
@@ -3133,14 +3133,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-13",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-71",
         "query_variant": "exact_title",
         "query": "graph[Title] AND based[Title] AND evidence[Title] AND synthesis[Title] AND approach[Title] AND detecting[Title] AND outbreak[Title] AND clusters[Title] AND application[Title] AND dog[Title] AND rabies[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-13",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-71",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30557340",
         "candidate_rank": "1",
@@ -3168,14 +3168,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-14",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-72",
         "query_variant": "exact_title",
         "query": "Epidemiological[Title] AND viral[Title] AND genomic[Title] AND sequence[Title] AND analysis[Title] AND 2014[Title] AND ebola[Title] AND outbreak[Title] AND reveals[Title] AND clustered[Title] AND transmission[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-14",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-72",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25516185",
         "candidate_rank": "1",
@@ -3203,14 +3203,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-15",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-73",
         "query_variant": "exact_title",
         "query": "Molecular[Title] AND based[Title] AND surveillance[Title] AND campylobacteriosis[Title] AND New[Title] AND Zealand[Title] AND source[Title] AND attribution[Title] AND genomic[Title] AND epidemiology[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-15",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-73",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23351655",
         "candidate_rank": "1",
@@ -3238,14 +3238,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-16",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-74",
         "query_variant": "exact_title",
         "query": "Genomic[Title] AND epidemiology[Title] AND Escherichia[Title] AND coli[Title] AND O104[Title] AND H4[Title] AND outbreaks[Title] AND Europe[Title] AND 2011[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-16",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-74",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22315421",
         "candidate_rank": "1",
@@ -3273,14 +3273,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-17",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-75",
         "query_variant": "exact_title",
         "query": "geostatistical[Title] AND fusion[Title] AND approach[Title] AND using[Title] AND UAV[Title] AND data[Title] AND probabilistic[Title] AND estimation[Title] AND Xylella[Title] AND fastidiosa[Title] AND subsp[Title] AND pauca[Title] AND infection[Title] AND olive[Title] AND trees[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-17",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-75",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32890831",
         "candidate_rank": "1",
@@ -3308,14 +3308,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-18",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-76",
         "query_variant": "exact_title",
         "query": "Validation[Title] AND gravity[Title] AND model[Title] AND predicting[Title] AND global[Title] AND spread[Title] AND influenza[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-18",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-76",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21909295",
         "candidate_rank": "1",
@@ -3343,14 +3343,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-19",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-77",
         "query_variant": "exact_title",
         "query": "Risk[Title] AND factors[Title] AND short[Title] AND term[Title] AND projections[Title] AND serotype[Title] AND 1[Title] AND poliomyelitis[Title] AND incidence[Title] AND Pakistan[Title] AND spatiotemporal[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-19",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-77",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28604777",
         "candidate_rank": "1",
@@ -3378,14 +3378,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-20",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-78",
         "query_variant": "exact_title",
         "query": "Impact[Title] AND infection[Title] AND period[Title] AND distribution[Title] AND epidemic[Title] AND spread[Title] AND metapopulation[Title] AND model[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-20",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-78",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20195473",
         "candidate_rank": "1",
@@ -3413,14 +3413,14 @@ exec
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-21",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-79",
         "query_variant": "exact_title",
         "query": "Control[Title] AND equine[Title] AND influenza[Title] AND scenario[Title] AND testing[Title] AND using[Title] AND realistic[Title] AND metapopulation[Title] AND model[Title] AND spread[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-21",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-79",
         "query_variant": "exact_title",
         "candidate_key": "PMID:19364721",
         "candidate_rank": "1",
@@ -3438,246 +3438,246 @@ exec
 exec
 /bin/zsh -lc "rg --files 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution | sed -n '1,240p'" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-23.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-19.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-50.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-42.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-75.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-57.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-14.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SIMULATION-16.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-26.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-29.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-83.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-35.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-48.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-04.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-51.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-84.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-14.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-04.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260717-LINEAGE-EVIDENCE-01.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-76.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-36.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-124.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-77.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-147.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-148.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-190.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-155.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-114.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-53.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-84.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-123.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-186.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-95.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-144.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-101.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-159.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-188.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-104.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-38.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-130.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-187.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-139.esearch.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_label_normalization.csv
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-63.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-16.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-170.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-116.esearch.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/LINEAGE_QUERY_REGISTRY.csv
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-43.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-149.esearch.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_reader_validation_ledger.csv
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-71.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-180.efetch.000000000-000000000.xml
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/LINEAGE_NAMED_SOURCES.csv
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-16.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-52.esearch.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/LINEAGE_NAMESPACE_RECEIPT.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/ACTIVE_QUERY_ID_COLLISION_RECEIPT.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/MANIFEST_SHA256.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/lineage_concept_inspection.csv
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-65.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-15.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-28.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-31.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-64.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-19.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-89.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-28.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-01.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-33.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-01.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-69.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-65.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-12.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-20.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-39.efetch.000000000-000000002.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-CAUSAL-55.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-24.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-71.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-03.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-77.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-03.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-56.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-13.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-EVIDENCE-02.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-89.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-58.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-174.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-51.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-92.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-133.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-171.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-80.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-200.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-86.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-90.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-92.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-98.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-168.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-174.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-112.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-78.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-99.efetch.000000000-000000002.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-165.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-126.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-180.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-37.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-188.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-100.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-166.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-49.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-62.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-200.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-156.esearch.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_assignment_resolution_summary.csv
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-27.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-31.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-22.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-26.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-34.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-EVIDENCE-33.efetch.000000000-000000001.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-59.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-07.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-48.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-15.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-40.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-51.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-96.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-EVIDENCE-33.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-32.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-67.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-41.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-51.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-32.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-CAUSAL-08.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-129.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-95.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-84.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-120.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-137.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-98.efetch.000000000-000000001.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-128.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-96.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-156.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-115.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-146.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-148.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-207.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-98.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-136.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-180.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-148.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-159.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-72.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-107.esearch.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_method_concepts.csv
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_merge_split_decisions.csv
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/PRE_APPEND_FAILED_QUERY_SNAPSHOT.json
 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/PRE_TITLE_AUTHOR_APPEND_SNAPSHOT.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-34.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-34.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-12.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-52.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-46.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-13.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-66.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-33.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-73.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-33.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-15.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-41.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-73.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-CAUSAL-34.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-41.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-14.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-28.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-60.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-35.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-15.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-19.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-03.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260717-LINEAGE-SPATIAL-01.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-10.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-06.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-49.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-11.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-44.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-11.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-37.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-06.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-62.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-54.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-75.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-01.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-08.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-26.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-26.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-75.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-CAUSAL-27.efetch.000000000-000000001.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-47.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-73.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-26.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-61.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-EVIDENCE-27.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-69.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-54.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-53.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-06.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-85.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-66.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-12.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-CAUSAL-71.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-29.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-47.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-85.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-21.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-79.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-42.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-35.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-35.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-36.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-74.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-60.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-65.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-21.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-19.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-30.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-29.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-66.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-59.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-FORECASTING-82.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-16.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-EVIDENCE-08.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-59.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-13.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-05.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-18.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-29.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-45.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-10.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-87.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-36.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-10.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SIMULATION-32.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-02.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-24.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-EVIDENCE-02.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-30.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-23.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-11.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-68.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-29.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-18.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-17.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-53.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-CAUSAL-87.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-40.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-32.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-45.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-62.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-21.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-42.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-37.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-94.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-37.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-31.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-17.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-18.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-64.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-44.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-20.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-36.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-20.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-79.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-18.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-09.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-23.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-05.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-50.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-81.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-05.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-EVIDENCE-58.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-77.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-22.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-88.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-46.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-81.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-CAUSAL-92.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-50.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-02.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-31.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-CAUSAL-35.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-43.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-43.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-EVIDENCE-56.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-55.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-85.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-57.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-02.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-43.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-70.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-08.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-25.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-FORECASTING-25.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-84.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SPATIAL-43.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-EVIDENCE-58.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SIMULATION-08.esearch.json
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-41.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-20.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-97.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-CAUSAL-25.efetch.000000000-000000000.xml
-01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SPATIAL-31.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-138.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-75.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-112.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-115.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-153.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-113.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-179.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-137.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-187.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-74.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-116.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-101.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-173.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-139.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-147.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-114.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-68.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-159.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-131.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-76.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-110.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-102.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-122.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-109.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-66.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-116.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-111.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-150.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-47.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-142.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-40.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-169.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-161.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-175.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-100.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-65.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-120.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-66.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-190.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-131.efetch.000000000-000000001.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-110.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-187.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-128.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-172.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-91.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-169.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-117.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-160.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-105.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-196.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-179.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-111.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-185.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-123.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-154.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-189.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-58.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-194.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-138.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-131.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-140.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-132.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-188.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-170.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-173.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-123.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-56.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-132.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-133.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-165.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-166.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-185.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-117.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-69.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-157.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-74.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-104.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-76.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-93.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-152.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-109.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-191.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-140.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-46.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-73.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-59.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-87.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-62.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-134.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-125.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-68.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-167.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-87.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-79.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-54.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-160.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-203.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-146.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-135.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-111.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-169.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-122.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-148.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-141.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-212.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-102.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-134.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-117.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-109.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-172.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-140.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-57.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-142.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-121.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-180.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-55.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-108.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-125.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-39.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-158.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-183.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-102.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-127.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-188.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-123.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-199.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-153.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-196.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-210.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-117.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-36.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-71.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-141.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-109.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-139.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-124.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-162.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-196.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-167.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-99.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-149.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-179.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-106.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-127.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-FORECASTING-118.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-195.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-105.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-EVIDENCE-126.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SIMULATION-43.esearch.json
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-148.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-121.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-208.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-CAUSAL-127.efetch.000000000-000000000.xml
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SPATIAL-89.esearch.json
 
 exec
 /bin/zsh -lc 'find 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/identity_review_batches -maxdepth 1 -type f -print | sort' in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
@@ -3762,8 +3762,8 @@ exec
 /bin/zsh -lc 'head -n 3 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/pubmed_lineage_candidates.csv && wc -l 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/pubmed_lineage_candidates.csv' in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
 candidate_key,query_id,named_source_id,candidate_rank,pmid,doi,title,year,journal,authors,source_url,raw_path,raw_sha256
-PMID:30601823,SEARCH-20260719-LINEAGE-CAUSAL-01,NS-CAUSAL-001,1,30601823,10.1371/journal.pmed.1002719,"HIV self-testing alone or with additional interventions, including financial incentives, and linkage to care or prevention among male partners of antenatal care clinic attendees in Malawi: An adaptive multi-arm, multi-stage cluster randomised trial.",2019,PLoS medicine,Augustine T Choko; Elizabeth L Corbett; Nigel Stallard; Hendramoorthy Maheswaran; Aurelia Lepine; Cheryl C Johnson; Doreen Sakala; Thokozani Kalua; Moses Kumwenda; Richard Hayes; Katherine Fielding,https://pubmed.ncbi.nlm.nih.gov/30601823/,raw/SEARCH-20260719-LINEAGE-CAUSAL-01.efetch.000000000-000000000.xml,4f998696866b1d9acb4c045a8f8591d5352e6e097029559cb856d35eb7e8bc32
-PMID:34491227,SEARCH-20260719-LINEAGE-CAUSAL-02,NS-CAUSAL-002,1,34491227,10.4269/ajtmh.20-0254,An Adaptive Intervention Trial Design for Finding the Optimal Integrated Strategies for Malaria Control and Elimination in Africa: A Model Simulation Study.,2021,The American journal of tropical medicine and hygiene,Guofa Zhou; Ming-Chieh Lee; Xiaoming Wang; Daibin Zhong; Elizabeth Hemming-Schroeder; Guiyun Yan,https://pubmed.ncbi.nlm.nih.gov/34491227/,raw/SEARCH-20260719-LINEAGE-CAUSAL-02.efetch.000000000-000000000.xml,25b7ea93bba2ebb38a8c8f49c57a9509038a9736d293adaf4f69a11867988b75
+PMID:30601823,SEARCH-20260722-LINEAGE-CAUSAL-98,NS-CAUSAL-001,1,30601823,10.1371/journal.pmed.1002719,"HIV self-testing alone or with additional interventions, including financial incentives, and linkage to care or prevention among male partners of antenatal care clinic attendees in Malawi: An adaptive multi-arm, multi-stage cluster randomised trial.",2019,PLoS medicine,Augustine T Choko; Elizabeth L Corbett; Nigel Stallard; Hendramoorthy Maheswaran; Aurelia Lepine; Cheryl C Johnson; Doreen Sakala; Thokozani Kalua; Moses Kumwenda; Richard Hayes; Katherine Fielding,https://pubmed.ncbi.nlm.nih.gov/30601823/,raw/SEARCH-20260722-LINEAGE-CAUSAL-98.efetch.000000000-000000000.xml,4f998696866b1d9acb4c045a8f8591d5352e6e097029559cb856d35eb7e8bc32
+PMID:34491227,SEARCH-20260722-LINEAGE-CAUSAL-99,NS-CAUSAL-002,1,34491227,10.4269/ajtmh.20-0254,An Adaptive Intervention Trial Design for Finding the Optimal Integrated Strategies for Malaria Control and Elimination in Africa: A Model Simulation Study.,2021,The American journal of tropical medicine and hygiene,Guofa Zhou; Ming-Chieh Lee; Xiaoming Wang; Daibin Zhong; Elizabeth Hemming-Schroeder; Guiyun Yan,https://pubmed.ncbi.nlm.nih.gov/34491227/,raw/SEARCH-20260722-LINEAGE-CAUSAL-99.efetch.000000000-000000000.xml,25b7ea93bba2ebb38a8c8f49c57a9509038a9736d293adaf4f69a11867988b75
      451 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/pubmed_lineage_candidates.csv
 
 exec

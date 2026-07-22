@@ -1,0 +1,1545 @@
+{
+  "batch_id": "REPAIR-IDENTITY-002",
+  "sources": [
+    {
+      "named_source_id": "NS-FORECASTING-098",
+      "method_label": "early_warning_signals",
+      "canonical_name": "Early-warning signals",
+      "source_role": "infectious_application",
+      "target_title": "Dengue virus surveillance for early warning, Singapore.",
+      "target_first_author": "Kim Sung Lee",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20409381/",
+      "seed_candidate_key": "PMID:20409381",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-203",
+          "query_variant": "exact_title",
+          "query": "Dengue[Title] AND virus[Title] AND surveillance[Title] AND early[Title] AND warning[Title] AND Singapore[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20409381",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-203",
+          "title": "Dengue virus surveillance for early warning, Singapore.",
+          "year": "2010",
+          "authors": "Kim Sung Lee; Yee Ling Lai; Sharon Lo; Timothy Barkham; Pauline Aw; Peng Lim Ooi; Ji Choong Tai; Martin Hibberd; Patrik Johansson; Seow Poh Khoo; Lee Ching Ng",
+          "doi": "10.3201/eid1605.091006",
+          "pmid": "20409381",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20409381/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-099",
+      "method_label": "empirical_reproduction_number_surveillance",
+      "canonical_name": "Empirical reproduction-number estimation and surveillance analyses",
+      "source_role": "authoritative_candidate",
+      "target_title": "Basic Reproduction Number and Transmission Dynamics of Common Serogroups of Enterohemorrhagic Escherichia coli.",
+      "target_first_author": "Shi Chen",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27401976/",
+      "seed_candidate_key": "PMID:27401976",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-204",
+          "query_variant": "exact_title",
+          "query": "Basic[Title] AND Reproduction[Title] AND Number[Title] AND Transmission[Title] AND Dynamics[Title] AND Common[Title] AND Serogroups[Title] AND Enterohemorrhagic[Title] AND Escherichia[Title] AND coli[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27401976",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-204",
+          "title": "Basic Reproduction Number and Transmission Dynamics of Common Serogroups of Enterohemorrhagic Escherichia coli.",
+          "year": "2016",
+          "authors": "Shi Chen; Michael W Sanderson; Chihoon Lee; Natalia Cernicchiaro; David G Renter; Cristina Lanzas",
+          "doi": "10.1128/aem.00815-16",
+          "pmid": "27401976",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27401976/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-100",
+      "method_label": "ensemble_forecasting",
+      "canonical_name": "Ensemble forecasting",
+      "source_role": "authoritative_candidate",
+      "target_title": "Counteracting structural errors in ensemble forecast of influenza outbreaks.",
+      "target_first_author": "Sen Pei",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/29030543/",
+      "seed_candidate_key": "PMID:29030543",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-205",
+          "query_variant": "exact_title",
+          "query": "Counteracting[Title] AND structural[Title] AND errors[Title] AND ensemble[Title] AND forecast[Title] AND influenza[Title] AND outbreaks[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:29030543",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-205",
+          "title": "Counteracting structural errors in ensemble forecast of influenza outbreaks.",
+          "year": "2017",
+          "authors": "Sen Pei; Jeffrey Shaman",
+          "doi": "10.1038/s41467-017-01033-1",
+          "pmid": "29030543",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29030543/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-101",
+      "method_label": "ensemble_forecasting",
+      "canonical_name": "Ensemble forecasting",
+      "source_role": "diagnostic",
+      "target_title": "Predictability in process-based ensemble forecast of influenza.",
+      "target_first_author": "Sen Pei",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30817754/",
+      "seed_candidate_key": "PMID:30817754",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-206",
+          "query_variant": "exact_title",
+          "query": "Predictability[Title] AND process[Title] AND based[Title] AND ensemble[Title] AND forecast[Title] AND influenza[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30817754",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-206",
+          "title": "Predictability in process-based ensemble forecast of influenza.",
+          "year": "2019",
+          "authors": "Sen Pei; Mark A Cane; Jeffrey Shaman",
+          "doi": "10.1371/journal.pcbi.1006783",
+          "pmid": "30817754",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30817754/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-102",
+      "method_label": "ensemble_forecasting",
+      "canonical_name": "Ensemble forecasting",
+      "source_role": "guidance",
+      "target_title": "Ensemble forecast modeling for the design of COVID-19 vaccine efficacy trials.",
+      "target_first_author": "Natalie E Dean",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33012602/",
+      "seed_candidate_key": "PMID:33012602",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-207",
+          "query_variant": "exact_title",
+          "query": "Ensemble[Title] AND forecast[Title] AND modeling[Title] AND design[Title] AND COVID[Title] AND 19[Title] AND vaccine[Title] AND efficacy[Title] AND trials[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33012602",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-207",
+          "title": "Ensemble forecast modeling for the design of COVID-19 vaccine efficacy trials.",
+          "year": "2020",
+          "authors": "Natalie E Dean; Ana Pastore Y Piontti; Zachary J Madewell; Derek A T Cummings; Matthew D T Hitchings; Keya Joshi; Rebecca Kahn; Alessandro Vespignani; M Elizabeth Halloran; Ira M Longini",
+          "doi": "10.1016/j.vaccine.2020.09.031",
+          "pmid": "33012602",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33012602/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-103",
+      "method_label": "epidemic_monitoring_and_nowcasting",
+      "canonical_name": "Epidemic monitoring and near-real-time forecasting methods",
+      "source_role": "authoritative_candidate",
+      "target_title": "A SARS-CoV-2 Surveillance System in Sub-Saharan Africa: Modeling Study for Persistence and Transmission to Inform Policy.",
+      "target_first_author": "Lori Ann Post",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33211026/",
+      "seed_candidate_key": "PMID:33211026",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-208",
+          "query_variant": "exact_title",
+          "query": "SARS[Title] AND CoV[Title] AND 2[Title] AND Surveillance[Title] AND System[Title] AND Sub[Title] AND Saharan[Title] AND Africa[Title] AND Modeling[Title] AND Study[Title] AND Persistence[Title] AND Transmission[Title] AND Inform[Title] AND Policy[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33211026",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-208",
+          "title": "A SARS-CoV-2 Surveillance System in Sub-Saharan Africa: Modeling Study for Persistence and Transmission to Inform Policy.",
+          "year": "2020",
+          "authors": "Lori Ann Post; Salem T Argaw; Cameron Jones; Charles B Moss; Danielle Resnick; Lauren Nadya Singh; Robert Leo Murphy; Chad J Achenbach; Janine White; Tariq Ziad Issa; Michael J Boctor; James Francis Oehmke",
+          "doi": "10.2196/24248",
+          "pmid": "33211026",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33211026/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-104",
+      "method_label": "genomic_outbreak_detection",
+      "canonical_name": "Genomic outbreak detection",
+      "source_role": "authoritative_candidate",
+      "target_title": "Statistical outbreak detection by joining medical records and pathogen similarity.",
+      "target_first_author": "James K Miller",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30771483/",
+      "seed_candidate_key": "PMID:30771483",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-209",
+          "query_variant": "exact_title",
+          "query": "Statistical[Title] AND outbreak[Title] AND detection[Title] AND joining[Title] AND medical[Title] AND records[Title] AND pathogen[Title] AND similarity[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30771483",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-209",
+          "title": "Statistical outbreak detection by joining medical records and pathogen similarity.",
+          "year": "2019",
+          "authors": "James K Miller; Jieshi Chen; Alexander Sundermann; Jane W Marsh; Melissa I Saul; Kathleen A Shutt; Marissa Pacey; Mustapha M Mustapha; Lee H Harrison; Artur Dubrawski",
+          "doi": "10.1016/j.jbi.2019.103126",
+          "pmid": "30771483",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30771483/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-105",
+      "method_label": "genomic_outbreak_detection",
+      "canonical_name": "Genomic outbreak detection",
+      "source_role": "implementation",
+      "target_title": "Rapid whole-genome sequencing for surveillance of Salmonella enterica serovar enteritidis.",
+      "target_first_author": "Henk C den Bakker",
+      "target_year": "2014",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25062035/",
+      "seed_candidate_key": "PMID:25062035",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-210",
+          "query_variant": "exact_title",
+          "query": "Rapid[Title] AND whole[Title] AND genome[Title] AND sequencing[Title] AND surveillance[Title] AND Salmonella[Title] AND enterica[Title] AND serovar[Title] AND enteritidis[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25062035",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-210",
+          "title": "Rapid whole-genome sequencing for surveillance of Salmonella enterica serovar enteritidis.",
+          "year": "2014",
+          "authors": "Henk C den Bakker; Marc W Allard; Dianna Bopp; Eric W Brown; John Fontana; Zamin Iqbal; Aristea Kinney; Ronald Limberger; Kimberlee A Musser; Matthew Shudt; Errol Strain; Martin Wiedmann; William J Wolfgang",
+          "doi": "10.3201/eid2008.131399",
+          "pmid": "25062035",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25062035/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-106",
+      "method_label": "genomic_outbreak_detection_and_source_tracing",
+      "canonical_name": "Genomic outbreak detection and source tracing",
+      "source_role": "authoritative_candidate",
+      "target_title": "Integrated Whole-Genome Sequencing Infrastructure for Outbreak Detection and Source Tracing of Salmonella enterica Serotype Enteritidis.",
+      "target_first_author": "Yinhua Deng",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33450161/",
+      "seed_candidate_key": "PMID:33450161",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-211",
+          "query_variant": "exact_title",
+          "query": "Integrated[Title] AND Whole[Title] AND Genome[Title] AND Sequencing[Title] AND Infrastructure[Title] AND Outbreak[Title] AND Detection[Title] AND Source[Title] AND Tracing[Title] AND Salmonella[Title] AND enterica[Title] AND Serotype[Title] AND Enteritidis[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33450161",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-211",
+          "title": "Integrated Whole-Genome Sequencing Infrastructure for Outbreak Detection and Source Tracing of Salmonella enterica Serotype Enteritidis.",
+          "year": "2021",
+          "authors": "Yinhua Deng; Min Jiang; Patrick S L Kwan; Chao Yang; Qiongcheng Chen; Yiman Lin; Yaqun Qiu; Yinghui Li; Xiaolu Shi; Liqiang Li; Yujun Cui; Qun Sun; Qinghua Hu",
+          "doi": "10.1089/fpd.2020.2856",
+          "pmid": "33450161",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33450161/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-107",
+      "method_label": "genomic_outbreak_detection_and_source_tracing",
+      "canonical_name": "Genomic outbreak detection and source tracing",
+      "source_role": "guidance",
+      "target_title": "Whole-genome sequencing surveillance and machine learning for healthcare outbreak detection and investigation: A systematic review and summary.",
+      "target_first_author": "Alexander J Sundermann",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36483409/",
+      "seed_candidate_key": "PMID:36483409",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-212",
+          "query_variant": "exact_title",
+          "query": "Whole[Title] AND genome[Title] AND sequencing[Title] AND surveillance[Title] AND machine[Title] AND learning[Title] AND healthcare[Title] AND outbreak[Title] AND detection[Title] AND investigation[Title] AND systematic[Title] AND review[Title] AND summary[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36483409",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-212",
+          "title": "Whole-genome sequencing surveillance and machine learning for healthcare outbreak detection and investigation: A systematic review and summary.",
+          "year": "2022",
+          "authors": "Alexander J Sundermann; Jieshi Chen; James K Miller; Elise M Martin; Graham M Snyder; Daria Van Tyne; Jane W Marsh; Artur Dubrawski; Lee H Harrison",
+          "doi": "10.1017/ash.2021.241",
+          "pmid": "36483409",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36483409/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-108",
+      "method_label": "genomic_outbreak_detection_and_source_tracing",
+      "canonical_name": "Genomic outbreak detection and source tracing",
+      "source_role": "implementation",
+      "target_title": "Implementation of Nationwide Real-time Whole-genome Sequencing to Enhance Listeriosis Outbreak Detection and Investigation.",
+      "target_first_author": "Brendan R Jackson",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27090985/",
+      "seed_candidate_key": "PMID:27090985",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-213",
+          "query_variant": "exact_title",
+          "query": "Implementation[Title] AND Nationwide[Title] AND Real[Title] AND time[Title] AND Whole[Title] AND genome[Title] AND Sequencing[Title] AND Enhance[Title] AND Listeriosis[Title] AND Outbreak[Title] AND Detection[Title] AND Investigation[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27090985",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-213",
+          "title": "Implementation of Nationwide Real-time Whole-genome Sequencing to Enhance Listeriosis Outbreak Detection and Investigation.",
+          "year": "2016",
+          "authors": "Brendan R Jackson; Cheryl Tarr; Errol Strain; Kelly A Jackson; Amanda Conrad; Heather Carleton; Lee S Katz; Steven Stroika; L Hannah Gould; Rajal K Mody; Benjamin J Silk; Jennifer Beal; Yi Chen; Ruth Timme; Matthew Doyle; Angela Fields; Matthew Wise; Glenn Tillman; Stephanie Defibaugh-Chavez; Zuzana Kucerova; Ashley Sabol; Katie Roache; Eija Trees; Mustafa Simmons; Jamie Wasilenko; Kristy Kubota; Hannes Pouseele; William Klimke; John Besser; Eric Brown; Marc Allard; Peter Gerner-Smidt",
+          "doi": "10.1093/cid/ciw242",
+          "pmid": "27090985",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27090985/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-109",
+      "method_label": "hiv_drug_resistance_early_warning_indicators",
+      "canonical_name": "HIV drug-resistance early warning indicators",
+      "source_role": "authoritative_candidate",
+      "target_title": "HIV drug resistance early warning indicators in cohorts of individuals starting antiretroviral therapy between 2004 and 2009: World Health Organization global report from 50 countries.",
+      "target_first_author": "Diane E Bennett",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22544188/",
+      "seed_candidate_key": "PMID:22544188",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-214",
+          "query_variant": "exact_title",
+          "query": "HIV[Title] AND drug[Title] AND resistance[Title] AND early[Title] AND warning[Title] AND indicators[Title] AND cohorts[Title] AND individuals[Title] AND starting[Title] AND antiretroviral[Title] AND therapy[Title] AND between[Title] AND 2004[Title] AND 2009[Title] AND World[Title] AND Health[Title] AND Organization[Title] AND global[Title] AND report[Title] AND 50[Title] AND countries[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-258",
+          "query_variant": "title_first_author",
+          "query": "resistance[Title] AND individuals[Title] AND antiretroviral[Title] AND Organization[Title] AND Bennett[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22544188",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-258",
+          "title": "HIV drug resistance early warning indicators in cohorts of individuals starting antiretroviral therapy between 2004 and 2009: World Health Organization global report from 50 countries.",
+          "year": "2012",
+          "authors": "Diane E Bennett; Michael R Jordan; Silvia Bertagnolio; Steven Y Hong; Giovanni Ravasi; James H McMahon; Ahmed Saadani; Karen F Kelley",
+          "doi": "10.1093/cid/cis207",
+          "pmid": "22544188",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22544188/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-110",
+      "method_label": "hiv_drug_resistance_early_warning_indicators",
+      "canonical_name": "HIV drug-resistance early warning indicators",
+      "source_role": "guidance",
+      "target_title": "Update on World Health Organization HIV drug resistance prevention and assessment strategy: 2004-2011.",
+      "target_first_author": "M R Jordan",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22544182/",
+      "seed_candidate_key": "PMID:22544182",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-215",
+          "query_variant": "exact_title",
+          "query": "Update[Title] AND World[Title] AND Health[Title] AND Organization[Title] AND HIV[Title] AND drug[Title] AND resistance[Title] AND prevention[Title] AND assessment[Title] AND strategy[Title] AND 2004[Title] AND 2011[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22544182",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-215",
+          "title": "Update on World Health Organization HIV drug resistance prevention and assessment strategy: 2004-2011.",
+          "year": "2012",
+          "authors": "M R Jordan; D E Bennett; M A Wainberg; D Havlir; S Hammer; C Yang; L Morris; M Peeters; A M Wensing; N Parkin; J B Nachega; A Phillips; A De Luca; E Geng; A Calmy; E Raizes; P Sandstrom; C P Archibald; J Perriëns; C M McClure; S Y Hong; J H McMahon; N Dedes; D Sutherland; S Bertagnolio",
+          "doi": "10.1093/cid/cis206",
+          "pmid": "22544182",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22544182/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-111",
+      "method_label": "infectious_disease_forecasting_from_surveillance_data",
+      "canonical_name": "Infectious disease forecasting from surveillance data",
+      "source_role": "authoritative_candidate",
+      "target_title": "A novel graph neural network based approach for influenza-like illness nowcasting: exploring the interplay of temporal, geographical, and functional spatial features.",
+      "target_first_author": "Jiajia Luo",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39893390/",
+      "seed_candidate_key": "PMID:39893390",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-216",
+          "query_variant": "exact_title",
+          "query": "novel[Title] AND graph[Title] AND neural[Title] AND network[Title] AND based[Title] AND approach[Title] AND influenza[Title] AND like[Title] AND illness[Title] AND nowcasting[Title] AND exploring[Title] AND interplay[Title] AND temporal[Title] AND geographical[Title] AND functional[Title] AND spatial[Title] AND features[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39893390",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-216",
+          "title": "A novel graph neural network based approach for influenza-like illness nowcasting: exploring the interplay of temporal, geographical, and functional spatial features.",
+          "year": "2025",
+          "authors": "Jiajia Luo; Xuan Wang; Xiaomao Fan; Yuxin He; Xiangjun Du; Yao-Qing Chen; Yang Zhao",
+          "doi": "10.1186/s12889-025-21618-6",
+          "pmid": "39893390",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39893390/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-112",
+      "method_label": "infectious_disease_forecasting_from_surveillance_data",
+      "canonical_name": "Infectious disease forecasting from surveillance data",
+      "source_role": "diagnostic",
+      "target_title": "Predicting influenza-like illness trends based on sentinel surveillance data in China from 2011 to 2019: A modelling and comparative study1.",
+      "target_first_author": "Xingxing Zhang",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/38725432/",
+      "seed_candidate_key": "PMID:38725432",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-217",
+          "query_variant": "exact_title",
+          "query": "Predicting[Title] AND influenza[Title] AND like[Title] AND illness[Title] AND trends[Title] AND based[Title] AND sentinel[Title] AND surveillance[Title] AND data[Title] AND China[Title] AND 2011[Title] AND 2019[Title] AND modelling[Title] AND comparative[Title] AND study1[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:38725432",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-217",
+          "title": "Predicting influenza-like illness trends based on sentinel surveillance data in China from 2011 to 2019: A modelling and comparative study1.",
+          "year": "2024",
+          "authors": "Xingxing Zhang; Liuyang Yang; Teng Chen; Qing Wang; Jin Yang; Ting Zhang; Jiao Yang; Hongqing Zhao; Shengjie Lai; Luzhao Feng; Weizhong Yang",
+          "doi": "10.1016/j.idm.2024.04.010",
+          "pmid": "38725432",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38725432/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-113",
+      "method_label": "infectious_disease_forecasting_from_surveillance_data",
+      "canonical_name": "Infectious disease forecasting from surveillance data",
+      "source_role": "infectious_application",
+      "target_title": "Animal Disease Burden in Nigeria, 2006-2023.",
+      "target_first_author": "Ahmad I Al-Mustapha",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/41438164/",
+      "seed_candidate_key": "PMID:41438164",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-218",
+          "query_variant": "exact_title",
+          "query": "Animal[Title] AND Disease[Title] AND Burden[Title] AND Nigeria[Title] AND 2006[Title] AND 2023[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:41438164",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-218",
+          "title": "Animal Disease Burden in Nigeria, 2006-2023.",
+          "year": "2025",
+          "authors": "Ahmad I Al-Mustapha; Veronica Adetunji; Oluwaseun A Ogundijo; Ismail A Odetokun; Lateefah Oyafajo; Hauwa W Abali; Muftau Oyewo; Ahmed Tijani Abubakar; Shuaibu Osu Muhammad; Deborah Adeolu Adetunji; Adesoji Odukoya; Anasin Haruna; Folashade Bamidele; Nusirat Elelu; Folorunso O Fasina",
+          "doi": "10.1155/tbed/1694850",
+          "pmid": "41438164",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41438164/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-114",
+      "method_label": "intervention_counterfactual_reproduction_analysis",
+      "canonical_name": "Intervention and counterfactual analysis using reproduction metrics",
+      "source_role": "correction",
+      "target_title": "Author Correction: Evaluating the COVID‑19 vaccination program in Japan, 2021 using the counterfactual reproduction number.",
+      "target_first_author": "Taishi Kayano",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/40826114/",
+      "seed_candidate_key": "PMID:40826114",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-219",
+          "query_variant": "exact_title",
+          "query": "Author[Title] AND Correction[Title] AND Evaluating[Title] AND COVID[Title] AND 19[Title] AND vaccination[Title] AND program[Title] AND Japan[Title] AND 2021[Title] AND counterfactual[Title] AND reproduction[Title] AND number[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:40826114",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-219",
+          "title": "Author Correction: Evaluating the COVID‑19 vaccination program in Japan, 2021 using the counterfactual reproduction number.",
+          "year": "2025",
+          "authors": "Taishi Kayano; Yura Ko; Kanako Otani; Tetsuro Kobayashi; Motoi Suzuki; Hiroshi Nishiura",
+          "doi": "10.1038/s41598-025-14940-x",
+          "pmid": "40826114",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40826114/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-115",
+      "method_label": "molecular_typing_and_genomic_surveillance",
+      "canonical_name": "Molecular typing and genomic surveillance",
+      "source_role": "authoritative_candidate",
+      "target_title": "Multilevel genome typing: genomics-guided scalable resolution typing of microbial pathogens.",
+      "target_first_author": "Michael Payne",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32458794/",
+      "seed_candidate_key": "PMID:32458794",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-220",
+          "query_variant": "exact_title",
+          "query": "Multilevel[Title] AND genome[Title] AND typing[Title] AND genomics[Title] AND guided[Title] AND scalable[Title] AND resolution[Title] AND microbial[Title] AND pathogens[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32458794",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-220",
+          "title": "Multilevel genome typing: genomics-guided scalable resolution typing of microbial pathogens.",
+          "year": "2020",
+          "authors": "Michael Payne; Sandeep Kaur; Qinning Wang; Daneeta Hennessy; Lijuan Luo; Sophie Octavia; Mark M Tanaka; Vitali Sintchenko; Ruiting Lan",
+          "doi": "10.2807/1560-7917.es.2020.25.20.1900519",
+          "pmid": "32458794",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32458794/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-116",
+      "method_label": "molecular_typing_and_genomic_surveillance",
+      "canonical_name": "Molecular typing and genomic surveillance",
+      "source_role": "diagnostic",
+      "target_title": "Evaluation of MLVA for epidemiological typing and outbreak detection of ESBL-producing Escherichia coli in Sweden.",
+      "target_first_author": "Lisa Helldal",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/28061803/",
+      "seed_candidate_key": "PMID:28061803",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-221",
+          "query_variant": "exact_title",
+          "query": "Evaluation[Title] AND MLVA[Title] AND epidemiological[Title] AND typing[Title] AND outbreak[Title] AND detection[Title] AND ESBL[Title] AND producing[Title] AND Escherichia[Title] AND coli[Title] AND Sweden[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:28061803",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-221",
+          "title": "Evaluation of MLVA for epidemiological typing and outbreak detection of ESBL-producing Escherichia coli in Sweden.",
+          "year": "2017",
+          "authors": "Lisa Helldal; Nahid Karami; Christina Welinder-Olsson; Edward R B Moore; Christina Åhren",
+          "doi": "10.1186/s12866-016-0922-1",
+          "pmid": "28061803",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28061803/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-117",
+      "method_label": "molecular_typing_and_genomic_surveillance",
+      "canonical_name": "Molecular typing and genomic surveillance",
+      "source_role": "implementation",
+      "target_title": "NanoCore: core-genome-based bacterial genomic surveillance and outbreak detection in healthcare facilities from Nanopore and Illumina data.",
+      "target_first_author": "Sebastian A Fuchs",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39373471/",
+      "seed_candidate_key": "PMID:39373471",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-222",
+          "query_variant": "exact_title",
+          "query": "NanoCore[Title] AND core[Title] AND genome[Title] AND based[Title] AND bacterial[Title] AND genomic[Title] AND surveillance[Title] AND outbreak[Title] AND detection[Title] AND healthcare[Title] AND facilities[Title] AND Nanopore[Title] AND Illumina[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39373471",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-222",
+          "title": "NanoCore: core-genome-based bacterial genomic surveillance and outbreak detection in healthcare facilities from Nanopore and Illumina data.",
+          "year": "2024",
+          "authors": "Sebastian A Fuchs; Lisanna Hülse; Teresa Tamayo; Susanne Kolbe-Busch; Klaus Pfeffer; Alexander T Dilthey",
+          "doi": "10.1128/msystems.01080-24",
+          "pmid": "39373471",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39373471/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-118",
+      "method_label": "outbreak_anomaly_detection",
+      "canonical_name": "Outbreak and anomaly detection",
+      "source_role": "diagnostic",
+      "target_title": "A simulation study on the statistical monitoring of condemnation rates from slaughterhouses for syndromic surveillance: an evaluation based on Swiss data.",
+      "target_first_author": "F Vial",
+      "target_year": "2015",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/26018224/",
+      "seed_candidate_key": "PMID:26018224",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-223",
+          "query_variant": "exact_title",
+          "query": "simulation[Title] AND study[Title] AND statistical[Title] AND monitoring[Title] AND condemnation[Title] AND rates[Title] AND slaughterhouses[Title] AND syndromic[Title] AND surveillance[Title] AND evaluation[Title] AND based[Title] AND Swiss[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:26018224",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-223",
+          "title": "A simulation study on the statistical monitoring of condemnation rates from slaughterhouses for syndromic surveillance: an evaluation based on Swiss data.",
+          "year": "2015",
+          "authors": "F Vial; S Thommen; L Held",
+          "doi": "10.1017/s0950268815000989",
+          "pmid": "26018224",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26018224/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-119",
+      "method_label": "outbreak_anomaly_detection",
+      "canonical_name": "Outbreak and anomaly detection",
+      "source_role": "implementation",
+      "target_title": "Clusters of healthcare-associated SARS-CoV-2 infections in Norwegian hospitals detected by a fully automatic register-based surveillance system.",
+      "target_first_author": "H Skagseth",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36913981/",
+      "seed_candidate_key": "PMID:36913981",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-224",
+          "query_variant": "exact_title",
+          "query": "Clusters[Title] AND healthcare[Title] AND associated[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND infections[Title] AND Norwegian[Title] AND hospitals[Title] AND detected[Title] AND fully[Title] AND automatic[Title] AND register[Title] AND based[Title] AND surveillance[Title] AND system[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36913981",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-224",
+          "title": "Clusters of healthcare-associated SARS-CoV-2 infections in Norwegian hospitals detected by a fully automatic register-based surveillance system.",
+          "year": "2023",
+          "authors": "H Skagseth; A S Danielsen; O Kacelnik; U J Trondsen; T C Berg; N K Sorknes; H-M Eriksen-Volle",
+          "doi": "10.1016/j.jhin.2023.02.014",
+          "pmid": "36913981",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36913981/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-120",
+      "method_label": "outbreak_detection_algorithms",
+      "canonical_name": "Outbreak detection algorithms",
+      "source_role": "diagnostic",
+      "target_title": "Influence of infectious disease seasonality on the performance of the outbreak detection algorithm in the China Infectious Disease Automated-alert and Response System.",
+      "target_first_author": "Ruiping Wang",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/28728470/",
+      "seed_candidate_key": "PMID:28728470",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-225",
+          "query_variant": "exact_title",
+          "query": "Influence[Title] AND infectious[Title] AND disease[Title] AND seasonality[Title] AND performance[Title] AND outbreak[Title] AND detection[Title] AND algorithm[Title] AND China[Title] AND Automated[Title] AND alert[Title] AND Response[Title] AND System[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:28728470",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-225",
+          "title": "Influence of infectious disease seasonality on the performance of the outbreak detection algorithm in the China Infectious Disease Automated-alert and Response System.",
+          "year": "2018",
+          "authors": "Ruiping Wang; Yonggen Jiang; Xiaoqin Guo; Yiling Wu; Genming Zhao",
+          "doi": "10.1177/0300060517718770",
+          "pmid": "28728470",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28728470/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-121",
+      "method_label": "outbreak_detection_algorithms",
+      "canonical_name": "Outbreak detection algorithms",
+      "source_role": "guidance",
+      "target_title": "Outbreak detection algorithms based on generalized linear model: a review with new practical examples.",
+      "target_first_author": "Bushra Zareie",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37838735/",
+      "seed_candidate_key": "PMID:37838735",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-226",
+          "query_variant": "exact_title",
+          "query": "Outbreak[Title] AND detection[Title] AND algorithms[Title] AND based[Title] AND generalized[Title] AND linear[Title] AND model[Title] AND review[Title] AND new[Title] AND practical[Title] AND examples[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37838735",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-226",
+          "title": "Outbreak detection algorithms based on generalized linear model: a review with new practical examples.",
+          "year": "2023",
+          "authors": "Bushra Zareie; Jalal Poorolajal; Amin Roshani; Manoochehr Karami",
+          "doi": "10.1186/s12874-023-02050-z",
+          "pmid": "37838735",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37838735/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-122",
+      "method_label": "outbreak_detection_program_evaluation",
+      "canonical_name": "Outbreak detection program evaluation",
+      "source_role": "authoritative_candidate",
+      "target_title": "Evaluating Hospital-Based Surveillance for Outbreak Detection in Bangladesh: Analysis of Healthcare Utilization Data.",
+      "target_first_author": "Birgit Nikolay",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/28095468/",
+      "seed_candidate_key": "PMID:28095468",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-227",
+          "query_variant": "exact_title",
+          "query": "Evaluating[Title] AND Hospital[Title] AND Based[Title] AND Surveillance[Title] AND Outbreak[Title] AND Detection[Title] AND Bangladesh[Title] AND Analysis[Title] AND Healthcare[Title] AND Utilization[Title] AND Data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:28095468",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-227",
+          "title": "Evaluating Hospital-Based Surveillance for Outbreak Detection in Bangladesh: Analysis of Healthcare Utilization Data.",
+          "year": "2017",
+          "authors": "Birgit Nikolay; Henrik Salje; Katharine Sturm-Ramirez; Eduardo Azziz-Baumgartner; Nusrat Homaira; Makhdum Ahmed; A Danielle Iuliano; Repon C Paul; Mahmudur Rahman; M Jahangir Hossain; Stephen P Luby; Simon Cauchemez; Emily S Gurley",
+          "doi": "10.1371/journal.pmed.1002218",
+          "pmid": "28095468",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28095468/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-123",
+      "method_label": "outbreak_detection_program_evaluation",
+      "canonical_name": "Outbreak detection program evaluation",
+      "source_role": "guidance",
+      "target_title": "Delayed outbreak detection: a wake-up call to evaluate a surveillance system.",
+      "target_first_author": "Lilian Bulage",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36158746/",
+      "seed_candidate_key": "PMID:36158746",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-228",
+          "query_variant": "exact_title",
+          "query": "Delayed[Title] AND outbreak[Title] AND detection[Title] AND wake[Title] AND up[Title] AND call[Title] AND evaluate[Title] AND surveillance[Title] AND system[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36158746",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-228",
+          "title": "Delayed outbreak detection: a wake-up call to evaluate a surveillance system.",
+          "year": "2022",
+          "authors": "Lilian Bulage; Daniel Kadobera; Benon Kwesiga; Steven Ndugugwa Kabwama; Alex Riolexus Ario; Julie Rebecca Harris",
+          "doi": "10.11604/pamj.supp.2022.41.1.31161",
+          "pmid": "36158746",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36158746/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-124",
+      "method_label": "outbreak_surveillance_operations_and_response",
+      "canonical_name": "Outbreak surveillance operations and response systems",
+      "source_role": "guidance",
+      "target_title": "Institutionalising public health emergency preparedness and responses in Africa: lessons learned during the 2022-2025 outbreaks with crossborder spread potential.",
+      "target_first_author": "Nebiyu Dereje",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/42330989/",
+      "seed_candidate_key": "PMID:42330989",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-229",
+          "query_variant": "exact_title",
+          "query": "Institutionalising[Title] AND public[Title] AND health[Title] AND emergency[Title] AND preparedness[Title] AND responses[Title] AND Africa[Title] AND lessons[Title] AND learned[Title] AND during[Title] AND 2022[Title] AND 2025[Title] AND outbreaks[Title] AND crossborder[Title] AND spread[Title] AND potential[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-259",
+          "query_variant": "title_first_author",
+          "query": "Institutionalising[Title] AND emergency[Title] AND preparedness[Title] AND crossborder[Title] AND Dereje[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:42330989",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-259",
+          "title": "Institutionalising public health emergency preparedness and responses in Africa: lessons learned during the 2022-2025 outbreaks with crossborder spread potential.",
+          "year": "2026",
+          "authors": "Nebiyu Dereje; Yap Boum; Merawi Aragaw; Kyeng Mercy; Mosoka Papa Fallah; Raji Tajudeen; Ngashi Ngongo; Jean Kaseya",
+          "doi": "10.1016/j.langlo.2026.103998",
+          "pmid": "42330989",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42330989/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-125",
+      "method_label": "outbreak_surveillance_operations_and_response",
+      "canonical_name": "Outbreak surveillance operations and response systems",
+      "source_role": "implementation",
+      "target_title": "Use of Surveillance Outbreak Response Management and Analysis System for Human Monkeypox Outbreak, Nigeria, 2017-2019.",
+      "target_first_author": "Bernard C Silenou",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/31961314/",
+      "seed_candidate_key": "PMID:31961314",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-230",
+          "query_variant": "exact_title",
+          "query": "Use[Title] AND Surveillance[Title] AND Outbreak[Title] AND Response[Title] AND Management[Title] AND Analysis[Title] AND System[Title] AND Human[Title] AND Monkeypox[Title] AND Nigeria[Title] AND 2017[Title] AND 2019[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:31961314",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-230",
+          "title": "Use of Surveillance Outbreak Response Management and Analysis System for Human Monkeypox Outbreak, Nigeria, 2017-2019.",
+          "year": "2020",
+          "authors": "Bernard C Silenou; Daniel Tom-Aba; Olawunmi Adeoye; Chinedu C Arinze; Ferdinand Oyiri; Anthony K Suleman; Adesola Yinka-Ogunleye; Juliane Dörrbecker; Chikwe Ihekweazu; Gérard Krause",
+          "doi": "10.3201/eid2602.191139",
+          "pmid": "31961314",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31961314/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-126",
+      "method_label": "outbreak_surveillance_operations_and_response",
+      "canonical_name": "Outbreak surveillance operations and response systems",
+      "source_role": "infectious_application",
+      "target_title": "Multidrug-resistant typhoid fever with neurologic findings on the Malawi-Mozambique border.",
+      "target_first_author": "Emily Lutterloh",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22357702/",
+      "seed_candidate_key": "PMID:22357702",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-231",
+          "query_variant": "exact_title",
+          "query": "Multidrug[Title] AND resistant[Title] AND typhoid[Title] AND fever[Title] AND neurologic[Title] AND findings[Title] AND Malawi[Title] AND Mozambique[Title] AND border[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22357702",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-231",
+          "title": "Multidrug-resistant typhoid fever with neurologic findings on the Malawi-Mozambique border.",
+          "year": "2012",
+          "authors": "Emily Lutterloh; Andrew Likaka; James Sejvar; Robert Manda; Jeremias Naiene; Stephan S Monroe; Tadala Khaila; Benson Chilima; Macpherson Mallewa; Sam D Kampondeni; Sara A Lowther; Linda Capewell; Kashmira Date; David Townes; Yanique Redwood; Joshua G Schier; Benjamin Nygren; Beth Tippett Barr; Austin Demby; Abel Phiri; Rudia Lungu; James Kaphiyo; Michael Humphrys; Deborah Talkington; Kevin Joyce; Lauren J Stockman; Gregory L Armstrong; Eric Mintz",
+          "doi": "10.1093/cid/cis012",
+          "pmid": "22357702",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22357702/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-127",
+      "method_label": "predictive_early_warning_models",
+      "canonical_name": "Predictive early-warning models",
+      "source_role": "diagnostic",
+      "target_title": "Instantaneous reproduction number and epidemic growth rate for predicting COVID-19 waves: the first 2 years of the pandemic in Spain.",
+      "target_first_author": "Javier Llorca",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37780431/",
+      "seed_candidate_key": "PMID:37780431",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-232",
+          "query_variant": "exact_title",
+          "query": "Instantaneous[Title] AND reproduction[Title] AND number[Title] AND epidemic[Title] AND growth[Title] AND rate[Title] AND predicting[Title] AND COVID[Title] AND 19[Title] AND waves[Title] AND first[Title] AND 2[Title] AND years[Title] AND pandemic[Title] AND Spain[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37780431",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-232",
+          "title": "Instantaneous reproduction number and epidemic growth rate for predicting COVID-19 waves: the first 2 years of the pandemic in Spain.",
+          "year": "2023",
+          "authors": "Javier Llorca; Inés Gómez-Acebo; Jessica Alonso-Molero; Trinidad Dierssen-Sotos",
+          "doi": "10.3389/fpubh.2023.1233043",
+          "pmid": "37780431",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37780431/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-128",
+      "method_label": "renewal_reproduction_number_models",
+      "canonical_name": "Renewal models and reproduction-number estimation",
+      "source_role": "authoritative_candidate",
+      "target_title": "Early estimation of the reproduction number in the presence of imported cases: pandemic influenza H1N1-2009 in New Zealand.",
+      "target_first_author": "Michael George Roberts",
+      "target_year": "2011",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/21637342/",
+      "seed_candidate_key": "PMID:21637342",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-233",
+          "query_variant": "exact_title",
+          "query": "Early[Title] AND estimation[Title] AND reproduction[Title] AND number[Title] AND presence[Title] AND imported[Title] AND cases[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND 2009[Title] AND New[Title] AND Zealand[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:21637342",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-233",
+          "title": "Early estimation of the reproduction number in the presence of imported cases: pandemic influenza H1N1-2009 in New Zealand.",
+          "year": "2011",
+          "authors": "Michael George Roberts; Hiroshi Nishiura",
+          "doi": "10.1371/journal.pone.0017835",
+          "pmid": "21637342",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21637342/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-129",
+      "method_label": "renewal_reproduction_number_models",
+      "canonical_name": "Renewal models and reproduction-number estimation",
+      "source_role": "correction",
+      "target_title": "Corrigendum to \"Estimating effective reproduction number using generation time versus serial interval, with application to covid-19 in the Greater Toronto Area, Canada\" [Infectious Disease Modelling 5 (2020) 889-896].",
+      "target_first_author": "Jesse Knight",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36406143/",
+      "seed_candidate_key": "PMID:36406143",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-234",
+          "query_variant": "exact_title",
+          "query": "Corrigendum[Title] AND Estimating[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND generation[Title] AND time[Title] AND versus[Title] AND serial[Title] AND interval[Title] AND application[Title] AND covid[Title] AND 19[Title] AND Greater[Title] AND Toronto[Title] AND Area[Title] AND Canada[Title] AND Infectious[Title] AND Disease[Title] AND Modelling[Title] AND 5[Title] AND 2020[Title] AND 889[Title] AND 896[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36406143",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-234",
+          "title": "Corrigendum to \"Estimating effective reproduction number using generation time versus serial interval, with application to covid-19 in the Greater Toronto Area, Canada\" [Infectious Disease Modelling 5 (2020) 889-896].",
+          "year": "2022",
+          "authors": "Jesse Knight; Sharmistha Mishra",
+          "doi": "10.1016/j.idm.2022.11.006",
+          "pmid": "36406143",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36406143/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-130",
+      "method_label": "renewal_reproduction_number_models",
+      "canonical_name": "Renewal models and reproduction-number estimation",
+      "source_role": "implementation",
+      "target_title": "Extending EpiEstim to estimate the transmission advantage of pathogen variants in real-time: SARS-CoV-2 as a case-study.",
+      "target_first_author": "Sangeeta Bhatia",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37399634/",
+      "seed_candidate_key": "PMID:37399634",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-235",
+          "query_variant": "exact_title",
+          "query": "Extending[Title] AND EpiEstim[Title] AND estimate[Title] AND transmission[Title] AND advantage[Title] AND pathogen[Title] AND variants[Title] AND real[Title] AND time[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND case[Title] AND study[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37399634",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-235",
+          "title": "Extending EpiEstim to estimate the transmission advantage of pathogen variants in real-time: SARS-CoV-2 as a case-study.",
+          "year": "2023",
+          "authors": "Sangeeta Bhatia; Jack Wardle; Rebecca K Nash; Pierre Nouvellet; Anne Cori",
+          "doi": "10.1016/j.epidem.2023.100692",
+          "pmid": "37399634",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37399634/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-131",
+      "method_label": "reporting_adjusted_dynamics_forecasting",
+      "canonical_name": "Reporting-adjusted epidemic dynamics and forecasting",
+      "source_role": "diagnostic",
+      "target_title": "The tale of two assumptions: incorporating healthcare-seeking behaviour in epidemic forecasting.",
+      "target_first_author": "Marie Varughese",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/41267014/",
+      "seed_candidate_key": "PMID:41267014",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-236",
+          "query_variant": "exact_title",
+          "query": "tale[Title] AND two[Title] AND assumptions[Title] AND incorporating[Title] AND healthcare[Title] AND seeking[Title] AND behaviour[Title] AND epidemic[Title] AND forecasting[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:41267014",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-236",
+          "title": "The tale of two assumptions: incorporating healthcare-seeking behaviour in epidemic forecasting.",
+          "year": "2025",
+          "authors": "Marie Varughese; Weston Roda; Donglin Han; Xuyuan Wang; Michael Y Li",
+          "doi": "10.1186/s12879-025-11940-0",
+          "pmid": "41267014",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41267014/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-132",
+      "method_label": "reproduction_number_estimation_and_monitoring",
+      "canonical_name": "Reproduction-number estimation and epidemic monitoring",
+      "source_role": "authoritative_candidate",
+      "target_title": "Using routine surveillance data to estimate the epidemic potential of emerging zoonoses: application to the emergence of US swine origin influenza A H3N2v virus.",
+      "target_first_author": "Simon Cauchemez",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23472057/",
+      "seed_candidate_key": "PMID:23472057",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-237",
+          "query_variant": "exact_title",
+          "query": "routine[Title] AND surveillance[Title] AND data[Title] AND estimate[Title] AND epidemic[Title] AND potential[Title] AND emerging[Title] AND zoonoses[Title] AND application[Title] AND emergence[Title] AND US[Title] AND swine[Title] AND origin[Title] AND influenza[Title] AND H3N2v[Title] AND virus[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23472057",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-237",
+          "title": "Using routine surveillance data to estimate the epidemic potential of emerging zoonoses: application to the emergence of US swine origin influenza A H3N2v virus.",
+          "year": "2013",
+          "authors": "Simon Cauchemez; Scott Epperson; Matthew Biggerstaff; David Swerdlow; Lyn Finelli; Neil M Ferguson",
+          "doi": "10.1371/journal.pmed.1001399",
+          "pmid": "23472057",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23472057/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-133",
+      "method_label": "reproduction_number_methods_theory",
+      "canonical_name": "Reproduction-number methods, theory, and computation",
+      "source_role": "authoritative_candidate",
+      "target_title": "Epidemic models with uncertainty in the reproduction number.",
+      "target_first_author": "M G Roberts",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22562623/",
+      "seed_candidate_key": "PMID:22562623",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-238",
+          "query_variant": "exact_title",
+          "query": "Epidemic[Title] AND models[Title] AND uncertainty[Title] AND reproduction[Title] AND number[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22562623",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-238",
+          "title": "Epidemic models with uncertainty in the reproduction number.",
+          "year": "2013",
+          "authors": "M G Roberts",
+          "doi": "10.1007/s00285-012-0540-y",
+          "pmid": "22562623",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22562623/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-134",
+      "method_label": "reproduction_number_methods_theory",
+      "canonical_name": "Reproduction-number methods, theory, and computation",
+      "source_role": "diagnostic",
+      "target_title": "Exploring surveillance data biases when estimating the reproduction number: with insights into subpopulation transmission of COVID-19 in England.",
+      "target_first_author": "Katharine Sherratt",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/34053260/",
+      "seed_candidate_key": "PMID:34053260",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-239",
+          "query_variant": "exact_title",
+          "query": "Exploring[Title] AND surveillance[Title] AND data[Title] AND biases[Title] AND when[Title] AND estimating[Title] AND reproduction[Title] AND number[Title] AND insights[Title] AND subpopulation[Title] AND transmission[Title] AND COVID[Title] AND 19[Title] AND England[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-260",
+          "query_variant": "title_first_author",
+          "query": "surveillance[Title] AND reproduction[Title] AND subpopulation[Title] AND transmission[Title] AND Sherratt[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:34053260",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-260",
+          "title": "Exploring surveillance data biases when estimating the reproduction number: with insights into subpopulation transmission of COVID-19 in England.",
+          "year": "2021",
+          "authors": "Katharine Sherratt; Sam Abbott; Sophie R Meakin; Joel Hellewell; James D Munday; Nikos Bosse; CMMID COVID-19 Working Group; Mark Jit; Sebastian Funk",
+          "doi": "10.1098/rstb.2020.0283",
+          "pmid": "34053260",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34053260/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-135",
+      "method_label": "reproduction_number_methods_theory",
+      "canonical_name": "Reproduction-number methods, theory, and computation",
+      "source_role": "guidance",
+      "target_title": "Complexity of the Basic Reproduction Number (R0).",
+      "target_first_author": "Paul L Delamater",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30560777/",
+      "seed_candidate_key": "PMID:30560777",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-240",
+          "query_variant": "exact_title",
+          "query": "Complexity[Title] AND Basic[Title] AND Reproduction[Title] AND Number[Title] AND R0[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30560777",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-240",
+          "title": "Complexity of the Basic Reproduction Number (R0).",
+          "year": "2019",
+          "authors": "Paul L Delamater; Erica J Street; Timothy F Leslie; Y Tony Yang; Kathryn H Jacobsen",
+          "doi": "10.3201/eid2501.171901",
+          "pmid": "30560777",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30560777/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-136",
+      "method_label": "reproduction_number_methods_theory",
+      "canonical_name": "Reproduction-number methods, theory, and computation",
+      "source_role": "implementation",
+      "target_title": "Improved inference of time-varying reproduction numbers during infectious disease outbreaks.",
+      "target_first_author": "R N Thompson",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/31624039/",
+      "seed_candidate_key": "PMID:31624039",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-241",
+          "query_variant": "exact_title",
+          "query": "Improved[Title] AND inference[Title] AND time[Title] AND varying[Title] AND reproduction[Title] AND numbers[Title] AND during[Title] AND infectious[Title] AND disease[Title] AND outbreaks[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-261",
+          "query_variant": "title_first_author",
+          "query": "inference[Title] AND reproduction[Title] AND infectious[Title] AND outbreaks[Title] AND Thompson[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:31624039",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-261",
+          "title": "Improved inference of time-varying reproduction numbers during infectious disease outbreaks.",
+          "year": "2019",
+          "authors": "R N Thompson; J E Stockwin; R D van Gaalen; J A Polonsky; Z N Kamvar; P A Demarsh; E Dahlqwist; S Li; E Miguel; T Jombart; J Lessler; S Cauchemez; A Cori",
+          "doi": "10.1016/j.epidem.2019.100356",
+          "pmid": "31624039",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31624039/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-137",
+      "method_label": "reproduction_number_theory_and_control_models",
+      "canonical_name": "Reproduction-number theory and control-oriented transmission models",
+      "source_role": "correction",
+      "target_title": "Erratum to: Extending the type reproduction number to infectious disease control targeting contacts between types.",
+      "target_first_author": "Zhisheng Shuai",
+      "target_year": "2015",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25800536/",
+      "seed_candidate_key": "PMID:25800536",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-242",
+          "query_variant": "exact_title",
+          "query": "Erratum[Title] AND Extending[Title] AND type[Title] AND reproduction[Title] AND number[Title] AND infectious[Title] AND disease[Title] AND control[Title] AND targeting[Title] AND contacts[Title] AND between[Title] AND types[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-262",
+          "query_variant": "title_first_author",
+          "query": "Extending[Title] AND reproduction[Title] AND infectious[Title] AND targeting[Title] AND Shuai[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25800536",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-262",
+          "title": "Erratum to: Extending the type reproduction number to infectious disease control targeting contacts between types.",
+          "year": "2015",
+          "authors": "Zhisheng Shuai; J A P Heesterbeek; P van den Driessche",
+          "doi": "10.1007/s00285-015-0858-3",
+          "pmid": "25800536",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25800536/"
+        },
+        {
+          "candidate_key": "PMID:22941454",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-262",
+          "title": "Extending the type reproduction number to infectious disease control targeting contacts between types.",
+          "year": "2013",
+          "authors": "Zhisheng Shuai; J A P Heesterbeek; P van den Driessche",
+          "doi": "10.1007/s00285-012-0579-9",
+          "pmid": "22941454",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22941454/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-138",
+      "method_label": "reproduction_number_threshold_theory",
+      "canonical_name": "Reproduction-number theory in mechanistic transmission models",
+      "source_role": "diagnostic",
+      "target_title": "Is a reproduction number of one a threshold for Plasmodium falciparum malaria elimination?",
+      "target_first_author": "Jamie T Griffin",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27456218/",
+      "seed_candidate_key": "PMID:27456218",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-243",
+          "query_variant": "exact_title",
+          "query": "Is[Title] AND reproduction[Title] AND number[Title] AND one[Title] AND threshold[Title] AND Plasmodium[Title] AND falciparum[Title] AND malaria[Title] AND elimination[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-263",
+          "query_variant": "title_first_author",
+          "query": "reproduction[Title] AND Plasmodium[Title] AND falciparum[Title] AND elimination[Title] AND Griffin[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27456218",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-263",
+          "title": "Is a reproduction number of one a threshold for Plasmodium falciparum malaria elimination?",
+          "year": "2016",
+          "authors": "Jamie T Griffin",
+          "doi": "10.1186/s12936-016-1437-9",
+          "pmid": "27456218",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27456218/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-139",
+      "method_label": "reproduction_number_threshold_theory",
+      "canonical_name": "Reproduction-number theory in mechanistic transmission models",
+      "source_role": "guidance",
+      "target_title": "The basic reproduction number of vector-borne plant virus epidemics.",
+      "target_first_author": "Frank Van den Bosch",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/28642061/",
+      "seed_candidate_key": "PMID:28642061",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-244",
+          "query_variant": "exact_title",
+          "query": "basic[Title] AND reproduction[Title] AND number[Title] AND vector[Title] AND borne[Title] AND plant[Title] AND virus[Title] AND epidemics[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:28642061",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-244",
+          "title": "The basic reproduction number of vector-borne plant virus epidemics.",
+          "year": "2017",
+          "authors": "Frank Van den Bosch; Michael J Jeger",
+          "doi": "10.1016/j.virusres.2017.06.014",
+          "pmid": "28642061",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28642061/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-140",
+      "method_label": "reproduction_number_threshold_theory",
+      "canonical_name": "Reproduction-number theory in mechanistic transmission models",
+      "source_role": "original_candidate",
+      "target_title": "Global stability of epidemic models with uniform susceptibility.",
+      "target_first_author": "David J D Earn",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/41329739/",
+      "seed_candidate_key": "PMID:41329739",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-245",
+          "query_variant": "exact_title",
+          "query": "Global[Title] AND stability[Title] AND epidemic[Title] AND models[Title] AND uniform[Title] AND susceptibility[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:41329739",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-245",
+          "title": "Global stability of epidemic models with uniform susceptibility.",
+          "year": "2025",
+          "authors": "David J D Earn; C Connell McCluskey",
+          "doi": "10.1073/pnas.2510156122",
+          "pmid": "41329739",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41329739/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-141",
+      "method_label": "sentinel_surveillance_outbreak_detection_forecasting",
+      "canonical_name": "Sentinel surveillance outbreak detection and forecasting",
+      "source_role": "diagnostic",
+      "target_title": "Monitoring SARS-CoV-2 Activity with Sentinel Surveillance: Lessons Learned from the First Wave in Israel.",
+      "target_first_author": "Michal Bromberg",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35415978/",
+      "seed_candidate_key": "PMID:35415978",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-246",
+          "query_variant": "exact_title",
+          "query": "Monitoring[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND Activity[Title] AND Sentinel[Title] AND Surveillance[Title] AND Lessons[Title] AND Learned[Title] AND First[Title] AND Wave[Title] AND Israel[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35415978",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-246",
+          "title": "Monitoring SARS-CoV-2 Activity with Sentinel Surveillance: Lessons Learned from the First Wave in Israel.",
+          "year": "2022",
+          "authors": "Michal Bromberg; Lital Keinan-Boker; Lea Gur-Arie; Hanna Sefty; Michal Mandelboim; Rita Dichtiar; Zalman Kaufman; Aharona Glatman-Freedman",
+          "doi": "",
+          "pmid": "35415978",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35415978/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-142",
+      "method_label": "sentinel_surveillance_outbreak_detection_forecasting",
+      "canonical_name": "Sentinel surveillance outbreak detection and forecasting",
+      "source_role": "guidance",
+      "target_title": "Sentinel surveillance strategies for early detection of coronavirus disease in fever clinics: experience from China.",
+      "target_first_author": "Rongtao Lai",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32838815/",
+      "seed_candidate_key": "PMID:32838815",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-247",
+          "query_variant": "exact_title",
+          "query": "Sentinel[Title] AND surveillance[Title] AND strategies[Title] AND early[Title] AND detection[Title] AND coronavirus[Title] AND disease[Title] AND fever[Title] AND clinics[Title] AND experience[Title] AND China[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32838815",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-247",
+          "title": "Sentinel surveillance strategies for early detection of coronavirus disease in fever clinics: experience from China.",
+          "year": "2020",
+          "authors": "Rongtao Lai; Erzhen Chen; Weiyi Gao; Chengwei Cheng; Qing Xie",
+          "doi": "10.1017/s0950268820001892",
+          "pmid": "32838815",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32838815/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-143",
+      "method_label": "sentinel_surveillance_outbreak_detection_forecasting",
+      "canonical_name": "Sentinel surveillance outbreak detection and forecasting",
+      "source_role": "infectious_application",
+      "target_title": "Rapid Sentinel Surveillance for COVID-19 - Santa Clara County, California, March 2020.",
+      "target_first_author": "Marissa L Zwald",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32271724/",
+      "seed_candidate_key": "PMID:32271724",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-248",
+          "query_variant": "exact_title",
+          "query": "Rapid[Title] AND Sentinel[Title] AND Surveillance[Title] AND COVID[Title] AND 19[Title] AND Santa[Title] AND Clara[Title] AND County[Title] AND California[Title] AND March[Title] AND 2020[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32271724",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-248",
+          "title": "Rapid Sentinel Surveillance for COVID-19 - Santa Clara County, California, March 2020.",
+          "year": "2020",
+          "authors": "Marissa L Zwald; Wen Lin; Gail L Sondermeyer Cooksey; Charles Weiss; Angela Suarez; Marc Fischer; Brandon J Bonin; Seema Jain; Gayle E Langley; Benjamin J Park; Danielle Moulia; Rory Benedict; Nang Nguyen; George S Han",
+          "doi": "10.15585/mmwr.mm6914e3",
+          "pmid": "32271724",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32271724/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-144",
+      "method_label": "surveillance_early_warning_systems",
+      "canonical_name": "Surveillance and early-warning systems",
+      "source_role": "diagnostic",
+      "target_title": "Social media posts and online search behaviour as early-warning system for MRSA outbreaks.",
+      "target_first_author": "Tom H van de Belt",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/29876100/",
+      "seed_candidate_key": "PMID:29876100",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-249",
+          "query_variant": "exact_title",
+          "query": "Social[Title] AND media[Title] AND posts[Title] AND online[Title] AND search[Title] AND behaviour[Title] AND early[Title] AND warning[Title] AND system[Title] AND MRSA[Title] AND outbreaks[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:29876100",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-249",
+          "title": "Social media posts and online search behaviour as early-warning system for MRSA outbreaks.",
+          "year": "2018",
+          "authors": "Tom H van de Belt; Pieter T van Stockum; Lucien J L P G Engelen; Jules Lancee; Remco Schrijver; Jesús Rodríguez-Baño; Evelina Tacconelli; Katja Saris; Marleen M H J van Gelder; Andreas Voss",
+          "doi": "10.1186/s13756-018-0359-4",
+          "pmid": "29876100",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29876100/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-145",
+      "method_label": "surveillance_early_warning_systems",
+      "canonical_name": "Surveillance and early-warning systems",
+      "source_role": "guidance",
+      "target_title": "Innovation in observation: a vision for early outbreak detection.",
+      "target_first_author": "Nh Fefferman",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22460396/",
+      "seed_candidate_key": "PMID:22460396",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-250",
+          "query_variant": "exact_title",
+          "query": "Innovation[Title] AND observation[Title] AND vision[Title] AND early[Title] AND outbreak[Title] AND detection[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22460396",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-250",
+          "title": "Innovation in observation: a vision for early outbreak detection.",
+          "year": "2010",
+          "authors": "Nh Fefferman; En Naumova",
+          "doi": "10.3134/ehtj.10.006",
+          "pmid": "22460396",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22460396/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-146",
+      "method_label": "surveillance_early_warning_systems",
+      "canonical_name": "Surveillance and early-warning systems",
+      "source_role": "original_candidate",
+      "target_title": "Real-time estimation of the effective reproduction number of COVID-19 from behavioral data.",
+      "target_first_author": "Eszter Bokányi",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/38052841/",
+      "seed_candidate_key": "PMID:38052841",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-251",
+          "query_variant": "exact_title",
+          "query": "Real[Title] AND time[Title] AND estimation[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND COVID[Title] AND 19[Title] AND behavioral[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:38052841",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-251",
+          "title": "Real-time estimation of the effective reproduction number of COVID-19 from behavioral data.",
+          "year": "2023",
+          "authors": "Eszter Bokányi; Zsolt Vizi; Júlia Koltai; Gergely Röst; Márton Karsai",
+          "doi": "10.1038/s41598-023-46418-z",
+          "pmid": "38052841",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38052841/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-147",
+      "method_label": "transmission_dynamics_forecasting_models",
+      "canonical_name": "Transmission dynamics, contact measurement, and epidemic forecasting models",
+      "source_role": "infectious_application",
+      "target_title": "Nowcasting and forecasting the potential domestic and international spread of the 2019-nCoV outbreak originating in Wuhan, China: a modelling study.",
+      "target_first_author": "Joseph T Wu",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32014114/",
+      "seed_candidate_key": "PMID:32014114",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-252",
+          "query_variant": "exact_title",
+          "query": "Nowcasting[Title] AND forecasting[Title] AND potential[Title] AND domestic[Title] AND international[Title] AND spread[Title] AND 2019[Title] AND nCoV[Title] AND outbreak[Title] AND originating[Title] AND Wuhan[Title] AND China[Title] AND modelling[Title] AND study[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32014114",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-252",
+          "title": "Nowcasting and forecasting the potential domestic and international spread of the 2019-nCoV outbreak originating in Wuhan, China: a modelling study.",
+          "year": "2020",
+          "authors": "Joseph T Wu; Kathy Leung; Gabriel M Leung",
+          "doi": "10.1016/s0140-6736(20)30260-9",
+          "pmid": "32014114",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32014114/"
+        }
+      ]
+    }
+  ]
+}

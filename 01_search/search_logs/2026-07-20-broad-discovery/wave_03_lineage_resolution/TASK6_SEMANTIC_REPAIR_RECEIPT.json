@@ -1,0 +1,55 @@
+{
+  "batch_count": 78,
+  "batch_manifest": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/task6_semantic_repair_reader_manifest.csv",
+  "claim_boundary": "Semantic discovery decisions from titles and complete available abstracts only; no source role or substantive method claim is verified.",
+  "execution_date": "2026-07-22",
+  "lineage_identity_summary": {
+    "active_queries": 723,
+    "candidate_rows": 634,
+    "final_decisions": {
+      "ambiguous": 2,
+      "resolved": 616,
+      "unresolved_after_three_queries": 2
+    },
+    "independent_audit_coverage": "620/620",
+    "selected_named_sources": 620
+  },
+  "reader": "task6-semantic-repair-reader-20260722",
+  "reader_prompt_sha256": "2901eb5c916c0b36ea925bba8e1206e0db7b2aa5eb6fb2d0e671520d612ec3b7",
+  "reader_result_directory": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/semantic_repair_reader_results",
+  "reader_schema_sha256": "03812f90dd2eeba9b13ffd8e73c6f21c26236f99ea2becc84996c3d498c3d2a8",
+  "row_count": 7779,
+  "schema_version": 1,
+  "summary": {
+    "active_queries_after_merge": 683,
+    "assignments": 7779,
+    "concepts": 277,
+    "dropped_active_queries": 102,
+    "lineage_role_counts": {
+      "authoritative_candidate": 1004,
+      "correction": 35,
+      "diagnostic": 939,
+      "guidance": 252,
+      "implementation": 205,
+      "infectious_application": 4291,
+      "none": 1031,
+      "original_candidate": 22
+    },
+    "new_named_sources": 272,
+    "relationship_role_counts": {
+      "applies": 4396,
+      "corrects": 34,
+      "critiques": 154,
+      "diagnoses": 913,
+      "implements": 197,
+      "omit": 1068,
+      "originates": 1017
+    },
+    "relationships_emitted": 6711,
+    "relationships_omitted": 1068,
+    "retained_existing_identity_audits": 348,
+    "retained_existing_named_sources": 348,
+    "selected_named_sources": 620
+  },
+  "timezone": "Asia/Shanghai"
+}

@@ -1,0 +1,1535 @@
+{
+  "batch_id": "REPAIR-IDENTITY-003",
+  "sources": [
+    {
+      "named_source_id": "NS-FORECASTING-148",
+      "method_label": "transmission_dynamics_inference",
+      "canonical_name": "Transmission dynamics inference",
+      "source_role": "authoritative_candidate",
+      "target_title": "Estimating the reproduction number and transmission heterogeneity from the size distribution of clusters of identical pathogen sequences.",
+      "target_first_author": "Cécile Tran-Kiem",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/38568971/",
+      "seed_candidate_key": "PMID:38568971",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-253",
+          "query_variant": "exact_title",
+          "query": "Estimating[Title] AND reproduction[Title] AND number[Title] AND transmission[Title] AND heterogeneity[Title] AND size[Title] AND distribution[Title] AND clusters[Title] AND identical[Title] AND pathogen[Title] AND sequences[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39705329",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-253",
+          "title": "Correction for Tran-Kiem and Bedford, Estimating the reproduction number and transmission heterogeneity from the size distribution of clusters of identical pathogen sequences.",
+          "year": "2025",
+          "authors": "",
+          "doi": "10.1073/pnas.2424815121",
+          "pmid": "39705329",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39705329/"
+        },
+        {
+          "candidate_key": "PMID:38568971",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-253",
+          "title": "Estimating the reproduction number and transmission heterogeneity from the size distribution of clusters of identical pathogen sequences.",
+          "year": "2024",
+          "authors": "Cécile Tran-Kiem; Trevor Bedford",
+          "doi": "10.1073/pnas.2305299121",
+          "pmid": "38568971",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38568971/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-149",
+      "method_label": "transmission_dynamics_inference",
+      "canonical_name": "Transmission dynamics inference",
+      "source_role": "diagnostic",
+      "target_title": "Characterizing Ebola Transmission Patterns Based on Internet News Reports.",
+      "target_first_author": "Julie M Cleaton",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/26338786/",
+      "seed_candidate_key": "PMID:26338786",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-254",
+          "query_variant": "exact_title",
+          "query": "Characterizing[Title] AND Ebola[Title] AND Transmission[Title] AND Patterns[Title] AND Based[Title] AND Internet[Title] AND News[Title] AND Reports[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:26338786",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-254",
+          "title": "Characterizing Ebola Transmission Patterns Based on Internet News Reports.",
+          "year": "2016",
+          "authors": "Julie M Cleaton; Cecile Viboud; Lone Simonsen; Ana M Hurtado; Gerardo Chowell",
+          "doi": "10.1093/cid/civ748",
+          "pmid": "26338786",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26338786/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-150",
+      "method_label": "transmission_models_with_underascertainment",
+      "canonical_name": "Transmission-dynamics models with under-ascertainment",
+      "source_role": "diagnostic",
+      "target_title": "Identification and estimation of the SEIRD epidemic model for COVID-19.",
+      "target_first_author": "Ivan Korolev",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32836680/",
+      "seed_candidate_key": "PMID:32836680",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-255",
+          "query_variant": "exact_title",
+          "query": "Identification[Title] AND estimation[Title] AND SEIRD[Title] AND epidemic[Title] AND model[Title] AND COVID[Title] AND 19[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32836680",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-255",
+          "title": "Identification and estimation of the SEIRD epidemic model for COVID-19.",
+          "year": "2021",
+          "authors": "Ivan Korolev",
+          "doi": "10.1016/j.jeconom.2020.07.038",
+          "pmid": "32836680",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32836680/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-151",
+      "method_label": "transmission_models_with_underascertainment",
+      "canonical_name": "Transmission-dynamics models with under-ascertainment",
+      "source_role": "guidance",
+      "target_title": "Insights from quantitative and mathematical modelling on the proposed 2030 goal for gambiense human African trypanosomiasis (gHAT).",
+      "target_first_author": "NTD Modelling Consortium Discussion Group on Gambiense Human African Trypanosomiasis",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32411945/",
+      "seed_candidate_key": "PMID:32411945",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-256",
+          "query_variant": "exact_title",
+          "query": "Insights[Title] AND quantitative[Title] AND mathematical[Title] AND modelling[Title] AND proposed[Title] AND 2030[Title] AND goal[Title] AND gambiense[Title] AND human[Title] AND African[Title] AND trypanosomiasis[Title] AND gHAT[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32411945",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-256",
+          "title": "Insights from quantitative and mathematical modelling on the proposed 2030 goal for gambiense human African trypanosomiasis (gHAT).",
+          "year": "2019",
+          "authors": "NTD Modelling Consortium Discussion Group on Gambiense Human African Trypanosomiasis",
+          "doi": "10.12688/gatesopenres.13070.2",
+          "pmid": "32411945",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32411945/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-035",
+      "method_label": "agent_based_models",
+      "canonical_name": "Agent-based and individual-based models",
+      "source_role": "correction",
+      "target_title": "Correction: An open-data-driven agent-based model to simulate infectious disease outbreaks.",
+      "target_first_author": "Elizabeth Hunter",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30653620/",
+      "seed_candidate_key": "PMID:30653620",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-76",
+          "query_variant": "exact_title",
+          "query": "Correction[Title] AND open[Title] AND data[Title] AND driven[Title] AND agent[Title] AND based[Title] AND model[Title] AND simulate[Title] AND infectious[Title] AND disease[Title] AND outbreaks[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30653620",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-76",
+          "title": "Correction: An open-data-driven agent-based model to simulate infectious disease outbreaks.",
+          "year": "2019",
+          "authors": "Elizabeth Hunter; Brian Mac Namee; John Kelleher",
+          "doi": "10.1371/journal.pone.0211245",
+          "pmid": "30653620",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30653620/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-036",
+      "method_label": "agent_based_models",
+      "canonical_name": "Agent-based and individual-based models",
+      "source_role": "diagnostic",
+      "target_title": "A test of agent-based models as a tool for predicting patterns of pathogen transmission in complex landscapes.",
+      "target_first_author": "Kelly E Lane-deGraaf",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/24063811/",
+      "seed_candidate_key": "PMID:24063811",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-77",
+          "query_variant": "exact_title",
+          "query": "test[Title] AND agent[Title] AND based[Title] AND models[Title] AND tool[Title] AND predicting[Title] AND patterns[Title] AND pathogen[Title] AND transmission[Title] AND complex[Title] AND landscapes[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:24063811",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-77",
+          "title": "A test of agent-based models as a tool for predicting patterns of pathogen transmission in complex landscapes.",
+          "year": "2013",
+          "authors": "Kelly E Lane-deGraaf; Ryan C Kennedy; S M Niaz Arifin; Gregory R Madey; Agustin Fuentes; Hope Hollocher",
+          "doi": "10.1186/1472-6785-13-35",
+          "pmid": "24063811",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24063811/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-037",
+      "method_label": "agent_based_models",
+      "canonical_name": "Agent-based and individual-based models",
+      "source_role": "guidance",
+      "target_title": "Agent-based models of malaria transmission: a systematic review.",
+      "target_first_author": "Neal R Smith",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30119664/",
+      "seed_candidate_key": "PMID:30119664",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-78",
+          "query_variant": "exact_title",
+          "query": "Agent[Title] AND based[Title] AND models[Title] AND malaria[Title] AND transmission[Title] AND systematic[Title] AND review[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30119664",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-78",
+          "title": "Agent-based models of malaria transmission: a systematic review.",
+          "year": "2018",
+          "authors": "Neal R Smith; James M Trauer; Manoj Gambhir; Jack S Richards; Richard J Maude; Jonathan M Keith; Jennifer A Flegg",
+          "doi": "10.1186/s12936-018-2442-y",
+          "pmid": "30119664",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30119664/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-038",
+      "method_label": "agent_based_models",
+      "canonical_name": "Agent-based and individual-based models",
+      "source_role": "implementation",
+      "target_title": "Attribute Assignment to a Synthetic Population in Support of Agent-Based Disease Modeling.",
+      "target_first_author": "James C Cajka",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22577617/",
+      "seed_candidate_key": "PMID:22577617",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-79",
+          "query_variant": "exact_title",
+          "query": "Attribute[Title] AND Assignment[Title] AND Synthetic[Title] AND Population[Title] AND Support[Title] AND Agent[Title] AND Based[Title] AND Disease[Title] AND Modeling[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22577617",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-79",
+          "title": "Attribute Assignment to a Synthetic Population in Support of Agent-Based Disease Modeling.",
+          "year": "2010",
+          "authors": "James C Cajka; Philip C Cooley; William D Wheaton",
+          "doi": "10.3768/rtipress.2010.mr.0019.1009",
+          "pmid": "22577617",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22577617/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-039",
+      "method_label": "agent_based_models",
+      "canonical_name": "Agent-based and individual-based models",
+      "source_role": "infectious_application",
+      "target_title": "Agent-based modeling of the spread of the 1918-1919 flu in three Canadian fur trading communities.",
+      "target_first_author": "Caroline A O'Neil",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20721982/",
+      "seed_candidate_key": "PMID:20721982",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-80",
+          "query_variant": "exact_title",
+          "query": "Agent[Title] AND based[Title] AND modeling[Title] AND spread[Title] AND 1918[Title] AND 1919[Title] AND flu[Title] AND three[Title] AND Canadian[Title] AND fur[Title] AND trading[Title] AND communities[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20721982",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-80",
+          "title": "Agent-based modeling of the spread of the 1918-1919 flu in three Canadian fur trading communities.",
+          "year": "2010",
+          "authors": "Caroline A O'Neil; Lisa Sattenspiel",
+          "doi": "10.1002/ajhb.21077",
+          "pmid": "20721982",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20721982/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-040",
+      "method_label": "benchmark_metric_and_threshold_development",
+      "canonical_name": "Benchmark-metric and threshold-development studies",
+      "source_role": "correction",
+      "target_title": "Correction to \"Onsite Nonpotable Water Systems Pathogen Treatment Targets: A Comparison of Infection and Disability-Adjusted Life Years (DALYs) Risk Benchmark Approaches\".",
+      "target_first_author": "Mary E Schoen",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/38085260/",
+      "seed_candidate_key": "PMID:38085260",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-81",
+          "query_variant": "exact_title",
+          "query": "Correction[Title] AND Onsite[Title] AND Nonpotable[Title] AND Water[Title] AND Systems[Title] AND Pathogen[Title] AND Treatment[Title] AND Targets[Title] AND Comparison[Title] AND Infection[Title] AND Disability[Title] AND Adjusted[Title] AND Life[Title] AND Years[Title] AND DALYs[Title] AND Risk[Title] AND Benchmark[Title] AND Approaches[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:38085260",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-81",
+          "title": "Correction to \"Onsite Nonpotable Water Systems Pathogen Treatment Targets: A Comparison of Infection and Disability-Adjusted Life Years (DALYs) Risk Benchmark Approaches\".",
+          "year": "2023",
+          "authors": "Mary E Schoen; Jay Garland; Jeffrey A Soller; Sean X Thimons; Michael A Jahne",
+          "doi": "10.1021/acs.est.3c09794",
+          "pmid": "38085260",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38085260/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-041",
+      "method_label": "benchmark_metric_and_threshold_development",
+      "canonical_name": "Benchmark-metric and threshold-development studies",
+      "source_role": "diagnostic",
+      "target_title": "Hand rub dose needed for a single disinfection varies according to product: a bias in benchmarking using indirect hand hygiene indicator.",
+      "target_first_author": "Raphaële Girard",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23856500/",
+      "seed_candidate_key": "PMID:23856500",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-82",
+          "query_variant": "exact_title",
+          "query": "Hand[Title] AND rub[Title] AND dose[Title] AND needed[Title] AND single[Title] AND disinfection[Title] AND varies[Title] AND according[Title] AND product[Title] AND bias[Title] AND benchmarking[Title] AND indirect[Title] AND hygiene[Title] AND indicator[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23856500",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-82",
+          "title": "Hand rub dose needed for a single disinfection varies according to product: a bias in benchmarking using indirect hand hygiene indicator.",
+          "year": "2012",
+          "authors": "Raphaële Girard; Martine Aupee; Martine Erb; Anne Bettinger; Alice Jouve",
+          "doi": "10.1016/j.jegh.2012.10.001",
+          "pmid": "23856500",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23856500/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-042",
+      "method_label": "benchmark_metric_and_threshold_development",
+      "canonical_name": "Benchmark-metric and threshold-development studies",
+      "source_role": "infectious_application",
+      "target_title": "Cervical Precancer Risk in HIV-Infected Women Who Test Positive for Oncogenic Human Papillomavirus Despite a Normal Pap Test.",
+      "target_first_author": "Marla J Keller",
+      "target_year": "2015",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/26187020/",
+      "seed_candidate_key": "PMID:26187020",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-83",
+          "query_variant": "exact_title",
+          "query": "Cervical[Title] AND Precancer[Title] AND Risk[Title] AND HIV[Title] AND Infected[Title] AND Women[Title] AND Who[Title] AND Test[Title] AND Positive[Title] AND Oncogenic[Title] AND Human[Title] AND Papillomavirus[Title] AND Despite[Title] AND Normal[Title] AND Pap[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:26187020",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-83",
+          "title": "Cervical Precancer Risk in HIV-Infected Women Who Test Positive for Oncogenic Human Papillomavirus Despite a Normal Pap Test.",
+          "year": "2015",
+          "authors": "Marla J Keller; Robert D Burk; L Stewart Massad; Isam-Eldin Eltoum; Nancy A Hessol; Philip E Castle; Kathryn Anastos; Xianhong Xie; Howard Minkoff; Xiaonan Xue; Gypsyamber D'Souza; Lisa Flowers; Alexandra M Levine; Christine Colie; Lisa Rahangdale; Margaret A Fischl; Joel M Palefsky; Howard D Strickler",
+          "doi": "10.1093/cid/civ569",
+          "pmid": "26187020",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26187020/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-043",
+      "method_label": "bias_adjustment_and_risk_models",
+      "canonical_name": "Bias-adjustment and risk-estimation methods",
+      "source_role": "diagnostic",
+      "target_title": "Distance to health services modifies the effect of an 11-valent pneumococcal vaccine on pneumonia risk among children less than 2 years of age in Bohol, Philippines.",
+      "target_first_author": "Elisabeth Dowling Root",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27605588/",
+      "seed_candidate_key": "PMID:27605588",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-84",
+          "query_variant": "exact_title",
+          "query": "Distance[Title] AND health[Title] AND services[Title] AND modifies[Title] AND effect[Title] AND 11[Title] AND valent[Title] AND pneumococcal[Title] AND vaccine[Title] AND pneumonia[Title] AND risk[Title] AND among[Title] AND children[Title] AND less[Title] AND than[Title] AND 2[Title] AND years[Title] AND age[Title] AND Bohol[Title] AND Philippines[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-100",
+          "query_variant": "title_first_author",
+          "query": "Distance[Title] AND pneumococcal[Title] AND pneumonia[Title] AND Philippines[Title] AND Root[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27605588",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-100",
+          "title": "Distance to health services modifies the effect of an 11-valent pneumococcal vaccine on pneumonia risk among children less than 2 years of age in Bohol, Philippines.",
+          "year": "2017",
+          "authors": "Elisabeth Dowling Root; Marilla Lucero; Hanna Nohynek; Rebecca Stubbs; Veronica Tallo; Socorro P Lupisan; Diozele M Sanvictores; Leilani T Nillos; Eric Af Simões; ARIVAC Team",
+          "doi": "10.1093/ije/dyw217",
+          "pmid": "27605588",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27605588/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-044",
+      "method_label": "estimator_operating_characteristics",
+      "canonical_name": "Estimator operating-characteristic simulation studies",
+      "source_role": "authoritative_candidate",
+      "target_title": "in silico surveillance: evaluating outbreak detection with simulation models.",
+      "target_first_author": "Bryan Lewis",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23343523/",
+      "seed_candidate_key": "PMID:23343523",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-85",
+          "query_variant": "exact_title",
+          "query": "silico[Title] AND surveillance[Title] AND evaluating[Title] AND outbreak[Title] AND detection[Title] AND simulation[Title] AND models[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23343523",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-85",
+          "title": "in silico surveillance: evaluating outbreak detection with simulation models.",
+          "year": "2013",
+          "authors": "Bryan Lewis; Stephen Eubank; Allyson M Abrams; Ken Kleinman",
+          "doi": "10.1186/1472-6947-13-12",
+          "pmid": "23343523",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23343523/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-045",
+      "method_label": "estimator_operating_characteristics",
+      "canonical_name": "Estimator operating-characteristic simulation studies",
+      "source_role": "correction",
+      "target_title": "Correction: Comparison of machine learning methods for estimating case fatality ratios: An Ebola outbreak simulation study.",
+      "target_first_author": "PLOS ONE Staff",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39724213/",
+      "seed_candidate_key": "PMID:39724213",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-86",
+          "query_variant": "exact_title",
+          "query": "Correction[Title] AND Comparison[Title] AND machine[Title] AND learning[Title] AND methods[Title] AND estimating[Title] AND case[Title] AND fatality[Title] AND ratios[Title] AND Ebola[Title] AND outbreak[Title] AND simulation[Title] AND study[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39724213",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-86",
+          "title": "Correction: Comparison of machine learning methods for estimating case fatality ratios: An Ebola outbreak simulation study.",
+          "year": "2024",
+          "authors": "PLOS ONE Staff",
+          "doi": "10.1371/journal.pone.0316602",
+          "pmid": "39724213",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39724213/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-046",
+      "method_label": "mechanistic_compartmental_models",
+      "canonical_name": "Mechanistic compartmental transmission models",
+      "source_role": "authoritative_candidate",
+      "target_title": "Tracking the time course of reproduction number and lockdown's effect on human behaviour during SARS-CoV-2 epidemic: nonparametric estimation.",
+      "target_first_author": "G Pillonetto",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33963235/",
+      "seed_candidate_key": "PMID:33963235",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-87",
+          "query_variant": "exact_title",
+          "query": "Tracking[Title] AND time[Title] AND course[Title] AND reproduction[Title] AND number[Title] AND lockdown[Title] AND s[Title] AND effect[Title] AND human[Title] AND behaviour[Title] AND during[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND epidemic[Title] AND nonparametric[Title] AND estimation[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-101",
+          "query_variant": "title_first_author",
+          "query": "reproduction[Title] AND behaviour[Title] AND nonparametric[Title] AND estimation[Title] AND Pillonetto[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33963235",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-101",
+          "title": "Tracking the time course of reproduction number and lockdown's effect on human behaviour during SARS-CoV-2 epidemic: nonparametric estimation.",
+          "year": "2021",
+          "authors": "G Pillonetto; M Bisiacco; G Palù; C Cobelli",
+          "doi": "10.1038/s41598-021-89014-9",
+          "pmid": "33963235",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33963235/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-047",
+      "method_label": "mechanistic_compartmental_models",
+      "canonical_name": "Mechanistic compartmental transmission models",
+      "source_role": "diagnostic",
+      "target_title": "Using compartmental models and Particle Swarm Optimization to assess Dengue basic reproduction number R 0 for the Republic of Panama in the 1999-2022 period.",
+      "target_first_author": "Vicente Alonso Navarro Valencia",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37128312/",
+      "seed_candidate_key": "PMID:37128312",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-88",
+          "query_variant": "exact_title",
+          "query": "compartmental[Title] AND models[Title] AND Particle[Title] AND Swarm[Title] AND Optimization[Title] AND assess[Title] AND Dengue[Title] AND basic[Title] AND reproduction[Title] AND number[Title] AND R[Title] AND 0[Title] AND Republic[Title] AND Panama[Title] AND 1999[Title] AND 2022[Title] AND period[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37128312",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-88",
+          "title": "Using compartmental models and Particle Swarm Optimization to assess Dengue basic reproduction number R 0 for the Republic of Panama in the 1999-2022 period.",
+          "year": "2023",
+          "authors": "Vicente Alonso Navarro Valencia; Yamilka Díaz; Jose Miguel Pascale; Maciej F Boni; Javier E Sanchez-Galan",
+          "doi": "10.1016/j.heliyon.2023.e15424",
+          "pmid": "37128312",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37128312/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-048",
+      "method_label": "network_sentinel_optimization_simulation",
+      "canonical_name": "Network sentinel optimization simulation",
+      "source_role": "diagnostic",
+      "target_title": "Objective measures for sentinel surveillance in network epidemiology.",
+      "target_first_author": "Petter Holme",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30253620/",
+      "seed_candidate_key": "PMID:30253620",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-89",
+          "query_variant": "exact_title",
+          "query": "Objective[Title] AND measures[Title] AND sentinel[Title] AND surveillance[Title] AND network[Title] AND epidemiology[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30253620",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-89",
+          "title": "Objective measures for sentinel surveillance in network epidemiology.",
+          "year": "2018",
+          "authors": "Petter Holme",
+          "doi": "10.1103/physreve.98.022313",
+          "pmid": "30253620",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30253620/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-049",
+      "method_label": "quality_surveillance_benchmarking",
+      "canonical_name": "Quality, surveillance, and risk-standardized benchmarking",
+      "source_role": "diagnostic",
+      "target_title": "Benchmarking blood culture quality in the emergency department: Contamination, single sets and positivity.",
+      "target_first_author": "Angela Z Hills",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37845807/",
+      "seed_candidate_key": "PMID:37845807",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-90",
+          "query_variant": "exact_title",
+          "query": "Benchmarking[Title] AND blood[Title] AND culture[Title] AND quality[Title] AND emergency[Title] AND department[Title] AND Contamination[Title] AND single[Title] AND sets[Title] AND positivity[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37845807",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-90",
+          "title": "Benchmarking blood culture quality in the emergency department: Contamination, single sets and positivity.",
+          "year": "2024",
+          "authors": "Angela Z Hills; Mercedes Ray; Julian Williams; Jaimi Greenslade",
+          "doi": "10.1111/1742-6723.14330",
+          "pmid": "37845807",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37845807/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-050",
+      "method_label": "quality_surveillance_benchmarking",
+      "canonical_name": "Quality, surveillance, and risk-standardized benchmarking",
+      "source_role": "guidance",
+      "target_title": "Use of benchmarking and public reporting for infection control in four high-income countries.",
+      "target_first_author": "Thomas Haustein",
+      "target_year": "2011",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/21616457/",
+      "seed_candidate_key": "PMID:21616457",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-91",
+          "query_variant": "exact_title",
+          "query": "Use[Title] AND benchmarking[Title] AND public[Title] AND reporting[Title] AND infection[Title] AND control[Title] AND four[Title] AND high[Title] AND income[Title] AND countries[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:21616457",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-91",
+          "title": "Use of benchmarking and public reporting for infection control in four high-income countries.",
+          "year": "2011",
+          "authors": "Thomas Haustein; Petra Gastmeier; Alison Holmes; Jean-Christophe Lucet; Richard P Shannon; Didier Pittet; Stephan Harbarth",
+          "doi": "10.1016/s1473-3099(10)70315-7",
+          "pmid": "21616457",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21616457/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-051",
+      "method_label": "quality_surveillance_benchmarking",
+      "canonical_name": "Quality, surveillance, and risk-standardized benchmarking",
+      "source_role": "implementation",
+      "target_title": "Benchmarking of Outpatient Pediatric Antibiotic Prescribing: Results of a Multicenter Collaborative.",
+      "target_first_author": "Rana E El Feghaly",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37262431/",
+      "seed_candidate_key": "PMID:37262431",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-92",
+          "query_variant": "exact_title",
+          "query": "Benchmarking[Title] AND Outpatient[Title] AND Pediatric[Title] AND Antibiotic[Title] AND Prescribing[Title] AND Results[Title] AND Multicenter[Title] AND Collaborative[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37262431",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-92",
+          "title": "Benchmarking of Outpatient Pediatric Antibiotic Prescribing: Results of a Multicenter Collaborative.",
+          "year": "2023",
+          "authors": "Rana E El Feghaly; Joshua C Herigon; Matthew P Kronman; Bethany A Wattles; Nicole M Poole; Michael J Smith; Ana M Vaughan; Rosemary Olivero; Sameer J Patel; Ann Wirtz; Zachary Willis; Brian R Lee; Sharing Antimicrobial Reports for Pediatric Stewardship OutPatient (SHARPS-OP) Collaborative",
+          "doi": "10.1093/jpids/piad039",
+          "pmid": "37262431",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37262431/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-052",
+      "method_label": "simulation_method_comparison",
+      "canonical_name": "Simulation-based method comparison and benchmarking",
+      "source_role": "authoritative_candidate",
+      "target_title": "Benchmarking Measures of Network Influence.",
+      "target_first_author": "Aaron Bramson",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27670635/",
+      "seed_candidate_key": "PMID:27670635",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-93",
+          "query_variant": "exact_title",
+          "query": "Benchmarking[Title] AND Measures[Title] AND Network[Title] AND Influence[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27670635",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-93",
+          "title": "Benchmarking Measures of Network Influence.",
+          "year": "2016",
+          "authors": "Aaron Bramson; Benjamin Vandermarliere",
+          "doi": "10.1038/srep34052",
+          "pmid": "27670635",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27670635/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-053",
+      "method_label": "simulation_method_comparison",
+      "canonical_name": "Simulation-based method comparison and benchmarking",
+      "source_role": "implementation",
+      "target_title": "SEPATH: benchmarking the search for pathogens in human tissue whole genome sequence data leads to template pipelines.",
+      "target_first_author": "Abraham Gihawi",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/31639030/",
+      "seed_candidate_key": "PMID:31639030",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-94",
+          "query_variant": "exact_title",
+          "query": "SEPATH[Title] AND benchmarking[Title] AND search[Title] AND pathogens[Title] AND human[Title] AND tissue[Title] AND whole[Title] AND genome[Title] AND sequence[Title] AND data[Title] AND leads[Title] AND template[Title] AND pipelines[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:31639030",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-94",
+          "title": "SEPATH: benchmarking the search for pathogens in human tissue whole genome sequence data leads to template pipelines.",
+          "year": "2019",
+          "authors": "Abraham Gihawi; Ghanasyam Rallapalli; Rachel Hurst; Colin S Cooper; Richard M Leggett; Daniel S Brewer",
+          "doi": "10.1186/s13059-019-1819-8",
+          "pmid": "31639030",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31639030/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-054",
+      "method_label": "simulation_methodological_evaluation",
+      "canonical_name": "Other simulation-based methodological evaluation",
+      "source_role": "authoritative_candidate",
+      "target_title": "A Quantitative Framework for Defining the End of an Infectious Disease Outbreak: Application to Ebola Virus Disease.",
+      "target_first_author": "Bimandra A Djaafara",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33511390/",
+      "seed_candidate_key": "PMID:33511390",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-95",
+          "query_variant": "exact_title",
+          "query": "Quantitative[Title] AND Framework[Title] AND Defining[Title] AND End[Title] AND Infectious[Title] AND Disease[Title] AND Outbreak[Title] AND Application[Title] AND Ebola[Title] AND Virus[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33511390",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-95",
+          "title": "A Quantitative Framework for Defining the End of an Infectious Disease Outbreak: Application to Ebola Virus Disease.",
+          "year": "2021",
+          "authors": "Bimandra A Djaafara; Natsuko Imai; Esther Hamblion; Benido Impouma; Christl A Donnelly; Anne Cori",
+          "doi": "10.1093/aje/kwaa212",
+          "pmid": "33511390",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33511390/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-055",
+      "method_label": "simulation_model_calibration_inference",
+      "canonical_name": "Simulation-model calibration and inference",
+      "source_role": "diagnostic",
+      "target_title": "Calibration verification for stochastic agent-based disease spread models.",
+      "target_first_author": "Maya Horii",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39656717/",
+      "seed_candidate_key": "PMID:39656717",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-96",
+          "query_variant": "exact_title",
+          "query": "Calibration[Title] AND verification[Title] AND stochastic[Title] AND agent[Title] AND based[Title] AND disease[Title] AND spread[Title] AND models[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39656717",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-96",
+          "title": "Calibration verification for stochastic agent-based disease spread models.",
+          "year": "2024",
+          "authors": "Maya Horii; Aidan Gould; Zachary Yun; Jaideep Ray; Cosmin Safta; Tarek Zohdi",
+          "doi": "10.1371/journal.pone.0315429",
+          "pmid": "39656717",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39656717/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-056",
+      "method_label": "synthetic_data_benchmarking",
+      "canonical_name": "Synthetic-data and benchmark designs",
+      "source_role": "diagnostic",
+      "target_title": "Validation Assessment of Privacy-Preserving Synthetic Electronic Health Record Data: Comparison of Original Versus Synthetic Data on Real-World COVID-19 Vaccine Effectiveness.",
+      "target_first_author": "Echo Wang",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39375947/",
+      "seed_candidate_key": "PMID:39375947",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-97",
+          "query_variant": "exact_title",
+          "query": "Validation[Title] AND Assessment[Title] AND Privacy[Title] AND Preserving[Title] AND Synthetic[Title] AND Electronic[Title] AND Health[Title] AND Record[Title] AND Data[Title] AND Comparison[Title] AND Original[Title] AND Versus[Title] AND Real[Title] AND World[Title] AND COVID[Title] AND 19[Title] AND Vaccine[Title] AND Effectiveness[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39375947",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-97",
+          "title": "Validation Assessment of Privacy-Preserving Synthetic Electronic Health Record Data: Comparison of Original Versus Synthetic Data on Real-World COVID-19 Vaccine Effectiveness.",
+          "year": "2024",
+          "authors": "Echo Wang; Katrina Mott; Hongtao Zhang; Sivan Gazit; Gabriel Chodick; Mehmet Burcu",
+          "doi": "10.1002/pds.70019",
+          "pmid": "39375947",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39375947/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-057",
+      "method_label": "synthetic_data_benchmarking",
+      "canonical_name": "Synthetic-data and benchmark designs",
+      "source_role": "implementation",
+      "target_title": "Initializing a Public Repository for Hosting Benchmark Datasets to Facilitate Machine Learning Model Development in Food Safety.",
+      "target_first_author": "Chenhao Qian",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39922312/",
+      "seed_candidate_key": "PMID:39922312",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-98",
+          "query_variant": "exact_title",
+          "query": "Initializing[Title] AND Public[Title] AND Repository[Title] AND Hosting[Title] AND Benchmark[Title] AND Datasets[Title] AND Facilitate[Title] AND Machine[Title] AND Learning[Title] AND Model[Title] AND Development[Title] AND Food[Title] AND Safety[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39922312",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-98",
+          "title": "Initializing a Public Repository for Hosting Benchmark Datasets to Facilitate Machine Learning Model Development in Food Safety.",
+          "year": "2025",
+          "authors": "Chenhao Qian; Huan Yang; Jayadev Acharya; Jingqiu Liao; Renata Ivanek; Martin Wiedmann",
+          "doi": "10.1016/j.jfp.2025.100463",
+          "pmid": "39922312",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39922312/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SIMULATION-058",
+      "method_label": "synthetic_data_benchmarking",
+      "canonical_name": "Synthetic-data and benchmark designs",
+      "source_role": "infectious_application",
+      "target_title": "Quantum Machine Learning Architecture for COVID-19 Classification Based on Synthetic Data Generation Using Conditional Adversarial Neural Network.",
+      "target_first_author": "Javaria Amin",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/34394762/",
+      "seed_candidate_key": "PMID:34394762",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-99",
+          "query_variant": "exact_title",
+          "query": "Quantum[Title] AND Machine[Title] AND Learning[Title] AND Architecture[Title] AND COVID[Title] AND 19[Title] AND Classification[Title] AND Based[Title] AND Synthetic[Title] AND Data[Title] AND Generation[Title] AND Conditional[Title] AND Adversarial[Title] AND Neural[Title] AND Network[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:34394762",
+          "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-99",
+          "title": "Quantum Machine Learning Architecture for COVID-19 Classification Based on Synthetic Data Generation Using Conditional Adversarial Neural Network.",
+          "year": "2022",
+          "authors": "Javaria Amin; Muhammad Sharif; Nadia Gul; Seifedine Kadry; Chinmay Chakraborty",
+          "doi": "10.1007/s12559-021-09926-6",
+          "pmid": "34394762",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34394762/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-058",
+      "method_label": "contact_network_models",
+      "canonical_name": "Contact-network transmission models",
+      "source_role": "diagnostic",
+      "target_title": "Critical value in a SIR network model with heterogeneous infectiousness and susceptibility.",
+      "target_first_author": "Shui Xian Yan",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33120577/",
+      "seed_candidate_key": "PMID:33120577",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-123",
+          "query_variant": "exact_title",
+          "query": "Critical[Title] AND value[Title] AND SIR[Title] AND network[Title] AND model[Title] AND heterogeneous[Title] AND infectiousness[Title] AND susceptibility[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33120577",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-123",
+          "title": "Critical value in a SIR network model with heterogeneous infectiousness and susceptibility.",
+          "year": "2020",
+          "authors": "Shui Xian Yan; San Ling Yuan",
+          "doi": "10.3934/mbe.2020310",
+          "pmid": "33120577",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33120577/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-059",
+      "method_label": "contact_network_models",
+      "canonical_name": "Contact-network transmission models",
+      "source_role": "guidance",
+      "target_title": "Incorporating genomic methods into contact networks to reveal new insights into animal behavior and infectious disease dynamics.",
+      "target_first_author": "Marie L J Gilbertson",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/31680698/",
+      "seed_candidate_key": "PMID:31680698",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-124",
+          "query_variant": "exact_title",
+          "query": "Incorporating[Title] AND genomic[Title] AND methods[Title] AND contact[Title] AND networks[Title] AND reveal[Title] AND new[Title] AND insights[Title] AND animal[Title] AND behavior[Title] AND infectious[Title] AND disease[Title] AND dynamics[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:31680698",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-124",
+          "title": "Incorporating genomic methods into contact networks to reveal new insights into animal behavior and infectious disease dynamics.",
+          "year": "2018",
+          "authors": "Marie L J Gilbertson; Nicholas M Fountain-Jones; Meggan E Craft",
+          "doi": "10.1163/1568539x-00003471",
+          "pmid": "31680698",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31680698/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-060",
+      "method_label": "contact_network_models",
+      "canonical_name": "Contact-network transmission models",
+      "source_role": "implementation",
+      "target_title": "A stochastic contact network model for assessing outbreak risk of COVID-19 in workplaces.",
+      "target_first_author": "Xi Guo",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35030206/",
+      "seed_candidate_key": "PMID:35030206",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-125",
+          "query_variant": "exact_title",
+          "query": "stochastic[Title] AND contact[Title] AND network[Title] AND model[Title] AND assessing[Title] AND outbreak[Title] AND risk[Title] AND COVID[Title] AND 19[Title] AND workplaces[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35030206",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-125",
+          "title": "A stochastic contact network model for assessing outbreak risk of COVID-19 in workplaces.",
+          "year": "2022",
+          "authors": "Xi Guo; Abhineet Gupta; Anand Sampat; Chengwei Zhai",
+          "doi": "10.1371/journal.pone.0262316",
+          "pmid": "35030206",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35030206/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-061",
+      "method_label": "contact_network_models",
+      "canonical_name": "Contact-network transmission models",
+      "source_role": "infectious_application",
+      "target_title": "Micro-simulation of a smallpox outbreak using official register data.",
+      "target_first_author": "L Brouwers",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20822732/",
+      "seed_candidate_key": "PMID:20822732",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-126",
+          "query_variant": "exact_title",
+          "query": "Micro[Title] AND simulation[Title] AND smallpox[Title] AND outbreak[Title] AND official[Title] AND register[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20822732",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-126",
+          "title": "Micro-simulation of a smallpox outbreak using official register data.",
+          "year": "2010",
+          "authors": "L Brouwers; M Boman; M Camitz; K Mäkilä; A Tegnell",
+          "doi": "",
+          "pmid": "20822732",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20822732/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-062",
+      "method_label": "descriptive_spatial_clustering",
+      "canonical_name": "Descriptive spatial and space-time clustering",
+      "source_role": "correction",
+      "target_title": "Correction: Epidemiology, serovar distribution and spatiotemporal patterns of Salmonella foodborne infections in Liaoning Province, China, 2014-2024: an analysis of sentinel surveillance data.",
+      "target_first_author": "Xinling Yu",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/41952830/",
+      "seed_candidate_key": "PMID:41952830",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-127",
+          "query_variant": "exact_title",
+          "query": "Correction[Title] AND Epidemiology[Title] AND serovar[Title] AND distribution[Title] AND spatiotemporal[Title] AND patterns[Title] AND Salmonella[Title] AND foodborne[Title] AND infections[Title] AND Liaoning[Title] AND Province[Title] AND China[Title] AND 2014[Title] AND 2024[Title] AND analysis[Title] AND sentinel[Title] AND surveillance[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:41952830",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-127",
+          "title": "Correction: Epidemiology, serovar distribution and spatiotemporal patterns of Salmonella foodborne infections in Liaoning Province, China, 2014-2024: an analysis of sentinel surveillance data.",
+          "year": "2026",
+          "authors": "Xinling Yu; Xiangyun Liu; Xiaoxiao Du; Yiming Pei; Kailin Wang; Hao Zhang; Wenli Diao",
+          "doi": "10.3389/fpubh.2026.1825074",
+          "pmid": "41952830",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41952830/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-063",
+      "method_label": "genomic_epidemiology_transmission",
+      "canonical_name": "Genomic epidemiology and transmission reconstruction",
+      "source_role": "authoritative_candidate",
+      "target_title": "Declaring a tuberculosis outbreak over with genomic epidemiology.",
+      "target_first_author": "Hollie-Ann Hatherell",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/28348853/",
+      "seed_candidate_key": "PMID:28348853",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-128",
+          "query_variant": "exact_title",
+          "query": "Declaring[Title] AND tuberculosis[Title] AND outbreak[Title] AND over[Title] AND genomic[Title] AND epidemiology[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:28348853",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-128",
+          "title": "Declaring a tuberculosis outbreak over with genomic epidemiology.",
+          "year": "2016",
+          "authors": "Hollie-Ann Hatherell; Xavier Didelot; Sue L Pollock; Patrick Tang; Anamaria Crisan; James C Johnston; Caroline Colijn; Jennifer L Gardy",
+          "doi": "10.1099/mgen.0.000060",
+          "pmid": "28348853",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28348853/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-064",
+      "method_label": "genomic_epidemiology_transmission",
+      "canonical_name": "Genomic epidemiology and transmission reconstruction",
+      "source_role": "correction",
+      "target_title": "Author Correction: Genomic epidemiology of the UK outbreak of the emerging human fungal pathogen Candida auris.",
+      "target_first_author": "Johanna Rhodes",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/29855464/",
+      "seed_candidate_key": "PMID:29855464",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-129",
+          "query_variant": "exact_title",
+          "query": "Author[Title] AND Correction[Title] AND Genomic[Title] AND epidemiology[Title] AND UK[Title] AND outbreak[Title] AND emerging[Title] AND human[Title] AND fungal[Title] AND pathogen[Title] AND Candida[Title] AND auris[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:29855464",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-129",
+          "title": "Author Correction: Genomic epidemiology of the UK outbreak of the emerging human fungal pathogen Candida auris.",
+          "year": "2018",
+          "authors": "Johanna Rhodes; Alireza Abdolrasouli; Rhys A Farrer; Christina A Cuomo; David M Aanensen; Darius Armstrong-James; Matthew C Fisher; Silke Schelenz",
+          "doi": "10.1038/s41426-018-0098-x",
+          "pmid": "29855464",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29855464/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-065",
+      "method_label": "genomic_epidemiology_transmission",
+      "canonical_name": "Genomic epidemiology and transmission reconstruction",
+      "source_role": "diagnostic",
+      "target_title": "Genomic epidemiology of Lineage 4 Mycobacterium tuberculosis subpopulations in New York City and New Jersey, 1999-2009.",
+      "target_first_author": "Tyler S Brown",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27871225/",
+      "seed_candidate_key": "PMID:27871225",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-130",
+          "query_variant": "exact_title",
+          "query": "Genomic[Title] AND epidemiology[Title] AND Lineage[Title] AND 4[Title] AND Mycobacterium[Title] AND tuberculosis[Title] AND subpopulations[Title] AND New[Title] AND York[Title] AND City[Title] AND Jersey[Title] AND 1999[Title] AND 2009[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27871225",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-130",
+          "title": "Genomic epidemiology of Lineage 4 Mycobacterium tuberculosis subpopulations in New York City and New Jersey, 1999-2009.",
+          "year": "2016",
+          "authors": "Tyler S Brown; Apurva Narechania; John R Walker; Paul J Planet; Pablo J Bifani; Sergios-Orestis Kolokotronis; Barry N Kreiswirth; Barun Mathema",
+          "doi": "10.1186/s12864-016-3298-6",
+          "pmid": "27871225",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27871225/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-066",
+      "method_label": "genomic_epidemiology_transmission",
+      "canonical_name": "Genomic epidemiology and transmission reconstruction",
+      "source_role": "implementation",
+      "target_title": "Genomic epidemiology and global diversity of the emerging bacterial pathogen Elizabethkingia anophelis.",
+      "target_first_author": "Sebastien Breurec",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27461509/",
+      "seed_candidate_key": "PMID:27461509",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-131",
+          "query_variant": "exact_title",
+          "query": "Genomic[Title] AND epidemiology[Title] AND global[Title] AND diversity[Title] AND emerging[Title] AND bacterial[Title] AND pathogen[Title] AND Elizabethkingia[Title] AND anophelis[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27461509",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-131",
+          "title": "Genomic epidemiology and global diversity of the emerging bacterial pathogen Elizabethkingia anophelis.",
+          "year": "2016",
+          "authors": "Sebastien Breurec; Alexis Criscuolo; Laure Diancourt; Olaya Rendueles; Mathias Vandenbogaert; Virginie Passet; Valérie Caro; Eduardo P C Rocha; Marie Touchon; Sylvain Brisse",
+          "doi": "10.1038/srep30379",
+          "pmid": "27461509",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27461509/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-067",
+      "method_label": "gravity_radiation_mobility_models",
+      "canonical_name": "Gravity, radiation, and mobility models",
+      "source_role": "authoritative_candidate",
+      "target_title": "Spatiotemporal Analysis of the 2014 Ebola Epidemic in West Africa.",
+      "target_first_author": "Jantien A Backer",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27930675/",
+      "seed_candidate_key": "PMID:27930675",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-132",
+          "query_variant": "exact_title",
+          "query": "Spatiotemporal[Title] AND Analysis[Title] AND 2014[Title] AND Ebola[Title] AND Epidemic[Title] AND West[Title] AND Africa[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27930675",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-132",
+          "title": "Spatiotemporal Analysis of the 2014 Ebola Epidemic in West Africa.",
+          "year": "2016",
+          "authors": "Jantien A Backer; Jacco Wallinga",
+          "doi": "10.1371/journal.pcbi.1005210",
+          "pmid": "27930675",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27930675/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-068",
+      "method_label": "metapopulation_models",
+      "canonical_name": "Metapopulation transmission models",
+      "source_role": "authoritative_candidate",
+      "target_title": "Pulse vaccination strategies in a metapopulation SIR model.",
+      "target_first_author": "Alan J Terry",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20462299/",
+      "seed_candidate_key": "PMID:20462299",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-133",
+          "query_variant": "exact_title",
+          "query": "Pulse[Title] AND vaccination[Title] AND strategies[Title] AND metapopulation[Title] AND SIR[Title] AND model[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20462299",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-133",
+          "title": "Pulse vaccination strategies in a metapopulation SIR model.",
+          "year": "2010",
+          "authors": "Alan J Terry",
+          "doi": "10.3934/mbe.2010.7.455",
+          "pmid": "20462299",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20462299/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-069",
+      "method_label": "metapopulation_models",
+      "canonical_name": "Metapopulation transmission models",
+      "source_role": "guidance",
+      "target_title": "Infectious disease surveillance and modelling across geographic frontiers and scientific specialties.",
+      "target_first_author": "Kamran Khan",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22252149/",
+      "seed_candidate_key": "PMID:22252149",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-134",
+          "query_variant": "exact_title",
+          "query": "Infectious[Title] AND disease[Title] AND surveillance[Title] AND modelling[Title] AND across[Title] AND geographic[Title] AND frontiers[Title] AND scientific[Title] AND specialties[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22252149",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-134",
+          "title": "Infectious disease surveillance and modelling across geographic frontiers and scientific specialties.",
+          "year": "2012",
+          "authors": "Kamran Khan; Scott J N McNabb; Ziad A Memish; Rose Eckhardt; Wei Hu; David Kossowsky; Jennifer Sears; Julien Arino; Anders Johansson; Maurizio Barbeschi; Brian McCloskey; Bonnie Henry; Martin Cetron; John S Brownstein",
+          "doi": "10.1016/s1473-3099(11)70313-9",
+          "pmid": "22252149",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22252149/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-070",
+      "method_label": "metapopulation_models",
+      "canonical_name": "Metapopulation transmission models",
+      "source_role": "implementation",
+      "target_title": "A stochastic meta-population model of Ebola virus disease transmission for informing public health decisions.",
+      "target_first_author": "Thibaut Jombart",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/42258949/",
+      "seed_candidate_key": "PMID:42258949",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-135",
+          "query_variant": "exact_title",
+          "query": "stochastic[Title] AND meta[Title] AND population[Title] AND model[Title] AND Ebola[Title] AND virus[Title] AND disease[Title] AND transmission[Title] AND informing[Title] AND public[Title] AND health[Title] AND decisions[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:42258949",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-135",
+          "title": "A stochastic meta-population model of Ebola virus disease transmission for informing public health decisions.",
+          "year": "2026",
+          "authors": "Thibaut Jombart; Sarah Kada; Debapriyo Chakraborty; David W Redding; Jessica Abbate",
+          "doi": "10.1016/j.epidem.2026.100922",
+          "pmid": "42258949",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42258949/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-071",
+      "method_label": "pathogen_population_genomics_within_host_evolution",
+      "canonical_name": "Pathogen population genomics and within-host evolution",
+      "source_role": "infectious_application",
+      "target_title": "Genetic variability among complete human respiratory syncytial virus subgroup A genomes: bridging molecular evolutionary dynamics and epidemiology.",
+      "target_first_author": "Lydia Tan",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23236501/",
+      "seed_candidate_key": "PMID:23236501",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-136",
+          "query_variant": "exact_title",
+          "query": "Genetic[Title] AND variability[Title] AND among[Title] AND complete[Title] AND human[Title] AND respiratory[Title] AND syncytial[Title] AND virus[Title] AND subgroup[Title] AND genomes[Title] AND bridging[Title] AND molecular[Title] AND evolutionary[Title] AND dynamics[Title] AND epidemiology[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-150",
+          "query_variant": "title_first_author",
+          "query": "variability[Title] AND respiratory[Title] AND evolutionary[Title] AND epidemiology[Title] AND Tan[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23236501",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-150",
+          "title": "Genetic variability among complete human respiratory syncytial virus subgroup A genomes: bridging molecular evolutionary dynamics and epidemiology.",
+          "year": "2012",
+          "authors": "Lydia Tan; Philippe Lemey; Lieselot Houspie; Marco C Viveen; Nicolaas J G Jansen; Anton M van Loon; Emmanuel Wiertz; Grada M van Bleek; Darren P Martin; Frank E Coenjaerts",
+          "doi": "10.1371/journal.pone.0051439",
+          "pmid": "23236501",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23236501/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-072",
+      "method_label": "phylogenetic_contact_network_inference",
+      "canonical_name": "Phylogenetic and phylodynamic contact-network inference",
+      "source_role": "authoritative_candidate",
+      "target_title": "Reconstructing contact network parameters from viral phylogenies.",
+      "target_first_author": "Rosemary M McCloskey",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27818787/",
+      "seed_candidate_key": "PMID:27818787",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-137",
+          "query_variant": "exact_title",
+          "query": "Reconstructing[Title] AND contact[Title] AND network[Title] AND parameters[Title] AND viral[Title] AND phylogenies[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27818787",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-137",
+          "title": "Reconstructing contact network parameters from viral phylogenies.",
+          "year": "2016",
+          "authors": "Rosemary M McCloskey; Richard H Liang; Art F Y Poon",
+          "doi": "10.1093/ve/vew029",
+          "pmid": "27818787",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27818787/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-073",
+      "method_label": "phylogeography_genomic_diffusion",
+      "canonical_name": "Phylogeography and genomic diffusion",
+      "source_role": "correction",
+      "target_title": "Phylogeographical structure of the tick Ixodes persulcatus: a novel view.",
+      "target_first_author": "Sergey Y Kovalev",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22652512/",
+      "seed_candidate_key": "PMID:22652512",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-138",
+          "query_variant": "exact_title",
+          "query": "Phylogeographical[Title] AND structure[Title] AND tick[Title] AND Ixodes[Title] AND persulcatus[Title] AND novel[Title] AND view[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22652512",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-138",
+          "title": "Phylogeographical structure of the tick Ixodes persulcatus: a novel view.",
+          "year": "2012",
+          "authors": "Sergey Y Kovalev; Tatyana A Mukhacheva",
+          "doi": "10.1016/j.ttbdis.2012.03.005",
+          "pmid": "22652512",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22652512/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-074",
+      "method_label": "phylogeography_genomic_diffusion",
+      "canonical_name": "Phylogeography and genomic diffusion",
+      "source_role": "diagnostic",
+      "target_title": "On the importance of negative controls in viral landscape phylogeography.",
+      "target_first_author": "Simon Dellicour",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30151241/",
+      "seed_candidate_key": "PMID:30151241",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-139",
+          "query_variant": "exact_title",
+          "query": "importance[Title] AND negative[Title] AND controls[Title] AND viral[Title] AND landscape[Title] AND phylogeography[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30151241",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-139",
+          "title": "On the importance of negative controls in viral landscape phylogeography.",
+          "year": "2018",
+          "authors": "Simon Dellicour; Bram Vrancken; Nídia S Trovão; Denis Fargette; Philippe Lemey",
+          "doi": "10.1093/ve/vey023",
+          "pmid": "30151241",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30151241/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-075",
+      "method_label": "phylogeography_genomic_diffusion",
+      "canonical_name": "Phylogeography and genomic diffusion",
+      "source_role": "guidance",
+      "target_title": "Phylogeography of swine influenza H3N2 in the United States: translational public health for zoonotic disease surveillance.",
+      "target_first_author": "Matthew Scotch",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23137647/",
+      "seed_candidate_key": "PMID:23137647",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-140",
+          "query_variant": "exact_title",
+          "query": "Phylogeography[Title] AND swine[Title] AND influenza[Title] AND H3N2[Title] AND United[Title] AND States[Title] AND translational[Title] AND public[Title] AND health[Title] AND zoonotic[Title] AND disease[Title] AND surveillance[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23137647",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-140",
+          "title": "Phylogeography of swine influenza H3N2 in the United States: translational public health for zoonotic disease surveillance.",
+          "year": "2013",
+          "authors": "Matthew Scotch; Changjiang Mei",
+          "doi": "10.1016/j.meegid.2012.09.015",
+          "pmid": "23137647",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23137647/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-076",
+      "method_label": "phylogeography_genomic_diffusion",
+      "canonical_name": "Phylogeography and genomic diffusion",
+      "source_role": "implementation",
+      "target_title": "Syndromic Surveillance of Infectious Diseases meets Molecular Epidemiology in a Workflow and Phylogeographic Application.",
+      "target_first_author": "Daniel Janies",
+      "target_year": "2015",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/26262155/",
+      "seed_candidate_key": "PMID:26262155",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-141",
+          "query_variant": "exact_title",
+          "query": "Syndromic[Title] AND Surveillance[Title] AND Infectious[Title] AND Diseases[Title] AND meets[Title] AND Molecular[Title] AND Epidemiology[Title] AND Workflow[Title] AND Phylogeographic[Title] AND Application[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:26262155",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-141",
+          "title": "Syndromic Surveillance of Infectious Diseases meets Molecular Epidemiology in a Workflow and Phylogeographic Application.",
+          "year": "2015",
+          "authors": "Daniel Janies; Zachary Witter; Christian Gibson; Thomas Kraft; Izzet F Senturk; Ümit Çatalyürek",
+          "doi": "",
+          "pmid": "26262155",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26262155/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-077",
+      "method_label": "phylogeography_genomic_diffusion",
+      "canonical_name": "Phylogeography and genomic diffusion",
+      "source_role": "original_candidate",
+      "target_title": "A Relaxed Directional Random Walk Model for Phylogenetic Trait Evolution.",
+      "target_first_author": "Mandev S Gill",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27798403/",
+      "seed_candidate_key": "PMID:27798403",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-142",
+          "query_variant": "exact_title",
+          "query": "Relaxed[Title] AND Directional[Title] AND Random[Title] AND Walk[Title] AND Model[Title] AND Phylogenetic[Title] AND Trait[Title] AND Evolution[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27798403",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-142",
+          "title": "A Relaxed Directional Random Walk Model for Phylogenetic Trait Evolution.",
+          "year": "2017",
+          "authors": "Mandev S Gill; Lam Si Tung Ho; Guy Baele; Philippe Lemey; Marc A Suchard",
+          "doi": "10.1093/sysbio/syw093",
+          "pmid": "27798403",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27798403/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-078",
+      "method_label": "self_exciting_point_processes",
+      "canonical_name": "Self-exciting spatiotemporal point processes",
+      "source_role": "diagnostic",
+      "target_title": "A non-parametric Hawkes model of the spread of Ebola in west Africa.",
+      "target_first_author": "Junhyung Park",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35706773/",
+      "seed_candidate_key": "PMID:35706773",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-143",
+          "query_variant": "exact_title",
+          "query": "non[Title] AND parametric[Title] AND Hawkes[Title] AND model[Title] AND spread[Title] AND Ebola[Title] AND west[Title] AND Africa[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35706773",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-143",
+          "title": "A non-parametric Hawkes model of the spread of Ebola in west Africa.",
+          "year": "2022",
+          "authors": "Junhyung Park; Adam W Chaffee; Ryan J Harrigan; Frederic Paik Schoenberg",
+          "doi": "10.1080/02664763.2020.1825646",
+          "pmid": "35706773",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35706773/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-079",
+      "method_label": "spatial_diffusion_models",
+      "canonical_name": "Spatial diffusion and spread models",
+      "source_role": "infectious_application",
+      "target_title": "Size of the 2026 Ebola outbreak and risk of cross-border spillover from Bundibugyo virus in Ituri Province, DR Congo, and its implications for preparedness: a recalibrated stochastic modelling study.",
+      "target_first_author": "Dick Chamla",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/42349475/",
+      "seed_candidate_key": "PMID:42349475",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-144",
+          "query_variant": "exact_title",
+          "query": "Size[Title] AND 2026[Title] AND Ebola[Title] AND outbreak[Title] AND risk[Title] AND cross[Title] AND border[Title] AND spillover[Title] AND Bundibugyo[Title] AND virus[Title] AND Ituri[Title] AND Province[Title] AND DR[Title] AND Congo[Title] AND its[Title] AND implications[Title] AND preparedness[Title] AND recalibrated[Title] AND stochastic[Title] AND modelling[Title] AND study[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-151",
+          "query_variant": "title_first_author",
+          "query": "Bundibugyo[Title] AND implications[Title] AND preparedness[Title] AND recalibrated[Title] AND Chamla[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:42349475",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-151",
+          "title": "Size of the 2026 Ebola outbreak and risk of cross-border spillover from Bundibugyo virus in Ituri Province, DR Congo, and its implications for preparedness: a recalibrated stochastic modelling study.",
+          "year": "2026",
+          "authors": "Dick Chamla; Marie Roseline Darnycka Belizaire; Isaias Fernandes Co; Arisekola Jinadu; Ibrahim Mamadu; Ajiri Okpure Atagbaza",
+          "doi": "10.1016/s1473-3099(26)00320-8",
+          "pmid": "42349475",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42349475/"
+        }
+      ]
+    }
+  ]
+}

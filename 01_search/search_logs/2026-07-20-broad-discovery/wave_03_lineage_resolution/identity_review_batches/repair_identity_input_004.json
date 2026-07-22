@@ -1,0 +1,1565 @@
+{
+  "batch_id": "REPAIR-IDENTITY-004",
+  "sources": [
+    {
+      "named_source_id": "NS-SPATIAL-080",
+      "method_label": "spatial_risk_mapping_detection_adjusted",
+      "canonical_name": "Spatial risk mapping with detection/reporting adjustment",
+      "source_role": "authoritative_candidate",
+      "target_title": "Estimating the local spatio-temporal distribution of malaria from routine health information systems in areas of low health care access and reporting.",
+      "target_first_author": "Elizabeth Hyde",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33579294/",
+      "seed_candidate_key": "PMID:33579294",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-145",
+          "query_variant": "exact_title",
+          "query": "Estimating[Title] AND local[Title] AND spatio[Title] AND temporal[Title] AND distribution[Title] AND malaria[Title] AND routine[Title] AND health[Title] AND information[Title] AND systems[Title] AND areas[Title] AND low[Title] AND care[Title] AND access[Title] AND reporting[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33579294",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-145",
+          "title": "Estimating the local spatio-temporal distribution of malaria from routine health information systems in areas of low health care access and reporting.",
+          "year": "2021",
+          "authors": "Elizabeth Hyde; Matthew H Bonds; Felana A Ihantamalala; Ann C Miller; Laura F Cordier; Benedicte Razafinjato; Herinjaka Andriambolamanana; Marius Randriamanambintsoa; Michele Barry; Jean Claude Andrianirinarison; Mauricette N Andriamananjara; Andres Garchitorena",
+          "doi": "10.1186/s12942-021-00262-4",
+          "pmid": "33579294",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33579294/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-081",
+      "method_label": "spatial_transmission_models",
+      "canonical_name": "Other spatial-transmission models",
+      "source_role": "authoritative_candidate",
+      "target_title": "Reconciling phylodynamics with epidemiology: the case of dengue virus in southern Vietnam.",
+      "target_first_author": "David A Rasmussen",
+      "target_year": "2014",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/24150038/",
+      "seed_candidate_key": "PMID:24150038",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-146",
+          "query_variant": "exact_title",
+          "query": "Reconciling[Title] AND phylodynamics[Title] AND epidemiology[Title] AND case[Title] AND dengue[Title] AND virus[Title] AND southern[Title] AND Vietnam[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:24150038",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-146",
+          "title": "Reconciling phylodynamics with epidemiology: the case of dengue virus in southern Vietnam.",
+          "year": "2014",
+          "authors": "David A Rasmussen; Maciej F Boni; Katia Koelle",
+          "doi": "10.1093/molbev/mst203",
+          "pmid": "24150038",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24150038/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-082",
+      "method_label": "spatial_transmission_models",
+      "canonical_name": "Other spatial-transmission models",
+      "source_role": "diagnostic",
+      "target_title": "Model misspecification misleads inference of the spatial dynamics of disease outbreaks.",
+      "target_first_author": "Jiansi Gao",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36897983/",
+      "seed_candidate_key": "PMID:36897983",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-147",
+          "query_variant": "exact_title",
+          "query": "Model[Title] AND misspecification[Title] AND misleads[Title] AND inference[Title] AND spatial[Title] AND dynamics[Title] AND disease[Title] AND outbreaks[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36897983",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-147",
+          "title": "Model misspecification misleads inference of the spatial dynamics of disease outbreaks.",
+          "year": "2023",
+          "authors": "Jiansi Gao; Michael R May; Bruce Rannala; Brian R Moore",
+          "doi": "10.1073/pnas.2213913120",
+          "pmid": "36897983",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36897983/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-083",
+      "method_label": "spatial_transmission_models",
+      "canonical_name": "Other spatial-transmission models",
+      "source_role": "guidance",
+      "target_title": "Genomic Analysis of the Emergence, Evolution, and Spread of Human Respiratory RNA Viruses.",
+      "target_first_author": "Tommy T-Y Lam",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27216777/",
+      "seed_candidate_key": "PMID:27216777",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-148",
+          "query_variant": "exact_title",
+          "query": "Genomic[Title] AND Analysis[Title] AND Emergence[Title] AND Evolution[Title] AND Spread[Title] AND Human[Title] AND Respiratory[Title] AND RNA[Title] AND Viruses[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27216777",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-148",
+          "title": "Genomic Analysis of the Emergence, Evolution, and Spread of Human Respiratory RNA Viruses.",
+          "year": "2016",
+          "authors": "Tommy T-Y Lam; Huachen Zhu; Yi Guan; Edward C Holmes",
+          "doi": "10.1146/annurev-genom-083115-022628",
+          "pmid": "27216777",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27216777/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SPATIAL-084",
+      "method_label": "spatial_transmission_models",
+      "canonical_name": "Other spatial-transmission models",
+      "source_role": "implementation",
+      "target_title": "Phylodynamic analysis of porcine circovirus type 2: Methodological approach and datasets.",
+      "target_first_author": "Giovanni Franzo",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27508215/",
+      "seed_candidate_key": "PMID:27508215",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-149",
+          "query_variant": "exact_title",
+          "query": "Phylodynamic[Title] AND analysis[Title] AND porcine[Title] AND circovirus[Title] AND type[Title] AND 2[Title] AND Methodological[Title] AND approach[Title] AND datasets[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27508215",
+          "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-149",
+          "title": "Phylodynamic analysis of porcine circovirus type 2: Methodological approach and datasets.",
+          "year": "2016",
+          "authors": "Giovanni Franzo; Martì Cortey; Joaquim Segalés; Joseph Hughes; Michele Drigo",
+          "doi": "10.1016/j.dib.2016.06.005",
+          "pmid": "27508215",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27508215/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-100",
+      "method_label": "alternative_surveillance_data_streams",
+      "canonical_name": "Alternative surveillance data streams",
+      "source_role": "diagnostic",
+      "target_title": "Surveillance for Neisseria meningitidis Disease Activity and Transmission Using Information Technology.",
+      "target_first_author": "S Sohail Ahmed",
+      "target_year": "2015",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25992552/",
+      "seed_candidate_key": "PMID:25992552",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-211",
+          "query_variant": "exact_title",
+          "query": "Surveillance[Title] AND Neisseria[Title] AND meningitidis[Title] AND Disease[Title] AND Activity[Title] AND Transmission[Title] AND Information[Title] AND Technology[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25992552",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-211",
+          "title": "Surveillance for Neisseria meningitidis Disease Activity and Transmission Using Information Technology.",
+          "year": "2015",
+          "authors": "S Sohail Ahmed; Ernesto Oviedo-Orta; Sumiko R Mekaru; Clark C Freifeld; Gervais Tougas; John S Brownstein",
+          "doi": "10.1371/journal.pone.0127406",
+          "pmid": "25992552",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25992552/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-101",
+      "method_label": "ascertainment_correction_hidden_burden",
+      "canonical_name": "Ascertainment correction and hidden-burden estimation",
+      "source_role": "diagnostic",
+      "target_title": "Infectious Disease Underreporting Is Predicted by Country-Level Preparedness, Politics, and Pathogen Severity.",
+      "target_first_author": "Amanda J Meadows",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35925788/",
+      "seed_candidate_key": "PMID:35925788",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-212",
+          "query_variant": "exact_title",
+          "query": "Infectious[Title] AND Disease[Title] AND Underreporting[Title] AND Is[Title] AND Predicted[Title] AND Country[Title] AND Level[Title] AND Preparedness[Title] AND Politics[Title] AND Pathogen[Title] AND Severity[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-328",
+          "query_variant": "title_first_author",
+          "query": "Infectious[Title] AND Underreporting[Title] AND Predicted[Title] AND Preparedness[Title] AND Meadows[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35925788",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-328",
+          "title": "Infectious Disease Underreporting Is Predicted by Country-Level Preparedness, Politics, and Pathogen Severity.",
+          "year": "2022",
+          "authors": "Amanda J Meadows; Ben Oppenheim; Jaclyn Guerrero; Benjamin Ash; Rinette Badker; Cathine K Lam; Chris Pardee; Christopher Ngoon; Patrick T Savage; Vikram Sridharan; Nita K Madhav; Nicole Stephenson",
+          "doi": "10.1089/hs.2021.0197",
+          "pmid": "35925788",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35925788/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-102",
+      "method_label": "auxiliary_signal_nowcasting",
+      "canonical_name": "Auxiliary-signal nowcasting",
+      "source_role": "diagnostic",
+      "target_title": "Predictive power of wastewater for nowcasting infectious disease transmission: A retrospective case study of five sewershed areas in Louisville, Kentucky.",
+      "target_first_author": "Fayette Klaassen",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37838198/",
+      "seed_candidate_key": "PMID:37838198",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-213",
+          "query_variant": "exact_title",
+          "query": "Predictive[Title] AND power[Title] AND wastewater[Title] AND nowcasting[Title] AND infectious[Title] AND disease[Title] AND transmission[Title] AND retrospective[Title] AND case[Title] AND study[Title] AND five[Title] AND sewershed[Title] AND areas[Title] AND Louisville[Title] AND Kentucky[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37838198",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-213",
+          "title": "Predictive power of wastewater for nowcasting infectious disease transmission: A retrospective case study of five sewershed areas in Louisville, Kentucky.",
+          "year": "2024",
+          "authors": "Fayette Klaassen; Rochelle H Holm; Ted Smith; Ted Cohen; Aruni Bhatnagar; Nicolas A Menzies",
+          "doi": "10.1016/j.envres.2023.117395",
+          "pmid": "37838198",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37838198/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-103",
+      "method_label": "auxiliary_signal_nowcasting",
+      "canonical_name": "Auxiliary-signal nowcasting",
+      "source_role": "infectious_application",
+      "target_title": "Using web search queries to monitor influenza-like illness: an exploratory retrospective analysis, Netherlands, 2017/18 influenza season.",
+      "target_first_author": "Paul P Schneider",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32489174/",
+      "seed_candidate_key": "PMID:32489174",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-214",
+          "query_variant": "exact_title",
+          "query": "web[Title] AND search[Title] AND queries[Title] AND monitor[Title] AND influenza[Title] AND like[Title] AND illness[Title] AND exploratory[Title] AND retrospective[Title] AND analysis[Title] AND Netherlands[Title] AND 2017[Title] AND 18[Title] AND season[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32489174",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-214",
+          "title": "Using web search queries to monitor influenza-like illness: an exploratory retrospective analysis, Netherlands, 2017/18 influenza season.",
+          "year": "2020",
+          "authors": "Paul P Schneider; Christel Jaw van Gool; Peter Spreeuwenberg; Mariëtte Hooiveld; Gé A Donker; David J Barnett; John Paget",
+          "doi": "10.2807/1560-7917.es.2020.25.21.1900221",
+          "pmid": "32489174",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32489174/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-104",
+      "method_label": "capture_recapture",
+      "canonical_name": "Capture-recapture estimation",
+      "source_role": "authoritative_candidate",
+      "target_title": "Estimating the undetected infections in the Covid-19 outbreak by harnessing capture-recapture methods.",
+      "target_first_author": "Dankmar Böhning",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32534143/",
+      "seed_candidate_key": "PMID:32534143",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-215",
+          "query_variant": "exact_title",
+          "query": "Estimating[Title] AND undetected[Title] AND infections[Title] AND Covid[Title] AND 19[Title] AND outbreak[Title] AND harnessing[Title] AND capture[Title] AND recapture[Title] AND methods[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32534143",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-215",
+          "title": "Estimating the undetected infections in the Covid-19 outbreak by harnessing capture-recapture methods.",
+          "year": "2020",
+          "authors": "Dankmar Böhning; Irene Rocchetti; Antonello Maruotti; Heinz Holling",
+          "doi": "10.1016/j.ijid.2020.06.009",
+          "pmid": "32534143",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32534143/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-105",
+      "method_label": "capture_recapture",
+      "canonical_name": "Capture-recapture estimation",
+      "source_role": "diagnostic",
+      "target_title": "Quality assessment of capture-recapture studies in resource-limited countries.",
+      "target_first_author": "Rob van Hest",
+      "target_year": "2011",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/21605289/",
+      "seed_candidate_key": "PMID:21605289",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-216",
+          "query_variant": "exact_title",
+          "query": "Quality[Title] AND assessment[Title] AND capture[Title] AND recapture[Title] AND studies[Title] AND resource[Title] AND limited[Title] AND countries[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:21605289",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-216",
+          "title": "Quality assessment of capture-recapture studies in resource-limited countries.",
+          "year": "2011",
+          "authors": "Rob van Hest; Andrew Grant; Ibrahim Abubakar",
+          "doi": "10.1111/j.1365-3156.2011.02790.x",
+          "pmid": "21605289",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21605289/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-106",
+      "method_label": "capture_recapture",
+      "canonical_name": "Capture-recapture estimation",
+      "source_role": "implementation",
+      "target_title": "Population Size Estimation From Capture-Recapture Studies Using shinyrecap: Design and Implementation of a Web-Based Graphical User Interface.",
+      "target_first_author": "Anne F McIntyre",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35471234/",
+      "seed_candidate_key": "PMID:35471234",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-217",
+          "query_variant": "exact_title",
+          "query": "Population[Title] AND Size[Title] AND Estimation[Title] AND Capture[Title] AND Recapture[Title] AND Studies[Title] AND shinyrecap[Title] AND Design[Title] AND Implementation[Title] AND Web[Title] AND Based[Title] AND Graphical[Title] AND User[Title] AND Interface[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35471234",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-217",
+          "title": "Population Size Estimation From Capture-Recapture Studies Using shinyrecap: Design and Implementation of a Web-Based Graphical User Interface.",
+          "year": "2022",
+          "authors": "Anne F McIntyre; Ian E Fellows; Steve Gutreuter; Wolfgang Hladik",
+          "doi": "10.2196/32645",
+          "pmid": "35471234",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35471234/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-107",
+      "method_label": "case_series_exposure_timing_error",
+      "canonical_name": "Self-controlled case-series models with exposure-timing error",
+      "source_role": "diagnostic",
+      "target_title": "Naive hypothesis testing for case series analysis with time-varying exposure onset measurement error: inference for infection-cardiovascular risk in patients on dialysis.",
+      "target_first_author": "Sandra M Mohammed",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23731166/",
+      "seed_candidate_key": "PMID:23731166",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-218",
+          "query_variant": "exact_title",
+          "query": "Naive[Title] AND hypothesis[Title] AND testing[Title] AND case[Title] AND series[Title] AND analysis[Title] AND time[Title] AND varying[Title] AND exposure[Title] AND onset[Title] AND measurement[Title] AND error[Title] AND inference[Title] AND infection[Title] AND cardiovascular[Title] AND risk[Title] AND patients[Title] AND dialysis[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23731166",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-218",
+          "title": "Naive hypothesis testing for case series analysis with time-varying exposure onset measurement error: inference for infection-cardiovascular risk in patients on dialysis.",
+          "year": "2013",
+          "authors": "Sandra M Mohammed; Lorien S Dalrymple; Damla Şentürk; Danh V Nguyen",
+          "doi": "10.1111/biom.12033",
+          "pmid": "23731166",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23731166/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-108",
+      "method_label": "coverage_denominator_correction",
+      "canonical_name": "Coverage and denominator correction",
+      "source_role": "implementation",
+      "target_title": "Implementation of a Novel Dormant State to Address Denominator Inflation in the Wisconsin Immunization Registry.",
+      "target_first_author": "Sarah Kangas",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/41650293/",
+      "seed_candidate_key": "PMID:41650293",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-219",
+          "query_variant": "exact_title",
+          "query": "Implementation[Title] AND Novel[Title] AND Dormant[Title] AND State[Title] AND Address[Title] AND Denominator[Title] AND Inflation[Title] AND Wisconsin[Title] AND Immunization[Title] AND Registry[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:41650293",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-219",
+          "title": "Implementation of a Novel Dormant State to Address Denominator Inflation in the Wisconsin Immunization Registry.",
+          "year": "2026",
+          "authors": "Sarah Kangas; Ashley Capriola; Stephanie Schauer",
+          "doi": "10.1097/phh.0000000000002339",
+          "pmid": "41650293",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41650293/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-109",
+      "method_label": "coverage_denominator_correction",
+      "canonical_name": "Coverage and denominator correction",
+      "source_role": "infectious_application",
+      "target_title": "Triangulation of Routine Antenatal HIV Prevalence Data and Adjusted HIV Estimates in Mozambique.",
+      "target_first_author": "Oliver Stevens",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/38180740/",
+      "seed_candidate_key": "PMID:38180740",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-220",
+          "query_variant": "exact_title",
+          "query": "Triangulation[Title] AND Routine[Title] AND Antenatal[Title] AND HIV[Title] AND Prevalence[Title] AND Data[Title] AND Adjusted[Title] AND Estimates[Title] AND Mozambique[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:38180740",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-220",
+          "title": "Triangulation of Routine Antenatal HIV Prevalence Data and Adjusted HIV Estimates in Mozambique.",
+          "year": "2024",
+          "authors": "Oliver Stevens; Makini Boothe; Orrin Tiberi; Mary Mahy; Patrick Walker; Robert Glaubius; Jordan McOwen; Aleny Couto; Morais Cunha; Jeffrey W Imai-Eaton",
+          "doi": "10.1097/qai.0000000000003333",
+          "pmid": "38180740",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38180740/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-110",
+      "method_label": "diagnostic_accuracy_calibration",
+      "canonical_name": "Diagnostic-accuracy and test-calibration methods",
+      "source_role": "authoritative_candidate",
+      "target_title": "Negative SARS-CoV-2 PCR or rapid antigen test result and the subsequent risk of being infectious: a mathematical simulation study.",
+      "target_first_author": "Ralf Krumkamp",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/34376152/",
+      "seed_candidate_key": "PMID:34376152",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-221",
+          "query_variant": "exact_title",
+          "query": "Negative[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND PCR[Title] AND rapid[Title] AND antigen[Title] AND test[Title] AND result[Title] AND subsequent[Title] AND risk[Title] AND being[Title] AND infectious[Title] AND mathematical[Title] AND simulation[Title] AND study[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-329",
+          "query_variant": "title_first_author",
+          "query": "subsequent[Title] AND infectious[Title] AND mathematical[Title] AND simulation[Title] AND Krumkamp[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:34376152",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-329",
+          "title": "Negative SARS-CoV-2 PCR or rapid antigen test result and the subsequent risk of being infectious: a mathematical simulation study.",
+          "year": "2021",
+          "authors": "Ralf Krumkamp; Benno Kreuels; Veronika K Jaeger; Jürgen May; Rafael Mikolajczyk; André Karch",
+          "doi": "10.1186/s12874-021-01361-3",
+          "pmid": "34376152",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34376152/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-111",
+      "method_label": "diagnostic_accuracy_calibration",
+      "canonical_name": "Diagnostic-accuracy and test-calibration methods",
+      "source_role": "infectious_application",
+      "target_title": "Estimated prevalence of COVID-19 in Brazil with probabilistic bias correction.",
+      "target_first_author": "Erik Alencar de Figueiredo",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/34669777/",
+      "seed_candidate_key": "PMID:34669777",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-222",
+          "query_variant": "exact_title",
+          "query": "Estimated[Title] AND prevalence[Title] AND COVID[Title] AND 19[Title] AND Brazil[Title] AND probabilistic[Title] AND bias[Title] AND correction[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:34669777",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-222",
+          "title": "Estimated prevalence of COVID-19 in Brazil with probabilistic bias correction.",
+          "year": "2021",
+          "authors": "Erik Alencar de Figueiredo; Démerson André Polli; Bernardo Borba de Andrade",
+          "doi": "10.1590/0102-311x00290120",
+          "pmid": "34669777",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34669777/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-112",
+      "method_label": "diagnostic_assay_validation_and_yield_comparison",
+      "canonical_name": "Diagnostic assay validation and yield-comparison studies",
+      "source_role": "authoritative_candidate",
+      "target_title": "A Reagent and Virus Benchmarking Panel for a Uniform Analytical Performance Assessment of N Antigen-Based Diagnostic Tests for COVID-19.",
+      "target_first_author": "Allison Golden",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37166329/",
+      "seed_candidate_key": "PMID:37166329",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-223",
+          "query_variant": "exact_title",
+          "query": "Reagent[Title] AND Virus[Title] AND Benchmarking[Title] AND Panel[Title] AND Uniform[Title] AND Analytical[Title] AND Performance[Title] AND Assessment[Title] AND N[Title] AND Antigen[Title] AND Based[Title] AND Diagnostic[Title] AND Tests[Title] AND COVID[Title] AND 19[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37166329",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-223",
+          "title": "A Reagent and Virus Benchmarking Panel for a Uniform Analytical Performance Assessment of N Antigen-Based Diagnostic Tests for COVID-19.",
+          "year": "2023",
+          "authors": "Allison Golden; Jason L Cantera; Lorraine Lillis; Thanh T Phan; Hannah Slater; Edwin J Webb; Roger B Peck; David S Boyle; Gonzalo J Domingo",
+          "doi": "10.1128/spectrum.03731-22",
+          "pmid": "37166329",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37166329/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-113",
+      "method_label": "diagnostic_assay_validation_and_yield_comparison",
+      "canonical_name": "Diagnostic assay validation and yield-comparison studies",
+      "source_role": "correction",
+      "target_title": "Corrigendum: The Vacc-SeqQC project: Benchmarking RNA-Seq for clinical vaccine studies.",
+      "target_first_author": "Johannes B Goll",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36911714/",
+      "seed_candidate_key": "PMID:36911714",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-224",
+          "query_variant": "exact_title",
+          "query": "Corrigendum[Title] AND Vacc[Title] AND SeqQC[Title] AND project[Title] AND Benchmarking[Title] AND RNA[Title] AND Seq[Title] AND clinical[Title] AND vaccine[Title] AND studies[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36911714",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-224",
+          "title": "Corrigendum: The Vacc-SeqQC project: Benchmarking RNA-Seq for clinical vaccine studies.",
+          "year": "2023",
+          "authors": "Johannes B Goll; Steven E Bosinger; Travis L Jensen; Hasse Walum; Tyler Grimes; Gregory K Tharp; Muktha S Natrajan; Azra Blazevic; Richard D Head; Casey E Gelber; Kristen J Steenbergen; Nirav B Patel; Patrick Sanz; Nadine G Rouphael; Evan J Anderson; Mark J Mulligan; Daniel F Hoft",
+          "doi": "10.3389/fimmu.2023.1163550",
+          "pmid": "36911714",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36911714/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-114",
+      "method_label": "diagnostic_case_definition_validity",
+      "canonical_name": "Diagnostic, case-definition, and reporting-validity studies",
+      "source_role": "authoritative_candidate",
+      "target_title": "Validation of an acute respiratory infection phenotyping algorithm to support robust computerised medical record-based respiratory sentinel surveillance, England, 2023.",
+      "target_first_author": "William H Elson",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39212059/",
+      "seed_candidate_key": "PMID:39212059",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-225",
+          "query_variant": "exact_title",
+          "query": "Validation[Title] AND acute[Title] AND respiratory[Title] AND infection[Title] AND phenotyping[Title] AND algorithm[Title] AND support[Title] AND robust[Title] AND computerised[Title] AND medical[Title] AND record[Title] AND based[Title] AND sentinel[Title] AND surveillance[Title] AND England[Title] AND 2023[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39212059",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-225",
+          "title": "Validation of an acute respiratory infection phenotyping algorithm to support robust computerised medical record-based respiratory sentinel surveillance, England, 2023.",
+          "year": "2024",
+          "authors": "William H Elson; Gavin Jamie; Rashmi Wimalaratna; Anna Forbes; Meredith Leston; Cecilia Okusi; Rachel Byford; Utkarsh Agrawal; Dan Todkill; Alex J Elliot; Conall Watson; Maria Zambon; Roger Morbey; Jamie Lopez Bernal; Fd Richard Hobbs; Simon de Lusignan",
+          "doi": "10.2807/1560-7917.es.2024.29.35.2300682",
+          "pmid": "39212059",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39212059/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-115",
+      "method_label": "diagnostic_case_definition_validity",
+      "canonical_name": "Diagnostic, case-definition, and reporting-validity studies",
+      "source_role": "guidance",
+      "target_title": "Presentation and management of infection in total disc replacement: A review.",
+      "target_first_author": "Hannah Spece",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/38590972/",
+      "seed_candidate_key": "PMID:38590972",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-226",
+          "query_variant": "exact_title",
+          "query": "Presentation[Title] AND management[Title] AND infection[Title] AND total[Title] AND disc[Title] AND replacement[Title] AND review[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:38590972",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-226",
+          "title": "Presentation and management of infection in total disc replacement: A review.",
+          "year": "2024",
+          "authors": "Hannah Spece; Armen Khachatryan; Frank M Phillips; Todd H Lanman; Gunnar B J Andersson; Grant E Garrigues; Hyun Bae; Joshua J Jacobs; Steven M Kurtz",
+          "doi": "10.1016/j.xnsj.2024.100320",
+          "pmid": "38590972",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38590972/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-116",
+      "method_label": "diagnostic_latent_class_models",
+      "canonical_name": "Diagnostic latent-class models without a gold standard",
+      "source_role": "authoritative_candidate",
+      "target_title": "Use of a third class in latent class modelling for the diagnostic evaluation of five infectious salmon anaemia virus detection tests.",
+      "target_first_author": "Charles Caraguel",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22051529/",
+      "seed_candidate_key": "PMID:22051529",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-227",
+          "query_variant": "exact_title",
+          "query": "Use[Title] AND third[Title] AND class[Title] AND latent[Title] AND modelling[Title] AND diagnostic[Title] AND evaluation[Title] AND five[Title] AND infectious[Title] AND salmon[Title] AND anaemia[Title] AND virus[Title] AND detection[Title] AND tests[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22051529",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-227",
+          "title": "Use of a third class in latent class modelling for the diagnostic evaluation of five infectious salmon anaemia virus detection tests.",
+          "year": "2012",
+          "authors": "Charles Caraguel; Henrik Stryhn; Nellie Gagné; Ian Dohoo; Larry Hammell",
+          "doi": "10.1016/j.prevetmed.2011.10.006",
+          "pmid": "22051529",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22051529/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-117",
+      "method_label": "diagnostic_latent_class_models",
+      "canonical_name": "Diagnostic latent-class models without a gold standard",
+      "source_role": "diagnostic",
+      "target_title": "Different latent class models were used and evaluated for assessing the accuracy of campylobacter diagnostic tests: overcoming imperfect reference standards?",
+      "target_first_author": "J Asselineau",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/29945689/",
+      "seed_candidate_key": "PMID:29945689",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-228",
+          "query_variant": "exact_title",
+          "query": "Different[Title] AND latent[Title] AND class[Title] AND models[Title] AND were[Title] AND used[Title] AND evaluated[Title] AND assessing[Title] AND accuracy[Title] AND campylobacter[Title] AND diagnostic[Title] AND tests[Title] AND overcoming[Title] AND imperfect[Title] AND reference[Title] AND standards[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-330",
+          "query_variant": "title_first_author",
+          "query": "Different[Title] AND campylobacter[Title] AND diagnostic[Title] AND overcoming[Title] AND Asselineau[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:29945689",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-330",
+          "title": "Different latent class models were used and evaluated for assessing the accuracy of campylobacter diagnostic tests: overcoming imperfect reference standards?",
+          "year": "2018",
+          "authors": "J Asselineau; A Paye; E Bessède; P Perez; C Proust-Lima",
+          "doi": "10.1017/s0950268818001723",
+          "pmid": "29945689",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29945689/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-118",
+      "method_label": "diagnostic_latent_class_models",
+      "canonical_name": "Diagnostic latent-class models without a gold standard",
+      "source_role": "guidance",
+      "target_title": "STARD-BLCM: Standards for the Reporting of Diagnostic accuracy studies that use Bayesian Latent Class Models.",
+      "target_first_author": "Polychronis Kostoulas",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/28237234/",
+      "seed_candidate_key": "PMID:28237234",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-229",
+          "query_variant": "exact_title",
+          "query": "STARD[Title] AND BLCM[Title] AND Standards[Title] AND Reporting[Title] AND Diagnostic[Title] AND accuracy[Title] AND studies[Title] AND that[Title] AND use[Title] AND Bayesian[Title] AND Latent[Title] AND Class[Title] AND Models[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-331",
+          "query_variant": "title_first_author",
+          "query": "Standards[Title] AND Reporting[Title] AND Diagnostic[Title] AND accuracy[Title] AND Kostoulas[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:28237234",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-331",
+          "title": "STARD-BLCM: Standards for the Reporting of Diagnostic accuracy studies that use Bayesian Latent Class Models.",
+          "year": "2017",
+          "authors": "Polychronis Kostoulas; Søren S Nielsen; Adam J Branscum; Wesley O Johnson; Nandini Dendukuri; Navneet K Dhand; Nils Toft; Ian A Gardner",
+          "doi": "10.1016/j.prevetmed.2017.01.006",
+          "pmid": "28237234",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28237234/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-119",
+      "method_label": "dynamic_population_denominator_correction",
+      "canonical_name": "Dynamic population-denominator correction",
+      "source_role": "diagnostic",
+      "target_title": "Correcting for the Inflated Adult Population Denominator in an English Nationwide Health Care Cohort: Database Analysis Study.",
+      "target_first_author": "Sudhir Venkatesan",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/41144579/",
+      "seed_candidate_key": "PMID:41144579",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-230",
+          "query_variant": "exact_title",
+          "query": "Correcting[Title] AND Inflated[Title] AND Adult[Title] AND Population[Title] AND Denominator[Title] AND English[Title] AND Nationwide[Title] AND Health[Title] AND Care[Title] AND Cohort[Title] AND Database[Title] AND Analysis[Title] AND Study[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:41144579",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-230",
+          "title": "Correcting for the Inflated Adult Population Denominator in an English Nationwide Health Care Cohort: Database Analysis Study.",
+          "year": "2025",
+          "authors": "Sudhir Venkatesan; Mark Joy; Gavin Jamie; Debasish Kar; Robert Williams; Xuejuan Fan; Wilhelmine Meeraus; Ruby S M Tsang; Kathryn S Taylor; Sylvia Taylor; F D Richard Hobbs; Sneha N Anand; Chris Robertson; Simon de Lusignan",
+          "doi": "10.2196/64788",
+          "pmid": "41144579",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41144579/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-120",
+      "method_label": "environmental_digital_surveillance",
+      "canonical_name": "Environmental and digital complementary surveillance",
+      "source_role": "guidance",
+      "target_title": "Making waves: Integrating wastewater surveillance with dynamic modeling to track and predict viral outbreaks.",
+      "target_first_author": "Tin Phan",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37494742/",
+      "seed_candidate_key": "PMID:37494742",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-231",
+          "query_variant": "exact_title",
+          "query": "Making[Title] AND waves[Title] AND Integrating[Title] AND wastewater[Title] AND surveillance[Title] AND dynamic[Title] AND modeling[Title] AND track[Title] AND predict[Title] AND viral[Title] AND outbreaks[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37494742",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-231",
+          "title": "Making waves: Integrating wastewater surveillance with dynamic modeling to track and predict viral outbreaks.",
+          "year": "2023",
+          "authors": "Tin Phan; Samantha Brozak; Bruce Pell; Jeremiah Oghuan; Anna Gitter; Tao Hu; Ruy M Ribeiro; Ruian Ke; Kristina D Mena; Alan S Perelson; Yang Kuang; Fuqing Wu",
+          "doi": "10.1016/j.watres.2023.120372",
+          "pmid": "37494742",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37494742/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-121",
+      "method_label": "environmental_digital_surveillance",
+      "canonical_name": "Environmental and digital complementary surveillance",
+      "source_role": "implementation",
+      "target_title": "A Platform for Crowdsourced Foodborne Illness Surveillance: Description of Users and Reports.",
+      "target_first_author": "Patrick Quade",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/28679492/",
+      "seed_candidate_key": "PMID:28679492",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-232",
+          "query_variant": "exact_title",
+          "query": "Platform[Title] AND Crowdsourced[Title] AND Foodborne[Title] AND Illness[Title] AND Surveillance[Title] AND Description[Title] AND Users[Title] AND Reports[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:28679492",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-232",
+          "title": "A Platform for Crowdsourced Foodborne Illness Surveillance: Description of Users and Reports.",
+          "year": "2017",
+          "authors": "Patrick Quade; Elaine Okanyene Nsoesie",
+          "doi": "10.2196/publichealth.7076",
+          "pmid": "28679492",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28679492/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-122",
+      "method_label": "environmental_digital_surveillance",
+      "canonical_name": "Environmental and digital complementary surveillance",
+      "source_role": "infectious_application",
+      "target_title": "Surveillance of hepatitis A virus in urban sewages and comparison with cases notified in the course of an outbreak, Italy 2013.",
+      "target_first_author": "Giuseppina La Rosa",
+      "target_year": "2014",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25074676/",
+      "seed_candidate_key": "PMID:25074676",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-233",
+          "query_variant": "exact_title",
+          "query": "Surveillance[Title] AND hepatitis[Title] AND virus[Title] AND urban[Title] AND sewages[Title] AND comparison[Title] AND cases[Title] AND notified[Title] AND course[Title] AND outbreak[Title] AND Italy[Title] AND 2013[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25074676",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-233",
+          "title": "Surveillance of hepatitis A virus in urban sewages and comparison with cases notified in the course of an outbreak, Italy 2013.",
+          "year": "2014",
+          "authors": "Giuseppina La Rosa; Simonetta Della Libera; Marcello Iaconelli; Anna Rita Ciccaglione; Roberto Bruni; Stefania Taffon; Michele Equestre; Valeria Alfonsi; Caterina Rizzo; Maria Elena Tosti; Maria Chironna; Luisa Romanò; Alessandro Remo Zanetti; Michele Muscillo",
+          "doi": "10.1186/1471-2334-14-419",
+          "pmid": "25074676",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25074676/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-123",
+      "method_label": "genomic_sentinel_surveillance",
+      "canonical_name": "Genomic sentinel surveillance",
+      "source_role": "diagnostic",
+      "target_title": "Molecular epidemiology of SARS-CoV-2 genome sentinel surveillance in commercial COVID-19 testing sites targeting asymptomatic individuals during Japan's seventh epidemic wave.",
+      "target_first_author": "Teiichiro Shiino",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39251760/",
+      "seed_candidate_key": "PMID:39251760",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-234",
+          "query_variant": "exact_title",
+          "query": "Molecular[Title] AND epidemiology[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND genome[Title] AND sentinel[Title] AND surveillance[Title] AND commercial[Title] AND COVID[Title] AND 19[Title] AND testing[Title] AND sites[Title] AND targeting[Title] AND asymptomatic[Title] AND individuals[Title] AND during[Title] AND Japan[Title] AND s[Title] AND seventh[Title] AND epidemic[Title] AND wave[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-332",
+          "query_variant": "title_first_author",
+          "query": "epidemiology[Title] AND surveillance[Title] AND asymptomatic[Title] AND individuals[Title] AND Shiino[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39251760",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-332",
+          "title": "Molecular epidemiology of SARS-CoV-2 genome sentinel surveillance in commercial COVID-19 testing sites targeting asymptomatic individuals during Japan's seventh epidemic wave.",
+          "year": "2024",
+          "authors": "Teiichiro Shiino; Junko S Takeuchi; Hajime Ohyanagi; Moto Kimura; Yukumasa Kazuyama; Masato Ikeda; Wataru Sugiura",
+          "doi": "10.1038/s41598-024-71953-8",
+          "pmid": "39251760",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39251760/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-124",
+      "method_label": "genomic_sentinel_surveillance",
+      "canonical_name": "Genomic sentinel surveillance",
+      "source_role": "implementation",
+      "target_title": "Establishment of sentinel surveillance of human clinical campylobacteriosis in Ireland.",
+      "target_first_author": "Carina Brehony",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33428331/",
+      "seed_candidate_key": "PMID:33428331",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-235",
+          "query_variant": "exact_title",
+          "query": "Establishment[Title] AND sentinel[Title] AND surveillance[Title] AND human[Title] AND clinical[Title] AND campylobacteriosis[Title] AND Ireland[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33428331",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-235",
+          "title": "Establishment of sentinel surveillance of human clinical campylobacteriosis in Ireland.",
+          "year": "2021",
+          "authors": "Carina Brehony; Donal Lanigan; Anne Carroll; Eleanor McNamara",
+          "doi": "10.1111/zph.12802",
+          "pmid": "33428331",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33428331/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-125",
+      "method_label": "genomic_sentinel_surveillance",
+      "canonical_name": "Genomic sentinel surveillance",
+      "source_role": "infectious_application",
+      "target_title": "Low-level Circulation of Enterovirus D68-Associated Acute Respiratory Infections, Germany, 2014.",
+      "target_first_author": "Janine Reiche",
+      "target_year": "2015",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25898320/",
+      "seed_candidate_key": "PMID:25898320",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-236",
+          "query_variant": "exact_title",
+          "query": "Low[Title] AND level[Title] AND Circulation[Title] AND Enterovirus[Title] AND D68[Title] AND Associated[Title] AND Acute[Title] AND Respiratory[Title] AND Infections[Title] AND Germany[Title] AND 2014[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25898320",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-236",
+          "title": "Low-level Circulation of Enterovirus D68-Associated Acute Respiratory Infections, Germany, 2014.",
+          "year": "2015",
+          "authors": "Janine Reiche; Sindy Böttcher; Sabine Diedrich; Udo Buchholz; Silke Buda; Walter Haas; Brunhilde Schweiger; Thorsten Wolff",
+          "doi": "10.3201/eid2105.141900",
+          "pmid": "25898320",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25898320/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-126",
+      "method_label": "healthcare_surveillance_benchmarking",
+      "canonical_name": "Healthcare surveillance and performance benchmarking",
+      "source_role": "diagnostic",
+      "target_title": "Reporting surgical site infections following total hip and knee arthroplasty: impact of limiting surveillance to the operative hospital.",
+      "target_first_author": "Deborah S Yokoe",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23912846/",
+      "seed_candidate_key": "PMID:23912846",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-237",
+          "query_variant": "exact_title",
+          "query": "Reporting[Title] AND surgical[Title] AND site[Title] AND infections[Title] AND following[Title] AND total[Title] AND hip[Title] AND knee[Title] AND arthroplasty[Title] AND impact[Title] AND limiting[Title] AND surveillance[Title] AND operative[Title] AND hospital[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23912846",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-237",
+          "title": "Reporting surgical site infections following total hip and knee arthroplasty: impact of limiting surveillance to the operative hospital.",
+          "year": "2013",
+          "authors": "Deborah S Yokoe; Taliser R Avery; Richard Platt; Susan S Huang",
+          "doi": "10.1093/cid/cit516",
+          "pmid": "23912846",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23912846/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-127",
+      "method_label": "healthcare_surveillance_benchmarking",
+      "canonical_name": "Healthcare surveillance and performance benchmarking",
+      "source_role": "guidance",
+      "target_title": "Pathways to clean hands: highlights of successful hand hygiene implementation strategies in Europe.",
+      "target_first_author": "A P Magiorakos",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20460091/",
+      "seed_candidate_key": "PMID:20460091",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-238",
+          "query_variant": "exact_title",
+          "query": "Pathways[Title] AND clean[Title] AND hands[Title] AND highlights[Title] AND successful[Title] AND hand[Title] AND hygiene[Title] AND implementation[Title] AND strategies[Title] AND Europe[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20460091",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-238",
+          "title": "Pathways to clean hands: highlights of successful hand hygiene implementation strategies in Europe.",
+          "year": "2010",
+          "authors": "A P Magiorakos; E Leens; V Drouvot; L May-Michelangeli; C Reichardt; P Gastmeier; K Wilson; M Tannahill; E McFarlane; A Simon",
+          "doi": "",
+          "pmid": "20460091",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20460091/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-128",
+      "method_label": "healthcare_surveillance_benchmarking",
+      "canonical_name": "Healthcare surveillance and performance benchmarking",
+      "source_role": "implementation",
+      "target_title": "Concise healthcare-associated infection reporting and benchmarking with minimal staff resources.",
+      "target_first_author": "Walter Koller",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22874388/",
+      "seed_candidate_key": "PMID:22874388",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-239",
+          "query_variant": "exact_title",
+          "query": "Concise[Title] AND healthcare[Title] AND associated[Title] AND infection[Title] AND reporting[Title] AND benchmarking[Title] AND minimal[Title] AND staff[Title] AND resources[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22874388",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-239",
+          "title": "Concise healthcare-associated infection reporting and benchmarking with minimal staff resources.",
+          "year": "2012",
+          "authors": "Walter Koller; Jeroen De Bruin; Alexander Blacky; Harald Mandl; Klaus-Peter Adlassnig",
+          "doi": "",
+          "pmid": "22874388",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22874388/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-129",
+      "method_label": "healthcare_surveillance_benchmarking",
+      "canonical_name": "Healthcare surveillance and performance benchmarking",
+      "source_role": "original_candidate",
+      "target_title": "Development of risk-standardized metrics for benchmarking hospitals on their inpatient antibiotic use.",
+      "target_first_author": "Daniel J Livorsi",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/42403067/",
+      "seed_candidate_key": "PMID:42403067",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-240",
+          "query_variant": "exact_title",
+          "query": "Development[Title] AND risk[Title] AND standardized[Title] AND metrics[Title] AND benchmarking[Title] AND hospitals[Title] AND their[Title] AND inpatient[Title] AND antibiotic[Title] AND use[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-333",
+          "query_variant": "title_first_author",
+          "query": "Development[Title] AND standardized[Title] AND benchmarking[Title] AND antibiotic[Title] AND Livorsi[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:42403067",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-333",
+          "title": "Development of risk-standardized metrics for benchmarking hospitals on their inpatient antibiotic use.",
+          "year": "2026",
+          "authors": "Daniel J Livorsi; James A Merchant; Hyunkeun Cho; Heather Davila; Tamar F Barlam; Sara E Cosgrove; Dimitri Drekonja; Kelly Echevarria; Matthew Bidwell Goetz; Kevin Hsueh; Kari A Mergenhagen; Lindsay Taylor; Michihiko Goto",
+          "doi": "10.1017/ice.2026.10497",
+          "pmid": "42403067",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42403067/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-130",
+      "method_label": "hidden_population_capture_recapture",
+      "canonical_name": "Capture-recapture for hidden-population size estimation",
+      "source_role": "diagnostic",
+      "target_title": "Estimating the Population Size of People Who Inject Drugs in 3 Cities in Zambia: Capture-Recapture, Successive Sampling, and Bayesian Consensus Estimation Methods.",
+      "target_first_author": "Lauren Parmley",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/40737676/",
+      "seed_candidate_key": "PMID:40737676",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-241",
+          "query_variant": "exact_title",
+          "query": "Estimating[Title] AND Population[Title] AND Size[Title] AND People[Title] AND Who[Title] AND Inject[Title] AND Drugs[Title] AND 3[Title] AND Cities[Title] AND Zambia[Title] AND Capture[Title] AND Recapture[Title] AND Successive[Title] AND Sampling[Title] AND Bayesian[Title] AND Consensus[Title] AND Estimation[Title] AND Methods[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:40737676",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-241",
+          "title": "Estimating the Population Size of People Who Inject Drugs in 3 Cities in Zambia: Capture-Recapture, Successive Sampling, and Bayesian Consensus Estimation Methods.",
+          "year": "2025",
+          "authors": "Lauren Parmley; Giles Reid; Joyce J Neal; Brave Hanunka; Leigh Tally; Lophina Chilukutu; Tepa Nkumbula; Chipili Mulemfwe; Lazarous Chelu; Ray Handema; John Mwale; Kennedy Mutale; Lloyd Mulenga; Anne F McIntyre; Neena M Philip; Hannah Chung; Maria Lahuerta",
+          "doi": "10.2196/66551",
+          "pmid": "40737676",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40737676/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-131",
+      "method_label": "incidence_prevalence_burden_estimation",
+      "canonical_name": "Incidence, prevalence, and burden estimation from surveillance or survey data",
+      "source_role": "infectious_application",
+      "target_title": "Burden of HIV and tuberculosis co-infection in Montreal, Quebec.",
+      "target_first_author": "Paul Rivest",
+      "target_year": "2014",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25166128/",
+      "seed_candidate_key": "PMID:25166128",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-242",
+          "query_variant": "exact_title",
+          "query": "Burden[Title] AND HIV[Title] AND tuberculosis[Title] AND co[Title] AND infection[Title] AND Montreal[Title] AND Quebec[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25166128",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-242",
+          "title": "Burden of HIV and tuberculosis co-infection in Montreal, Quebec.",
+          "year": "2014",
+          "authors": "Paul Rivest; Liliya Sinyavskaya; Paul Brassard",
+          "doi": "10.17269/cjph.105.4269",
+          "pmid": "25166128",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25166128/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-132",
+      "method_label": "integrated_vaccine_safety_surveillance",
+      "canonical_name": "Integrated vaccine-safety surveillance",
+      "source_role": "infectious_application",
+      "target_title": "Safety of mRNA vaccines administered during the initial 6 months of the US COVID-19 vaccination programme: an observational study of reports to the Vaccine Adverse Event Reporting System and v-safe.",
+      "target_first_author": "Hannah G Rosenblum",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35271805/",
+      "seed_candidate_key": "PMID:35271805",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-243",
+          "query_variant": "exact_title",
+          "query": "Safety[Title] AND mRNA[Title] AND vaccines[Title] AND administered[Title] AND during[Title] AND initial[Title] AND 6[Title] AND months[Title] AND US[Title] AND COVID[Title] AND 19[Title] AND vaccination[Title] AND programme[Title] AND observational[Title] AND study[Title] AND reports[Title] AND Vaccine[Title] AND Adverse[Title] AND Event[Title] AND Reporting[Title] AND System[Title] AND v[Title] AND safe[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-334",
+          "query_variant": "title_first_author",
+          "query": "administered[Title] AND vaccination[Title] AND programme[Title] AND observational[Title] AND Rosenblum[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35271805",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-334",
+          "title": "Safety of mRNA vaccines administered during the initial 6 months of the US COVID-19 vaccination programme: an observational study of reports to the Vaccine Adverse Event Reporting System and v-safe.",
+          "year": "2022",
+          "authors": "Hannah G Rosenblum; Julianne Gee; Ruiling Liu; Paige L Marquez; Bicheng Zhang; Penelope Strid; Winston E Abara; Michael M McNeil; Tanya R Myers; Anne M Hause; John R Su; Lauri E Markowitz; Tom T Shimabukuro; David K Shay",
+          "doi": "10.1016/s1473-3099(22)00054-8",
+          "pmid": "35271805",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35271805/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-133",
+      "method_label": "latent_class_models",
+      "canonical_name": "Latent-class measurement models",
+      "source_role": "authoritative_candidate",
+      "target_title": "Estimating seroprevalence of human papillomavirus type 16 using a mixture model with smoothed age-dependent mixing proportions.",
+      "target_first_author": "Margaretha A Vink",
+      "target_year": "2015",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25380503/",
+      "seed_candidate_key": "PMID:25380503",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-244",
+          "query_variant": "exact_title",
+          "query": "Estimating[Title] AND seroprevalence[Title] AND human[Title] AND papillomavirus[Title] AND type[Title] AND 16[Title] AND mixture[Title] AND model[Title] AND smoothed[Title] AND age[Title] AND dependent[Title] AND mixing[Title] AND proportions[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25380503",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-244",
+          "title": "Estimating seroprevalence of human papillomavirus type 16 using a mixture model with smoothed age-dependent mixing proportions.",
+          "year": "2015",
+          "authors": "Margaretha A Vink; Jan van de Kassteele; Jacco Wallinga; Peter F M Teunis; Johannes A Bogaards",
+          "doi": "10.1097/ede.0000000000000196",
+          "pmid": "25380503",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25380503/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-134",
+      "method_label": "latent_class_models",
+      "canonical_name": "Latent-class measurement models",
+      "source_role": "correction",
+      "target_title": "Correction: Vulnerability profiles and prevalence of HIV and other sexually transmitted infections among adolescent girls and young women in Ethiopia: A latent class analysis.",
+      "target_first_author": "Carly A Comins",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32702058/",
+      "seed_candidate_key": "PMID:32702058",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-245",
+          "query_variant": "exact_title",
+          "query": "Correction[Title] AND Vulnerability[Title] AND profiles[Title] AND prevalence[Title] AND HIV[Title] AND other[Title] AND sexually[Title] AND transmitted[Title] AND infections[Title] AND among[Title] AND adolescent[Title] AND girls[Title] AND young[Title] AND women[Title] AND Ethiopia[Title] AND latent[Title] AND class[Title] AND analysis[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-335",
+          "query_variant": "title_first_author",
+          "query": "Correction[Title] AND Vulnerability[Title] AND prevalence[Title] AND transmitted[Title] AND Comins[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32702058",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-335",
+          "title": "Correction: Vulnerability profiles and prevalence of HIV and other sexually transmitted infections among adolescent girls and young women in Ethiopia: A latent class analysis.",
+          "year": "2020",
+          "authors": "Carly A Comins; Katherine B Rucinski; Stefan Baral; Samuele A Abebe; Andargachew Mulu; Sheree R Schwartz",
+          "doi": "10.1371/journal.pone.0236910",
+          "pmid": "32702058",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32702058/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-135",
+      "method_label": "latent_class_models",
+      "canonical_name": "Latent-class measurement models",
+      "source_role": "guidance",
+      "target_title": "Latent Class Analysis and the Need for Clear Reporting of Methods.",
+      "target_first_author": "Emily MacLean",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32761073/",
+      "seed_candidate_key": "PMID:32761073",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-246",
+          "query_variant": "exact_title",
+          "query": "Latent[Title] AND Class[Title] AND Analysis[Title] AND Need[Title] AND Clear[Title] AND Reporting[Title] AND Methods[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32761073",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-246",
+          "title": "Latent Class Analysis and the Need for Clear Reporting of Methods.",
+          "year": "2021",
+          "authors": "Emily MacLean; Nandini Dendukuri",
+          "doi": "10.1093/cid/ciaa1131",
+          "pmid": "32761073",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32761073/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-136",
+      "method_label": "latent_class_models",
+      "canonical_name": "Latent-class measurement models",
+      "source_role": "infectious_application",
+      "target_title": "Identifying individuals engaging in risky sexual behaviour for chlamydia infection in the UK: a latent class approach.",
+      "target_first_author": "Beth Stuart",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/19793405/",
+      "seed_candidate_key": "PMID:19793405",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-247",
+          "query_variant": "exact_title",
+          "query": "Identifying[Title] AND individuals[Title] AND engaging[Title] AND risky[Title] AND sexual[Title] AND behaviour[Title] AND chlamydia[Title] AND infection[Title] AND UK[Title] AND latent[Title] AND class[Title] AND approach[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:19793405",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-247",
+          "title": "Identifying individuals engaging in risky sexual behaviour for chlamydia infection in the UK: a latent class approach.",
+          "year": "2010",
+          "authors": "Beth Stuart; Andrew Hinde",
+          "doi": "10.1017/s0021932009990289",
+          "pmid": "19793405",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/19793405/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-137",
+      "method_label": "latent_class_preference_models",
+      "canonical_name": "Latent-class preference models",
+      "source_role": "infectious_application",
+      "target_title": "Public preferences for vaccination programmes during pandemics caused by pathogens transmitted through respiratory droplets - a discrete choice experiment in four European countries, 2013.",
+      "target_first_author": "Domino Determann",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27277581/",
+      "seed_candidate_key": "PMID:27277581",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-248",
+          "query_variant": "exact_title",
+          "query": "Public[Title] AND preferences[Title] AND vaccination[Title] AND programmes[Title] AND during[Title] AND pandemics[Title] AND caused[Title] AND pathogens[Title] AND transmitted[Title] AND through[Title] AND respiratory[Title] AND droplets[Title] AND discrete[Title] AND choice[Title] AND experiment[Title] AND four[Title] AND European[Title] AND countries[Title] AND 2013[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-336",
+          "query_variant": "title_first_author",
+          "query": "preferences[Title] AND vaccination[Title] AND transmitted[Title] AND respiratory[Title] AND Determann[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27277581",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-336",
+          "title": "Public preferences for vaccination programmes during pandemics caused by pathogens transmitted through respiratory droplets - a discrete choice experiment in four European countries, 2013.",
+          "year": "2016",
+          "authors": "Domino Determann; Ida J Korfage; Angela Fagerlin; Ewout W Steyerberg; Michiel C Bliemer; Helene A Voeten; Jan Hendrik Richardus; Mattijs S Lambooij; Esther W de Bekker-Grob",
+          "doi": "10.2807/1560-7917.es.2016.21.22.30247",
+          "pmid": "27277581",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27277581/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-138",
+      "method_label": "latent_class_trajectory_models",
+      "canonical_name": "Latent-class trajectory models",
+      "source_role": "guidance",
+      "target_title": "Application progress of latent class growth models in dynamic prevention and control strategies for acquired immunodeficiency syndrome.",
+      "target_first_author": "Mimi Zhai",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39019791/",
+      "seed_candidate_key": "PMID:39019791",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-249",
+          "query_variant": "exact_title",
+          "query": "Application[Title] AND progress[Title] AND latent[Title] AND class[Title] AND growth[Title] AND models[Title] AND dynamic[Title] AND prevention[Title] AND control[Title] AND strategies[Title] AND acquired[Title] AND immunodeficiency[Title] AND syndrome[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39019791",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-249",
+          "title": "Application progress of latent class growth models in dynamic prevention and control strategies for acquired immunodeficiency syndrome.",
+          "year": "2024",
+          "authors": "Mimi Zhai; Yamin Li; Sushun Liu; Yunxia Li; Yiting Liu; Li Li; Xianyang Lei",
+          "doi": "10.11817/j.issn.1672-7347.2024.230437",
+          "pmid": "39019791",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39019791/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-139",
+      "method_label": "latent_class_trajectory_models",
+      "canonical_name": "Latent-class trajectory models",
+      "source_role": "infectious_application",
+      "target_title": "Revisiting long-term adherence to highly active antiretroviral therapy in Senegal using latent class analysis.",
+      "target_first_author": "Mathieu Bastard",
+      "target_year": "2011",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/21775934/",
+      "seed_candidate_key": "PMID:21775934",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-250",
+          "query_variant": "exact_title",
+          "query": "Revisiting[Title] AND long[Title] AND term[Title] AND adherence[Title] AND highly[Title] AND active[Title] AND antiretroviral[Title] AND therapy[Title] AND Senegal[Title] AND latent[Title] AND class[Title] AND analysis[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:21775934",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-250",
+          "title": "Revisiting long-term adherence to highly active antiretroviral therapy in Senegal using latent class analysis.",
+          "year": "2011",
+          "authors": "Mathieu Bastard; Mame Basty Koita Fall; Isabelle Lanièce; Bernard Taverne; Alice Desclaux; René Ecochard; Papa Salif Sow; Eric Delaporte; Jean-François Etard",
+          "doi": "10.1097/qai.0b013e318211b43b",
+          "pmid": "21775934",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21775934/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-140",
+      "method_label": "measurement_error_correction_methods",
+      "canonical_name": "Measurement-error and misclassification correction methods",
+      "source_role": "authoritative_candidate",
+      "target_title": "Use of the normalized absorbance ratio as an internal standardization approach to minimize measurement error in enzyme-linked immunosorbent assays for diagnosis of human papillomavirus infection.",
+      "target_first_author": "Agnihotram V Ramanakumar",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20053861/",
+      "seed_candidate_key": "PMID:20053861",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-251",
+          "query_variant": "exact_title",
+          "query": "Use[Title] AND normalized[Title] AND absorbance[Title] AND ratio[Title] AND internal[Title] AND standardization[Title] AND approach[Title] AND minimize[Title] AND measurement[Title] AND error[Title] AND enzyme[Title] AND linked[Title] AND immunosorbent[Title] AND assays[Title] AND diagnosis[Title] AND human[Title] AND papillomavirus[Title] AND infection[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20053861",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-251",
+          "title": "Use of the normalized absorbance ratio as an internal standardization approach to minimize measurement error in enzyme-linked immunosorbent assays for diagnosis of human papillomavirus infection.",
+          "year": "2010",
+          "authors": "Agnihotram V Ramanakumar; Patricia Thomann; Joao M Candeias; Silvaneide Ferreira; Luisa L Villa; Eduardo L Franco",
+          "doi": "10.1128/jcm.00844-09",
+          "pmid": "20053861",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20053861/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-141",
+      "method_label": "measurement_error_correction_methods",
+      "canonical_name": "Measurement-error and misclassification correction methods",
+      "source_role": "diagnostic",
+      "target_title": "Short communication: HIV blips while on antiretroviral therapy can indicate consistently detectable viral levels due to assay underreporting.",
+      "target_first_author": "John M Murray",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23844947/",
+      "seed_candidate_key": "PMID:23844947",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-252",
+          "query_variant": "exact_title",
+          "query": "Short[Title] AND communication[Title] AND HIV[Title] AND blips[Title] AND while[Title] AND antiretroviral[Title] AND therapy[Title] AND can[Title] AND indicate[Title] AND consistently[Title] AND detectable[Title] AND viral[Title] AND levels[Title] AND due[Title] AND assay[Title] AND underreporting[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-337",
+          "query_variant": "title_first_author",
+          "query": "communication[Title] AND antiretroviral[Title] AND consistently[Title] AND underreporting[Title] AND Murray[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23844947",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-337",
+          "title": "Short communication: HIV blips while on antiretroviral therapy can indicate consistently detectable viral levels due to assay underreporting.",
+          "year": "2013",
+          "authors": "John M Murray; John J Zaunders; Kersten K Koelsch; Ven Natarajan; Yunden Badralmaa; Kristin McBride; Alexander Carrera; David A Cooper; Sean Emery; Anthony D Kelleher",
+          "doi": "10.1089/aid.2013.0132",
+          "pmid": "23844947",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23844947/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-142",
+      "method_label": "measurement_error_correction_methods",
+      "canonical_name": "Measurement-error and misclassification correction methods",
+      "source_role": "implementation",
+      "target_title": "Measurement error and variant-calling in deep Illumina sequencing of HIV.",
+      "target_first_author": "Mark Howison",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30407489/",
+      "seed_candidate_key": "PMID:30407489",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-253",
+          "query_variant": "exact_title",
+          "query": "Measurement[Title] AND error[Title] AND variant[Title] AND calling[Title] AND deep[Title] AND Illumina[Title] AND sequencing[Title] AND HIV[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30407489",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-253",
+          "title": "Measurement error and variant-calling in deep Illumina sequencing of HIV.",
+          "year": "2019",
+          "authors": "Mark Howison; Mia Coetzer; Rami Kantor",
+          "doi": "10.1093/bioinformatics/bty919",
+          "pmid": "30407489",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30407489/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-143",
+      "method_label": "measurement_error_correction_methods",
+      "canonical_name": "Measurement-error and misclassification correction methods",
+      "source_role": "infectious_application",
+      "target_title": "Bayesian Correction of Misclassification of Pertussis in Vaccine Effectiveness Studies: How Much Does Underreporting Matter?",
+      "target_first_author": "Neal D Goldstein",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27188939/",
+      "seed_candidate_key": "PMID:27188939",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-254",
+          "query_variant": "exact_title",
+          "query": "Bayesian[Title] AND Correction[Title] AND Misclassification[Title] AND Pertussis[Title] AND Vaccine[Title] AND Effectiveness[Title] AND Studies[Title] AND How[Title] AND Much[Title] AND Does[Title] AND Underreporting[Title] AND Matter[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-338",
+          "query_variant": "title_first_author",
+          "query": "Correction[Title] AND Misclassification[Title] AND Effectiveness[Title] AND Underreporting[Title] AND Goldstein[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27188939",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-338",
+          "title": "Bayesian Correction of Misclassification of Pertussis in Vaccine Effectiveness Studies: How Much Does Underreporting Matter?",
+          "year": "2016",
+          "authors": "Neal D Goldstein; Igor Burstyn; E Claire Newbern; Loni P Tabb; Jennifer Gutowski; Seth L Welles",
+          "doi": "10.1093/aje/kwv273",
+          "pmid": "27188939",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27188939/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-144",
+      "method_label": "measurement_error_models",
+      "canonical_name": "Measurement-error correction and misclassification adjustment",
+      "source_role": "infectious_application",
+      "target_title": "How much does vaccination reduce the rate of HBV infection in Iranian population? a Bayesian adjustment analysis.",
+      "target_first_author": "Sajad Shojaee",
+      "target_year": "2019",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32099614/",
+      "seed_candidate_key": "PMID:32099614",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-255",
+          "query_variant": "exact_title",
+          "query": "How[Title] AND much[Title] AND does[Title] AND vaccination[Title] AND reduce[Title] AND rate[Title] AND HBV[Title] AND infection[Title] AND Iranian[Title] AND population[Title] AND Bayesian[Title] AND adjustment[Title] AND analysis[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-339",
+          "query_variant": "title_first_author",
+          "query": "vaccination[Title] AND infection[Title] AND population[Title] AND adjustment[Title] AND Shojaee[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32099614",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-339",
+          "title": "How much does vaccination reduce the rate of HBV infection in Iranian population? a Bayesian adjustment analysis.",
+          "year": "2019",
+          "authors": "Sajad Shojaee; Farid Zayeri; Maryam Nasserinejad; Ali Ghasemzadeh; Saeedeh Sadat Beheshti Shirazi; Mahsa Khodadoostan",
+          "doi": "",
+          "pmid": "32099614",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32099614/"
+        }
+      ]
+    }
+  ]
+}

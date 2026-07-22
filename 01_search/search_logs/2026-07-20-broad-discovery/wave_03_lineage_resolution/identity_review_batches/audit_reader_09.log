@@ -1533,19 +1533,19 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-174",
         "query_variant": "title_first_author",
         "query": "surveillance[Title] AND databases[Title] AND Medical[Title] AND product[Title] AND Maro[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-173",
         "query_variant": "exact_title",
         "query": "Medical[Title] AND product[Title] AND safety[Title] AND surveillance[Title] AND how[Title] AND many[Title] AND databases[Title] AND use[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-174",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:23867812",
         "candidate_rank": "1",
@@ -1573,14 +1573,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-66",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-175",
         "query_variant": "exact_title",
         "query": "Prospective[Title] AND surveillance[Title] AND invasive[Title] AND fungal[Title] AND infections[Title] AND hematopoietic[Title] AND stem[Title] AND cell[Title] AND transplant[Title] AND recipients[Title] AND 2001[Title] AND 2006[Title] AND overview[Title] AND Associated[Title] AND Infection[Title] AND Network[Title] AND TRANSNET[Title] AND Database[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-66",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-175",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20218877",
         "candidate_rank": "1",
@@ -1608,14 +1608,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-67",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-176",
         "query_variant": "exact_title",
         "query": "Preferential[Title] AND sampling[Title] AND veterinary[Title] AND parasitological[Title] AND surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-67",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-176",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27087037",
         "candidate_rank": "1",
@@ -1643,14 +1643,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-68",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-177",
         "query_variant": "exact_title",
         "query": "Public[Title] AND health[Title] AND triangulation[Title] AND approach[Title] AND application[Title] AND synthesizing[Title] AND data[Title] AND understand[Title] AND national[Title] AND local[Title] AND HIV[Title] AND epidemics[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-68",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-177",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20670448",
         "candidate_rank": "1",
@@ -1678,14 +1678,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-69",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-178",
         "query_variant": "exact_title",
         "query": "Development[Title] AND Delivery[Title] AND Real[Title] AND time[Title] AND Hospital[Title] AND onset[Title] AND COVID[Title] AND 19[Title] AND Surveillance[Title] AND System[Title] AND Using[Title] AND Network[Title] AND Analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-69",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-178",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32634822",
         "candidate_rank": "1",
@@ -1713,14 +1713,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-70",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-179",
         "query_variant": "exact_title",
         "query": "validity[Title] AND self[Title] AND reported[Title] AND antiretroviral[Title] AND use[Title] AND persons[Title] AND living[Title] AND HIV[Title] AND population[Title] AND based[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-70",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-179",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29194115",
         "candidate_rank": "1",
@@ -1748,14 +1748,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-71",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-180",
         "query_variant": "exact_title",
         "query": "Nowcasting[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND 2009[Title] AND hospitalizations[Title] AND Netherlands[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-71",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-180",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21416274",
         "candidate_rank": "1",
@@ -1783,19 +1783,19 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-182",
         "query_variant": "title_first_author",
         "query": "Symptomatic[Title] AND Constrained[Title] AND Nowcasting[Title] AND Infectious[Title] AND Kassteele[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-181",
         "query_variant": "exact_title",
         "query": "Nowcasting[Title] AND Number[Title] AND New[Title] AND Symptomatic[Title] AND Cases[Title] AND During[Title] AND Infectious[Title] AND Disease[Title] AND Outbreaks[Title] AND Using[Title] AND Constrained[Title] AND P[Title] AND spline[Title] AND Smoothing[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-182",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:31205290",
         "candidate_rank": "1",
@@ -1823,14 +1823,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-73",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-183",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND estimation[Title] AND COVID[Title] AND 19[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND using[Title] AND nowcasting[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-73",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-183",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33951962",
         "candidate_rank": "1",
@@ -1858,14 +1858,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-74",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-184",
         "query_variant": "exact_title",
         "query": "National[Title] AND Healthcare[Title] AND Safety[Title] AND Network[Title] AND Standardized[Title] AND Antimicrobial[Title] AND Administration[Title] AND Ratios[Title] AND SAARs[Title] AND Progress[Title] AND Report[Title] AND Risk[Title] AND Modeling[Title] AND Update[Title] AND Using[Title] AND 2017[Title] AND Data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-74",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-184",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32215655",
         "candidate_rank": "1",
@@ -1893,19 +1893,19 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-186",
         "query_variant": "title_first_author",
         "query": "Antimicrobial[Title] AND Developing[Title] AND Reporting[Title] AND Shortages[Title] AND McLaughlin[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-185",
         "query_variant": "exact_title",
         "query": "Developing[Title] AND Method[Title] AND Reporting[Title] AND Patient[Title] AND Harm[Title] AND Due[Title] AND Antimicrobial[Title] AND Shortages[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-186",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:25234281",
         "candidate_rank": "1",
@@ -1933,14 +1933,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-76",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-187",
         "query_variant": "exact_title",
         "query": "Measurement[Title] AND Error[Title] AND Case[Title] AND Series[Title] AND Models[Title] AND Application[Title] AND Infection[Title] AND Cardiovascular[Title] AND Risk[Title] AND OlderPatients[Title] AND Dialysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-76",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-187",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23650442",
         "candidate_rank": "1",
@@ -1968,14 +1968,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-77",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-188",
         "query_variant": "exact_title",
         "query": "novel[Title] AND tool[Title] AND assess[Title] AND community[Title] AND norms[Title] AND attitudes[Title] AND multiple[Title] AND concurrent[Title] AND sexual[Title] AND partnering[Title] AND rural[Title] AND Zimbabwe[Title] AND participatory[Title] AND attitudinal[Title] AND ranking[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-77",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-188",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21218276",
         "candidate_rank": "1",
@@ -2003,14 +2003,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "query": "Nationwide[Title] AND sentinel[Title] AND surveillance[Title] AND bloodstream[Title] AND Candida[Title] AND infections[Title] AND 40[Title] AND tertiary[Title] AND care[Title] AND hospitals[Title] AND Spain[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21372330",
         "candidate_rank": "1",
@@ -2022,7 +2022,7 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21372330/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20826636",
         "candidate_rank": "2",
@@ -2050,14 +2050,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-79",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-190",
         "query_variant": "exact_title",
         "query": "Evaluating[Title] AND measles[Title] AND surveillance[Title] AND comparison[Title] AND sentinel[Title] AND mandatory[Title] AND notification[Title] AND data[Title] AND health[Title] AND insurance[Title] AND claims[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-79",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-190",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21044403",
         "candidate_rank": "1",
@@ -2085,14 +2085,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-80",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-191",
         "query_variant": "exact_title",
         "query": "new[Title] AND approach[Title] AND characterising[Title] AND infectious[Title] AND disease[Title] AND transmission[Title] AND dynamics[Title] AND sentinel[Title] AND surveillance[Title] AND application[Title] AND Italian[Title] AND 2009[Title] AND 2010[Title] AND H1N1[Title] AND influenza[Title] AND pandemic[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-80",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-191",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22325010",
         "candidate_rank": "1",
@@ -2120,14 +2120,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-81",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-192",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND local[Title] AND prevalence[Title] AND estimates[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND infections[Title] AND using[Title] AND causal[Title] AND debiasing[Title] AND framework[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-81",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-192",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34972825",
         "candidate_rank": "1",
@@ -2155,14 +2155,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-82",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-193",
         "query_variant": "exact_title",
         "query": "Evaluation[Title] AND sentinel[Title] AND surveillance[Title] AND system[Title] AND monitoring[Title] AND hand[Title] AND foot[Title] AND mouth[Title] AND disease[Title] AND Hong[Title] AND Kong[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-82",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-193",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22036193",
         "candidate_rank": "1",
@@ -2190,14 +2190,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-83",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-194",
         "query_variant": "exact_title",
         "query": "Implementation[Title] AND Evaluation[Title] AND Automated[Title] AND Online[Title] AND Study[Title] AND Recruitment[Title] AND Computerised[Title] AND Medical[Title] AND Records[Title] AND Primary[Title] AND Care[Title] AND Sentinel[Title] AND Surveillance[Title] AND Network[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-83",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-194",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39575793",
         "candidate_rank": "1",
@@ -2225,14 +2225,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-84",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-195",
         "query_variant": "exact_title",
         "query": "Strengths[Title] AND limitations[Title] AND assessing[Title] AND influenza[Title] AND vaccine[Title] AND effectiveness[Title] AND using[Title] AND routinely[Title] AND collected[Title] AND passive[Title] AND surveillance[Title] AND data[Title] AND Ontario[Title] AND Canada[Title] AND 2007[Title] AND 2012[Title] AND balancing[Title] AND efficiency[Title] AND versus[Title] AND quality[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-84",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-195",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25953275",
         "candidate_rank": "1",
@@ -2260,14 +2260,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-85",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-196",
         "query_variant": "exact_title",
         "query": "Implementing[Title] AND strategy[Title] AND monitoring[Title] AND inpatient[Title] AND antimicrobial[Title] AND use[Title] AND hospitals[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-85",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-196",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24162744",
         "candidate_rank": "1",
@@ -2295,14 +2295,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-86",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-197",
         "query_variant": "exact_title",
         "query": "Validity[Title] AND parental[Title] AND recalls[Title] AND estimate[Title] AND vaccination[Title] AND coverage[Title] AND evidence[Title] AND Tanzania[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-86",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-197",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29895298",
         "candidate_rank": "1",
@@ -2330,14 +2330,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-87",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-198",
         "query_variant": "exact_title",
         "query": "Using[Title] AND Calibration[Title] AND Reduce[Title] AND Measurement[Title] AND Error[Title] AND Prevalence[Title] AND Estimates[Title] AND Based[Title] AND Electronic[Title] AND Health[Title] AND Records[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-87",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-198",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30576279",
         "candidate_rank": "1",
@@ -2365,14 +2365,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-88",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-199",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND Data[Title] AND HIV[Title] AND Epidemic[Title] AND New[Title] AND York[Title] AND City[Title] AND Identifying[Title] AND Transgender[Title] AND Persons[Title] AND Medicaid[Title] AND 2013[Title] AND 2017[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-88",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-199",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36033207",
         "candidate_rank": "1",
@@ -2400,14 +2400,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-89",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-200",
         "query_variant": "exact_title",
         "query": "Construction[Title] AND effectiveness[Title] AND evaluation[Title] AND knowledge[Title] AND based[Title] AND infectious[Title] AND disease[Title] AND monitoring[Title] AND decision[Title] AND support[Title] AND system[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-89",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-200",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37580359",
         "candidate_rank": "1",
@@ -2435,14 +2435,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-90",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-201",
         "query_variant": "exact_title",
         "query": "Gaming[Title] AND infection[Title] AND control[Title] AND qualitative[Title] AND study[Title] AND exploring[Title] AND perceptions[Title] AND experiences[Title] AND health[Title] AND professionals[Title] AND Mongolia[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-90",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-201",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21514007",
         "candidate_rank": "1",
@@ -2470,14 +2470,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-91",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-202",
         "query_variant": "exact_title",
         "query": "Brief[Title] AND behavioural[Title] AND surveys[Title] AND routine[Title] AND HIV[Title] AND sentinel[Title] AND surveillance[Title] AND new[Title] AND tool[Title] AND monitoring[Title] AND epidemic[Title] AND Viet[Title] AND Nam[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-91",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-202",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25960922",
         "candidate_rank": "1",
@@ -2505,14 +2505,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-92",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-203",
         "query_variant": "exact_title",
         "query": "Dengue[Title] AND Surveillance[Title] AND System[Title] AND Brazil[Title] AND Qualitative[Title] AND Study[Title] AND Federal[Title] AND District[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-92",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-203",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32244954",
         "candidate_rank": "1",
@@ -2540,14 +2540,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-93",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-204",
         "query_variant": "exact_title",
         "query": "Hospitalization[Title] AND records[Title] AND tool[Title] AND evaluating[Title] AND performance[Title] AND food[Title] AND water[Title] AND borne[Title] AND disease[Title] AND surveillance[Title] AND systems[Title] AND Massachusetts[Title] AND case[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-93",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-204",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24740304",
         "candidate_rank": "1",
@@ -2575,14 +2575,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-94",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-205",
         "query_variant": "exact_title",
         "query": "Factors[Title] AND influencing[Title] AND performance[Title] AND voluntary[Title] AND farmer[Title] AND disease[Title] AND reporting[Title] AND passive[Title] AND surveillance[Title] AND systems[Title] AND scoping[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-94",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-205",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34507237",
         "candidate_rank": "1",
@@ -2610,14 +2610,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-95",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-206",
         "query_variant": "exact_title",
         "query": "Hybrid[Title] AND Approach[Title] AND Estimation[Title] AND Underreporting[Title] AND Tuberculosis[Title] AND Case[Title] AND Notification[Title] AND High[Title] AND Burden[Title] AND Settings[Title] AND Weak[Title] AND Surveillance[Title] AND Infrastructure[Title] AND Design[Title] AND Implementation[Title] AND Inventory[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-95",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-206",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33720030",
         "candidate_rank": "1",
@@ -2645,14 +2645,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-96",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-207",
         "query_variant": "exact_title",
         "query": "Syndromic[Title] AND surveillance[Title] AND Influenza[Title] AND like[Title] AND illness[Title] AND primary[Title] AND care[Title] AND complement[Title] AND sentinel[Title] AND network[Title] AND periods[Title] AND increased[Title] AND incidence[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-96",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-207",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21924796",
         "candidate_rank": "1",
@@ -2680,14 +2680,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-97",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-208",
         "query_variant": "exact_title",
         "query": "Delayed[Title] AND Laboratory[Title] AND Response[Title] AND COVID[Title] AND 19[Title] AND Caused[Title] AND Molecular[Title] AND Diagnostic[Title] AND Contamination[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-97",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-208",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32433015",
         "candidate_rank": "1",
@@ -2715,14 +2715,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-98",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-209",
         "query_variant": "exact_title",
         "query": "Travel[Title] AND associated[Title] AND gonorrhoea[Title] AND four[Title] AND Nordic[Title] AND countries[Title] AND 2008[Title] AND 2013[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-98",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-209",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28537548",
         "candidate_rank": "1",
@@ -2750,14 +2750,14 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-99",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-210",
         "query_variant": "exact_title",
         "query": "Hospital[Title] AND based[Title] AND prospective[Title] AND multicentre[Title] AND surveillance[Title] AND determine[Title] AND incidence[Title] AND intussusception[Title] AND children[Title] AND aged[Title] AND below[Title] AND 15[Title] AND years[Title] AND Germany[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-99",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-210",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21435207",
         "candidate_rank": "1",
@@ -3594,41 +3594,41 @@ The frozen discovery corpus may inform those plans but cannot be treated as veri
 exec
 /bin/zsh -lc "jq -c '.[] | {named_source_id,source_to_resolve,supporting_queries,manifested_candidates}' 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/identity_review_batches/identity_batch_09.json" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
-{"named_source_id":"NS-SURVEILLANCE-065","source_to_resolve":{"method_label":"pharmacovigilance_adverse_event_surveillance","canonical_name":"Pharmacovigilance and adverse-event surveillance","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:23867812","title":"Medical product safety surveillance: how many databases to use?","first_author":"Judith C Maro","year":"2013","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/23867812/"},"supporting_queries":[{"query_id":"SEARCH-20260718-LINEAGE-SURVEILLANCE-65","query_variant":"title_first_author","query":"surveillance[Title] AND databases[Title] AND Medical[Title] AND product[Title] AND Maro[Author]"},{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-65","query_variant":"exact_title","query":"Medical[Title] AND product[Title] AND safety[Title] AND surveillance[Title] AND how[Title] AND many[Title] AND databases[Title] AND use[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260718-LINEAGE-SURVEILLANCE-65","query_variant":"title_first_author","candidate_key":"PMID:23867812","candidate_rank":"1","title":"Medical product safety surveillance: how many databases to use?","year":"2013","authors_or_first_author":"Judith C Maro; Jeffrey S Brown; Martin Kulldorff","doi":"10.1097/ede.0b013e31829dde59","pmid":"23867812","primary_url":"https://pubmed.ncbi.nlm.nih.gov/23867812/"}]}
-{"named_source_id":"NS-SURVEILLANCE-066","source_to_resolve":{"method_label":"population_based_incidence_surveillance","canonical_name":"Population-based incidence surveillance","family":"surveillance_measurement","source_role":"infectious_application","seed_candidate_key_for_context_only":"PMID:20218877","title":"Prospective surveillance for invasive fungal infections in hematopoietic stem cell transplant recipients, 2001-2006: overview of the Transplant-Associated Infection Surveillance Network (TRANSNET) Database.","first_author":"Dimitrios P Kontoyiannis","year":"2010","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/20218877/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-66","query_variant":"exact_title","query":"Prospective[Title] AND surveillance[Title] AND invasive[Title] AND fungal[Title] AND infections[Title] AND hematopoietic[Title] AND stem[Title] AND cell[Title] AND transplant[Title] AND recipients[Title] AND 2001[Title] AND 2006[Title] AND overview[Title] AND Associated[Title] AND Infection[Title] AND Network[Title] AND TRANSNET[Title] AND Database[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-66","query_variant":"exact_title","candidate_key":"PMID:20218877","candidate_rank":"1","title":"Prospective surveillance for invasive fungal infections in hematopoietic stem cell transplant recipients, 2001-2006: overview of the Transplant-Associated Infection Surveillance Network (TRANSNET) Database.","year":"2010","authors_or_first_author":"Dimitrios P Kontoyiannis; Kieren A Marr; Benjamin J Park; Barbara D Alexander; Elias J Anaissie; Thomas J Walsh; James Ito; David R Andes; John W Baddley; Janice M Brown; Lisa M Brumble; Alison G Freifeld; Susan Hadley; Loreen A Herwaldt; Carol A Kauffman; Katherine Knapp; G Marshall Lyon; Vicki A Morrison; Genovefa Papanicolaou; Thomas F Patterson; Trish M Perl; Mindy G Schuster; Randall Walker; Kathleen A Wannemuehler; John R Wingard; Tom M Chiller; Peter G Pappas","doi":"10.1086/651263","pmid":"20218877","primary_url":"https://pubmed.ncbi.nlm.nih.gov/20218877/"}]}
-{"named_source_id":"NS-SURVEILLANCE-067","source_to_resolve":{"method_label":"preferential_sampling","canonical_name":"Preferential-sampling models","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:27087037","title":"Preferential sampling in veterinary parasitological surveillance.","first_author":"Lorenzo Cecconi","year":"2016","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/27087037/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-67","query_variant":"exact_title","query":"Preferential[Title] AND sampling[Title] AND veterinary[Title] AND parasitological[Title] AND surveillance[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-67","query_variant":"exact_title","candidate_key":"PMID:27087037","candidate_rank":"1","title":"Preferential sampling in veterinary parasitological surveillance.","year":"2016","authors_or_first_author":"Lorenzo Cecconi; Annibale Biggeri; Laura Grisotto; Veronica Berrocal; Laura Rinaldi; Vincenzo Musella; Giuseppe Cringoli; Dolores Catelan","doi":"10.4081/gh.2016.412","pmid":"27087037","primary_url":"https://pubmed.ncbi.nlm.nih.gov/27087037/"}]}
-{"named_source_id":"NS-SURVEILLANCE-068","source_to_resolve":{"method_label":"public_health_data_triangulation","canonical_name":"Public-health data triangulation","family":"surveillance_measurement","source_role":"guidance","seed_candidate_key_for_context_only":"PMID:20670448","title":"Public health triangulation: approach and application to synthesizing data to understand national and local HIV epidemics.","first_author":"George W Rutherford","year":"2010","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/20670448/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-68","query_variant":"exact_title","query":"Public[Title] AND health[Title] AND triangulation[Title] AND approach[Title] AND application[Title] AND synthesizing[Title] AND data[Title] AND understand[Title] AND national[Title] AND local[Title] AND HIV[Title] AND epidemics[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-68","query_variant":"exact_title","candidate_key":"PMID:20670448","candidate_rank":"1","title":"Public health triangulation: approach and application to synthesizing data to understand national and local HIV epidemics.","year":"2010","authors_or_first_author":"George W Rutherford; William McFarland; Hilary Spindler; Karen White; Sadhna V Patel; John Aberle-Grasse; Keith Sabin; Nathan Smith; Stephanie Taché; Jesus M Calleja-Garcia; Rand L Stoneburner","doi":"10.1186/1471-2458-10-447","pmid":"20670448","primary_url":"https://pubmed.ncbi.nlm.nih.gov/20670448/"}]}
-{"named_source_id":"NS-SURVEILLANCE-069","source_to_resolve":{"method_label":"real_time_network_surveillance","canonical_name":"Real-time network surveillance","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:32634822","title":"Development and Delivery of a Real-time Hospital-onset COVID-19 Surveillance System Using Network Analysis.","first_author":"James Richard Price","year":"2021","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/32634822/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-69","query_variant":"exact_title","query":"Development[Title] AND Delivery[Title] AND Real[Title] AND time[Title] AND Hospital[Title] AND onset[Title] AND COVID[Title] AND 19[Title] AND Surveillance[Title] AND System[Title] AND Using[Title] AND Network[Title] AND Analysis[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-69","query_variant":"exact_title","candidate_key":"PMID:32634822","candidate_rank":"1","title":"Development and Delivery of a Real-time Hospital-onset COVID-19 Surveillance System Using Network Analysis.","year":"2021","authors_or_first_author":"James Richard Price; Siddharth Mookerjee; Eleonora Dyakova; Ashleigh Myall; Wendy Leung; Andrea Yeong Weiße; Yeeshika Shersing; Eimear Therese Brannigan; Tracey Galletly; David Muir; Paul Randell; Frances Davies; Frances Bolt; Mauricio Barahona; Jonathan Ashley Otter; Alison H Holmes","doi":"10.1093/cid/ciaa892","pmid":"32634822","primary_url":"https://pubmed.ncbi.nlm.nih.gov/32634822/"}]}
-{"named_source_id":"NS-SURVEILLANCE-070","source_to_resolve":{"method_label":"reporting_bias_validation_studies","canonical_name":"Reporting bias and measurement-validation studies","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:29194115","title":"The validity of self-reported antiretroviral use in persons living with HIV: a population-based study.","first_author":"Mary K Grabowski","year":"2018","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/29194115/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-70","query_variant":"exact_title","query":"validity[Title] AND self[Title] AND reported[Title] AND antiretroviral[Title] AND use[Title] AND persons[Title] AND living[Title] AND HIV[Title] AND population[Title] AND based[Title] AND study[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-70","query_variant":"exact_title","candidate_key":"PMID:29194115","candidate_rank":"1","title":"The validity of self-reported antiretroviral use in persons living with HIV: a population-based study.","year":"2018","authors_or_first_author":"Mary K Grabowski; Steven J Reynolds; Joseph Kagaayi; Ronald H Gray; William Clarke; Larry W Chang; Gertrude Nakigozi; Oliver Laeyndecker; Andrew D Redd; Veena Billioux; Robert Ssekubugu; Fred Nalugoda; Maria J Wawer; David Serwadda; Thomas C Quinn; Aaron A R Tobian","doi":"10.1097/qad.0000000000001706","pmid":"29194115","primary_url":"https://pubmed.ncbi.nlm.nih.gov/29194115/"}]}
-{"named_source_id":"NS-SURVEILLANCE-071","source_to_resolve":{"method_label":"reporting_delay_nowcasting","canonical_name":"Reporting-delay adjustment and incidence nowcasting","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21416274","title":"Nowcasting pandemic influenza A/H1N1 2009 hospitalizations in the Netherlands.","first_author":"Tjibbe Donker","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21416274/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-71","query_variant":"exact_title","query":"Nowcasting[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND 2009[Title] AND hospitalizations[Title] AND Netherlands[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-71","query_variant":"exact_title","candidate_key":"PMID:21416274","candidate_rank":"1","title":"Nowcasting pandemic influenza A/H1N1 2009 hospitalizations in the Netherlands.","year":"2011","authors_or_first_author":"Tjibbe Donker; Michiel van Boven; W Marijn van Ballegooijen; Tessa M Van't Klooster; Cornelia C Wielders; Jacco Wallinga","doi":"10.1007/s10654-011-9566-5","pmid":"21416274","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21416274/"}]}
-{"named_source_id":"NS-SURVEILLANCE-072","source_to_resolve":{"method_label":"reporting_delay_adjustment_nowcasting","canonical_name":"Reporting-delay adjustment and nowcasting","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:31205290","title":"Nowcasting the Number of New Symptomatic Cases During Infectious Disease Outbreaks Using Constrained P-spline Smoothing.","first_author":"Jan van de Kassteele","year":"2019","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/31205290/"},"supporting_queries":[{"query_id":"SEARCH-20260718-LINEAGE-SURVEILLANCE-72","query_variant":"title_first_author","query":"Symptomatic[Title] AND Constrained[Title] AND Nowcasting[Title] AND Infectious[Title] AND Kassteele[Author]"},{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-72","query_variant":"exact_title","query":"Nowcasting[Title] AND Number[Title] AND New[Title] AND Symptomatic[Title] AND Cases[Title] AND During[Title] AND Infectious[Title] AND Disease[Title] AND Outbreaks[Title] AND Using[Title] AND Constrained[Title] AND P[Title] AND spline[Title] AND Smoothing[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260718-LINEAGE-SURVEILLANCE-72","query_variant":"title_first_author","candidate_key":"PMID:31205290","candidate_rank":"1","title":"Nowcasting the Number of New Symptomatic Cases During Infectious Disease Outbreaks Using Constrained P-spline Smoothing.","year":"2019","authors_or_first_author":"Jan van de Kassteele; Paul H C Eilers; Jacco Wallinga","doi":"10.1097/ede.0000000000001050","pmid":"31205290","primary_url":"https://pubmed.ncbi.nlm.nih.gov/31205290/"}]}
-{"named_source_id":"NS-SURVEILLANCE-073","source_to_resolve":{"method_label":"reproduction_number_nowcasting","canonical_name":"Reproduction-number nowcasting","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:33951962","title":"Improving the estimation of the COVID-19 effective reproduction number using nowcasting.","first_author":"Joaquin Salas","year":"2021","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/33951962/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-73","query_variant":"exact_title","query":"Improving[Title] AND estimation[Title] AND COVID[Title] AND 19[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND using[Title] AND nowcasting[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-73","query_variant":"exact_title","candidate_key":"PMID:33951962","candidate_rank":"1","title":"Improving the estimation of the COVID-19 effective reproduction number using nowcasting.","year":"2021","authors_or_first_author":"Joaquin Salas","doi":"10.1177/09622802211008939","pmid":"33951962","primary_url":"https://pubmed.ncbi.nlm.nih.gov/33951962/"}]}
-{"named_source_id":"NS-SURVEILLANCE-074","source_to_resolve":{"method_label":"risk_adjusted_benchmark_metric_modeling","canonical_name":"Risk-adjusted benchmark metric modeling","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:32215655","title":"National Healthcare Safety Network Standardized Antimicrobial Administration Ratios (SAARs): A Progress Report and Risk Modeling Update Using 2017 Data.","first_author":"Erin N O'Leary","year":"2020","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/32215655/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-74","query_variant":"exact_title","query":"National[Title] AND Healthcare[Title] AND Safety[Title] AND Network[Title] AND Standardized[Title] AND Antimicrobial[Title] AND Administration[Title] AND Ratios[Title] AND SAARs[Title] AND Progress[Title] AND Report[Title] AND Risk[Title] AND Modeling[Title] AND Update[Title] AND Using[Title] AND 2017[Title] AND Data[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-74","query_variant":"exact_title","candidate_key":"PMID:32215655","candidate_rank":"1","title":"National Healthcare Safety Network Standardized Antimicrobial Administration Ratios (SAARs): A Progress Report and Risk Modeling Update Using 2017 Data.","year":"2020","authors_or_first_author":"Erin N O'Leary; Jonathan R Edwards; Arjun Srinivasan; Melinda M Neuhauser; Amy K Webb; Minn M Soe; Lauri A Hicks; Wendy Wise; Hsiu Wu; Daniel A Pollock","doi":"10.1093/cid/ciaa326","pmid":"32215655","primary_url":"https://pubmed.ncbi.nlm.nih.gov/32215655/"}]}
-{"named_source_id":"NS-SURVEILLANCE-075","source_to_resolve":{"method_label":"safety_surveillance_and_pharmacovigilance","canonical_name":"Safety surveillance and pharmacovigilance studies","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:25234281","title":"Developing a Method for Reporting Patient Harm Due to Antimicrobial Shortages.","first_author":"Milena M McLaughlin","year":"2014","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/25234281/"},"supporting_queries":[{"query_id":"SEARCH-20260718-LINEAGE-SURVEILLANCE-75","query_variant":"title_first_author","query":"Antimicrobial[Title] AND Developing[Title] AND Reporting[Title] AND Shortages[Title] AND McLaughlin[Author]"},{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-75","query_variant":"exact_title","query":"Developing[Title] AND Method[Title] AND Reporting[Title] AND Patient[Title] AND Harm[Title] AND Due[Title] AND Antimicrobial[Title] AND Shortages[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260718-LINEAGE-SURVEILLANCE-75","query_variant":"title_first_author","candidate_key":"PMID:25234281","candidate_rank":"1","title":"Developing a Method for Reporting Patient Harm Due to Antimicrobial Shortages.","year":"2014","authors_or_first_author":"Milena M McLaughlin; Erik Skoglund; Zachary Pentoney; Marc H Scheetz","doi":"10.1007/s40121-014-0040-z","pmid":"25234281","primary_url":"https://pubmed.ncbi.nlm.nih.gov/25234281/"}]}
-{"named_source_id":"NS-SURVEILLANCE-076","source_to_resolve":{"method_label":"case_series_exposure_timing_error","canonical_name":"Self-controlled case-series models with exposure-timing error","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:23650442","title":"Measurement Error Case Series Models with Application to Infection-Cardiovascular Risk in OlderPatients on Dialysis.","first_author":"Sandra M Mohammed","year":"2012","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/23650442/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-76","query_variant":"exact_title","query":"Measurement[Title] AND Error[Title] AND Case[Title] AND Series[Title] AND Models[Title] AND Application[Title] AND Infection[Title] AND Cardiovascular[Title] AND Risk[Title] AND OlderPatients[Title] AND Dialysis[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-76","query_variant":"exact_title","candidate_key":"PMID:23650442","candidate_rank":"1","title":"Measurement Error Case Series Models with Application to Infection-Cardiovascular Risk in OlderPatients on Dialysis.","year":"2012","authors_or_first_author":"Sandra M Mohammed; Damla Sentürk; Lorien S Dalrymple; Danh V Nguyen","doi":"10.1080/01621459.2012.695648","pmid":"23650442","primary_url":"https://pubmed.ncbi.nlm.nih.gov/23650442/"}]}
-{"named_source_id":"NS-SURVEILLANCE-077","source_to_resolve":{"method_label":"self_report_and_behavioral_measurement_bias","canonical_name":"Self-report and behavioral measurement bias assessment","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21218276","title":"A novel tool to assess community norms and attitudes to multiple and concurrent sexual partnering in rural Zimbabwe: participatory attitudinal ranking.","first_author":"Webster Mavhu","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21218276/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-77","query_variant":"exact_title","query":"novel[Title] AND tool[Title] AND assess[Title] AND community[Title] AND norms[Title] AND attitudes[Title] AND multiple[Title] AND concurrent[Title] AND sexual[Title] AND partnering[Title] AND rural[Title] AND Zimbabwe[Title] AND participatory[Title] AND attitudinal[Title] AND ranking[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-77","query_variant":"exact_title","candidate_key":"PMID:21218276","candidate_rank":"1","title":"A novel tool to assess community norms and attitudes to multiple and concurrent sexual partnering in rural Zimbabwe: participatory attitudinal ranking.","year":"2011","authors_or_first_author":"Webster Mavhu; Lisa Langhaug; Sophie Pascoe; Jeffrey Dirawo; Graham Hart; Frances Cowan","doi":"10.1080/09540121.2010.490257","pmid":"21218276","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21218276/"}]}
-{"named_source_id":"NS-SURVEILLANCE-078","source_to_resolve":{"method_label":"sentinel_surveillance_descriptive_epidemiology","canonical_name":"Sentinel surveillance descriptive epidemiology","family":"surveillance_measurement","source_role":"correction","seed_candidate_key_for_context_only":"PMID:21372330","title":"Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.","first_author":"R. Cisterna","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21372330/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-78","query_variant":"exact_title","query":"Nationwide[Title] AND sentinel[Title] AND surveillance[Title] AND bloodstream[Title] AND Candida[Title] AND infections[Title] AND 40[Title] AND tertiary[Title] AND care[Title] AND hospitals[Title] AND Spain[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-78","query_variant":"exact_title","candidate_key":"PMID:21372330","candidate_rank":"1","title":"Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.","year":"2011","authors_or_first_author":"R. Cisterna; G. Ezpeleta; O. Telleria; J. Guinea; B. Regueiro; J. Garcia-Rodríguez; J. Esperalba","doi":"10.1128/jcm.00006-11","pmid":"21372330","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21372330/"},{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-78","query_variant":"exact_title","candidate_key":"PMID:20826636","candidate_rank":"2","title":"Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.","year":"2010","authors_or_first_author":"R Cisterna; G Ezpeleta; O Telleria; Spanish Candidemia Surveillance Group","doi":"10.1128/jcm.00920-10","pmid":"20826636","primary_url":"https://pubmed.ncbi.nlm.nih.gov/20826636/"}]}
-{"named_source_id":"NS-SURVEILLANCE-079","source_to_resolve":{"method_label":"sentinel_surveillance_estimation_bias_correction","canonical_name":"Sentinel surveillance estimation and bias correction","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21044403","title":"Evaluating measles surveillance: comparison of sentinel surveillance, mandatory notification, and data from health insurance claims.","first_author":"S Tanihara","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21044403/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-79","query_variant":"exact_title","query":"Evaluating[Title] AND measles[Title] AND surveillance[Title] AND comparison[Title] AND sentinel[Title] AND mandatory[Title] AND notification[Title] AND data[Title] AND health[Title] AND insurance[Title] AND claims[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-79","query_variant":"exact_title","candidate_key":"PMID:21044403","candidate_rank":"1","title":"Evaluating measles surveillance: comparison of sentinel surveillance, mandatory notification, and data from health insurance claims.","year":"2011","authors_or_first_author":"S Tanihara; E Okamoto; T Imatoh; Y Momose; A Kaetsu; M Miyazaki; H Une","doi":"10.1017/s095026881000244x","pmid":"21044403","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21044403/"}]}
-{"named_source_id":"NS-SURVEILLANCE-080","source_to_resolve":{"method_label":"sentinel_surveillance_inference_calibration","canonical_name":"Sentinel surveillance inference and calibration","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:22325010","title":"A new approach to characterising infectious disease transmission dynamics from sentinel surveillance: application to the Italian 2009-2010 A/H1N1 influenza pandemic.","first_author":"Ilaria Dorigatti","year":"2012","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/22325010/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-80","query_variant":"exact_title","query":"new[Title] AND approach[Title] AND characterising[Title] AND infectious[Title] AND disease[Title] AND transmission[Title] AND dynamics[Title] AND sentinel[Title] AND surveillance[Title] AND application[Title] AND Italian[Title] AND 2009[Title] AND 2010[Title] AND H1N1[Title] AND influenza[Title] AND pandemic[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-80","query_variant":"exact_title","candidate_key":"PMID:22325010","candidate_rank":"1","title":"A new approach to characterising infectious disease transmission dynamics from sentinel surveillance: application to the Italian 2009-2010 A/H1N1 influenza pandemic.","year":"2012","authors_or_first_author":"Ilaria Dorigatti; Simon Cauchemez; Andrea Pugliese; Neil Morris Ferguson","doi":"10.1016/j.epidem.2011.11.001","pmid":"22325010","primary_url":"https://pubmed.ncbi.nlm.nih.gov/22325010/"}]}
-{"named_source_id":"NS-SURVEILLANCE-081","source_to_resolve":{"method_label":"sentinel_surveillance_calibration","canonical_name":"Sentinel surveillance platform design, evaluation, and extrapolation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:34972825","title":"Improving local prevalence estimates of SARS-CoV-2 infections using a causal debiasing framework.","first_author":"George Nicholson","year":"2022","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/34972825/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-81","query_variant":"exact_title","query":"Improving[Title] AND local[Title] AND prevalence[Title] AND estimates[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND infections[Title] AND using[Title] AND causal[Title] AND debiasing[Title] AND framework[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-81","query_variant":"exact_title","candidate_key":"PMID:34972825","candidate_rank":"1","title":"Improving local prevalence estimates of SARS-CoV-2 infections using a causal debiasing framework.","year":"2022","authors_or_first_author":"George Nicholson; Brieuc Lehmann; Tullia Padellini; Koen B Pouwels; Radka Jersakova; James Lomax; Ruairidh E King; Ann-Marie Mallon; Peter J Diggle; Sylvia Richardson; Marta Blangiardo; Chris Holmes","doi":"10.1038/s41564-021-01029-0","pmid":"34972825","primary_url":"https://pubmed.ncbi.nlm.nih.gov/34972825/"}]}
-{"named_source_id":"NS-SURVEILLANCE-082","source_to_resolve":{"method_label":"sentinel_surveillance_system_design_evaluation","canonical_name":"Sentinel surveillance system design and evaluation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:22036193","title":"Evaluation of sentinel surveillance system for monitoring hand, foot and mouth disease in Hong Kong.","first_author":"M Edmond","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/22036193/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-82","query_variant":"exact_title","query":"Evaluation[Title] AND sentinel[Title] AND surveillance[Title] AND system[Title] AND monitoring[Title] AND hand[Title] AND foot[Title] AND mouth[Title] AND disease[Title] AND Hong[Title] AND Kong[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-82","query_variant":"exact_title","candidate_key":"PMID:22036193","candidate_rank":"1","title":"Evaluation of sentinel surveillance system for monitoring hand, foot and mouth disease in Hong Kong.","year":"2011","authors_or_first_author":"M Edmond; C Wong; S K Chuang","doi":"10.1016/j.puhe.2011.09.002","pmid":"22036193","primary_url":"https://pubmed.ncbi.nlm.nih.gov/22036193/"}]}
-{"named_source_id":"NS-SURVEILLANCE-083","source_to_resolve":{"method_label":"sentinel_surveillance_system_implementation_evaluation","canonical_name":"Sentinel surveillance system implementation and evaluation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:39575793","title":"Implementation and Evaluation of Automated, Online Study Recruitment from Computerised Medical Records in a Primary Care Sentinel Surveillance Network.","first_author":"Darius Oraee","year":"2024","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/39575793/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-83","query_variant":"exact_title","query":"Implementation[Title] AND Evaluation[Title] AND Automated[Title] AND Online[Title] AND Study[Title] AND Recruitment[Title] AND Computerised[Title] AND Medical[Title] AND Records[Title] AND Primary[Title] AND Care[Title] AND Sentinel[Title] AND Surveillance[Title] AND Network[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-83","query_variant":"exact_title","candidate_key":"PMID:39575793","candidate_rank":"1","title":"Implementation and Evaluation of Automated, Online Study Recruitment from Computerised Medical Records in a Primary Care Sentinel Surveillance Network.","year":"2024","authors_or_first_author":"Darius Oraee; Elizabeth Button; Vanashree Sexton; Karin Andre; Filipa Ferreira; Aileen Mill; Stephen Rushton; Ben W Rowland; Uy Hoang; Simon de Lusignan","doi":"10.3233/shti241076","pmid":"39575793","primary_url":"https://pubmed.ncbi.nlm.nih.gov/39575793/"}]}
-{"named_source_id":"NS-SURVEILLANCE-084","source_to_resolve":{"method_label":"sentinel_vaccine_effectiveness_test_negative","canonical_name":"Sentinel vaccine-effectiveness and test-negative designs","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:25953275","title":"Strengths and limitations of assessing influenza vaccine effectiveness using routinely collected, passive surveillance data in Ontario, Canada, 2007 to 2012: balancing efficiency versus quality.","first_author":"R D Savage","year":"2015","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/25953275/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-84","query_variant":"exact_title","query":"Strengths[Title] AND limitations[Title] AND assessing[Title] AND influenza[Title] AND vaccine[Title] AND effectiveness[Title] AND using[Title] AND routinely[Title] AND collected[Title] AND passive[Title] AND surveillance[Title] AND data[Title] AND Ontario[Title] AND Canada[Title] AND 2007[Title] AND 2012[Title] AND balancing[Title] AND efficiency[Title] AND versus[Title] AND quality[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-84","query_variant":"exact_title","candidate_key":"PMID:25953275","candidate_rank":"1","title":"Strengths and limitations of assessing influenza vaccine effectiveness using routinely collected, passive surveillance data in Ontario, Canada, 2007 to 2012: balancing efficiency versus quality.","year":"2015","authors_or_first_author":"R D Savage; A L Winter; L C Rosella; R Olsha; J B Gubbay; D M Skowronski; N S Crowcroft","doi":"10.2807/1560-7917.es2015.20.16.21100","pmid":"25953275","primary_url":"https://pubmed.ncbi.nlm.nih.gov/25953275/"}]}
-{"named_source_id":"NS-SURVEILLANCE-085","source_to_resolve":{"method_label":"surveillance_platform_studies","canonical_name":"Structured surveillance platform studies","family":"surveillance_measurement","source_role":"guidance","seed_candidate_key_for_context_only":"PMID:24162744","title":"Implementing a strategy for monitoring inpatient antimicrobial use among hospitals in the United States.","first_author":"Scott K Fridkin","year":"2014","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/24162744/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-85","query_variant":"exact_title","query":"Implementing[Title] AND strategy[Title] AND monitoring[Title] AND inpatient[Title] AND antimicrobial[Title] AND use[Title] AND hospitals[Title] AND United[Title] AND States[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-85","query_variant":"exact_title","candidate_key":"PMID:24162744","candidate_rank":"1","title":"Implementing a strategy for monitoring inpatient antimicrobial use among hospitals in the United States.","year":"2014","authors_or_first_author":"Scott K Fridkin; Arjun Srinivasan","doi":"10.1093/cid/cit710","pmid":"24162744","primary_url":"https://pubmed.ncbi.nlm.nih.gov/24162744/"}]}
-{"named_source_id":"NS-SURVEILLANCE-086","source_to_resolve":{"method_label":"surveillance_measurement_validation","canonical_name":"Surveillance and self-report measurement validation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:29895298","title":"Validity of parental recalls to estimate vaccination coverage: evidence from Tanzania.","first_author":"Peter Binyaruka","year":"2018","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/29895298/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-86","query_variant":"exact_title","query":"Validity[Title] AND parental[Title] AND recalls[Title] AND estimate[Title] AND vaccination[Title] AND coverage[Title] AND evidence[Title] AND Tanzania[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-86","query_variant":"exact_title","candidate_key":"PMID:29895298","candidate_rank":"1","title":"Validity of parental recalls to estimate vaccination coverage: evidence from Tanzania.","year":"2018","authors_or_first_author":"Peter Binyaruka; Josephine Borghi","doi":"10.1186/s12913-018-3270-z","pmid":"29895298","primary_url":"https://pubmed.ncbi.nlm.nih.gov/29895298/"}]}
-{"named_source_id":"NS-SURVEILLANCE-087","source_to_resolve":{"method_label":"surveillance_ascertainment_correction","canonical_name":"Surveillance ascertainment, validation, and correction studies","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:30576279","title":"Using Calibration to Reduce Measurement Error in Prevalence Estimates Based on Electronic Health Records.","first_author":"Pui Ying Chan","year":"2018","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/30576279/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-87","query_variant":"exact_title","query":"Using[Title] AND Calibration[Title] AND Reduce[Title] AND Measurement[Title] AND Error[Title] AND Prevalence[Title] AND Estimates[Title] AND Based[Title] AND Electronic[Title] AND Health[Title] AND Records[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-87","query_variant":"exact_title","candidate_key":"PMID:30576279","candidate_rank":"1","title":"Using Calibration to Reduce Measurement Error in Prevalence Estimates Based on Electronic Health Records.","year":"2018","authors_or_first_author":"Pui Ying Chan; Yihong Zhao; Sungwoo Lim; Sharon E Perlman; Katharine H McVeigh","doi":"10.5888/pcd15.180371","pmid":"30576279","primary_url":"https://pubmed.ncbi.nlm.nih.gov/30576279/"}]}
-{"named_source_id":"NS-SURVEILLANCE-088","source_to_resolve":{"method_label":"surveillance_data_validation_and_completeness","canonical_name":"Surveillance data validation and completeness assessment","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:36033207","title":"Improving Data on the HIV Epidemic in New York City by Identifying Transgender Persons in Medicaid in 2013-2017.","first_author":"Cristina Rodriguez-Hart","year":"2022","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/36033207/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-88","query_variant":"exact_title","query":"Improving[Title] AND Data[Title] AND HIV[Title] AND Epidemic[Title] AND New[Title] AND York[Title] AND City[Title] AND Identifying[Title] AND Transgender[Title] AND Persons[Title] AND Medicaid[Title] AND 2013[Title] AND 2017[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-88","query_variant":"exact_title","candidate_key":"PMID:36033207","candidate_rank":"1","title":"Improving Data on the HIV Epidemic in New York City by Identifying Transgender Persons in Medicaid in 2013-2017.","year":"2022","authors_or_first_author":"Cristina Rodriguez-Hart; Beverly Obeng; Asa Radix; Zil Goldstein; Lucia Torian","doi":"10.1089/trgh.2020.0121","pmid":"36033207","primary_url":"https://pubmed.ncbi.nlm.nih.gov/36033207/"}]}
-{"named_source_id":"NS-SURVEILLANCE-089","source_to_resolve":{"method_label":"surveillance_system_reporting_interventions","canonical_name":"Surveillance system design and reporting interventions","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:37580359","title":"Construction and effectiveness evaluation of a knowledge-based infectious disease monitoring and decision support system.","first_author":"Mengying Wang","year":"2023","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/37580359/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-89","query_variant":"exact_title","query":"Construction[Title] AND effectiveness[Title] AND evaluation[Title] AND knowledge[Title] AND based[Title] AND infectious[Title] AND disease[Title] AND monitoring[Title] AND decision[Title] AND support[Title] AND system[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-89","query_variant":"exact_title","candidate_key":"PMID:37580359","candidate_rank":"1","title":"Construction and effectiveness evaluation of a knowledge-based infectious disease monitoring and decision support system.","year":"2023","authors_or_first_author":"Mengying Wang; Mo Jia; Zhenhao Wei; Wei Wang; Yafei Shang; Hong Ji","doi":"10.1038/s41598-023-39931-8","pmid":"37580359","primary_url":"https://pubmed.ncbi.nlm.nih.gov/37580359/"}]}
-{"named_source_id":"NS-SURVEILLANCE-090","source_to_resolve":{"method_label":"surveillance_system_design_improvement","canonical_name":"Surveillance system design and reporting-improvement studies","family":"surveillance_measurement","source_role":"diagnostic","seed_candidate_key_for_context_only":"PMID:21514007","title":"Gaming in infection control: a qualitative study exploring the perceptions and experiences of health professionals in Mongolia.","first_author":"Bat-Erdene Ider","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21514007/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-90","query_variant":"exact_title","query":"Gaming[Title] AND infection[Title] AND control[Title] AND qualitative[Title] AND study[Title] AND exploring[Title] AND perceptions[Title] AND experiences[Title] AND health[Title] AND professionals[Title] AND Mongolia[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-90","query_variant":"exact_title","candidate_key":"PMID:21514007","candidate_rank":"1","title":"Gaming in infection control: a qualitative study exploring the perceptions and experiences of health professionals in Mongolia.","year":"2011","authors_or_first_author":"Bat-Erdene Ider; Jon Adams; Anthony Morton; Michael Whitby; Archie Clements","doi":"10.1016/j.ajic.2010.10.033","pmid":"21514007","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21514007/"}]}
-{"named_source_id":"NS-SURVEILLANCE-091","source_to_resolve":{"method_label":"surveillance_system_design_and_measurement_frameworks","canonical_name":"Surveillance system design, reporting practice, and measurement frameworks","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:25960922","title":"Brief behavioural surveys in routine HIV sentinel surveillance: a new tool for monitoring the HIV epidemic in Viet Nam.","first_author":"Duong Cong Thanh","year":"2015","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/25960922/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-91","query_variant":"exact_title","query":"Brief[Title] AND behavioural[Title] AND surveys[Title] AND routine[Title] AND HIV[Title] AND sentinel[Title] AND surveillance[Title] AND new[Title] AND tool[Title] AND monitoring[Title] AND epidemic[Title] AND Viet[Title] AND Nam[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-91","query_variant":"exact_title","candidate_key":"PMID:25960922","candidate_rank":"1","title":"Brief behavioural surveys in routine HIV sentinel surveillance: a new tool for monitoring the HIV epidemic in Viet Nam.","year":"2015","authors_or_first_author":"Duong Cong Thanh; Nguyen Tran Hien; Nguyen Anh Tuan; Hoang Thi Thanh Ha; Pham Hong Thang; Nguyen Thi Thanh Ha; Le Anh Tuan; Tran Dai Quang; Tran Hong Tram; Nguyen Le Hai; Phan Thi Thu Huong; Vo Hai Son; Bui Hoang Duc; Nguyen Thien Nga; David Jacka; Keith Sabin","doi":"10.2471/wpsar.2015.6.1-052","pmid":"25960922","primary_url":"https://pubmed.ncbi.nlm.nih.gov/25960922/"}]}
-{"named_source_id":"NS-SURVEILLANCE-092","source_to_resolve":{"method_label":"surveillance_system_evaluation_and_reporting_improvement","canonical_name":"Surveillance system evaluation and reporting improvement","family":"surveillance_measurement","source_role":"diagnostic","seed_candidate_key_for_context_only":"PMID:32244954","title":"Dengue Surveillance System in Brazil: A Qualitative Study in the Federal District.","first_author":"Marco Angelo","year":"2020","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/32244954/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-92","query_variant":"exact_title","query":"Dengue[Title] AND Surveillance[Title] AND System[Title] AND Brazil[Title] AND Qualitative[Title] AND Study[Title] AND Federal[Title] AND District[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-92","query_variant":"exact_title","candidate_key":"PMID:32244954","candidate_rank":"1","title":"Dengue Surveillance System in Brazil: A Qualitative Study in the Federal District.","year":"2020","authors_or_first_author":"Marco Angelo; Walter Massa Ramalho; Helen Gurgel; Nayara Belle; Eva Pilot","doi":"10.3390/ijerph17062062","pmid":"32244954","primary_url":"https://pubmed.ncbi.nlm.nih.gov/32244954/"}]}
-{"named_source_id":"NS-SURVEILLANCE-093","source_to_resolve":{"method_label":"surveillance_system_evaluation_and_data_quality","canonical_name":"Surveillance system evaluation and reporting-quality studies","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:24740304","title":"Hospitalization records as a tool for evaluating performance of food- and water-borne disease surveillance systems: a Massachusetts case study.","first_author":"Siobhan M Mor","year":"2014","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/24740304/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-93","query_variant":"exact_title","query":"Hospitalization[Title] AND records[Title] AND tool[Title] AND evaluating[Title] AND performance[Title] AND food[Title] AND water[Title] AND borne[Title] AND disease[Title] AND surveillance[Title] AND systems[Title] AND Massachusetts[Title] AND case[Title] AND study[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-93","query_variant":"exact_title","candidate_key":"PMID:24740304","candidate_rank":"1","title":"Hospitalization records as a tool for evaluating performance of food- and water-borne disease surveillance systems: a Massachusetts case study.","year":"2014","authors_or_first_author":"Siobhan M Mor; Alfred DeMaria; Elena N Naumova","doi":"10.1371/journal.pone.0093744","pmid":"24740304","primary_url":"https://pubmed.ncbi.nlm.nih.gov/24740304/"}]}
-{"named_source_id":"NS-SURVEILLANCE-094","source_to_resolve":{"method_label":"surveillance_system_improvement_strategies","canonical_name":"Surveillance system improvement and reporting-enhancement strategies","family":"surveillance_measurement","source_role":"guidance","seed_candidate_key_for_context_only":"PMID:34507237","title":"Factors influencing the performance of voluntary farmer disease reporting in passive surveillance systems: A scoping review.","first_author":"M Carolyn Gates","year":"2021","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/34507237/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-94","query_variant":"exact_title","query":"Factors[Title] AND influencing[Title] AND performance[Title] AND voluntary[Title] AND farmer[Title] AND disease[Title] AND reporting[Title] AND passive[Title] AND surveillance[Title] AND systems[Title] AND scoping[Title] AND review[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-94","query_variant":"exact_title","candidate_key":"PMID:34507237","candidate_rank":"1","title":"Factors influencing the performance of voluntary farmer disease reporting in passive surveillance systems: A scoping review.","year":"2021","authors_or_first_author":"M Carolyn Gates; Lynsey Earl; Gareth Enticott","doi":"10.1016/j.prevetmed.2021.105487","pmid":"34507237","primary_url":"https://pubmed.ncbi.nlm.nih.gov/34507237/"}]}
-{"named_source_id":"NS-SURVEILLANCE-095","source_to_resolve":{"method_label":"surveillance_underreporting_evaluation","canonical_name":"Surveillance underreporting and reporting-quality evaluation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:33720030","title":"Hybrid Approach to Estimation of Underreporting of Tuberculosis Case Notification in High-Burden Settings With Weak Surveillance Infrastructure: Design and Implementation of an Inventory Study.","first_author":"Ellen M H Mitchell","year":"2021","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/33720030/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-95","query_variant":"exact_title","query":"Hybrid[Title] AND Approach[Title] AND Estimation[Title] AND Underreporting[Title] AND Tuberculosis[Title] AND Case[Title] AND Notification[Title] AND High[Title] AND Burden[Title] AND Settings[Title] AND Weak[Title] AND Surveillance[Title] AND Infrastructure[Title] AND Design[Title] AND Implementation[Title] AND Inventory[Title] AND Study[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-95","query_variant":"exact_title","candidate_key":"PMID:33720030","candidate_rank":"1","title":"Hybrid Approach to Estimation of Underreporting of Tuberculosis Case Notification in High-Burden Settings With Weak Surveillance Infrastructure: Design and Implementation of an Inventory Study.","year":"2021","authors_or_first_author":"Ellen M H Mitchell; Olusola Adedeji Adejumo; Hussein Abdur-Razzaq; Chidubem Ogbudebe; Nkem Chukwueme; Samson Bamidele Olorunju; Mustapha Gidado","doi":"10.2196/22352","pmid":"33720030","primary_url":"https://pubmed.ncbi.nlm.nih.gov/33720030/"}]}
-{"named_source_id":"NS-SURVEILLANCE-096","source_to_resolve":{"method_label":"syndromic_surveillance","canonical_name":"Syndromic-surveillance methods","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21924796","title":"[Syndromic surveillance of Influenza-like illness in primary care: a complement to the sentinel surveillance network for periods of increased incidence of Influenza].","first_author":"J Arranz Izquierdo","year":"2012","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21924796/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-96","query_variant":"exact_title","query":"Syndromic[Title] AND surveillance[Title] AND Influenza[Title] AND like[Title] AND illness[Title] AND primary[Title] AND care[Title] AND complement[Title] AND sentinel[Title] AND network[Title] AND periods[Title] AND increased[Title] AND incidence[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-96","query_variant":"exact_title","candidate_key":"PMID:21924796","candidate_rank":"1","title":"[Syndromic surveillance of Influenza-like illness in primary care: a complement to the sentinel surveillance network for periods of increased incidence of Influenza].","year":"2012","authors_or_first_author":"J Arranz Izquierdo; A Leiva Rus; E Carandell Jäger; A Pujol Buades; M C Méndez Castell; A Salvà Fiol; M Esteva Cantó","doi":"10.1016/j.aprim.2011.03.008","pmid":"21924796","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21924796/"}]}
-{"named_source_id":"NS-SURVEILLANCE-097","source_to_resolve":{"method_label":"molecular_diagnostic_control_contamination","canonical_name":"Synthetic control-material contamination in molecular diagnostics","family":"surveillance_measurement","source_role":"diagnostic","seed_candidate_key_for_context_only":"PMID:32433015","title":"Delayed Laboratory Response to COVID-19 Caused by Molecular Diagnostic Contamination.","first_author":"Ramona Mögling","year":"2020","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/32433015/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-97","query_variant":"exact_title","query":"Delayed[Title] AND Laboratory[Title] AND Response[Title] AND COVID[Title] AND 19[Title] AND Caused[Title] AND Molecular[Title] AND Diagnostic[Title] AND Contamination[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-97","query_variant":"exact_title","candidate_key":"PMID:32433015","candidate_rank":"1","title":"Delayed Laboratory Response to COVID-19 Caused by Molecular Diagnostic Contamination.","year":"2020","authors_or_first_author":"Ramona Mögling; Adam Meijer; Natasa Berginc; Sylvia Bruisten; Remi Charrel; Bruno Coutard; Isabella Eckerle; Vincent Enouf; Olav Hungnes; Gülay Korukluoglu; Thanos Kossyvakis; Andreas Mentis; Richard Molenkamp; Shaman Muradrasoli; Anna Papa; Fiona Pigny; Laurence Thirion; Sylvie van der Werf; Chantal Reusken","doi":"10.3201/eid2608.201843","pmid":"32433015","primary_url":"https://pubmed.ncbi.nlm.nih.gov/32433015/"}]}
-{"named_source_id":"NS-SURVEILLANCE-098","source_to_resolve":{"method_label":"travel_volume_denominator_risk_estimation","canonical_name":"Travel-volume denominator risk estimation","family":"surveillance_measurement","source_role":"infectious_application","seed_candidate_key_for_context_only":"PMID:28537548","title":"Travel-associated gonorrhoea in four Nordic countries, 2008 to 2013.","first_author":"Julien Beauté","year":"2017","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/28537548/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-98","query_variant":"exact_title","query":"Travel[Title] AND associated[Title] AND gonorrhoea[Title] AND four[Title] AND Nordic[Title] AND countries[Title] AND 2008[Title] AND 2013[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-98","query_variant":"exact_title","candidate_key":"PMID:28537548","candidate_rank":"1","title":"Travel-associated gonorrhoea in four Nordic countries, 2008 to 2013.","year":"2017","authors_or_first_author":"Julien Beauté; Susan Cowan; Eija Hiltunen-Back; Hilde Kløvstad; Inga Velicko; Gianfranco Spiteri","doi":"10.2807/1560-7917.es.2017.22.20.30537","pmid":"28537548","primary_url":"https://pubmed.ncbi.nlm.nih.gov/28537548/"}]}
-{"named_source_id":"NS-SURVEILLANCE-099","source_to_resolve":{"method_label":"underascertainment_adjusted_burden_estimation","canonical_name":"Under-ascertainment-adjusted incidence and burden estimation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21435207","title":"Hospital-based, prospective, multicentre surveillance to determine the incidence of intussusception in children aged below 15 years in Germany.","first_author":"Nicolai Bissantz","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21435207/"},"supporting_queries":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-99","query_variant":"exact_title","query":"Hospital[Title] AND based[Title] AND prospective[Title] AND multicentre[Title] AND surveillance[Title] AND determine[Title] AND incidence[Title] AND intussusception[Title] AND children[Title] AND aged[Title] AND below[Title] AND 15[Title] AND years[Title] AND Germany[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260719-LINEAGE-SURVEILLANCE-99","query_variant":"exact_title","candidate_key":"PMID:21435207","candidate_rank":"1","title":"Hospital-based, prospective, multicentre surveillance to determine the incidence of intussusception in children aged below 15 years in Germany.","year":"2011","authors_or_first_author":"Nicolai Bissantz; Andreas C Jenke; Matthias Trampisch; Renate Klaassen-Mielke; Kathrin Bissantz; Hans-Joachim Trampisch; Tim Holland-Letz","doi":"10.1186/1471-230x-11-26","pmid":"21435207","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21435207/"}]}
+{"named_source_id":"NS-SURVEILLANCE-065","source_to_resolve":{"method_label":"pharmacovigilance_adverse_event_surveillance","canonical_name":"Pharmacovigilance and adverse-event surveillance","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:23867812","title":"Medical product safety surveillance: how many databases to use?","first_author":"Judith C Maro","year":"2013","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/23867812/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-174","query_variant":"title_first_author","query":"surveillance[Title] AND databases[Title] AND Medical[Title] AND product[Title] AND Maro[Author]"},{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-173","query_variant":"exact_title","query":"Medical[Title] AND product[Title] AND safety[Title] AND surveillance[Title] AND how[Title] AND many[Title] AND databases[Title] AND use[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-174","query_variant":"title_first_author","candidate_key":"PMID:23867812","candidate_rank":"1","title":"Medical product safety surveillance: how many databases to use?","year":"2013","authors_or_first_author":"Judith C Maro; Jeffrey S Brown; Martin Kulldorff","doi":"10.1097/ede.0b013e31829dde59","pmid":"23867812","primary_url":"https://pubmed.ncbi.nlm.nih.gov/23867812/"}]}
+{"named_source_id":"NS-SURVEILLANCE-066","source_to_resolve":{"method_label":"population_based_incidence_surveillance","canonical_name":"Population-based incidence surveillance","family":"surveillance_measurement","source_role":"infectious_application","seed_candidate_key_for_context_only":"PMID:20218877","title":"Prospective surveillance for invasive fungal infections in hematopoietic stem cell transplant recipients, 2001-2006: overview of the Transplant-Associated Infection Surveillance Network (TRANSNET) Database.","first_author":"Dimitrios P Kontoyiannis","year":"2010","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/20218877/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-175","query_variant":"exact_title","query":"Prospective[Title] AND surveillance[Title] AND invasive[Title] AND fungal[Title] AND infections[Title] AND hematopoietic[Title] AND stem[Title] AND cell[Title] AND transplant[Title] AND recipients[Title] AND 2001[Title] AND 2006[Title] AND overview[Title] AND Associated[Title] AND Infection[Title] AND Network[Title] AND TRANSNET[Title] AND Database[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-175","query_variant":"exact_title","candidate_key":"PMID:20218877","candidate_rank":"1","title":"Prospective surveillance for invasive fungal infections in hematopoietic stem cell transplant recipients, 2001-2006: overview of the Transplant-Associated Infection Surveillance Network (TRANSNET) Database.","year":"2010","authors_or_first_author":"Dimitrios P Kontoyiannis; Kieren A Marr; Benjamin J Park; Barbara D Alexander; Elias J Anaissie; Thomas J Walsh; James Ito; David R Andes; John W Baddley; Janice M Brown; Lisa M Brumble; Alison G Freifeld; Susan Hadley; Loreen A Herwaldt; Carol A Kauffman; Katherine Knapp; G Marshall Lyon; Vicki A Morrison; Genovefa Papanicolaou; Thomas F Patterson; Trish M Perl; Mindy G Schuster; Randall Walker; Kathleen A Wannemuehler; John R Wingard; Tom M Chiller; Peter G Pappas","doi":"10.1086/651263","pmid":"20218877","primary_url":"https://pubmed.ncbi.nlm.nih.gov/20218877/"}]}
+{"named_source_id":"NS-SURVEILLANCE-067","source_to_resolve":{"method_label":"preferential_sampling","canonical_name":"Preferential-sampling models","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:27087037","title":"Preferential sampling in veterinary parasitological surveillance.","first_author":"Lorenzo Cecconi","year":"2016","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/27087037/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-176","query_variant":"exact_title","query":"Preferential[Title] AND sampling[Title] AND veterinary[Title] AND parasitological[Title] AND surveillance[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-176","query_variant":"exact_title","candidate_key":"PMID:27087037","candidate_rank":"1","title":"Preferential sampling in veterinary parasitological surveillance.","year":"2016","authors_or_first_author":"Lorenzo Cecconi; Annibale Biggeri; Laura Grisotto; Veronica Berrocal; Laura Rinaldi; Vincenzo Musella; Giuseppe Cringoli; Dolores Catelan","doi":"10.4081/gh.2016.412","pmid":"27087037","primary_url":"https://pubmed.ncbi.nlm.nih.gov/27087037/"}]}
+{"named_source_id":"NS-SURVEILLANCE-068","source_to_resolve":{"method_label":"public_health_data_triangulation","canonical_name":"Public-health data triangulation","family":"surveillance_measurement","source_role":"guidance","seed_candidate_key_for_context_only":"PMID:20670448","title":"Public health triangulation: approach and application to synthesizing data to understand national and local HIV epidemics.","first_author":"George W Rutherford","year":"2010","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/20670448/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-177","query_variant":"exact_title","query":"Public[Title] AND health[Title] AND triangulation[Title] AND approach[Title] AND application[Title] AND synthesizing[Title] AND data[Title] AND understand[Title] AND national[Title] AND local[Title] AND HIV[Title] AND epidemics[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-177","query_variant":"exact_title","candidate_key":"PMID:20670448","candidate_rank":"1","title":"Public health triangulation: approach and application to synthesizing data to understand national and local HIV epidemics.","year":"2010","authors_or_first_author":"George W Rutherford; William McFarland; Hilary Spindler; Karen White; Sadhna V Patel; John Aberle-Grasse; Keith Sabin; Nathan Smith; Stephanie Taché; Jesus M Calleja-Garcia; Rand L Stoneburner","doi":"10.1186/1471-2458-10-447","pmid":"20670448","primary_url":"https://pubmed.ncbi.nlm.nih.gov/20670448/"}]}
+{"named_source_id":"NS-SURVEILLANCE-069","source_to_resolve":{"method_label":"real_time_network_surveillance","canonical_name":"Real-time network surveillance","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:32634822","title":"Development and Delivery of a Real-time Hospital-onset COVID-19 Surveillance System Using Network Analysis.","first_author":"James Richard Price","year":"2021","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/32634822/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-178","query_variant":"exact_title","query":"Development[Title] AND Delivery[Title] AND Real[Title] AND time[Title] AND Hospital[Title] AND onset[Title] AND COVID[Title] AND 19[Title] AND Surveillance[Title] AND System[Title] AND Using[Title] AND Network[Title] AND Analysis[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-178","query_variant":"exact_title","candidate_key":"PMID:32634822","candidate_rank":"1","title":"Development and Delivery of a Real-time Hospital-onset COVID-19 Surveillance System Using Network Analysis.","year":"2021","authors_or_first_author":"James Richard Price; Siddharth Mookerjee; Eleonora Dyakova; Ashleigh Myall; Wendy Leung; Andrea Yeong Weiße; Yeeshika Shersing; Eimear Therese Brannigan; Tracey Galletly; David Muir; Paul Randell; Frances Davies; Frances Bolt; Mauricio Barahona; Jonathan Ashley Otter; Alison H Holmes","doi":"10.1093/cid/ciaa892","pmid":"32634822","primary_url":"https://pubmed.ncbi.nlm.nih.gov/32634822/"}]}
+{"named_source_id":"NS-SURVEILLANCE-070","source_to_resolve":{"method_label":"reporting_bias_validation_studies","canonical_name":"Reporting bias and measurement-validation studies","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:29194115","title":"The validity of self-reported antiretroviral use in persons living with HIV: a population-based study.","first_author":"Mary K Grabowski","year":"2018","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/29194115/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-179","query_variant":"exact_title","query":"validity[Title] AND self[Title] AND reported[Title] AND antiretroviral[Title] AND use[Title] AND persons[Title] AND living[Title] AND HIV[Title] AND population[Title] AND based[Title] AND study[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-179","query_variant":"exact_title","candidate_key":"PMID:29194115","candidate_rank":"1","title":"The validity of self-reported antiretroviral use in persons living with HIV: a population-based study.","year":"2018","authors_or_first_author":"Mary K Grabowski; Steven J Reynolds; Joseph Kagaayi; Ronald H Gray; William Clarke; Larry W Chang; Gertrude Nakigozi; Oliver Laeyndecker; Andrew D Redd; Veena Billioux; Robert Ssekubugu; Fred Nalugoda; Maria J Wawer; David Serwadda; Thomas C Quinn; Aaron A R Tobian","doi":"10.1097/qad.0000000000001706","pmid":"29194115","primary_url":"https://pubmed.ncbi.nlm.nih.gov/29194115/"}]}
+{"named_source_id":"NS-SURVEILLANCE-071","source_to_resolve":{"method_label":"reporting_delay_nowcasting","canonical_name":"Reporting-delay adjustment and incidence nowcasting","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21416274","title":"Nowcasting pandemic influenza A/H1N1 2009 hospitalizations in the Netherlands.","first_author":"Tjibbe Donker","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21416274/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-180","query_variant":"exact_title","query":"Nowcasting[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND 2009[Title] AND hospitalizations[Title] AND Netherlands[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-180","query_variant":"exact_title","candidate_key":"PMID:21416274","candidate_rank":"1","title":"Nowcasting pandemic influenza A/H1N1 2009 hospitalizations in the Netherlands.","year":"2011","authors_or_first_author":"Tjibbe Donker; Michiel van Boven; W Marijn van Ballegooijen; Tessa M Van't Klooster; Cornelia C Wielders; Jacco Wallinga","doi":"10.1007/s10654-011-9566-5","pmid":"21416274","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21416274/"}]}
+{"named_source_id":"NS-SURVEILLANCE-072","source_to_resolve":{"method_label":"reporting_delay_adjustment_nowcasting","canonical_name":"Reporting-delay adjustment and nowcasting","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:31205290","title":"Nowcasting the Number of New Symptomatic Cases During Infectious Disease Outbreaks Using Constrained P-spline Smoothing.","first_author":"Jan van de Kassteele","year":"2019","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/31205290/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-182","query_variant":"title_first_author","query":"Symptomatic[Title] AND Constrained[Title] AND Nowcasting[Title] AND Infectious[Title] AND Kassteele[Author]"},{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-181","query_variant":"exact_title","query":"Nowcasting[Title] AND Number[Title] AND New[Title] AND Symptomatic[Title] AND Cases[Title] AND During[Title] AND Infectious[Title] AND Disease[Title] AND Outbreaks[Title] AND Using[Title] AND Constrained[Title] AND P[Title] AND spline[Title] AND Smoothing[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-182","query_variant":"title_first_author","candidate_key":"PMID:31205290","candidate_rank":"1","title":"Nowcasting the Number of New Symptomatic Cases During Infectious Disease Outbreaks Using Constrained P-spline Smoothing.","year":"2019","authors_or_first_author":"Jan van de Kassteele; Paul H C Eilers; Jacco Wallinga","doi":"10.1097/ede.0000000000001050","pmid":"31205290","primary_url":"https://pubmed.ncbi.nlm.nih.gov/31205290/"}]}
+{"named_source_id":"NS-SURVEILLANCE-073","source_to_resolve":{"method_label":"reproduction_number_nowcasting","canonical_name":"Reproduction-number nowcasting","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:33951962","title":"Improving the estimation of the COVID-19 effective reproduction number using nowcasting.","first_author":"Joaquin Salas","year":"2021","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/33951962/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-183","query_variant":"exact_title","query":"Improving[Title] AND estimation[Title] AND COVID[Title] AND 19[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND using[Title] AND nowcasting[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-183","query_variant":"exact_title","candidate_key":"PMID:33951962","candidate_rank":"1","title":"Improving the estimation of the COVID-19 effective reproduction number using nowcasting.","year":"2021","authors_or_first_author":"Joaquin Salas","doi":"10.1177/09622802211008939","pmid":"33951962","primary_url":"https://pubmed.ncbi.nlm.nih.gov/33951962/"}]}
+{"named_source_id":"NS-SURVEILLANCE-074","source_to_resolve":{"method_label":"risk_adjusted_benchmark_metric_modeling","canonical_name":"Risk-adjusted benchmark metric modeling","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:32215655","title":"National Healthcare Safety Network Standardized Antimicrobial Administration Ratios (SAARs): A Progress Report and Risk Modeling Update Using 2017 Data.","first_author":"Erin N O'Leary","year":"2020","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/32215655/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-184","query_variant":"exact_title","query":"National[Title] AND Healthcare[Title] AND Safety[Title] AND Network[Title] AND Standardized[Title] AND Antimicrobial[Title] AND Administration[Title] AND Ratios[Title] AND SAARs[Title] AND Progress[Title] AND Report[Title] AND Risk[Title] AND Modeling[Title] AND Update[Title] AND Using[Title] AND 2017[Title] AND Data[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-184","query_variant":"exact_title","candidate_key":"PMID:32215655","candidate_rank":"1","title":"National Healthcare Safety Network Standardized Antimicrobial Administration Ratios (SAARs): A Progress Report and Risk Modeling Update Using 2017 Data.","year":"2020","authors_or_first_author":"Erin N O'Leary; Jonathan R Edwards; Arjun Srinivasan; Melinda M Neuhauser; Amy K Webb; Minn M Soe; Lauri A Hicks; Wendy Wise; Hsiu Wu; Daniel A Pollock","doi":"10.1093/cid/ciaa326","pmid":"32215655","primary_url":"https://pubmed.ncbi.nlm.nih.gov/32215655/"}]}
+{"named_source_id":"NS-SURVEILLANCE-075","source_to_resolve":{"method_label":"safety_surveillance_and_pharmacovigilance","canonical_name":"Safety surveillance and pharmacovigilance studies","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:25234281","title":"Developing a Method for Reporting Patient Harm Due to Antimicrobial Shortages.","first_author":"Milena M McLaughlin","year":"2014","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/25234281/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-186","query_variant":"title_first_author","query":"Antimicrobial[Title] AND Developing[Title] AND Reporting[Title] AND Shortages[Title] AND McLaughlin[Author]"},{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-185","query_variant":"exact_title","query":"Developing[Title] AND Method[Title] AND Reporting[Title] AND Patient[Title] AND Harm[Title] AND Due[Title] AND Antimicrobial[Title] AND Shortages[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-186","query_variant":"title_first_author","candidate_key":"PMID:25234281","candidate_rank":"1","title":"Developing a Method for Reporting Patient Harm Due to Antimicrobial Shortages.","year":"2014","authors_or_first_author":"Milena M McLaughlin; Erik Skoglund; Zachary Pentoney; Marc H Scheetz","doi":"10.1007/s40121-014-0040-z","pmid":"25234281","primary_url":"https://pubmed.ncbi.nlm.nih.gov/25234281/"}]}
+{"named_source_id":"NS-SURVEILLANCE-076","source_to_resolve":{"method_label":"case_series_exposure_timing_error","canonical_name":"Self-controlled case-series models with exposure-timing error","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:23650442","title":"Measurement Error Case Series Models with Application to Infection-Cardiovascular Risk in OlderPatients on Dialysis.","first_author":"Sandra M Mohammed","year":"2012","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/23650442/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-187","query_variant":"exact_title","query":"Measurement[Title] AND Error[Title] AND Case[Title] AND Series[Title] AND Models[Title] AND Application[Title] AND Infection[Title] AND Cardiovascular[Title] AND Risk[Title] AND OlderPatients[Title] AND Dialysis[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-187","query_variant":"exact_title","candidate_key":"PMID:23650442","candidate_rank":"1","title":"Measurement Error Case Series Models with Application to Infection-Cardiovascular Risk in OlderPatients on Dialysis.","year":"2012","authors_or_first_author":"Sandra M Mohammed; Damla Sentürk; Lorien S Dalrymple; Danh V Nguyen","doi":"10.1080/01621459.2012.695648","pmid":"23650442","primary_url":"https://pubmed.ncbi.nlm.nih.gov/23650442/"}]}
+{"named_source_id":"NS-SURVEILLANCE-077","source_to_resolve":{"method_label":"self_report_and_behavioral_measurement_bias","canonical_name":"Self-report and behavioral measurement bias assessment","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21218276","title":"A novel tool to assess community norms and attitudes to multiple and concurrent sexual partnering in rural Zimbabwe: participatory attitudinal ranking.","first_author":"Webster Mavhu","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21218276/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-188","query_variant":"exact_title","query":"novel[Title] AND tool[Title] AND assess[Title] AND community[Title] AND norms[Title] AND attitudes[Title] AND multiple[Title] AND concurrent[Title] AND sexual[Title] AND partnering[Title] AND rural[Title] AND Zimbabwe[Title] AND participatory[Title] AND attitudinal[Title] AND ranking[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-188","query_variant":"exact_title","candidate_key":"PMID:21218276","candidate_rank":"1","title":"A novel tool to assess community norms and attitudes to multiple and concurrent sexual partnering in rural Zimbabwe: participatory attitudinal ranking.","year":"2011","authors_or_first_author":"Webster Mavhu; Lisa Langhaug; Sophie Pascoe; Jeffrey Dirawo; Graham Hart; Frances Cowan","doi":"10.1080/09540121.2010.490257","pmid":"21218276","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21218276/"}]}
+{"named_source_id":"NS-SURVEILLANCE-078","source_to_resolve":{"method_label":"sentinel_surveillance_descriptive_epidemiology","canonical_name":"Sentinel surveillance descriptive epidemiology","family":"surveillance_measurement","source_role":"correction","seed_candidate_key_for_context_only":"PMID:21372330","title":"Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.","first_author":"R. Cisterna","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21372330/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-189","query_variant":"exact_title","query":"Nationwide[Title] AND sentinel[Title] AND surveillance[Title] AND bloodstream[Title] AND Candida[Title] AND infections[Title] AND 40[Title] AND tertiary[Title] AND care[Title] AND hospitals[Title] AND Spain[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-189","query_variant":"exact_title","candidate_key":"PMID:21372330","candidate_rank":"1","title":"Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.","year":"2011","authors_or_first_author":"R. Cisterna; G. Ezpeleta; O. Telleria; J. Guinea; B. Regueiro; J. Garcia-Rodríguez; J. Esperalba","doi":"10.1128/jcm.00006-11","pmid":"21372330","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21372330/"},{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-189","query_variant":"exact_title","candidate_key":"PMID:20826636","candidate_rank":"2","title":"Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.","year":"2010","authors_or_first_author":"R Cisterna; G Ezpeleta; O Telleria; Spanish Candidemia Surveillance Group","doi":"10.1128/jcm.00920-10","pmid":"20826636","primary_url":"https://pubmed.ncbi.nlm.nih.gov/20826636/"}]}
+{"named_source_id":"NS-SURVEILLANCE-079","source_to_resolve":{"method_label":"sentinel_surveillance_estimation_bias_correction","canonical_name":"Sentinel surveillance estimation and bias correction","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21044403","title":"Evaluating measles surveillance: comparison of sentinel surveillance, mandatory notification, and data from health insurance claims.","first_author":"S Tanihara","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21044403/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-190","query_variant":"exact_title","query":"Evaluating[Title] AND measles[Title] AND surveillance[Title] AND comparison[Title] AND sentinel[Title] AND mandatory[Title] AND notification[Title] AND data[Title] AND health[Title] AND insurance[Title] AND claims[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-190","query_variant":"exact_title","candidate_key":"PMID:21044403","candidate_rank":"1","title":"Evaluating measles surveillance: comparison of sentinel surveillance, mandatory notification, and data from health insurance claims.","year":"2011","authors_or_first_author":"S Tanihara; E Okamoto; T Imatoh; Y Momose; A Kaetsu; M Miyazaki; H Une","doi":"10.1017/s095026881000244x","pmid":"21044403","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21044403/"}]}
+{"named_source_id":"NS-SURVEILLANCE-080","source_to_resolve":{"method_label":"sentinel_surveillance_inference_calibration","canonical_name":"Sentinel surveillance inference and calibration","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:22325010","title":"A new approach to characterising infectious disease transmission dynamics from sentinel surveillance: application to the Italian 2009-2010 A/H1N1 influenza pandemic.","first_author":"Ilaria Dorigatti","year":"2012","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/22325010/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-191","query_variant":"exact_title","query":"new[Title] AND approach[Title] AND characterising[Title] AND infectious[Title] AND disease[Title] AND transmission[Title] AND dynamics[Title] AND sentinel[Title] AND surveillance[Title] AND application[Title] AND Italian[Title] AND 2009[Title] AND 2010[Title] AND H1N1[Title] AND influenza[Title] AND pandemic[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-191","query_variant":"exact_title","candidate_key":"PMID:22325010","candidate_rank":"1","title":"A new approach to characterising infectious disease transmission dynamics from sentinel surveillance: application to the Italian 2009-2010 A/H1N1 influenza pandemic.","year":"2012","authors_or_first_author":"Ilaria Dorigatti; Simon Cauchemez; Andrea Pugliese; Neil Morris Ferguson","doi":"10.1016/j.epidem.2011.11.001","pmid":"22325010","primary_url":"https://pubmed.ncbi.nlm.nih.gov/22325010/"}]}
+{"named_source_id":"NS-SURVEILLANCE-081","source_to_resolve":{"method_label":"sentinel_surveillance_calibration","canonical_name":"Sentinel surveillance platform design, evaluation, and extrapolation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:34972825","title":"Improving local prevalence estimates of SARS-CoV-2 infections using a causal debiasing framework.","first_author":"George Nicholson","year":"2022","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/34972825/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-192","query_variant":"exact_title","query":"Improving[Title] AND local[Title] AND prevalence[Title] AND estimates[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND infections[Title] AND using[Title] AND causal[Title] AND debiasing[Title] AND framework[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-192","query_variant":"exact_title","candidate_key":"PMID:34972825","candidate_rank":"1","title":"Improving local prevalence estimates of SARS-CoV-2 infections using a causal debiasing framework.","year":"2022","authors_or_first_author":"George Nicholson; Brieuc Lehmann; Tullia Padellini; Koen B Pouwels; Radka Jersakova; James Lomax; Ruairidh E King; Ann-Marie Mallon; Peter J Diggle; Sylvia Richardson; Marta Blangiardo; Chris Holmes","doi":"10.1038/s41564-021-01029-0","pmid":"34972825","primary_url":"https://pubmed.ncbi.nlm.nih.gov/34972825/"}]}
+{"named_source_id":"NS-SURVEILLANCE-082","source_to_resolve":{"method_label":"sentinel_surveillance_system_design_evaluation","canonical_name":"Sentinel surveillance system design and evaluation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:22036193","title":"Evaluation of sentinel surveillance system for monitoring hand, foot and mouth disease in Hong Kong.","first_author":"M Edmond","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/22036193/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-193","query_variant":"exact_title","query":"Evaluation[Title] AND sentinel[Title] AND surveillance[Title] AND system[Title] AND monitoring[Title] AND hand[Title] AND foot[Title] AND mouth[Title] AND disease[Title] AND Hong[Title] AND Kong[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-193","query_variant":"exact_title","candidate_key":"PMID:22036193","candidate_rank":"1","title":"Evaluation of sentinel surveillance system for monitoring hand, foot and mouth disease in Hong Kong.","year":"2011","authors_or_first_author":"M Edmond; C Wong; S K Chuang","doi":"10.1016/j.puhe.2011.09.002","pmid":"22036193","primary_url":"https://pubmed.ncbi.nlm.nih.gov/22036193/"}]}
+{"named_source_id":"NS-SURVEILLANCE-083","source_to_resolve":{"method_label":"sentinel_surveillance_system_implementation_evaluation","canonical_name":"Sentinel surveillance system implementation and evaluation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:39575793","title":"Implementation and Evaluation of Automated, Online Study Recruitment from Computerised Medical Records in a Primary Care Sentinel Surveillance Network.","first_author":"Darius Oraee","year":"2024","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/39575793/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-194","query_variant":"exact_title","query":"Implementation[Title] AND Evaluation[Title] AND Automated[Title] AND Online[Title] AND Study[Title] AND Recruitment[Title] AND Computerised[Title] AND Medical[Title] AND Records[Title] AND Primary[Title] AND Care[Title] AND Sentinel[Title] AND Surveillance[Title] AND Network[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-194","query_variant":"exact_title","candidate_key":"PMID:39575793","candidate_rank":"1","title":"Implementation and Evaluation of Automated, Online Study Recruitment from Computerised Medical Records in a Primary Care Sentinel Surveillance Network.","year":"2024","authors_or_first_author":"Darius Oraee; Elizabeth Button; Vanashree Sexton; Karin Andre; Filipa Ferreira; Aileen Mill; Stephen Rushton; Ben W Rowland; Uy Hoang; Simon de Lusignan","doi":"10.3233/shti241076","pmid":"39575793","primary_url":"https://pubmed.ncbi.nlm.nih.gov/39575793/"}]}
+{"named_source_id":"NS-SURVEILLANCE-084","source_to_resolve":{"method_label":"sentinel_vaccine_effectiveness_test_negative","canonical_name":"Sentinel vaccine-effectiveness and test-negative designs","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:25953275","title":"Strengths and limitations of assessing influenza vaccine effectiveness using routinely collected, passive surveillance data in Ontario, Canada, 2007 to 2012: balancing efficiency versus quality.","first_author":"R D Savage","year":"2015","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/25953275/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-195","query_variant":"exact_title","query":"Strengths[Title] AND limitations[Title] AND assessing[Title] AND influenza[Title] AND vaccine[Title] AND effectiveness[Title] AND using[Title] AND routinely[Title] AND collected[Title] AND passive[Title] AND surveillance[Title] AND data[Title] AND Ontario[Title] AND Canada[Title] AND 2007[Title] AND 2012[Title] AND balancing[Title] AND efficiency[Title] AND versus[Title] AND quality[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-195","query_variant":"exact_title","candidate_key":"PMID:25953275","candidate_rank":"1","title":"Strengths and limitations of assessing influenza vaccine effectiveness using routinely collected, passive surveillance data in Ontario, Canada, 2007 to 2012: balancing efficiency versus quality.","year":"2015","authors_or_first_author":"R D Savage; A L Winter; L C Rosella; R Olsha; J B Gubbay; D M Skowronski; N S Crowcroft","doi":"10.2807/1560-7917.es2015.20.16.21100","pmid":"25953275","primary_url":"https://pubmed.ncbi.nlm.nih.gov/25953275/"}]}
+{"named_source_id":"NS-SURVEILLANCE-085","source_to_resolve":{"method_label":"surveillance_platform_studies","canonical_name":"Structured surveillance platform studies","family":"surveillance_measurement","source_role":"guidance","seed_candidate_key_for_context_only":"PMID:24162744","title":"Implementing a strategy for monitoring inpatient antimicrobial use among hospitals in the United States.","first_author":"Scott K Fridkin","year":"2014","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/24162744/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-196","query_variant":"exact_title","query":"Implementing[Title] AND strategy[Title] AND monitoring[Title] AND inpatient[Title] AND antimicrobial[Title] AND use[Title] AND hospitals[Title] AND United[Title] AND States[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-196","query_variant":"exact_title","candidate_key":"PMID:24162744","candidate_rank":"1","title":"Implementing a strategy for monitoring inpatient antimicrobial use among hospitals in the United States.","year":"2014","authors_or_first_author":"Scott K Fridkin; Arjun Srinivasan","doi":"10.1093/cid/cit710","pmid":"24162744","primary_url":"https://pubmed.ncbi.nlm.nih.gov/24162744/"}]}
+{"named_source_id":"NS-SURVEILLANCE-086","source_to_resolve":{"method_label":"surveillance_measurement_validation","canonical_name":"Surveillance and self-report measurement validation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:29895298","title":"Validity of parental recalls to estimate vaccination coverage: evidence from Tanzania.","first_author":"Peter Binyaruka","year":"2018","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/29895298/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-197","query_variant":"exact_title","query":"Validity[Title] AND parental[Title] AND recalls[Title] AND estimate[Title] AND vaccination[Title] AND coverage[Title] AND evidence[Title] AND Tanzania[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-197","query_variant":"exact_title","candidate_key":"PMID:29895298","candidate_rank":"1","title":"Validity of parental recalls to estimate vaccination coverage: evidence from Tanzania.","year":"2018","authors_or_first_author":"Peter Binyaruka; Josephine Borghi","doi":"10.1186/s12913-018-3270-z","pmid":"29895298","primary_url":"https://pubmed.ncbi.nlm.nih.gov/29895298/"}]}
+{"named_source_id":"NS-SURVEILLANCE-087","source_to_resolve":{"method_label":"surveillance_ascertainment_correction","canonical_name":"Surveillance ascertainment, validation, and correction studies","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:30576279","title":"Using Calibration to Reduce Measurement Error in Prevalence Estimates Based on Electronic Health Records.","first_author":"Pui Ying Chan","year":"2018","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/30576279/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-198","query_variant":"exact_title","query":"Using[Title] AND Calibration[Title] AND Reduce[Title] AND Measurement[Title] AND Error[Title] AND Prevalence[Title] AND Estimates[Title] AND Based[Title] AND Electronic[Title] AND Health[Title] AND Records[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-198","query_variant":"exact_title","candidate_key":"PMID:30576279","candidate_rank":"1","title":"Using Calibration to Reduce Measurement Error in Prevalence Estimates Based on Electronic Health Records.","year":"2018","authors_or_first_author":"Pui Ying Chan; Yihong Zhao; Sungwoo Lim; Sharon E Perlman; Katharine H McVeigh","doi":"10.5888/pcd15.180371","pmid":"30576279","primary_url":"https://pubmed.ncbi.nlm.nih.gov/30576279/"}]}
+{"named_source_id":"NS-SURVEILLANCE-088","source_to_resolve":{"method_label":"surveillance_data_validation_and_completeness","canonical_name":"Surveillance data validation and completeness assessment","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:36033207","title":"Improving Data on the HIV Epidemic in New York City by Identifying Transgender Persons in Medicaid in 2013-2017.","first_author":"Cristina Rodriguez-Hart","year":"2022","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/36033207/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-199","query_variant":"exact_title","query":"Improving[Title] AND Data[Title] AND HIV[Title] AND Epidemic[Title] AND New[Title] AND York[Title] AND City[Title] AND Identifying[Title] AND Transgender[Title] AND Persons[Title] AND Medicaid[Title] AND 2013[Title] AND 2017[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-199","query_variant":"exact_title","candidate_key":"PMID:36033207","candidate_rank":"1","title":"Improving Data on the HIV Epidemic in New York City by Identifying Transgender Persons in Medicaid in 2013-2017.","year":"2022","authors_or_first_author":"Cristina Rodriguez-Hart; Beverly Obeng; Asa Radix; Zil Goldstein; Lucia Torian","doi":"10.1089/trgh.2020.0121","pmid":"36033207","primary_url":"https://pubmed.ncbi.nlm.nih.gov/36033207/"}]}
+{"named_source_id":"NS-SURVEILLANCE-089","source_to_resolve":{"method_label":"surveillance_system_reporting_interventions","canonical_name":"Surveillance system design and reporting interventions","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:37580359","title":"Construction and effectiveness evaluation of a knowledge-based infectious disease monitoring and decision support system.","first_author":"Mengying Wang","year":"2023","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/37580359/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-200","query_variant":"exact_title","query":"Construction[Title] AND effectiveness[Title] AND evaluation[Title] AND knowledge[Title] AND based[Title] AND infectious[Title] AND disease[Title] AND monitoring[Title] AND decision[Title] AND support[Title] AND system[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-200","query_variant":"exact_title","candidate_key":"PMID:37580359","candidate_rank":"1","title":"Construction and effectiveness evaluation of a knowledge-based infectious disease monitoring and decision support system.","year":"2023","authors_or_first_author":"Mengying Wang; Mo Jia; Zhenhao Wei; Wei Wang; Yafei Shang; Hong Ji","doi":"10.1038/s41598-023-39931-8","pmid":"37580359","primary_url":"https://pubmed.ncbi.nlm.nih.gov/37580359/"}]}
+{"named_source_id":"NS-SURVEILLANCE-090","source_to_resolve":{"method_label":"surveillance_system_design_improvement","canonical_name":"Surveillance system design and reporting-improvement studies","family":"surveillance_measurement","source_role":"diagnostic","seed_candidate_key_for_context_only":"PMID:21514007","title":"Gaming in infection control: a qualitative study exploring the perceptions and experiences of health professionals in Mongolia.","first_author":"Bat-Erdene Ider","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21514007/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-201","query_variant":"exact_title","query":"Gaming[Title] AND infection[Title] AND control[Title] AND qualitative[Title] AND study[Title] AND exploring[Title] AND perceptions[Title] AND experiences[Title] AND health[Title] AND professionals[Title] AND Mongolia[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-201","query_variant":"exact_title","candidate_key":"PMID:21514007","candidate_rank":"1","title":"Gaming in infection control: a qualitative study exploring the perceptions and experiences of health professionals in Mongolia.","year":"2011","authors_or_first_author":"Bat-Erdene Ider; Jon Adams; Anthony Morton; Michael Whitby; Archie Clements","doi":"10.1016/j.ajic.2010.10.033","pmid":"21514007","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21514007/"}]}
+{"named_source_id":"NS-SURVEILLANCE-091","source_to_resolve":{"method_label":"surveillance_system_design_and_measurement_frameworks","canonical_name":"Surveillance system design, reporting practice, and measurement frameworks","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:25960922","title":"Brief behavioural surveys in routine HIV sentinel surveillance: a new tool for monitoring the HIV epidemic in Viet Nam.","first_author":"Duong Cong Thanh","year":"2015","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/25960922/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-202","query_variant":"exact_title","query":"Brief[Title] AND behavioural[Title] AND surveys[Title] AND routine[Title] AND HIV[Title] AND sentinel[Title] AND surveillance[Title] AND new[Title] AND tool[Title] AND monitoring[Title] AND epidemic[Title] AND Viet[Title] AND Nam[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-202","query_variant":"exact_title","candidate_key":"PMID:25960922","candidate_rank":"1","title":"Brief behavioural surveys in routine HIV sentinel surveillance: a new tool for monitoring the HIV epidemic in Viet Nam.","year":"2015","authors_or_first_author":"Duong Cong Thanh; Nguyen Tran Hien; Nguyen Anh Tuan; Hoang Thi Thanh Ha; Pham Hong Thang; Nguyen Thi Thanh Ha; Le Anh Tuan; Tran Dai Quang; Tran Hong Tram; Nguyen Le Hai; Phan Thi Thu Huong; Vo Hai Son; Bui Hoang Duc; Nguyen Thien Nga; David Jacka; Keith Sabin","doi":"10.2471/wpsar.2015.6.1-052","pmid":"25960922","primary_url":"https://pubmed.ncbi.nlm.nih.gov/25960922/"}]}
+{"named_source_id":"NS-SURVEILLANCE-092","source_to_resolve":{"method_label":"surveillance_system_evaluation_and_reporting_improvement","canonical_name":"Surveillance system evaluation and reporting improvement","family":"surveillance_measurement","source_role":"diagnostic","seed_candidate_key_for_context_only":"PMID:32244954","title":"Dengue Surveillance System in Brazil: A Qualitative Study in the Federal District.","first_author":"Marco Angelo","year":"2020","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/32244954/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-203","query_variant":"exact_title","query":"Dengue[Title] AND Surveillance[Title] AND System[Title] AND Brazil[Title] AND Qualitative[Title] AND Study[Title] AND Federal[Title] AND District[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-203","query_variant":"exact_title","candidate_key":"PMID:32244954","candidate_rank":"1","title":"Dengue Surveillance System in Brazil: A Qualitative Study in the Federal District.","year":"2020","authors_or_first_author":"Marco Angelo; Walter Massa Ramalho; Helen Gurgel; Nayara Belle; Eva Pilot","doi":"10.3390/ijerph17062062","pmid":"32244954","primary_url":"https://pubmed.ncbi.nlm.nih.gov/32244954/"}]}
+{"named_source_id":"NS-SURVEILLANCE-093","source_to_resolve":{"method_label":"surveillance_system_evaluation_and_data_quality","canonical_name":"Surveillance system evaluation and reporting-quality studies","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:24740304","title":"Hospitalization records as a tool for evaluating performance of food- and water-borne disease surveillance systems: a Massachusetts case study.","first_author":"Siobhan M Mor","year":"2014","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/24740304/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-204","query_variant":"exact_title","query":"Hospitalization[Title] AND records[Title] AND tool[Title] AND evaluating[Title] AND performance[Title] AND food[Title] AND water[Title] AND borne[Title] AND disease[Title] AND surveillance[Title] AND systems[Title] AND Massachusetts[Title] AND case[Title] AND study[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-204","query_variant":"exact_title","candidate_key":"PMID:24740304","candidate_rank":"1","title":"Hospitalization records as a tool for evaluating performance of food- and water-borne disease surveillance systems: a Massachusetts case study.","year":"2014","authors_or_first_author":"Siobhan M Mor; Alfred DeMaria; Elena N Naumova","doi":"10.1371/journal.pone.0093744","pmid":"24740304","primary_url":"https://pubmed.ncbi.nlm.nih.gov/24740304/"}]}
+{"named_source_id":"NS-SURVEILLANCE-094","source_to_resolve":{"method_label":"surveillance_system_improvement_strategies","canonical_name":"Surveillance system improvement and reporting-enhancement strategies","family":"surveillance_measurement","source_role":"guidance","seed_candidate_key_for_context_only":"PMID:34507237","title":"Factors influencing the performance of voluntary farmer disease reporting in passive surveillance systems: A scoping review.","first_author":"M Carolyn Gates","year":"2021","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/34507237/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-205","query_variant":"exact_title","query":"Factors[Title] AND influencing[Title] AND performance[Title] AND voluntary[Title] AND farmer[Title] AND disease[Title] AND reporting[Title] AND passive[Title] AND surveillance[Title] AND systems[Title] AND scoping[Title] AND review[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-205","query_variant":"exact_title","candidate_key":"PMID:34507237","candidate_rank":"1","title":"Factors influencing the performance of voluntary farmer disease reporting in passive surveillance systems: A scoping review.","year":"2021","authors_or_first_author":"M Carolyn Gates; Lynsey Earl; Gareth Enticott","doi":"10.1016/j.prevetmed.2021.105487","pmid":"34507237","primary_url":"https://pubmed.ncbi.nlm.nih.gov/34507237/"}]}
+{"named_source_id":"NS-SURVEILLANCE-095","source_to_resolve":{"method_label":"surveillance_underreporting_evaluation","canonical_name":"Surveillance underreporting and reporting-quality evaluation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:33720030","title":"Hybrid Approach to Estimation of Underreporting of Tuberculosis Case Notification in High-Burden Settings With Weak Surveillance Infrastructure: Design and Implementation of an Inventory Study.","first_author":"Ellen M H Mitchell","year":"2021","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/33720030/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-206","query_variant":"exact_title","query":"Hybrid[Title] AND Approach[Title] AND Estimation[Title] AND Underreporting[Title] AND Tuberculosis[Title] AND Case[Title] AND Notification[Title] AND High[Title] AND Burden[Title] AND Settings[Title] AND Weak[Title] AND Surveillance[Title] AND Infrastructure[Title] AND Design[Title] AND Implementation[Title] AND Inventory[Title] AND Study[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-206","query_variant":"exact_title","candidate_key":"PMID:33720030","candidate_rank":"1","title":"Hybrid Approach to Estimation of Underreporting of Tuberculosis Case Notification in High-Burden Settings With Weak Surveillance Infrastructure: Design and Implementation of an Inventory Study.","year":"2021","authors_or_first_author":"Ellen M H Mitchell; Olusola Adedeji Adejumo; Hussein Abdur-Razzaq; Chidubem Ogbudebe; Nkem Chukwueme; Samson Bamidele Olorunju; Mustapha Gidado","doi":"10.2196/22352","pmid":"33720030","primary_url":"https://pubmed.ncbi.nlm.nih.gov/33720030/"}]}
+{"named_source_id":"NS-SURVEILLANCE-096","source_to_resolve":{"method_label":"syndromic_surveillance","canonical_name":"Syndromic-surveillance methods","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21924796","title":"[Syndromic surveillance of Influenza-like illness in primary care: a complement to the sentinel surveillance network for periods of increased incidence of Influenza].","first_author":"J Arranz Izquierdo","year":"2012","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21924796/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-207","query_variant":"exact_title","query":"Syndromic[Title] AND surveillance[Title] AND Influenza[Title] AND like[Title] AND illness[Title] AND primary[Title] AND care[Title] AND complement[Title] AND sentinel[Title] AND network[Title] AND periods[Title] AND increased[Title] AND incidence[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-207","query_variant":"exact_title","candidate_key":"PMID:21924796","candidate_rank":"1","title":"[Syndromic surveillance of Influenza-like illness in primary care: a complement to the sentinel surveillance network for periods of increased incidence of Influenza].","year":"2012","authors_or_first_author":"J Arranz Izquierdo; A Leiva Rus; E Carandell Jäger; A Pujol Buades; M C Méndez Castell; A Salvà Fiol; M Esteva Cantó","doi":"10.1016/j.aprim.2011.03.008","pmid":"21924796","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21924796/"}]}
+{"named_source_id":"NS-SURVEILLANCE-097","source_to_resolve":{"method_label":"molecular_diagnostic_control_contamination","canonical_name":"Synthetic control-material contamination in molecular diagnostics","family":"surveillance_measurement","source_role":"diagnostic","seed_candidate_key_for_context_only":"PMID:32433015","title":"Delayed Laboratory Response to COVID-19 Caused by Molecular Diagnostic Contamination.","first_author":"Ramona Mögling","year":"2020","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/32433015/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-208","query_variant":"exact_title","query":"Delayed[Title] AND Laboratory[Title] AND Response[Title] AND COVID[Title] AND 19[Title] AND Caused[Title] AND Molecular[Title] AND Diagnostic[Title] AND Contamination[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-208","query_variant":"exact_title","candidate_key":"PMID:32433015","candidate_rank":"1","title":"Delayed Laboratory Response to COVID-19 Caused by Molecular Diagnostic Contamination.","year":"2020","authors_or_first_author":"Ramona Mögling; Adam Meijer; Natasa Berginc; Sylvia Bruisten; Remi Charrel; Bruno Coutard; Isabella Eckerle; Vincent Enouf; Olav Hungnes; Gülay Korukluoglu; Thanos Kossyvakis; Andreas Mentis; Richard Molenkamp; Shaman Muradrasoli; Anna Papa; Fiona Pigny; Laurence Thirion; Sylvie van der Werf; Chantal Reusken","doi":"10.3201/eid2608.201843","pmid":"32433015","primary_url":"https://pubmed.ncbi.nlm.nih.gov/32433015/"}]}
+{"named_source_id":"NS-SURVEILLANCE-098","source_to_resolve":{"method_label":"travel_volume_denominator_risk_estimation","canonical_name":"Travel-volume denominator risk estimation","family":"surveillance_measurement","source_role":"infectious_application","seed_candidate_key_for_context_only":"PMID:28537548","title":"Travel-associated gonorrhoea in four Nordic countries, 2008 to 2013.","first_author":"Julien Beauté","year":"2017","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/28537548/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-209","query_variant":"exact_title","query":"Travel[Title] AND associated[Title] AND gonorrhoea[Title] AND four[Title] AND Nordic[Title] AND countries[Title] AND 2008[Title] AND 2013[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-209","query_variant":"exact_title","candidate_key":"PMID:28537548","candidate_rank":"1","title":"Travel-associated gonorrhoea in four Nordic countries, 2008 to 2013.","year":"2017","authors_or_first_author":"Julien Beauté; Susan Cowan; Eija Hiltunen-Back; Hilde Kløvstad; Inga Velicko; Gianfranco Spiteri","doi":"10.2807/1560-7917.es.2017.22.20.30537","pmid":"28537548","primary_url":"https://pubmed.ncbi.nlm.nih.gov/28537548/"}]}
+{"named_source_id":"NS-SURVEILLANCE-099","source_to_resolve":{"method_label":"underascertainment_adjusted_burden_estimation","canonical_name":"Under-ascertainment-adjusted incidence and burden estimation","family":"surveillance_measurement","source_role":"authoritative_candidate","seed_candidate_key_for_context_only":"PMID:21435207","title":"Hospital-based, prospective, multicentre surveillance to determine the incidence of intussusception in children aged below 15 years in Germany.","first_author":"Nicolai Bissantz","year":"2011","source_url_for_context_only":"https://pubmed.ncbi.nlm.nih.gov/21435207/"},"supporting_queries":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-210","query_variant":"exact_title","query":"Hospital[Title] AND based[Title] AND prospective[Title] AND multicentre[Title] AND surveillance[Title] AND determine[Title] AND incidence[Title] AND intussusception[Title] AND children[Title] AND aged[Title] AND below[Title] AND 15[Title] AND years[Title] AND Germany[Title]"}],"manifested_candidates":[{"query_id":"SEARCH-20260722-LINEAGE-SURVEILLANCE-210","query_variant":"exact_title","candidate_key":"PMID:21435207","candidate_rank":"1","title":"Hospital-based, prospective, multicentre surveillance to determine the incidence of intussusception in children aged below 15 years in Germany.","year":"2011","authors_or_first_author":"Nicolai Bissantz; Andreas C Jenke; Matthias Trampisch; Renate Klaassen-Mielke; Kathrin Bissantz; Hans-Joachim Trampisch; Tim Holland-Letz","doi":"10.1186/1471-230x-11-26","pmid":"21435207","primary_url":"https://pubmed.ncbi.nlm.nih.gov/21435207/"}]}
 
 exec
 /bin/zsh -lc "jq -r '.[] | [.named_source_id, .source_to_resolve.title, .source_to_resolve.first_author, .source_to_resolve.year, (.manifested_candidates|length), ([.manifested_candidates[].candidate_key]|join(\"|\")), ([.manifested_candidates[].title]|join(\" || \")), ([.manifested_candidates[].authors_or_first_author]|join(\" || \")), ([.manifested_candidates[].year]|join(\"|\")), ([.manifested_candidates[].doi]|join(\"|\")), ([.manifested_candidates[].pmid]|join(\"|\"))] | @tsv' 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/identity_review_batches/identity_batch_09.json" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery

@@ -1,0 +1,1535 @@
+{
+  "batch_id": "REPAIR-IDENTITY-001",
+  "sources": [
+    {
+      "named_source_id": "NS-CAUSAL-098",
+      "method_label": "clinical_early_warning_scores_and_biomarkers",
+      "canonical_name": "Clinical early-warning scores and biomarkers",
+      "source_role": "guidance",
+      "target_title": "Prioritizing Maternal Sepsis: National Adoption of an Obstetric Early Warning System to Prevent Morbidity and Mortality.",
+      "target_first_author": "Wesley Edwards",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32171506/",
+      "seed_candidate_key": "PMID:32171506",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-217",
+          "query_variant": "exact_title",
+          "query": "Prioritizing[Title] AND Maternal[Title] AND Sepsis[Title] AND National[Title] AND Adoption[Title] AND Obstetric[Title] AND Early[Title] AND Warning[Title] AND System[Title] AND Prevent[Title] AND Morbidity[Title] AND Mortality[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32171506",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-217",
+          "title": "Prioritizing Maternal Sepsis: National Adoption of an Obstetric Early Warning System to Prevent Morbidity and Mortality.",
+          "year": "2020",
+          "authors": "Wesley Edwards; Sharon Dore; Julie van Schalkwyk; B Anthony Armson",
+          "doi": "10.1016/j.jogc.2019.11.072",
+          "pmid": "32171506",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32171506/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-099",
+      "method_label": "clinical_early_warning_scores_and_biomarkers",
+      "canonical_name": "Clinical early-warning scores and biomarkers",
+      "source_role": "implementation",
+      "target_title": "Computerised sepsis protocol management. Description of an early warning system.",
+      "target_first_author": "Begoña de Dios",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/28087145/",
+      "seed_candidate_key": "PMID:28087145",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-218",
+          "query_variant": "exact_title",
+          "query": "Computerised[Title] AND sepsis[Title] AND protocol[Title] AND management[Title] AND Description[Title] AND early[Title] AND warning[Title] AND system[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:28087145",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-218",
+          "title": "Computerised sepsis protocol management. Description of an early warning system.",
+          "year": "2018",
+          "authors": "Begoña de Dios; Marcio Borges; Timothy D Smith; Alberto Del Castillo; Antonia Socias; Leticia Gutiérrez; Jordi Nicolás; Bartolomé Lladó; Jose A Roche; Maria P Díaz; Yolanda Lladó; Equipo de Sepsis",
+          "doi": "10.1016/j.eimc.2016.11.011",
+          "pmid": "28087145",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28087145/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-100",
+      "method_label": "clinical_early_warning_scores_and_biomarkers",
+      "canonical_name": "Clinical early-warning scores and biomarkers",
+      "source_role": "infectious_application",
+      "target_title": "Delayed Treatment of Bloodstream Infection at Admission is Associated With Initial Low Early Warning Score and Increased Mortality.",
+      "target_first_author": "Christian P Fischer",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37644974/",
+      "seed_candidate_key": "PMID:37644974",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-219",
+          "query_variant": "exact_title",
+          "query": "Delayed[Title] AND Treatment[Title] AND Bloodstream[Title] AND Infection[Title] AND Admission[Title] AND is[Title] AND Associated[Title] AND Initial[Title] AND Low[Title] AND Early[Title] AND Warning[Title] AND Score[Title] AND Increased[Title] AND Mortality[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-243",
+          "query_variant": "title_first_author",
+          "query": "Treatment[Title] AND Bloodstream[Title] AND Infection[Title] AND Associated[Title] AND Fischer[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37644974",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-243",
+          "title": "Delayed Treatment of Bloodstream Infection at Admission is Associated With Initial Low Early Warning Score and Increased Mortality.",
+          "year": "2023",
+          "authors": "Christian P Fischer; Emili Kastoft; Bente Ruth Scharvik Olesen; Bjarne Myrup",
+          "doi": "10.1097/cce.0000000000000959",
+          "pmid": "37644974",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37644974/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-101",
+      "method_label": "counterfactual_policy_vaccination_impact",
+      "canonical_name": "Counterfactual policy and vaccination impact models",
+      "source_role": "authoritative_candidate",
+      "target_title": "A COVID-19 model incorporating variants, vaccination, waning immunity, and population behavior.",
+      "target_first_author": "Zachary LaJoie",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36437375/",
+      "seed_candidate_key": "PMID:36437375",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-220",
+          "query_variant": "exact_title",
+          "query": "COVID[Title] AND 19[Title] AND model[Title] AND incorporating[Title] AND variants[Title] AND vaccination[Title] AND waning[Title] AND immunity[Title] AND population[Title] AND behavior[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36437375",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-220",
+          "title": "A COVID-19 model incorporating variants, vaccination, waning immunity, and population behavior.",
+          "year": "2022",
+          "authors": "Zachary LaJoie; Thomas Usherwood; Shailen Sampath; Vikas Srivastava",
+          "doi": "10.1038/s41598-022-24967-z",
+          "pmid": "36437375",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36437375/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-102",
+      "method_label": "difference_in_differences_event_study",
+      "canonical_name": "Legacy difference-in-differences and event-study designs",
+      "source_role": "diagnostic",
+      "target_title": "School Mask Mandates and COVID-19: The Challenge of Using Difference-in-Differences Analysis of Observational Data to Estimate the Effectiveness of a Public Health Intervention.",
+      "target_first_author": "Ambarish Chandra",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39374524/",
+      "seed_candidate_key": "PMID:39374524",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-221",
+          "query_variant": "exact_title",
+          "query": "School[Title] AND Mask[Title] AND Mandates[Title] AND COVID[Title] AND 19[Title] AND Challenge[Title] AND Difference[Title] AND Differences[Title] AND Analysis[Title] AND Observational[Title] AND Data[Title] AND Estimate[Title] AND Effectiveness[Title] AND Public[Title] AND Health[Title] AND Intervention[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39374524",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-221",
+          "title": "School Mask Mandates and COVID-19: The Challenge of Using Difference-in-Differences Analysis of Observational Data to Estimate the Effectiveness of a Public Health Intervention.",
+          "year": "2024",
+          "authors": "Ambarish Chandra; Tracy Beth Høeg; Shamez Ladhani; Vinay Prasad; Ram Duriseti",
+          "doi": "10.7326/m23-2907",
+          "pmid": "39374524",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39374524/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-103",
+      "method_label": "instrumental_variables",
+      "canonical_name": "Instrumental-variable designs",
+      "source_role": "authoritative_candidate",
+      "target_title": "Nonparametric binary instrumental variable analysis of competing risks data.",
+      "target_first_author": "Amy Richardson",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27354709/",
+      "seed_candidate_key": "PMID:27354709",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-222",
+          "query_variant": "exact_title",
+          "query": "Nonparametric[Title] AND binary[Title] AND instrumental[Title] AND variable[Title] AND analysis[Title] AND competing[Title] AND risks[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27354709",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-222",
+          "title": "Nonparametric binary instrumental variable analysis of competing risks data.",
+          "year": "2017",
+          "authors": "Amy Richardson; Michael G Hudgens; Jason P Fine; M Alan Brookhart",
+          "doi": "10.1093/biostatistics/kxw023",
+          "pmid": "27354709",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27354709/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-104",
+      "method_label": "interrupted_time_series",
+      "canonical_name": "Interrupted time series and segmented regression",
+      "source_role": "authoritative_candidate",
+      "target_title": "A Multi-Age-Group Interrupted Time-Series Study for Evaluating the Effectiveness of National Expanded Program on Immunization on Mumps.",
+      "target_first_author": "Chen Shi",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36298452/",
+      "seed_candidate_key": "PMID:36298452",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-223",
+          "query_variant": "exact_title",
+          "query": "Multi[Title] AND Age[Title] AND Group[Title] AND Interrupted[Title] AND Time[Title] AND Series[Title] AND Study[Title] AND Evaluating[Title] AND Effectiveness[Title] AND National[Title] AND Expanded[Title] AND Program[Title] AND Immunization[Title] AND Mumps[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36298452",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-223",
+          "title": "A Multi-Age-Group Interrupted Time-Series Study for Evaluating the Effectiveness of National Expanded Program on Immunization on Mumps.",
+          "year": "2022",
+          "authors": "Chen Shi; Wen-Hui Liu; Lin Yang; Ze-Lin Yan; Li Li; Zhou-Bin Zhang; Chun-Quan Ou",
+          "doi": "10.3390/vaccines10101587",
+          "pmid": "36298452",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36298452/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-105",
+      "method_label": "interrupted_time_series",
+      "canonical_name": "Interrupted time series and segmented regression",
+      "source_role": "diagnostic",
+      "target_title": "In praise of Prais-Winsten: An evaluation of methods used to account for autocorrelation in interrupted time series.",
+      "target_first_author": "C Bottomley",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36722328/",
+      "seed_candidate_key": "PMID:36722328",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-224",
+          "query_variant": "exact_title",
+          "query": "praise[Title] AND Prais[Title] AND Winsten[Title] AND evaluation[Title] AND methods[Title] AND used[Title] AND account[Title] AND autocorrelation[Title] AND interrupted[Title] AND time[Title] AND series[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36722328",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-224",
+          "title": "In praise of Prais-Winsten: An evaluation of methods used to account for autocorrelation in interrupted time series.",
+          "year": "2023",
+          "authors": "C Bottomley; M Ooko; A Gasparrini; R H Keogh",
+          "doi": "10.1002/sim.9669",
+          "pmid": "36722328",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36722328/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-106",
+      "method_label": "negative_controls",
+      "canonical_name": "Negative-control designs",
+      "source_role": "authoritative_candidate",
+      "target_title": "Multiply robust causal inference with double-negative control adjustment for categorical unmeasured confounding.",
+      "target_first_author": "Xu Shi",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33376449/",
+      "seed_candidate_key": "PMID:33376449",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-225",
+          "query_variant": "exact_title",
+          "query": "Multiply[Title] AND robust[Title] AND causal[Title] AND inference[Title] AND double[Title] AND negative[Title] AND control[Title] AND adjustment[Title] AND categorical[Title] AND unmeasured[Title] AND confounding[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33376449",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-225",
+          "title": "Multiply robust causal inference with double-negative control adjustment for categorical unmeasured confounding.",
+          "year": "2020",
+          "authors": "Xu Shi; Wang Miao; Jennifer C Nelson; Eric J Tchetgen Tchetgen",
+          "doi": "10.1111/rssb.12361",
+          "pmid": "33376449",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33376449/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-107",
+      "method_label": "negative_controls",
+      "canonical_name": "Negative-control designs",
+      "source_role": "diagnostic",
+      "target_title": "Validating and leveraging non-SARS-CoV-2 respiratory infection as a negative control outcome in a phase 3 COVID-19 vaccine trial with extended observational follow-up.",
+      "target_first_author": "Ethan Ashby",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/40838594/",
+      "seed_candidate_key": "PMID:40838594",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-226",
+          "query_variant": "exact_title",
+          "query": "Validating[Title] AND leveraging[Title] AND non[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND respiratory[Title] AND infection[Title] AND negative[Title] AND control[Title] AND outcome[Title] AND phase[Title] AND 3[Title] AND COVID[Title] AND 19[Title] AND vaccine[Title] AND trial[Title] AND extended[Title] AND observational[Title] AND follow[Title] AND up[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:40838594",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-226",
+          "title": "Validating and leveraging non-SARS-CoV-2 respiratory infection as a negative control outcome in a phase 3 COVID-19 vaccine trial with extended observational follow-up.",
+          "year": "2026",
+          "authors": "Ethan Ashby; Holly Janes; Dean Follmann; Peter B Gilbert; Honghong Zhou; Xiaowei Wang; Bethany Girard; Frances Priddy; James G Kublin; Lawrence Corey; Kathleen M Neuzil; Lindsey R Baden; Hana M El Sahly; Bo Zhang; COVE study group",
+          "doi": "10.1093/aje/kwaf176",
+          "pmid": "40838594",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40838594/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-108",
+      "method_label": "observational_effect_estimation_studies",
+      "canonical_name": "Observational effect-estimation studies",
+      "source_role": "diagnostic",
+      "target_title": "A compelling demonstration of why traditional statistical regression models cannot be used to identify risk factors from case data on infectious diseases: a simulation study.",
+      "target_first_author": "Solveig Engebretsen",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35596137/",
+      "seed_candidate_key": "PMID:35596137",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-227",
+          "query_variant": "exact_title",
+          "query": "compelling[Title] AND demonstration[Title] AND why[Title] AND traditional[Title] AND statistical[Title] AND regression[Title] AND models[Title] AND cannot[Title] AND be[Title] AND used[Title] AND identify[Title] AND risk[Title] AND factors[Title] AND case[Title] AND data[Title] AND infectious[Title] AND diseases[Title] AND simulation[Title] AND study[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-244",
+          "query_variant": "title_first_author",
+          "query": "compelling[Title] AND demonstration[Title] AND traditional[Title] AND statistical[Title] AND Engebretsen[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35596137",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-244",
+          "title": "A compelling demonstration of why traditional statistical regression models cannot be used to identify risk factors from case data on infectious diseases: a simulation study.",
+          "year": "2022",
+          "authors": "Solveig Engebretsen; Gunnar Rø; Birgitte Freiesleben de Blasio",
+          "doi": "10.1186/s12874-022-01565-1",
+          "pmid": "35596137",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35596137/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-109",
+      "method_label": "parametric_g_formula",
+      "canonical_name": "Parametric g-formula and g-computation",
+      "source_role": "guidance",
+      "target_title": "Causal Effects of Time-Varying Treatments: The G-Formula.",
+      "target_first_author": "Carmine Zoccali",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/42377359/",
+      "seed_candidate_key": "PMID:42377359",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-228",
+          "query_variant": "exact_title",
+          "query": "Causal[Title] AND Effects[Title] AND Time[Title] AND Varying[Title] AND Treatments[Title] AND G[Title] AND Formula[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:42377359",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-228",
+          "title": "Causal Effects of Time-Varying Treatments: The G-Formula.",
+          "year": "2026",
+          "authors": "Carmine Zoccali; Giovanni Tripepi",
+          "doi": "10.1111/eci.70239",
+          "pmid": "42377359",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42377359/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-110",
+      "method_label": "predictive_model_and_biomarker_development",
+      "canonical_name": "Predictive-model and biomarker development studies",
+      "source_role": "diagnostic",
+      "target_title": "Protein language model embeddings improve HIV drug resistance prediction: a comprehensive benchmark with attention-based interpretability.",
+      "target_first_author": "Hayden Farquhar",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/42105210/",
+      "seed_candidate_key": "PMID:42105210",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-229",
+          "query_variant": "exact_title",
+          "query": "Protein[Title] AND language[Title] AND model[Title] AND embeddings[Title] AND improve[Title] AND HIV[Title] AND drug[Title] AND resistance[Title] AND prediction[Title] AND comprehensive[Title] AND benchmark[Title] AND attention[Title] AND based[Title] AND interpretability[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:42105210",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-229",
+          "title": "Protein language model embeddings improve HIV drug resistance prediction: a comprehensive benchmark with attention-based interpretability.",
+          "year": "2026",
+          "authors": "Hayden Farquhar",
+          "doi": "10.1093/bioinformatics/btag260",
+          "pmid": "42105210",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42105210/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-111",
+      "method_label": "predictive_model_and_biomarker_development",
+      "canonical_name": "Predictive-model and biomarker development studies",
+      "source_role": "implementation",
+      "target_title": "Face mask wearing image dataset: A comprehensive benchmark for image-based face mask detection models.",
+      "target_first_author": "Yogesh Suryawanshi",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/38075619/",
+      "seed_candidate_key": "PMID:38075619",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-230",
+          "query_variant": "exact_title",
+          "query": "Face[Title] AND mask[Title] AND wearing[Title] AND image[Title] AND dataset[Title] AND comprehensive[Title] AND benchmark[Title] AND based[Title] AND detection[Title] AND models[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:38075619",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-230",
+          "title": "Face mask wearing image dataset: A comprehensive benchmark for image-based face mask detection models.",
+          "year": "2023",
+          "authors": "Yogesh Suryawanshi; Vishal Meshram; Vidula Meshram; Kailas Patil; Prawit Chumchu",
+          "doi": "10.1016/j.dib.2023.109755",
+          "pmid": "38075619",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38075619/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-112",
+      "method_label": "regression_discontinuity",
+      "canonical_name": "Regression discontinuity designs",
+      "source_role": "authoritative_candidate",
+      "target_title": "Modified sharp regression discontinuity model to settings with fuzzy variables.",
+      "target_first_author": "Portia K Mafukidze",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37853487/",
+      "seed_candidate_key": "PMID:37853487",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-231",
+          "query_variant": "exact_title",
+          "query": "Modified[Title] AND sharp[Title] AND regression[Title] AND discontinuity[Title] AND model[Title] AND settings[Title] AND fuzzy[Title] AND variables[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37853487",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-231",
+          "title": "Modified sharp regression discontinuity model to settings with fuzzy variables.",
+          "year": "2023",
+          "authors": "Portia K Mafukidze; Samuel M Mwalili; Thomas Mageto",
+          "doi": "10.1186/s13104-023-06561-2",
+          "pmid": "37853487",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37853487/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-113",
+      "method_label": "regression_discontinuity",
+      "canonical_name": "Regression discontinuity designs",
+      "source_role": "correction",
+      "target_title": "Correction: Investigating the causal effects of COVID-19 vaccination on the adoption of protective behaviors in Japan: Insights from a fuzzy regression discontinuity design.",
+      "target_first_author": "Fengming Chen",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/41666099/",
+      "seed_candidate_key": "PMID:41666099",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-232",
+          "query_variant": "exact_title",
+          "query": "Correction[Title] AND Investigating[Title] AND causal[Title] AND effects[Title] AND COVID[Title] AND 19[Title] AND vaccination[Title] AND adoption[Title] AND protective[Title] AND behaviors[Title] AND Japan[Title] AND Insights[Title] AND fuzzy[Title] AND regression[Title] AND discontinuity[Title] AND design[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:41666099",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-232",
+          "title": "Correction: Investigating the causal effects of COVID-19 vaccination on the adoption of protective behaviors in Japan: Insights from a fuzzy regression discontinuity design.",
+          "year": "2026",
+          "authors": "Fengming Chen; Hayato Nakanishi; Yoichi Sekizawa; Sae Ochi; Mirai So",
+          "doi": "10.1371/journal.pone.0342590",
+          "pmid": "41666099",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41666099/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-114",
+      "method_label": "regression_discontinuity",
+      "canonical_name": "Regression discontinuity designs",
+      "source_role": "implementation",
+      "target_title": "A guide to regression discontinuity designs in medical applications.",
+      "target_first_author": "Matias D Cattaneo",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37528626/",
+      "seed_candidate_key": "PMID:37528626",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-233",
+          "query_variant": "exact_title",
+          "query": "guide[Title] AND regression[Title] AND discontinuity[Title] AND designs[Title] AND medical[Title] AND applications[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37528626",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-233",
+          "title": "A guide to regression discontinuity designs in medical applications.",
+          "year": "2023",
+          "authors": "Matias D Cattaneo; Luke Keele; Rocío Titiunik",
+          "doi": "10.1002/sim.9861",
+          "pmid": "37528626",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37528626/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-115",
+      "method_label": "synthetic_control",
+      "canonical_name": "Synthetic control methods",
+      "source_role": "authoritative_candidate",
+      "target_title": "Incorporating Information on Control Diseases Across Space and Time to Improve Estimation of the Population-level Impact of Vaccines.",
+      "target_first_author": "Kayoko Shioda",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33783394/",
+      "seed_candidate_key": "PMID:33783394",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-234",
+          "query_variant": "exact_title",
+          "query": "Incorporating[Title] AND Information[Title] AND Control[Title] AND Diseases[Title] AND Across[Title] AND Space[Title] AND Time[Title] AND Improve[Title] AND Estimation[Title] AND Population[Title] AND level[Title] AND Impact[Title] AND Vaccines[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33783394",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-234",
+          "title": "Incorporating Information on Control Diseases Across Space and Time to Improve Estimation of the Population-level Impact of Vaccines.",
+          "year": "2021",
+          "authors": "Kayoko Shioda; Jiachen Cai; Joshua L Warren; Daniel M Weinberger",
+          "doi": "10.1097/ede.0000000000001341",
+          "pmid": "33783394",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33783394/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-116",
+      "method_label": "synthetic_control",
+      "canonical_name": "Synthetic control methods",
+      "source_role": "correction",
+      "target_title": "Erratum: The effects of non-pharmaceutical interventions on COVID-19 mortality: A generalized synthetic control approach across 169 countries.",
+      "target_first_author": "Frontiers Production Office",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37050941/",
+      "seed_candidate_key": "PMID:37050941",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-235",
+          "query_variant": "exact_title",
+          "query": "Erratum[Title] AND effects[Title] AND non[Title] AND pharmaceutical[Title] AND interventions[Title] AND COVID[Title] AND 19[Title] AND mortality[Title] AND generalized[Title] AND synthetic[Title] AND control[Title] AND approach[Title] AND across[Title] AND 169[Title] AND countries[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37050941",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-235",
+          "title": "Erratum: The effects of non-pharmaceutical interventions on COVID-19 mortality: A generalized synthetic control approach across 169 countries.",
+          "year": "2023",
+          "authors": "Frontiers Production Office",
+          "doi": "10.3389/fpubh.2023.1186935",
+          "pmid": "37050941",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37050941/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-117",
+      "method_label": "target_trial_emulation",
+      "canonical_name": "Target-trial emulation",
+      "source_role": "authoritative_candidate",
+      "target_title": "Emulating target trials of postexposure vaccines using observational data.",
+      "target_first_author": "Christopher Boyer",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39270677/",
+      "seed_candidate_key": "PMID:39270677",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-236",
+          "query_variant": "exact_title",
+          "query": "Emulating[Title] AND target[Title] AND trials[Title] AND postexposure[Title] AND vaccines[Title] AND observational[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39270677",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-236",
+          "title": "Emulating target trials of postexposure vaccines using observational data.",
+          "year": "2024",
+          "authors": "Christopher Boyer; Marc Lipsitch",
+          "doi": "10.1093/aje/kwae350",
+          "pmid": "39270677",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39270677/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-118",
+      "method_label": "target_trial_emulation",
+      "canonical_name": "Target-trial emulation",
+      "source_role": "correction",
+      "target_title": "Erratum: Comparison of the Test-negative Design and Cohort Design With Explicit Target Trial Emulation for Evaluating COVID-19 Vaccine Effectiveness.",
+      "target_first_author": "Guilin Li",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/40173425/",
+      "seed_candidate_key": "PMID:40173425",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-237",
+          "query_variant": "exact_title",
+          "query": "Erratum[Title] AND Comparison[Title] AND Test[Title] AND negative[Title] AND Design[Title] AND Cohort[Title] AND Explicit[Title] AND Target[Title] AND Trial[Title] AND Emulation[Title] AND Evaluating[Title] AND COVID[Title] AND 19[Title] AND Vaccine[Title] AND Effectiveness[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:40173425",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-237",
+          "title": "Erratum: Comparison of the Test-negative Design and Cohort Design With Explicit Target Trial Emulation for Evaluating COVID-19 Vaccine Effectiveness.",
+          "year": "2025",
+          "authors": "Guilin Li; Hanna Gerlovin; Michael J Figueroa Muñiz; Jessica K Wise; Arin L Madenci; James M Robins; Mihaela Aslan; Kelly Cho; John Michael Gaziano; Marc Lipsitch; Juan P Casas; Miguel A Hernán; Barbra A Dickerman",
+          "doi": "10.1097/ede.0000000000001830",
+          "pmid": "40173425",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40173425/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-119",
+      "method_label": "target_trial_emulation",
+      "canonical_name": "Target-trial emulation",
+      "source_role": "diagnostic",
+      "target_title": "The implementation of target trial emulation for causal inference: a scoping review.",
+      "target_first_author": "Hanxiao Zuo",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37562726/",
+      "seed_candidate_key": "PMID:37562726",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-238",
+          "query_variant": "exact_title",
+          "query": "implementation[Title] AND target[Title] AND trial[Title] AND emulation[Title] AND causal[Title] AND inference[Title] AND scoping[Title] AND review[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37562726",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-238",
+          "title": "The implementation of target trial emulation for causal inference: a scoping review.",
+          "year": "2023",
+          "authors": "Hanxiao Zuo; Lin Yu; Sandra M Campbell; Shelby S Yamamoto; Yan Yuan",
+          "doi": "10.1016/j.jclinepi.2023.08.003",
+          "pmid": "37562726",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37562726/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-120",
+      "method_label": "target_trial_emulation",
+      "canonical_name": "Target-trial emulation",
+      "source_role": "guidance",
+      "target_title": "Emulating a Target Trial of Interventions Initiated During Pregnancy with Healthcare Databases: The Example of COVID-19 Vaccination.",
+      "target_first_author": "Sonia Hernández-Díaz",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36722806/",
+      "seed_candidate_key": "PMID:36722806",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-239",
+          "query_variant": "exact_title",
+          "query": "Emulating[Title] AND Target[Title] AND Trial[Title] AND Interventions[Title] AND Initiated[Title] AND During[Title] AND Pregnancy[Title] AND Healthcare[Title] AND Databases[Title] AND Example[Title] AND COVID[Title] AND 19[Title] AND Vaccination[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-245",
+          "query_variant": "title_first_author",
+          "query": "Emulating[Title] AND Interventions[Title] AND Healthcare[Title] AND Vaccination[Title] AND Hernández-Díaz[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:38630512",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-245",
+          "title": "Emulating a Target Trial of Interventions Initiated During Pregnancy With Healthcare Databases: The Example of COVID-19 Vaccination. The Authors Respond.",
+          "year": "2024",
+          "authors": "Sonia Hernández-Díaz; Krista F Huybrechts; Miguel A Hernán",
+          "doi": "10.1097/ede.0000000000001710",
+          "pmid": "38630512",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38630512/"
+        },
+        {
+          "candidate_key": "PMID:36722806",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-245",
+          "title": "Emulating a Target Trial of Interventions Initiated During Pregnancy with Healthcare Databases: The Example of COVID-19 Vaccination.",
+          "year": "2023",
+          "authors": "Sonia Hernández-Díaz; Krista F Huybrechts; Yu-Han Chiu; Jennifer J Yland; Brian T Bateman; Miguel A Hernán",
+          "doi": "10.1097/ede.0000000000001562",
+          "pmid": "36722806",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36722806/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-121",
+      "method_label": "targeted_learning_tmle",
+      "canonical_name": "Targeted learning and targeted maximum-likelihood estimation",
+      "source_role": "diagnostic",
+      "target_title": "Targeted maximum likelihood estimation of causal effects with interference: A simulation study.",
+      "target_first_author": "Paul N Zivich",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35852017/",
+      "seed_candidate_key": "PMID:35852017",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-240",
+          "query_variant": "exact_title",
+          "query": "Targeted[Title] AND maximum[Title] AND likelihood[Title] AND estimation[Title] AND causal[Title] AND effects[Title] AND interference[Title] AND simulation[Title] AND study[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35852017",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-240",
+          "title": "Targeted maximum likelihood estimation of causal effects with interference: A simulation study.",
+          "year": "2022",
+          "authors": "Paul N Zivich; Michael G Hudgens; Maurice A Brookhart; James Moody; David J Weber; Allison E Aiello",
+          "doi": "10.1002/sim.9525",
+          "pmid": "35852017",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35852017/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-122",
+      "method_label": "test_negative_design",
+      "canonical_name": "Test-negative case-control design",
+      "source_role": "authoritative_candidate",
+      "target_title": "Incorporating Real-time Influenza Detection Into the Test-negative Design for Estimating Influenza Vaccine Effectiveness: The Real-time Test-negative Design (rtTND).",
+      "target_first_author": "Leora R Feldstein",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32974644/",
+      "seed_candidate_key": "PMID:32974644",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-241",
+          "query_variant": "exact_title",
+          "query": "Incorporating[Title] AND Real[Title] AND time[Title] AND Influenza[Title] AND Detection[Title] AND Test[Title] AND negative[Title] AND Design[Title] AND Estimating[Title] AND Vaccine[Title] AND Effectiveness[Title] AND rtTND[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32974644",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-241",
+          "title": "Incorporating Real-time Influenza Detection Into the Test-negative Design for Estimating Influenza Vaccine Effectiveness: The Real-time Test-negative Design (rtTND).",
+          "year": "2021",
+          "authors": "Leora R Feldstein; Wesley H Self; Jill M Ferdinands; Adrienne G Randolph; Michael Aboodi; Adrienne H Baughman; Samuel M Brown; Matthew C Exline; D Clark Files; Kevin Gibbs; Adit A Ginde; Michelle N Gong; Carlos G Grijalva; Natasha Halasa; Akram Khan; Christopher J Lindsell; Margaret Newhams; Ithan D Peltan; Matthew E Prekker; Todd W Rice; Nathan I Shapiro; Jay Steingrub; H Keipp Talbot; M Elizabeth Halloran; Manish Patel; Influenza Vaccine Effectiveness in the Critically Ill (IVY) Investigators and the Pediatric Intensive Care Influenza Vaccine Effectiveness (PICFLU-VE) Investigators",
+          "doi": "10.1093/cid/ciaa1453",
+          "pmid": "32974644",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32974644/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-CAUSAL-123",
+      "method_label": "threshold_regression_change_point_models",
+      "canonical_name": "Threshold and segmented regression change-point models",
+      "source_role": "diagnostic",
+      "target_title": "Calculation of the ELISA's cut-off based on the change-point analysis method for detection of Trypanosoma cruzi infection in Bolivian dogs in the absence of controls.",
+      "target_first_author": "Frédéric Lardeux",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27384081/",
+      "seed_candidate_key": "PMID:27384081",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-242",
+          "query_variant": "exact_title",
+          "query": "Calculation[Title] AND ELISA[Title] AND s[Title] AND cut[Title] AND off[Title] AND based[Title] AND change[Title] AND point[Title] AND analysis[Title] AND method[Title] AND detection[Title] AND Trypanosoma[Title] AND cruzi[Title] AND infection[Title] AND Bolivian[Title] AND dogs[Title] AND absence[Title] AND controls[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27384081",
+          "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-242",
+          "title": "Calculation of the ELISA's cut-off based on the change-point analysis method for detection of Trypanosoma cruzi infection in Bolivian dogs in the absence of controls.",
+          "year": "2016",
+          "authors": "Frédéric Lardeux; Gino Torrico; Claudia Aliaga",
+          "doi": "10.1590/0074-02760160119",
+          "pmid": "27384081",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27384081/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-060",
+      "method_label": "evidence_robustness_methods",
+      "canonical_name": "Other evidence-synthesis and robustness methods",
+      "source_role": "guidance",
+      "target_title": "Informing the dosing of interventions in randomized trials.",
+      "target_first_author": "Corrine I Voils",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22841930/",
+      "seed_candidate_key": "PMID:22841930",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-132",
+          "query_variant": "exact_title",
+          "query": "Informing[Title] AND dosing[Title] AND interventions[Title] AND randomized[Title] AND trials[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22841930",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-132",
+          "title": "Informing the dosing of interventions in randomized trials.",
+          "year": "2012",
+          "authors": "Corrine I Voils; Yunkyung Chang; Jamie Crandell; Jennifer Leeman; Margarete Sandelowski; Matthew L Maciejewski",
+          "doi": "10.1016/j.cct.2012.07.011",
+          "pmid": "22841930",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22841930/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-061",
+      "method_label": "evidence_synthesis_reviews",
+      "canonical_name": "Evidence syntheses and methodological reviews",
+      "source_role": "authoritative_candidate",
+      "target_title": "Methods for estimating the burden of acute tropical infectious diseases: A scoping review.",
+      "target_first_author": "Qian Wang",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/42081584/",
+      "seed_candidate_key": "PMID:42081584",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-133",
+          "query_variant": "exact_title",
+          "query": "Methods[Title] AND estimating[Title] AND burden[Title] AND acute[Title] AND tropical[Title] AND infectious[Title] AND diseases[Title] AND scoping[Title] AND review[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:42081584",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-133",
+          "title": "Methods for estimating the burden of acute tropical infectious diseases: A scoping review.",
+          "year": "2026",
+          "authors": "Qian Wang; Richard James Maude; Nicholas Philip John Day; Benn Sartorius",
+          "doi": "10.1371/journal.pntd.0013359",
+          "pmid": "42081584",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42081584/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-062",
+      "method_label": "evidence_synthesis_reviews",
+      "canonical_name": "Evidence syntheses and methodological reviews",
+      "source_role": "guidance",
+      "target_title": "Enhanced influenza vaccination for older adults in Europe: a review of the current situation and expert recommendations for the future.",
+      "target_first_author": "Gaëtan Gavazzi",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/40311084/",
+      "seed_candidate_key": "PMID:40311084",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-134",
+          "query_variant": "exact_title",
+          "query": "Enhanced[Title] AND influenza[Title] AND vaccination[Title] AND older[Title] AND adults[Title] AND Europe[Title] AND review[Title] AND current[Title] AND situation[Title] AND expert[Title] AND recommendations[Title] AND future[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:40311084",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-134",
+          "title": "Enhanced influenza vaccination for older adults in Europe: a review of the current situation and expert recommendations for the future.",
+          "year": "2025",
+          "authors": "Gaëtan Gavazzi; Bertrand Fougère; Olivier Hanon; Isabel Leroux-Roels; Etienne Brochot; Elodie Blanchard; Colin A Russell; Marc Paccalin; Tino F Schwarz",
+          "doi": "10.1080/14760584.2025.2499728",
+          "pmid": "40311084",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40311084/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-063",
+      "method_label": "outcome_definition_sensitivity",
+      "canonical_name": "Outcome-definition sensitivity analysis",
+      "source_role": "diagnostic",
+      "target_title": "Case fatality risk of influenza A (H1N1pdm09): a systematic review.",
+      "target_first_author": "Jessica Y Wong",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/24045719/",
+      "seed_candidate_key": "PMID:24045719",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-135",
+          "query_variant": "exact_title",
+          "query": "Case[Title] AND fatality[Title] AND risk[Title] AND influenza[Title] AND H1N1pdm09[Title] AND systematic[Title] AND review[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:24045719",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-135",
+          "title": "Case fatality risk of influenza A (H1N1pdm09): a systematic review.",
+          "year": "2013",
+          "authors": "Jessica Y Wong; Heath Kelly; Dennis K M Ip; Joseph T Wu; Gabriel M Leung; Benjamin J Cowling",
+          "doi": "10.1097/ede.0b013e3182a67448",
+          "pmid": "24045719",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24045719/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-064",
+      "method_label": "reporting_and_surveillance_evidence_syntheses",
+      "canonical_name": "Evidence syntheses on surveillance, reporting, and hidden burden",
+      "source_role": "guidance",
+      "target_title": "Pertussis in Asia: Recent country-specific data and recommendations.",
+      "target_first_author": "Pramod Jog",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35074239/",
+      "seed_candidate_key": "PMID:35074239",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-136",
+          "query_variant": "exact_title",
+          "query": "Pertussis[Title] AND Asia[Title] AND Recent[Title] AND country[Title] AND specific[Title] AND data[Title] AND recommendations[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35074239",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-136",
+          "title": "Pertussis in Asia: Recent country-specific data and recommendations.",
+          "year": "2022",
+          "authors": "Pramod Jog; Iqbal Ahmad Memon; Usa Thisyakorn; Daniela Hozbor; Ulrich Heininger; Carl Heinz Wirsing von König; Tina Tan; participants of the 2019 GPI Thailand Meeting",
+          "doi": "10.1016/j.vaccine.2021.12.004",
+          "pmid": "35074239",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35074239/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-065",
+      "method_label": "review_guideline_and_contextual_methods",
+      "canonical_name": "Review, guideline, and contextual-methods studies",
+      "source_role": "authoritative_candidate",
+      "target_title": "Risk adjustment for benchmarking nursing home infection surveillance data: A narrative review.",
+      "target_first_author": "Joseph M Mylotte",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32791257/",
+      "seed_candidate_key": "PMID:32791257",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-137",
+          "query_variant": "exact_title",
+          "query": "Risk[Title] AND adjustment[Title] AND benchmarking[Title] AND nursing[Title] AND home[Title] AND infection[Title] AND surveillance[Title] AND data[Title] AND narrative[Title] AND review[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32791257",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-137",
+          "title": "Risk adjustment for benchmarking nursing home infection surveillance data: A narrative review.",
+          "year": "2021",
+          "authors": "Joseph M Mylotte",
+          "doi": "10.1016/j.ajic.2020.08.006",
+          "pmid": "32791257",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32791257/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-066",
+      "method_label": "review_guideline_and_contextual_methods",
+      "canonical_name": "Review, guideline, and contextual-methods studies",
+      "source_role": "diagnostic",
+      "target_title": "Challenges in evaluating the cost-effectiveness of new diagnostic tests for HIV-associated tuberculosis.",
+      "target_first_author": "Jason R Andrews",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23788239/",
+      "seed_candidate_key": "PMID:23788239",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-138",
+          "query_variant": "exact_title",
+          "query": "Challenges[Title] AND evaluating[Title] AND cost[Title] AND effectiveness[Title] AND new[Title] AND diagnostic[Title] AND tests[Title] AND HIV[Title] AND associated[Title] AND tuberculosis[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23788239",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-138",
+          "title": "Challenges in evaluating the cost-effectiveness of new diagnostic tests for HIV-associated tuberculosis.",
+          "year": "2013",
+          "authors": "Jason R Andrews; Stephen D Lawn; David W Dowdy; Rochelle P Walensky",
+          "doi": "10.1093/cid/cit412",
+          "pmid": "23788239",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23788239/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-067",
+      "method_label": "review_guideline_and_contextual_methods",
+      "canonical_name": "Review, guideline, and contextual-methods studies",
+      "source_role": "guidance",
+      "target_title": "Health care system and policy factors influencing engagement in HIV medical care: piecing together the fragments of a fractured health care delivery system.",
+      "target_first_author": "Michael J Mugavero",
+      "target_year": "2011",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/21342913/",
+      "seed_candidate_key": "PMID:21342913",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-139",
+          "query_variant": "exact_title",
+          "query": "Health[Title] AND care[Title] AND system[Title] AND policy[Title] AND factors[Title] AND influencing[Title] AND engagement[Title] AND HIV[Title] AND medical[Title] AND piecing[Title] AND together[Title] AND fragments[Title] AND fractured[Title] AND delivery[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:21342913",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-139",
+          "title": "Health care system and policy factors influencing engagement in HIV medical care: piecing together the fragments of a fractured health care delivery system.",
+          "year": "2011",
+          "authors": "Michael J Mugavero; Wynne E Norton; Michael S Saag",
+          "doi": "10.1093/cid/ciq048",
+          "pmid": "21342913",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21342913/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-068",
+      "method_label": "surveillance_evidence_synthesis",
+      "canonical_name": "Surveillance evidence syntheses and guidance",
+      "source_role": "diagnostic",
+      "target_title": "Limitations of Global Surveillance for Neisseria gonorrhoeae Antimicrobial Resistance.",
+      "target_first_author": "Sebastiaan J van Hal",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/42230160/",
+      "seed_candidate_key": "PMID:42230160",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-140",
+          "query_variant": "exact_title",
+          "query": "Limitations[Title] AND Global[Title] AND Surveillance[Title] AND Neisseria[Title] AND gonorrhoeae[Title] AND Antimicrobial[Title] AND Resistance[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:42230160",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-140",
+          "title": "Limitations of Global Surveillance for Neisseria gonorrhoeae Antimicrobial Resistance.",
+          "year": "2026",
+          "authors": "Sebastiaan J van Hal; Helen Fifer; Monica M Lahra",
+          "doi": "10.3201/eid3206.260378",
+          "pmid": "42230160",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42230160/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-069",
+      "method_label": "surveillance_evidence_synthesis",
+      "canonical_name": "Surveillance evidence syntheses and guidance",
+      "source_role": "guidance",
+      "target_title": "Rabies in Pakistan: Policies and recommendations.",
+      "target_first_author": "Abdul Jabbar",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/40497064/",
+      "seed_candidate_key": "PMID:40497064",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-141",
+          "query_variant": "exact_title",
+          "query": "Rabies[Title] AND Pakistan[Title] AND Policies[Title] AND recommendations[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:40497064",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-141",
+          "title": "Rabies in Pakistan: Policies and recommendations.",
+          "year": "2024",
+          "authors": "Abdul Jabbar; Attaullah Ahmadi; Nimra Irm; Iqra Naseeb; Shekiba Madadi; Don Eliseo Lucero-Prisno",
+          "doi": "10.1002/puh2.168",
+          "pmid": "40497064",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40497064/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-070",
+      "method_label": "surveillance_evidence_synthesis_review",
+      "canonical_name": "Surveillance evidence synthesis and review",
+      "source_role": "guidance",
+      "target_title": "Dengue disease surveillance: an updated systematic literature review.",
+      "target_first_author": "S Runge-Ranzinger",
+      "target_year": "2014",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/24889501/",
+      "seed_candidate_key": "PMID:24889501",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-142",
+          "query_variant": "exact_title",
+          "query": "Dengue[Title] AND disease[Title] AND surveillance[Title] AND updated[Title] AND systematic[Title] AND literature[Title] AND review[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:24889501",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-142",
+          "title": "Dengue disease surveillance: an updated systematic literature review.",
+          "year": "2014",
+          "authors": "S Runge-Ranzinger; P J McCall; A Kroeger; O Horstick",
+          "doi": "10.1111/tmi.12333",
+          "pmid": "24889501",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24889501/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-071",
+      "method_label": "surveillance_gap_evidence_synthesis",
+      "canonical_name": "Surveillance-gap reviews and guidance",
+      "source_role": "guidance",
+      "target_title": "Priority Activities in Child and Adolescent Tuberculosis to Close the Policy-Practice Gap in Low- and Middle-Income Countries.",
+      "target_first_author": "Karen du Preez",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35215139/",
+      "seed_candidate_key": "PMID:35215139",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-143",
+          "query_variant": "exact_title",
+          "query": "Priority[Title] AND Activities[Title] AND Child[Title] AND Adolescent[Title] AND Tuberculosis[Title] AND Close[Title] AND Policy[Title] AND Practice[Title] AND Gap[Title] AND Low[Title] AND Middle[Title] AND Income[Title] AND Countries[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35215139",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-143",
+          "title": "Priority Activities in Child and Adolescent Tuberculosis to Close the Policy-Practice Gap in Low- and Middle-Income Countries.",
+          "year": "2022",
+          "authors": "Karen du Preez; Betina Mendez Alcântara Gabardo; Sushil K Kabra; Rina Triasih; Trisasi Lestari; Margaret Kal; Bazarragchaa Tsogt; Gantsetseg Dorj; Enkhtsetseg Purev; Thu Anh Nguyen; Lenny Naidoo; Lindiwe Mvusi; Hendrik Simon Schaaf; Anneke C Hesseling; Andrea Maciel de Oliveira Rossoni; Anna Cristina Calçada Carvalho; Claudete Aparecida Araújo Cardoso; Clemax Couto Sant'Anna; Danielle Gomes Dell' Orti; Fernanda Dockhorn Costa; Liliana Romero Vega; Maria de Fátima Pombo Sant'Anna; Nguyen Binh Hoa; Phan Huu Phuc; Attannon Arnauld Fiogbe; Dissou Affolabi; Gisèle Badoum; Abdoul Risgou Ouédraogo; Tandaogo Saouadogo; Adjima Combary; Albert Kuate Kuate; Bisso Ngono Annie Prudence; Aboubakar Sidiki Magassouba; Adama Marie Bangoura; Alphazazi Soumana; Georges Hermana; Hervé Gando; Nafissatou Fall; Barnabé Gning; Mohammed Fall Dogo; Olivia Mbitikon; Manon Deffense; Kevin Zimba; Chishala Chabala; Moorine Penninah Sekadde; Henry Luzze; Stavia Turyahabwe; John Paul Dongo; Constantino Lopes; Milena Dos Santos; Joshua Reginald Francis; Magnolia Arango-Loboguerrero; Carlos M Perez-Velez; Kobto Ghislain Koura; Stephen M Graham",
+          "doi": "10.3390/pathogens11020196",
+          "pmid": "35215139",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35215139/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-072",
+      "method_label": "transportability_generalizability",
+      "canonical_name": "Transportability and generalizability methods",
+      "source_role": "diagnostic",
+      "target_title": "Trend in Sensitivity of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Serology One Year After Mild and Asymptomatic Coronavirus Disease 2019 (COVID-19): Unpacking Potential Bias in Seroprevalence Studies.",
+      "target_first_author": "Christopher R Bailie",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/35026841/",
+      "seed_candidate_key": "PMID:35026841",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-144",
+          "query_variant": "exact_title",
+          "query": "Trend[Title] AND Sensitivity[Title] AND Severe[Title] AND Acute[Title] AND Respiratory[Title] AND Syndrome[Title] AND Coronavirus[Title] AND 2[Title] AND SARS[Title] AND CoV[Title] AND Serology[Title] AND One[Title] AND Year[Title] AND After[Title] AND Mild[Title] AND Asymptomatic[Title] AND Disease[Title] AND 2019[Title] AND COVID[Title] AND 19[Title] AND Unpacking[Title] AND Potential[Title] AND Bias[Title] AND Seroprevalence[Title] AND Studies[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:35026841",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-144",
+          "title": "Trend in Sensitivity of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Serology One Year After Mild and Asymptomatic Coronavirus Disease 2019 (COVID-19): Unpacking Potential Bias in Seroprevalence Studies.",
+          "year": "2022",
+          "authors": "Christopher R Bailie; Yeu Yang Tseng; Louise Carolan; Martyn D Kirk; Suellen Nicholson; Annette Fox; Sheena G Sullivan",
+          "doi": "10.1093/cid/ciac020",
+          "pmid": "35026841",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35026841/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-073",
+      "method_label": "transportability_generalizability",
+      "canonical_name": "Transportability and generalizability methods",
+      "source_role": "guidance",
+      "target_title": "Generalizability and comparability of prevalence estimates in the wild bird literature: methodological and epidemiological considerations.",
+      "target_first_author": "Nadine A Vogt",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32066515/",
+      "seed_candidate_key": "PMID:32066515",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-145",
+          "query_variant": "exact_title",
+          "query": "Generalizability[Title] AND comparability[Title] AND prevalence[Title] AND estimates[Title] AND wild[Title] AND bird[Title] AND literature[Title] AND methodological[Title] AND epidemiological[Title] AND considerations[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32066515",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-145",
+          "title": "Generalizability and comparability of prevalence estimates in the wild bird literature: methodological and epidemiological considerations.",
+          "year": "2020",
+          "authors": "Nadine A Vogt; Christian P G Stevens; David L Pearl; Eduardo N Taboada; Claire M Jardine",
+          "doi": "10.1017/s1466252320000043",
+          "pmid": "32066515",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32066515/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-074",
+      "method_label": "transportability_generalizability",
+      "canonical_name": "Transportability and generalizability methods",
+      "source_role": "infectious_application",
+      "target_title": "Research on implementation of interventions in tuberculosis control in low- and middle-income countries: a systematic review.",
+      "target_first_author": "Frank Cobelens",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23271959/",
+      "seed_candidate_key": "PMID:23271959",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-146",
+          "query_variant": "exact_title",
+          "query": "Research[Title] AND implementation[Title] AND interventions[Title] AND tuberculosis[Title] AND control[Title] AND low[Title] AND middle[Title] AND income[Title] AND countries[Title] AND systematic[Title] AND review[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23271959",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-146",
+          "title": "Research on implementation of interventions in tuberculosis control in low- and middle-income countries: a systematic review.",
+          "year": "2012",
+          "authors": "Frank Cobelens; Sanne van Kampen; Eleanor Ochodo; Rifat Atun; Christian Lienhardt",
+          "doi": "10.1371/journal.pmed.1001358",
+          "pmid": "23271959",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23271959/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-EVIDENCE-075",
+      "method_label": "triangulation_cross_system",
+      "canonical_name": "Cross-system triangulation",
+      "source_role": "authoritative_candidate",
+      "target_title": "Improving cohort coverage estimation using a data triangulation framework: the Swiss HIV Cohort Study example.",
+      "target_first_author": "Jessy J Duran Ramirez",
+      "target_year": "2026",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/41962558/",
+      "seed_candidate_key": "PMID:41962558",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-147",
+          "query_variant": "exact_title",
+          "query": "Improving[Title] AND cohort[Title] AND coverage[Title] AND estimation[Title] AND data[Title] AND triangulation[Title] AND framework[Title] AND Swiss[Title] AND HIV[Title] AND Study[Title] AND example[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:41962558",
+          "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-147",
+          "title": "Improving cohort coverage estimation using a data triangulation framework: the Swiss HIV Cohort Study example.",
+          "year": "2026",
+          "authors": "Jessy J Duran Ramirez; Roger D Kouyos; Irene Abela; Charles Beguelin; Marco Bongiovanni; Philip Bruggmann; Alexandra Calmy; Matthias Cavassini; Alexia Cusini; Mirjam de Roche; Luigia Elzi; Andrée Friedl; Rosamaria Fulchini; Chistoph Fux; David Haerry; Benjamin Hampel; Markus Herold; Philipp Kaiser; Helen Kovari; Patrick Schmid; Delphine Sculier; Marcel Stöckle; Philip E Tarr; Frédéric Tissot; Jonathan Tschopp; Gilles Wandeler; Andri Rauch; Huldrych F Günthard; Katharina Kusejko; Swiss HIV Cohort Study (SHCS)",
+          "doi": "10.1097/qad.0000000000004523",
+          "pmid": "41962558",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41962558/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-090",
+      "method_label": "algorithmic_outbreak_detection_and_early_warning",
+      "canonical_name": "Algorithmic outbreak detection and early-warning surveillance",
+      "source_role": "authoritative_candidate",
+      "target_title": "Ontology-Based Data Collection for a Hybrid Outbreak Detection Method Using Social Media.",
+      "target_first_author": "Ghazaleh Babanejaddehaki",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39137072/",
+      "seed_candidate_key": "PMID:39137072",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-195",
+          "query_variant": "exact_title",
+          "query": "Ontology[Title] AND Based[Title] AND Data[Title] AND Collection[Title] AND Hybrid[Title] AND Outbreak[Title] AND Detection[Title] AND Method[Title] AND Social[Title] AND Media[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39137072",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-195",
+          "title": "Ontology-Based Data Collection for a Hybrid Outbreak Detection Method Using Social Media.",
+          "year": "2024",
+          "authors": "Ghazaleh Babanejaddehaki; Aijun An; Heidar Davoudi",
+          "doi": "10.1109/tnb.2024.3442912",
+          "pmid": "39137072",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39137072/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-091",
+      "method_label": "applied_reproduction_number_surveillance",
+      "canonical_name": "Applied reproduction-number estimation and transmissibility surveillance",
+      "source_role": "diagnostic",
+      "target_title": "Estimating the measles effective reproduction number in Australia from routine notification data.",
+      "target_first_author": "May Chiew",
+      "target_year": "2014",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/24700976/",
+      "seed_candidate_key": "PMID:24700976",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-196",
+          "query_variant": "exact_title",
+          "query": "Estimating[Title] AND measles[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND Australia[Title] AND routine[Title] AND notification[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:24700976",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-196",
+          "title": "Estimating the measles effective reproduction number in Australia from routine notification data.",
+          "year": "2014",
+          "authors": "May Chiew; Heather F Gidding; Aditi Dey; James Wood; Nicolee Martin; Stephanie Davis; Peter McIntyre",
+          "doi": "10.2471/blt.13.125724",
+          "pmid": "24700976",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24700976/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-092",
+      "method_label": "changepoint_detection",
+      "canonical_name": "Change-point detection",
+      "source_role": "authoritative_candidate",
+      "target_title": "Bivariate random change point models for longitudinal outcomes.",
+      "target_first_author": "Lili Yang",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22893450/",
+      "seed_candidate_key": "PMID:22893450",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-197",
+          "query_variant": "exact_title",
+          "query": "Bivariate[Title] AND random[Title] AND change[Title] AND point[Title] AND models[Title] AND longitudinal[Title] AND outcomes[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22893450",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-197",
+          "title": "Bivariate random change point models for longitudinal outcomes.",
+          "year": "2013",
+          "authors": "Lili Yang; Sujuan Gao",
+          "doi": "10.1002/sim.5557",
+          "pmid": "22893450",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22893450/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-093",
+      "method_label": "critical_transition_early_warning_signals",
+      "canonical_name": "Critical-transition early-warning signals",
+      "source_role": "diagnostic",
+      "target_title": "Spatial correlation as an early warning signal of regime shifts in a multiplex disease-behaviour network.",
+      "target_first_author": "Peter C Jentsch",
+      "target_year": "2018",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/29614264/",
+      "seed_candidate_key": "PMID:29614264",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-198",
+          "query_variant": "exact_title",
+          "query": "Spatial[Title] AND correlation[Title] AND early[Title] AND warning[Title] AND signal[Title] AND regime[Title] AND shifts[Title] AND multiplex[Title] AND disease[Title] AND behaviour[Title] AND network[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:29614264",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-198",
+          "title": "Spatial correlation as an early warning signal of regime shifts in a multiplex disease-behaviour network.",
+          "year": "2018",
+          "authors": "Peter C Jentsch; Madhur Anand; Chris T Bauch",
+          "doi": "10.1016/j.jtbi.2018.03.032",
+          "pmid": "29614264",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29614264/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-094",
+      "method_label": "early_warning_signals",
+      "canonical_name": "Early-warning signals",
+      "source_role": "authoritative_candidate",
+      "target_title": "Surveillance of infection severity: a registry study of laboratory diagnosed Clostridium difficile.",
+      "target_first_author": "Iryna Schlackow",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22859914/",
+      "seed_candidate_key": "PMID:22859914",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-199",
+          "query_variant": "exact_title",
+          "query": "Surveillance[Title] AND infection[Title] AND severity[Title] AND registry[Title] AND study[Title] AND laboratory[Title] AND diagnosed[Title] AND Clostridium[Title] AND difficile[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22859914",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-199",
+          "title": "Surveillance of infection severity: a registry study of laboratory diagnosed Clostridium difficile.",
+          "year": "2012",
+          "authors": "Iryna Schlackow; A Sarah Walker; Kate Dingle; David Griffiths; Sarah Oakley; John Finney; Ali Vaughan; Martin J Gill; Derrick W Crook; Tim E A Peto; David H Wyllie",
+          "doi": "10.1371/journal.pmed.1001279",
+          "pmid": "22859914",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22859914/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-095",
+      "method_label": "early_warning_signals",
+      "canonical_name": "Early-warning signals",
+      "source_role": "correction",
+      "target_title": "Author Correction: Using surveillance data for early warning modelling of highly pathogenic avian influenza in Europe reveals a seasonal shift in transmission, 2016-2022.",
+      "target_first_author": "Lene Jung Kjær",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/37789088/",
+      "seed_candidate_key": "PMID:37789088",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-200",
+          "query_variant": "exact_title",
+          "query": "Author[Title] AND Correction[Title] AND surveillance[Title] AND data[Title] AND early[Title] AND warning[Title] AND modelling[Title] AND highly[Title] AND pathogenic[Title] AND avian[Title] AND influenza[Title] AND Europe[Title] AND reveals[Title] AND seasonal[Title] AND shift[Title] AND transmission[Title] AND 2016[Title] AND 2022[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:37789088",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-200",
+          "title": "Author Correction: Using surveillance data for early warning modelling of highly pathogenic avian influenza in Europe reveals a seasonal shift in transmission, 2016-2022.",
+          "year": "2023",
+          "authors": "Lene Jung Kjær; Michael P Ward; Anette Ella Boklund; Lars Erik Larsen; Charlotte Kristiane Hjulsager; Carsten Thure Kirkeby",
+          "doi": "10.1038/s41598-023-43740-4",
+          "pmid": "37789088",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37789088/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-096",
+      "method_label": "early_warning_signals",
+      "canonical_name": "Early-warning signals",
+      "source_role": "guidance",
+      "target_title": "The World Organisation for Animal Health and the World Health Organization: intergovernmental disease information and reporting systems and their role in early warning.",
+      "target_first_author": "P Caceres",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/30152465/",
+      "seed_candidate_key": "PMID:30152465",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-201",
+          "query_variant": "exact_title",
+          "query": "World[Title] AND Organisation[Title] AND Animal[Title] AND Health[Title] AND Organization[Title] AND intergovernmental[Title] AND disease[Title] AND information[Title] AND reporting[Title] AND systems[Title] AND their[Title] AND role[Title] AND early[Title] AND warning[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-257",
+          "query_variant": "title_first_author",
+          "query": "Organisation[Title] AND Organization[Title] AND intergovernmental[Title] AND information[Title] AND Caceres[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:30152465",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-257",
+          "title": "The World Organisation for Animal Health and the World Health Organization: intergovernmental disease information and reporting systems and their role in early warning.",
+          "year": "2017",
+          "authors": "P Caceres; L Awada; P Barboza; H Lopez-Gatell; P Tizzani",
+          "doi": "10.20506/rst.36.2.2672",
+          "pmid": "30152465",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30152465/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-FORECASTING-097",
+      "method_label": "early_warning_signals",
+      "canonical_name": "Early-warning signals",
+      "source_role": "implementation",
+      "target_title": "[Integrated bulletin for the automated surveillance of notifiable communicable diseases in Schleswig-Holstein (IBISSH). A spatiotemporal early warning system].",
+      "target_first_author": "C Läubrich",
+      "target_year": "2011",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/21698542/",
+      "seed_candidate_key": "PMID:21698542",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-202",
+          "query_variant": "exact_title",
+          "query": "Integrated[Title] AND bulletin[Title] AND automated[Title] AND surveillance[Title] AND notifiable[Title] AND communicable[Title] AND diseases[Title] AND Schleswig[Title] AND Holstein[Title] AND IBISSH[Title] AND spatiotemporal[Title] AND early[Title] AND warning[Title] AND system[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:21698542",
+          "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-202",
+          "title": "[Integrated bulletin for the automated surveillance of notifiable communicable diseases in Schleswig-Holstein (IBISSH). A spatiotemporal early warning system].",
+          "year": "2011",
+          "authors": "C Läubrich; N Bocter; H Fickenscher; G Selck; P Rautenberg",
+          "doi": "10.1007/s00103-011-1299-9",
+          "pmid": "21698542",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21698542/"
+        }
+      ]
+    }
+  ]
+}

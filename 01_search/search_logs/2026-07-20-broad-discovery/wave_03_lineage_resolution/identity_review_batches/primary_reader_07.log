@@ -1741,14 +1741,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-22",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-80",
         "query_variant": "exact_title",
         "query": "Determining[Title] AND travel[Title] AND fluxes[Title] AND epidemic[Title] AND areas[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-22",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-80",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34705832",
         "candidate_rank": "1",
@@ -1776,14 +1776,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-23",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-81",
         "query_variant": "exact_title",
         "query": "Uncovering[Title] AND latent[Title] AND urban[Title] AND mobility[Title] AND patterns[Title] AND via[Title] AND smart[Title] AND card[Title] AND survey[Title] AND data[Title] AND fusion[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-23",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-81",
         "query_variant": "exact_title",
         "candidate_key": "PMID:42230614",
         "candidate_rank": "1",
@@ -1811,14 +1811,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-24",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-82",
         "query_variant": "exact_title",
         "query": "universal[Title] AND visitation[Title] AND law[Title] AND human[Title] AND mobility[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-24",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-82",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34040209",
         "candidate_rank": "1",
@@ -1846,14 +1846,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-25",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-83",
         "query_variant": "exact_title",
         "query": "dynamic[Title] AND neural[Title] AND network[Title] AND model[Title] AND predicting[Title] AND risk[Title] AND Zika[Title] AND real[Title] AND time[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-25",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-83",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31474220",
         "candidate_rank": "1",
@@ -1881,14 +1881,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-26",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-84",
         "query_variant": "exact_title",
         "query": "Impacts[Title] AND Daily[Title] AND Travel[Title] AND Distances[Title] AND Spread[Title] AND COVID[Title] AND 19[Title] AND Artificial[Title] AND Neural[Title] AND Network[Title] AND Model[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-26",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-84",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37153208",
         "candidate_rank": "1",
@@ -1916,14 +1916,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-27",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-85",
         "query_variant": "exact_title",
         "query": "two[Title] AND tiered[Title] AND model[Title] AND simulating[Title] AND ecological[Title] AND evolutionary[Title] AND dynamics[Title] AND rapidly[Title] AND evolving[Title] AND viruses[Title] AND application[Title] AND influenza[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-27",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-85",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20335193",
         "candidate_rank": "1",
@@ -1951,14 +1951,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-28",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-86",
         "query_variant": "exact_title",
         "query": "Phylodynamics[Title] AND HIV[Title] AND 1[Title] AND phase[Title] AND III[Title] AND AIDS[Title] AND vaccine[Title] AND trial[Title] AND North[Title] AND America[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-28",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-86",
         "query_variant": "exact_title",
         "candidate_key": "PMID:19864468",
         "candidate_rank": "1",
@@ -1986,14 +1986,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-29",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-87",
         "query_variant": "exact_title",
         "query": "SNP[Title] AND design[Title] AND 454[Title] AND sequencing[Title] AND Podosphaera[Title] AND plantaginis[Title] AND transcriptome[Title] AND reveals[Title] AND genetically[Title] AND diverse[Title] AND pathogen[Title] AND metapopulation[Title] AND high[Title] AND levels[Title] AND mixed[Title] AND genotype[Title] AND infection[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-29",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-87",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23300684",
         "candidate_rank": "1",
@@ -2021,14 +2021,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-30",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-88",
         "query_variant": "exact_title",
         "query": "Metapopulation[Title] AND structure[Title] AND Vibrionaceae[Title] AND coastal[Title] AND marine[Title] AND invertebrates[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-30",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-88",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20819104",
         "candidate_rank": "1",
@@ -2056,17 +2056,17 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260717-LINEAGE-SPATIAL-01",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-122",
         "query_variant": "method_author_year",
         "query": "(phylogenetic[Title/Abstract] OR phylodynamic[Title/Abstract]) AND contact network[Title/Abstract] AND O'Dea[Author] AND 2011[Date - Publication]"
       },
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-31",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-90",
         "query_variant": "title_first_author",
         "query": "heterogeneity[Title] AND phylodynamics[Title] AND evolutionary[Title] AND networks[Title] AND Dea[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-31",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-89",
         "query_variant": "exact_title",
         "query": "Contact[Title] AND heterogeneity[Title] AND phylodynamics[Title] AND how[Title] AND networks[Title] AND shape[Title] AND parasite[Title] AND evolutionary[Title] AND trees[Title]"
       }
@@ -2088,14 +2088,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-32",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-91",
         "query_variant": "exact_title",
         "query": "Phylodynamic[Title] AND analysis[Title] AND viral[Title] AND infection[Title] AND network[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-32",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-91",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22993510",
         "candidate_rank": "1",
@@ -2123,14 +2123,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-33",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-92",
         "query_variant": "exact_title",
         "query": "Phylogeography[Title] AND takes[Title] AND relaxed[Title] AND random[Title] AND walk[Title] AND continuous[Title] AND space[Title] AND time[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-33",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-92",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20203288",
         "candidate_rank": "1",
@@ -2158,19 +2158,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-34",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-94",
         "query_variant": "title_first_author",
         "query": "phylogeography[Title] AND Uncoordinated[Title] AND burgdorferi[Title] AND scapularis[Title] AND Humphrey[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-34",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-93",
         "query_variant": "exact_title",
         "query": "Uncoordinated[Title] AND phylogeography[Title] AND Borrelia[Title] AND burgdorferi[Title] AND its[Title] AND tick[Title] AND vector[Title] AND Ixodes[Title] AND scapularis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-34",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-94",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:20394659",
         "candidate_rank": "1",
@@ -2203,14 +2203,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-35",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-95",
         "query_variant": "exact_title",
         "query": "Different[Title] AND evolutionary[Title] AND trends[Title] AND form[Title] AND twilight[Title] AND zone[Title] AND bacterial[Title] AND pan[Title] AND genome[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-35",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-95",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34559043",
         "candidate_rank": "1",
@@ -2238,14 +2238,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-36",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-96",
         "query_variant": "exact_title",
         "query": "Leveraging[Title] AND laboratory[Title] AND response[Title] AND network[Title] AND model[Title] AND global[Title] AND health[Title] AND security[Title] AND agenda[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-36",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-96",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25254916",
         "candidate_rank": "1",
@@ -2273,14 +2273,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-37",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-97",
         "query_variant": "exact_title",
         "query": "Development[Title] AND network[Title] AND model[Title] AND implement[Title] AND HPV[Title] AND vaccination[Title] AND coverage[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-37",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-97",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38647091",
         "candidate_rank": "1",
@@ -2308,14 +2308,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-38",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-98",
         "query_variant": "exact_title",
         "query": "Travelling[Title] AND waves[Title] AND delayed[Title] AND SIR[Title] AND epidemic[Title] AND model[Title] AND nonlinear[Title] AND incidence[Title] AND rate[Title] AND spatial[Title] AND diffusion[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-38",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-98",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21731655",
         "candidate_rank": "1",
@@ -2343,14 +2343,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-39",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-99",
         "query_variant": "exact_title",
         "query": "Dynamics[Title] AND epidemic[Title] AND model[Title] AND spatial[Title] AND diffusion[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-39",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-99",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38691213",
         "candidate_rank": "1",
@@ -2362,7 +2362,7 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38691213/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-39",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-99",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31499744",
         "candidate_rank": "2",
@@ -2374,7 +2374,7 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31499744/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-39",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-99",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32362717",
         "candidate_rank": "3",
@@ -2402,14 +2402,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-40",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-100",
         "query_variant": "exact_title",
         "query": "time[Title] AND modulated[Title] AND Hawkes[Title] AND process[Title] AND model[Title] AND spread[Title] AND COVID[Title] AND 19[Title] AND impact[Title] AND countermeasures[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-40",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-100",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33746561",
         "candidate_rank": "1",
@@ -2437,14 +2437,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-41",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-101",
         "query_variant": "exact_title",
         "query": "Real[Title] AND time[Title] AND predictions[Title] AND 2018[Title] AND 2019[Title] AND Ebola[Title] AND virus[Title] AND disease[Title] AND outbreak[Title] AND Democratic[Title] AND Republic[Title] AND Congo[Title] AND using[Title] AND Hawkes[Title] AND point[Title] AND process[Title] AND models[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-41",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-101",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31395373",
         "candidate_rank": "1",
@@ -2472,19 +2472,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-42",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-103",
         "query_variant": "title_first_author",
         "query": "distribution[Title] AND neighbors[Title] AND sequence[Title] AND genotype[Title] AND Catanese[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-42",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-102",
         "query_variant": "exact_title",
         "query": "nearest[Title] AND neighbors[Title] AND network[Title] AND model[Title] AND sequence[Title] AND data[Title] AND reveals[Title] AND new[Title] AND insight[Title] AND into[Title] AND genotype[Title] AND distribution[Title] AND pathogen[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-42",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-103",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:30541438",
         "candidate_rank": "1",
@@ -2512,19 +2512,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-43",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-105",
         "query_variant": "title_first_author",
         "query": "demographic[Title] AND propagation[Title] AND influenza[Title] AND pandemic[Title] AND Chandra[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-43",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-104",
         "query_variant": "exact_title",
         "query": "influenza[Title] AND pandemic[Title] AND 1918[Title] AND 1919[Title] AND Sri[Title] AND Lanka[Title] AND its[Title] AND demographic[Title] AND cost[Title] AND timing[Title] AND propagation[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-43",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-105",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:24612961",
         "candidate_rank": "1",
@@ -2552,14 +2552,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-44",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-106",
         "query_variant": "exact_title",
         "query": "Spatial[Title] AND distribution[Title] AND trypanosome[Title] AND infection[Title] AND tsetse[Title] AND flies[Title] AND sleeping[Title] AND sickness[Title] AND focus[Title] AND Zimbabwe[Title] AND Hurungwe[Title] AND District[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-44",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-106",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27884172",
         "candidate_rank": "1",
@@ -2587,19 +2587,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-45",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-108",
         "query_variant": "title_first_author",
         "query": "transmission[Title] AND distribution[Title] AND Estimating[Title] AND infectious[Title] AND Salje[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-45",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-107",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND infectious[Title] AND disease[Title] AND transmission[Title] AND distances[Title] AND using[Title] AND overall[Title] AND distribution[Title] AND cases[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-45",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-108",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:27744095",
         "candidate_rank": "1",
@@ -2627,14 +2627,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-46",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-109",
         "query_variant": "exact_title",
         "query": "Modelling[Title] AND continental[Title] AND scale[Title] AND spread[Title] AND Schmallenberg[Title] AND virus[Title] AND Europe[Title] AND approaches[Title] AND challenges[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-46",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-109",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24630403",
         "candidate_rank": "1",
@@ -2667,14 +2667,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-47",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-110",
         "query_variant": "exact_title",
         "query": "Mapping[Title] AND cryptic[Title] AND spread[Title] AND 2015[Title] AND 2016[Title] AND global[Title] AND Zika[Title] AND virus[Title] AND epidemic[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-47",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-110",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33327961",
         "candidate_rank": "1",
@@ -2702,14 +2702,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-48",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-111",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND underreporting[Title] AND leprosy[Title] AND Brazil[Title] AND using[Title] AND Bayesian[Title] AND approach[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-48",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-111",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34432805",
         "candidate_rank": "1",
@@ -2737,14 +2737,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-49",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-112",
         "query_variant": "exact_title",
         "query": "flexible[Title] AND framework[Title] AND local[Title] AND level[Title] AND estimation[Title] AND effective[Title] AND reproductive[Title] AND number[Title] AND geographic[Title] AND regions[Title] AND sparse[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-49",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-112",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40162254",
         "candidate_rank": "1",
@@ -2756,7 +2756,7 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40162254/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-49",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-112",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40102783",
         "candidate_rank": "2",
@@ -2784,14 +2784,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-50",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-113",
         "query_variant": "exact_title",
         "query": "spatial[Title] AND diffusion[Title] AND norovirus[Title] AND epidemics[Title] AND over[Title] AND three[Title] AND seasons[Title] AND Tokyo[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-50",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-113",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24780387",
         "candidate_rank": "1",
@@ -2819,14 +2819,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-51",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-114",
         "query_variant": "exact_title",
         "query": "Distance[Title] AND sampling[Title] AND epidemiology[Title] AND interactive[Title] AND tool[Title] AND estimating[Title] AND under[Title] AND reporting[Title] AND cases[Title] AND clinic[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-51",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-114",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32312266",
         "candidate_rank": "1",
@@ -2854,14 +2854,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-52",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-115",
         "query_variant": "exact_title",
         "query": "Incorporating[Title] AND scale[Title] AND dependence[Title] AND disease[Title] AND burden[Title] AND estimates[Title] AND case[Title] AND human[Title] AND African[Title] AND trypanosomiasis[Title] AND Uganda[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-52",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-115",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24551264",
         "candidate_rank": "1",
@@ -2889,14 +2889,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-53",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-116",
         "query_variant": "exact_title",
         "query": "Quantifying[Title] AND burden[Title] AND vampire[Title] AND bat[Title] AND rabies[Title] AND Peruvian[Title] AND livestock[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-53",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-116",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29267276",
         "candidate_rank": "1",
@@ -2924,14 +2924,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-54",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-117",
         "query_variant": "exact_title",
         "query": "Risk[Title] AND Mapping[Title] AND African[Title] AND Swine[Title] AND Fever[Title] AND Domestic[Title] AND Pigs[Title] AND Wild[Title] AND Boars[Title] AND Enhance[Title] AND Management[Title] AND Surveillance[Title] AND Asia[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-54",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-117",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41323145",
         "candidate_rank": "1",
@@ -2959,14 +2959,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-55",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-118",
         "query_variant": "exact_title",
         "query": "Exploring[Title] AND impact[Title] AND under[Title] AND reported[Title] AND cases[Title] AND COVID[Title] AND 19[Title] AND spatiotemporal[Title] AND distributions[Title] AND using[Title] AND healthcare[Title] AND workers[Title] AND infection[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-55",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-118",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35068649",
         "candidate_rank": "1",
@@ -2994,19 +2994,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-56",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-120",
         "query_variant": "title_first_author",
         "query": "temperature[Title] AND regional[Title] AND severity[Title] AND Evidence[Title] AND Rios[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-56",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-119",
         "query_variant": "exact_title",
         "query": "link[Title] AND between[Title] AND temperature[Title] AND regional[Title] AND COVID[Title] AND 19[Title] AND severity[Title] AND Evidence[Title] AND Italy[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-56",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-120",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:38607900",
         "candidate_rank": "1",
@@ -3034,14 +3034,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-57",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-121",
         "query_variant": "exact_title",
         "query": "Unreported[Title] AND cases[Title] AND 2014[Title] AND 2016[Title] AND Ebola[Title] AND epidemic[Title] AND Spatiotemporal[Title] AND variation[Title] AND implications[Title] AND estimating[Title] AND transmission[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-57",
+        "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-121",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29357363",
         "candidate_rank": "1",
@@ -3069,14 +3069,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-01",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-100",
         "query_variant": "exact_title",
         "query": "Detecting[Title] AND reports[Title] AND unsafe[Title] AND foods[Title] AND consumer[Title] AND product[Title] AND reviews[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-01",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-100",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31984365",
         "candidate_rank": "1",
@@ -3104,14 +3104,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-02",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-101",
         "query_variant": "exact_title",
         "query": "Sentinel[Title] AND Surveillance[Title] AND Expedited[Title] AND Partner[Title] AND Therapy[Title] AND Prescriptions[Title] AND Using[Title] AND Pharmacy[Title] AND Data[Title] AND 2[Title] AND New[Title] AND York[Title] AND City[Title] AND Neighborhoods[Title] AND 2015[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-02",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-101",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28079746",
         "candidate_rank": "1",
@@ -3144,14 +3144,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-03",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-102",
         "query_variant": "exact_title",
         "query": "Use[Title] AND surveillance[Title] AND data[Title] AND HIV[Title] AND diagnoses[Title] AND related[Title] AND symptoms[Title] AND estimate[Title] AND number[Title] AND people[Title] AND living[Title] AND undiagnosed[Title] AND need[Title] AND antiretroviral[Title] AND therapy[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-03",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-102",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25768925",
         "candidate_rank": "1",
@@ -3179,14 +3179,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-04",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-103",
         "query_variant": "exact_title",
         "query": "Burden[Title] AND childhood[Title] AND tuberculosis[Title] AND 22[Title] AND high[Title] AND countries[Title] AND mathematical[Title] AND modelling[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-04",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-103",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25103518",
         "candidate_rank": "1",
@@ -3214,14 +3214,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-05",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-104",
         "query_variant": "exact_title",
         "query": "Adaptive[Title] AND nowcasting[Title] AND influenza[Title] AND outbreaks[Title] AND using[Title] AND Google[Title] AND searches[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-05",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-104",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26064532",
         "candidate_rank": "1",
@@ -3249,14 +3249,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-06",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-105",
         "query_variant": "exact_title",
         "query": "Web[Title] AND search[Title] AND volume[Title] AND near[Title] AND real[Title] AND time[Title] AND complementary[Title] AND surveillance[Title] AND tool[Title] AND tick[Title] AND borne[Title] AND encephalitis[Title] AND TBE[Title] AND Italy[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-06",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-105",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38484539",
         "candidate_rank": "1",
@@ -3284,14 +3284,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-07",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-106",
         "query_variant": "exact_title",
         "query": "Magnitude[Title] AND COVID[Title] AND 19[Title] AND deaths[Title] AND relative[Title] AND other[Title] AND leading[Title] AND causes[Title] AND death[Title] AND global[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-07",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-106",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36428010",
         "candidate_rank": "1",
@@ -3319,14 +3319,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-08",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-107",
         "query_variant": "exact_title",
         "query": "Disease[Title] AND Burden[Title] AND Dengue[Title] AND Philippines[Title] AND Adjusting[Title] AND Underreporting[Title] AND Comparing[Title] AND Active[Title] AND Passive[Title] AND Surveillance[Title] AND Punta[Title] AND Princesa[Title] AND Cebu[Title] AND City[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-08",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-107",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28093542",
         "candidate_rank": "1",
@@ -3354,14 +3354,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-09",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-108",
         "query_variant": "exact_title",
         "query": "Quantifying[Title] AND under[Title] AND reporting[Title] AND uncorrelated[Title] AND longitudal[Title] AND data[Title] AND genital[Title] AND warts[Title] AND example[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-09",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-108",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33407173",
         "candidate_rank": "1",
@@ -3389,14 +3389,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-10",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-109",
         "query_variant": "exact_title",
         "query": "Clinical[Title] AND Epidemiology[Title] AND 7126[Title] AND Melioidosis[Title] AND Patients[Title] AND Thailand[Title] AND Implications[Title] AND National[Title] AND Notifiable[Title] AND Diseases[Title] AND Surveillance[Title] AND System[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-10",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-109",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32083145",
         "candidate_rank": "1",
@@ -3424,14 +3424,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-11",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-110",
         "query_variant": "exact_title",
         "query": "Exposing[Title] AND malaria[Title] AND host[Title] AND diversity[Title] AND estimating[Title] AND population[Title] AND capture[Title] AND recapture[Title] AND using[Title] AND massively[Title] AND parallel[Title] AND pyrosequencing[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-11",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-110",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21041629",
         "candidate_rank": "1",
@@ -3459,19 +3459,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-12",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-112",
         "query_variant": "title_first_author",
         "query": "replacement[Title] AND prosthetic[Title] AND infections[Title] AND estimation[Title] AND Huotari[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-12",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-111",
         "query_variant": "exact_title",
         "query": "Disease[Title] AND burden[Title] AND prosthetic[Title] AND joint[Title] AND infections[Title] AND after[Title] AND hip[Title] AND knee[Title] AND replacement[Title] AND Finland[Title] AND during[Title] AND 1999[Title] AND 2004[Title] AND capture[Title] AND recapture[Title] AND estimation[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-12",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-112",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:20227137",
         "candidate_rank": "1",
@@ -3499,14 +3499,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-13",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-113",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND Size[Title] AND Hidden[Title] AND Populations[Title] AND Using[Title] AND Respondent[Title] AND driven[Title] AND Sampling[Title] AND Data[Title] AND Case[Title] AND Examples[Title] AND Morocco[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-13",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-113",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26258908",
         "candidate_rank": "1",
@@ -3534,14 +3534,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-14",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-114",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND number[Title] AND male[Title] AND sex[Title] AND workers[Title] AND capture[Title] AND recapture[Title] AND technique[Title] AND Nigeria[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-14",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-114",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24689319",
         "candidate_rank": "1",

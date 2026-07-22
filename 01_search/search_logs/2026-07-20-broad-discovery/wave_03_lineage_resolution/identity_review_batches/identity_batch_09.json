@@ -14,19 +14,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-174",
         "query_variant": "title_first_author",
         "query": "surveillance[Title] AND databases[Title] AND Medical[Title] AND product[Title] AND Maro[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-173",
         "query_variant": "exact_title",
         "query": "Medical[Title] AND product[Title] AND safety[Title] AND surveillance[Title] AND how[Title] AND many[Title] AND databases[Title] AND use[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-174",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:23867812",
         "candidate_rank": "1",
@@ -54,14 +54,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-66",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-175",
         "query_variant": "exact_title",
         "query": "Prospective[Title] AND surveillance[Title] AND invasive[Title] AND fungal[Title] AND infections[Title] AND hematopoietic[Title] AND stem[Title] AND cell[Title] AND transplant[Title] AND recipients[Title] AND 2001[Title] AND 2006[Title] AND overview[Title] AND Associated[Title] AND Infection[Title] AND Network[Title] AND TRANSNET[Title] AND Database[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-66",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-175",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20218877",
         "candidate_rank": "1",
@@ -89,14 +89,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-67",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-176",
         "query_variant": "exact_title",
         "query": "Preferential[Title] AND sampling[Title] AND veterinary[Title] AND parasitological[Title] AND surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-67",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-176",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27087037",
         "candidate_rank": "1",
@@ -124,14 +124,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-68",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-177",
         "query_variant": "exact_title",
         "query": "Public[Title] AND health[Title] AND triangulation[Title] AND approach[Title] AND application[Title] AND synthesizing[Title] AND data[Title] AND understand[Title] AND national[Title] AND local[Title] AND HIV[Title] AND epidemics[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-68",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-177",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20670448",
         "candidate_rank": "1",
@@ -159,14 +159,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-69",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-178",
         "query_variant": "exact_title",
         "query": "Development[Title] AND Delivery[Title] AND Real[Title] AND time[Title] AND Hospital[Title] AND onset[Title] AND COVID[Title] AND 19[Title] AND Surveillance[Title] AND System[Title] AND Using[Title] AND Network[Title] AND Analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-69",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-178",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32634822",
         "candidate_rank": "1",
@@ -194,14 +194,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-70",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-179",
         "query_variant": "exact_title",
         "query": "validity[Title] AND self[Title] AND reported[Title] AND antiretroviral[Title] AND use[Title] AND persons[Title] AND living[Title] AND HIV[Title] AND population[Title] AND based[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-70",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-179",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29194115",
         "candidate_rank": "1",
@@ -229,14 +229,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-71",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-180",
         "query_variant": "exact_title",
         "query": "Nowcasting[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND 2009[Title] AND hospitalizations[Title] AND Netherlands[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-71",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-180",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21416274",
         "candidate_rank": "1",
@@ -264,19 +264,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-182",
         "query_variant": "title_first_author",
         "query": "Symptomatic[Title] AND Constrained[Title] AND Nowcasting[Title] AND Infectious[Title] AND Kassteele[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-181",
         "query_variant": "exact_title",
         "query": "Nowcasting[Title] AND Number[Title] AND New[Title] AND Symptomatic[Title] AND Cases[Title] AND During[Title] AND Infectious[Title] AND Disease[Title] AND Outbreaks[Title] AND Using[Title] AND Constrained[Title] AND P[Title] AND spline[Title] AND Smoothing[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-182",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:31205290",
         "candidate_rank": "1",
@@ -304,14 +304,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-73",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-183",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND estimation[Title] AND COVID[Title] AND 19[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND using[Title] AND nowcasting[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-73",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-183",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33951962",
         "candidate_rank": "1",
@@ -339,14 +339,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-74",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-184",
         "query_variant": "exact_title",
         "query": "National[Title] AND Healthcare[Title] AND Safety[Title] AND Network[Title] AND Standardized[Title] AND Antimicrobial[Title] AND Administration[Title] AND Ratios[Title] AND SAARs[Title] AND Progress[Title] AND Report[Title] AND Risk[Title] AND Modeling[Title] AND Update[Title] AND Using[Title] AND 2017[Title] AND Data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-74",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-184",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32215655",
         "candidate_rank": "1",
@@ -374,19 +374,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-186",
         "query_variant": "title_first_author",
         "query": "Antimicrobial[Title] AND Developing[Title] AND Reporting[Title] AND Shortages[Title] AND McLaughlin[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-185",
         "query_variant": "exact_title",
         "query": "Developing[Title] AND Method[Title] AND Reporting[Title] AND Patient[Title] AND Harm[Title] AND Due[Title] AND Antimicrobial[Title] AND Shortages[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-186",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:25234281",
         "candidate_rank": "1",
@@ -414,14 +414,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-76",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-187",
         "query_variant": "exact_title",
         "query": "Measurement[Title] AND Error[Title] AND Case[Title] AND Series[Title] AND Models[Title] AND Application[Title] AND Infection[Title] AND Cardiovascular[Title] AND Risk[Title] AND OlderPatients[Title] AND Dialysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-76",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-187",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23650442",
         "candidate_rank": "1",
@@ -449,14 +449,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-77",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-188",
         "query_variant": "exact_title",
         "query": "novel[Title] AND tool[Title] AND assess[Title] AND community[Title] AND norms[Title] AND attitudes[Title] AND multiple[Title] AND concurrent[Title] AND sexual[Title] AND partnering[Title] AND rural[Title] AND Zimbabwe[Title] AND participatory[Title] AND attitudinal[Title] AND ranking[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-77",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-188",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21218276",
         "candidate_rank": "1",
@@ -484,14 +484,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "query": "Nationwide[Title] AND sentinel[Title] AND surveillance[Title] AND bloodstream[Title] AND Candida[Title] AND infections[Title] AND 40[Title] AND tertiary[Title] AND care[Title] AND hospitals[Title] AND Spain[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21372330",
         "candidate_rank": "1",
@@ -503,7 +503,7 @@
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21372330/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20826636",
         "candidate_rank": "2",
@@ -531,14 +531,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-79",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-190",
         "query_variant": "exact_title",
         "query": "Evaluating[Title] AND measles[Title] AND surveillance[Title] AND comparison[Title] AND sentinel[Title] AND mandatory[Title] AND notification[Title] AND data[Title] AND health[Title] AND insurance[Title] AND claims[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-79",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-190",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21044403",
         "candidate_rank": "1",
@@ -566,14 +566,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-80",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-191",
         "query_variant": "exact_title",
         "query": "new[Title] AND approach[Title] AND characterising[Title] AND infectious[Title] AND disease[Title] AND transmission[Title] AND dynamics[Title] AND sentinel[Title] AND surveillance[Title] AND application[Title] AND Italian[Title] AND 2009[Title] AND 2010[Title] AND H1N1[Title] AND influenza[Title] AND pandemic[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-80",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-191",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22325010",
         "candidate_rank": "1",
@@ -601,14 +601,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-81",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-192",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND local[Title] AND prevalence[Title] AND estimates[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND infections[Title] AND using[Title] AND causal[Title] AND debiasing[Title] AND framework[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-81",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-192",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34972825",
         "candidate_rank": "1",
@@ -636,14 +636,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-82",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-193",
         "query_variant": "exact_title",
         "query": "Evaluation[Title] AND sentinel[Title] AND surveillance[Title] AND system[Title] AND monitoring[Title] AND hand[Title] AND foot[Title] AND mouth[Title] AND disease[Title] AND Hong[Title] AND Kong[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-82",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-193",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22036193",
         "candidate_rank": "1",
@@ -671,14 +671,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-83",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-194",
         "query_variant": "exact_title",
         "query": "Implementation[Title] AND Evaluation[Title] AND Automated[Title] AND Online[Title] AND Study[Title] AND Recruitment[Title] AND Computerised[Title] AND Medical[Title] AND Records[Title] AND Primary[Title] AND Care[Title] AND Sentinel[Title] AND Surveillance[Title] AND Network[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-83",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-194",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39575793",
         "candidate_rank": "1",
@@ -706,14 +706,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-84",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-195",
         "query_variant": "exact_title",
         "query": "Strengths[Title] AND limitations[Title] AND assessing[Title] AND influenza[Title] AND vaccine[Title] AND effectiveness[Title] AND using[Title] AND routinely[Title] AND collected[Title] AND passive[Title] AND surveillance[Title] AND data[Title] AND Ontario[Title] AND Canada[Title] AND 2007[Title] AND 2012[Title] AND balancing[Title] AND efficiency[Title] AND versus[Title] AND quality[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-84",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-195",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25953275",
         "candidate_rank": "1",
@@ -741,14 +741,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-85",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-196",
         "query_variant": "exact_title",
         "query": "Implementing[Title] AND strategy[Title] AND monitoring[Title] AND inpatient[Title] AND antimicrobial[Title] AND use[Title] AND hospitals[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-85",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-196",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24162744",
         "candidate_rank": "1",
@@ -776,14 +776,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-86",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-197",
         "query_variant": "exact_title",
         "query": "Validity[Title] AND parental[Title] AND recalls[Title] AND estimate[Title] AND vaccination[Title] AND coverage[Title] AND evidence[Title] AND Tanzania[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-86",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-197",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29895298",
         "candidate_rank": "1",
@@ -811,14 +811,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-87",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-198",
         "query_variant": "exact_title",
         "query": "Using[Title] AND Calibration[Title] AND Reduce[Title] AND Measurement[Title] AND Error[Title] AND Prevalence[Title] AND Estimates[Title] AND Based[Title] AND Electronic[Title] AND Health[Title] AND Records[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-87",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-198",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30576279",
         "candidate_rank": "1",
@@ -846,14 +846,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-88",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-199",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND Data[Title] AND HIV[Title] AND Epidemic[Title] AND New[Title] AND York[Title] AND City[Title] AND Identifying[Title] AND Transgender[Title] AND Persons[Title] AND Medicaid[Title] AND 2013[Title] AND 2017[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-88",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-199",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36033207",
         "candidate_rank": "1",
@@ -881,14 +881,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-89",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-200",
         "query_variant": "exact_title",
         "query": "Construction[Title] AND effectiveness[Title] AND evaluation[Title] AND knowledge[Title] AND based[Title] AND infectious[Title] AND disease[Title] AND monitoring[Title] AND decision[Title] AND support[Title] AND system[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-89",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-200",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37580359",
         "candidate_rank": "1",
@@ -916,14 +916,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-90",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-201",
         "query_variant": "exact_title",
         "query": "Gaming[Title] AND infection[Title] AND control[Title] AND qualitative[Title] AND study[Title] AND exploring[Title] AND perceptions[Title] AND experiences[Title] AND health[Title] AND professionals[Title] AND Mongolia[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-90",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-201",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21514007",
         "candidate_rank": "1",
@@ -951,14 +951,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-91",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-202",
         "query_variant": "exact_title",
         "query": "Brief[Title] AND behavioural[Title] AND surveys[Title] AND routine[Title] AND HIV[Title] AND sentinel[Title] AND surveillance[Title] AND new[Title] AND tool[Title] AND monitoring[Title] AND epidemic[Title] AND Viet[Title] AND Nam[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-91",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-202",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25960922",
         "candidate_rank": "1",
@@ -986,14 +986,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-92",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-203",
         "query_variant": "exact_title",
         "query": "Dengue[Title] AND Surveillance[Title] AND System[Title] AND Brazil[Title] AND Qualitative[Title] AND Study[Title] AND Federal[Title] AND District[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-92",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-203",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32244954",
         "candidate_rank": "1",
@@ -1021,14 +1021,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-93",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-204",
         "query_variant": "exact_title",
         "query": "Hospitalization[Title] AND records[Title] AND tool[Title] AND evaluating[Title] AND performance[Title] AND food[Title] AND water[Title] AND borne[Title] AND disease[Title] AND surveillance[Title] AND systems[Title] AND Massachusetts[Title] AND case[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-93",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-204",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24740304",
         "candidate_rank": "1",
@@ -1056,14 +1056,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-94",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-205",
         "query_variant": "exact_title",
         "query": "Factors[Title] AND influencing[Title] AND performance[Title] AND voluntary[Title] AND farmer[Title] AND disease[Title] AND reporting[Title] AND passive[Title] AND surveillance[Title] AND systems[Title] AND scoping[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-94",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-205",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34507237",
         "candidate_rank": "1",
@@ -1091,14 +1091,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-95",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-206",
         "query_variant": "exact_title",
         "query": "Hybrid[Title] AND Approach[Title] AND Estimation[Title] AND Underreporting[Title] AND Tuberculosis[Title] AND Case[Title] AND Notification[Title] AND High[Title] AND Burden[Title] AND Settings[Title] AND Weak[Title] AND Surveillance[Title] AND Infrastructure[Title] AND Design[Title] AND Implementation[Title] AND Inventory[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-95",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-206",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33720030",
         "candidate_rank": "1",
@@ -1126,14 +1126,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-96",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-207",
         "query_variant": "exact_title",
         "query": "Syndromic[Title] AND surveillance[Title] AND Influenza[Title] AND like[Title] AND illness[Title] AND primary[Title] AND care[Title] AND complement[Title] AND sentinel[Title] AND network[Title] AND periods[Title] AND increased[Title] AND incidence[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-96",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-207",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21924796",
         "candidate_rank": "1",
@@ -1161,14 +1161,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-97",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-208",
         "query_variant": "exact_title",
         "query": "Delayed[Title] AND Laboratory[Title] AND Response[Title] AND COVID[Title] AND 19[Title] AND Caused[Title] AND Molecular[Title] AND Diagnostic[Title] AND Contamination[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-97",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-208",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32433015",
         "candidate_rank": "1",
@@ -1196,14 +1196,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-98",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-209",
         "query_variant": "exact_title",
         "query": "Travel[Title] AND associated[Title] AND gonorrhoea[Title] AND four[Title] AND Nordic[Title] AND countries[Title] AND 2008[Title] AND 2013[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-98",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-209",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28537548",
         "candidate_rank": "1",
@@ -1231,14 +1231,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-99",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-210",
         "query_variant": "exact_title",
         "query": "Hospital[Title] AND based[Title] AND prospective[Title] AND multicentre[Title] AND surveillance[Title] AND determine[Title] AND incidence[Title] AND intussusception[Title] AND children[Title] AND aged[Title] AND below[Title] AND 15[Title] AND years[Title] AND Germany[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-99",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-210",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21435207",
         "candidate_rank": "1",

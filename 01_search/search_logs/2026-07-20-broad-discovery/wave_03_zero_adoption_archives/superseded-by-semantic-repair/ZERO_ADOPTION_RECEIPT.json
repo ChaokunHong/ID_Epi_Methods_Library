@@ -1,0 +1,20 @@
+{
+  "archive_reason": "These active query groups were superseded after row-level semantic review found that their named-source roles did not support the repaired concept-role lineage closure. They contribute zero relationships and zero accepted identity decisions to the repaired active state.",
+  "archive_status": "zero_adoption",
+  "archived_query_count": 102,
+  "durable_checkpoint_commit": "cc4f09b052c8107411671f09e32586aa1d5e7b49",
+  "id_namespace_validation": {
+    "active_collision_count": 0,
+    "active_collisions": [],
+    "active_query_count": 683,
+    "archived_query_count": 102,
+    "other_archive_collision_count": 0,
+    "other_archive_collisions": [],
+    "same_id_different_query_count": 0
+  },
+  "raw_artifact_count": 189,
+  "raw_artifact_sha256_preserved": true,
+  "schema_version": "1",
+  "source_active_registry": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/LINEAGE_QUERY_REGISTRY.csv",
+  "superseded_by": "Task 6 row-level semantic lineage repair"
+}

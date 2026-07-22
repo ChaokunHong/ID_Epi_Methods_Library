@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "decisions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "decision": {
+            "enum": [
+              "resolved",
+              "ambiguous",
+              "rejected",
+              "unresolved_after_three_queries"
+            ],
+            "type": "string"
+          },
+          "named_source_id": {
+            "type": "string"
+          },
+          "reason": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "selected_candidate_key": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "named_source_id",
+          "decision",
+          "selected_candidate_key",
+          "reason"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "decisions"
+  ],
+  "type": "object"
+}

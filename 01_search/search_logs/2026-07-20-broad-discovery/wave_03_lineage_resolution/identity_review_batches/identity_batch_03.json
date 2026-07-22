@@ -14,14 +14,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-04",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-64",
         "query_variant": "exact_title",
         "query": "Correction[Title] AND Impact[Title] AND COVID[Title] AND 19[Title] AND pandemic[Title] AND outbreak[Title] AND mental[Title] AND health[Title] AND hospital[Title] AND front[Title] AND line[Title] AND healthcare[Title] AND workers[Title] AND Chile[Title] AND difference[Title] AND differences[Title] AND approach[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-04",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-64",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38665063",
         "candidate_rank": "1",
@@ -49,14 +49,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-05",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-65",
         "query_variant": "exact_title",
         "query": "Correction[Title] AND Changes[Title] AND Appropriateness[Title] AND US[Title] AND Outpatient[Title] AND Antibiotic[Title] AND Prescribing[Title] AND After[Title] AND COVID[Title] AND 19[Title] AND Outbreak[Title] AND Interrupted[Title] AND Time[Title] AND series[Title] AND Analysis[Title] AND 2017[Title] AND 2021[Title] AND Data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-05",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-65",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39320460",
         "candidate_rank": "1",
@@ -84,14 +84,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-06",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-66",
         "query_variant": "exact_title",
         "query": "Using[Title] AND surveillance[Title] AND monitoring[Title] AND data[Title] AND different[Title] AND origins[Title] AND Salmonella[Title] AND source[Title] AND attribution[Title] AND model[Title] AND European[Title] AND Union[Title] AND example[Title] AND challenges[Title] AND proposed[Title] AND solutions[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-06",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-66",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25023449",
         "candidate_rank": "1",
@@ -119,14 +119,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-07",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-67",
         "query_variant": "exact_title",
         "query": "Triangulation[Title] AND measles[Title] AND vaccination[Title] AND data[Title] AND United[Title] AND Kingdom[Title] AND Great[Title] AND Britain[Title] AND Northern[Title] AND Ireland[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-07",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-67",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31673191",
         "candidate_rank": "1",
@@ -154,19 +154,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-08",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-69",
         "query_variant": "title_first_author",
         "query": "Opportunities[Title] AND Epidemiologic[Title] AND Experiencing[Title] AND Homelessness[Title] AND Mosites[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-08",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-68",
         "query_variant": "exact_title",
         "query": "Data[Title] AND Sources[Title] AND That[Title] AND Enumerate[Title] AND People[Title] AND Experiencing[Title] AND Homelessness[Title] AND United[Title] AND States[Title] AND Opportunities[Title] AND Challenges[Title] AND Epidemiologic[Title] AND Research[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-08",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-69",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:33751025",
         "candidate_rank": "1",
@@ -194,14 +194,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-09",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-70",
         "query_variant": "exact_title",
         "query": "Delaunay[Title] AND triangulation[Title] AND based[Title] AND intelligent[Title] AND system[Title] AND diagnosis[Title] AND covid[Title] AND low[Title] AND radiation[Title] AND CXR[Title] AND images[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-09",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-70",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37360780",
         "candidate_rank": "1",
@@ -229,14 +229,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-10",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-71",
         "query_variant": "exact_title",
         "query": "Emergence[Title] AND pregnancy[Title] AND related[Title] AND listeriosis[Title] AND amongst[Title] AND ethnic[Title] AND minorities[Title] AND England[Title] AND Wales[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-10",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-71",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20630145",
         "candidate_rank": "1",
@@ -264,14 +264,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-11",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-72",
         "query_variant": "exact_title",
         "query": "Evolution[Title] AND Use[Title] AND Dynamic[Title] AND Transmission[Title] AND Models[Title] AND Measles[Title] AND Rubella[Title] AND Risk[Title] AND Policy[Title] AND Analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-11",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-72",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27277138",
         "candidate_rank": "1",
@@ -299,14 +299,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-12",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-73",
         "query_variant": "exact_title",
         "query": "Transmission[Title] AND parameters[Title] AND H1N1[Title] AND 2009[Title] AND influenza[Title] AND virus[Title] AND pandemic[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-12",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-73",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21668690",
         "candidate_rank": "1",
@@ -334,14 +334,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-13",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-74",
         "query_variant": "exact_title",
         "query": "Exclusion[Title] AND pregnant[Title] AND people[Title] AND emergency[Title] AND vaccine[Title] AND clinical[Title] AND trials[Title] AND systematic[Title] AND review[Title] AND trial[Title] AND protocols[Title] AND reporting[Title] AND 2009[Title] AND 2019[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-13",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-74",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37442686",
         "candidate_rank": "1",
@@ -369,14 +369,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-14",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-75",
         "query_variant": "exact_title",
         "query": "Cutaneous[Title] AND leishmaniasis[Title] AND co[Title] AND morbid[Title] AND major[Title] AND depressive[Title] AND disorder[Title] AND systematic[Title] AND review[Title] AND burden[Title] AND estimates[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-14",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-75",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30802261",
         "candidate_rank": "1",
@@ -404,14 +404,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-15",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-76",
         "query_variant": "exact_title",
         "query": "Disability[Title] AND neglected[Title] AND outcome[Title] AND tropical[Title] AND diseases[Title] AND systematic[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-15",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-76",
         "query_variant": "exact_title",
         "candidate_key": "PMID:42384755",
         "candidate_rank": "1",
@@ -439,14 +439,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-16",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-77",
         "query_variant": "exact_title",
         "query": "Knowing[Title] AND unknown[Title] AND underestimation[Title] AND monkeypox[Title] AND cases[Title] AND Insights[Title] AND implications[Title] AND integrative[Title] AND review[Title] AND literature[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-16",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-77",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36246252",
         "candidate_rank": "1",
@@ -474,14 +474,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-17",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-78",
         "query_variant": "exact_title",
         "query": "HIV[Title] AND prevalence[Title] AND China[Title] AND integration[Title] AND surveillance[Title] AND data[Title] AND systematic[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-17",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-78",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24107261",
         "candidate_rank": "1",
@@ -509,14 +509,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-18",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-79",
         "query_variant": "exact_title",
         "query": "Deep[Title] AND learning[Title] AND automated[Title] AND classification[Title] AND tuberculosis[Title] AND related[Title] AND chest[Title] AND X[Title] AND Ray[Title] AND dataset[Title] AND distribution[Title] AND shift[Title] AND limits[Title] AND diagnostic[Title] AND performance[Title] AND generalizability[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-18",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-79",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32775757",
         "candidate_rank": "1",
@@ -544,19 +544,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-19",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-81",
         "query_variant": "title_first_author",
         "query": "Generalizable[Title] AND Coinfected[Title] AND Antiviral[Title] AND Results[Title] AND Saeed[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-19",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-80",
         "query_variant": "exact_title",
         "query": "How[Title] AND Generalizable[Title] AND Are[Title] AND Results[Title] AND Trials[Title] AND Direct[Title] AND Antiviral[Title] AND Agents[Title] AND People[Title] AND Coinfected[Title] AND HIV[Title] AND HCV[Title] AND Real[Title] AND World[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-19",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-81",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:26743093",
         "candidate_rank": "1",
@@ -584,14 +584,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-20",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-82",
         "query_variant": "exact_title",
         "query": "Handling[Title] AND Poor[Title] AND Accrual[Title] AND Pediatric[Title] AND Trials[Title] AND Simulation[Title] AND Study[Title] AND Using[Title] AND Bayesian[Title] AND Approach[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-20",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-82",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33669985",
         "candidate_rank": "1",
@@ -619,14 +619,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-21",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-83",
         "query_variant": "exact_title",
         "query": "Landscape[Title] AND genetics[Title] AND highlights[Title] AND role[Title] AND bank[Title] AND vole[Title] AND metapopulation[Title] AND dynamics[Title] AND epidemiology[Title] AND Puumala[Title] AND hantavirus[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-21",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-83",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21819469",
         "candidate_rank": "1",
@@ -654,14 +654,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-22",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-84",
         "query_variant": "exact_title",
         "query": "Rapid[Title] AND genetic[Title] AND change[Title] AND underpins[Title] AND antagonistic[Title] AND coevolution[Title] AND natural[Title] AND host[Title] AND pathogen[Title] AND metapopulation[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-22",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-84",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22372578",
         "candidate_rank": "1",
@@ -689,19 +689,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-23",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-86",
         "query_variant": "title_first_author",
         "query": "Interventions[Title] AND Influenza[Title] AND Outbreaks[Title] AND Seasonal[Title] AND Malosh[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-23",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-85",
         "query_variant": "exact_title",
         "query": "Influenza[Title] AND During[Title] AND 2010[Title] AND 2020[Title] AND Decade[Title] AND United[Title] AND States[Title] AND Seasonal[Title] AND Outbreaks[Title] AND Vaccine[Title] AND Interventions[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-23",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-86",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:36219562",
         "candidate_rank": "1",
@@ -729,14 +729,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-24",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-87",
         "query_variant": "exact_title",
         "query": "Clinical[Title] AND complications[Title] AND G6PD[Title] AND deficiency[Title] AND Latin[Title] AND American[Title] AND Caribbean[Title] AND populations[Title] AND systematic[Title] AND review[Title] AND implications[Title] AND malaria[Title] AND elimination[Title] AND programmes[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-24",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-87",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24568147",
         "candidate_rank": "1",
@@ -764,14 +764,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-25",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-88",
         "query_variant": "exact_title",
         "query": "Synthesizing[Title] AND Public[Title] AND Health[Title] AND Preparedness[Title] AND Mechanisms[Title] AND High[Title] AND Impact[Title] AND Infectious[Title] AND Disease[Title] AND Threats[Title] AND Jurisdictional[Title] AND Scan[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-25",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-88",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40155318",
         "candidate_rank": "1",
@@ -799,14 +799,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-26",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-89",
         "query_variant": "exact_title",
         "query": "Detecting[Title] AND Undetected[Title] AND Machine[Title] AND Learning[Title] AND Early[Title] AND Disease[Title] AND Diagnosis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-26",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-89",
         "query_variant": "exact_title",
         "candidate_key": "PMID:40905080",
         "candidate_rank": "1",
@@ -834,24 +834,24 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260717-LINEAGE-EVIDENCE-01",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-130",
         "query_variant": "method_author_year",
         "query": "mixed methods[Title/Abstract] AND triangulation[Title/Abstract] AND Tonkin-Crine[Author] AND 2016[Date - Publication]"
       },
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-27",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-91",
         "query_variant": "title_first_author",
         "query": "Discrepancies[Title] AND triangulation[Title] AND quantitative[Title] AND qualitative[Title] AND Crine[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-27",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-90",
         "query_variant": "exact_title",
         "query": "Discrepancies[Title] AND between[Title] AND qualitative[Title] AND quantitative[Title] AND evaluation[Title] AND randomised[Title] AND controlled[Title] AND trial[Title] AND results[Title] AND achieving[Title] AND clarity[Title] AND through[Title] AND mixed[Title] AND methods[Title] AND triangulation[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260717-LINEAGE-EVIDENCE-01",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-130",
         "query_variant": "method_author_year",
         "candidate_key": "PMID:27175799",
         "candidate_rank": "1",
@@ -879,14 +879,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-28",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-92",
         "query_variant": "exact_title",
         "query": "Acceptability[Title] AND Parental[Title] AND Financial[Title] AND Incentives[Title] AND Quasi[Title] AND Mandatory[Title] AND Interventions[Title] AND Preschool[Title] AND Vaccinations[Title] AND Triangulation[Title] AND Findings[Title] AND Three[Title] AND Linked[Title] AND Studies[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-28",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-92",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27253196",
         "candidate_rank": "1",
@@ -914,14 +914,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-29",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-93",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND community[Title] AND wide[Title] AND indirect[Title] AND effects[Title] AND influenza[Title] AND vaccination[Title] AND triangulation[Title] AND using[Title] AND mathematical[Title] AND models[Title] AND bias[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-29",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-93",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39290087",
         "candidate_rank": "1",
@@ -949,14 +949,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-30",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-94",
         "query_variant": "exact_title",
         "query": "evidence[Title] AND synthesis[Title] AND approach[Title] AND estimating[Title] AND incidence[Title] AND symptomatic[Title] AND pertussis[Title] AND infection[Title] AND Netherlands[Title] AND 2005[Title] AND 2011[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-30",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-94",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26715486",
         "candidate_rank": "1",
@@ -984,14 +984,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-31",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-95",
         "query_variant": "exact_title",
         "query": "Multiple[Title] AND model[Title] AND triangulation[Title] AND identify[Title] AND factors[Title] AND associated[Title] AND lameness[Title] AND British[Title] AND sheep[Title] AND flocks[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-31",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-95",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34119859",
         "candidate_rank": "1",
@@ -1019,14 +1019,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-32",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-96",
         "query_variant": "exact_title",
         "query": "Role[Title] AND stability[Title] AND triangulation[Title] AND based[Title] AND methods[Title] AND improve[Title] AND identification[Title] AND risk[Title] AND factors[Title] AND lameness[Title] AND ewes[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-32",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-96",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41401491",
         "candidate_rank": "1",
@@ -1054,19 +1054,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-33",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-98",
         "query_variant": "title_first_author",
         "query": "Contamination[Title] AND Associations[Title] AND Environment[Title] AND Mozambique[Title] AND Holcomb[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-33",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-97",
         "query_variant": "exact_title",
         "query": "Associations[Title] AND between[Title] AND Fecal[Title] AND Contamination[Title] AND Household[Title] AND Environment[Title] AND Enteric[Title] AND Pathogen[Title] AND Detection[Title] AND Children[Title] AND Living[Title] AND Maputo[Title] AND Mozambique[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-33",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-98",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:40704083",
         "candidate_rank": "1",
@@ -1078,7 +1078,7 @@
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40704083/"
       },
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-33",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-98",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:40162287",
         "candidate_rank": "2",
@@ -1106,14 +1106,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-34",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-99",
         "query_variant": "exact_title",
         "query": "Evolving[Title] AND Applications[Title] AND Artificial[Title] AND Intelligence[Title] AND Machine[Title] AND Learning[Title] AND Infectious[Title] AND Diseases[Title] AND Testing[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-34",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-99",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34969102",
         "candidate_rank": "1",
@@ -1141,14 +1141,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-35",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-100",
         "query_variant": "exact_title",
         "query": "Advanced[Title] AND Techniques[Title] AND Intelligent[Title] AND Diagnosis[Title] AND Fish[Title] AND Diseases[Title] AND Review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-35",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-100",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36359061",
         "candidate_rank": "1",
@@ -1176,14 +1176,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-36",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-101",
         "query_variant": "exact_title",
         "query": "causal[Title] AND framework[Title] AND understanding[Title] AND effect[Title] AND losses[Title] AND follow[Title] AND up[Title] AND epidemiologic[Title] AND analyses[Title] AND clinic[Title] AND based[Title] AND cohorts[Title] AND case[Title] AND HIV[Title] AND infected[Title] AND patients[Title] AND antiretroviral[Title] AND therapy[Title] AND Africa[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-36",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-101",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22306557",
         "candidate_rank": "1",
@@ -1211,14 +1211,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-37",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-102",
         "query_variant": "exact_title",
         "query": "Underreporting[Title] AND Secondary[Title] AND Endpoints[Title] AND Randomized[Title] AND Trials[Title] AND Cross[Title] AND sectional[Title] AND Observational[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-37",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-102",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26756751",
         "candidate_rank": "1",
@@ -1246,14 +1246,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-38",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-103",
         "query_variant": "exact_title",
         "query": "New[Title] AND Criterion[Title] AND Determining[Title] AND Cutoff[Title] AND Value[Title] AND Based[Title] AND Biases[Title] AND Incidence[Title] AND Proportions[Title] AND Presence[Title] AND Non[Title] AND differential[Title] AND Outcome[Title] AND Misclassifications[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-38",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-103",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38968067",
         "candidate_rank": "1",
@@ -1281,14 +1281,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-39",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-104",
         "query_variant": "exact_title",
         "query": "Infection[Title] AND fatality[Title] AND risk[Title] AND pandemic[Title] AND H1N1[Title] AND 2009[Title] AND virus[Title] AND Hong[Title] AND Kong[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-39",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-104",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23459950",
         "candidate_rank": "1",
@@ -1316,19 +1316,19 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-40",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-106",
         "query_variant": "title_first_author",
         "query": "Ethnographic[Title] AND Differences[Title] AND Antibiotic[Title] AND Decision[Title] AND Charani[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-40",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-105",
         "query_variant": "exact_title",
         "query": "Differences[Title] AND Antibiotic[Title] AND Decision[Title] AND making[Title] AND Between[Title] AND Acute[Title] AND Surgical[Title] AND Medical[Title] AND Teams[Title] AND Ethnographic[Title] AND Study[Title] AND Culture[Title] AND Team[Title] AND Dynamics[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-40",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-106",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:30445453",
         "candidate_rank": "1",
@@ -1356,14 +1356,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-41",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-107",
         "query_variant": "exact_title",
         "query": "Developing[Title] AND Clinical[Title] AND Decision[Title] AND Support[Title] AND Tool[Title] AND Appropriate[Title] AND Antibiotic[Title] AND Prescribing[Title] AND Australian[Title] AND General[Title] AND Practice[Title] AND Simulation[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-41",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-107",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32507028",
         "candidate_rank": "1",
@@ -1391,14 +1391,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-42",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-108",
         "query_variant": "exact_title",
         "query": "Harmonization[Title] AND community[Title] AND health[Title] AND worker[Title] AND programs[Title] AND HIV[Title] AND four[Title] AND country[Title] AND qualitative[Title] AND study[Title] AND Southern[Title] AND Africa[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-42",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-108",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28792502",
         "candidate_rank": "1",
@@ -1426,14 +1426,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-43",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-109",
         "query_variant": "exact_title",
         "query": "Defining[Title] AND risk[Title] AND groups[Title] AND yellow[Title] AND fever[Title] AND vaccine[Title] AND associated[Title] AND viscerotropic[Title] AND disease[Title] AND absence[Title] AND denominator[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-43",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-109",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24394480",
         "candidate_rank": "1",
@@ -1461,14 +1461,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-44",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-110",
         "query_variant": "exact_title",
         "query": "Pandemic[Title] AND Influenza[Title] AND H1N1[Title] AND 2009[Title] AND mortality[Title] AND United[Title] AND Kingdom[Title] AND risk[Title] AND factors[Title] AND death[Title] AND April[Title] AND March[Title] AND 2010[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-44",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-110",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20504388",
         "candidate_rank": "1",
@@ -1496,14 +1496,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-45",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-111",
         "query_variant": "exact_title",
         "query": "Seroprevalence[Title] AND 2009[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND virus[Title] AND Australian[Title] AND blood[Title] AND donors[Title] AND October[Title] AND December[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-45",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-111",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20946757",
         "candidate_rank": "1",
@@ -1531,14 +1531,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-46",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-112",
         "query_variant": "exact_title",
         "query": "infectious[Title] AND diseases[Title] AND chronic[Title] AND paradigm[Title] AND shift[Title] AND spatial[Title] AND epidemiology[Title] AND disease[Title] AND prevention[Title] AND control[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-46",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-112",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41164843",
         "candidate_rank": "1",
@@ -1566,14 +1566,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-47",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-113",
         "query_variant": "exact_title",
         "query": "Post[Title] AND selection[Title] AND Inference[Title] AND Multiverse[Title] AND Analysis[Title] AND PIMA[Title] AND Inferential[Title] AND Framework[Title] AND Based[Title] AND Sign[Title] AND Flipping[Title] AND Score[Title] AND Test[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-47",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-113",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38664342",
         "candidate_rank": "1",
@@ -1601,24 +1601,24 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260717-LINEAGE-EVIDENCE-02",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-131",
         "query_variant": "method_author_year",
         "query": "(specification curve[Title/Abstract] OR multiverse[Title/Abstract]) AND Joyal-Desmarais[Author] AND 2022[Date - Publication]"
       },
       {
-        "query_id": "SEARCH-20260718-LINEAGE-EVIDENCE-48",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-115",
         "query_variant": "title_first_author",
         "query": "covariates[Title] AND multiverse[Title] AND adjusting[Title] AND sampling[Title] AND Desmarais[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-48",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-114",
         "query_variant": "exact_title",
         "query": "How[Title] AND well[Title] AND do[Title] AND covariates[Title] AND perform[Title] AND when[Title] AND adjusting[Title] AND sampling[Title] AND bias[Title] AND online[Title] AND COVID[Title] AND 19[Title] AND research[Title] AND Insights[Title] AND multiverse[Title] AND analyses[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260717-LINEAGE-EVIDENCE-02",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-131",
         "query_variant": "method_author_year",
         "candidate_key": "PMID:36335560",
         "candidate_rank": "1",
@@ -1646,14 +1646,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-49",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-116",
         "query_variant": "exact_title",
         "query": "Identifying[Title] AND Methods[Title] AND Monitoring[Title] AND Foodborne[Title] AND Illness[Title] AND Review[Title] AND Existing[Title] AND Public[Title] AND Health[Title] AND Surveillance[Title] AND Techniques[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-49",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-116",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29875090",
         "candidate_rank": "1",
@@ -1681,14 +1681,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-50",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-117",
         "query_variant": "exact_title",
         "query": "Prevalence[Title] AND Underreporting[Title] AND Needlestick[Title] AND Injuries[Title] AND Dental[Title] AND Healthcare[Title] AND Workers[Title] AND Pakistan[Title] AND Systematic[Title] AND Review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-50",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-117",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29623091",
         "candidate_rank": "1",
@@ -1716,14 +1716,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-51",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-118",
         "query_variant": "exact_title",
         "query": "Early[Title] AND Detection[Title] AND Monitoring[Title] AND Gastrointestinal[Title] AND Infections[Title] AND Using[Title] AND Syndromic[Title] AND Surveillance[Title] AND Systematic[Title] AND Review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-51",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-118",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38673400",
         "candidate_rank": "1",
@@ -1751,14 +1751,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-52",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-119",
         "query_variant": "exact_title",
         "query": "Echinococcosis[Title] AND Serbia[Title] AND issue[Title] AND 21st[Title] AND century[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-52",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-119",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23113724",
         "candidate_rank": "1",
@@ -1786,14 +1786,14 @@
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-53",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-120",
         "query_variant": "exact_title",
         "query": "Biohazards[Title] AND research[Title] AND laboratories[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-53",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-120",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32126610",
         "candidate_rank": "1",
@@ -1805,7 +1805,7 @@
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32126610/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-EVIDENCE-53",
+        "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-120",
         "query_variant": "exact_title",
         "candidate_key": "PMID:11549131",
         "candidate_rank": "2",

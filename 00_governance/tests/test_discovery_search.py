@@ -1881,6 +1881,28 @@ class DiscoverySearchTests(unittest.TestCase):
                 opener=lambda *_args, **_kwargs: self.fail("invalid registry called network"),
             )
 
+    def test_lineage_registry_accepts_authorless_year_fallback_order(self):
+        output = self.root / "phase/wave_03_lineage_resolution"
+        registry = output / "LINEAGE_QUERY_REGISTRY.csv"
+        base = self.lineage_registry_rows()[0]
+        rows = [
+            {
+                **base,
+                "query_id": f"SEARCH-20260722-LINEAGE-CAUSAL-{number:02d}",
+                "query_variant": variant,
+                "query": f"authorless query {number}",
+            }
+            for number, variant in enumerate(
+                ("exact_title", "title_year", "method_year"), 1
+            )
+        ]
+        self.write_csv(registry, list(search.LINEAGE_REGISTRY_HEADERS), rows)
+        validated, errors = search._validate_lineage_registry(
+            registry, expected_execution_date=date(2026, 7, 22)
+        )
+        self.assertEqual(len(validated), 3)
+        self.assertEqual(errors, [])
+
     def test_run_lineage_dispatches_sources_and_validates_heterogeneous_receipt(self):
         self.copy_configuration()
         output = self.root / "phase/wave_03_lineage_resolution"
@@ -1944,6 +1966,7 @@ class DiscoverySearchTests(unittest.TestCase):
                 output,
                 "test@example.invalid",
                 opener=opener,
+                executed_date=date(2026, 7, 20),
             )
 
         self.assertEqual([row["source"] for row in receipt["queries"]], ["pubmed", "crossref"])
@@ -1970,6 +1993,7 @@ class DiscoverySearchTests(unittest.TestCase):
                 resume_calls.append(request.full_url),
                 self.fail("valid lineage query called network"),
             )[1],
+            executed_date=date(2026, 7, 20),
         )
         self.assertEqual(resume_calls, [])
         self.assertEqual(resumed["queries"], receipt["queries"])
@@ -2075,6 +2099,7 @@ class DiscoverySearchTests(unittest.TestCase):
                     output,
                     "test@example.invalid",
                     opener=first_opener,
+                    executed_date=date(2026, 7, 20),
                 )
         partial = json.loads((output / "LINEAGE_RUN_RECEIPT.json").read_text())
         self.assertEqual(len(partial["queries"]), 1)
@@ -2102,6 +2127,7 @@ class DiscoverySearchTests(unittest.TestCase):
             output,
             "test@example.invalid",
             opener=second_opener,
+            executed_date=date(2026, 7, 20),
         )
         self.assertEqual(len(completed["queries"]), 2)
         self.assertEqual(len(rerun_calls), 1)
@@ -2132,7 +2158,12 @@ class DiscoverySearchTests(unittest.TestCase):
             search.DiscoveryExecutionError, "overbroad lineage identity query"
         ):
             search.execute_lineage(
-                self.root, registry, output, "test@example.invalid", opener=opener
+                self.root,
+                registry,
+                output,
+                "test@example.invalid",
+                opener=opener,
+                executed_date=date(2026, 7, 20),
             )
         self.assertEqual(len(calls), 1)
         self.assertEqual(list((output / "raw").glob("*.xml")), [])
@@ -3339,6 +3370,277 @@ class DiscoverySearchTests(unittest.TestCase):
         self.assertIn(
             "discovery configuration: family set mismatch",
             errors,
+        )
+
+    def make_task6_semantic_fixture(self) -> Path:
+        run_dir = self.root / "phase/wave_03_lineage_resolution"
+        global_dir = run_dir.parent / "global"
+        run_dir.mkdir(parents=True)
+        global_dir.mkdir(parents=True)
+        self.write_csv(
+            run_dir / "canonical_method_concepts.csv",
+            [
+                "concept_label", "canonical_name", "family",
+                "assigned_record_count", "first_candidate_key",
+                "last_candidate_key", "evidence_inspected", "reviewer",
+                "decision_rationale",
+            ],
+            [{
+                "concept_label": "example_method",
+                "canonical_name": "Example method",
+                "family": "causal_policy",
+                "assigned_record_count": "1",
+                "first_candidate_key": "PMID:1",
+                "last_candidate_key": "PMID:1",
+                "evidence_inspected": "title and complete available abstract",
+                "reviewer": "semantic-reader-a",
+                "decision_rationale": "The inspected record supports this discovery concept.",
+            }],
+        )
+        self.write_csv(
+            run_dir / "canonical_method_assignments.csv",
+            [
+                "candidate_key", "final_concept_label", "final_canonical_name",
+                "final_family", "paper_id", "method_id",
+                "provisional_relationship_decision",
+                "provisional_relationship_role",
+                "provisional_relationship_evidence",
+                "provisional_relationship_reviewer",
+                "lineage_source_role", "lineage_source_evidence",
+                "lineage_source_reviewer",
+            ],
+            [{
+                "candidate_key": "PMID:1",
+                "final_concept_label": "example_method",
+                "final_canonical_name": "Example method",
+                "final_family": "causal_policy",
+                "paper_id": "P-2020-0001",
+                "method_id": "M-CAUSAL-001",
+                "provisional_relationship_decision": "omit",
+                "provisional_relationship_role": "",
+                "provisional_relationship_evidence": (
+                    "The title and abstract do not explicitly support an allowed "
+                    "paper-to-method relationship role."
+                ),
+                "provisional_relationship_reviewer": "semantic-reader-a",
+                "lineage_source_role": "authoritative_candidate",
+                "lineage_source_evidence": (
+                    "The title explicitly presents development of the example method."
+                ),
+                "lineage_source_reviewer": "semantic-reader-a",
+            }],
+        )
+        inspection_row = {
+            "method_label": "example_method",
+            "canonical_name": "Example method",
+            "family": "causal_policy",
+            "assigned_record_count": "1",
+            "assigned_keyset_sha256": hashlib.sha256(b"PMID:1\n").hexdigest(),
+            "selected_named_source_ids": "NS-CAUSAL-100",
+            "supporting_query_ids": "SEARCH-20260722-LINEAGE-CAUSAL-100",
+            "evidence_location": "canonical_method_assignments.csv: PMID:1",
+            "reviewer": "semantic-reader-a",
+            "notes": "All assigned titles and complete available abstracts were inspected.",
+        }
+        for role in search.LINEAGE_SOURCE_ROLE_ORDER:
+            inspection_row[f"{role}_outcome"] = (
+                "named_source_queried"
+                if role == "authoritative_candidate"
+                else "not_directly_named_in_inspected_evidence"
+            )
+        self.write_csv(
+            run_dir / "lineage_concept_inspection.csv",
+            list(search.LINEAGE_CONCEPT_INSPECTION_HEADERS),
+            [inspection_row],
+        )
+        self.write_csv(
+            run_dir / "LINEAGE_NAMED_SOURCES.csv",
+            list(search.LINEAGE_NAMED_SOURCE_HEADERS),
+            [{
+                "named_source_id": "NS-CAUSAL-100",
+                "method_label": "example_method",
+                "canonical_name": "Example method",
+                "family": "causal_policy",
+                "source_role": "authoritative_candidate",
+                "seed_candidate_key": "PMID:1",
+                "title": "Example method",
+                "first_author": "Smith",
+                "year": "2020",
+                "record_type": "method_source",
+                "source_url": "https://pubmed.ncbi.nlm.nih.gov/1/",
+                "provenance_evidence": "The inspected title names the method source.",
+                "selection_basis": "Directly named in inspected evidence.",
+            }],
+        )
+        self.write_csv(
+            run_dir / "LINEAGE_QUERY_REGISTRY.csv",
+            list(search.LINEAGE_REGISTRY_HEADERS),
+            [{
+                "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-100",
+                "named_source_id": "NS-CAUSAL-100",
+                "method_label": "example_method",
+                "canonical_name": "Example method",
+                "family": "causal_policy",
+                "source_role": "authoritative_candidate",
+                "source": "pubmed",
+                "query_variant": "exact_title",
+                "query": "Example[Title] AND method[Title]",
+                "seed_candidate_keys": "PMID:1",
+                "reviewer": "semantic-reader-a",
+            }],
+        )
+        self.write_csv(
+            self.root / "03_evidence_tables/methods.csv",
+            [
+                "method_id", "canonical_name", "family", "verification_state",
+                "card_path", "notes",
+            ],
+            [{
+                "method_id": "M-CAUSAL-001",
+                "canonical_name": "Example method",
+                "family": "causal_policy",
+                "verification_state": "discovery",
+                "card_path": "01_search/method_discovery_records/M-CAUSAL-001.md",
+                "notes": "",
+            }],
+        )
+        card = self.root / "01_search/method_discovery_records/M-CAUSAL-001.md"
+        card.parent.mkdir(parents=True)
+        card.write_text(
+            "# M-CAUSAL-001 — Example method\n\n"
+            "## Discovery control\n"
+            "- Method ID: M-CAUSAL-001\n"
+            "- Verification state: discovery\n"
+            "- Preliminary family: causal_policy\n"
+            "- Canonical discovery label: Example method\n"
+            "- Known label variants: None documented at discovery stage\n",
+            encoding="utf-8",
+        )
+        self.write_csv(
+            global_dir / "discovery_relationships.csv",
+            list(search.DISCOVERY_RELATIONSHIP_HEADERS),
+            [],
+        )
+        (self.root / ".gitattributes").write_text(
+            "01_search/search_logs/example/raw/source.xml -whitespace\n",
+            encoding="utf-8",
+        )
+        return run_dir
+
+    def test_lineage_query_id_uses_execution_date_and_supports_sequences_above_99(self):
+        run_dir = self.make_task6_semantic_fixture()
+        rows, errors = search._validate_lineage_registry(
+            run_dir / "LINEAGE_QUERY_REGISTRY.csv",
+            expected_execution_date=date(2026, 7, 22),
+        )
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(errors, [])
+        _, errors = search._validate_lineage_registry(
+            run_dir / "LINEAGE_QUERY_REGISTRY.csv",
+            expected_execution_date=date(2026, 7, 23),
+        )
+        self.assertIn("lineage query execution date mismatch", "\n".join(errors))
+        archive_registry = (
+            run_dir.parent
+            / "wave_03_zero_adoption_archives/old/LINEAGE_QUERY_REGISTRY.csv"
+        )
+        archive_registry.parent.mkdir(parents=True)
+        archive_registry.write_text(
+            (run_dir / "LINEAGE_QUERY_REGISTRY.csv").read_text(encoding="utf-8"),
+            encoding="utf-8",
+        )
+        self.assertIn(
+            "active lineage query_id collides with archive",
+            "\n".join(search._task6_archive_query_id_errors(run_dir)),
+        )
+
+    def test_task6_variant_split_labels_do_not_leak_into_method_cards(self):
+        run_dir = self.make_task6_semantic_fixture()
+        self.assertEqual(search.validate_task6_semantics(self.root, run_dir), [])
+        card = self.root / "01_search/method_discovery_records/M-CAUSAL-001.md"
+        card.write_text(
+            card.read_text(encoding="utf-8").replace(
+                "None documented at discovery stage",
+                "provisional routing bucket split to another concept",
+            ),
+            encoding="utf-8",
+        )
+        self.assertIn(
+            "method card variant lacks inspected-evidence support",
+            "\n".join(search.validate_task6_semantics(self.root, run_dir)),
+        )
+
+    def test_task6_relationship_semantics_require_row_decisions_and_audit_omission(self):
+        run_dir = self.make_task6_semantic_fixture()
+        self.assertEqual(search.validate_task6_semantics(self.root, run_dir), [])
+        path = run_dir / "canonical_method_assignments.csv"
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["provisional_relationship_decision"] = "emit"
+        rows[0]["provisional_relationship_role"] = "originates"
+        self.write_csv(path, list(rows[0]), rows)
+        rendered = "\n".join(search.validate_task6_semantics(self.root, run_dir))
+        self.assertIn("emitted discovery relationship missing", rendered)
+
+    def test_task6_lineage_closes_every_role_for_every_concept(self):
+        run_dir = self.make_task6_semantic_fixture()
+        path = run_dir / "lineage_concept_inspection.csv"
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["guidance_outcome"] = ""
+        self.write_csv(path, list(search.LINEAGE_CONCEPT_INSPECTION_HEADERS), rows)
+        self.assertIn(
+            "lineage concept role outcome missing",
+            "\n".join(search.validate_task6_semantics(self.root, run_dir)),
+        )
+        path = run_dir / "lineage_concept_inspection.csv"
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["guidance_outcome"] = "not_directly_named_in_inspected_evidence"
+        self.write_csv(path, list(search.LINEAGE_CONCEPT_INSPECTION_HEADERS), rows)
+        assignment_path = run_dir / "canonical_method_assignments.csv"
+        with assignment_path.open(encoding="utf-8", newline="") as handle:
+            assignment_rows = list(csv.DictReader(handle))
+        assignment_rows[0]["lineage_source_role"] = "none"
+        self.write_csv(assignment_path, list(assignment_rows[0]), assignment_rows)
+        self.assertIn(
+            "lineage named source lacks matching semantic role",
+            "\n".join(search.validate_task6_semantics(self.root, run_dir)),
+        )
+
+        assignment_rows[0]["lineage_source_role"] = "authoritative_candidate"
+        self.write_csv(assignment_path, list(assignment_rows[0]), assignment_rows)
+        inspection_path = run_dir / "lineage_concept_inspection.csv"
+        with inspection_path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        rows[0]["authoritative_candidate_outcome"] = (
+            "not_directly_named_in_inspected_evidence"
+        )
+        rows[0]["selected_named_source_ids"] = ""
+        rows[0]["supporting_query_ids"] = ""
+        self.write_csv(
+            inspection_path, list(search.LINEAGE_CONCEPT_INSPECTION_HEADERS), rows
+        )
+        self.write_csv(
+            run_dir / "LINEAGE_NAMED_SOURCES.csv",
+            list(search.LINEAGE_NAMED_SOURCE_HEADERS),
+            [],
+        )
+        self.assertIn(
+            "lineage semantic lead lacks queried source",
+            "\n".join(search.validate_task6_semantics(self.root, run_dir)),
+        )
+
+    def test_task6_whitespace_policy_does_not_mask_formal_csv(self):
+        run_dir = self.make_task6_semantic_fixture()
+        self.assertEqual(search.validate_task6_semantics(self.root, run_dir), [])
+        (self.root / ".gitattributes").write_text(
+            "01_search/search_logs/**/*.csv -whitespace\n",
+            encoding="utf-8",
+        )
+        self.assertIn(
+            "whitespace policy masks formal CSV",
+            "\n".join(search.validate_task6_semantics(self.root, run_dir)),
         )
 
 

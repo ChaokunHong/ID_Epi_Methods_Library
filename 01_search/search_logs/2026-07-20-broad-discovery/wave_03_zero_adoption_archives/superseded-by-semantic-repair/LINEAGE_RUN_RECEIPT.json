@@ -1,0 +1,2558 @@
+{
+  "configuration_files": [
+    {
+      "path": "01_search/search_protocols/2026-07-20-broad-methods-discovery-protocol.md",
+      "sha256": "e3b1013862e2f18314702cbf1e1e0e5c2c6b9e0d2b78113b23b9e65e2ccb20df"
+    },
+    {
+      "path": "01_search/search_protocols/discovery_queries.json",
+      "sha256": "7e7e6bd7eeb4704e43ffa30e3c002a4ce5d044b5ac0c722fce7dd5d34f24a3e1"
+    },
+    {
+      "path": "01_search/journal_registry/journals.csv",
+      "sha256": "ef65e25ccb8ef1feb7220fc82c476bf2322c7e78db8fd1c05d463347aa688cc8"
+    },
+    {
+      "path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/superseded-by-semantic-repair/LINEAGE_QUERY_REGISTRY.csv",
+      "sha256": "8a3b89ff8ec8c93db80eceeb7668e5cc59e1996d38853af5a6f7e15d29f84923"
+    }
+  ],
+  "executed_at": "2026-07-22T11:30:22.684593+08:00",
+  "queries": [
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-115.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "92e5722a59e7cc24d94417e2cc1a522e05a159a4a15786f943b4a874b84377a0"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-115.esearch.json",
+      "esearch_sha256": "41ea949c824c67f57c4812abf31381a414f95702377851407bce7ef50474c203",
+      "query": "Multi[Title] AND faceted[Title] AND intervention[Title] AND improve[Title] AND management[Title] AND antibiotics[Title] AND children[Title] AND presenting[Title] AND primary[Title] AND care[Title] AND acute[Title] AND cough[Title] AND respiratory[Title] AND tract[Title] AND infection[Title] AND CHICO[Title] AND efficient[Title] AND cluster[Title] AND randomised[Title] AND controlled[Title] AND trial[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-115",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-115.esearch.json",
+      "raw_sha256": "41ea949c824c67f57c4812abf31381a414f95702377851407bce7ef50474c203",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a60396f86bd32e61f03fe60"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-121.esearch.json",
+      "esearch_sha256": "7d68b438afe2b8605d86a8aae1380f06edf76f6a82fd09c8b3f8d7c99fc3884a",
+      "query": "COVID[Title] AND 19[Title] AND underreporting[Title] AND its[Title] AND impact[Title] AND vaccination[Title] AND strategies[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-121",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-121.esearch.json",
+      "raw_sha256": "7d68b438afe2b8605d86a8aae1380f06edf76f6a82fd09c8b3f8d7c99fc3884a",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a60397af8f9b2856006d74a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-122.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "514cb145f0e05548452c2925c5179704cf55af0c1a58e9c6104dd872506779b0"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-122.esearch.json",
+      "esearch_sha256": "a650a9f14335b4607af0898a8389774a8c1e7b67147cc0c09a2148868a77f512",
+      "query": "underreporting[Title] AND vaccination[Title] AND strategies[Title] AND impact[Title] AND Albani[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-122",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-122.esearch.json",
+      "raw_sha256": "a650a9f14335b4607af0898a8389774a8c1e7b67147cc0c09a2148868a77f512",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603d8a1d9192aef60fbf97"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-126.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "d34852daec856aac63e9addccfbda29e96b128629704bbb0cfbe5a57c39ed857"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-126.esearch.json",
+      "esearch_sha256": "e996f0065d806882e3be3d7031dec0135e24699b0202baf4acbe07dc2c29670a",
+      "query": "Long[Title] AND Term[Title] AND Effectiveness[Title] AND Financial[Title] AND Incentives[Title] AND Not[Title] AND Prescribing[Title] AND Unnecessary[Title] AND Antibiotics[Title] AND Children[Title] AND Acute[Title] AND Respiratory[Title] AND Gastrointestinal[Title] AND Infections[Title] AND Japan[Title] AND s[Title] AND Nationwide[Title] AND Quasi[Title] AND Experimental[Title] AND Study[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-126",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-126.esearch.json",
+      "raw_sha256": "e996f0065d806882e3be3d7031dec0135e24699b0202baf4acbe07dc2c29670a",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603983372a05ffc3021331"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-137.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "bc73e8b600e1cadc05228bfbb6bf0d805ec246eb149ba209b9678a8c2b8eccbe"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-137.esearch.json",
+      "esearch_sha256": "b76725e2d1692f326b0e8465867aa559addefa2522b14e499d452c5a8326c576",
+      "query": "Impact[Title] AND conjugate[Title] AND 7[Title] AND valent[Title] AND vaccination[Title] AND Belgium[Title] AND addressing[Title] AND methodological[Title] AND challenges[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-137",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-137.esearch.json",
+      "raw_sha256": "b76725e2d1692f326b0e8465867aa559addefa2522b14e499d452c5a8326c576",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603995a46d23466d0c5a95"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-142.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "5582a0219d1465500a0c1db9184b2be6d8cc9020f391adebd0dc526ed6a2e6cc"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-142.esearch.json",
+      "esearch_sha256": "5daee84aaea657e6aa60937756253caccd84a970f908c676c5ca3b94d00be6f3",
+      "query": "Using[Title] AND marginal[Title] AND structural[Title] AND measurement[Title] AND error[Title] AND models[Title] AND estimate[Title] AND long[Title] AND term[Title] AND effect[Title] AND antiretroviral[Title] AND therapy[Title] AND incident[Title] AND AIDS[Title] AND death[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-142",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-142.esearch.json",
+      "raw_sha256": "5daee84aaea657e6aa60937756253caccd84a970f908c676c5ca3b94d00be6f3",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a60399aacf7561b250d8b89"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-148.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "3037ef03cfa792b97fe44051804096c5594cad665d7ed4d3a36770697862bbff"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-148.esearch.json",
+      "esearch_sha256": "4f7813288f6beb4c16c06326fbe6f39abe34377951bd377b123970baeae813d2",
+      "query": "Characterizing[Title] AND vaccine[Title] AND associated[Title] AND risks[Title] AND using[Title] AND cubic[Title] AND smoothing[Title] AND splines[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-148",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-148.esearch.json",
+      "raw_sha256": "4f7813288f6beb4c16c06326fbe6f39abe34377951bd377b123970baeae813d2",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039aaa8a21b450009501f"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-156.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "d588ec32abc77da6289e7fb4b7571abf0bf0ddc347b1cc98a33daa8d8fd3e13b"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-156.esearch.json",
+      "esearch_sha256": "f8ec18c490ef1e56bdb77a2d73e7ce71b1107dc52df946c0031e5ec238d67ef3",
+      "query": "Long[Title] AND term[Title] AND Cardiovascular[Title] AND Cerebrovascular[Title] AND Other[Title] AND Thrombotic[Title] AND Complications[Title] AND COVID[Title] AND 19[Title] AND Survivors[Title] AND Retrospective[Title] AND Cohort[Title] AND Study[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-156",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-156.esearch.json",
+      "raw_sha256": "f8ec18c490ef1e56bdb77a2d73e7ce71b1107dc52df946c0031e5ec238d67ef3",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039b74192289bcf0611a9"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-158.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "3b16682254c7a78202d37ca817bc4f31da778ec9d87eeb8dd046c0a8db5d2eae"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-158.esearch.json",
+      "esearch_sha256": "89cae97e3372822f688f0c7b7498f56ac7af1107d7323791dc02113fe8667247",
+      "query": "2016[Title] AND California[Title] AND policy[Title] AND eliminate[Title] AND nonmedical[Title] AND vaccine[Title] AND exemptions[Title] AND changes[Title] AND coverage[Title] AND empirical[Title] AND analysis[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-158",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-158.esearch.json",
+      "raw_sha256": "89cae97e3372822f688f0c7b7498f56ac7af1107d7323791dc02113fe8667247",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039bc3e0a3c7e5f00808e"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-163.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "d236efd731fa97297005605a82ae48d168a96d5ec2371f6180757a20fa4f58a1"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-163.esearch.json",
+      "esearch_sha256": "70f3ab20c0cfa874020ba36786fc146fd4b95612f0ca3e825c78a65b6276dce4",
+      "query": "Save[Title] AND lives[Title] AND livelihoods[Title] AND cross[Title] AND country[Title] AND analysis[Title] AND COVID[Title] AND 19[Title] AND pandemic[Title] AND economic[Title] AND growth[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-163",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-163.esearch.json",
+      "raw_sha256": "70f3ab20c0cfa874020ba36786fc146fd4b95612f0ca3e825c78a65b6276dce4",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039c584258df1a80454c6"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-172.esearch.json",
+      "esearch_sha256": "9ae48f3045d87a37628defef0e7e8073ec2abb377c6b813e9fa808008d218f5b",
+      "query": "Multilayer[Title] AND factors[Title] AND associated[Title] AND excess[Title] AND all[Title] AND cause[Title] AND mortality[Title] AND during[Title] AND omicron[Title] AND non[Title] AND waves[Title] AND COVID[Title] AND 19[Title] AND pandemic[Title] AND time[Title] AND series[Title] AND analysis[Title] AND 29[Title] AND countries[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-172",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-172.esearch.json",
+      "raw_sha256": "9ae48f3045d87a37628defef0e7e8073ec2abb377c6b813e9fa808008d218f5b",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039d49d2d68c33701529c"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-173.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "fef8fc4754905478671f2cecb1cb5055180b745c1c9910ef08f9fd19f739a1f4"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-173.esearch.json",
+      "esearch_sha256": "a72d0bd1d022442ed021c879b46ad0a36fc3c6e4283fad49f8e33917d7dd5769",
+      "query": "Multilayer[Title] AND associated[Title] AND mortality[Title] AND countries[Title] AND Zou[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-173",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-173.esearch.json",
+      "raw_sha256": "a72d0bd1d022442ed021c879b46ad0a36fc3c6e4283fad49f8e33917d7dd5769",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603da4d07ecd89f90626f0"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-174.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "03043e7d10f3120ad640d10f6b95ae0c0e1c40563a6879b728580f91104e2219"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-174.esearch.json",
+      "esearch_sha256": "39728c6170d8c55dc081f10c9f3d4e259ccbc24619e2eb15a3ed54e4403f7e0c",
+      "query": "Use[Title] AND Quasi[Title] AND experimental[Title] AND Designs[Title] AND Vaccine[Title] AND Evaluation[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-174",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-174.esearch.json",
+      "raw_sha256": "39728c6170d8c55dc081f10c9f3d4e259ccbc24619e2eb15a3ed54e4403f7e0c",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039d5ccb6492dfc0be7fe"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-181.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "078e5ce10bd5958c7eed810ccfb469b2f0c2bfe21ba2e351f18288669d00b428"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-181.esearch.json",
+      "esearch_sha256": "b4edf484d73585266f6d8c035a50338228c73ad637af9aad9d8f5be62e8bc643",
+      "query": "Factors[Title] AND associated[Title] AND tick[Title] AND bites[Title] AND pathogen[Title] AND prevalence[Title] AND ticks[Title] AND parasitizing[Title] AND humans[Title] AND Georgia[Title] AND USA[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-181",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-181.esearch.json",
+      "raw_sha256": "b4edf484d73585266f6d8c035a50338228c73ad637af9aad9d8f5be62e8bc643",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039e5c845a50d4b094c83"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-182.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "7f25d7b0c4421b50a4ed0608d5059672df8dfbbaaba2821e40e44ac4413d1b96"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-182.esearch.json",
+      "esearch_sha256": "5adc5c47f7f8393380ea1e8c11fa220b417f3bfa70b85bcbdffec4e0ba023741",
+      "query": "Inference[Title] AND under[Title] AND superspreading[Title] AND Determinants[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND transmission[Title] AND Germany[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-182",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-182.esearch.json",
+      "raw_sha256": "5adc5c47f7f8393380ea1e8c11fa220b417f3bfa70b85bcbdffec4e0ba023741",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039e7988941e52302e160"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-190.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "5d7555358750fb261ec51d751a642b4e4b78bba188cb7f44483dc2afca68b455"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-190.esearch.json",
+      "esearch_sha256": "55a7cb2f42aa168e953bf8ac44b00cd2e1fb6cc3721234cb205c7550bd053b61",
+      "query": "Factors[Title] AND associated[Title] AND HIV[Title] AND virologic[Title] AND failure[Title] AND patients[Title] AND HAART[Title] AND one[Title] AND year[Title] AND three[Title] AND sentinel[Title] AND surveillance[Title] AND sites[Title] AND China[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-190",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-190.esearch.json",
+      "raw_sha256": "55a7cb2f42aa168e953bf8ac44b00cd2e1fb6cc3721234cb205c7550bd053b61",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039f308e3507e8a073027"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-192.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "863cbd0a1d4f47842a472f638014c5145f722b49472388e59113ae020de7eb60"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-192.esearch.json",
+      "esearch_sha256": "56f71a294c014784b6d76f485670a3cf1faab38987f2cf1c39bdfe5deb9b81e0",
+      "query": "Quadrivalent[Title] AND human[Title] AND papillomavirus[Title] AND vaccination[Title] AND trends[Title] AND genital[Title] AND warts[Title] AND Australia[Title] AND analysis[Title] AND national[Title] AND sentinel[Title] AND surveillance[Title] AND data[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-192",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-192.esearch.json",
+      "raw_sha256": "56f71a294c014784b6d76f485670a3cf1faab38987f2cf1c39bdfe5deb9b81e0",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039f9ef173d92560df6f5"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 2,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-201.efetch.000000000-000000001.xml",
+          "retmax": 2,
+          "retstart": 0,
+          "sha256": "0a77d352fb16d4c29344e89eb981bb03f516a7ee9f42d8dee86b3dcc50191e43"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-201.esearch.json",
+      "esearch_sha256": "03ef3744f83532000e545ff4d6098c1b774165b2957069e72d00690390ec7bee",
+      "query": "Effect[Title] AND Estimates[Title] AND Randomized[Title] AND Trials[Title] AND Observational[Title] AND Studies[Title] AND Comparing[Title] AND Apples[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-201",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-201.esearch.json",
+      "raw_sha256": "03ef3744f83532000e545ff4d6098c1b774165b2957069e72d00690390ec7bee",
+      "reported_count": 2,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a0f3ace30821f0a1c41"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-205.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "8d9f1ed0abbd288a82c6ac7890cf59a367e650548694c6cdcfa39b24d9d2877a"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-205.esearch.json",
+      "esearch_sha256": "55cf62b1963a2091efdca518a79b6abd73662d29e41f7f441cd82aa195aa2f6d",
+      "query": "EFFECT[Title] AND BREASTFEEDING[Title] AND GASTROINTESTINAL[Title] AND INFECTION[Title] AND INFANTS[Title] AND TARGETED[Title] AND MAXIMUM[Title] AND LIKELIHOOD[Title] AND APPROACH[Title] AND CLUSTERED[Title] AND LONGITUDINAL[Title] AND DATA[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-205",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-205.esearch.json",
+      "raw_sha256": "55cf62b1963a2091efdca518a79b6abd73662d29e41f7f441cd82aa195aa2f6d",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a16d5efcaf16705ad8e"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-99.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "25b7ea93bba2ebb38a8c8f49c57a9509038a9736d293adaf4f69a11867988b75"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-99.esearch.json",
+      "esearch_sha256": "c8f12efa8416271c8677c84b29c3d00eb8462107b7fd99fbe9cbbbdb9ecd41d2",
+      "query": "Adaptive[Title] AND Intervention[Title] AND Trial[Title] AND Design[Title] AND Finding[Title] AND Optimal[Title] AND Integrated[Title] AND Strategies[Title] AND Malaria[Title] AND Control[Title] AND Elimination[Title] AND Africa[Title] AND Model[Title] AND Simulation[Title] AND Study[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-99",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-99.esearch.json",
+      "raw_sha256": "c8f12efa8416271c8677c84b29c3d00eb8462107b7fd99fbe9cbbbdb9ecd41d2",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6039524590c7391b0f7066"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-100.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "851900a1ff4089075e21131bb0d76b4ecdb5942b0cf0b878ddcbf0efceb92c61"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-100.esearch.json",
+      "esearch_sha256": "ef44c45e282ea2ba6fb37d2711d3f0f9de206243fedf595867925fc1f2d77cd0",
+      "query": "Advanced[Title] AND Techniques[Title] AND Intelligent[Title] AND Diagnosis[Title] AND Fish[Title] AND Diseases[Title] AND Review[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-100",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-100.esearch.json",
+      "raw_sha256": "ef44c45e282ea2ba6fb37d2711d3f0f9de206243fedf595867925fc1f2d77cd0",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a7af0bdacf1dd07af94"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-101.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "c353864e362b6544e1adcbc4217fcbd4ed674993b7d1e426442697b2194e8215"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-101.esearch.json",
+      "esearch_sha256": "8ba9994fbf60c4ea3350f011d3846153cdbda008727ddf96ad3c481fe5c09044",
+      "query": "causal[Title] AND framework[Title] AND understanding[Title] AND effect[Title] AND losses[Title] AND follow[Title] AND up[Title] AND epidemiologic[Title] AND analyses[Title] AND clinic[Title] AND based[Title] AND cohorts[Title] AND case[Title] AND HIV[Title] AND infected[Title] AND patients[Title] AND antiretroviral[Title] AND therapy[Title] AND Africa[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-101",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-101.esearch.json",
+      "raw_sha256": "8ba9994fbf60c4ea3350f011d3846153cdbda008727ddf96ad3c481fe5c09044",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a7d3e0a3c7e5f0080b2"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-104.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "01fa35aa00b193fc9b3ec6b2e90d7f91a243c394fa896b4ef3922e0f8600d3cc"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-104.esearch.json",
+      "esearch_sha256": "5de36579677fa1adeb6338334d9a81e41226d9563b904019a04faa49410461d6",
+      "query": "Infection[Title] AND fatality[Title] AND risk[Title] AND pandemic[Title] AND H1N1[Title] AND 2009[Title] AND virus[Title] AND Hong[Title] AND Kong[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-104",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-104.esearch.json",
+      "raw_sha256": "5de36579677fa1adeb6338334d9a81e41226d9563b904019a04faa49410461d6",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a8515076c54cc0513fc"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-107.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "b9602dae95e84dda0fa7027711a3d0babdfd013db713c87a404b09f38b88f49c"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-107.esearch.json",
+      "esearch_sha256": "f1c1643f4c1a7193e6dc627a266041f7358da83b0320e54aa284b33a02c67eba",
+      "query": "Developing[Title] AND Clinical[Title] AND Decision[Title] AND Support[Title] AND Tool[Title] AND Appropriate[Title] AND Antibiotic[Title] AND Prescribing[Title] AND Australian[Title] AND General[Title] AND Practice[Title] AND Simulation[Title] AND Study[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-107",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-107.esearch.json",
+      "raw_sha256": "f1c1643f4c1a7193e6dc627a266041f7358da83b0320e54aa284b33a02c67eba",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a89ba1c31586a07cc31"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-111.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "8133f4333c63122ed671d003a6e652518c73f97531f1bfe9bc73014213932f8a"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-111.esearch.json",
+      "esearch_sha256": "932fb189a04be61a8fa67132cd16c06123c40c666ce95f778ef8b22f10a76f5d",
+      "query": "Seroprevalence[Title] AND 2009[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND virus[Title] AND Australian[Title] AND blood[Title] AND donors[Title] AND October[Title] AND December[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-111",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-111.esearch.json",
+      "raw_sha256": "932fb189a04be61a8fa67132cd16c06123c40c666ce95f778ef8b22f10a76f5d",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a94d60efd5e7205d22c"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 2,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-120.efetch.000000000-000000001.xml",
+          "retmax": 2,
+          "retstart": 0,
+          "sha256": "bd3590bea02f38d99352da7843c5462d7512433fdfc17d28ec9f51fb0064163e"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-120.esearch.json",
+      "esearch_sha256": "64f44bce32f6f3f03892636d1de957e552169fcfbc5b4a70cf1a865a91b316e7",
+      "query": "Biohazards[Title] AND research[Title] AND laboratories[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-120",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-120.esearch.json",
+      "raw_sha256": "64f44bce32f6f3f03892636d1de957e552169fcfbc5b4a70cf1a865a91b316e7",
+      "reported_count": 2,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603aa86f9e4e10a70aae5b"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-122.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "efa80dc427a5923bb6d7a7e576bbe7bdb8075092a602b6c12903d95f791ad36d"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-122.esearch.json",
+      "esearch_sha256": "d5925b898626f9fa10c2689d455f70fdf7dc6fa57f1da5af1d8f620a9524b3ab",
+      "query": "Estimating[Title] AND Influenza[Title] AND Vaccine[Title] AND Effectiveness[Title] AND Test[Title] AND Negative[Title] AND Design[Title] AND Using[Title] AND Alternative[Title] AND Control[Title] AND Groups[Title] AND Systematic[Title] AND Review[Title] AND Meta[Title] AND Analysis[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-122",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-122.esearch.json",
+      "raw_sha256": "d5925b898626f9fa10c2689d455f70fdf7dc6fa57f1da5af1d8f620a9524b3ab",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603aae08c9e5140b017337"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-126.esearch.json",
+      "esearch_sha256": "b3ee80d8c5dadb6d8dd4bf03d733bc896ecab0364bbc1424b553e39dee38cabb",
+      "query": "relationship[Title] AND between[Title] AND anti[Title] AND merozoite[Title] AND antibodies[Title] AND incidence[Title] AND Plasmodium[Title] AND falciparum[Title] AND malaria[Title] AND systematic[Title] AND review[Title] AND meta[Title] AND analysis[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-126",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-126.esearch.json",
+      "raw_sha256": "b3ee80d8c5dadb6d8dd4bf03d733bc896ecab0364bbc1424b553e39dee38cabb",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603ab43a8fe465870f1050"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-127.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "6fac9ae68f465e86a68fcfa7eefd9c1c64474c01bc971b942824fa5602af69b8"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-127.esearch.json",
+      "esearch_sha256": "aa57bb9108cfc344bf8e2d4694b61d2aaab7887bb26f8d562bf70881ea619282",
+      "query": "relationship[Title] AND antibodies[Title] AND Plasmodium[Title] AND falciparum[Title] AND Fowkes[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-127",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-127.esearch.json",
+      "raw_sha256": "aa57bb9108cfc344bf8e2d4694b61d2aaab7887bb26f8d562bf70881ea619282",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603dccbdff7e34f5093dd6"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-65.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "11614b6cbd1836667a96b85f0f473d1f800898e19a7c8003e02945a7de305be6"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-65.esearch.json",
+      "esearch_sha256": "e0c7e251605441903271e215a1529f6b62522575a440fcdcb704d53c8ef0d3a6",
+      "query": "Correction[Title] AND Changes[Title] AND Appropriateness[Title] AND US[Title] AND Outpatient[Title] AND Antibiotic[Title] AND Prescribing[Title] AND After[Title] AND COVID[Title] AND 19[Title] AND Outbreak[Title] AND Interrupted[Title] AND Time[Title] AND series[Title] AND Analysis[Title] AND 2017[Title] AND 2021[Title] AND Data[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-65",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-65.esearch.json",
+      "raw_sha256": "e0c7e251605441903271e215a1529f6b62522575a440fcdcb704d53c8ef0d3a6",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a328c46cfde0c0d89fd"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-66.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "7c70064c9faefc3dcee63eb2fa1f8b6fcc7fefd9f29e438f820f303f7f82e19d"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-66.esearch.json",
+      "esearch_sha256": "704aabef3203e036cce5d28e323fbb4f6be35b9bffcf36ce0d446453ed9b90c1",
+      "query": "Using[Title] AND surveillance[Title] AND monitoring[Title] AND data[Title] AND different[Title] AND origins[Title] AND Salmonella[Title] AND source[Title] AND attribution[Title] AND model[Title] AND European[Title] AND Union[Title] AND example[Title] AND challenges[Title] AND proposed[Title] AND solutions[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-66",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-66.esearch.json",
+      "raw_sha256": "704aabef3203e036cce5d28e323fbb4f6be35b9bffcf36ce0d446453ed9b90c1",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a35b2fce536f504d7f6"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-71.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "a0c727f999b9618b1b89d3ffbd63b4b7a2467c2889b21a6703d4f58a70b5ff1c"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-71.esearch.json",
+      "esearch_sha256": "227365e021a6b5eca8ceecdf44e1ec30badd35441cb8920968743650d5d0ee79",
+      "query": "Emergence[Title] AND pregnancy[Title] AND related[Title] AND listeriosis[Title] AND amongst[Title] AND ethnic[Title] AND minorities[Title] AND England[Title] AND Wales[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-71",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-71.esearch.json",
+      "raw_sha256": "227365e021a6b5eca8ceecdf44e1ec30badd35441cb8920968743650d5d0ee79",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a3e6d657bb95506dea1"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-72.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "d7c9995dcef06fff444b3f5ceaee00e4a37ae606095594c01c8237e189a1aed9"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-72.esearch.json",
+      "esearch_sha256": "bb926007fdc29c67dccc56d5dbde5211942bd99fe269c0df95322e5e344b080e",
+      "query": "Evolution[Title] AND Use[Title] AND Dynamic[Title] AND Transmission[Title] AND Models[Title] AND Measles[Title] AND Rubella[Title] AND Risk[Title] AND Policy[Title] AND Analysis[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-72",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-72.esearch.json",
+      "raw_sha256": "bb926007fdc29c67dccc56d5dbde5211942bd99fe269c0df95322e5e344b080e",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a4109533d0bb00cacbb"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-74.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "f25c6ee507d49eb7dda5016acd3559b179ef597cd33e9d545b8d27f0a0a14a73"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-74.esearch.json",
+      "esearch_sha256": "ee808bf004da2211565171f7b659d711b174bcd5c60316030b43f2783aaad654",
+      "query": "Exclusion[Title] AND pregnant[Title] AND people[Title] AND emergency[Title] AND vaccine[Title] AND clinical[Title] AND trials[Title] AND systematic[Title] AND review[Title] AND trial[Title] AND protocols[Title] AND reporting[Title] AND 2009[Title] AND 2019[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-74",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-74.esearch.json",
+      "raw_sha256": "ee808bf004da2211565171f7b659d711b174bcd5c60316030b43f2783aaad654",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a46d4f97cddc8059957"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-77.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "05dba9e4235e6c233517e6fb8babec818398efda192de7af927941896b042b5d"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-77.esearch.json",
+      "esearch_sha256": "961677f1b5aa0a7eb840e8b5d85c4154117bddcabd29dac80f0511dad2f0c307",
+      "query": "Knowing[Title] AND unknown[Title] AND underestimation[Title] AND monkeypox[Title] AND cases[Title] AND Insights[Title] AND implications[Title] AND integrative[Title] AND review[Title] AND literature[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-77",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-77.esearch.json",
+      "raw_sha256": "961677f1b5aa0a7eb840e8b5d85c4154117bddcabd29dac80f0511dad2f0c307",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a4e7b8f1162ab05b63f"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-80.esearch.json",
+      "esearch_sha256": "6dd94698965a796c724ed96a2492dc07610fe4210b7bf46efef58393b1cda5b0",
+      "query": "How[Title] AND Generalizable[Title] AND Are[Title] AND Results[Title] AND Trials[Title] AND Direct[Title] AND Antiviral[Title] AND Agents[Title] AND People[Title] AND Coinfected[Title] AND HIV[Title] AND HCV[Title] AND Real[Title] AND World[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-80",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-80.esearch.json",
+      "raw_sha256": "6dd94698965a796c724ed96a2492dc07610fe4210b7bf46efef58393b1cda5b0",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a567ebb48fe780aba3f"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-81.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "0e728f517fdc549fc4d7d660597355edabb0af08dbe01a47d9c7fa1c988367e3"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-81.esearch.json",
+      "esearch_sha256": "281febc9794ae4352f892270d4e28672ec82599feca20b94915865fdde143972",
+      "query": "Generalizable[Title] AND Coinfected[Title] AND Antiviral[Title] AND Results[Title] AND Saeed[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-81",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-81.esearch.json",
+      "raw_sha256": "281febc9794ae4352f892270d4e28672ec82599feca20b94915865fdde143972",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603dbc325508edf705f146"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-82.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "47c236ddb36f23d96eba44423d6e86f6fe413e375ad5aa72b1eca8410d3ccedb"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-82.esearch.json",
+      "esearch_sha256": "4efafd6f6448891b8bde37826b949c05874a1a2c589e7a543b94d27193dddb93",
+      "query": "Handling[Title] AND Poor[Title] AND Accrual[Title] AND Pediatric[Title] AND Trials[Title] AND Simulation[Title] AND Study[Title] AND Using[Title] AND Bayesian[Title] AND Approach[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-82",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-82.esearch.json",
+      "raw_sha256": "4efafd6f6448891b8bde37826b949c05874a1a2c589e7a543b94d27193dddb93",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a5723a96c1f2b0e0ee7"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-84.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "3f984f1a11a311011fef793ecf4529e989477d7f8c96395bc64b0fabe2216133"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-84.esearch.json",
+      "esearch_sha256": "56c47e72c93c4b3e77bf9ff34e4a688ae80bfa0dbcd3df0c37c15f516eae5b94",
+      "query": "Rapid[Title] AND genetic[Title] AND change[Title] AND underpins[Title] AND antagonistic[Title] AND coevolution[Title] AND natural[Title] AND host[Title] AND pathogen[Title] AND metapopulation[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-84",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-84.esearch.json",
+      "raw_sha256": "56c47e72c93c4b3e77bf9ff34e4a688ae80bfa0dbcd3df0c37c15f516eae5b94",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a5ca4478d23dc04c55f"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-85.esearch.json",
+      "esearch_sha256": "341f7a16ca01950c65f89cccafae4089bf6fead55ee902816e972c2be85d9d90",
+      "query": "Influenza[Title] AND During[Title] AND 2010[Title] AND 2020[Title] AND Decade[Title] AND United[Title] AND States[Title] AND Seasonal[Title] AND Outbreaks[Title] AND Vaccine[Title] AND Interventions[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-85",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-85.esearch.json",
+      "raw_sha256": "341f7a16ca01950c65f89cccafae4089bf6fead55ee902816e972c2be85d9d90",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603a5e2da2bedd570bf4f0"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-86.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "94eefd67254be7e854a607dc0910bebae434c397d3be51be6e647927a02d2ae7"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-86.esearch.json",
+      "esearch_sha256": "c5c3c7e071681ba05f64c857fbac3d7005e2a814d4a83682f9a46339e40c50f1",
+      "query": "Interventions[Title] AND Influenza[Title] AND Outbreaks[Title] AND Seasonal[Title] AND Malosh[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-86",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-86.esearch.json",
+      "raw_sha256": "c5c3c7e071681ba05f64c857fbac3d7005e2a814d4a83682f9a46339e40c50f1",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603dbff0bdacf1dd07b022"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-101.esearch.json",
+      "esearch_sha256": "7c630923d50ec7c72ea64c18f0e928e7da35b285a5a77be6049e1ee8d778f5dd",
+      "query": "study[Title] AND regarding[Title] AND applicability[Title] AND WSARE[Title] AND algorithms[Title] AND early[Title] AND warning[Title] AND system[Title] AND infectious[Title] AND disease[Title] AND outbreaks[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-101",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-101.esearch.json",
+      "raw_sha256": "7c630923d50ec7c72ea64c18f0e928e7da35b285a5a77be6049e1ee8d778f5dd",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603ad33ace30821f0a1c5f"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-102.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "299dec6b8bffc52eeae304bc3da2059e0664869da7a1e39c9eafbb67c41c73df"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-102.esearch.json",
+      "esearch_sha256": "13d0a3cd58203a1a1bdbb4e7c736d017acbd61197c58e9b339e55ed209718358",
+      "query": "applicability[Title] AND algorithms[Title] AND infectious[Title] AND outbreaks[Title] AND Zhang[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-102",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-102.esearch.json",
+      "raw_sha256": "13d0a3cd58203a1a1bdbb4e7c736d017acbd61197c58e9b339e55ed209718358",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603dd2d3edb53309015d86"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-107.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "36c8782bdd73170bb02de23145e1de53a3796d7fab9280d162727f6cf7bde506"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-107.esearch.json",
+      "esearch_sha256": "9e5f653331ffbe951f070ca01397e91e8ed9b06da84d002d3cae095ab3a5b01a",
+      "query": "Ensemble[Title] AND forecast[Title] AND human[Title] AND West[Title] AND Nile[Title] AND virus[Title] AND cases[Title] AND mosquito[Title] AND infection[Title] AND rates[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-107",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-107.esearch.json",
+      "raw_sha256": "9e5f653331ffbe951f070ca01397e91e8ed9b06da84d002d3cae095ab3a5b01a",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603adafeff22d63e07989a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-122.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "fa725c59ee21ba62aa8f358dbcb057b550cb38a2d7a7d846c80d170e81317ce9"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-122.esearch.json",
+      "esearch_sha256": "9ae74b7845003123f5efb2425e7c785e2d71c160299fd3a7b57507a9e1451029",
+      "query": "nowcast[Title] AND model[Title] AND predict[Title] AND outdoor[Title] AND flea[Title] AND activity[Title] AND real[Title] AND time[Title] AND contiguous[Title] AND United[Title] AND States[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-122",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-122.esearch.json",
+      "raw_sha256": "9ae74b7845003123f5efb2425e7c785e2d71c160299fd3a7b57507a9e1451029",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603af5c04b56dd75012c8c"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-123.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "0293044193a5e5536f4df5a516ad607c8fb736bc0f21343d5b1f4351e54e3a22"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-123.esearch.json",
+      "esearch_sha256": "a614ca2219dd5f9fa370975d40b075fb6082bbed0ea3011fc1d1ce2bc1f09866",
+      "query": "Forecasting[Title] AND probability[Title] AND local[Title] AND dengue[Title] AND outbreaks[Title] AND Queensland[Title] AND Australia[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-123",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-123.esearch.json",
+      "raw_sha256": "a614ca2219dd5f9fa370975d40b075fb6082bbed0ea3011fc1d1ce2bc1f09866",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603af783c273a0f8035556"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-126.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "ac498aed1f7d6b3bfee61cabb50388f3378faf29f24ae5872a8e5d252cc46168"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-126.esearch.json",
+      "esearch_sha256": "6b6f42bd72d4e179beab878e10e775ea17e9945fff372d80d1dbdf3600b85596",
+      "query": "Evaluating[Title] AND impact[Title] AND two[Title] AND decades[Title] AND USAID[Title] AND interventions[Title] AND projecting[Title] AND effects[Title] AND defunding[Title] AND mortality[Title] AND up[Title] AND 2030[Title] AND retrospective[Title] AND evaluation[Title] AND forecasting[Title] AND analysis[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-126",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-126.esearch.json",
+      "raw_sha256": "6b6f42bd72d4e179beab878e10e775ea17e9945fff372d80d1dbdf3600b85596",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603afb988941e52302e19a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-143.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "19a8aa19ff86c66f98d009bfa766b1336235653ffb20d55ac2ffec48aa8f3c78"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-143.esearch.json",
+      "esearch_sha256": "4d9fdde072adadc8fac0a0682aea71dfe63dac022891d46ac529647ac9ae917d",
+      "query": "Fully[Title] AND Integrated[Title] AND Real[Title] AND Time[Title] AND Detection[Title] AND Diagnosis[Title] AND Control[Title] AND Community[Title] AND Diarrheal[Title] AND Disease[Title] AND Clusters[Title] AND Outbreaks[Title] AND INTEGRATE[Title] AND Project[Title] AND Protocol[Title] AND Enhanced[Title] AND Surveillance[Title] AND System[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-143",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-143.esearch.json",
+      "raw_sha256": "4d9fdde072adadc8fac0a0682aea71dfe63dac022891d46ac529647ac9ae917d",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b247050f3e6050cf393"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-148.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "67a8b90e114f31dc3c34951c4efe604c374e49fc867121ab4fcdae0c95a75b19"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-148.esearch.json",
+      "esearch_sha256": "08bb9804fe16827abf4761d963794b49c4a9d5b36a34c5f231d381b79adfaf1d",
+      "query": "Dynamics[Title] AND Escherichia[Title] AND coli[Title] AND O157[Title] AND H7[Title] AND outbreak[Title] AND detection[Title] AND investigation[Title] AND Minnesota[Title] AND 2000[Title] AND 2008[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-148",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-148.esearch.json",
+      "raw_sha256": "08bb9804fe16827abf4761d963794b49c4a9d5b36a34c5f231d381b79adfaf1d",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b2c4d0844812908a156"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-152.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "68109501d7f60f70d6094917d1601926599f0983d1943dda20e3fdd018f1c254"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-152.esearch.json",
+      "esearch_sha256": "2474a197ffa9da0aad02b0d08d7b4225ba74bf4bc82a1b82c90f21e5a153014d",
+      "query": "Using[Title] AND time[Title] AND dependent[Title] AND reproduction[Title] AND number[Title] AND predict[Title] AND turning[Title] AND points[Title] AND COVID[Title] AND 19[Title] AND outbreak[Title] AND Dalian[Title] AND Liaoning[Title] AND province[Title] AND China[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-152",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-152.esearch.json",
+      "raw_sha256": "2474a197ffa9da0aad02b0d08d7b4225ba74bf4bc82a1b82c90f21e5a153014d",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b357ebb48fe780aba60"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-168.esearch.json",
+      "esearch_sha256": "1d5ea1c22e901cd2a8e807fd40f68c5d0b2830de400f43a76ab4029f60ef7f0c",
+      "query": "final[Title] AND size[Title] AND epidemic[Title] AND its[Title] AND relation[Title] AND basic[Title] AND reproduction[Title] AND number[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-168",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-168.esearch.json",
+      "raw_sha256": "1d5ea1c22e901cd2a8e807fd40f68c5d0b2830de400f43a76ab4029f60ef7f0c",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b54f3d27f8f8202a149"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-169.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "3dc49cc751e7eebc8567ef52751fde79788a9c44be4fd5608412f481c3323578"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-169.esearch.json",
+      "esearch_sha256": "c02fb07784a70517da46e827061cbfe3688bb14a4cda6a93cdc3e10599d7aa71",
+      "query": "reproduction[Title] AND epidemic[Title] AND relation[Title] AND number[Title] AND Andreasen[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-169",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-169.esearch.json",
+      "raw_sha256": "c02fb07784a70517da46e827061cbfe3688bb14a4cda6a93cdc3e10599d7aa71",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603dec2fae518e7b0cadb3"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-170.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "bb14192b014c56ea33a56a49e5bfccc1cf45f6e073be7ef86bb463173bc9662c"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-170.esearch.json",
+      "esearch_sha256": "163674243ae08838c52b1c97ba8cac15c0cbf0ac3eb7bd7874f1a307a7ecd84e",
+      "query": "Constructing[Title] AND adjusting[Title] AND estimates[Title] AND household[Title] AND transmission[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND prior[Title] AND studies[Title] AND widespread[Title] AND testing[Title] AND contact[Title] AND tracing[Title] AND data[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-170",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-170.esearch.json",
+      "raw_sha256": "163674243ae08838c52b1c97ba8cac15c0cbf0ac3eb7bd7874f1a307a7ecd84e",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b55adaf841bf809b7e7"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-175.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "bae7167cbe2fba0214e395c9c54f77a7ec259aa3ec53843e1b2ced83a2c75ab5"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-175.esearch.json",
+      "esearch_sha256": "baaef134486be92ded4b376bc6166e9997e80eb113f6c1890241fc01bacbf4d1",
+      "query": "Forecasting[Title] AND weekly[Title] AND dengue[Title] AND incidence[Title] AND Sri[Title] AND Lanka[Title] AND Modified[Title] AND Autoregressive[Title] AND Integrated[Title] AND Moving[Title] AND Average[Title] AND modeling[Title] AND approach[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-175",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-175.esearch.json",
+      "raw_sha256": "baaef134486be92ded4b376bc6166e9997e80eb113f6c1890241fc01bacbf4d1",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b62306a3ed4770e8502"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-181.esearch.json",
+      "esearch_sha256": "8943878ac3a5caf57859b45db5a9362ceaf59223bca3e497d71f2d4dbdf8182d",
+      "query": "How[Title] AND should[Title] AND social[Title] AND mixing[Title] AND be[Title] AND measured[Title] AND comparing[Title] AND web[Title] AND based[Title] AND survey[Title] AND sensor[Title] AND methods[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-181",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-181.esearch.json",
+      "raw_sha256": "8943878ac3a5caf57859b45db5a9362ceaf59223bca3e497d71f2d4dbdf8182d",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b6d69f67ec21f0bc403"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-182.esearch.json",
+      "esearch_sha256": "70b78714c52c03d5d0efb03cbef660103f4c7489008e5382648b7149e076227e",
+      "query": "comparing[Title] AND measured[Title] AND methods[Title] AND should[Title] AND Smieszek[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-182",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-182.esearch.json",
+      "raw_sha256": "70b78714c52c03d5d0efb03cbef660103f4c7489008e5382648b7149e076227e",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603df0b496d5bd5b0968d7"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-184.esearch.json",
+      "esearch_sha256": "add9426a72158268795475de8c1ace933de29c0a168b52e7c72c02644d038103",
+      "query": "Data[Title] AND driven[Title] AND inference[Title] AND reproduction[Title] AND number[Title] AND COVID[Title] AND 19[Title] AND before[Title] AND after[Title] AND interventions[Title] AND 51[Title] AND European[Title] AND countries[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-184",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-184.esearch.json",
+      "raw_sha256": "add9426a72158268795475de8c1ace933de29c0a168b52e7c72c02644d038103",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b7040583e8d4907902e"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-185.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "90093239178a16475d104dcace547eb665f4375b75d051316bfecde855bf460a"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-185.esearch.json",
+      "esearch_sha256": "e33d3955f7281b8185577b519b834c838ef952703757bf6cccceccdf0830a121",
+      "query": "interventions[Title] AND reproduction[Title] AND inference[Title] AND countries[Title] AND Karnakov[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-185",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-185.esearch.json",
+      "raw_sha256": "e33d3955f7281b8185577b519b834c838ef952703757bf6cccceccdf0830a121",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603df1f33ae9c68c0c0843"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-188.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "ea7b1bbfa861ad7c5b4ac314021234f206c2dc45ec3921fe57e4c3e9cbe7fe07"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-188.esearch.json",
+      "esearch_sha256": "04e954ef4d94c1531a8f66794474ed3a973a6ea72dc997e576d280ab07732165",
+      "query": "Probability[Title] AND estimated[Title] AND risk[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND transmission[Title] AND air[Title] AND travel[Title] AND system[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-188",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-188.esearch.json",
+      "raw_sha256": "04e954ef4d94c1531a8f66794474ed3a973a6ea72dc997e576d280ab07732165",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b7231713a2f160175a1"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-194.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "a9e90466d82f8d46ae8defa7abc82584721cf0aff38e02f00cf054a3b5de092e"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-194.esearch.json",
+      "esearch_sha256": "881b7bad130a3313dc9fd34ff2dc312515bd8b0308178b00cc3672f1cf2629ab",
+      "query": "(transmission dynamics[Title/Abstract] OR contact measurement[Title/Abstract] OR epidemic forecasting[Title/Abstract] OR social mixing[Title/Abstract]) AND Smieszek[Author] AND 2014[Date - Publication]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-194",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-194.esearch.json",
+      "raw_sha256": "881b7bad130a3313dc9fd34ff2dc312515bd8b0308178b00cc3672f1cf2629ab",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603f135f772bc4870d5d1a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-36.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "8ff6c9f7f22e9d9b8c0fa403efffc51cae2d58c828af3e3668e2bb49f2dbf461"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-36.esearch.json",
+      "esearch_sha256": "870f769e5dbdb2f0f67134655cc872a879da33cd105453e4967764cbef56f71a",
+      "query": "Expanding[Title] AND access[Title] AND HAART[Title] AND cost[Title] AND effective[Title] AND approach[Title] AND treating[Title] AND preventing[Title] AND HIV[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-36",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-36.esearch.json",
+      "raw_sha256": "870f769e5dbdb2f0f67134655cc872a879da33cd105453e4967764cbef56f71a",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b864b0f3de2a00deed7"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-37.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "f286dbc342946a454414b02b3de059cc13698ba27bbb2125516fed6febaead8b"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-37.esearch.json",
+      "esearch_sha256": "7282a00b83c285226eaa98e0819066733308bb75b6de07ac88bad86ab5643212",
+      "query": "Designing[Title] AND isolation[Title] AND guidelines[Title] AND COVID[Title] AND 19[Title] AND patients[Title] AND utilizing[Title] AND rapid[Title] AND antigen[Title] AND tests[Title] AND simulation[Title] AND study[Title] AND using[Title] AND viral[Title] AND dynamics[Title] AND models[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-37",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-37.esearch.json",
+      "raw_sha256": "7282a00b83c285226eaa98e0819066733308bb75b6de07ac88bad86ab5643212",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b89e09d85a02605cc6d"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-40.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "02381c5960da10f781508221801bfdf77ad24a63ab46587f1298752af424a5f6"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-40.esearch.json",
+      "esearch_sha256": "63cc5c09d0e93b011320721eaf367e8f503352bdc97fe1fec3a1dd6549bf3af0",
+      "query": "Allocating[Title] AND scarce[Title] AND financial[Title] AND resources[Title] AND HIV[Title] AND treatment[Title] AND benchmarking[Title] AND prices[Title] AND antiretroviral[Title] AND medicines[Title] AND Latin[Title] AND America[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-40",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-40.esearch.json",
+      "raw_sha256": "63cc5c09d0e93b011320721eaf367e8f503352bdc97fe1fec3a1dd6549bf3af0",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b90cda065ba96087e14"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-41.esearch.json",
+      "esearch_sha256": "9c104355a4ee91838a7119a1597173f0bff68cb9657c1d7576c0f95da5f16e97",
+      "query": "machine[Title] AND learning[Title] AND approach[Title] AND identifies[Title] AND 5[Title] AND ASA[Title] AND ulcerative[Title] AND colitis[Title] AND being[Title] AND linked[Title] AND higher[Title] AND COVID[Title] AND 19[Title] AND mortality[Title] AND patients[Title] AND IBD[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-41",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-41.esearch.json",
+      "raw_sha256": "9c104355a4ee91838a7119a1597173f0bff68cb9657c1d7576c0f95da5f16e97",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b9398fc184204028efc"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-42.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "ab7c45b03d9246f19ccbad8271c1b2b8c9c3afa32bb42089923f1e332f36e209"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-42.esearch.json",
+      "esearch_sha256": "a8e6e9bc6ea084ac2c8a78fb07606684a0734e23bdc1141d2be490e9cd67e2ef",
+      "query": "identifies[Title] AND ulcerative[Title] AND mortality[Title] AND learning[Title] AND Roy[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-42",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-42.esearch.json",
+      "raw_sha256": "a8e6e9bc6ea084ac2c8a78fb07606684a0734e23bdc1141d2be490e9cd67e2ef",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603df649e4e374f207f13f"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-47.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "4398cf1dba9fc732b8d6cf55b82e5639081ad884769e7aeca28f7c4c03fa6aab"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-47.esearch.json",
+      "esearch_sha256": "8957b35063afa0a176fddb24f816fc064e7868642785766205f3b4fc1013d0d0",
+      "query": "HBcrAg[Title] AND predicts[Title] AND hepatocellular[Title] AND carcinoma[Title] AND development[Title] AND analysis[Title] AND using[Title] AND time[Title] AND dependent[Title] AND receiver[Title] AND operating[Title] AND characteristics[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-47",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-47.esearch.json",
+      "raw_sha256": "8957b35063afa0a176fddb24f816fc064e7868642785766205f3b4fc1013d0d0",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b991d349e533b017bbb"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-48.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "32e461459a958c7e83f6c656a56cf5560292dca92b71423f7dbe25cfa8a90fc0"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-48.esearch.json",
+      "esearch_sha256": "eaa67c0022be6c85934afc6ac328b98bf6c263745bf5316fc89ecb348bbb2002",
+      "query": "Joint[Title] AND modeling[Title] AND clinical[Title] AND progression[Title] AND biomarkers[Title] AND dynamics[Title] AND using[Title] AND mechanistic[Title] AND model[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-48",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-48.esearch.json",
+      "raw_sha256": "eaa67c0022be6c85934afc6ac328b98bf6c263745bf5316fc89ecb348bbb2002",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b9bd5b41fd0e90f638a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-50.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "2db21c950fce1bacabbf7f58f16f72c1fe5c5e685470cb71c892ad7104df50eb"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-50.esearch.json",
+      "esearch_sha256": "84ea7287aa7593470135d5cc632a2daa38d8c56059157e6642a6f7384fb8c741",
+      "query": "Correction[Title] AND Effectiveness[Title] AND Secondary[Title] AND Risk[Title] AND Reducing[Title] AND Strategies[Title] AND Patients[Title] AND Unilateral[Title] AND Breast[Title] AND Cancer[Title] AND Pathogenic[Title] AND Variants[Title] AND BRCA1[Title] AND BRCA2[Title] AND Subjected[Title] AND Conserving[Title] AND Surgery[Title] AND Evidence[Title] AND Based[Title] AND Simulation[Title] AND Study[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-50",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-50.esearch.json",
+      "raw_sha256": "84ea7287aa7593470135d5cc632a2daa38d8c56059157e6642a6f7384fb8c741",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603b9faaa8fb84f4066a04"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-54.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "f1d9234f97d01f4d25be915413b89642e64034a12b7972c1fa37eb3487b75bff"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-54.esearch.json",
+      "esearch_sha256": "8a071fd2355bc8a676e8b7915632b70ab7969bf20e71f7b34da3413dfafad162",
+      "query": "Optimizing[Title] AND sentinel[Title] AND surveillance[Title] AND temporal[Title] AND network[Title] AND epidemiology[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-54",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-54.esearch.json",
+      "raw_sha256": "8a071fd2355bc8a676e8b7915632b70ab7969bf20e71f7b34da3413dfafad162",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603ba633364b83e502bb71"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-56.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "956904b32fbba2f93ad1264f96fabfc75668d2fc1b2e818b8e27f41814cf151f"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-56.esearch.json",
+      "esearch_sha256": "0f442f4a3c914fb179a825f0f12d687cd82216815c4768aabbff6e6e98b970e5",
+      "query": "Donning[Title] AND doffing[Title] AND personal[Title] AND protective[Title] AND equipment[Title] AND health[Title] AND care[Title] AND workers[Title] AND tertiary[Title] AND hospital[Title] AND China[Title] AND simulation[Title] AND study[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-56",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-56.esearch.json",
+      "raw_sha256": "0f442f4a3c914fb179a825f0f12d687cd82216815c4768aabbff6e6e98b970e5",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bab8b7537d3080665cf"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-61.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "b4c1a744a04039a1c7a307cf090ee0980d663b5d8822fa18318122cfefbacd6e"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-61.esearch.json",
+      "esearch_sha256": "e14ee979e08faddaec9c2821a79c07b6a54a98f3a8305757786ec90ade7b7331",
+      "query": "cost[Title] AND benefit[Title] AND assessment[Title] AND Salmonella[Title] AND control[Title] AND strategies[Title] AND pigs[Title] AND reared[Title] AND United[Title] AND Kingdom[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-61",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-61.esearch.json",
+      "raw_sha256": "e14ee979e08faddaec9c2821a79c07b6a54a98f3a8305757786ec90ade7b7331",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bb3e178a863d50ca2d2"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-64.esearch.json",
+      "esearch_sha256": "60eac70c27afc7ea2207b53ea22515608083720470959b6177e2772dff495572",
+      "query": "Assessing[Title] AND performance[Title] AND Portuguese[Title] AND public[Title] AND hospitals[Title] AND before[Title] AND during[Title] AND COVID[Title] AND 19[Title] AND outbreak[Title] AND optimistic[Title] AND pessimistic[Title] AND benchmarking[Title] AND approaches[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-64",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-64.esearch.json",
+      "raw_sha256": "60eac70c27afc7ea2207b53ea22515608083720470959b6177e2772dff495572",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bb76f9e4e10a70aae81"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-65.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "52e7a0e3e9f53b7bbb28b60c833a39bff3b3a133b3fdbd153281d764c6949d52"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-65.esearch.json",
+      "esearch_sha256": "2a0c6e4339ed8f96e2275968bb1099fc22f354095ce0ff9d3ae85f846a9f74fe",
+      "query": "benchmarking[Title] AND performance[Title] AND pessimistic[Title] AND Portuguese[Title] AND Vara[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-65",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-65.esearch.json",
+      "raw_sha256": "2a0c6e4339ed8f96e2275968bb1099fc22f354095ce0ff9d3ae85f846a9f74fe",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603e043c2406e257013f06"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-67.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "2e6833417852510e1f44536f126bfaabfc3464b25629975073f49bf77b552ff3"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-67.esearch.json",
+      "esearch_sha256": "ae3294167423ff6f8f83388e454d1625ec0b71b13895c9041b202fb4c3cd3cfb",
+      "query": "Empirically[Title] AND evaluating[Title] AND decision[Title] AND analytic[Title] AND models[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-67",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-67.esearch.json",
+      "raw_sha256": "ae3294167423ff6f8f83388e454d1625ec0b71b13895c9041b202fb4c3cd3cfb",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bba4558ab298409b39e"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-68.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "daf1cccc549ab14a910d87109059989fcc49b85e148db64431939b9d8841071f"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-68.esearch.json",
+      "esearch_sha256": "2e6f5fe4f25f2c419f8ca8c0141b587dd0a30df62cff7df498ba4d3090ec3bc5",
+      "query": "Quantity[Title] AND Versus[Title] AND Quality[Title] AND Survey[Title] AND Experiment[Title] AND Improve[Title] AND Network[Title] AND Scale[Title] AND up[Title] AND Method[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-68",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-68.esearch.json",
+      "raw_sha256": "2e6f5fe4f25f2c419f8ca8c0141b587dd0a30df62cff7df498ba4d3090ec3bc5",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bbc9d2d68c3370152ff"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-71.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "ba3da7f47518528ccb21c4e21b3a988b2395e60d4b9de27c1aa6300215b90aa3"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-71.esearch.json",
+      "esearch_sha256": "ed3fd6ddcf5c6d9188aba661be69bd516b3bf0f8f92f7621a0863b52525d20de",
+      "query": "Benchmark[Title] AND datasets[Title] AND phylogenomic[Title] AND pipeline[Title] AND validation[Title] AND applications[Title] AND foodborne[Title] AND pathogen[Title] AND surveillance[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-71",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-71.esearch.json",
+      "raw_sha256": "ed3fd6ddcf5c6d9188aba661be69bd516b3bf0f8f92f7621a0863b52525d20de",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bc5958bf868180ac8bf"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-72.esearch.json",
+      "esearch_sha256": "aa1adb35a426ac64993c313a3054c2586dc0c66e808172a1275c51e3456fa2af",
+      "query": "Impact[Title] AND Key[Title] AND Assumptions[Title] AND About[Title] AND Population[Title] AND Biology[Title] AND Soil[Title] AND Transmitted[Title] AND Helminths[Title] AND Sustainable[Title] AND Control[Title] AND Morbidity[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-72",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-72.esearch.json",
+      "raw_sha256": "aa1adb35a426ac64993c313a3054c2586dc0c66e808172a1275c51e3456fa2af",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bc7c6cec28ee30e68d4"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-73.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "dd210ed4db5168eff964939d522ace2d1e12dc88081b83613c5ff9dbe6bcd50a"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-73.esearch.json",
+      "esearch_sha256": "e23434b4cb475c590b9037d60adc711b9551ad2801737d392b7d4ad54fb83fca",
+      "query": "Assumptions[Title] AND Transmitted[Title] AND Sustainable[Title] AND Population[Title] AND Vegvari[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-SIMULATION-73",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-73.esearch.json",
+      "raw_sha256": "e23434b4cb475c590b9037d60adc711b9551ad2801737d392b7d4ad54fb83fca",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603e089bd5f7f9230660b1"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-106.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "3bd5789c24584df8330ad1ab1f5e9082f1b8f198f58d32c858c855d19e890554"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-106.esearch.json",
+      "esearch_sha256": "bd289146f2cb7ee6b18d47bb3958db1a807a8e0451139c7a9afbff7712587c7c",
+      "query": "Spatial[Title] AND distribution[Title] AND trypanosome[Title] AND infection[Title] AND tsetse[Title] AND flies[Title] AND sleeping[Title] AND sickness[Title] AND focus[Title] AND Zimbabwe[Title] AND Hurungwe[Title] AND District[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-106",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-106.esearch.json",
+      "raw_sha256": "bd289146f2cb7ee6b18d47bb3958db1a807a8e0451139c7a9afbff7712587c7c",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c492be60538850ac518"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-109.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "ded7c6f47887b4985f3d8dfd87881bc6008c04fe6a0843ef53e2b3ff95bd9428"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-109.esearch.json",
+      "esearch_sha256": "13318c21700898e866b666290d335bdad692bd3b11c28ee633d21ca2d5315db9",
+      "query": "Modelling[Title] AND continental[Title] AND scale[Title] AND spread[Title] AND Schmallenberg[Title] AND virus[Title] AND Europe[Title] AND approaches[Title] AND challenges[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-109",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-109.esearch.json",
+      "raw_sha256": "13318c21700898e866b666290d335bdad692bd3b11c28ee633d21ca2d5315db9",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c4d2815cee8420b1f7a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-117.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "4e4ef91a08f66f530c7a2c5c559747a4d6ef63b5ca55c5d6d16aa297c432a07f"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-117.esearch.json",
+      "esearch_sha256": "4e13d0090d3aed42f07f68e0987c7e0eb1bb8f8b3e7fb43687a10799902b1b72",
+      "query": "Risk[Title] AND Mapping[Title] AND African[Title] AND Swine[Title] AND Fever[Title] AND Domestic[Title] AND Pigs[Title] AND Wild[Title] AND Boars[Title] AND Enhance[Title] AND Management[Title] AND Surveillance[Title] AND Asia[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-117",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-117.esearch.json",
+      "raw_sha256": "4e13d0090d3aed42f07f68e0987c7e0eb1bb8f8b3e7fb43687a10799902b1b72",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c61589714544d04b4e8"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-59.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "9112d3c9f9731d07622f0b2df3b19be345c3e12b1a2388efb9e98168ebd89c0d"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-59.esearch.json",
+      "esearch_sha256": "81e5620969084ba0f01e163e623d003589543062610a2b78ca92e6c63720df2b",
+      "query": "Evolutionary[Title] AND dynamics[Title] AND complex[Title] AND networks[Title] AND HIV[Title] AND drug[Title] AND resistant[Title] AND strains[Title] AND case[Title] AND San[Title] AND Francisco[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-59",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-59.esearch.json",
+      "raw_sha256": "81e5620969084ba0f01e163e623d003589543062610a2b78ca92e6c63720df2b",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bd102c14e58f60c7dd3"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-64.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "2d8f27a9a878de728c76a261eee1c307409f33363ccb29b7039754f55b37e6b0"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-64.esearch.json",
+      "esearch_sha256": "be1c76d3a1ed2bdceac12708f9424f042df07c93690725ddaaf467f217b2a121",
+      "query": "Use[Title] AND Spatial[Title] AND Spatiotemporal[Title] AND Modeling[Title] AND Surveillance[Title] AND H5N1[Title] AND Highly[Title] AND Pathogenic[Title] AND Avian[Title] AND Influenza[Title] AND Poultry[Title] AND Middle[Title] AND East[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-64",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-64.esearch.json",
+      "raw_sha256": "be1c76d3a1ed2bdceac12708f9424f042df07c93690725ddaaf467f217b2a121",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603bdeb5518c7569017e3d"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-66.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "cf061bac0dc52cd200601914495936eb2358ccb03f29b2b7ea44f802ccb66ba6"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-66.esearch.json",
+      "esearch_sha256": "0d1547897198147acaf4f7fde7b32328742b8aa8bffcc750349be62e82079181",
+      "query": "Spatiotemporal[Title] AND Patterns[Title] AND Diffusion[Title] AND 1918[Title] AND Influenza[Title] AND Pandemic[Title] AND British[Title] AND India[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-66",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-66.esearch.json",
+      "raw_sha256": "0d1547897198147acaf4f7fde7b32328742b8aa8bffcc750349be62e82079181",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603be3b02c2de00106fa40"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-81.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "e32dee8edf8af52c6b183c72b381bf9f660e8d446677bb619f77c8daac7325c5"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-81.esearch.json",
+      "esearch_sha256": "1b6ffa2af77c5198ad253a2d1208e459ed25db08e9e1026942558ae42ed80bc8",
+      "query": "Uncovering[Title] AND latent[Title] AND urban[Title] AND mobility[Title] AND patterns[Title] AND via[Title] AND smart[Title] AND card[Title] AND survey[Title] AND data[Title] AND fusion[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-81",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-81.esearch.json",
+      "raw_sha256": "1b6ffa2af77c5198ad253a2d1208e459ed25db08e9e1026942558ae42ed80bc8",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c1ad5b41fd0e90f63a4"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-85.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "43f0b370a754545ee1a7154755bb07b85b92f5108549d117553e63832c36c260"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-85.esearch.json",
+      "esearch_sha256": "c36d5c7a03cbb530b683585b2d4552a7fdda18faa8ec550d4a172da31c70eebf",
+      "query": "two[Title] AND tiered[Title] AND model[Title] AND simulating[Title] AND ecological[Title] AND evolutionary[Title] AND dynamics[Title] AND rapidly[Title] AND evolving[Title] AND viruses[Title] AND application[Title] AND influenza[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-85",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-85.esearch.json",
+      "raw_sha256": "c36d5c7a03cbb530b683585b2d4552a7fdda18faa8ec550d4a172da31c70eebf",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c2426abbf81fb029751"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-88.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "0e0e05ac965bdadb8e80afa75be7b9fc9a9fd8abc57e9dc639ec63c8fc27775a"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-88.esearch.json",
+      "esearch_sha256": "b65bc42938197892c2c7dd6ffd37cd1933584f7f734c023eb87f8b77911e4586",
+      "query": "Metapopulation[Title] AND structure[Title] AND Vibrionaceae[Title] AND coastal[Title] AND marine[Title] AND invertebrates[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-88",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-88.esearch.json",
+      "raw_sha256": "b65bc42938197892c2c7dd6ffd37cd1933584f7f734c023eb87f8b77911e4586",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c2cc727886b1d05939a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 3,
+          "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-99.efetch.000000000-000000002.xml",
+          "retmax": 3,
+          "retstart": 0,
+          "sha256": "a7c31f1020a2cceea97bfe5a1a633498866c25f8544938fe7b0d8484841221fc"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-99.esearch.json",
+      "esearch_sha256": "0b0e591406721253864c57188e5366a860a17416203305b0533badfab9f68db3",
+      "query": "Dynamics[Title] AND epidemic[Title] AND model[Title] AND spatial[Title] AND diffusion[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SPATIAL-99",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-99.esearch.json",
+      "raw_sha256": "0b0e591406721253864c57188e5366a860a17416203305b0533badfab9f68db3",
+      "reported_count": 3,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c3f7845f5d25902694b"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-105.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "bd9e1d6168d2b95a9625846b3fef2d725f9d42b408edf9f22e0812a1ee3780e4"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-105.esearch.json",
+      "esearch_sha256": "5432376976e8066a6ecd77ba5f0d51c96a1a4851a8c8b3ae6ac7b6377e1d649a",
+      "query": "Web[Title] AND search[Title] AND volume[Title] AND near[Title] AND real[Title] AND time[Title] AND complementary[Title] AND surveillance[Title] AND tool[Title] AND tick[Title] AND borne[Title] AND encephalitis[Title] AND TBE[Title] AND Italy[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-105",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-105.esearch.json",
+      "raw_sha256": "5432376976e8066a6ecd77ba5f0d51c96a1a4851a8c8b3ae6ac7b6377e1d649a",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c777f762a45bc05b3eb"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-106.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "fcb118c4bd65e5dabbbdfa5fda99ffa993b250acffc93309ff613a7917660333"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-106.esearch.json",
+      "esearch_sha256": "837a732f90592f2605f7d72eb98341175b14be6f7293a9f0715dda1d8d2a8600",
+      "query": "Magnitude[Title] AND COVID[Title] AND 19[Title] AND deaths[Title] AND relative[Title] AND other[Title] AND leading[Title] AND causes[Title] AND death[Title] AND global[Title] AND analysis[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-106",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-106.esearch.json",
+      "raw_sha256": "837a732f90592f2605f7d72eb98341175b14be6f7293a9f0715dda1d8d2a8600",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c7aadaf841bf809b815"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-110.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "d1f9b4960732fcbd3348f5f7175cf9a5011405dc768f493f20b27f6d6e5ac3d0"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-110.esearch.json",
+      "esearch_sha256": "24a8e3f612d11e5c8efbbd8c8944982076745a6089158501568d4e7b3f08db5d",
+      "query": "Exposing[Title] AND malaria[Title] AND host[Title] AND diversity[Title] AND estimating[Title] AND population[Title] AND capture[Title] AND recapture[Title] AND using[Title] AND massively[Title] AND parallel[Title] AND pyrosequencing[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-110",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-110.esearch.json",
+      "raw_sha256": "24a8e3f612d11e5c8efbbd8c8944982076745a6089158501568d4e7b3f08db5d",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c853e0a3c7e5f008112"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-113.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "c01be3c776fba1908698975dd3389c40ed0046afb6a5aa6921a636723006b4e6"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-113.esearch.json",
+      "esearch_sha256": "e87f525b63aed0b70cfaf89a023c8f6100eadc574440a5420f436b498d91422f",
+      "query": "Estimating[Title] AND Size[Title] AND Hidden[Title] AND Populations[Title] AND Using[Title] AND Respondent[Title] AND driven[Title] AND Sampling[Title] AND Data[Title] AND Case[Title] AND Examples[Title] AND Morocco[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-113",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-113.esearch.json",
+      "raw_sha256": "e87f525b63aed0b70cfaf89a023c8f6100eadc574440a5420f436b498d91422f",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c884ed8bb5d0d0558e1"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-121.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "f06d22ebaf82cd0053bf46d4431eac2480661acaed1841041d858683f90e82df"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-121.esearch.json",
+      "esearch_sha256": "3f6f2dad4636efc688c4cfc1c13c858203d05a2974fb53f91dcac2e8e067ea73",
+      "query": "Estimating[Title] AND central[Title] AND line[Title] AND associated[Title] AND bloodstream[Title] AND infection[Title] AND incidence[Title] AND rates[Title] AND sampling[Title] AND denominator[Title] AND data[Title] AND prospective[Title] AND multicenter[Title] AND evaluation[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-121",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-121.esearch.json",
+      "raw_sha256": "3f6f2dad4636efc688c4cfc1c13c858203d05a2974fb53f91dcac2e8e067ea73",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c99eb2a834ccf0ece18"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-124.esearch.json",
+      "esearch_sha256": "5e76368a7b627dd21d02f95a602b02404c15eada4b334cac56ff756b808f39ea",
+      "query": "Do[Title] AND changes[Title] AND STEC[Title] AND diagnostics[Title] AND mislead[Title] AND interpretation[Title] AND disease[Title] AND surveillance[Title] AND data[Title] AND Switzerland[Title] AND Time[Title] AND trends[Title] AND positivity[Title] AND 2007[Title] AND 2016[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-124",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-124.esearch.json",
+      "raw_sha256": "5e76368a7b627dd21d02f95a602b02404c15eada4b334cac56ff756b808f39ea",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603c9f95e763c52d018960"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-125.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "2c2ea829b086d80eeb67938eeb2ab7de6f7ecd36a79ab24fc6bfa9791dff45c7"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-125.esearch.json",
+      "esearch_sha256": "952f9911aeb35968e6c61d39205fe13f18e0b857d0d8ed2f04c0246374fa848b",
+      "query": "interpretation[Title] AND surveillance[Title] AND diagnostics[Title] AND Switzerland[Title] AND Fischer[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-125",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-125.esearch.json",
+      "raw_sha256": "952f9911aeb35968e6c61d39205fe13f18e0b857d0d8ed2f04c0246374fa848b",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603e2172831e6d9a06aebc"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-127.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "b51898b36f664888137f2aa873398e9dbb02a5ef41d78e37ce64787f9169a830"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-127.esearch.json",
+      "esearch_sha256": "cd16671d520836779cdd7c55888e0ff00320bb770a0190bba0e8952ba3e765f1",
+      "query": "Significant[Title] AND features[Title] AND epidemiology[Title] AND equine[Title] AND influenza[Title] AND New[Title] AND South[Title] AND Wales[Title] AND Australia[Title] AND 2007[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-127",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-127.esearch.json",
+      "raw_sha256": "cd16671d520836779cdd7c55888e0ff00320bb770a0190bba0e8952ba3e765f1",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603ca3ee7c1c8a6c0ecf49"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-128.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "5d48c2c7c61e99f479ead89db491e366c7d79623ecbbd6cfbc579a48361e8155"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-128.esearch.json",
+      "esearch_sha256": "a95515103f09a3c124f5af056e64aa1b917ff7ebb29bef9305349ffc3ea94233",
+      "query": "Multicenter[Title] AND benchmarking[Title] AND short[Title] AND long[Title] AND read[Title] AND wet[Title] AND lab[Title] AND protocols[Title] AND clinical[Title] AND viral[Title] AND metagenomics[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-128",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-128.esearch.json",
+      "raw_sha256": "a95515103f09a3c124f5af056e64aa1b917ff7ebb29bef9305349ffc3ea94233",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603ca517d3172df201499c"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-130.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "4a0eae79cf8d620e8276f30b3da23dc48a0d3568f83c91815d9abd9f95f64d4b"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-130.esearch.json",
+      "esearch_sha256": "a84ae80ccb7c5dbfb733d86583e57e193813585db09d94383202dd5867a9acf4",
+      "query": "Estimating[Title] AND proportion[Title] AND pneumonia[Title] AND attributable[Title] AND pneumococcus[Title] AND Kenyan[Title] AND adults[Title] AND latent[Title] AND class[Title] AND analysis[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-130",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-130.esearch.json",
+      "raw_sha256": "a84ae80ccb7c5dbfb733d86583e57e193813585db09d94383202dd5867a9acf4",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603caac1c0dad51302a39a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-147.esearch.json",
+      "esearch_sha256": "41271ef7a63d102c27d9180c0dd4d0d998ac294ed5f345824fcf9620dd7596de",
+      "query": "Rapid[Title] AND incidence[Title] AND estimation[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND genomes[Title] AND reveals[Title] AND decreased[Title] AND case[Title] AND detection[Title] AND Europe[Title] AND during[Title] AND summer[Title] AND 2020[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-147",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-147.esearch.json",
+      "raw_sha256": "41271ef7a63d102c27d9180c0dd4d0d998ac294ed5f345824fcf9620dd7596de",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603cc5cd1d48fb4702b9c0"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-148.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "482b779e6db7a4346dd083c7bbecd895575cca36889f7e068d4b4273989025b0"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-148.esearch.json",
+      "esearch_sha256": "b9a41bccc3f36d45aaa63ebfeb81e649fa4cb8477c29e4f96e1aab7be7d85948",
+      "query": "estimation[Title] AND incidence[Title] AND decreased[Title] AND detection[Title] AND Smith[Author]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-148",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-148.esearch.json",
+      "raw_sha256": "b9a41bccc3f36d45aaa63ebfeb81e649fa4cb8477c29e4f96e1aab7be7d85948",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603e2fa16971bac302b7c4"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-175.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "b53c331aba8ce38944f8a79f2f1c53ff48d4beb576d09690d338c1ed221741f7"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-175.esearch.json",
+      "esearch_sha256": "9961f30fa4da0eedf4cd91ef3fa4724ef1656e004e9843da4a0e9d4b7781d097",
+      "query": "Prospective[Title] AND surveillance[Title] AND invasive[Title] AND fungal[Title] AND infections[Title] AND hematopoietic[Title] AND stem[Title] AND cell[Title] AND transplant[Title] AND recipients[Title] AND 2001[Title] AND 2006[Title] AND overview[Title] AND Associated[Title] AND Infection[Title] AND Network[Title] AND TRANSNET[Title] AND Database[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-175",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-175.esearch.json",
+      "raw_sha256": "9961f30fa4da0eedf4cd91ef3fa4724ef1656e004e9843da4a0e9d4b7781d097",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603cff9f0b4607ee0859b9"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-194.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "82a962764180de486c7408fa5999b4025b960bb4d26051e91d4fdcea51954c9b"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-194.esearch.json",
+      "esearch_sha256": "a396e9b5f901e681ccbfe958e4e392a6a0881d0bff1de111487e8cf411784b29",
+      "query": "Implementation[Title] AND Evaluation[Title] AND Automated[Title] AND Online[Title] AND Study[Title] AND Recruitment[Title] AND Computerised[Title] AND Medical[Title] AND Records[Title] AND Primary[Title] AND Care[Title] AND Sentinel[Title] AND Surveillance[Title] AND Network[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-194",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-194.esearch.json",
+      "raw_sha256": "a396e9b5f901e681ccbfe958e4e392a6a0881d0bff1de111487e8cf411784b29",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603d2625228587e1054d99"
+    }
+  ],
+  "schema_version": 1,
+  "timezone": "Asia/Shanghai",
+  "tool_version": "1"
+}

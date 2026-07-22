@@ -1,0 +1,210 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
+<PubmedArticleSet>
+<PubmedArticle><MedlineCitation Status="PubMed-not-MEDLINE" VersionID="2" VersionDate="2020/04/21" Owner="NLM"><PMID Version="2">32411945</PMID><DateRevised><Year>2024</Year><Month>03</Month><Day>28</Day></DateRevised><Article PubModel="Electronic-eCollection"><Journal><ISSN IssnType="Electronic">2572-4754</ISSN><JournalIssue CitedMedium="Internet"><Volume>3</Volume><PubDate><Year>2019</Year></PubDate></JournalIssue><Title>Gates open research</Title><ISOAbbreviation>Gates Open Res</ISOAbbreviation></Journal><ArticleTitle>Insights from quantitative and mathematical modelling on the proposed 2030 goal for gambiense human African trypanosomiasis (gHAT).</ArticleTitle><Pagination><StartPage>1553</StartPage><MedlinePgn>1553</MedlinePgn></Pagination><ELocationID EIdType="pii" ValidYN="Y">1553</ELocationID><ELocationID EIdType="doi" ValidYN="Y">10.12688/gatesopenres.13070.2</ELocationID><Abstract><AbstractText>Gambiense human African trypanosomiasis (gHAT) is a parasitic, vector-borne neglected tropical disease that has historically affected populations across West and Central Africa and can result in death if untreated. Following from the success of recent intervention programmes against gHAT, the World Health Organization (WHO) has defined a 2030 goal of global elimination of transmission (EOT). The key proposed indicator to measure achievement of the goal is zero reported cases. Results of previous mathematical modelling and quantitative analyses are brought together to explore both the implications of the proposed indicator and the feasibility of achieving the WHO goal. Whilst the indicator of zero case reporting is clear and measurable, it is an imperfect proxy for EOT and could arise either before or after EOT is achieved. Lagging reporting of infection and imperfect diagnostic specificity could result in case reporting after EOT, whereas the converse could be true due to underreporting, lack of coverage, and cryptic human and animal reservoirs. At the village-scale, the WHO recommendation of continuing active screening until there are three years of zero cases yields a high probability of local EOT, but extrapolating this result to larger spatial scales is complex. Predictive modelling of gHAT has consistently found that EOT by 2030 is unlikely across key endemic regions if current medical-only strategies are not bolstered by improved coverage, reduced time to detection and/or complementary vector control.&#xa0; Unfortunately, projected costs for strategies expected to meet EOT are high in the short term and strategies that are cost-effective in reducing burden are unlikely to result in EOT by 2030. Future modelling work should aim to provide predictions while taking into account uncertainties in stochastic dynamics and infection reservoirs, as well as assessment of multiple spatial scales, reactive strategies, and measurable proxies of EOT.</AbstractText><CopyrightInformation>Copyright: &#xa9; 2020 NTD Modelling Consortium Discussion Group on Gambiense Human African Trypanosomiasis.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><CollectiveName>NTD Modelling Consortium Discussion Group on Gambiense Human African Trypanosomiasis</CollectiveName></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2020</Year><Month>04</Month><Day>21</Day></ArticleDate></Article><MedlineJournalInfo><Country>United States</Country><MedlineTA>Gates Open Res</MedlineTA><NlmUniqueID>101717821</NlmUniqueID><ISSNLinking>2572-4754</ISSNLinking></MedlineJournalInfo><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">NTD Modelling Consortium</Keyword><Keyword MajorTopicYN="N">WHO goals</Keyword><Keyword MajorTopicYN="N">elimination of transmission</Keyword><Keyword MajorTopicYN="N">gambiense human African trypanosomiasis (gHAT)</Keyword><Keyword MajorTopicYN="N">prediction</Keyword><Keyword MajorTopicYN="N">sleeping sickness</Keyword></KeywordList><CoiStatement>No competing interests were disclosed.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="accepted"><Year>2020</Year><Month>4</Month><Day>6</Day></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2020</Year><Month>5</Month><Day>19</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2020</Year><Month>5</Month><Day>19</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2020</Year><Month>5</Month><Day>19</Day><Hour>6</Hour><Minute>1</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2020</Year><Month>4</Month><Day>21</Day></PubMedPubDate></History><PublicationStatus>epublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">32411945</ArticleId><ArticleId IdType="pmc">PMC7193711</ArticleId><ArticleId IdType="doi">10.12688/gatesopenres.13070.2</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>
+Global Health Observatory data repository [Internet].
+Reference Source
+</Citation><ArticleIdList><ArticleId IdType="pubmed">32069199</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Franco JR, Cecchi G, Priotto G, et al. :
+Monitoring the elimination of human African trypanosomiasis: Update to 2016.
+<i>PLoS Negl Trop Dis.</i>
+2018;12(12):e0006890.
+10.1371/journal.pntd.0006890
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0006890</ArticleId><ArticleId IdType="pmc">PMC6283345</ArticleId><ArticleId IdType="pubmed">30521525</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Franco JR, Cecchi G, Priotto G, et al. :
+Monitoring the elimination of human African trypanosomiasis: Update to 2014.
+<i>PLoS Negl Trop Dis.</i>
+2017;11(5):e0005585.
+10.1371/journal.pntd.0005585
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0005585</ArticleId><ArticleId IdType="pmc">PMC5456402</ArticleId><ArticleId IdType="pubmed">28531222</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Simarro PP, Cecchi G, Franco JR, et al. :
+Monitoring the Progress towards the Elimination of Gambiense Human African Trypanosomiasis.
+<i>PLoS Negl Trop Dis.</i>
+2015;9(6):e0003785.
+10.1371/journal.pntd.0003785
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0003785</ArticleId><ArticleId IdType="pmc">PMC4461311</ArticleId><ArticleId IdType="pubmed">26056823</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Mahamat MH, Peka M, Rayaisse JB, et al. :
+Adding tsetse control to medical activities contributes to decreasing transmission of sleeping sickness in the Mandoul focus (Chad).
+<i>PLoS Negl Trop Dis.</i>
+2017;11(7):e0005792.
+10.1371/journal.pntd.0005792
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0005792</ArticleId><ArticleId IdType="pmc">PMC5549763</ArticleId><ArticleId IdType="pubmed">28750007</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Rock KS, Torr SJ, Lumbala C, et al. :
+Quantitative evaluation of the strategy to eliminate human African trypanosomiasis in the Democratic Republic of Congo.
+<i>Parasit Vectors.</i>
+2015;8(1):532.
+10.1186/s13071-015-1131-8
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/s13071-015-1131-8</ArticleId><ArticleId IdType="pmc">PMC4618948</ArticleId><ArticleId IdType="pubmed">26490248</ArticleId></ArticleIdList></Reference><Reference><Citation>
+WHO:
+Control and surveillance of human African trypanosomiasis. WHO Technical Report Series;2013. 
+Reference Source
+</Citation><ArticleIdList><ArticleId IdType="pubmed">24552089</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Checchi F, Funk S, Chandramohan D, et al. :
+The impact of passive case detection on the transmission dynamics of gambiense Human African Trypanosomiasis.
+<i>PLoS Negl Trop Dis.</i>
+2018;12(4):e0006276.
+10.1371/journal.pntd.0006276
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0006276</ArticleId><ArticleId IdType="pmc">PMC5906023</ArticleId><ArticleId IdType="pubmed">29624584</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Lumbala C, Simarro PP, Cecchi G, et al. :
+Human African trypanosomiasis in the Democratic Republic of the Congo: disease distribution and risk.
+<i>Int J Health Geogr.</i>
+2015;14(1):20.
+10.1186/s12942-015-0013-9
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/s12942-015-0013-9</ArticleId><ArticleId IdType="pmc">PMC4501122</ArticleId><ArticleId IdType="pubmed">26047813</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Casta&#xf1;o MS, Ndeffo-Mbah ML, Rock KS, et al. :
+Assessing the impact of aggregating disease stage data in model predictions of human African trypanosomiasis transmission and control activities in Bandundu province (DRC).
+<i>PLoS Negl Trop Dis.</i>
+2020;14(1):e0007976.
+10.1371/journal.pntd.0007976
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0007976</ArticleId><ArticleId IdType="pmc">PMC6994134</ArticleId><ArticleId IdType="pubmed">31961872</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Camara M, Ouattara E, Duvignaud A, et al. :
+Impact of the Ebola outbreak on
+<i>Trypanosoma brucei gambiense</i> infection medical activities in coastal Guinea, 2014-2015: A retrospective analysis from the Guinean national Human African Trypanosomiasis control program.
+<i>PLoS Negl Trop Dis.</i>
+2017;11(11):e0006060.
+10.1371/journal.pntd.0006060
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0006060</ArticleId><ArticleId IdType="pmc">PMC5703571</ArticleId><ArticleId IdType="pubmed">29131822</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Rock KS, Pandey A, Ndeffo-Mbah ML, et al. :
+Data-driven models to predict the elimination of sleeping sickness in former Equateur province of DRC.
+<i>Epidemics.</i>
+2017;18:101&#x2013;12.
+10.1016/j.epidem.2017.01.006
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.epidem.2017.01.006</ArticleId><ArticleId IdType="pubmed">28279451</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Rock KS, Torr SJ, Lumbala C, et al. :
+Predicting the impact of intervention strategies for sleeping sickness in two high-endemicity health zones of the Democratic Republic of Congo.
+<i>PLoS Negl Trop Dis.</i>
+2017;11(1):e0005162.
+10.1371/journal.pntd.0005162
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0005162</ArticleId><ArticleId IdType="pmc">PMC5215767</ArticleId><ArticleId IdType="pubmed">28056016</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Sutherland CS, Stone CM, Steinmann P, et al. :
+Seeing beyond 2020: an economic evaluation of contemporary and emerging strategies for elimination of
+<i>Trypanosoma brucei gambiense.</i>
+
+<i>Lancet Glob Health.</i>
+2017;5(1):e69&#x2013;e79.
+10.1016/S2214-109X(16)30237-6
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S2214-109X(16)30237-6</ArticleId><ArticleId IdType="pubmed">27884709</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Courtin F, Camara M, Rayaisse JB, et al. :
+Reducing human-tsetse contact significantly enhances the efficacy of sleeping sickness active screening campaigns: A promising result in the context of elimination.
+<i>PLoS Negl Trop Dis.</i>
+2015;9(8):e0003727.
+10.1371/journal.pntd.0003727
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0003727</ArticleId><ArticleId IdType="pmc">PMC4534387</ArticleId><ArticleId IdType="pubmed">26267667</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Tirados I, Esterhuizen J, Kovacic V, et al. :
+Tsetse control and Gambian sleeping sickness; Implications for control strategy.
+<i>PLoS Negl Trop Dis.</i>
+2015;9(8):e0003822.
+10.1371/journal.pntd.0003822
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0003822</ArticleId><ArticleId IdType="pmc">PMC4580652</ArticleId><ArticleId IdType="pubmed">26267814</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Casta&#xf1;o MS, Aliee M, Mwamba Miaka E, et al. :
+Screening Strategies for a Sustainable Endpoint for Gambiense Sleeping Sickness.
+<i>J Infect Dis.</i>
+2019; pii: jiz588.
+10.1093/infdis/jiz588
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/infdis/jiz588</ArticleId><ArticleId IdType="pmc">PMC7289553</ArticleId><ArticleId IdType="pubmed">31876949</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Davis CN, Rock KS, Mwamba Miaka E, et al. :
+Village-scale persistence and elimination of
+<i>gambiense</i> human African trypanosomiasis.
+<i>PLoS Negl Trop Dis.</i>
+2019;13(10):e0007838.
+10.1371/journal.pntd.0007838
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0007838</ArticleId><ArticleId IdType="pmc">PMC6837580</ArticleId><ArticleId IdType="pubmed">31658269</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Checchi F, Funk S, Chandramohan D, et al. :
+Updated estimate of the duration of the meningo-encephalitic stage in gambiense human African trypanosomiasis.
+<i>BMC Res Notes.</i>
+2015;8(1):292.
+10.1186/s13104-015-1244-3
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/s13104-015-1244-3</ArticleId><ArticleId IdType="pmc">PMC4490719</ArticleId><ArticleId IdType="pubmed">26140922</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Sudarshi D, Lawrence S, Pickrell WO, et al. :
+Human African trypanosomiasis presenting at least 29 years after infection--what can this teach us about the pathogenesis and control of this neglected tropical disease?
+<i>PLoS Negl Trop Dis.</i>
+2014;8(12):e3349.
+10.1371/journal.pntd.0003349
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0003349</ArticleId><ArticleId IdType="pmc">PMC4270486</ArticleId><ArticleId IdType="pubmed">25522322</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Jamonneau V, Bucheton B, Kabor&#xe9; J, et al. :
+Revisiting the immune trypanolysis test to optimise epidemiological surveillance and control of sleeping sickness in West Africa.
+<i>PLoS Neglect Trop Dis.</i>
+2010;4(12):e917.
+10.1371/journal.pntd.0000917
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0000917</ArticleId><ArticleId IdType="pmc">PMC3006129</ArticleId><ArticleId IdType="pubmed">21200417</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Informal Expert Group on Gambiense HAT Reservoirs, 
+B&#xfc;scher P, Bart JM, et al. :
+Do cryptic reservoirs threaten Gambiense-sleeping sickness elimination?
+<i>Trends Parasitol.</i>
+2018;34(3):197&#x2013;207.
+10.1016/j.pt.2017.11.008
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pt.2017.11.008</ArticleId><ArticleId IdType="pmc">PMC5840517</ArticleId><ArticleId IdType="pubmed">29396200</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Rock KS, Ndeffo-Mbah ML, Casta&#xf1;o S, et al. :
+Assessing strategies against Gambiense sleeping sickness through mathematical modeling.
+<i>Clin Infect Dis.</i>
+2018;66(suppl_4):S286&#x2013;S92.
+10.1093/cid/ciy018
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/ciy018</ArticleId><ArticleId IdType="pmc">PMC5982708</ArticleId><ArticleId IdType="pubmed">29860287</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Pandey A, Atkins KE, Bucheton B, et al. :
+Evaluating long-term effectiveness of sleeping sickness control measures in Guinea.
+<i>Parasit Vectors.</i>
+2015;8(1):550.
+10.1186/s13071-015-1121-x
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/s13071-015-1121-x</ArticleId><ArticleId IdType="pmc">PMC4618537</ArticleId><ArticleId IdType="pubmed">26490037</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Kagbadouno MS, Camara O, Camara M, et al. :
+Ebola outbreak brings to light an unforeseen impact of tsetse control on sleeping sickness transmission in Guinea.
+<i>bioRxiv.</i>
+2018;1&#x2013;9.
+10.1101/202762
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1101/202762</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Sutherland CS, Tediosi F:
+Is the elimination of &#x2018;sleeping sickness&#x2019; affordable? Who will pay the price? Assessing the financial burden for the elimination of human African trypanosomiasis
+<i>Trypanosoma brucei gambiense</i> in sub-Saharan Africa.
+<i>BMJ Glob Health.</i>
+2019;4(2):e001173.
+10.1136/bmjgh-2018-001173
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/bmjgh-2018-001173</ArticleId><ArticleId IdType="pmc">PMC6509604</ArticleId><ArticleId IdType="pubmed">31139437</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Funk S, Nishiura H, Heesterbeek H, et al. :
+Identifying transmission cycles at the human-animal interface: the role of animal reservoirs in maintaining gambiense human african trypanosomiasis.
+<i>PLoS Comput Biol.</i>
+2013;9(1):e1002855.
+10.1371/journal.pcbi.1002855
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pcbi.1002855</ArticleId><ArticleId IdType="pmc">PMC3547827</ArticleId><ArticleId IdType="pubmed">23341760</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Molyneux D, Sankara DP:
+Guinea worm eradication: Progress and challenges- should we beware of the dog?
+<i>PLoS Neglect Trop Dis.</i>
+2017;11(4):e0005495.
+10.1371/journal.pntd.0005495
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pntd.0005495</ArticleId><ArticleId IdType="pmc">PMC5398503</ArticleId><ArticleId IdType="pubmed">28426663</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Stone CM, Chitnis N:
+Implications of heterogeneous biting exposure and animal hosts on
+<i>Trypanosomiasis brucei gambiense</i> transmission and control.
+<i>PLoS Comput Biol.</i>
+2015;11(10):e1004514&#x2013;22.
+10.1371/journal.pcbi.1004514
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pcbi.1004514</ArticleId><ArticleId IdType="pmc">PMC4591123</ArticleId><ArticleId IdType="pubmed">26426854</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Capewell P, Atkins K, Weir W, et al. :
+Resolving the apparent transmission paradox of African sleeping sickness.
+<i>PLoS Biol.</i>
+2019;17(1):e3000105.
+10.1371/journal.pbio.3000105
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pbio.3000105</ArticleId><ArticleId IdType="pmc">PMC6345479</ArticleId><ArticleId IdType="pubmed">30633739</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>

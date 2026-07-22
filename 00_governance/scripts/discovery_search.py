@@ -177,7 +177,9 @@ LINEAGE_SOURCES = frozenset({"pubmed", "crossref"})
 LINEAGE_QUERY_VARIANTS = (
     "exact_title",
     "title_first_author",
+    "title_year",
     "method_author_year",
+    "method_year",
 )
 LINEAGE_SOURCE_ROLES = frozenset(
     {
@@ -189,6 +191,69 @@ LINEAGE_SOURCE_ROLES = frozenset(
         "implementation",
         "infectious_application",
     }
+)
+LINEAGE_SOURCE_ROLE_ORDER = (
+    "original_candidate",
+    "authoritative_candidate",
+    "correction",
+    "diagnostic",
+    "guidance",
+    "implementation",
+    "infectious_application",
+)
+LINEAGE_CONCEPT_INSPECTION_HEADERS = (
+    "method_label",
+    "canonical_name",
+    "family",
+    "assigned_record_count",
+    "assigned_keyset_sha256",
+    *(f"{role}_outcome" for role in LINEAGE_SOURCE_ROLE_ORDER),
+    "selected_named_source_ids",
+    "supporting_query_ids",
+    "evidence_location",
+    "reviewer",
+    "notes",
+)
+LINEAGE_NAMED_SOURCE_HEADERS = (
+    "named_source_id",
+    "method_label",
+    "canonical_name",
+    "family",
+    "source_role",
+    "seed_candidate_key",
+    "title",
+    "first_author",
+    "year",
+    "record_type",
+    "source_url",
+    "provenance_evidence",
+    "selection_basis",
+)
+DISCOVERY_RELATIONSHIP_HEADERS = (
+    "paper_id",
+    "method_id",
+    "provisional_role",
+    "verification_state",
+    "evidence_location",
+    "search_id",
+    "status",
+    "notes",
+)
+DISCOVERY_RELATIONSHIP_ROLES = frozenset(
+    {"originates", "applies", "critiques", "corrects", "diagnoses", "implements"}
+)
+TASK6_RELATIONSHIP_ASSIGNMENT_FIELDS = (
+    "paper_id",
+    "method_id",
+    "provisional_relationship_decision",
+    "provisional_relationship_role",
+    "provisional_relationship_evidence",
+    "provisional_relationship_reviewer",
+)
+TASK6_LINEAGE_ASSIGNMENT_FIELDS = (
+    "lineage_source_role",
+    "lineage_source_evidence",
+    "lineage_source_reviewer",
 )
 FAMILY_TOKENS = {
     "causal_policy": "CAUSAL",
@@ -1168,7 +1233,10 @@ def _empty_wave_contract_errors(run_dir: Path) -> list[str] | None:
     return list(dict.fromkeys(errors))
 
 
-def _validate_lineage_registry(path: Path) -> tuple[list[dict[str, str]], list[str]]:
+def _validate_lineage_registry(
+    path: Path,
+    expected_execution_date: date | None = None,
+) -> tuple[list[dict[str, str]], list[str]]:
     headers, rows, errors = _read_csv(path, "invalid lineage query registry")
     if errors:
         return rows, errors
@@ -1187,10 +1255,24 @@ def _validate_lineage_registry(path: Path) -> tuple[list[dict[str, str]], list[s
         else:
             seen_queries.add(query_id)
         token = FAMILY_TOKENS.get(family, "")
-        if not token or re.fullmatch(
-            rf"SEARCH-\d{{8}}-LINEAGE-{re.escape(token)}-\d{{2}}", query_id
-        ) is None:
+        match = (
+            re.fullmatch(
+                rf"SEARCH-(\d{{8}})-LINEAGE-{re.escape(token)}-(\d{{2,}})",
+                query_id,
+            )
+            if token
+            else None
+        )
+        if match is None or int(match.group(2)) <= 0:
             errors.append(f"invalid lineage query_id: {query_id}")
+        elif (
+            expected_execution_date is not None
+            and match.group(1) != expected_execution_date.strftime("%Y%m%d")
+        ):
+            errors.append(
+                "lineage query execution date mismatch: "
+                f"{query_id}: expected {expected_execution_date.isoformat()}"
+            )
         if not named_source_id:
             errors.append("blank lineage named_source_id")
         groups.setdefault(named_source_id, []).append(row)
@@ -1638,12 +1720,16 @@ def execute_lineage(
     email: str,
     api_key: str | None = None,
     opener: Callable[..., object] = urllib.request.urlopen,
+    executed_date: date | None = None,
 ) -> dict[str, object]:
     """Execute a frozen heterogeneous lineage identity query registry."""
     root = Path(root)
     query_registry = Path(query_registry)
     output_dir = Path(output_dir)
-    rows, errors = _validate_lineage_registry(query_registry)
+    rows, errors = _validate_lineage_registry(
+        query_registry,
+        expected_execution_date=executed_date,
+    )
     if errors:
         raise DiscoveryExecutionError("; ".join(errors))
     try:
@@ -1679,7 +1765,16 @@ def execute_lineage(
     receipt: dict[str, object] = {
         "schema_version": 1,
         "executed_at": existing_executed_at
-        or datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(),
+        or (
+            datetime(
+                executed_date.year,
+                executed_date.month,
+                executed_date.day,
+                tzinfo=ZoneInfo("Asia/Shanghai"),
+            ).isoformat()
+            if executed_date is not None
+            else datetime.now(ZoneInfo("Asia/Shanghai")).isoformat()
+        ),
         "timezone": "Asia/Shanghai",
         "tool_version": TOOL_VERSION,
         "configuration_files": _configuration_receipts(
@@ -3059,6 +3154,343 @@ def _validate_lineage_pages(
     )
 
 
+def _task6_keyset_sha256(keys: Iterable[str]) -> str:
+    payload = "".join(f"{key}\n" for key in sorted(keys))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def _task6_whitespace_policy_errors(root: Path) -> list[str]:
+    path = root / ".gitattributes"
+    if not path.is_file():
+        return []
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeError) as error:
+        return [_error("invalid .gitattributes", path, error)]
+    errors: list[str] = []
+    for line_number, line in enumerate(lines, 1):
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        parts = stripped.split()
+        if "-whitespace" not in parts[1:]:
+            continue
+        pattern = parts[0]
+        if pattern.lower().endswith(".csv") or ".csv" in pattern.lower():
+            errors.append(
+                f"whitespace policy masks formal CSV: .gitattributes:{line_number}"
+            )
+            continue
+        if any(character in pattern for character in "*?["):
+            errors.append(
+                f"whitespace exception is not an exact path: .gitattributes:{line_number}"
+            )
+            continue
+        if not pattern.endswith((".xml", ".log")):
+            errors.append(
+                f"whitespace exception is not raw XML or historic log: "
+                f".gitattributes:{line_number}"
+            )
+    return errors
+
+
+def _task6_archive_query_id_errors(run_dir: Path) -> list[str]:
+    """Reject reuse of a query ID preserved in any zero-adoption archive."""
+    run_dir = Path(run_dir)
+    _, active_rows, active_errors = _read_csv(
+        run_dir / "LINEAGE_QUERY_REGISTRY.csv",
+        "invalid active lineage query registry",
+    )
+    if active_errors:
+        return active_errors
+    active_ids = {row.get("query_id", "") for row in active_rows}
+    archive_root = run_dir.parent / "wave_03_zero_adoption_archives"
+    if not archive_root.is_dir():
+        return []
+    errors: list[str] = []
+    for path in sorted(archive_root.rglob("LINEAGE_QUERY_REGISTRY.csv")):
+        _, archive_rows, archive_errors = _read_csv(
+            path, "invalid archived lineage query registry"
+        )
+        errors.extend(archive_errors)
+        for query_id in sorted(
+            active_ids & {row.get("query_id", "") for row in archive_rows}
+        ):
+            errors.append(
+                "active lineage query_id collides with archive: "
+                f"{query_id}: {path.relative_to(run_dir.parent)}"
+            )
+    return list(dict.fromkeys(errors))
+
+
+def validate_task6_semantics(root: Path, run_dir: Path) -> list[str]:
+    """Validate the repaired Task 6 semantic closure artifacts.
+
+    Small unit fixtures created for the generic lineage validator predate Task 6
+    and do not contain canonical concepts.  The stronger checks activate only
+    when the Task 6 concept table is present; the live Task 6 run always has it.
+    """
+    root = Path(root)
+    run_dir = Path(run_dir)
+    concept_path = run_dir / "canonical_method_concepts.csv"
+    if not concept_path.is_file():
+        return []
+    errors: list[str] = []
+    concept_headers, concept_rows, concept_errors = _read_csv(
+        concept_path, "invalid canonical method concepts"
+    )
+    errors.extend(concept_errors)
+    required_concept_fields = {
+        "concept_label", "canonical_name", "family", "assigned_record_count"
+    }
+    if concept_headers is None or not required_concept_fields.issubset(concept_headers):
+        errors.append("canonical method concept header mismatch")
+    concepts: dict[str, dict[str, str]] = {}
+    for row in concept_rows:
+        label = row.get("concept_label", "")
+        if not label or label in concepts:
+            errors.append("duplicate or blank canonical concept label")
+        else:
+            concepts[label] = row
+
+    assignment_path = run_dir / "canonical_method_assignments.csv"
+    assignment_headers, assignment_rows, assignment_errors = _read_csv(
+        assignment_path, "invalid canonical method assignments"
+    )
+    errors.extend(assignment_errors)
+    required_assignment_fields = {
+        "candidate_key", "final_concept_label", "final_canonical_name",
+        "final_family", *TASK6_RELATIONSHIP_ASSIGNMENT_FIELDS,
+        *TASK6_LINEAGE_ASSIGNMENT_FIELDS,
+    }
+    if (
+        assignment_headers is None
+        or not required_assignment_fields.issubset(assignment_headers)
+    ):
+        errors.append("canonical assignment relationship fields missing")
+    assignments_by_concept: dict[str, list[dict[str, str]]] = {}
+    assignments_by_key: dict[str, dict[str, str]] = {}
+    seen_assignment_keys: set[str] = set()
+    emitted_assignments: dict[tuple[str, str, str], dict[str, str]] = {}
+    omitted_assignments: set[tuple[str, str]] = set()
+    for row in assignment_rows:
+        key = row.get("candidate_key", "")
+        label = row.get("final_concept_label", "")
+        if not key or key in seen_assignment_keys:
+            errors.append("duplicate or blank Task 6 assignment key")
+        else:
+            seen_assignment_keys.add(key)
+            assignments_by_key[key] = row
+        assignments_by_concept.setdefault(label, []).append(row)
+        if label not in concepts:
+            errors.append(f"Task 6 assignment has unknown concept: {key}")
+        decision = row.get("provisional_relationship_decision", "")
+        role = row.get("provisional_relationship_role", "")
+        evidence = row.get("provisional_relationship_evidence", "")
+        reviewer = row.get("provisional_relationship_reviewer", "")
+        paper_id = row.get("paper_id", "")
+        method_id = row.get("method_id", "")
+        lineage_role = row.get("lineage_source_role", "")
+        lineage_evidence = row.get("lineage_source_evidence", "")
+        lineage_reviewer = row.get("lineage_source_reviewer", "")
+        if decision not in {"emit", "omit"}:
+            errors.append(f"invalid provisional relationship decision: {key}")
+        if not evidence.strip() or not reviewer.strip():
+            errors.append(f"provisional relationship decision lacks semantic audit: {key}")
+        if not paper_id or not method_id:
+            errors.append(f"provisional relationship decision lacks stable IDs: {key}")
+        elif decision == "emit":
+            if role not in DISCOVERY_RELATIONSHIP_ROLES:
+                errors.append(f"invalid emitted provisional relationship role: {key}")
+            else:
+                emitted_assignments[(paper_id, method_id, role)] = row
+        elif role:
+            errors.append(f"omitted provisional relationship retains role: {key}")
+        else:
+            omitted_assignments.add((paper_id, method_id))
+        if lineage_role not in {*LINEAGE_SOURCE_ROLES, "none"}:
+            errors.append(f"invalid assignment lineage source role: {key}")
+        if not lineage_evidence.strip() or not lineage_reviewer.strip():
+            errors.append(f"assignment lineage decision lacks semantic audit: {key}")
+
+    named_headers, named_rows, named_errors = _read_csv(
+        run_dir / "LINEAGE_NAMED_SOURCES.csv", "invalid lineage named sources"
+    )
+    errors.extend(named_errors)
+    if named_headers != list(LINEAGE_NAMED_SOURCE_HEADERS):
+        errors.append("lineage named source header mismatch")
+    named_by_id: dict[str, dict[str, str]] = {}
+    named_by_concept_role: dict[tuple[str, str], list[str]] = {}
+    for row in named_rows:
+        named_id = row.get("named_source_id", "")
+        if not named_id or named_id in named_by_id:
+            errors.append("duplicate or blank lineage named source")
+            continue
+        named_by_id[named_id] = row
+        seed_key = row.get("seed_candidate_key", "")
+        seed_assignment = assignments_by_key.get(seed_key)
+        if seed_assignment is None:
+            errors.append(f"lineage named source seed is not assigned evidence: {named_id}")
+        elif (
+            seed_assignment.get("final_concept_label") != row.get("method_label")
+            or seed_assignment.get("lineage_source_role") != row.get("source_role")
+        ):
+            errors.append(f"lineage named source lacks matching semantic role: {named_id}")
+        named_by_concept_role.setdefault(
+            (row.get("method_label", ""), row.get("source_role", "")), []
+        ).append(named_id)
+
+    registry_rows, registry_errors = _validate_lineage_registry(
+        run_dir / "LINEAGE_QUERY_REGISTRY.csv"
+    )
+    errors.extend(registry_errors)
+    queries_by_named: dict[str, list[str]] = {}
+    for row in registry_rows:
+        queries_by_named.setdefault(row.get("named_source_id", ""), []).append(
+            row.get("query_id", "")
+        )
+
+    inspection_rows, inspection_errors = _rows_with_headers(
+        run_dir / "lineage_concept_inspection.csv",
+        LINEAGE_CONCEPT_INSPECTION_HEADERS,
+        "lineage concept inspection",
+    )
+    errors.extend(inspection_errors)
+    inspections: dict[str, dict[str, str]] = {}
+    allowed_outcomes = {
+        "named_source_queried",
+        "not_directly_named_in_inspected_evidence",
+        "unresolved_after_bounded_search",
+    }
+    for row in inspection_rows:
+        label = row.get("method_label", "")
+        if not label or label in inspections:
+            errors.append("duplicate or blank lineage concept inspection")
+            continue
+        inspections[label] = row
+        assignments = assignments_by_concept.get(label, [])
+        keys = [assignment.get("candidate_key", "") for assignment in assignments]
+        if row.get("assigned_record_count") != str(len(assignments)):
+            errors.append(f"lineage concept assigned count mismatch: {label}")
+        if row.get("assigned_keyset_sha256") != _task6_keyset_sha256(keys):
+            errors.append(f"lineage concept assigned keyset mismatch: {label}")
+        if not row.get("evidence_location", "").strip() or not row.get(
+            "reviewer", ""
+        ).strip():
+            errors.append(f"lineage concept inspection lacks audit provenance: {label}")
+        selected_named = _pipe_values(row.get("selected_named_source_ids"))
+        supporting_queries = _pipe_values(row.get("supporting_query_ids"))
+        expected_named = sorted(
+            named_id
+            for named_id, named in named_by_id.items()
+            if named.get("method_label") == label
+        )
+        expected_queries = sorted(
+            query_id
+            for named_id in expected_named
+            for query_id in queries_by_named.get(named_id, [])
+        )
+        if selected_named != expected_named:
+            errors.append(f"lineage concept named-source coverage mismatch: {label}")
+        if supporting_queries != expected_queries:
+            errors.append(f"lineage concept query coverage mismatch: {label}")
+        for role in LINEAGE_SOURCE_ROLE_ORDER:
+            outcome = row.get(f"{role}_outcome", "")
+            if outcome not in allowed_outcomes:
+                errors.append(f"lineage concept role outcome missing: {label}: {role}")
+                continue
+            role_named = named_by_concept_role.get((label, role), [])
+            role_assignments = [
+                assignment
+                for assignment in assignments
+                if assignment.get("lineage_source_role") == role
+            ]
+            if outcome == "named_source_queried" and not role_named:
+                errors.append(f"lineage concept named outcome lacks source: {label}: {role}")
+            if outcome != "named_source_queried" and role_named:
+                errors.append(f"lineage concept source lacks named outcome: {label}: {role}")
+            if role_assignments and outcome != "named_source_queried":
+                errors.append(
+                    f"lineage semantic lead lacks queried source: {label}: {role}"
+                )
+            if not role_assignments and outcome == "named_source_queried":
+                errors.append(
+                    f"lineage queried source lacks assigned semantic lead: {label}: {role}"
+                )
+    if set(inspections) != set(concepts):
+        errors.append("lineage concept inspection coverage mismatch")
+
+    methods_headers, methods_rows, methods_errors = _read_csv(
+        root / "03_evidence_tables/methods.csv", "invalid methods registry"
+    )
+    errors.extend(methods_errors)
+    if methods_headers is None or "canonical_name" not in methods_headers:
+        errors.append("methods registry header mismatch")
+    methods_by_name = {
+        row.get("canonical_name", ""): row
+        for row in methods_rows
+        if row.get("canonical_name", "")
+    }
+    for concept in concepts.values():
+        canonical_name = concept.get("canonical_name", "")
+        method = methods_by_name.get(canonical_name)
+        if method is None:
+            errors.append(f"canonical concept missing method registry row: {canonical_name}")
+            continue
+        card_path = root / method.get("card_path", "")
+        try:
+            card_text = card_path.read_text(encoding="utf-8")
+        except (OSError, UnicodeError) as error:
+            errors.append(_error("invalid method discovery card", card_path, error))
+            continue
+        variant_match = re.search(r"^- Known label variants: (.+)$", card_text, re.MULTILINE)
+        if (
+            variant_match is None
+            or variant_match.group(1).strip() != "None documented at discovery stage"
+        ):
+            errors.append(
+                f"method card variant lacks inspected-evidence support: {canonical_name}"
+            )
+
+    relationship_rows, relationship_errors = _rows_with_headers(
+        run_dir.parent / "global/discovery_relationships.csv",
+        DISCOVERY_RELATIONSHIP_HEADERS,
+        "discovery relationships",
+    )
+    errors.extend(relationship_errors)
+    relationship_index: dict[tuple[str, str, str], dict[str, str]] = {}
+    for row in relationship_rows:
+        key = (
+            row.get("paper_id", ""),
+            row.get("method_id", ""),
+            row.get("provisional_role", ""),
+        )
+        if key in relationship_index:
+            errors.append(f"duplicate discovery relationship: {'|'.join(key)}")
+        else:
+            relationship_index[key] = row
+        if key not in emitted_assignments:
+            errors.append(f"discovery relationship lacks semantic emit decision: {'|'.join(key)}")
+        if row.get("verification_state") != "discovery" or row.get(
+            "status"
+        ) != "not_authoritative_until_primary_source_verification":
+            errors.append(f"invalid discovery relationship claim boundary: {'|'.join(key)}")
+    for key in sorted(set(emitted_assignments) - set(relationship_index)):
+        errors.append(f"emitted discovery relationship missing: {'|'.join(key)}")
+    for paper_id, method_id in omitted_assignments:
+        if any(
+            key[0] == paper_id and key[1] == method_id
+            for key in relationship_index
+        ):
+            errors.append(
+                f"omitted discovery relationship was emitted: {paper_id}|{method_id}"
+            )
+
+    errors.extend(_task6_whitespace_policy_errors(root))
+    errors.extend(_task6_archive_query_id_errors(run_dir))
+    return list(dict.fromkeys(errors))
+
+
 def validate_lineage(root: Path, run_dir: Path) -> list[str]:
     root = Path(root)
     run_dir = Path(run_dir)
@@ -3077,6 +3509,16 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
             errors.append(f"missing lineage receipt field: {field}")
     if any(field not in payload for field in LINEAGE_REQUIRED_FIELDS):
         return list(dict.fromkeys(errors))
+    expected_execution_date: date | None = None
+    try:
+        executed_at = datetime.fromisoformat(str(payload.get("executed_at", "")))
+    except ValueError:
+        errors.append("invalid lineage executed_at")
+    else:
+        if executed_at.tzinfo is None or executed_at.utcoffset() is None:
+            errors.append("invalid lineage executed_at")
+        else:
+            expected_execution_date = executed_at.date()
     errors.extend(_validate_configuration_files(payload["configuration_files"], lineage=True))
     errors.extend(
         _validate_configuration_file_hashes(root, payload["configuration_files"])
@@ -3259,8 +3701,10 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
             payload["configuration_files"],
             receipt_queries,
             recomputable_query_ids,
+            expected_execution_date,
         )
     )
+    errors.extend(validate_task6_semantics(root, run_dir))
     return list(dict.fromkeys(errors))
 
 
@@ -3277,6 +3721,7 @@ def _validate_lineage_decisions(
     configuration_files: object,
     receipt_queries: dict[str, dict[str, object]],
     recomputable_query_ids: set[str],
+    expected_execution_date: date | None,
 ) -> list[str]:
     errors: list[str] = []
     if not receipt_queries:
@@ -3294,7 +3739,10 @@ def _validate_lineage_decisions(
         registry_rows: list[dict[str, str]] = []
         errors.append("lineage query registry missing")
     else:
-        registry_rows, registry_errors = _validate_lineage_registry(registry_path)
+        registry_rows, registry_errors = _validate_lineage_registry(
+            registry_path,
+            expected_execution_date=expected_execution_date,
+        )
         errors.extend(registry_errors)
     registry_by_query: dict[str, dict[str, str]] = {}
     for row in registry_rows:
@@ -4186,6 +4634,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 args.email,
                 api_key=args.api_key,
                 opener=urllib.request.urlopen,
+                executed_date=datetime.now(ZoneInfo("Asia/Shanghai")).date(),
             )
             return _emit([])
         if args.command == "compile":

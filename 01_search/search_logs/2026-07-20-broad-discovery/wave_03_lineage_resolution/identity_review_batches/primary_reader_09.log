@@ -1740,19 +1740,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-174",
         "query_variant": "title_first_author",
         "query": "surveillance[Title] AND databases[Title] AND Medical[Title] AND product[Title] AND Maro[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-173",
         "query_variant": "exact_title",
         "query": "Medical[Title] AND product[Title] AND safety[Title] AND surveillance[Title] AND how[Title] AND many[Title] AND databases[Title] AND use[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-65",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-174",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:23867812",
         "candidate_rank": "1",
@@ -1780,14 +1780,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-66",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-175",
         "query_variant": "exact_title",
         "query": "Prospective[Title] AND surveillance[Title] AND invasive[Title] AND fungal[Title] AND infections[Title] AND hematopoietic[Title] AND stem[Title] AND cell[Title] AND transplant[Title] AND recipients[Title] AND 2001[Title] AND 2006[Title] AND overview[Title] AND Associated[Title] AND Infection[Title] AND Network[Title] AND TRANSNET[Title] AND Database[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-66",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-175",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20218877",
         "candidate_rank": "1",
@@ -1815,14 +1815,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-67",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-176",
         "query_variant": "exact_title",
         "query": "Preferential[Title] AND sampling[Title] AND veterinary[Title] AND parasitological[Title] AND surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-67",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-176",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27087037",
         "candidate_rank": "1",
@@ -1850,14 +1850,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-68",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-177",
         "query_variant": "exact_title",
         "query": "Public[Title] AND health[Title] AND triangulation[Title] AND approach[Title] AND application[Title] AND synthesizing[Title] AND data[Title] AND understand[Title] AND national[Title] AND local[Title] AND HIV[Title] AND epidemics[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-68",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-177",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20670448",
         "candidate_rank": "1",
@@ -1885,14 +1885,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-69",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-178",
         "query_variant": "exact_title",
         "query": "Development[Title] AND Delivery[Title] AND Real[Title] AND time[Title] AND Hospital[Title] AND onset[Title] AND COVID[Title] AND 19[Title] AND Surveillance[Title] AND System[Title] AND Using[Title] AND Network[Title] AND Analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-69",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-178",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32634822",
         "candidate_rank": "1",
@@ -1920,14 +1920,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-70",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-179",
         "query_variant": "exact_title",
         "query": "validity[Title] AND self[Title] AND reported[Title] AND antiretroviral[Title] AND use[Title] AND persons[Title] AND living[Title] AND HIV[Title] AND population[Title] AND based[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-70",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-179",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29194115",
         "candidate_rank": "1",
@@ -1955,14 +1955,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-71",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-180",
         "query_variant": "exact_title",
         "query": "Nowcasting[Title] AND pandemic[Title] AND influenza[Title] AND H1N1[Title] AND 2009[Title] AND hospitalizations[Title] AND Netherlands[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-71",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-180",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21416274",
         "candidate_rank": "1",
@@ -1990,19 +1990,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-182",
         "query_variant": "title_first_author",
         "query": "Symptomatic[Title] AND Constrained[Title] AND Nowcasting[Title] AND Infectious[Title] AND Kassteele[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-181",
         "query_variant": "exact_title",
         "query": "Nowcasting[Title] AND Number[Title] AND New[Title] AND Symptomatic[Title] AND Cases[Title] AND During[Title] AND Infectious[Title] AND Disease[Title] AND Outbreaks[Title] AND Using[Title] AND Constrained[Title] AND P[Title] AND spline[Title] AND Smoothing[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-72",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-182",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:31205290",
         "candidate_rank": "1",
@@ -2030,14 +2030,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-73",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-183",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND estimation[Title] AND COVID[Title] AND 19[Title] AND effective[Title] AND reproduction[Title] AND number[Title] AND using[Title] AND nowcasting[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-73",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-183",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33951962",
         "candidate_rank": "1",
@@ -2070,14 +2070,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-74",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-184",
         "query_variant": "exact_title",
         "query": "National[Title] AND Healthcare[Title] AND Safety[Title] AND Network[Title] AND Standardized[Title] AND Antimicrobial[Title] AND Administration[Title] AND Ratios[Title] AND SAARs[Title] AND Progress[Title] AND Report[Title] AND Risk[Title] AND Modeling[Title] AND Update[Title] AND Using[Title] AND 2017[Title] AND Data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-74",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-184",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32215655",
         "candidate_rank": "1",
@@ -2105,19 +2105,19 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-186",
         "query_variant": "title_first_author",
         "query": "Antimicrobial[Title] AND Developing[Title] AND Reporting[Title] AND Shortages[Title] AND McLaughlin[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-185",
         "query_variant": "exact_title",
         "query": "Developing[Title] AND Method[Title] AND Reporting[Title] AND Patient[Title] AND Harm[Title] AND Due[Title] AND Antimicrobial[Title] AND Shortages[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-75",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-186",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:25234281",
         "candidate_rank": "1",
@@ -2145,14 +2145,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-76",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-187",
         "query_variant": "exact_title",
         "query": "Measurement[Title] AND Error[Title] AND Case[Title] AND Series[Title] AND Models[Title] AND Application[Title] AND Infection[Title] AND Cardiovascular[Title] AND Risk[Title] AND OlderPatients[Title] AND Dialysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-76",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-187",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23650442",
         "candidate_rank": "1",
@@ -2180,14 +2180,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-77",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-188",
         "query_variant": "exact_title",
         "query": "novel[Title] AND tool[Title] AND assess[Title] AND community[Title] AND norms[Title] AND attitudes[Title] AND multiple[Title] AND concurrent[Title] AND sexual[Title] AND partnering[Title] AND rural[Title] AND Zimbabwe[Title] AND participatory[Title] AND attitudinal[Title] AND ranking[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-77",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-188",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21218276",
         "candidate_rank": "1",
@@ -2215,14 +2215,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "query": "Nationwide[Title] AND sentinel[Title] AND surveillance[Title] AND bloodstream[Title] AND Candida[Title] AND infections[Title] AND 40[Title] AND tertiary[Title] AND care[Title] AND hospitals[Title] AND Spain[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21372330",
         "candidate_rank": "1",
@@ -2234,7 +2234,7 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
         "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21372330/"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-78",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-189",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20826636",
         "candidate_rank": "2",
@@ -2262,14 +2262,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-79",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-190",
         "query_variant": "exact_title",
         "query": "Evaluating[Title] AND measles[Title] AND surveillance[Title] AND comparison[Title] AND sentinel[Title] AND mandatory[Title] AND notification[Title] AND data[Title] AND health[Title] AND insurance[Title] AND claims[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-79",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-190",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21044403",
         "candidate_rank": "1",
@@ -2297,14 +2297,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-80",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-191",
         "query_variant": "exact_title",
         "query": "new[Title] AND approach[Title] AND characterising[Title] AND infectious[Title] AND disease[Title] AND transmission[Title] AND dynamics[Title] AND sentinel[Title] AND surveillance[Title] AND application[Title] AND Italian[Title] AND 2009[Title] AND 2010[Title] AND H1N1[Title] AND influenza[Title] AND pandemic[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-80",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-191",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22325010",
         "candidate_rank": "1",
@@ -2332,14 +2332,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-81",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-192",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND local[Title] AND prevalence[Title] AND estimates[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND infections[Title] AND using[Title] AND causal[Title] AND debiasing[Title] AND framework[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-81",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-192",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34972825",
         "candidate_rank": "1",
@@ -2367,7 +2367,7 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-82",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-193",
         "query_variant": "exact_title",
 
 exec
@@ -2379,7 +2379,7 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-82",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-193",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22036193",
         "candidate_rank": "1",
@@ -2407,14 +2407,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-83",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-194",
         "query_variant": "exact_title",
         "query": "Implementation[Title] AND Evaluation[Title] AND Automated[Title] AND Online[Title] AND Study[Title] AND Recruitment[Title] AND Computerised[Title] AND Medical[Title] AND Records[Title] AND Primary[Title] AND Care[Title] AND Sentinel[Title] AND Surveillance[Title] AND Network[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-83",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-194",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39575793",
         "candidate_rank": "1",
@@ -2442,14 +2442,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-84",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-195",
         "query_variant": "exact_title",
         "query": "Strengths[Title] AND limitations[Title] AND assessing[Title] AND influenza[Title] AND vaccine[Title] AND effectiveness[Title] AND using[Title] AND routinely[Title] AND collected[Title] AND passive[Title] AND surveillance[Title] AND data[Title] AND Ontario[Title] AND Canada[Title] AND 2007[Title] AND 2012[Title] AND balancing[Title] AND efficiency[Title] AND versus[Title] AND quality[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-84",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-195",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25953275",
         "candidate_rank": "1",
@@ -2477,14 +2477,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-85",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-196",
         "query_variant": "exact_title",
         "query": "Implementing[Title] AND strategy[Title] AND monitoring[Title] AND inpatient[Title] AND antimicrobial[Title] AND use[Title] AND hospitals[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-85",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-196",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24162744",
         "candidate_rank": "1",
@@ -2512,14 +2512,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-86",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-197",
         "query_variant": "exact_title",
         "query": "Validity[Title] AND parental[Title] AND recalls[Title] AND estimate[Title] AND vaccination[Title] AND coverage[Title] AND evidence[Title] AND Tanzania[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-86",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-197",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29895298",
         "candidate_rank": "1",
@@ -2547,14 +2547,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-87",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-198",
         "query_variant": "exact_title",
         "query": "Using[Title] AND Calibration[Title] AND Reduce[Title] AND Measurement[Title] AND Error[Title] AND Prevalence[Title] AND Estimates[Title] AND Based[Title] AND Electronic[Title] AND Health[Title] AND Records[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-87",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-198",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30576279",
         "candidate_rank": "1",
@@ -2582,14 +2582,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-88",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-199",
         "query_variant": "exact_title",
         "query": "Improving[Title] AND Data[Title] AND HIV[Title] AND Epidemic[Title] AND New[Title] AND York[Title] AND City[Title] AND Identifying[Title] AND Transgender[Title] AND Persons[Title] AND Medicaid[Title] AND 2013[Title] AND 2017[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-88",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-199",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36033207",
         "candidate_rank": "1",
@@ -2617,14 +2617,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-89",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-200",
         "query_variant": "exact_title",
         "query": "Construction[Title] AND effectiveness[Title] AND evaluation[Title] AND knowledge[Title] AND based[Title] AND infectious[Title] AND disease[Title] AND monitoring[Title] AND decision[Title] AND support[Title] AND system[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-89",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-200",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37580359",
         "candidate_rank": "1",
@@ -2652,14 +2652,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-90",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-201",
         "query_variant": "exact_title",
         "query": "Gaming[Title] AND infection[Title] AND control[Title] AND qualitative[Title] AND study[Title] AND exploring[Title] AND perceptions[Title] AND experiences[Title] AND health[Title] AND professionals[Title] AND Mongolia[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-90",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-201",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21514007",
         "candidate_rank": "1",
@@ -2687,7 +2687,7 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-91",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-202",
         "query_variant": "exact_title",
         "query": "Brief[Title] AND behavioural[Title] AND surveys[Title] AND routine[Title] AND HIV[Title] AND sentinel[Title] AND surveillance[Title] AND new[Title] AND tool[Title] AND monitoring[Title] AND epidemic[Title] AND Viet[Title] AND Nam[Title]"
       }
@@ -2699,7 +2699,7 @@ exec
 /bin/zsh -lc "sed -n '961,1280p' 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/identity_review_batches/identity_batch_09.json" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
 pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-91",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-202",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25960922",
         "candidate_rank": "1",
@@ -2727,14 +2727,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-92",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-203",
         "query_variant": "exact_title",
         "query": "Dengue[Title] AND Surveillance[Title] AND System[Title] AND Brazil[Title] AND Qualitative[Title] AND Study[Title] AND Federal[Title] AND District[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-92",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-203",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32244954",
         "candidate_rank": "1",
@@ -2762,14 +2762,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-93",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-204",
         "query_variant": "exact_title",
         "query": "Hospitalization[Title] AND records[Title] AND tool[Title] AND evaluating[Title] AND performance[Title] AND food[Title] AND water[Title] AND borne[Title] AND disease[Title] AND surveillance[Title] AND systems[Title] AND Massachusetts[Title] AND case[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-93",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-204",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24740304",
         "candidate_rank": "1",
@@ -2797,14 +2797,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-94",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-205",
         "query_variant": "exact_title",
         "query": "Factors[Title] AND influencing[Title] AND performance[Title] AND voluntary[Title] AND farmer[Title] AND disease[Title] AND reporting[Title] AND passive[Title] AND surveillance[Title] AND systems[Title] AND scoping[Title] AND review[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-94",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-205",
         "query_variant": "exact_title",
         "candidate_key": "PMID:34507237",
         "candidate_rank": "1",
@@ -2832,14 +2832,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-95",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-206",
         "query_variant": "exact_title",
         "query": "Hybrid[Title] AND Approach[Title] AND Estimation[Title] AND Underreporting[Title] AND Tuberculosis[Title] AND Case[Title] AND Notification[Title] AND High[Title] AND Burden[Title] AND Settings[Title] AND Weak[Title] AND Surveillance[Title] AND Infrastructure[Title] AND Design[Title] AND Implementation[Title] AND Inventory[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-95",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-206",
         "query_variant": "exact_title",
         "candidate_key": "PMID:33720030",
         "candidate_rank": "1",
@@ -2867,14 +2867,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-96",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-207",
         "query_variant": "exact_title",
         "query": "Syndromic[Title] AND surveillance[Title] AND Influenza[Title] AND like[Title] AND illness[Title] AND primary[Title] AND care[Title] AND complement[Title] AND sentinel[Title] AND network[Title] AND periods[Title] AND increased[Title] AND incidence[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-96",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-207",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21924796",
         "candidate_rank": "1",
@@ -2902,14 +2902,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-97",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-208",
         "query_variant": "exact_title",
         "query": "Delayed[Title] AND Laboratory[Title] AND Response[Title] AND COVID[Title] AND 19[Title] AND Caused[Title] AND Molecular[Title] AND Diagnostic[Title] AND Contamination[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-97",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-208",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32433015",
         "candidate_rank": "1",
@@ -2937,14 +2937,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-98",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-209",
         "query_variant": "exact_title",
         "query": "Travel[Title] AND associated[Title] AND gonorrhoea[Title] AND four[Title] AND Nordic[Title] AND countries[Title] AND 2008[Title] AND 2013[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-98",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-209",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28537548",
         "candidate_rank": "1",
@@ -2972,14 +2972,14 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-99",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-210",
         "query_variant": "exact_title",
         "query": "Hospital[Title] AND based[Title] AND prospective[Title] AND multicentre[Title] AND surveillance[Title] AND determine[Title] AND incidence[Title] AND intussusception[Title] AND children[Title] AND aged[Title] AND below[Title] AND 15[Title] AND years[Title] AND Germany[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-99",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-210",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21435207",
         "candidate_rank": "1",
@@ -3364,120 +3364,120 @@ exec
 /bin/zsh -lc "rg 'SEARCH-2026071[89]-LINEAGE-SURVEILLANCE-(6[5-9]|[7-9][0-9]),' 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/pubmed_lineage_candidates.csv" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
 pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
-PMID:23867812,SEARCH-20260718-LINEAGE-SURVEILLANCE-65,NS-SURVEILLANCE-065,1,23867812,10.1097/ede.0b013e31829dde59,Medical product safety surveillance: how many databases to use?,2013,"Epidemiology (Cambridge, Mass.)",Judith C Maro; Jeffrey S Brown; Martin Kulldorff,https://pubmed.ncbi.nlm.nih.gov/23867812/,raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-65.efetch.000000000-000000000.xml,87cc2e1f3e6f1f5d10c04f59bc91829d1caf1b985e7d0f3e844909c64757eb69
-PMID:20218877,SEARCH-20260719-LINEAGE-SURVEILLANCE-66,NS-SURVEILLANCE-066,1,20218877,10.1086/651263,"Prospective surveillance for invasive fungal infections in hematopoietic stem cell transplant recipients, 2001-2006: overview of the Transplant-Associated Infection Surveillance Network (TRANSNET) Database.",2010,Clinical infectious diseases : an official publication of the Infectious Diseases Society of America,Dimitrios P Kontoyiannis; Kieren A Marr; Benjamin J Park; Barbara D Alexander; Elias J Anaissie; Thomas J Walsh; James Ito; David R Andes; John W Baddley; Janice M Brown; Lisa M Brumble; Alison G Freifeld; Susan Hadley; Loreen A Herwaldt; Carol A Kauffman; Katherine Knapp; G Marshall Lyon; Vicki A Morrison; Genovefa Papanicolaou; Thomas F Patterson; Trish M Perl; Mindy G Schuster; Randall Walker; Kathleen A Wannemuehler; John R Wingard; Tom M Chiller; Peter G Pappas,https://pubmed.ncbi.nlm.nih.gov/20218877/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-66.efetch.000000000-000000000.xml,b53c331aba8ce38944f8a79f2f1c53ff48d4beb576d09690d338c1ed221741f7
-PMID:27087037,SEARCH-20260719-LINEAGE-SURVEILLANCE-67,NS-SURVEILLANCE-067,1,27087037,10.4081/gh.2016.412,Preferential sampling in veterinary parasitological surveillance.,2016,Geospatial health,Lorenzo Cecconi; Annibale Biggeri; Laura Grisotto; Veronica Berrocal; Laura Rinaldi; Vincenzo Musella; Giuseppe Cringoli; Dolores Catelan,https://pubmed.ncbi.nlm.nih.gov/27087037/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-67.efetch.000000000-000000000.xml,57f33de345245416f38540ecfa71b356348d92ff2038d2866d232fe148f6e967
-PMID:20670448,SEARCH-20260719-LINEAGE-SURVEILLANCE-68,NS-SURVEILLANCE-068,1,20670448,10.1186/1471-2458-10-447,Public health triangulation: approach and application to synthesizing data to understand national and local HIV epidemics.,2010,BMC public health,George W Rutherford; William McFarland; Hilary Spindler; Karen White; Sadhna V Patel; John Aberle-Grasse; Keith Sabin; Nathan Smith; Stephanie Taché; Jesus M Calleja-Garcia; Rand L Stoneburner,https://pubmed.ncbi.nlm.nih.gov/20670448/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-68.efetch.000000000-000000000.xml,f0b4adc2ef99dcfb2d0a44c69fbd88fe0df2a0e5a53e97beaa3ca5bd1e8dd16a
-PMID:32634822,SEARCH-20260719-LINEAGE-SURVEILLANCE-69,NS-SURVEILLANCE-069,1,32634822,10.1093/cid/ciaa892,Development and Delivery of a Real-time Hospital-onset COVID-19 Surveillance System Using Network Analysis.,2021,Clinical infectious diseases : an official publication of the Infectious Diseases Society of America,James Richard Price; Siddharth Mookerjee; Eleonora Dyakova; Ashleigh Myall; Wendy Leung; Andrea Yeong Weiße; Yeeshika Shersing; Eimear Therese Brannigan; Tracey Galletly; David Muir; Paul Randell; Frances Davies; Frances Bolt; Mauricio Barahona; Jonathan Ashley Otter; Alison H Holmes,https://pubmed.ncbi.nlm.nih.gov/32634822/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-69.efetch.000000000-000000000.xml,a6f5adbd3e63d6857364ec0526c7ceb8d71afd836772ddd584e835de950bd512
-PMID:29194115,SEARCH-20260719-LINEAGE-SURVEILLANCE-70,NS-SURVEILLANCE-070,1,29194115,10.1097/qad.0000000000001706,The validity of self-reported antiretroviral use in persons living with HIV: a population-based study.,2018,"AIDS (London, England)",Mary K Grabowski; Steven J Reynolds; Joseph Kagaayi; Ronald H Gray; William Clarke; Larry W Chang; Gertrude Nakigozi; Oliver Laeyndecker; Andrew D Redd; Veena Billioux; Robert Ssekubugu; Fred Nalugoda; Maria J Wawer; David Serwadda; Thomas C Quinn; Aaron A R Tobian,https://pubmed.ncbi.nlm.nih.gov/29194115/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-70.efetch.000000000-000000000.xml,43578bf2c6ece3317b8110615b1a4a130d7c55b0535342c7df140c38e64422bc
-PMID:21416274,SEARCH-20260719-LINEAGE-SURVEILLANCE-71,NS-SURVEILLANCE-071,1,21416274,10.1007/s10654-011-9566-5,Nowcasting pandemic influenza A/H1N1 2009 hospitalizations in the Netherlands.,2011,European journal of epidemiology,Tjibbe Donker; Michiel van Boven; W Marijn van Ballegooijen; Tessa M Van't Klooster; Cornelia C Wielders; Jacco Wallinga,https://pubmed.ncbi.nlm.nih.gov/21416274/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-71.efetch.000000000-000000000.xml,be7aae383b7efb85de0e0841cbc382be102a53ec5ddd5dc7d9f4b2d1fc60682a
-PMID:31205290,SEARCH-20260718-LINEAGE-SURVEILLANCE-72,NS-SURVEILLANCE-072,1,31205290,10.1097/ede.0000000000001050,Nowcasting the Number of New Symptomatic Cases During Infectious Disease Outbreaks Using Constrained P-spline Smoothing.,2019,"Epidemiology (Cambridge, Mass.)",Jan van de Kassteele; Paul H C Eilers; Jacco Wallinga,https://pubmed.ncbi.nlm.nih.gov/31205290/,raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-72.efetch.000000000-000000000.xml,fbf8f844d66f1363dc77696429ca38184c3f4cd478e0672a2e2d27886c5971cf
-PMID:33951962,SEARCH-20260719-LINEAGE-SURVEILLANCE-73,NS-SURVEILLANCE-073,1,33951962,10.1177/09622802211008939,Improving the estimation of the COVID-19 effective reproduction number using nowcasting.,2021,Statistical methods in medical research,Joaquin Salas,https://pubmed.ncbi.nlm.nih.gov/33951962/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-73.efetch.000000000-000000000.xml,dcee9478cf6ea8e26cd652f7cc01bf7f3c191af43f0cf4ad0ebd5836e5b4a051
-PMID:32215655,SEARCH-20260719-LINEAGE-SURVEILLANCE-74,NS-SURVEILLANCE-074,1,32215655,10.1093/cid/ciaa326,National Healthcare Safety Network Standardized Antimicrobial Administration Ratios (SAARs): A Progress Report and Risk Modeling Update Using 2017 Data.,2020,Clinical infectious diseases : an official publication of the Infectious Diseases Society of America,Erin N O'Leary; Jonathan R Edwards; Arjun Srinivasan; Melinda M Neuhauser; Amy K Webb; Minn M Soe; Lauri A Hicks; Wendy Wise; Hsiu Wu; Daniel A Pollock,https://pubmed.ncbi.nlm.nih.gov/32215655/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-74.efetch.000000000-000000000.xml,f276a3762fd31a664e475b0ee8da9a1edd5116e5f17809a9c5486e4a67d320e4
-PMID:25234281,SEARCH-20260718-LINEAGE-SURVEILLANCE-75,NS-SURVEILLANCE-075,1,25234281,10.1007/s40121-014-0040-z,Developing a Method for Reporting Patient Harm Due to Antimicrobial Shortages.,2014,Infectious diseases and therapy,Milena M McLaughlin; Erik Skoglund; Zachary Pentoney; Marc H Scheetz,https://pubmed.ncbi.nlm.nih.gov/25234281/,raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-75.efetch.000000000-000000000.xml,1e7f5b05eb9d9e5a1be83273e2ba0054fbab24702e96b7d92d2f7e30384b79c6
-PMID:23650442,SEARCH-20260719-LINEAGE-SURVEILLANCE-76,NS-SURVEILLANCE-076,1,23650442,10.1080/01621459.2012.695648,Measurement Error Case Series Models with Application to Infection-Cardiovascular Risk in OlderPatients on Dialysis.,2012,Journal of the American Statistical Association,Sandra M Mohammed; Damla Sentürk; Lorien S Dalrymple; Danh V Nguyen,https://pubmed.ncbi.nlm.nih.gov/23650442/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-76.efetch.000000000-000000000.xml,247dc2ff6ee5caafc52e8b55a8162c45c102a8e7e59f9e27d34983766287fe01
-PMID:21218276,SEARCH-20260719-LINEAGE-SURVEILLANCE-77,NS-SURVEILLANCE-077,1,21218276,10.1080/09540121.2010.490257,A novel tool to assess community norms and attitudes to multiple and concurrent sexual partnering in rural Zimbabwe: participatory attitudinal ranking.,2011,AIDS care,Webster Mavhu; Lisa Langhaug; Sophie Pascoe; Jeffrey Dirawo; Graham Hart; Frances Cowan,https://pubmed.ncbi.nlm.nih.gov/21218276/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-77.efetch.000000000-000000000.xml,45aa1e8ef1de6f6b4e8dc0cffd567de7180db8ee8f5674e9172a1e72d1f22080
-PMID:21372330,SEARCH-20260719-LINEAGE-SURVEILLANCE-78,NS-SURVEILLANCE-078,1,21372330,10.1128/jcm.00006-11,Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.,2011,Journal of clinical microbiology,R. Cisterna; G. Ezpeleta; O. Telleria; J. Guinea; B. Regueiro; J. Garcia-Rodríguez; J. Esperalba,https://pubmed.ncbi.nlm.nih.gov/21372330/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-78.efetch.000000000-000000001.xml,1724610a966f1d40d717f5ff81c53e59377a3f714729382c5789dac3960d466e
-PMID:20826636,SEARCH-20260719-LINEAGE-SURVEILLANCE-78,NS-SURVEILLANCE-078,2,20826636,10.1128/jcm.00920-10,Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.,2010,Journal of clinical microbiology,R Cisterna; G Ezpeleta; O Telleria; Spanish Candidemia Surveillance Group,https://pubmed.ncbi.nlm.nih.gov/20826636/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-78.efetch.000000000-000000001.xml,1724610a966f1d40d717f5ff81c53e59377a3f714729382c5789dac3960d466e
-PMID:21044403,SEARCH-20260719-LINEAGE-SURVEILLANCE-79,NS-SURVEILLANCE-079,1,21044403,10.1017/s095026881000244x,"Evaluating measles surveillance: comparison of sentinel surveillance, mandatory notification, and data from health insurance claims.",2011,Epidemiology and infection,S Tanihara; E Okamoto; T Imatoh; Y Momose; A Kaetsu; M Miyazaki; H Une,https://pubmed.ncbi.nlm.nih.gov/21044403/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-79.efetch.000000000-000000000.xml,888d34a42dfbb22e4b23d609986f2d2fb548ef44d09bc3cd56ace1f053b57bde
-PMID:22325010,SEARCH-20260719-LINEAGE-SURVEILLANCE-80,NS-SURVEILLANCE-080,1,22325010,10.1016/j.epidem.2011.11.001,A new approach to characterising infectious disease transmission dynamics from sentinel surveillance: application to the Italian 2009-2010 A/H1N1 influenza pandemic.,2012,Epidemics,Ilaria Dorigatti; Simon Cauchemez; Andrea Pugliese; Neil Morris Ferguson,https://pubmed.ncbi.nlm.nih.gov/22325010/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-80.efetch.000000000-000000000.xml,4573fb47e70989b06b4d5a2eaf3d17dd8c85ff398750c4807750c5a074cdf3ab
-PMID:34972825,SEARCH-20260719-LINEAGE-SURVEILLANCE-81,NS-SURVEILLANCE-081,1,34972825,10.1038/s41564-021-01029-0,Improving local prevalence estimates of SARS-CoV-2 infections using a causal debiasing framework.,2022,Nature microbiology,George Nicholson; Brieuc Lehmann; Tullia Padellini; Koen B Pouwels; Radka Jersakova; James Lomax; Ruairidh E King; Ann-Marie Mallon; Peter J Diggle; Sylvia Richardson; Marta Blangiardo; Chris Holmes,https://pubmed.ncbi.nlm.nih.gov/34972825/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-81.efetch.000000000-000000000.xml,8f10b0b25992b2650341b8b17963d3318d37aec4543d2addfb2cf3d1150e65c1
-PMID:22036193,SEARCH-20260719-LINEAGE-SURVEILLANCE-82,NS-SURVEILLANCE-082,1,22036193,10.1016/j.puhe.2011.09.002,"Evaluation of sentinel surveillance system for monitoring hand, foot and mouth disease in Hong Kong.",2011,Public health,M Edmond; C Wong; S K Chuang,https://pubmed.ncbi.nlm.nih.gov/22036193/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-82.efetch.000000000-000000000.xml,2a3a3e833ffe3281eddaab16e5de4fd36224813a3a52eaca1cfd2b7eac9add77
-PMID:39575793,SEARCH-20260719-LINEAGE-SURVEILLANCE-83,NS-SURVEILLANCE-083,1,39575793,10.3233/shti241076,"Implementation and Evaluation of Automated, Online Study Recruitment from Computerised Medical Records in a Primary Care Sentinel Surveillance Network.",2024,Studies in health technology and informatics,Darius Oraee; Elizabeth Button; Vanashree Sexton; Karin Andre; Filipa Ferreira; Aileen Mill; Stephen Rushton; Ben W Rowland; Uy Hoang; Simon de Lusignan,https://pubmed.ncbi.nlm.nih.gov/39575793/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-83.efetch.000000000-000000000.xml,82a962764180de486c7408fa5999b4025b960bb4d26051e91d4fdcea51954c9b
-PMID:25953275,SEARCH-20260719-LINEAGE-SURVEILLANCE-84,NS-SURVEILLANCE-084,1,25953275,10.2807/1560-7917.es2015.20.16.21100,"Strengths and limitations of assessing influenza vaccine effectiveness using routinely collected, passive surveillance data in Ontario, Canada, 2007 to 2012: balancing efficiency versus quality.",2015,Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin,R D Savage; A L Winter; L C Rosella; R Olsha; J B Gubbay; D M Skowronski; N S Crowcroft,https://pubmed.ncbi.nlm.nih.gov/25953275/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-84.efetch.000000000-000000000.xml,77e02e7578fd364c31b7eefd462b716ac0de0a04f5c7b2cc3ff3477d78f03158
-PMID:24162744,SEARCH-20260719-LINEAGE-SURVEILLANCE-85,NS-SURVEILLANCE-085,1,24162744,10.1093/cid/cit710,Implementing a strategy for monitoring inpatient antimicrobial use among hospitals in the United States.,2014,Clinical infectious diseases : an official publication of the Infectious Diseases Society of America,Scott K Fridkin; Arjun Srinivasan,https://pubmed.ncbi.nlm.nih.gov/24162744/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-85.efetch.000000000-000000000.xml,08f4d4fd6a17eb3e59167a5dca961ab10e0f123fe2f696b5721d4fb6af1951d8
-PMID:29895298,SEARCH-20260719-LINEAGE-SURVEILLANCE-86,NS-SURVEILLANCE-086,1,29895298,10.1186/s12913-018-3270-z,Validity of parental recalls to estimate vaccination coverage: evidence from Tanzania.,2018,BMC health services research,Peter Binyaruka; Josephine Borghi,https://pubmed.ncbi.nlm.nih.gov/29895298/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-86.efetch.000000000-000000000.xml,fadbb9f75c99de84ea75fea1fa3c564168cee46ddeb41305a2570401289a28d2
-PMID:30576279,SEARCH-20260719-LINEAGE-SURVEILLANCE-87,NS-SURVEILLANCE-087,1,30576279,10.5888/pcd15.180371,Using Calibration to Reduce Measurement Error in Prevalence Estimates Based on Electronic Health Records.,2018,Preventing chronic disease,Pui Ying Chan; Yihong Zhao; Sungwoo Lim; Sharon E Perlman; Katharine H McVeigh,https://pubmed.ncbi.nlm.nih.gov/30576279/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-87.efetch.000000000-000000000.xml,3d4957a267f5769c5cc82a43e3498feb6e4c71ca17b0ca254371ce80b78f6b19
-PMID:36033207,SEARCH-20260719-LINEAGE-SURVEILLANCE-88,NS-SURVEILLANCE-088,1,36033207,10.1089/trgh.2020.0121,Improving Data on the HIV Epidemic in New York City by Identifying Transgender Persons in Medicaid in 2013-2017.,2022,Transgender health,Cristina Rodriguez-Hart; Beverly Obeng; Asa Radix; Zil Goldstein; Lucia Torian,https://pubmed.ncbi.nlm.nih.gov/36033207/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-88.efetch.000000000-000000000.xml,11c1619e0aa1cd3e16c3d9c6debbff83b5dc80e1a02bc45540bb76e2f4c22f4e
-PMID:37580359,SEARCH-20260719-LINEAGE-SURVEILLANCE-89,NS-SURVEILLANCE-089,1,37580359,10.1038/s41598-023-39931-8,Construction and effectiveness evaluation of a knowledge-based infectious disease monitoring and decision support system.,2023,Scientific reports,Mengying Wang; Mo Jia; Zhenhao Wei; Wei Wang; Yafei Shang; Hong Ji,https://pubmed.ncbi.nlm.nih.gov/37580359/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-89.efetch.000000000-000000000.xml,14afa0e0851c5ff617e06121d3db80d43658e7beab9e0018a30ced37c30a7d0a
-PMID:21514007,SEARCH-20260719-LINEAGE-SURVEILLANCE-90,NS-SURVEILLANCE-090,1,21514007,10.1016/j.ajic.2010.10.033,Gaming in infection control: a qualitative study exploring the perceptions and experiences of health professionals in Mongolia.,2011,American journal of infection control,Bat-Erdene Ider; Jon Adams; Anthony Morton; Michael Whitby; Archie Clements,https://pubmed.ncbi.nlm.nih.gov/21514007/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-90.efetch.000000000-000000000.xml,764b0531a8d4f73366d2d6134361808e395569afb1c3834af25c5dd8ef0e45ac
-PMID:25960922,SEARCH-20260719-LINEAGE-SURVEILLANCE-91,NS-SURVEILLANCE-091,1,25960922,10.2471/wpsar.2015.6.1-052,Brief behavioural surveys in routine HIV sentinel surveillance: a new tool for monitoring the HIV epidemic in Viet Nam.,2015,Western Pacific surveillance and response journal : WPSAR,Duong Cong Thanh; Nguyen Tran Hien; Nguyen Anh Tuan; Hoang Thi Thanh Ha; Pham Hong Thang; Nguyen Thi Thanh Ha; Le Anh Tuan; Tran Dai Quang; Tran Hong Tram; Nguyen Le Hai; Phan Thi Thu Huong; Vo Hai Son; Bui Hoang Duc; Nguyen Thien Nga; David Jacka; Keith Sabin,https://pubmed.ncbi.nlm.nih.gov/25960922/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-91.efetch.000000000-000000000.xml,b5d3502230fc06f929f8e5963ca2816672d4a0366895633e9837a62103940ff9
-PMID:32244954,SEARCH-20260719-LINEAGE-SURVEILLANCE-92,NS-SURVEILLANCE-092,1,32244954,10.3390/ijerph17062062,Dengue Surveillance System in Brazil: A Qualitative Study in the Federal District.,2020,International journal of environmental research and public health,Marco Angelo; Walter Massa Ramalho; Helen Gurgel; Nayara Belle; Eva Pilot,https://pubmed.ncbi.nlm.nih.gov/32244954/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-92.efetch.000000000-000000000.xml,612e4afc822cbb2ef9431048468e44e2bb36c63d22df897650c8e59f858326f4
-PMID:24740304,SEARCH-20260719-LINEAGE-SURVEILLANCE-93,NS-SURVEILLANCE-093,1,24740304,10.1371/journal.pone.0093744,Hospitalization records as a tool for evaluating performance of food- and water-borne disease surveillance systems: a Massachusetts case study.,2014,PloS one,Siobhan M Mor; Alfred DeMaria; Elena N Naumova,https://pubmed.ncbi.nlm.nih.gov/24740304/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-93.efetch.000000000-000000000.xml,e6830e052589e09b19f2a30bd204d062a8decfc7cb6ea4da5d0795742f1225e5
-PMID:34507237,SEARCH-20260719-LINEAGE-SURVEILLANCE-94,NS-SURVEILLANCE-094,1,34507237,10.1016/j.prevetmed.2021.105487,Factors influencing the performance of voluntary farmer disease reporting in passive surveillance systems: A scoping review.,2021,Preventive veterinary medicine,M Carolyn Gates; Lynsey Earl; Gareth Enticott,https://pubmed.ncbi.nlm.nih.gov/34507237/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-94.efetch.000000000-000000000.xml,61a2560c1c14408f915353a1b298922cf8de4a38368111e5d989b6d25373da35
-PMID:33720030,SEARCH-20260719-LINEAGE-SURVEILLANCE-95,NS-SURVEILLANCE-095,1,33720030,10.2196/22352,Hybrid Approach to Estimation of Underreporting of Tuberculosis Case Notification in High-Burden Settings With Weak Surveillance Infrastructure: Design and Implementation of an Inventory Study.,2021,JMIR public health and surveillance,Ellen M H Mitchell; Olusola Adedeji Adejumo; Hussein Abdur-Razzaq; Chidubem Ogbudebe; Nkem Chukwueme; Samson Bamidele Olorunju; Mustapha Gidado,https://pubmed.ncbi.nlm.nih.gov/33720030/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-95.efetch.000000000-000000000.xml,1e5ce9a0bddb5f6c2573c771bf6fe1bd979e105baec9998ed80bdf18d6264cfc
-PMID:21924796,SEARCH-20260719-LINEAGE-SURVEILLANCE-96,NS-SURVEILLANCE-096,1,21924796,10.1016/j.aprim.2011.03.008,[Syndromic surveillance of Influenza-like illness in primary care: a complement to the sentinel surveillance network for periods of increased incidence of Influenza].,2012,Atencion primaria,J Arranz Izquierdo; A Leiva Rus; E Carandell Jäger; A Pujol Buades; M C Méndez Castell; A Salvà Fiol; M Esteva Cantó,https://pubmed.ncbi.nlm.nih.gov/21924796/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-96.efetch.000000000-000000000.xml,ee51d6b82592bd52af7c0d7aa6d7ba7d7b5023c57d66e9cd30a336cd2f1ced8e
-PMID:32433015,SEARCH-20260719-LINEAGE-SURVEILLANCE-97,NS-SURVEILLANCE-097,1,32433015,10.3201/eid2608.201843,Delayed Laboratory Response to COVID-19 Caused by Molecular Diagnostic Contamination.,2020,Emerging infectious diseases,Ramona Mögling; Adam Meijer; Natasa Berginc; Sylvia Bruisten; Remi Charrel; Bruno Coutard; Isabella Eckerle; Vincent Enouf; Olav Hungnes; Gülay Korukluoglu; Thanos Kossyvakis; Andreas Mentis; Richard Molenkamp; Shaman Muradrasoli; Anna Papa; Fiona Pigny; Laurence Thirion; Sylvie van der Werf; Chantal Reusken,https://pubmed.ncbi.nlm.nih.gov/32433015/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-97.efetch.000000000-000000000.xml,c625c1df69371edc2d0e4b9801ef4c568301fa5d43dbb5a391a778e333da15bd
-PMID:28537548,SEARCH-20260719-LINEAGE-SURVEILLANCE-98,NS-SURVEILLANCE-098,1,28537548,10.2807/1560-7917.es.2017.22.20.30537,"Travel-associated gonorrhoea in four Nordic countries, 2008 to 2013.",2017,Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin,Julien Beauté; Susan Cowan; Eija Hiltunen-Back; Hilde Kløvstad; Inga Velicko; Gianfranco Spiteri,https://pubmed.ncbi.nlm.nih.gov/28537548/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-98.efetch.000000000-000000000.xml,39af9d54878e2ad10fe52871489483eace3570add3319ee525ef360455122c85
-PMID:21435207,SEARCH-20260719-LINEAGE-SURVEILLANCE-99,NS-SURVEILLANCE-099,1,21435207,10.1186/1471-230x-11-26,"Hospital-based, prospective, multicentre surveillance to determine the incidence of intussusception in children aged below 15 years in Germany.",2011,BMC gastroenterology,Nicolai Bissantz; Andreas C Jenke; Matthias Trampisch; Renate Klaassen-Mielke; Kathrin Bissantz; Hans-Joachim Trampisch; Tim Holland-Letz,https://pubmed.ncbi.nlm.nih.gov/21435207/,raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-99.efetch.000000000-000000000.xml,8dd073c40838a1eb511ea31d454b413696f8403178e64e5137a56cbbcc6fd047
+PMID:23867812,SEARCH-20260722-LINEAGE-SURVEILLANCE-174,NS-SURVEILLANCE-065,1,23867812,10.1097/ede.0b013e31829dde59,Medical product safety surveillance: how many databases to use?,2013,"Epidemiology (Cambridge, Mass.)",Judith C Maro; Jeffrey S Brown; Martin Kulldorff,https://pubmed.ncbi.nlm.nih.gov/23867812/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-174.efetch.000000000-000000000.xml,87cc2e1f3e6f1f5d10c04f59bc91829d1caf1b985e7d0f3e844909c64757eb69
+PMID:20218877,SEARCH-20260722-LINEAGE-SURVEILLANCE-175,NS-SURVEILLANCE-066,1,20218877,10.1086/651263,"Prospective surveillance for invasive fungal infections in hematopoietic stem cell transplant recipients, 2001-2006: overview of the Transplant-Associated Infection Surveillance Network (TRANSNET) Database.",2010,Clinical infectious diseases : an official publication of the Infectious Diseases Society of America,Dimitrios P Kontoyiannis; Kieren A Marr; Benjamin J Park; Barbara D Alexander; Elias J Anaissie; Thomas J Walsh; James Ito; David R Andes; John W Baddley; Janice M Brown; Lisa M Brumble; Alison G Freifeld; Susan Hadley; Loreen A Herwaldt; Carol A Kauffman; Katherine Knapp; G Marshall Lyon; Vicki A Morrison; Genovefa Papanicolaou; Thomas F Patterson; Trish M Perl; Mindy G Schuster; Randall Walker; Kathleen A Wannemuehler; John R Wingard; Tom M Chiller; Peter G Pappas,https://pubmed.ncbi.nlm.nih.gov/20218877/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-175.efetch.000000000-000000000.xml,b53c331aba8ce38944f8a79f2f1c53ff48d4beb576d09690d338c1ed221741f7
+PMID:27087037,SEARCH-20260722-LINEAGE-SURVEILLANCE-176,NS-SURVEILLANCE-067,1,27087037,10.4081/gh.2016.412,Preferential sampling in veterinary parasitological surveillance.,2016,Geospatial health,Lorenzo Cecconi; Annibale Biggeri; Laura Grisotto; Veronica Berrocal; Laura Rinaldi; Vincenzo Musella; Giuseppe Cringoli; Dolores Catelan,https://pubmed.ncbi.nlm.nih.gov/27087037/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-176.efetch.000000000-000000000.xml,57f33de345245416f38540ecfa71b356348d92ff2038d2866d232fe148f6e967
+PMID:20670448,SEARCH-20260722-LINEAGE-SURVEILLANCE-177,NS-SURVEILLANCE-068,1,20670448,10.1186/1471-2458-10-447,Public health triangulation: approach and application to synthesizing data to understand national and local HIV epidemics.,2010,BMC public health,George W Rutherford; William McFarland; Hilary Spindler; Karen White; Sadhna V Patel; John Aberle-Grasse; Keith Sabin; Nathan Smith; Stephanie Taché; Jesus M Calleja-Garcia; Rand L Stoneburner,https://pubmed.ncbi.nlm.nih.gov/20670448/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-177.efetch.000000000-000000000.xml,f0b4adc2ef99dcfb2d0a44c69fbd88fe0df2a0e5a53e97beaa3ca5bd1e8dd16a
+PMID:32634822,SEARCH-20260722-LINEAGE-SURVEILLANCE-178,NS-SURVEILLANCE-069,1,32634822,10.1093/cid/ciaa892,Development and Delivery of a Real-time Hospital-onset COVID-19 Surveillance System Using Network Analysis.,2021,Clinical infectious diseases : an official publication of the Infectious Diseases Society of America,James Richard Price; Siddharth Mookerjee; Eleonora Dyakova; Ashleigh Myall; Wendy Leung; Andrea Yeong Weiße; Yeeshika Shersing; Eimear Therese Brannigan; Tracey Galletly; David Muir; Paul Randell; Frances Davies; Frances Bolt; Mauricio Barahona; Jonathan Ashley Otter; Alison H Holmes,https://pubmed.ncbi.nlm.nih.gov/32634822/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-178.efetch.000000000-000000000.xml,a6f5adbd3e63d6857364ec0526c7ceb8d71afd836772ddd584e835de950bd512
+PMID:29194115,SEARCH-20260722-LINEAGE-SURVEILLANCE-179,NS-SURVEILLANCE-070,1,29194115,10.1097/qad.0000000000001706,The validity of self-reported antiretroviral use in persons living with HIV: a population-based study.,2018,"AIDS (London, England)",Mary K Grabowski; Steven J Reynolds; Joseph Kagaayi; Ronald H Gray; William Clarke; Larry W Chang; Gertrude Nakigozi; Oliver Laeyndecker; Andrew D Redd; Veena Billioux; Robert Ssekubugu; Fred Nalugoda; Maria J Wawer; David Serwadda; Thomas C Quinn; Aaron A R Tobian,https://pubmed.ncbi.nlm.nih.gov/29194115/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-179.efetch.000000000-000000000.xml,43578bf2c6ece3317b8110615b1a4a130d7c55b0535342c7df140c38e64422bc
+PMID:21416274,SEARCH-20260722-LINEAGE-SURVEILLANCE-180,NS-SURVEILLANCE-071,1,21416274,10.1007/s10654-011-9566-5,Nowcasting pandemic influenza A/H1N1 2009 hospitalizations in the Netherlands.,2011,European journal of epidemiology,Tjibbe Donker; Michiel van Boven; W Marijn van Ballegooijen; Tessa M Van't Klooster; Cornelia C Wielders; Jacco Wallinga,https://pubmed.ncbi.nlm.nih.gov/21416274/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-180.efetch.000000000-000000000.xml,be7aae383b7efb85de0e0841cbc382be102a53ec5ddd5dc7d9f4b2d1fc60682a
+PMID:31205290,SEARCH-20260722-LINEAGE-SURVEILLANCE-182,NS-SURVEILLANCE-072,1,31205290,10.1097/ede.0000000000001050,Nowcasting the Number of New Symptomatic Cases During Infectious Disease Outbreaks Using Constrained P-spline Smoothing.,2019,"Epidemiology (Cambridge, Mass.)",Jan van de Kassteele; Paul H C Eilers; Jacco Wallinga,https://pubmed.ncbi.nlm.nih.gov/31205290/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-182.efetch.000000000-000000000.xml,fbf8f844d66f1363dc77696429ca38184c3f4cd478e0672a2e2d27886c5971cf
+PMID:33951962,SEARCH-20260722-LINEAGE-SURVEILLANCE-183,NS-SURVEILLANCE-073,1,33951962,10.1177/09622802211008939,Improving the estimation of the COVID-19 effective reproduction number using nowcasting.,2021,Statistical methods in medical research,Joaquin Salas,https://pubmed.ncbi.nlm.nih.gov/33951962/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-183.efetch.000000000-000000000.xml,dcee9478cf6ea8e26cd652f7cc01bf7f3c191af43f0cf4ad0ebd5836e5b4a051
+PMID:32215655,SEARCH-20260722-LINEAGE-SURVEILLANCE-184,NS-SURVEILLANCE-074,1,32215655,10.1093/cid/ciaa326,National Healthcare Safety Network Standardized Antimicrobial Administration Ratios (SAARs): A Progress Report and Risk Modeling Update Using 2017 Data.,2020,Clinical infectious diseases : an official publication of the Infectious Diseases Society of America,Erin N O'Leary; Jonathan R Edwards; Arjun Srinivasan; Melinda M Neuhauser; Amy K Webb; Minn M Soe; Lauri A Hicks; Wendy Wise; Hsiu Wu; Daniel A Pollock,https://pubmed.ncbi.nlm.nih.gov/32215655/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-184.efetch.000000000-000000000.xml,f276a3762fd31a664e475b0ee8da9a1edd5116e5f17809a9c5486e4a67d320e4
+PMID:25234281,SEARCH-20260722-LINEAGE-SURVEILLANCE-186,NS-SURVEILLANCE-075,1,25234281,10.1007/s40121-014-0040-z,Developing a Method for Reporting Patient Harm Due to Antimicrobial Shortages.,2014,Infectious diseases and therapy,Milena M McLaughlin; Erik Skoglund; Zachary Pentoney; Marc H Scheetz,https://pubmed.ncbi.nlm.nih.gov/25234281/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-186.efetch.000000000-000000000.xml,1e7f5b05eb9d9e5a1be83273e2ba0054fbab24702e96b7d92d2f7e30384b79c6
+PMID:23650442,SEARCH-20260722-LINEAGE-SURVEILLANCE-187,NS-SURVEILLANCE-076,1,23650442,10.1080/01621459.2012.695648,Measurement Error Case Series Models with Application to Infection-Cardiovascular Risk in OlderPatients on Dialysis.,2012,Journal of the American Statistical Association,Sandra M Mohammed; Damla Sentürk; Lorien S Dalrymple; Danh V Nguyen,https://pubmed.ncbi.nlm.nih.gov/23650442/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-187.efetch.000000000-000000000.xml,247dc2ff6ee5caafc52e8b55a8162c45c102a8e7e59f9e27d34983766287fe01
+PMID:21218276,SEARCH-20260722-LINEAGE-SURVEILLANCE-188,NS-SURVEILLANCE-077,1,21218276,10.1080/09540121.2010.490257,A novel tool to assess community norms and attitudes to multiple and concurrent sexual partnering in rural Zimbabwe: participatory attitudinal ranking.,2011,AIDS care,Webster Mavhu; Lisa Langhaug; Sophie Pascoe; Jeffrey Dirawo; Graham Hart; Frances Cowan,https://pubmed.ncbi.nlm.nih.gov/21218276/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-188.efetch.000000000-000000000.xml,45aa1e8ef1de6f6b4e8dc0cffd567de7180db8ee8f5674e9172a1e72d1f22080
+PMID:21372330,SEARCH-20260722-LINEAGE-SURVEILLANCE-189,NS-SURVEILLANCE-078,1,21372330,10.1128/jcm.00006-11,Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.,2011,Journal of clinical microbiology,R. Cisterna; G. Ezpeleta; O. Telleria; J. Guinea; B. Regueiro; J. Garcia-Rodríguez; J. Esperalba,https://pubmed.ncbi.nlm.nih.gov/21372330/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-189.efetch.000000000-000000001.xml,1724610a966f1d40d717f5ff81c53e59377a3f714729382c5789dac3960d466e
+PMID:20826636,SEARCH-20260722-LINEAGE-SURVEILLANCE-189,NS-SURVEILLANCE-078,2,20826636,10.1128/jcm.00920-10,Nationwide sentinel surveillance of bloodstream Candida infections in 40 tertiary care hospitals in Spain.,2010,Journal of clinical microbiology,R Cisterna; G Ezpeleta; O Telleria; Spanish Candidemia Surveillance Group,https://pubmed.ncbi.nlm.nih.gov/20826636/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-189.efetch.000000000-000000001.xml,1724610a966f1d40d717f5ff81c53e59377a3f714729382c5789dac3960d466e
+PMID:21044403,SEARCH-20260722-LINEAGE-SURVEILLANCE-190,NS-SURVEILLANCE-079,1,21044403,10.1017/s095026881000244x,"Evaluating measles surveillance: comparison of sentinel surveillance, mandatory notification, and data from health insurance claims.",2011,Epidemiology and infection,S Tanihara; E Okamoto; T Imatoh; Y Momose; A Kaetsu; M Miyazaki; H Une,https://pubmed.ncbi.nlm.nih.gov/21044403/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-190.efetch.000000000-000000000.xml,888d34a42dfbb22e4b23d609986f2d2fb548ef44d09bc3cd56ace1f053b57bde
+PMID:22325010,SEARCH-20260722-LINEAGE-SURVEILLANCE-191,NS-SURVEILLANCE-080,1,22325010,10.1016/j.epidem.2011.11.001,A new approach to characterising infectious disease transmission dynamics from sentinel surveillance: application to the Italian 2009-2010 A/H1N1 influenza pandemic.,2012,Epidemics,Ilaria Dorigatti; Simon Cauchemez; Andrea Pugliese; Neil Morris Ferguson,https://pubmed.ncbi.nlm.nih.gov/22325010/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-191.efetch.000000000-000000000.xml,4573fb47e70989b06b4d5a2eaf3d17dd8c85ff398750c4807750c5a074cdf3ab
+PMID:34972825,SEARCH-20260722-LINEAGE-SURVEILLANCE-192,NS-SURVEILLANCE-081,1,34972825,10.1038/s41564-021-01029-0,Improving local prevalence estimates of SARS-CoV-2 infections using a causal debiasing framework.,2022,Nature microbiology,George Nicholson; Brieuc Lehmann; Tullia Padellini; Koen B Pouwels; Radka Jersakova; James Lomax; Ruairidh E King; Ann-Marie Mallon; Peter J Diggle; Sylvia Richardson; Marta Blangiardo; Chris Holmes,https://pubmed.ncbi.nlm.nih.gov/34972825/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-192.efetch.000000000-000000000.xml,8f10b0b25992b2650341b8b17963d3318d37aec4543d2addfb2cf3d1150e65c1
+PMID:22036193,SEARCH-20260722-LINEAGE-SURVEILLANCE-193,NS-SURVEILLANCE-082,1,22036193,10.1016/j.puhe.2011.09.002,"Evaluation of sentinel surveillance system for monitoring hand, foot and mouth disease in Hong Kong.",2011,Public health,M Edmond; C Wong; S K Chuang,https://pubmed.ncbi.nlm.nih.gov/22036193/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-193.efetch.000000000-000000000.xml,2a3a3e833ffe3281eddaab16e5de4fd36224813a3a52eaca1cfd2b7eac9add77
+PMID:39575793,SEARCH-20260722-LINEAGE-SURVEILLANCE-194,NS-SURVEILLANCE-083,1,39575793,10.3233/shti241076,"Implementation and Evaluation of Automated, Online Study Recruitment from Computerised Medical Records in a Primary Care Sentinel Surveillance Network.",2024,Studies in health technology and informatics,Darius Oraee; Elizabeth Button; Vanashree Sexton; Karin Andre; Filipa Ferreira; Aileen Mill; Stephen Rushton; Ben W Rowland; Uy Hoang; Simon de Lusignan,https://pubmed.ncbi.nlm.nih.gov/39575793/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-194.efetch.000000000-000000000.xml,82a962764180de486c7408fa5999b4025b960bb4d26051e91d4fdcea51954c9b
+PMID:25953275,SEARCH-20260722-LINEAGE-SURVEILLANCE-195,NS-SURVEILLANCE-084,1,25953275,10.2807/1560-7917.es2015.20.16.21100,"Strengths and limitations of assessing influenza vaccine effectiveness using routinely collected, passive surveillance data in Ontario, Canada, 2007 to 2012: balancing efficiency versus quality.",2015,Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin,R D Savage; A L Winter; L C Rosella; R Olsha; J B Gubbay; D M Skowronski; N S Crowcroft,https://pubmed.ncbi.nlm.nih.gov/25953275/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-195.efetch.000000000-000000000.xml,77e02e7578fd364c31b7eefd462b716ac0de0a04f5c7b2cc3ff3477d78f03158
+PMID:24162744,SEARCH-20260722-LINEAGE-SURVEILLANCE-196,NS-SURVEILLANCE-085,1,24162744,10.1093/cid/cit710,Implementing a strategy for monitoring inpatient antimicrobial use among hospitals in the United States.,2014,Clinical infectious diseases : an official publication of the Infectious Diseases Society of America,Scott K Fridkin; Arjun Srinivasan,https://pubmed.ncbi.nlm.nih.gov/24162744/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-196.efetch.000000000-000000000.xml,08f4d4fd6a17eb3e59167a5dca961ab10e0f123fe2f696b5721d4fb6af1951d8
+PMID:29895298,SEARCH-20260722-LINEAGE-SURVEILLANCE-197,NS-SURVEILLANCE-086,1,29895298,10.1186/s12913-018-3270-z,Validity of parental recalls to estimate vaccination coverage: evidence from Tanzania.,2018,BMC health services research,Peter Binyaruka; Josephine Borghi,https://pubmed.ncbi.nlm.nih.gov/29895298/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-197.efetch.000000000-000000000.xml,fadbb9f75c99de84ea75fea1fa3c564168cee46ddeb41305a2570401289a28d2
+PMID:30576279,SEARCH-20260722-LINEAGE-SURVEILLANCE-198,NS-SURVEILLANCE-087,1,30576279,10.5888/pcd15.180371,Using Calibration to Reduce Measurement Error in Prevalence Estimates Based on Electronic Health Records.,2018,Preventing chronic disease,Pui Ying Chan; Yihong Zhao; Sungwoo Lim; Sharon E Perlman; Katharine H McVeigh,https://pubmed.ncbi.nlm.nih.gov/30576279/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-198.efetch.000000000-000000000.xml,3d4957a267f5769c5cc82a43e3498feb6e4c71ca17b0ca254371ce80b78f6b19
+PMID:36033207,SEARCH-20260722-LINEAGE-SURVEILLANCE-199,NS-SURVEILLANCE-088,1,36033207,10.1089/trgh.2020.0121,Improving Data on the HIV Epidemic in New York City by Identifying Transgender Persons in Medicaid in 2013-2017.,2022,Transgender health,Cristina Rodriguez-Hart; Beverly Obeng; Asa Radix; Zil Goldstein; Lucia Torian,https://pubmed.ncbi.nlm.nih.gov/36033207/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-199.efetch.000000000-000000000.xml,11c1619e0aa1cd3e16c3d9c6debbff83b5dc80e1a02bc45540bb76e2f4c22f4e
+PMID:37580359,SEARCH-20260722-LINEAGE-SURVEILLANCE-200,NS-SURVEILLANCE-089,1,37580359,10.1038/s41598-023-39931-8,Construction and effectiveness evaluation of a knowledge-based infectious disease monitoring and decision support system.,2023,Scientific reports,Mengying Wang; Mo Jia; Zhenhao Wei; Wei Wang; Yafei Shang; Hong Ji,https://pubmed.ncbi.nlm.nih.gov/37580359/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-200.efetch.000000000-000000000.xml,14afa0e0851c5ff617e06121d3db80d43658e7beab9e0018a30ced37c30a7d0a
+PMID:21514007,SEARCH-20260722-LINEAGE-SURVEILLANCE-201,NS-SURVEILLANCE-090,1,21514007,10.1016/j.ajic.2010.10.033,Gaming in infection control: a qualitative study exploring the perceptions and experiences of health professionals in Mongolia.,2011,American journal of infection control,Bat-Erdene Ider; Jon Adams; Anthony Morton; Michael Whitby; Archie Clements,https://pubmed.ncbi.nlm.nih.gov/21514007/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-201.efetch.000000000-000000000.xml,764b0531a8d4f73366d2d6134361808e395569afb1c3834af25c5dd8ef0e45ac
+PMID:25960922,SEARCH-20260722-LINEAGE-SURVEILLANCE-202,NS-SURVEILLANCE-091,1,25960922,10.2471/wpsar.2015.6.1-052,Brief behavioural surveys in routine HIV sentinel surveillance: a new tool for monitoring the HIV epidemic in Viet Nam.,2015,Western Pacific surveillance and response journal : WPSAR,Duong Cong Thanh; Nguyen Tran Hien; Nguyen Anh Tuan; Hoang Thi Thanh Ha; Pham Hong Thang; Nguyen Thi Thanh Ha; Le Anh Tuan; Tran Dai Quang; Tran Hong Tram; Nguyen Le Hai; Phan Thi Thu Huong; Vo Hai Son; Bui Hoang Duc; Nguyen Thien Nga; David Jacka; Keith Sabin,https://pubmed.ncbi.nlm.nih.gov/25960922/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-202.efetch.000000000-000000000.xml,b5d3502230fc06f929f8e5963ca2816672d4a0366895633e9837a62103940ff9
+PMID:32244954,SEARCH-20260722-LINEAGE-SURVEILLANCE-203,NS-SURVEILLANCE-092,1,32244954,10.3390/ijerph17062062,Dengue Surveillance System in Brazil: A Qualitative Study in the Federal District.,2020,International journal of environmental research and public health,Marco Angelo; Walter Massa Ramalho; Helen Gurgel; Nayara Belle; Eva Pilot,https://pubmed.ncbi.nlm.nih.gov/32244954/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-203.efetch.000000000-000000000.xml,612e4afc822cbb2ef9431048468e44e2bb36c63d22df897650c8e59f858326f4
+PMID:24740304,SEARCH-20260722-LINEAGE-SURVEILLANCE-204,NS-SURVEILLANCE-093,1,24740304,10.1371/journal.pone.0093744,Hospitalization records as a tool for evaluating performance of food- and water-borne disease surveillance systems: a Massachusetts case study.,2014,PloS one,Siobhan M Mor; Alfred DeMaria; Elena N Naumova,https://pubmed.ncbi.nlm.nih.gov/24740304/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-204.efetch.000000000-000000000.xml,e6830e052589e09b19f2a30bd204d062a8decfc7cb6ea4da5d0795742f1225e5
+PMID:34507237,SEARCH-20260722-LINEAGE-SURVEILLANCE-205,NS-SURVEILLANCE-094,1,34507237,10.1016/j.prevetmed.2021.105487,Factors influencing the performance of voluntary farmer disease reporting in passive surveillance systems: A scoping review.,2021,Preventive veterinary medicine,M Carolyn Gates; Lynsey Earl; Gareth Enticott,https://pubmed.ncbi.nlm.nih.gov/34507237/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-205.efetch.000000000-000000000.xml,61a2560c1c14408f915353a1b298922cf8de4a38368111e5d989b6d25373da35
+PMID:33720030,SEARCH-20260722-LINEAGE-SURVEILLANCE-206,NS-SURVEILLANCE-095,1,33720030,10.2196/22352,Hybrid Approach to Estimation of Underreporting of Tuberculosis Case Notification in High-Burden Settings With Weak Surveillance Infrastructure: Design and Implementation of an Inventory Study.,2021,JMIR public health and surveillance,Ellen M H Mitchell; Olusola Adedeji Adejumo; Hussein Abdur-Razzaq; Chidubem Ogbudebe; Nkem Chukwueme; Samson Bamidele Olorunju; Mustapha Gidado,https://pubmed.ncbi.nlm.nih.gov/33720030/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-206.efetch.000000000-000000000.xml,1e5ce9a0bddb5f6c2573c771bf6fe1bd979e105baec9998ed80bdf18d6264cfc
+PMID:21924796,SEARCH-20260722-LINEAGE-SURVEILLANCE-207,NS-SURVEILLANCE-096,1,21924796,10.1016/j.aprim.2011.03.008,[Syndromic surveillance of Influenza-like illness in primary care: a complement to the sentinel surveillance network for periods of increased incidence of Influenza].,2012,Atencion primaria,J Arranz Izquierdo; A Leiva Rus; E Carandell Jäger; A Pujol Buades; M C Méndez Castell; A Salvà Fiol; M Esteva Cantó,https://pubmed.ncbi.nlm.nih.gov/21924796/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-207.efetch.000000000-000000000.xml,ee51d6b82592bd52af7c0d7aa6d7ba7d7b5023c57d66e9cd30a336cd2f1ced8e
+PMID:32433015,SEARCH-20260722-LINEAGE-SURVEILLANCE-208,NS-SURVEILLANCE-097,1,32433015,10.3201/eid2608.201843,Delayed Laboratory Response to COVID-19 Caused by Molecular Diagnostic Contamination.,2020,Emerging infectious diseases,Ramona Mögling; Adam Meijer; Natasa Berginc; Sylvia Bruisten; Remi Charrel; Bruno Coutard; Isabella Eckerle; Vincent Enouf; Olav Hungnes; Gülay Korukluoglu; Thanos Kossyvakis; Andreas Mentis; Richard Molenkamp; Shaman Muradrasoli; Anna Papa; Fiona Pigny; Laurence Thirion; Sylvie van der Werf; Chantal Reusken,https://pubmed.ncbi.nlm.nih.gov/32433015/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-208.efetch.000000000-000000000.xml,c625c1df69371edc2d0e4b9801ef4c568301fa5d43dbb5a391a778e333da15bd
+PMID:28537548,SEARCH-20260722-LINEAGE-SURVEILLANCE-209,NS-SURVEILLANCE-098,1,28537548,10.2807/1560-7917.es.2017.22.20.30537,"Travel-associated gonorrhoea in four Nordic countries, 2008 to 2013.",2017,Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin,Julien Beauté; Susan Cowan; Eija Hiltunen-Back; Hilde Kløvstad; Inga Velicko; Gianfranco Spiteri,https://pubmed.ncbi.nlm.nih.gov/28537548/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-209.efetch.000000000-000000000.xml,39af9d54878e2ad10fe52871489483eace3570add3319ee525ef360455122c85
+PMID:21435207,SEARCH-20260722-LINEAGE-SURVEILLANCE-210,NS-SURVEILLANCE-099,1,21435207,10.1186/1471-230x-11-26,"Hospital-based, prospective, multicentre surveillance to determine the incidence of intussusception in children aged below 15 years in Germany.",2011,BMC gastroenterology,Nicolai Bissantz; Andreas C Jenke; Matthias Trampisch; Renate Klaassen-Mielke; Kathrin Bissantz; Hans-Joachim Trampisch; Tim Holland-Letz,https://pubmed.ncbi.nlm.nih.gov/21435207/,raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-210.efetch.000000000-000000000.xml,8dd073c40838a1eb511ea31d454b413696f8403178e64e5137a56cbbcc6fd047
 
 exec
 /bin/zsh -lc "rg -n 'SEARCH-2026071[89]-LINEAGE-SURVEILLANCE-(6[5-9]|[7-9][0-9])\\.(esearch|efetch)' 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/MANIFEST_SHA256.json" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
 pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
-593:      "path": "raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-65.efetch.000000000-000000000.xml",
-597:      "path": "raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-65.esearch.json",
-601:      "path": "raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-72.efetch.000000000-000000000.xml",
-605:      "path": "raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-72.esearch.json",
-609:      "path": "raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-75.efetch.000000000-000000000.xml",
-613:      "path": "raw/SEARCH-20260718-LINEAGE-SURVEILLANCE-75.esearch.json",
-3537:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-65.esearch.json",
-3541:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-66.efetch.000000000-000000000.xml",
-3545:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-66.esearch.json",
-3549:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-67.efetch.000000000-000000000.xml",
-3553:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-67.esearch.json",
-3557:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-68.efetch.000000000-000000000.xml",
-3561:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-68.esearch.json",
-3565:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-69.efetch.000000000-000000000.xml",
-3569:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-69.esearch.json",
-3573:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-70.efetch.000000000-000000000.xml",
-3577:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-70.esearch.json",
-3581:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-71.efetch.000000000-000000000.xml",
-3585:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-71.esearch.json",
-3589:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-72.esearch.json",
-3593:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-73.efetch.000000000-000000000.xml",
-3597:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-73.esearch.json",
-3601:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-74.efetch.000000000-000000000.xml",
-3605:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-74.esearch.json",
-3609:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-75.esearch.json",
-3613:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-76.efetch.000000000-000000000.xml",
-3617:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-76.esearch.json",
-3621:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-77.efetch.000000000-000000000.xml",
-3625:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-77.esearch.json",
-3629:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-78.efetch.000000000-000000001.xml",
-3633:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-78.esearch.json",
-3637:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-79.efetch.000000000-000000000.xml",
-3641:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-79.esearch.json",
-3645:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-80.efetch.000000000-000000000.xml",
-3649:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-80.esearch.json",
-3653:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-81.efetch.000000000-000000000.xml",
-3657:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-81.esearch.json",
-3661:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-82.efetch.000000000-000000000.xml",
-3665:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-82.esearch.json",
-3669:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-83.efetch.000000000-000000000.xml",
-3673:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-83.esearch.json",
-3677:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-84.efetch.000000000-000000000.xml",
-3681:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-84.esearch.json",
-3685:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-85.efetch.000000000-000000000.xml",
-3689:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-85.esearch.json",
-3693:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-86.efetch.000000000-000000000.xml",
-3697:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-86.esearch.json",
-3701:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-87.efetch.000000000-000000000.xml",
-3705:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-87.esearch.json",
-3709:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-88.efetch.000000000-000000000.xml",
-3713:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-88.esearch.json",
-3717:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-89.efetch.000000000-000000000.xml",
-3721:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-89.esearch.json",
-3725:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-90.efetch.000000000-000000000.xml",
-3729:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-90.esearch.json",
-3733:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-91.efetch.000000000-000000000.xml",
-3737:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-91.esearch.json",
-3741:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-92.efetch.000000000-000000000.xml",
-3745:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-92.esearch.json",
-3749:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-93.efetch.000000000-000000000.xml",
-3753:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-93.esearch.json",
-3757:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-94.efetch.000000000-000000000.xml",
-3761:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-94.esearch.json",
-3765:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-95.efetch.000000000-000000000.xml",
-3769:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-95.esearch.json",
-3773:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-96.efetch.000000000-000000000.xml",
-3777:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-96.esearch.json",
-3781:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-97.efetch.000000000-000000000.xml",
-3785:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-97.esearch.json",
-3789:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-98.efetch.000000000-000000000.xml",
-3793:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-98.esearch.json",
-3797:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-99.efetch.000000000-000000000.xml",
-3801:      "path": "raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-99.esearch.json",
+593:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-174.efetch.000000000-000000000.xml",
+597:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-174.esearch.json",
+601:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-182.efetch.000000000-000000000.xml",
+605:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-182.esearch.json",
+609:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-186.efetch.000000000-000000000.xml",
+613:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-186.esearch.json",
+3537:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-173.esearch.json",
+3541:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-175.efetch.000000000-000000000.xml",
+3545:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-175.esearch.json",
+3549:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-176.efetch.000000000-000000000.xml",
+3553:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-176.esearch.json",
+3557:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-177.efetch.000000000-000000000.xml",
+3561:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-177.esearch.json",
+3565:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-178.efetch.000000000-000000000.xml",
+3569:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-178.esearch.json",
+3573:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-179.efetch.000000000-000000000.xml",
+3577:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-179.esearch.json",
+3581:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-180.efetch.000000000-000000000.xml",
+3585:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-180.esearch.json",
+3589:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-181.esearch.json",
+3593:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-183.efetch.000000000-000000000.xml",
+3597:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-183.esearch.json",
+3601:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-184.efetch.000000000-000000000.xml",
+3605:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-184.esearch.json",
+3609:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-185.esearch.json",
+3613:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-187.efetch.000000000-000000000.xml",
+3617:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-187.esearch.json",
+3621:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-188.efetch.000000000-000000000.xml",
+3625:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-188.esearch.json",
+3629:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-189.efetch.000000000-000000001.xml",
+3633:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-189.esearch.json",
+3637:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-190.efetch.000000000-000000000.xml",
+3641:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-190.esearch.json",
+3645:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-191.efetch.000000000-000000000.xml",
+3649:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-191.esearch.json",
+3653:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-192.efetch.000000000-000000000.xml",
+3657:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-192.esearch.json",
+3661:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-193.efetch.000000000-000000000.xml",
+3665:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-193.esearch.json",
+3669:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-194.efetch.000000000-000000000.xml",
+3673:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-194.esearch.json",
+3677:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-195.efetch.000000000-000000000.xml",
+3681:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-195.esearch.json",
+3685:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-196.efetch.000000000-000000000.xml",
+3689:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-196.esearch.json",
+3693:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-197.efetch.000000000-000000000.xml",
+3697:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-197.esearch.json",
+3701:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-198.efetch.000000000-000000000.xml",
+3705:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-198.esearch.json",
+3709:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-199.efetch.000000000-000000000.xml",
+3713:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-199.esearch.json",
+3717:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-200.efetch.000000000-000000000.xml",
+3721:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-200.esearch.json",
+3725:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-201.efetch.000000000-000000000.xml",
+3729:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-201.esearch.json",
+3733:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-202.efetch.000000000-000000000.xml",
+3737:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-202.esearch.json",
+3741:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-203.efetch.000000000-000000000.xml",
+3745:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-203.esearch.json",
+3749:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-204.efetch.000000000-000000000.xml",
+3753:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-204.esearch.json",
+3757:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-205.efetch.000000000-000000000.xml",
+3761:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-205.esearch.json",
+3765:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-206.efetch.000000000-000000000.xml",
+3769:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-206.esearch.json",
+3773:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-207.efetch.000000000-000000000.xml",
+3777:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-207.esearch.json",
+3781:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-208.efetch.000000000-000000000.xml",
+3785:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-208.esearch.json",
+3789:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-209.efetch.000000000-000000000.xml",
+3793:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-209.esearch.json",
+3797:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-210.efetch.000000000-000000000.xml",
+3801:      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-210.esearch.json",
 
 exec
 /bin/zsh -lc "python3 -c '
@@ -3625,7 +3625,7 @@ COMPARE NS-SURVEILLANCE-078 PMID:21372330 True True True True
 COMPARE NS-SURVEILLANCE-078 PMID:20826636 True True False False
 
 exec
-/bin/zsh -lc "rg -n -C 2 'Travel-associated|ArticleTitle' 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-98.efetch.000000000-000000000.xml" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
+/bin/zsh -lc "rg -n -C 2 'Travel-associated|ArticleTitle' 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-209.efetch.000000000-000000000.xml" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
 pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
 2-<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
@@ -3633,7 +3633,7 @@ pyenv: cannot rehash: /Users/hongchaokun/.pyenv/shims isn't writable
 4:<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual"><PMID Version="1">28537548</PMID><DateCompleted><Year>2017</Year><Month>12</Month><Day>13</Day></DateCompleted><DateRevised><Year>2020</Year><Month>12</Month><Day>09</Day></DateRevised><Article PubModel="Print"><Journal><ISSN IssnType="Electronic">1560-7917</ISSN><JournalIssue CitedMedium="Internet"><Volume>22</Volume><Issue>20</Issue><PubDate><Year>2017</Year><Month>May</Month><Day>18</Day></PubDate></JournalIssue><Title>Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin</Title><ISOAbbreviation>Euro Surveill</ISOAbbreviation></Journal><ArticleTitle>Travel-associated gonorrhoea in four Nordic countries, 2008&#xa0;to&#xa0;2013.</ArticleTitle><ELocationID EIdType="pii" ValidYN="Y">30537</ELocationID><ELocationID EIdType="doi" ValidYN="Y">10.2807/1560-7917.ES.2017.22.20.30537</ELocationID><Abstract><AbstractText>Travel may be associated with a higher risk of gonorrhoea and infection by antibiotic-resistant strains. The objective of this study was to estimate the risk for gonorrhoea among travellers from four Nordic European countries using surveillance data and to identify at-risk travellers to help target interventions. We retrieved gonorrhoea surveillance data from Denmark, Finland, Norway and Sweden and tourism denominator data from the Statistical Office of the European Union. A travel-associated case of gonorrhoea was defined as one for which the reported country of infection differed from the reporting country. During 2008-2013, the four countries reported 3,224 travel-associated gonorrhoea cases, of which 53% were among individuals below 35 years of age. The overall risk associated with travel abroad was 2.4 cases per million nights abroad. The highest risk was observed with travel to Asia (9.4). Cases more likely to be reported as travel-associated were: males, heterosexuals of both sexes, people older than 65 years, and foreign-born individuals. More effective interventions targeting young adults and other at-risk groups are needed. The use of travel-planning websites and social media should be explored further.</AbstractText><CopyrightInformation>This article is copyright of The Authors, 2017.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Beaut&#xe9;</LastName><ForeName>Julien</ForeName><Initials>J</Initials><AffiliationInfo><Affiliation>European Centre for Disease Prevention and Control (ECDC), Stockholm, Sweden.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Cowan</LastName><ForeName>Susan</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Statens Serum Institut (SSI), Copenhagen, Denmark.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Hiltunen-Back</LastName><ForeName>Eija</ForeName><Initials>E</Initials><AffiliationInfo><Affiliation>National Institute for Health and Welfare (THL), Helsinki, Finland.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kl&#xf8;vstad</LastName><ForeName>Hilde</ForeName><Initials>H</Initials><AffiliationInfo><Affiliation>Norwegian Institute of Public Health (FHI), Oslo, Norway.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Velicko</LastName><ForeName>Inga</ForeName><Initials>I</Initials><AffiliationInfo><Affiliation>Public Health Agency of Sweden, Stockholm, Sweden.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Spiteri</LastName><ForeName>Gianfranco</ForeName><Initials>G</Initials><AffiliationInfo><Affiliation>European Centre for Disease Prevention and Control (ECDC), Stockholm, Sweden.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType></PublicationTypeList></Article><MedlineJournalInfo><Country>Sweden</Country><MedlineTA>Euro Surveill</MedlineTA><NlmUniqueID>100887452</NlmUniqueID><ISSNLinking>1025-496X</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D004196" MajorTopicYN="N">Disease Outbreaks</DescriptorName><QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006069" MajorTopicYN="N">Gonorrhea</DescriptorName><QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName><QualifierName UI="Q000635" MajorTopicYN="N">transmission</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D020010" MajorTopicYN="N">Heterosexuality</DescriptorName><QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D018451" MajorTopicYN="N">Homosexuality, Male</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D009344" MajorTopicYN="N">Neisseria gonorrhoeae</DescriptorName><QualifierName UI="Q000302" MajorTopicYN="Y">isolation &amp; purification</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D011159" MajorTopicYN="N">Population Surveillance</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D015995" MajorTopicYN="N">Prevalence</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D018570" MajorTopicYN="N">Risk Assessment</DescriptorName><QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D012537" MajorTopicYN="N" Type="Geographic">Scandinavian and Nordic Countries</DescriptorName><QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D014195" MajorTopicYN="N">Travel</DescriptorName><QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D057236" MajorTopicYN="N">Travel Medicine</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName></MeshHeading></MeshHeadingList><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">Gonorrhoea</Keyword><Keyword MajorTopicYN="N">Scandinavian and Nordic Countries</Keyword><Keyword MajorTopicYN="N">Sexually Transmitted Infections</Keyword><Keyword MajorTopicYN="N">Surveillance</Keyword><Keyword MajorTopicYN="N">Travel</Keyword></KeywordList><CoiStatement><b>Conflict of interest:</b> None declared.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="received"><Year>2016</Year><Month>8</Month><Day>5</Day></PubMedPubDate><PubMedPubDate PubStatus="accepted"><Year>2016</Year><Month>9</Month><Day>23</Day></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2017</Year><Month>5</Month><Day>25</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2017</Year><Month>5</Month><Day>26</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2017</Year><Month>12</Month><Day>14</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2017</Year><Month>5</Month><Day>18</Day></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">28537548</ArticleId><ArticleId IdType="pmc">PMC5479976</ArticleId><ArticleId IdType="doi">10.2807/1560-7917.ES.2017.22.20.30537</ArticleId><ArticleId IdType="pii">30537</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>Holmes K, Sparling P, Stamm W, Piot P, Wasserheit J, Corey L, et al. Sexually Transmitted Diseases, Fourth Edition. 4 edition. New York: McGraw-Hill Professional; 2007. 2192 p.</Citation></Reference><Reference><Citation>Newman L, Rowley J, Vander Hoorn S, Wijesooriya NS, Unemo M, Low N, et al. Global Estimates of the Prevalence and Incidence of Four Curable Sexually Transmitted Infections in 2012 Based on Systematic Review and Global Reporting. PLoS One. 2015;10(12):e0143304. 10.1371/journal.pone.0143304</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pone.0143304</ArticleId><ArticleId IdType="pmc">PMC4672879</ArticleId><ArticleId IdType="pubmed">26646541</ArticleId></ArticleIdList></Reference><Reference><Citation>European Centre for Disease Prevention and Control (ECDC). Sexually transmitted infections in Europe 2013. Stockholm: ECDC; 2015. Available from: http://ecdc.europa.eu/en/publications/Publications/sexual-transmitted-infections-europe-surveillance-report-2013.pdf</Citation></Reference><Reference><Citation>Clutterbuck DJ, Flowers P, Barber T, Wilson H, Nelson M, Hedge B, et al. UK national guideline on safer sex advice. Int J STD AIDS. 2012;23(6):381-8. 10.1258/ijsa.2012.200312</Citation><ArticleIdList><ArticleId IdType="doi">10.1258/ijsa.2012.200312</ArticleId><ArticleId IdType="pubmed">22807529</ArticleId></ArticleIdList></Reference><Reference><Citation>Bignell C, Unemo M, European STI Guidelines Editorial Board 2012 European guideline on the diagnosis and treatment of gonorrhoea in adults. Int J STD AIDS. 2013;24(2):85-92. 10.1177/0956462412472837</Citation><ArticleIdList><ArticleId IdType="doi">10.1177/0956462412472837</ArticleId><ArticleId IdType="pubmed">24400344</ArticleId></ArticleIdList></Reference><Reference><Citation>Lewis DA. Global resistance of Neisseria gonorrhoeae: when theory becomes reality. Curr Opin Infect Dis. 2014;27(1):62-7. 10.1097/QCO.0000000000000025</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/QCO.0000000000000025</ArticleId><ArticleId IdType="pubmed">24275696</ArticleId></ArticleIdList></Reference><Reference><Citation>Brunette GW. CDC Health Information for International Travel 2014: The Yellow Book. Oxford University Press; 2013. 781 p.</Citation></Reference><Reference><Citation>Abdullah ASM, Ebrahim SH, Fielding R, Morisky DE. Sexually transmitted infections in travelers: implications for prevention and control. Clin Infect Dis. 2004;39(4):533-8. 10.1086/422721</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/422721</ArticleId><ArticleId IdType="pubmed">15356817</ArticleId></ArticleIdList></Reference><Reference><Citation>Ericsson CD, Steffen R, Matteelli A, Carosi G. Sexually transmitted diseases in travelers. Clin Infect Dis. 2001;32(7):1063-7. 10.1086/319607</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/319607</ArticleId><ArticleId IdType="pubmed">11264035</ArticleId></ArticleIdList></Reference><Reference><Citation>Tapsall JW. Antibiotic resistance in Neisseria gonorrhoeae. Clin Infect Dis. 2005;41(s4) Suppl 4;S263-8. 10.1086/430787</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/430787</ArticleId><ArticleId IdType="pubmed">16032562</ArticleId></ArticleIdList></Reference><Reference><Citation>Behrens RH, Carroll B. The challenges of disease risk ascertainment using accessible data sources for numbers of travelers. J Travel Med. 2013;20(5):296-302. 10.1111/jtm.12062</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/jtm.12062</ArticleId><ArticleId IdType="pubmed">23992572</ArticleId></ArticleIdList></Reference><Reference><Citation>United Nations World Tourism Organization (UNWTO). UNWTO Tourism Highlights 2014 Edition. Madrid: United Nations World Tourism Organization; 2014. Available from: http://www.e-unwto.org/doi/pdf/10.18111/9789284416226</Citation><ArticleIdList><ArticleId IdType="doi">10.18111/9789284416226</ArticleId></ArticleIdList></Reference><Reference><Citation>European Commission. Commission Implementing Decision. 2012/506/EU of 8 August 2012 amending Decision 2002/253/EC laying down case definitions for reporting communicable diseases to the Community network under Decision No 2119/98/EC of the European Parliament and of the Council. Official Journal of the European Union. Luxembourg: Publications Office of the European Union. Communities. 3.4.2002:L 86/44. Available from: http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2012:262:0001:0057:EN:PDF</Citation></Reference><Reference><Citation>Demunter C, Dimitrakopoulou C. Tourism in Europe: Results for 2011. Eurostat; 2012. Statistics in focus. 28/2012. Available from: http://ec.europa.eu/eurostat/documents/3433488/5584904/KS-SF-12-028-EN.PDF/bbd8b1ea-4d49-49eb-a0d6-467c4b74e151</Citation></Reference><Reference><Citation>Eurostat. Annual data on trips of EU residents. Luxembourg: Eurostat; [Accessed 18 Aug 2015]. Available from: http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=tour_dem_tnw&amp;lang=en</Citation></Reference><Reference><Citation>Mercer CH, Fenton KA, Wellings K, Copas AJ, Erens B, Johnson AM. Sex partner acquisition while overseas: results from a British national probability survey. Sex Transm Infect. 2007;83(7):517-22. 10.1136/sti.2007.026377</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/sti.2007.026377</ArticleId><ArticleId IdType="pmc">PMC2598649</ArticleId><ArticleId IdType="pubmed">17991687</ArticleId></ArticleIdList></Reference><Reference><Citation>Danielsson M, Berglund T, Forsberg M, Larsson M, Rogala C, Tyd&#xe9;n T. Sexual and reproductive health: Health in Sweden: The National Public Health Report 2012. Chapter 9. Scand J Public Health. 2012;40(9) Suppl;176-96. 10.1177/1403494812459600</Citation><ArticleIdList><ArticleId IdType="doi">10.1177/1403494812459600</ArticleId><ArticleId IdType="pubmed">23238407</ArticleId></ArticleIdList></Reference><Reference><Citation>European Centre for Disease Prevention and Control (ECDC). Thematic report: Men who have sex with men. Monitoring implementation of the Dublin Declaration on Partnership to Fight HIV/AIDS in Europe and Central Asia: 2014 progress report. Stockholm: ECDC. 2015. Available from: http://ecdc.europa.eu/en/publications/Publications/dublin-declaration-msm-2014.pdf</Citation></Reference><Reference><Citation>Low N, Unemo M, Skov Jensen J, Breuer J, Stephenson JM. Molecular diagnostics for gonorrhoea: implications for antimicrobial resistance and the threat of untreatable gonorrhoea. PLoS Med. 2014;11(2):e1001598. 10.1371/journal.pmed.1001598</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pmed.1001598</ArticleId><ArticleId IdType="pmc">PMC3913554</ArticleId><ArticleId IdType="pubmed">24503544</ArticleId></ArticleIdList></Reference><Reference><Citation>Lewis CT, de Wildt G. Sexual behaviour of backpackers who visit Koh Tao and Koh Phangan, Thailand: a cross-sectional study. Sex Transm Infect. 2016;92(6):410-4. 10.1136/sextrans-2015-052301</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/sextrans-2015-052301</ArticleId><ArticleId IdType="pubmed">27272532</ArticleId></ArticleIdList></Reference><Reference><Citation>Kaehler N, Piyaphanee W, Kittitrakul C, Kyi YP, Adhikari B, Sibunruang S, et al. Sexual behavior of foreign backpackers in the Khao San Road area, Bangkok. Southeast Asian J Trop Med Public Health. 2013;44(4):690-6.</Citation><ArticleIdList><ArticleId IdType="pubmed">24050104</ArticleId></ArticleIdList></Reference><Reference><Citation>Manieri M, Svensson H, Stafstr&#xf6;m M. Sex tourist risk behaviour--an on-site survey among Swedish men buying sex in Thailand. Scand J Public Health. 2013;41(4):392-7. 10.1177/1403494813480572</Citation><ArticleIdList><ArticleId IdType="doi">10.1177/1403494813480572</ArticleId><ArticleId IdType="pubmed">23470474</ArticleId></ArticleIdList></Reference><Reference><Citation>Bala M, Kakran M, Singh V, Sood S, Ramesh V, Members of WHO GASP SEAR Network Monitoring antimicrobial resistance in Neisseria gonorrhoeae in selected countries of the WHO South-East Asia Region between 2009 and 2012: a retrospective analysis. Sex Transm Infect. 2013;89(Suppl 4):iv28-35. 10.1136/sextrans-2012-050904</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/sextrans-2012-050904</ArticleId><ArticleId IdType="pubmed">24243876</ArticleId></ArticleIdList></Reference><Reference><Citation>World Health Organization (WHO). Global action plan to control the spread and impact of antimicrobial resistance in Neisseria gonorrhoeae. Geneva: WHO; 2012. Available from: http://apps.who.int/iris/bitstream/10665/44863/1/9789241503501_eng.pdf</Citation></Reference><Reference><Citation>European Centre for Disease Prevention and Control (ECDC). EMIS 2010: The European Men-Who-Have-Sex-With-Men Internet Survey. Findings form 38 countries. Stockholm: ECDC; 2013. Available from: http://ecdc.europa.eu/en/publications/Publications/EMIS-2010-european-men-who-have-sex-with-men-survey.pdf</Citation></Reference><Reference><Citation>Barnett ED, MacPherson DW, Stauffer WM, Loutan L, Hatz CF, Matteelli A, et al. The visiting friends or relatives traveler in the 21st century: time for a new definition. J Travel Med. 2010;17(3):163-70. 10.1111/j.1708-8305.2010.00411.x</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1708-8305.2010.00411.x</ArticleId><ArticleId IdType="pubmed">20536884</ArticleId></ArticleIdList></Reference><Reference><Citation>Steffen R, deBernardis C, Ba&#xf1;os A. Travel epidemiology--a global perspective. Int J Antimicrob Agents. 2003;21(2):89-95. 10.1016/S0924-8579(02)00293-5</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0924-8579(02)00293-5</ArticleId><ArticleId IdType="pubmed">12615369</ArticleId></ArticleIdList></Reference><Reference><Citation>Velicko I, Unemo M. Recent trends in gonorrhoea and syphilis epidemiology in Sweden: 2007 to 2011. Euro Surveill. 2012;17(29):20223.</Citation><ArticleIdList><ArticleId IdType="pubmed">22835468</ArticleId></ArticleIdList></Reference><Reference><Citation>Vivancos R, Abubakar I, Hunter PR. Foreign travel, casual sex, and sexually transmitted infections: systematic review and meta-analysis. Int J Infect Dis. 2010;14(10):e842-51. 10.1016/j.ijid.2010.02.2251</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.ijid.2010.02.2251</ArticleId><ArticleId IdType="pubmed">20580587</ArticleId></ArticleIdList></Reference><Reference><Citation>Croughs M, Remmen R, Van den Ende J. The effect of pre-travel advice on sexual risk behavior abroad: a systematic review. J Travel Med. 2014;21(1):45-51. 10.1111/jtm.12084</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/jtm.12084</ArticleId><ArticleId IdType="pubmed">24354921</ArticleId></ArticleIdList></Reference><Reference><Citation>William MR, Rollnick S. Motivational Interviewing, Second Edition: Preparing People for Change. 2nd Revised edition edition. Milwaukee, Wis.: Guilford Press; 2002. 419 p.</Citation></Reference><Reference><Citation>Van Herck K, Castelli F, Zuckerman J, Nothdurft H, Van Damme P, et al. Knowledge, attitudes and practices in travel-related infectious diseases: the European airport survey. J Travel Med. 2004;11(1):3-8. 10.2310/7060.2004.13609</Citation><ArticleIdList><ArticleId IdType="doi">10.2310/7060.2004.13609</ArticleId><ArticleId IdType="pubmed">14769280</ArticleId></ArticleIdList></Reference><Reference><Citation>Xiang Z, Gretzel U. Role of social media in online travel information search. Tour Manage. 2010;31(2):179-88. 10.1016/j.tourman.2009.02.016</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.tourman.2009.02.016</ArticleId></ArticleIdList></Reference><Reference><Citation>Kim H, Xiang Z, Fesenmaier DR. Use of the internet for trip planning: A generational analysis. J Travel Tour Mark. 2015;32(3):276-89. 10.1080/10548408.2014.896765</Citation><ArticleIdList><ArticleId IdType="doi">10.1080/10548408.2014.896765</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>
 
 exec
-/bin/zsh -lc "python3 -c 'import csv,json,xml.etree.ElementTree as ET; from pathlib import Path; root=Path(\"01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution\"); batch=json.loads((root/\"identity_review_batches/identity_batch_09.json\").read_text()); src=[x for x in batch if x[\"named_source_id\"]==\"NS-SURVEILLANCE-098\"][0]; cand=src[\"manifested_candidates\"][0]; tree=ET.parse(root/\"raw/SEARCH-20260719-LINEAGE-SURVEILLANCE-98.efetch.000000000-000000000.xml\"); title=\"\".join(tree.find(\".//ArticleTitle\").itertext()); print(repr(src[\"source_to_resolve\"][\"title\"])); print(repr(cand[\"title\"])); print(repr(title)); print(\"match_after_space_normalization=\", \" \".join(cand[\"title\"].split())==\" \".join(title.split()))'" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
+/bin/zsh -lc "python3 -c 'import csv,json,xml.etree.ElementTree as ET; from pathlib import Path; root=Path(\"01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution\"); batch=json.loads((root/\"identity_review_batches/identity_batch_09.json\").read_text()); src=[x for x in batch if x[\"named_source_id\"]==\"NS-SURVEILLANCE-098\"][0]; cand=src[\"manifested_candidates\"][0]; tree=ET.parse(root/\"raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-209.efetch.000000000-000000000.xml\"); title=\"\".join(tree.find(\".//ArticleTitle\").itertext()); print(repr(src[\"source_to_resolve\"][\"title\"])); print(repr(cand[\"title\"])); print(repr(title)); print(\"match_after_space_normalization=\", \" \".join(cand[\"title\"].split())==\" \".join(title.split()))'" in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 109ms:
 'Travel-associated gonorrhoea in four Nordic countries, 2008 to 2013.'
 'Travel-associated gonorrhoea in four Nordic countries, 2008 to 2013.'

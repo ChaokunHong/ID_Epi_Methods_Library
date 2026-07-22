@@ -1,0 +1,685 @@
+{
+  "batch_id": "REPAIR-IDENTITY-006",
+  "sources": [
+    {
+      "named_source_id": "NS-SURVEILLANCE-195",
+      "method_label": "surveillance_measurement_designs",
+      "canonical_name": "Other surveillance-measurement designs",
+      "source_role": "diagnostic",
+      "target_title": "Surveillance for Healthcare-Associated Infections: Hospital-Onset Adult Sepsis Events Versus Current Reportable Conditions.",
+      "target_first_author": "Brady Page",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33780544/",
+      "seed_candidate_key": "PMID:33780544",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-306",
+          "query_variant": "exact_title",
+          "query": "Surveillance[Title] AND Healthcare[Title] AND Associated[Title] AND Infections[Title] AND Hospital[Title] AND Onset[Title] AND Adult[Title] AND Sepsis[Title] AND Events[Title] AND Versus[Title] AND Current[Title] AND Reportable[Title] AND Conditions[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33780544",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-306",
+          "title": "Surveillance for Healthcare-Associated Infections: Hospital-Onset Adult Sepsis Events Versus Current Reportable Conditions.",
+          "year": "2021",
+          "authors": "Brady Page; Michael Klompas; Christina Chan; Michael R Filbin; Sayon Dutta; Dustin S McEvoy; Roger Clark; Matthew Leibowitz; Chanu Rhee",
+          "doi": "10.1093/cid/ciab217",
+          "pmid": "33780544",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33780544/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-196",
+      "method_label": "surveillance_measurement_designs",
+      "canonical_name": "Other surveillance-measurement designs",
+      "source_role": "guidance",
+      "target_title": "Impacts of culture-independent diagnostic practices on public health surveillance for bacterial enteric pathogens.",
+      "target_first_author": "Alicia B Cronquist",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22572666/",
+      "seed_candidate_key": "PMID:22572666",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-307",
+          "query_variant": "exact_title",
+          "query": "Impacts[Title] AND culture[Title] AND independent[Title] AND diagnostic[Title] AND practices[Title] AND public[Title] AND health[Title] AND surveillance[Title] AND bacterial[Title] AND enteric[Title] AND pathogens[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22572666",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-307",
+          "title": "Impacts of culture-independent diagnostic practices on public health surveillance for bacterial enteric pathogens.",
+          "year": "2012",
+          "authors": "Alicia B Cronquist; Rajal K Mody; Robyn Atkinson; John Besser; Melissa Tobin D'Angelo; Sharon Hurd; Trisha Robinson; Cynthia Nicholson; Barbara E Mahon",
+          "doi": "10.1093/cid/cis267",
+          "pmid": "22572666",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22572666/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-197",
+      "method_label": "surveillance_measurement_designs",
+      "canonical_name": "Other surveillance-measurement designs",
+      "source_role": "infectious_application",
+      "target_title": "Benchmarking SARS CoV-2 Infection in the Workplace to Support Continuity of Operations.",
+      "target_first_author": "Bart O Iddins",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33741830/",
+      "seed_candidate_key": "PMID:33741830",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-308",
+          "query_variant": "exact_title",
+          "query": "Benchmarking[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND Infection[Title] AND Workplace[Title] AND Support[Title] AND Continuity[Title] AND Operations[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33741830",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-308",
+          "title": "Benchmarking SARS CoV-2 Infection in the Workplace to Support Continuity of Operations.",
+          "year": "2021",
+          "authors": "Bart O Iddins; Mark H Waugh; Brandon Buck; Tracey Cato; David E Graham; Kareem Attia; Dan Jones; Adam Partin; Rania Shourbaji; Christopher Wesh",
+          "doi": "10.1097/jom.0000000000002188",
+          "pmid": "33741830",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33741830/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-198",
+      "method_label": "surveillance_platform_studies",
+      "canonical_name": "Structured surveillance platform studies",
+      "source_role": "infectious_application",
+      "target_title": "The contribution of HIV point-of-care tests in early HIV diagnosis: community-based HIV testing monitoring in Catalonia, 1995 to 2018.",
+      "target_first_author": "Laura Fernàndez-López",
+      "target_year": "2020",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/33124552/",
+      "seed_candidate_key": "PMID:33124552",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-309",
+          "query_variant": "exact_title",
+          "query": "contribution[Title] AND HIV[Title] AND point[Title] AND care[Title] AND tests[Title] AND early[Title] AND diagnosis[Title] AND community[Title] AND based[Title] AND testing[Title] AND monitoring[Title] AND Catalonia[Title] AND 1995[Title] AND 2018[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:33124552",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-309",
+          "title": "The contribution of HIV point-of-care tests in early HIV diagnosis: community-based HIV testing monitoring in Catalonia, 1995 to 2018.",
+          "year": "2020",
+          "authors": "Laura Fernàndez-López; Juliana Reyes-Urueña; Anna Conway; Jorge Saz; Adriana Morales; Jaime Quezadas; Jordi Baroja; Anna Rafel; Ander Pazos; Anna Avellaneda; Mercè Meroño; Lorena Andreo; Lluís Romero; Anna Lara; Araceli Otón; Benet Rifà; Rosa Mansilla; Joan Colom; Jordi Casabona",
+          "doi": "10.2807/1560-7917.es.2020.25.43.1900424",
+          "pmid": "33124552",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33124552/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-199",
+      "method_label": "surveillance_system_design_and_measurement_frameworks",
+      "canonical_name": "Surveillance system design, reporting practice, and measurement frameworks",
+      "source_role": "diagnostic",
+      "target_title": "Flow of information for bovine health surveillance: Two socio-economic models demonstrating the impact of the organisational profiles of local actors.",
+      "target_first_author": "Sofia Mlala",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/34875468/",
+      "seed_candidate_key": "PMID:34875468",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-310",
+          "query_variant": "exact_title",
+          "query": "Flow[Title] AND information[Title] AND bovine[Title] AND health[Title] AND surveillance[Title] AND Two[Title] AND socio[Title] AND economic[Title] AND models[Title] AND demonstrating[Title] AND impact[Title] AND organisational[Title] AND profiles[Title] AND local[Title] AND actors[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:34875468",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-310",
+          "title": "Flow of information for bovine health surveillance: Two socio-economic models demonstrating the impact of the organisational profiles of local actors.",
+          "year": "2022",
+          "authors": "Sofia Mlala; François Dedieu; Didier Calavas; Viviane Hénaux",
+          "doi": "10.1016/j.prevetmed.2021.105549",
+          "pmid": "34875468",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34875468/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-200",
+      "method_label": "surveillance_system_design_and_measurement_frameworks",
+      "canonical_name": "Surveillance system design, reporting practice, and measurement frameworks",
+      "source_role": "guidance",
+      "target_title": "Infection control systems in transition: the challenges for post-Soviet Bloc countries.",
+      "target_first_author": "B-E Ider",
+      "target_year": "2012",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/22377387/",
+      "seed_candidate_key": "PMID:22377387",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-311",
+          "query_variant": "exact_title",
+          "query": "Infection[Title] AND control[Title] AND systems[Title] AND transition[Title] AND challenges[Title] AND post[Title] AND Soviet[Title] AND Bloc[Title] AND countries[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:22377387",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-311",
+          "title": "Infection control systems in transition: the challenges for post-Soviet Bloc countries.",
+          "year": "2012",
+          "authors": "B-E Ider; J Adams; A Morton; M Whitby; A Clements",
+          "doi": "10.1016/j.jhin.2012.01.012",
+          "pmid": "22377387",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22377387/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-201",
+      "method_label": "surveillance_system_design_and_measurement_frameworks",
+      "canonical_name": "Surveillance system design, reporting practice, and measurement frameworks",
+      "source_role": "infectious_application",
+      "target_title": "Leveraging International Influenza Surveillance Systems and Programs during the COVID-19 Pandemic.",
+      "target_first_author": "Perrine Marcenac",
+      "target_year": "2022",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/36502434/",
+      "seed_candidate_key": "PMID:36502434",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-312",
+          "query_variant": "exact_title",
+          "query": "Leveraging[Title] AND International[Title] AND Influenza[Title] AND Surveillance[Title] AND Systems[Title] AND Programs[Title] AND during[Title] AND COVID[Title] AND 19[Title] AND Pandemic[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-349",
+          "query_variant": "title_first_author",
+          "query": "Leveraging[Title] AND International[Title] AND Influenza[Title] AND Surveillance[Title] AND Marcenac[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:36502434",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-349",
+          "title": "Leveraging International Influenza Surveillance Systems and Programs during the COVID-19 Pandemic.",
+          "year": "2022",
+          "authors": "Perrine Marcenac; Margaret McCarron; William Davis; Ledor S Igboh; Joshua A Mott; Kathryn E Lafond; Weigong Zhou; Marjorie Sorrells; Myrna D Charles; Philip Gould; Carmen Sofia Arriola; Vic Veguilla; Erica Guthrie; Vivien G Dugan; Rebecca Kondor; Eric Gogstad; Timothy M Uyeki; Sonja J Olsen; Gideon O Emukule; Siddhartha Saha; Carolyn Greene; Joseph S Bresee; John Barnes; David E Wentworth; Alicia M Fry; Daniel B Jernigan; Eduardo Azziz-Baumgartner",
+          "doi": "10.3201/eid2813.212248",
+          "pmid": "36502434",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36502434/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-202",
+      "method_label": "surveillance_system_design_improvement",
+      "canonical_name": "Surveillance system design and reporting-improvement studies",
+      "source_role": "authoritative_candidate",
+      "target_title": "Surveillance of ventilator associated pneumonia in a network of indian hospitals using modified definitions: a pilot study.",
+      "target_first_author": "Purva Mathur",
+      "target_year": "2024",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/39130755/",
+      "seed_candidate_key": "PMID:39130755",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-313",
+          "query_variant": "exact_title",
+          "query": "Surveillance[Title] AND ventilator[Title] AND associated[Title] AND pneumonia[Title] AND network[Title] AND indian[Title] AND hospitals[Title] AND modified[Title] AND definitions[Title] AND pilot[Title] AND study[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:39130755",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-313",
+          "title": "Surveillance of ventilator associated pneumonia in a network of indian hospitals using modified definitions: a pilot study.",
+          "year": "2024",
+          "authors": "Purva Mathur; Aparna Ningombam; Kapil Dev Soni; Richa Aggrawal; Kumari Vandana Singh; Projoyita Samanta; Stuti Gupta; Smriti Srivastava; Bijayini Behera; Swagata Tripathy; Pallab Ray; Manisha Biswal; Camilla Rodrigues; Sanjay Bhattacharya; Sudipta Mukherjee; Satyam Mukherjee; Vimala Venkatesh; Sheetal Verma; Zia Arshad; Vibhor Tak; Pradeep Kumar Bhatia; Vijaylakshmi Nag; Tadepalli Karuna; Sourabh Saigal; Jai Prakash Sharma; Sanjeev Singh; Chiranjay Mukhopadhyay; Vandana Ke; Muralidhar Varma; Tapan Majumdar; Vijayshree Deotale; Ruchita Attal; Jyoti Iravane; Mangala Harbade; Amruta Omkari; Kamini Walia",
+          "doi": "10.1016/j.lansea.2024.100450",
+          "pmid": "39130755",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39130755/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-203",
+      "method_label": "surveillance_system_design_improvement",
+      "canonical_name": "Surveillance system design and reporting-improvement studies",
+      "source_role": "guidance",
+      "target_title": "Decision making during healthcare-associated infection surveillance: a rationale for automation.",
+      "target_first_author": "William E Trick",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/23592826/",
+      "seed_candidate_key": "PMID:23592826",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-314",
+          "query_variant": "exact_title",
+          "query": "Decision[Title] AND making[Title] AND during[Title] AND healthcare[Title] AND associated[Title] AND infection[Title] AND surveillance[Title] AND rationale[Title] AND automation[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-350",
+          "query_variant": "title_first_author",
+          "query": "healthcare[Title] AND associated[Title] AND surveillance[Title] AND automation[Title] AND Trick[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:23592826",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-350",
+          "title": "Decision making during healthcare-associated infection surveillance: a rationale for automation.",
+          "year": "2013",
+          "authors": "William E Trick",
+          "doi": "10.1093/cid/cit249",
+          "pmid": "23592826",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23592826/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-204",
+      "method_label": "surveillance_system_design_improvement",
+      "canonical_name": "Surveillance system design and reporting-improvement studies",
+      "source_role": "implementation",
+      "target_title": "International collaboration to protect health workers from infectious diseases in Ecuador.",
+      "target_first_author": "Marie-Claude Lavoie",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20602074/",
+      "seed_candidate_key": "PMID:20602074",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-315",
+          "query_variant": "exact_title",
+          "query": "International[Title] AND collaboration[Title] AND protect[Title] AND health[Title] AND workers[Title] AND infectious[Title] AND diseases[Title] AND Ecuador[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20602074",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-315",
+          "title": "International collaboration to protect health workers from infectious diseases in Ecuador.",
+          "year": "2010",
+          "authors": "Marie-Claude Lavoie; Annalee Yassi; Elizabeth Bryce; Ronaldo Fujii; Milton Logronio; Maritza Tennassee; Healthy Hospital Project Team",
+          "doi": "10.1590/s1020-49892010000500010",
+          "pmid": "20602074",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20602074/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-205",
+      "method_label": "surveillance_system_evaluation_and_data_quality",
+      "canonical_name": "Surveillance system evaluation and reporting-quality studies",
+      "source_role": "diagnostic",
+      "target_title": "Surveillance of surgical site infections by surgeons: biased underreporting or useful epidemiological data?",
+      "target_first_author": "R Rosenthal",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20227139/",
+      "seed_candidate_key": "PMID:20227139",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-316",
+          "query_variant": "exact_title",
+          "query": "Surveillance[Title] AND surgical[Title] AND site[Title] AND infections[Title] AND surgeons[Title] AND biased[Title] AND underreporting[Title] AND useful[Title] AND epidemiological[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20227139",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-316",
+          "title": "Surveillance of surgical site infections by surgeons: biased underreporting or useful epidemiological data?",
+          "year": "2010",
+          "authors": "R Rosenthal; W P Weber; W R Marti; H Misteli; S Reck; M Dangel; D Oertli; A F Widmer",
+          "doi": "10.1016/j.jhin.2009.10.028",
+          "pmid": "20227139",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20227139/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-206",
+      "method_label": "surveillance_system_improvement_strategies",
+      "canonical_name": "Surveillance system improvement and reporting-enhancement strategies",
+      "source_role": "diagnostic",
+      "target_title": "Cultural Practices Shaping Zoonotic Diseases Surveillance: The Case of Highly Pathogenic Avian Influenza and Thailand Native Chicken Farmers.",
+      "target_first_author": "A Delabouglise",
+      "target_year": "2017",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27087572/",
+      "seed_candidate_key": "PMID:27087572",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-317",
+          "query_variant": "exact_title",
+          "query": "Cultural[Title] AND Practices[Title] AND Shaping[Title] AND Zoonotic[Title] AND Diseases[Title] AND Surveillance[Title] AND Case[Title] AND Highly[Title] AND Pathogenic[Title] AND Avian[Title] AND Influenza[Title] AND Thailand[Title] AND Native[Title] AND Chicken[Title] AND Farmers[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27087572",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-317",
+          "title": "Cultural Practices Shaping Zoonotic Diseases Surveillance: The Case of Highly Pathogenic Avian Influenza and Thailand Native Chicken Farmers.",
+          "year": "2017",
+          "authors": "A Delabouglise; N Antoine-Moussiaux; D Tatong; A Chumkaeo; A Binot; G Fournié; E Pilot; W Phimpraphi; S Kasemsuwan; M C Paul; R Duboz; G Salem; M Peyre",
+          "doi": "10.1111/tbed.12506",
+          "pmid": "27087572",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27087572/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-207",
+      "method_label": "surveillance_system_improvement_strategies",
+      "canonical_name": "Surveillance system improvement and reporting-enhancement strategies",
+      "source_role": "infectious_application",
+      "target_title": "Improved Global Capacity for Influenza Surveillance.",
+      "target_first_author": "Lauren S Polansky",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27192395/",
+      "seed_candidate_key": "PMID:27192395",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-318",
+          "query_variant": "exact_title",
+          "query": "Improved[Title] AND Global[Title] AND Capacity[Title] AND Influenza[Title] AND Surveillance[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27192395",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-318",
+          "title": "Improved Global Capacity for Influenza Surveillance.",
+          "year": "2016",
+          "authors": "Lauren S Polansky; Sajata Outin-Blenman; Ann C Moen",
+          "doi": "10.3201/eid.2206.151521",
+          "pmid": "27192395",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27192395/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-208",
+      "method_label": "surveillance_system_reporting_interventions",
+      "canonical_name": "Surveillance system design and reporting interventions",
+      "source_role": "infectious_application",
+      "target_title": "Reducing the underreporting of percutaneous exposure incidents: A single-center experience.",
+      "target_first_author": "Carlos Fritzsche",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27125915/",
+      "seed_candidate_key": "PMID:27125915",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-319",
+          "query_variant": "exact_title",
+          "query": "Reducing[Title] AND underreporting[Title] AND percutaneous[Title] AND exposure[Title] AND incidents[Title] AND single[Title] AND center[Title] AND experience[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27125915",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-319",
+          "title": "Reducing the underreporting of percutaneous exposure incidents: A single-center experience.",
+          "year": "2016",
+          "authors": "Carlos Fritzsche; Markus Heine; Micha Loebermann; Sebastian Klammt; Andreas Podbielski; Thomas Mittlmeier; Emil C Reisinger",
+          "doi": "10.1016/j.ajic.2016.02.003",
+          "pmid": "27125915",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27125915/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-209",
+      "method_label": "surveillance_underreporting_evaluation",
+      "canonical_name": "Surveillance underreporting and reporting-quality evaluation",
+      "source_role": "correction",
+      "target_title": "[Correction: On Statistical Underreporting of Norovirus-Infections: Insights from Register Data of Two Local Public Health Authorities].",
+      "target_first_author": "Felix Martin Hofmann",
+      "target_year": "2021",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/32032971/",
+      "seed_candidate_key": "PMID:32032971",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-320",
+          "query_variant": "exact_title",
+          "query": "Correction[Title] AND Statistical[Title] AND Underreporting[Title] AND Norovirus[Title] AND Infections[Title] AND Insights[Title] AND Register[Title] AND Data[Title] AND Two[Title] AND Local[Title] AND Public[Title] AND Health[Title] AND Authorities[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:32032971",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-320",
+          "title": "[Correction: On Statistical Underreporting of Norovirus-Infections: Insights from Register Data of Two Local Public Health Authorities].",
+          "year": "2021",
+          "authors": "Felix Martin Hofmann; Martina Michaelis; Ulrich Stößel; Friedrich Hofmann",
+          "doi": "10.1055/a-1110-6312",
+          "pmid": "32032971",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32032971/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-210",
+      "method_label": "surveillance_underreporting_evaluation",
+      "canonical_name": "Surveillance underreporting and reporting-quality evaluation",
+      "source_role": "diagnostic",
+      "target_title": "Epidemiology of pulmonary tuberculosis in France. Can the hospital discharge database be a reliable source of information?",
+      "target_first_author": "D Girard",
+      "target_year": "2014",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25455077/",
+      "seed_candidate_key": "PMID:25455077",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-321",
+          "query_variant": "exact_title",
+          "query": "Epidemiology[Title] AND pulmonary[Title] AND tuberculosis[Title] AND France[Title] AND Can[Title] AND hospital[Title] AND discharge[Title] AND database[Title] AND be[Title] AND reliable[Title] AND source[Title] AND information[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-351",
+          "query_variant": "title_first_author",
+          "query": "Epidemiology[Title] AND pulmonary[Title] AND tuberculosis[Title] AND information[Title] AND Girard[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25455077",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-351",
+          "title": "Epidemiology of pulmonary tuberculosis in France. Can the hospital discharge database be a reliable source of information?",
+          "year": "2014",
+          "authors": "D Girard; D Antoine; D Che",
+          "doi": "10.1016/j.medmal.2014.10.002",
+          "pmid": "25455077",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25455077/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-211",
+      "method_label": "syndromic_surveillance",
+      "canonical_name": "Syndromic-surveillance methods",
+      "source_role": "authoritative_candidate",
+      "target_title": "Evaluation of outbreak detection performance using multi-stream syndromic surveillance for influenza-like illness in rural Hubei Province, China: a temporal simulation model based on healthcare-seeking behaviors.",
+      "target_first_author": "Yunzhou Fan",
+      "target_year": "2014",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/25409025/",
+      "seed_candidate_key": "PMID:25409025",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-322",
+          "query_variant": "exact_title",
+          "query": "Evaluation[Title] AND outbreak[Title] AND detection[Title] AND performance[Title] AND multi[Title] AND stream[Title] AND syndromic[Title] AND surveillance[Title] AND influenza[Title] AND like[Title] AND illness[Title] AND rural[Title] AND Hubei[Title] AND Province[Title] AND China[Title] AND temporal[Title] AND simulation[Title] AND model[Title] AND based[Title] AND healthcare[Title] AND seeking[Title] AND behaviors[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:25409025",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-322",
+          "title": "Evaluation of outbreak detection performance using multi-stream syndromic surveillance for influenza-like illness in rural Hubei Province, China: a temporal simulation model based on healthcare-seeking behaviors.",
+          "year": "2014",
+          "authors": "Yunzhou Fan; Ying Wang; Hongbo Jiang; Wenwen Yang; Miao Yu; Weirong Yan; Vinod K Diwan; Biao Xu; Hengjin Dong; Lars Palm; Shaofa Nie",
+          "doi": "10.1371/journal.pone.0112255",
+          "pmid": "25409025",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25409025/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-212",
+      "method_label": "syndromic_surveillance",
+      "canonical_name": "Syndromic-surveillance methods",
+      "source_role": "guidance",
+      "target_title": "African countries from the Pasteur Network reexamine their syndromic sentinel surveillance system associated with household contact within the AFROSCREEN program.",
+      "target_first_author": "Mathurin Cyrille Tejiokem",
+      "target_year": "2023",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/38249384/",
+      "seed_candidate_key": "PMID:38249384",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-323",
+          "query_variant": "exact_title",
+          "query": "African[Title] AND countries[Title] AND Pasteur[Title] AND Network[Title] AND reexamine[Title] AND their[Title] AND syndromic[Title] AND sentinel[Title] AND surveillance[Title] AND system[Title] AND associated[Title] AND household[Title] AND contact[Title] AND within[Title] AND AFROSCREEN[Title] AND program[Title]"
+        },
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-352",
+          "query_variant": "title_first_author",
+          "query": "countries[Title] AND surveillance[Title] AND associated[Title] AND AFROSCREEN[Title] AND Tejiokem[Author]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:38249384",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-352",
+          "title": "African countries from the Pasteur Network reexamine their syndromic sentinel surveillance system associated with household contact within the AFROSCREEN program.",
+          "year": "2023",
+          "authors": "Mathurin Cyrille Tejiokem; Aliou Barry; Rila Ratovoson; Brice Yambiyo; Ramatoulaye Hamidou Lazoumar; Magali Herrant; Estelle Madaha; Vincent Richard",
+          "doi": "10.3389/fpubh.2023.1292435",
+          "pmid": "38249384",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38249384/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-213",
+      "method_label": "syndromic_surveillance",
+      "canonical_name": "Syndromic-surveillance methods",
+      "source_role": "implementation",
+      "target_title": "Mobile phone-based syndromic surveillance system, Papua New Guinea.",
+      "target_first_author": "Alexander Rosewell",
+      "target_year": "2013",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/24188144/",
+      "seed_candidate_key": "PMID:24188144",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-324",
+          "query_variant": "exact_title",
+          "query": "Mobile[Title] AND phone[Title] AND based[Title] AND syndromic[Title] AND surveillance[Title] AND system[Title] AND Papua[Title] AND New[Title] AND Guinea[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:24188144",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-324",
+          "title": "Mobile phone-based syndromic surveillance system, Papua New Guinea.",
+          "year": "2013",
+          "authors": "Alexander Rosewell; Berry Ropa; Heather Randall; Rosheila Dagina; Samuel Hurim; Sibauk Bieb; Siddhartha Datta; Sundar Ramamurthy; Glen Mola; Anthony B Zwi; Pradeep Ray; C Raina MacIntyre",
+          "doi": "10.3201/eid1911.121843",
+          "pmid": "24188144",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24188144/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-214",
+      "method_label": "syndromic_surveillance",
+      "canonical_name": "Syndromic-surveillance methods",
+      "source_role": "infectious_application",
+      "target_title": "Ambulatory Pediatric Surveillance of Hand, Foot and Mouth Disease as Signal of an Outbreak of Coxsackievirus A6 Infections, France, 2014-2015.",
+      "target_first_author": "Audrey Mirand",
+      "target_year": "2016",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/27767012/",
+      "seed_candidate_key": "PMID:27767012",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-325",
+          "query_variant": "exact_title",
+          "query": "Ambulatory[Title] AND Pediatric[Title] AND Surveillance[Title] AND Hand[Title] AND Foot[Title] AND Mouth[Title] AND Disease[Title] AND Signal[Title] AND Outbreak[Title] AND Coxsackievirus[Title] AND A6[Title] AND Infections[Title] AND France[Title] AND 2014[Title] AND 2015[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:27767012",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-325",
+          "title": "Ambulatory Pediatric Surveillance of Hand, Foot and Mouth Disease as Signal of an Outbreak of Coxsackievirus A6 Infections, France, 2014-2015.",
+          "year": "2016",
+          "authors": "Audrey Mirand; François Vié le Sage; Bruno Pereira; Robert Cohen; Corinne Levy; Christine Archimbaud; Hélène Peigue-Lafeuille; Jean-Luc Bailly; Cécile Henquell",
+          "doi": "10.3201/eid2211.160590",
+          "pmid": "27767012",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27767012/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-215",
+      "method_label": "underascertainment_adjusted_burden_estimation",
+      "canonical_name": "Under-ascertainment-adjusted incidence and burden estimation",
+      "source_role": "infectious_application",
+      "target_title": "High dengue case capture rate in four years of a cohort study in Nicaragua compared to national surveillance data.",
+      "target_first_author": "Katherine Standish",
+      "target_year": "2010",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/20300515/",
+      "seed_candidate_key": "PMID:20300515",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-326",
+          "query_variant": "exact_title",
+          "query": "High[Title] AND dengue[Title] AND case[Title] AND capture[Title] AND rate[Title] AND four[Title] AND years[Title] AND cohort[Title] AND study[Title] AND Nicaragua[Title] AND compared[Title] AND national[Title] AND surveillance[Title] AND data[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:20300515",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-326",
+          "title": "High dengue case capture rate in four years of a cohort study in Nicaragua compared to national surveillance data.",
+          "year": "2010",
+          "authors": "Katherine Standish; Guillermina Kuan; William Avilés; Angel Balmaseda; Eva Harris",
+          "doi": "10.1371/journal.pntd.0000633",
+          "pmid": "20300515",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20300515/"
+        }
+      ]
+    },
+    {
+      "named_source_id": "NS-SURVEILLANCE-216",
+      "method_label": "underascertainment_burden_estimation",
+      "canonical_name": "Hidden-burden and ascertainment-correction estimation",
+      "source_role": "infectious_application",
+      "target_title": "Progress towards HIV transmission elimination targets: model-based estimation of incidence and the extent of undiagnosed infection, Scotland, 1981 to 2022.",
+      "target_first_author": "Scott A McDonald",
+      "target_year": "2025",
+      "target_source_url": "https://pubmed.ncbi.nlm.nih.gov/40937553/",
+      "seed_candidate_key": "PMID:40937553",
+      "supporting_queries": [
+        {
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-327",
+          "query_variant": "exact_title",
+          "query": "Progress[Title] AND towards[Title] AND HIV[Title] AND transmission[Title] AND elimination[Title] AND targets[Title] AND model[Title] AND based[Title] AND estimation[Title] AND incidence[Title] AND extent[Title] AND undiagnosed[Title] AND infection[Title] AND Scotland[Title] AND 1981[Title] AND 2022[Title]"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_key": "PMID:40937553",
+          "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-327",
+          "title": "Progress towards HIV transmission elimination targets: model-based estimation of incidence and the extent of undiagnosed infection, Scotland, 1981 to 2022.",
+          "year": "2025",
+          "authors": "Scott A McDonald; Beth L Cullen; Lesley A Wallace; Alan Yeung; Rak Nandwani; Claudia Estcourt; Daniel Clutterbuck; Nicola Steedman; David Henderson; Kirsty Roy; Sharon J Hutchinson",
+          "doi": "10.2807/1560-7917.es.2025.30.36.2500164",
+          "pmid": "40937553",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40937553/"
+        }
+      ]
+    }
+  ]
+}

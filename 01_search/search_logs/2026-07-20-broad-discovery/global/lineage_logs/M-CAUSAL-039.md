@@ -5,14 +5,24 @@
 - Family: `causal_policy`
 - Verification state: `discovery`
 - Assigned retained records: 3
-- Named lineage sources: 2
-- Unresolved lineage identities: 0
+- Assigned keyset SHA256: `bf3ea10bcb47978b97841f6001967779a767501c472cafdc3b13f25d48d6658e`
+- Named lineage sources: 1
+- Unresolved selected identities: 0
+
+## Source-role closure
+
+- original_candidate: not_directly_named_in_inspected_evidence
+- authoritative_candidate: not_directly_named_in_inspected_evidence
+- correction: not_directly_named_in_inspected_evidence
+- diagnostic: not_directly_named_in_inspected_evidence
+- guidance: named_source_queried
+- implementation: not_directly_named_in_inspected_evidence
+- infectious_application: not_directly_named_in_inspected_evidence
 
 ## Audited identity outcomes
 
-- NS-CAUSAL-062 | role=authoritative_candidate | status=resolved_identity_role_unverified | identity=PMID:30346524 | searches=SEARCH-20260719-LINEAGE-CAUSAL-62 | URL=https://pubmed.ncbi.nlm.nih.gov/30346524/
-- NS-CAUSAL-063 | role=guidance | status=resolved_identity_role_unverified | identity=PMID:34180960 | searches=SEARCH-20260719-LINEAGE-CAUSAL-63 | URL=https://pubmed.ncbi.nlm.nih.gov/34180960/
+- NS-CAUSAL-063 | role=guidance | status=resolved_identity_role_unverified | identity=PMID:34180960 | searches=SEARCH-20260722-LINEAGE-CAUSAL-175 | URL=https://pubmed.ncbi.nlm.nih.gov/34180960/
 
 ## Boundary
 
-These are 100% audited bibliographic identity outcomes. Source role, priority, and substantive claims remain unverified and must not be copied into `paper_method_links.csv` before primary-source verification.
+These are independently audited bibliographic identity outcomes and explicit per-role discovery closures. Source role, priority, and substantive claims remain unverified and must not be copied into `paper_method_links.csv` before primary-source verification.

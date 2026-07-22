@@ -3175,19 +3175,19 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-15",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-116",
         "query_variant": "title_first_author",
         "query": "interference[Title] AND negative[Title] AND curious[Title] AND control[Title] AND Soh[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-15",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-115",
         "query_variant": "exact_title",
         "query": "curious[Title] AND case[Title] AND negative[Title] AND control[Title] AND line[Title] AND dengue[Title] AND duo[Title] AND assay[Title] AND due[Title] AND interference[Title] AND report[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-15",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-116",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:39410661",
         "candidate_rank": "1",
@@ -3215,14 +3215,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-16",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-117",
         "query_variant": "exact_title",
         "query": "SARS[Title] AND CoV[Title] AND 2[Title] AND Saliva[Title] AND Mass[Title] AND Screening[Title] AND Primary[Title] AND Schools[Title] AND 10[Title] AND Week[Title] AND Sentinel[Title] AND Surveillance[Title] AND Study[Title] AND Munich[Title] AND Germany[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-16",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-117",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35054329",
         "candidate_rank": "1",
@@ -3250,14 +3250,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-17",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-118",
         "query_variant": "exact_title",
         "query": "Importance[Title] AND Enhanced[Title] AND Surveillance[Title] AND Prevention[Title] AND Pertussis[Title] AND Children[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-17",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-118",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25860533",
         "candidate_rank": "1",
@@ -3285,14 +3285,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-18",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-119",
         "query_variant": "exact_title",
         "query": "Data[Title] AND triangulation[Title] AND estimate[Title] AND age[Title] AND specific[Title] AND coverage[Title] AND voluntary[Title] AND medical[Title] AND male[Title] AND circumcision[Title] AND HIV[Title] AND prevention[Title] AND four[Title] AND Kenyan[Title] AND counties[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-18",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-119",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30562394",
         "candidate_rank": "1",
@@ -3320,14 +3320,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-19",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-120",
         "query_variant": "exact_title",
         "query": "Comparison[Title] AND Micro[Title] AND Census[Title] AND Results[Title] AND Magarya[Title] AND Ward[Title] AND Wurno[Title] AND Local[Title] AND Government[Title] AND Area[Title] AND Sokoto[Title] AND State[Title] AND Nigeria[Title] AND Other[Title] AND Sources[Title] AND Denominator[Title] AND Data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-19",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-120",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30956970",
         "candidate_rank": "1",
@@ -3355,14 +3355,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-20",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-121",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND central[Title] AND line[Title] AND associated[Title] AND bloodstream[Title] AND infection[Title] AND incidence[Title] AND rates[Title] AND sampling[Title] AND denominator[Title] AND data[Title] AND prospective[Title] AND multicenter[Title] AND evaluation[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-20",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-121",
         "query_variant": "exact_title",
         "candidate_key": "PMID:26004907",
         "candidate_rank": "1",
@@ -3390,14 +3390,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-21",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-122",
         "query_variant": "exact_title",
         "query": "Validation[Title] AND surveillance[Title] AND reporting[Title] AND central[Title] AND line[Title] AND associated[Title] AND bloodstream[Title] AND infection[Title] AND denominator[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-21",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-122",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24176605",
         "candidate_rank": "1",
@@ -3425,14 +3425,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-22",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-123",
         "query_variant": "exact_title",
         "query": "Laboratory[Title] AND based[Title] AND surveillance[Title] AND Campylobacter[Title] AND Salmonella[Title] AND infection[Title] AND importance[Title] AND denominator[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-22",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-123",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22217369",
         "candidate_rank": "1",
@@ -3460,19 +3460,19 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-23",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-125",
         "query_variant": "title_first_author",
         "query": "interpretation[Title] AND surveillance[Title] AND diagnostics[Title] AND Switzerland[Title] AND Fischer[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-23",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-124",
         "query_variant": "exact_title",
         "query": "Do[Title] AND changes[Title] AND STEC[Title] AND diagnostics[Title] AND mislead[Title] AND interpretation[Title] AND disease[Title] AND surveillance[Title] AND data[Title] AND Switzerland[Title] AND Time[Title] AND trends[Title] AND positivity[Title] AND 2007[Title] AND 2016[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-23",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-125",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:32820716",
         "candidate_rank": "1",
@@ -3500,14 +3500,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-24",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-126",
         "query_variant": "exact_title",
         "query": "HIV[Title] AND AIDS[Title] AND prevalence[Title] AND Southern[Title] AND Caucasus[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-24",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-126",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21252406",
         "candidate_rank": "1",
@@ -3535,14 +3535,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-25",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-127",
         "query_variant": "exact_title",
         "query": "Significant[Title] AND features[Title] AND epidemiology[Title] AND equine[Title] AND influenza[Title] AND New[Title] AND South[Title] AND Wales[Title] AND Australia[Title] AND 2007[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-25",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-127",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21711291",
         "candidate_rank": "1",
@@ -3570,14 +3570,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-26",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-128",
         "query_variant": "exact_title",
         "query": "Multicenter[Title] AND benchmarking[Title] AND short[Title] AND long[Title] AND read[Title] AND wet[Title] AND lab[Title] AND protocols[Title] AND clinical[Title] AND viral[Title] AND metagenomics[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-26",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-128",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38823290",
         "candidate_rank": "1",
@@ -3605,14 +3605,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-27",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-129",
         "query_variant": "exact_title",
         "query": "Performance[Title] AND GeneXpert[Title] AND Ebola[Title] AND Assay[Title] AND Diagnosis[Title] AND Virus[Title] AND Disease[Title] AND Sierra[Title] AND Leone[Title] AND Field[Title] AND Evaluation[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-27",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-129",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27023868",
         "candidate_rank": "1",
@@ -3640,14 +3640,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-28",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-130",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND proportion[Title] AND pneumonia[Title] AND attributable[Title] AND pneumococcus[Title] AND Kenyan[Title] AND adults[Title] AND latent[Title] AND class[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-28",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-130",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20562627",
         "candidate_rank": "1",
@@ -3675,14 +3675,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-29",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-131",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND test[Title] AND characteristics[Title] AND somatic[Title] AND cell[Title] AND count[Title] AND detect[Title] AND Staphylococcus[Title] AND aureus[Title] AND infected[Title] AND dairy[Title] AND goats[Title] AND using[Title] AND latent[Title] AND class[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-29",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-131",
         "query_variant": "exact_title",
         "candidate_key": "PMID:21605760",
         "candidate_rank": "1",
@@ -3710,14 +3710,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-30",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-132",
         "query_variant": "exact_title",
         "query": "Clinically[Title] AND Adjudicated[Title] AND Reference[Title] AND Standards[Title] AND Evaluation[Title] AND Infectious[Title] AND Diseases[Title] AND Diagnostics[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-30",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-132",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36262037",
         "candidate_rank": "1",
@@ -3745,19 +3745,19 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-31",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-134",
         "query_variant": "title_first_author",
         "query": "statistical[Title] AND combining[Title] AND standard[Title] AND estimate[Title] AND Sadatsafavi[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-31",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-133",
         "query_variant": "exact_title",
         "query": "statistical[Title] AND method[Title] AND was[Title] AND used[Title] AND meta[Title] AND analysis[Title] AND tests[Title] AND latent[Title] AND TB[Title] AND absence[Title] AND gold[Title] AND standard[Title] AND combining[Title] AND random[Title] AND effect[Title] AND class[Title] AND methods[Title] AND estimate[Title] AND test[Title] AND accuracy[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-31",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-134",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:19692208",
         "candidate_rank": "1",
@@ -3785,14 +3785,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-32",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-135",
         "query_variant": "exact_title",
         "query": "Diagnostic[Title] AND Accuracy[Title] AND Novel[Title] AND Traditional[Title] AND Rapid[Title] AND Tests[Title] AND Influenza[Title] AND Infection[Title] AND Compared[Title] AND Reverse[Title] AND Transcriptase[Title] AND Polymerase[Title] AND Chain[Title] AND Reaction[Title] AND Systematic[Title] AND Review[Title] AND Meta[Title] AND analysis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-32",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-135",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28869986",
         "candidate_rank": "1",
@@ -3820,14 +3820,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-33",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-136",
         "query_variant": "exact_title",
         "query": "Diagnostic[Title] AND yield[Title] AND urine[Title] AND lipoarabinomannan[Title] AND sputum[Title] AND tuberculosis[Title] AND tests[Title] AND people[Title] AND living[Title] AND HIV[Title] AND systematic[Title] AND review[Title] AND meta[Title] AND analysis[Title] AND individual[Title] AND participant[Title] AND data[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-33",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-136",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37202025",
         "candidate_rank": "1",
@@ -3855,14 +3855,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-34",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-137",
         "query_variant": "exact_title",
         "query": "Predictive[Title] AND Value[Title] AND International[Title] AND Classification[Title] AND Disease[Title] AND Codes[Title] AND Chronic[Title] AND Hepatitis[Title] AND C[Title] AND Virus[Title] AND Infection[Title] AND Surveillance[Title] AND Utility[Title] AND Limitations[Title] AND Electronic[Title] AND Health[Title] AND Records[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-34",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-137",
         "query_variant": "exact_title",
         "candidate_key": "PMID:37575638",
         "candidate_rank": "1",
@@ -3890,14 +3890,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-35",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-138",
         "query_variant": "exact_title",
         "query": "Diagnostic[Title] AND accuracy[Title] AND feasibility[Title] AND serological[Title] AND tests[Title] AND filter[Title] AND paper[Title] AND samples[Title] AND outbreak[Title] AND detection[Title] AND T[Title] AND b[Title] AND gambiense[Title] AND human[Title] AND African[Title] AND trypanosomiasis[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-35",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-138",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20682885",
         "candidate_rank": "1",
@@ -3925,19 +3925,19 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-36",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-140",
         "query_variant": "title_first_author",
         "query": "diagnostics[Title] AND monitoring[Title] AND multistate[Title] AND meningitis[Title] AND Litvintseva[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-36",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-139",
         "query_variant": "exact_title",
         "query": "Utility[Title] AND 1[Title] AND 3[Title] AND D[Title] AND glucan[Title] AND testing[Title] AND diagnostics[Title] AND monitoring[Title] AND response[Title] AND treatment[Title] AND during[Title] AND multistate[Title] AND outbreak[Title] AND fungal[Title] AND meningitis[Title] AND other[Title] AND infections[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-36",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-140",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:24336827",
         "candidate_rank": "1",
@@ -3965,19 +3965,19 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-37",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-142",
         "query_variant": "title_first_author",
         "query": "Surveillance[Title] AND Digitalized[Title] AND Information[Title] AND Application[Title] AND Hao[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-37",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-141",
         "query_variant": "exact_title",
         "query": "CWSS[Title] AND IS[Title] AND Technical[Title] AND Framework[Title] AND Digitalized[Title] AND Wastewater[Title] AND Surveillance[Title] AND Information[Title] AND System[Title] AND Structure[Title] AND Data[Title] AND Standards[Title] AND Application[Title] AND China[Title] AND February[Title] AND 2024[Title] AND January[Title] AND 2026[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-37",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-142",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:42273608",
         "candidate_rank": "1",
@@ -4005,19 +4005,19 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-38",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-144",
         "query_variant": "title_first_author",
         "query": "population[Title] AND estimates[Title] AND incidence[Title] AND September[Title] AND Tarantola[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-38",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-143",
         "query_variant": "exact_title",
         "query": "Use[Title] AND cell[Title] AND phone[Title] AND data[Title] AND correct[Title] AND le[Title] AND de[Title] AND France[Title] AND population[Title] AND estimates[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND incidence[Title] AND July[Title] AND September[Title] AND 2021[Title] AND proof[Title] AND concept[Title] AND exercise[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-38",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-144",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:40476291",
         "candidate_rank": "1",
@@ -4045,14 +4045,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-39",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-145",
         "query_variant": "exact_title",
         "query": "Detecting[Title] AND Acute[Title] AND Otitis[Title] AND Media[Title] AND Symptom[Title] AND Episodes[Title] AND Using[Title] AND Mobile[Title] AND App[Title] AND Cohort[Title] AND Study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-39",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-145",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29183869",
         "candidate_rank": "1",
@@ -4080,14 +4080,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-40",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-146",
         "query_variant": "exact_title",
         "query": "analysis[Title] AND 45[Title] AND large[Title] AND scale[Title] AND wastewater[Title] AND sites[Title] AND England[Title] AND estimate[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND community[Title] AND prevalence[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-40",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-146",
         "query_variant": "exact_title",
         "candidate_key": "PMID:35879277",
         "candidate_rank": "1",
@@ -4115,19 +4115,19 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-41",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-148",
         "query_variant": "title_first_author",
         "query": "estimation[Title] AND incidence[Title] AND decreased[Title] AND detection[Title] AND Smith[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-41",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-147",
         "query_variant": "exact_title",
         "query": "Rapid[Title] AND incidence[Title] AND estimation[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND genomes[Title] AND reveals[Title] AND decreased[Title] AND case[Title] AND detection[Title] AND Europe[Title] AND during[Title] AND summer[Title] AND 2020[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-41",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-148",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:34650062",
         "candidate_rank": "1",
@@ -4155,14 +4155,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-42",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-149",
         "query_variant": "exact_title",
         "query": "Denominator[Title] AND doesn[Title] AND t[Title] AND matter[Title] AND standardizing[Title] AND healthcare[Title] AND associated[Title] AND infection[Title] AND rates[Title] AND bed[Title] AND days[Title] AND device[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-42",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-149",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25782986",
         "candidate_rank": "1",
@@ -4190,14 +4190,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-43",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-150",
         "query_variant": "exact_title",
         "query": "Use[Title] AND Electronic[Title] AND Health[Title] AND Records[Title] AND Benchmark[Title] AND Clinical[Title] AND Practice[Title] AND Guideline[Title] AND Consistent[Title] AND Care[Title] AND Pediatric[Title] AND Oncology[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-43",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-150",
         "query_variant": "exact_title",
         "candidate_key": "PMID:41886707",
         "candidate_rank": "1",
@@ -4225,14 +4225,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-44",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-151",
         "query_variant": "exact_title",
         "query": "Power[Title] AND Law[Title] AND Estimating[Title] AND Underdetection[Title] AND Foodborne[Title] AND Disease[Title] AND Outbreaks[Title] AND United[Title] AND States[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-44",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-151",
         "query_variant": "exact_title",
         "candidate_key": "PMID:38270126",
         "candidate_rank": "1",
@@ -4260,14 +4260,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-45",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-152",
         "query_variant": "exact_title",
         "query": "Maternal[Title] AND colonization[Title] AND Streptococcus[Title] AND agalactiae[Title] AND associated[Title] AND stillbirth[Title] AND neonatal[Title] AND disease[Title] AND coastal[Title] AND Kenya[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-45",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-152",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27572968",
         "candidate_rank": "1",
@@ -4295,14 +4295,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-46",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-153",
         "query_variant": "exact_title",
         "query": "Kinetics[Title] AND serum[Title] AND antibodies[Title] AND response[Title] AND infection[Title] AND Yersinia[Title] AND enterocolitica[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-46",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-153",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31063094",
         "candidate_rank": "1",
@@ -4330,14 +4330,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-47",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-154",
         "query_variant": "exact_title",
         "query": "Implementation[Title] AND data[Title] AND triangulation[Title] AND dashboard[Title] AND development[Title] AND COVID[Title] AND 19[Title] AND vaccine[Title] AND adverse[Title] AND event[Title] AND following[Title] AND immunisation[Title] AND AEFI[Title] AND Nigeria[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-47",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-154",
         "query_variant": "exact_title",
         "candidate_key": "PMID:36650016",
         "candidate_rank": "1",
@@ -4365,14 +4365,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-48",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-155",
         "query_variant": "exact_title",
         "query": "Syndemic[Title] AND factors[Title] AND associated[Title] AND HIV[Title] AND risk[Title] AND gay[Title] AND bisexual[Title] AND men[Title] AND comparing[Title] AND latent[Title] AND class[Title] AND factor[Title] AND modeling[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-48",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-155",
         "query_variant": "exact_title",
         "candidate_key": "PMID:25055765",
         "candidate_rank": "1",
@@ -4400,14 +4400,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-49",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-156",
         "query_variant": "exact_title",
         "query": "Corrigendum[Title] AND Investigating[Title] AND influencing[Title] AND factors[Title] AND vaccination[Title] AND decisions[Title] AND newly[Title] AND developed[Title] AND established[Title] AND vaccines[Title] AND comparative[Title] AND study[Title] AND based[Title] AND latent[Title] AND class[Title] AND logit[Title] AND models[Title] AND China[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-49",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-156",
         "query_variant": "exact_title",
         "candidate_key": "PMID:39606070",
         "candidate_rank": "1",
@@ -4435,14 +4435,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-50",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-157",
         "query_variant": "exact_title",
         "query": "Joint[Title] AND model[Title] AND based[Title] AND clustering[Title] AND nonlinear[Title] AND longitudinal[Title] AND trajectories[Title] AND associated[Title] AND time[Title] AND event[Title] AND data[Title] AND analysis[Title] AND linked[Title] AND latent[Title] AND class[Title] AND membership[Title] AND application[Title] AND AIDS[Title] AND clinical[Title] AND studies[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-50",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-157",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29080062",
         "candidate_rank": "1",
@@ -4470,14 +4470,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-51",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-158",
         "query_variant": "exact_title",
         "query": "Invited[Title] AND commentary[Title] AND Human[Title] AND papillomavirus[Title] AND infection[Title] AND risk[Title] AND cervical[Title] AND precancer[Title] AND using[Title] AND right[Title] AND methods[Title] AND answer[Title] AND questions[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-51",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-158",
         "query_variant": "exact_title",
         "candidate_key": "PMID:20007675",
         "candidate_rank": "1",
@@ -4505,14 +4505,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-52",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-159",
         "query_variant": "exact_title",
         "query": "Accounting[Title] AND nonsampling[Title] AND error[Title] AND estimates[Title] AND HIV[Title] AND epidemic[Title] AND trends[Title] AND antenatal[Title] AND clinic[Title] AND sentinel[Title] AND surveillance[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-52",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-159",
         "query_variant": "exact_title",
         "candidate_key": "PMID:28296801",
         "candidate_rank": "1",
@@ -4540,14 +4540,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-53",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-160",
         "query_variant": "exact_title",
         "query": "Measuring[Title] AND sexual[Title] AND behaviour[Title] AND Malawi[Title] AND triangulation[Title] AND three[Title] AND data[Title] AND collection[Title] AND instruments[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-53",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-160",
         "query_variant": "exact_title",
         "candidate_key": "PMID:29954360",
         "candidate_rank": "1",
@@ -4575,14 +4575,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-54",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-161",
         "query_variant": "exact_title",
         "query": "Estimating[Title] AND number[Title] AND HIV[Title] AND positive[Title] AND pregnant[Title] AND women[Title] AND Sergipe[Title] AND Brazil[Title] AND using[Title] AND capture[Title] AND recapture[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-54",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-161",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23383591",
         "candidate_rank": "1",
@@ -4610,14 +4610,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-55",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-162",
         "query_variant": "exact_title",
         "query": "Robustness[Title] AND Eco[Title] AND Epidemiological[Title] AND Capture[Title] AND Recapture[Title] AND Parameter[Title] AND Estimates[Title] AND Variation[Title] AND Infection[Title] AND State[Title] AND Uncertainty[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-55",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-162",
         "query_variant": "exact_title",
         "candidate_key": "PMID:30211175",
         "candidate_rank": "1",
@@ -4645,14 +4645,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-56",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-163",
         "query_variant": "exact_title",
         "query": "Comparison[Title] AND autoregressive[Title] AND integrated[Title] AND moving[Title] AND average[Title] AND model[Title] AND generalised[Title] AND regression[Title] AND neural[Title] AND network[Title] AND prediction[Title] AND haemorrhagic[Title] AND fever[Title] AND renal[Title] AND syndrome[Title] AND China[Title] AND time[Title] AND series[Title] AND study[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-56",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-163",
         "query_variant": "exact_title",
         "candidate_key": "PMID:31209084",
         "candidate_rank": "1",
@@ -4680,14 +4680,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-57",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-164",
         "query_variant": "exact_title",
         "query": "Sepsis[Title] AND trends[Title] AND increasing[Title] AND incidence[Title] AND decreasing[Title] AND mortality[Title] AND changing[Title] AND denominator[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-57",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-164",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32148931",
         "candidate_rank": "1",
@@ -4715,14 +4715,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-58",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-165",
         "query_variant": "exact_title",
         "query": "Understanding[Title] AND theoretically[Title] AND impact[Title] AND reporting[Title] AND disease[Title] AND cases[Title] AND epidemiology[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-58",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-165",
         "query_variant": "exact_title",
         "candidate_key": "PMID:22410318",
         "candidate_rank": "1",
@@ -4750,14 +4750,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-59",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-166",
         "query_variant": "exact_title",
         "query": "Nowcasting[Title] AND influenza[Title] AND epidemics[Title] AND using[Title] AND non[Title] AND homogeneous[Title] AND hidden[Title] AND Markov[Title] AND models[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-59",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-166",
         "query_variant": "exact_title",
         "candidate_key": "PMID:23124850",
         "candidate_rank": "1",
@@ -4785,14 +4785,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-60",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-167",
         "query_variant": "exact_title",
         "query": "Biochemical[Title] AND phenotypes[Title] AND discriminate[Title] AND microbial[Title] AND subpopulations[Title] AND improve[Title] AND outbreak[Title] AND detection[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-60",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-167",
         "query_variant": "exact_title",
         "candidate_key": "PMID:24391936",
         "candidate_rank": "1",
@@ -4820,14 +4820,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-61",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-168",
         "query_variant": "exact_title",
         "query": "Bayesian[Title] AND inference[Title] AND extended[Title] AND SEIR[Title] AND model[Title] AND nonparametric[Title] AND disease[Title] AND transmission[Title] AND rate[Title] AND application[Title] AND Ebola[Title] AND epidemic[Title] AND Sierra[Title] AND Leone[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-61",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-168",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27324411",
         "candidate_rank": "1",
@@ -4855,14 +4855,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-62",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-169",
         "query_variant": "exact_title",
         "query": "Partially[Title] AND latent[Title] AND class[Title] AND models[Title] AND case[Title] AND control[Title] AND studies[Title] AND childhood[Title] AND pneumonia[Title] AND aetiology[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-62",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-169",
         "query_variant": "exact_title",
         "candidate_key": "PMID:32327815",
         "candidate_rank": "1",
@@ -4890,14 +4890,14 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-63",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-170",
         "query_variant": "exact_title",
         "query": "Adverse[Title] AND events[Title] AND following[Title] AND school[Title] AND based[Title] AND vaccination[Title] AND girls[Title] AND quadrivalent[Title] AND human[Title] AND papillomavirus[Title] AND vaccine[Title] AND Slovenia[Title] AND 2009[Title] AND 2013[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-63",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-170",
         "query_variant": "exact_title",
         "candidate_key": "PMID:27103551",
         "candidate_rank": "1",
@@ -4925,19 +4925,19 @@ jq: error (at 01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_r
     },
     "supporting_queries": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-64",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-172",
         "query_variant": "title_first_author",
         "query": "surveillance[Title] AND vaccination[Title] AND Prediction[Title] AND Guillain[Title] AND Luo[Author]"
       },
       {
-        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-64",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-171",
         "query_variant": "exact_title",
         "query": "Prediction[Title] AND post[Title] AND vaccination[Title] AND Guillain[Title] AND Barr[Title] AND syndrome[Title] AND using[Title] AND data[Title] AND passive[Title] AND surveillance[Title] AND system[Title]"
       }
     ],
     "manifested_candidates": [
       {
-        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-64",
+        "query_id": "SEARCH-20260722-LINEAGE-SURVEILLANCE-172",
         "query_variant": "title_first_author",
         "candidate_key": "PMID:33533072",
         "candidate_rank": "1",
@@ -4956,105 +4956,105 @@ exec
 /bin/zsh -lc "BATCH='01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/identity_review_batches/identity_batch_08.json'; jq -r '.[] | \"SOURCE\\t\\(.named_source_id)\\tTARGET_TITLE=\\(.source_to_resolve.title)\\tTARGET_AUTHOR=\\(.source_to_resolve.first_author)\\tTARGET_YEAR=\\(.source_to_resolve.year)\\tQUERY_COUNT=\\(.supporting_queries|length)\\tCANDIDATE_COUNT=\\(.manifested_candidates|length)\", (.manifested_candidates[]? | \"CAND\\t\\(.candidate_key)\\tTITLE=\\(.title)\\tYEAR=\\(.year)\\tAUTHORS=\\(.authors_or_first_author)\\tDOI=\\(.doi)\\tPMID=\\(.pmid)\\tURL=\\(.primary_url)\\tQUERY=\\(.query_id)\")' \""'$BATCH"' in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery
  succeeded in 0ms:
 SOURCE	NS-SURVEILLANCE-015	TARGET_TITLE=A curious case of a negative control line on a dengue duo assay due to interference - A case report.	TARGET_AUTHOR=Sheila X Soh	TARGET_YEAR=2025	QUERY_COUNT=2	CANDIDATE_COUNT=1
-CAND	PMID:39410661	TITLE=A curious case of a negative control line on a dengue duo assay due to interference - A case report.	YEAR=2025	AUTHORS=Sheila X Soh; Tze Ping Loh; Sharon Saw; Ai Teng Chong; Jia Sing Yap; Sunil K Sethi; Lizhen Ong	DOI=10.1177/00045632241292430	PMID=39410661	URL=https://pubmed.ncbi.nlm.nih.gov/39410661/	QUERY=SEARCH-20260718-LINEAGE-SURVEILLANCE-15
+CAND	PMID:39410661	TITLE=A curious case of a negative control line on a dengue duo assay due to interference - A case report.	YEAR=2025	AUTHORS=Sheila X Soh; Tze Ping Loh; Sharon Saw; Ai Teng Chong; Jia Sing Yap; Sunil K Sethi; Lizhen Ong	DOI=10.1177/00045632241292430	PMID=39410661	URL=https://pubmed.ncbi.nlm.nih.gov/39410661/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-116
 SOURCE	NS-SURVEILLANCE-016	TARGET_TITLE=SARS-CoV-2 Saliva Mass Screening in Primary Schools: A 10-Week Sentinel Surveillance Study in Munich, Germany.	TARGET_AUTHOR=Sebastian Vogel	TARGET_YEAR=2022	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:35054329	TITLE=SARS-CoV-2 Saliva Mass Screening in Primary Schools: A 10-Week Sentinel Surveillance Study in Munich, Germany.	YEAR=2022	AUTHORS=Sebastian Vogel; Ulrich von Both; Elisabeth Nowak; Janina Ludwig; Alexandra Köhler; Noah Lee; Elisabeth Dick; Anita Rack-Hoch; Bernd Wicklein; Jessica Neusser; Tobias Wagner; Alexandra Schubö; Maxim Ustinov; Werner Schimana; Stephan Busche; Laura Kolberg; Martin Hoch	DOI=10.3390/diagnostics12010162	PMID=35054329	URL=https://pubmed.ncbi.nlm.nih.gov/35054329/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-16
+CAND	PMID:35054329	TITLE=SARS-CoV-2 Saliva Mass Screening in Primary Schools: A 10-Week Sentinel Surveillance Study in Munich, Germany.	YEAR=2022	AUTHORS=Sebastian Vogel; Ulrich von Both; Elisabeth Nowak; Janina Ludwig; Alexandra Köhler; Noah Lee; Elisabeth Dick; Anita Rack-Hoch; Bernd Wicklein; Jessica Neusser; Tobias Wagner; Alexandra Schubö; Maxim Ustinov; Werner Schimana; Stephan Busche; Laura Kolberg; Martin Hoch	DOI=10.3390/diagnostics12010162	PMID=35054329	URL=https://pubmed.ncbi.nlm.nih.gov/35054329/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-117
 SOURCE	NS-SURVEILLANCE-017	TARGET_TITLE=Importance of Enhanced Surveillance for Prevention of Pertussis in Children.	TARGET_AUTHOR=Angela Domínguez	TARGET_YEAR=2015	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:25860533	TITLE=Importance of Enhanced Surveillance for Prevention of Pertussis in Children.	YEAR=2015	AUTHORS=Angela Domínguez; Pere Godoy; Diana Toledo; Núria Soldevila; Manuel García-Cenoz; Gloria Farrús; Inma Crespo; Joan A Caylà; Maria Rosa Sala; Neus Camps; Irene Barrabeig; Josep Alvarez; Working Group for the Study of Pertussis in Catalonia and Navarre (Spain)	DOI=10.1097/inf.0000000000000708	PMID=25860533	URL=https://pubmed.ncbi.nlm.nih.gov/25860533/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-17
+CAND	PMID:25860533	TITLE=Importance of Enhanced Surveillance for Prevention of Pertussis in Children.	YEAR=2015	AUTHORS=Angela Domínguez; Pere Godoy; Diana Toledo; Núria Soldevila; Manuel García-Cenoz; Gloria Farrús; Inma Crespo; Joan A Caylà; Maria Rosa Sala; Neus Camps; Irene Barrabeig; Josep Alvarez; Working Group for the Study of Pertussis in Catalonia and Navarre (Spain)	DOI=10.1097/inf.0000000000000708	PMID=25860533	URL=https://pubmed.ncbi.nlm.nih.gov/25860533/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-118
 SOURCE	NS-SURVEILLANCE-018	TARGET_TITLE=Data triangulation to estimate age-specific coverage of voluntary medical male circumcision for HIV prevention in four Kenyan counties.	TARGET_AUTHOR=Katharine Kripke	TARGET_YEAR=2018	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:30562394	TITLE=Data triangulation to estimate age-specific coverage of voluntary medical male circumcision for HIV prevention in four Kenyan counties.	YEAR=2018	AUTHORS=Katharine Kripke; Marjorie Opuni; Elijah Odoyo-June; Mathews Onyango; Peter Young; Kennedy Serrem; Vincent Ojiambo; Melissa Schnure; Peter Stegman; Emmanuel Njeuhmeli	DOI=10.1371/journal.pone.0209385	PMID=30562394	URL=https://pubmed.ncbi.nlm.nih.gov/30562394/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-18
+CAND	PMID:30562394	TITLE=Data triangulation to estimate age-specific coverage of voluntary medical male circumcision for HIV prevention in four Kenyan counties.	YEAR=2018	AUTHORS=Katharine Kripke; Marjorie Opuni; Elijah Odoyo-June; Mathews Onyango; Peter Young; Kennedy Serrem; Vincent Ojiambo; Melissa Schnure; Peter Stegman; Emmanuel Njeuhmeli	DOI=10.1371/journal.pone.0209385	PMID=30562394	URL=https://pubmed.ncbi.nlm.nih.gov/30562394/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-119
 SOURCE	NS-SURVEILLANCE-019	TARGET_TITLE=Comparison of Micro-Census Results for Magarya Ward, Wurno Local Government Area of Sokoto State, Nigeria, with Other Sources of Denominator Data.	TARGET_AUTHOR=Margherita E Ghiselli	TARGET_YEAR=2019	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:30956970	TITLE=Comparison of Micro-Census Results for Magarya Ward, Wurno Local Government Area of Sokoto State, Nigeria, with Other Sources of Denominator Data.	YEAR=2019	AUTHORS=Margherita E Ghiselli; Idongesit Nta Wilson; Brian Kaplan; Ndadilnasiya Endie Waziri; Adamu Sule; Halimatu Bolatito Ayanleke; Faruk Namalam; Shehu Ahmad Tambuwal; Nuruddeen Aliyu; Umar Kadi; Omotayo Bolu; Nyampa Barau; Mohammed Yahaya; Gideon Ugbenyo; Ugochukwu Osigwe; Clara Oguji; Nnamdi Usifoh; Vincent Seaman	DOI=10.3390/data4010020	PMID=30956970	URL=https://pubmed.ncbi.nlm.nih.gov/30956970/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-19
+CAND	PMID:30956970	TITLE=Comparison of Micro-Census Results for Magarya Ward, Wurno Local Government Area of Sokoto State, Nigeria, with Other Sources of Denominator Data.	YEAR=2019	AUTHORS=Margherita E Ghiselli; Idongesit Nta Wilson; Brian Kaplan; Ndadilnasiya Endie Waziri; Adamu Sule; Halimatu Bolatito Ayanleke; Faruk Namalam; Shehu Ahmad Tambuwal; Nuruddeen Aliyu; Umar Kadi; Omotayo Bolu; Nyampa Barau; Mohammed Yahaya; Gideon Ugbenyo; Ugochukwu Osigwe; Clara Oguji; Nnamdi Usifoh; Vincent Seaman	DOI=10.3390/data4010020	PMID=30956970	URL=https://pubmed.ncbi.nlm.nih.gov/30956970/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-120
 SOURCE	NS-SURVEILLANCE-020	TARGET_TITLE=Estimating central line-associated bloodstream infection incidence rates by sampling of denominator data: A prospective, multicenter evaluation.	TARGET_AUTHOR=Nicola D Thompson	TARGET_YEAR=2015	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:26004907	TITLE=Estimating central line-associated bloodstream infection incidence rates by sampling of denominator data: A prospective, multicenter evaluation.	YEAR=2015	AUTHORS=Nicola D Thompson; Jonathan R Edwards; Wendy Bamberg; Zintars G Beldavs; Ghinwa Dumyati; Deborah Godine; Meghan Maloney; Marion Kainer; Susan Ray; Deborah Thompson; Lucy Wilson; Shelley S Magill	DOI=10.1016/j.ajic.2015.03.031	PMID=26004907	URL=https://pubmed.ncbi.nlm.nih.gov/26004907/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-20
+CAND	PMID:26004907	TITLE=Estimating central line-associated bloodstream infection incidence rates by sampling of denominator data: A prospective, multicenter evaluation.	YEAR=2015	AUTHORS=Nicola D Thompson; Jonathan R Edwards; Wendy Bamberg; Zintars G Beldavs; Ghinwa Dumyati; Deborah Godine; Meghan Maloney; Marion Kainer; Susan Ray; Deborah Thompson; Lucy Wilson; Shelley S Magill	DOI=10.1016/j.ajic.2015.03.031	PMID=26004907	URL=https://pubmed.ncbi.nlm.nih.gov/26004907/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-121
 SOURCE	NS-SURVEILLANCE-021	TARGET_TITLE=Validation of the surveillance and reporting of central line-associated bloodstream infection denominator data.	TARGET_AUTHOR=Lauren A Backman	TARGET_YEAR=2014	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:24176605	TITLE=Validation of the surveillance and reporting of central line-associated bloodstream infection denominator data.	YEAR=2014	AUTHORS=Lauren A Backman; Gayle Nobert; Richard Melchreit; Renee Fekieta; Louise M Dembry	DOI=10.1016/j.ajic.2013.06.014	PMID=24176605	URL=https://pubmed.ncbi.nlm.nih.gov/24176605/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-21
+CAND	PMID:24176605	TITLE=Validation of the surveillance and reporting of central line-associated bloodstream infection denominator data.	YEAR=2014	AUTHORS=Lauren A Backman; Gayle Nobert; Richard Melchreit; Renee Fekieta; Louise M Dembry	DOI=10.1016/j.ajic.2013.06.014	PMID=24176605	URL=https://pubmed.ncbi.nlm.nih.gov/24176605/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-122
 SOURCE	NS-SURVEILLANCE-022	TARGET_TITLE=Laboratory-based surveillance of Campylobacter and Salmonella infection and the importance of denominator data.	TARGET_AUTHOR=J Janiec	TARGET_YEAR=2012	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:22217369	TITLE=Laboratory-based surveillance of Campylobacter and Salmonella infection and the importance of denominator data.	YEAR=2012	AUTHORS=J Janiec; M R Evans; D R Thomas; G H Davies; H Lewis	DOI=10.1017/s0950268811002822	PMID=22217369	URL=https://pubmed.ncbi.nlm.nih.gov/22217369/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-22
+CAND	PMID:22217369	TITLE=Laboratory-based surveillance of Campylobacter and Salmonella infection and the importance of denominator data.	YEAR=2012	AUTHORS=J Janiec; M R Evans; D R Thomas; G H Davies; H Lewis	DOI=10.1017/s0950268811002822	PMID=22217369	URL=https://pubmed.ncbi.nlm.nih.gov/22217369/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-123
 SOURCE	NS-SURVEILLANCE-023	TARGET_TITLE=Do changes in STEC diagnostics mislead interpretation of disease surveillance data in Switzerland? Time trends in positivity, 2007 to 2016.	TARGET_AUTHOR=Fabienne Beatrice Fischer	TARGET_YEAR=2020	QUERY_COUNT=2	CANDIDATE_COUNT=1
-CAND	PMID:32820716	TITLE=Do changes in STEC diagnostics mislead interpretation of disease surveillance data in Switzerland? Time trends in positivity, 2007 to 2016.	YEAR=2020	AUTHORS=Fabienne Beatrice Fischer; Apolline Saucy; Claudia Schmutz; Daniel Mäusezahl	DOI=10.2807/1560-7917.es.2020.25.33.1900584	PMID=32820716	URL=https://pubmed.ncbi.nlm.nih.gov/32820716/	QUERY=SEARCH-20260718-LINEAGE-SURVEILLANCE-23
+CAND	PMID:32820716	TITLE=Do changes in STEC diagnostics mislead interpretation of disease surveillance data in Switzerland? Time trends in positivity, 2007 to 2016.	YEAR=2020	AUTHORS=Fabienne Beatrice Fischer; Apolline Saucy; Claudia Schmutz; Daniel Mäusezahl	DOI=10.2807/1560-7917.es.2020.25.33.1900584	PMID=32820716	URL=https://pubmed.ncbi.nlm.nih.gov/32820716/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-125
 SOURCE	NS-SURVEILLANCE-024	TARGET_TITLE=HIV/AIDS prevalence in the Southern Caucasus.	TARGET_AUTHOR=L Kvitsinadze	TARGET_YEAR=2010	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:21252406	TITLE=HIV/AIDS prevalence in the Southern Caucasus.	YEAR=2010	AUTHORS=L Kvitsinadze; D Tvildiani; G Pkhakadze	DOI=	PMID=21252406	URL=https://pubmed.ncbi.nlm.nih.gov/21252406/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-24
+CAND	PMID:21252406	TITLE=HIV/AIDS prevalence in the Southern Caucasus.	YEAR=2010	AUTHORS=L Kvitsinadze; D Tvildiani; G Pkhakadze	DOI=	PMID=21252406	URL=https://pubmed.ncbi.nlm.nih.gov/21252406/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-126
 SOURCE	NS-SURVEILLANCE-025	TARGET_TITLE=Significant features of the epidemiology of equine influenza in New South Wales, Australia, 2007.	TARGET_AUTHOR=B Moloney	TARGET_YEAR=2011	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:21711291	TITLE=Significant features of the epidemiology of equine influenza in New South Wales, Australia, 2007.	YEAR=2011	AUTHORS=B Moloney; E S G Sergeant; C Taragel; P Buckley	DOI=10.1111/j.1751-0813.2011.00749.x	PMID=21711291	URL=https://pubmed.ncbi.nlm.nih.gov/21711291/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-25
+CAND	PMID:21711291	TITLE=Significant features of the epidemiology of equine influenza in New South Wales, Australia, 2007.	YEAR=2011	AUTHORS=B Moloney; E S G Sergeant; C Taragel; P Buckley	DOI=10.1111/j.1751-0813.2011.00749.x	PMID=21711291	URL=https://pubmed.ncbi.nlm.nih.gov/21711291/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-127
 SOURCE	NS-SURVEILLANCE-026	TARGET_TITLE=Multicenter benchmarking of short and long read wet lab protocols for clinical viral metagenomics.	TARGET_AUTHOR=F Xavier Lopez-Labrador	TARGET_YEAR=2024	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:38823290	TITLE=Multicenter benchmarking of short and long read wet lab protocols for clinical viral metagenomics.	YEAR=2024	AUTHORS=F Xavier Lopez-Labrador; Michael Huber; Igor A Sidorov; Julianne R Brown; Lize Cuypers; Lies Laenen; Bert Vanmechelen; Piet Maes; Nicole Fischer; Ian Pichler; Nathaniel Storey; Laura Atkinson; Stefan Schmutz; Verena Kufner; Sander van Boheemen; Claudia E Mulders; Adam Grundhoff; Patrick Blümke; Alexis Robitaille; Ondrej Cinek; Klára Hubáčková; Kees Mourik; Stefan A Boers; Lea Stauber; Maud Salmona; Pierre Cappy; Alban Ramette; Alessandra Franze'; Jerome LeGoff; Eric C J Claas; Christophe Rodriguez; Jutte J C de Vries; European Society of Clinical Virology (ESCV) Network on Next-Generation Sequencing (ENNGS)	DOI=10.1016/j.jcv.2024.105695	PMID=38823290	URL=https://pubmed.ncbi.nlm.nih.gov/38823290/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-26
+CAND	PMID:38823290	TITLE=Multicenter benchmarking of short and long read wet lab protocols for clinical viral metagenomics.	YEAR=2024	AUTHORS=F Xavier Lopez-Labrador; Michael Huber; Igor A Sidorov; Julianne R Brown; Lize Cuypers; Lies Laenen; Bert Vanmechelen; Piet Maes; Nicole Fischer; Ian Pichler; Nathaniel Storey; Laura Atkinson; Stefan Schmutz; Verena Kufner; Sander van Boheemen; Claudia E Mulders; Adam Grundhoff; Patrick Blümke; Alexis Robitaille; Ondrej Cinek; Klára Hubáčková; Kees Mourik; Stefan A Boers; Lea Stauber; Maud Salmona; Pierre Cappy; Alban Ramette; Alessandra Franze'; Jerome LeGoff; Eric C J Claas; Christophe Rodriguez; Jutte J C de Vries; European Society of Clinical Virology (ESCV) Network on Next-Generation Sequencing (ENNGS)	DOI=10.1016/j.jcv.2024.105695	PMID=38823290	URL=https://pubmed.ncbi.nlm.nih.gov/38823290/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-128
 SOURCE	NS-SURVEILLANCE-027	TARGET_TITLE=Performance of the GeneXpert Ebola Assay for Diagnosis of Ebola Virus Disease in Sierra Leone: A Field Evaluation Study.	TARGET_AUTHOR=Amanda E Semper	TARGET_YEAR=2016	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:27023868	TITLE=Performance of the GeneXpert Ebola Assay for Diagnosis of Ebola Virus Disease in Sierra Leone: A Field Evaluation Study.	YEAR=2016	AUTHORS=Amanda E Semper; M Jana Broadhurst; Jade Richards; Geraldine M Foster; Andrew J H Simpson; Christopher H Logue; J Daniel Kelly; Ann Miller; Tim J G Brooks; Megan Murray; Nira R Pollock	DOI=10.1371/journal.pmed.1001980	PMID=27023868	URL=https://pubmed.ncbi.nlm.nih.gov/27023868/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-27
+CAND	PMID:27023868	TITLE=Performance of the GeneXpert Ebola Assay for Diagnosis of Ebola Virus Disease in Sierra Leone: A Field Evaluation Study.	YEAR=2016	AUTHORS=Amanda E Semper; M Jana Broadhurst; Jade Richards; Geraldine M Foster; Andrew J H Simpson; Christopher H Logue; J Daniel Kelly; Ann Miller; Tim J G Brooks; Megan Murray; Nira R Pollock	DOI=10.1371/journal.pmed.1001980	PMID=27023868	URL=https://pubmed.ncbi.nlm.nih.gov/27023868/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-129
 SOURCE	NS-SURVEILLANCE-028	TARGET_TITLE=Estimating the proportion of pneumonia attributable to pneumococcus in Kenyan adults: latent class analysis.	TARGET_AUTHOR=Jukka Jokinen	TARGET_YEAR=2010	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:20562627	TITLE=Estimating the proportion of pneumonia attributable to pneumococcus in Kenyan adults: latent class analysis.	YEAR=2010	AUTHORS=Jukka Jokinen; J Anthony G Scott	DOI=10.1097/ede.0b013e3181e4c4d5	PMID=20562627	URL=https://pubmed.ncbi.nlm.nih.gov/20562627/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-28
+CAND	PMID:20562627	TITLE=Estimating the proportion of pneumonia attributable to pneumococcus in Kenyan adults: latent class analysis.	YEAR=2010	AUTHORS=Jukka Jokinen; J Anthony G Scott	DOI=10.1097/ede.0b013e3181e4c4d5	PMID=20562627	URL=https://pubmed.ncbi.nlm.nih.gov/20562627/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-130
 SOURCE	NS-SURVEILLANCE-029	TARGET_TITLE=Estimating test characteristics of somatic cell count to detect Staphylococcus aureus-infected dairy goats using latent class analysis.	TARGET_AUTHOR=G Koop	TARGET_YEAR=2011	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:21605760	TITLE=Estimating test characteristics of somatic cell count to detect Staphylococcus aureus-infected dairy goats using latent class analysis.	YEAR=2011	AUTHORS=G Koop; T van Werven; N Toft; M Nielen	DOI=10.3168/jds.2010-3929	PMID=21605760	URL=https://pubmed.ncbi.nlm.nih.gov/21605760/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-29
+CAND	PMID:21605760	TITLE=Estimating test characteristics of somatic cell count to detect Staphylococcus aureus-infected dairy goats using latent class analysis.	YEAR=2011	AUTHORS=G Koop; T van Werven; N Toft; M Nielen	DOI=10.3168/jds.2010-3929	PMID=21605760	URL=https://pubmed.ncbi.nlm.nih.gov/21605760/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-131
 SOURCE	NS-SURVEILLANCE-030	TARGET_TITLE=Clinically Adjudicated Reference Standards for Evaluation of Infectious Diseases Diagnostics.	TARGET_AUTHOR=Robin Patel	TARGET_YEAR=2023	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:36262037	TITLE=Clinically Adjudicated Reference Standards for Evaluation of Infectious Diseases Diagnostics.	YEAR=2023	AUTHORS=Robin Patel; Ephraim L Tsalik; Scott Evans; Vance G Fowler; Sarah B Doernberg; Antibacterial Resistance Leadership Group	DOI=10.1093/cid/ciac829	PMID=36262037	URL=https://pubmed.ncbi.nlm.nih.gov/36262037/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-30
+CAND	PMID:36262037	TITLE=Clinically Adjudicated Reference Standards for Evaluation of Infectious Diseases Diagnostics.	YEAR=2023	AUTHORS=Robin Patel; Ephraim L Tsalik; Scott Evans; Vance G Fowler; Sarah B Doernberg; Antibacterial Resistance Leadership Group	DOI=10.1093/cid/ciac829	PMID=36262037	URL=https://pubmed.ncbi.nlm.nih.gov/36262037/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-132
 SOURCE	NS-SURVEILLANCE-031	TARGET_TITLE=A statistical method was used for the meta-analysis of tests for latent TB in the absence of a gold standard, combining random-effect and latent-class methods to estimate test accuracy.	TARGET_AUTHOR=Mohsen Sadatsafavi	TARGET_YEAR=2010	QUERY_COUNT=2	CANDIDATE_COUNT=1
-CAND	PMID:19692208	TITLE=A statistical method was used for the meta-analysis of tests for latent TB in the absence of a gold standard, combining random-effect and latent-class methods to estimate test accuracy.	YEAR=2010	AUTHORS=Mohsen Sadatsafavi; Neal Shahidi; Fawziah Marra; Mark J FitzGerald; Kevin R Elwood; Na Guo; Carlo A Marra	DOI=10.1016/j.jclinepi.2009.04.008	PMID=19692208	URL=https://pubmed.ncbi.nlm.nih.gov/19692208/	QUERY=SEARCH-20260718-LINEAGE-SURVEILLANCE-31
+CAND	PMID:19692208	TITLE=A statistical method was used for the meta-analysis of tests for latent TB in the absence of a gold standard, combining random-effect and latent-class methods to estimate test accuracy.	YEAR=2010	AUTHORS=Mohsen Sadatsafavi; Neal Shahidi; Fawziah Marra; Mark J FitzGerald; Kevin R Elwood; Na Guo; Carlo A Marra	DOI=10.1016/j.jclinepi.2009.04.008	PMID=19692208	URL=https://pubmed.ncbi.nlm.nih.gov/19692208/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-134
 SOURCE	NS-SURVEILLANCE-032	TARGET_TITLE=Diagnostic Accuracy of Novel and Traditional Rapid Tests for Influenza Infection Compared With Reverse Transcriptase Polymerase Chain Reaction: A Systematic Review and Meta-analysis.	TARGET_AUTHOR=Joanna Merckx	TARGET_YEAR=2017	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:28869986	TITLE=Diagnostic Accuracy of Novel and Traditional Rapid Tests for Influenza Infection Compared With Reverse Transcriptase Polymerase Chain Reaction: A Systematic Review and Meta-analysis.	YEAR=2017	AUTHORS=Joanna Merckx; Rehab Wali; Ian Schiller; Chelsea Caya; Genevieve C Gore; Caroline Chartrand; Nandini Dendukuri; Jesse Papenburg	DOI=10.7326/m17-0848	PMID=28869986	URL=https://pubmed.ncbi.nlm.nih.gov/28869986/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-32
+CAND	PMID:28869986	TITLE=Diagnostic Accuracy of Novel and Traditional Rapid Tests for Influenza Infection Compared With Reverse Transcriptase Polymerase Chain Reaction: A Systematic Review and Meta-analysis.	YEAR=2017	AUTHORS=Joanna Merckx; Rehab Wali; Ian Schiller; Chelsea Caya; Genevieve C Gore; Caroline Chartrand; Nandini Dendukuri; Jesse Papenburg	DOI=10.7326/m17-0848	PMID=28869986	URL=https://pubmed.ncbi.nlm.nih.gov/28869986/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-135
 SOURCE	NS-SURVEILLANCE-033	TARGET_TITLE=Diagnostic yield of urine lipoarabinomannan and sputum tuberculosis tests in people living with HIV: a systematic review and meta-analysis of individual participant data.	TARGET_AUTHOR=Tobias Broger	TARGET_YEAR=2023	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:37202025	TITLE=Diagnostic yield of urine lipoarabinomannan and sputum tuberculosis tests in people living with HIV: a systematic review and meta-analysis of individual participant data.	YEAR=2023	AUTHORS=Tobias Broger; Lisa Koeppel; Helena Huerga; Poppy Miller; Ankur Gupta-Wright; François-Xavier Blanc; Aliasgar Esmail; Byron W P Reeve; Marco Floridia; Andrew D Kerkhoff; Fausto Ciccacci; Margaret P Kasaro; Swe Swe Thit; Mathieu Bastard; Gabriella Ferlazzo; Christina Yoon; Daniël J Van Hoving; Bianca Sossen; Juan Ignacio García; Matthew J Cummings; Rachel M Wake; Josh Hanson; Adithya Cattamanchi; Graeme Meintjes; Gary Maartens; Robin Wood; Grant Theron; Keertan Dheda; Ioana Diana Olaru; Claudia M Denkinger; TBYield Study Consortium	DOI=10.1016/s2214-109x(23)00135-3	PMID=37202025	URL=https://pubmed.ncbi.nlm.nih.gov/37202025/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-33
+CAND	PMID:37202025	TITLE=Diagnostic yield of urine lipoarabinomannan and sputum tuberculosis tests in people living with HIV: a systematic review and meta-analysis of individual participant data.	YEAR=2023	AUTHORS=Tobias Broger; Lisa Koeppel; Helena Huerga; Poppy Miller; Ankur Gupta-Wright; François-Xavier Blanc; Aliasgar Esmail; Byron W P Reeve; Marco Floridia; Andrew D Kerkhoff; Fausto Ciccacci; Margaret P Kasaro; Swe Swe Thit; Mathieu Bastard; Gabriella Ferlazzo; Christina Yoon; Daniël J Van Hoving; Bianca Sossen; Juan Ignacio García; Matthew J Cummings; Rachel M Wake; Josh Hanson; Adithya Cattamanchi; Graeme Meintjes; Gary Maartens; Robin Wood; Grant Theron; Keertan Dheda; Ioana Diana Olaru; Claudia M Denkinger; TBYield Study Consortium	DOI=10.1016/s2214-109x(23)00135-3	PMID=37202025	URL=https://pubmed.ncbi.nlm.nih.gov/37202025/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-136
 SOURCE	NS-SURVEILLANCE-034	TARGET_TITLE=The Predictive Value of International Classification of Disease Codes for Chronic Hepatitis C Virus Infection Surveillance: The Utility and Limitations of Electronic Health Records.	TARGET_AUTHOR=Winston E Abara	TARGET_YEAR=2018	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:37575638	TITLE=The Predictive Value of International Classification of Disease Codes for Chronic Hepatitis C Virus Infection Surveillance: The Utility and Limitations of Electronic Health Records.	YEAR=2018	AUTHORS=Winston E Abara; Anne C Moorman; Yuna Zhong; Melissa G Collier; Lora B Rupp; Stuart C Gordon; Joseph A Boscarino; Mark A Schmidt; Connie Mah Trinacty; Scott D Holmberg; CHeCS Investigators	DOI=10.1089/pop.2017.0004	PMID=37575638	URL=https://pubmed.ncbi.nlm.nih.gov/37575638/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-34
+CAND	PMID:37575638	TITLE=The Predictive Value of International Classification of Disease Codes for Chronic Hepatitis C Virus Infection Surveillance: The Utility and Limitations of Electronic Health Records.	YEAR=2018	AUTHORS=Winston E Abara; Anne C Moorman; Yuna Zhong; Melissa G Collier; Lora B Rupp; Stuart C Gordon; Joseph A Boscarino; Mark A Schmidt; Connie Mah Trinacty; Scott D Holmberg; CHeCS Investigators	DOI=10.1089/pop.2017.0004	PMID=37575638	URL=https://pubmed.ncbi.nlm.nih.gov/37575638/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-137
 SOURCE	NS-SURVEILLANCE-035	TARGET_TITLE=Diagnostic accuracy and feasibility of serological tests on filter paper samples for outbreak detection of T.b. gambiense human African trypanosomiasis.	TARGET_AUTHOR=Epco Hasker	TARGET_YEAR=2010	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:20682885	TITLE=Diagnostic accuracy and feasibility of serological tests on filter paper samples for outbreak detection of T.b. gambiense human African trypanosomiasis.	YEAR=2010	AUTHORS=Epco Hasker; Pascal Lutumba; Dieudonné Mumba; Veerle Lejon; Phillipe Büscher; Victor Kande; Jean Jacques Muyembe; Joris Menten; Jo Robays; Marleen Boelaert	DOI=10.4269/ajtmh.2010.09-0735	PMID=20682885	URL=https://pubmed.ncbi.nlm.nih.gov/20682885/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-35
+CAND	PMID:20682885	TITLE=Diagnostic accuracy and feasibility of serological tests on filter paper samples for outbreak detection of T.b. gambiense human African trypanosomiasis.	YEAR=2010	AUTHORS=Epco Hasker; Pascal Lutumba; Dieudonné Mumba; Veerle Lejon; Phillipe Büscher; Victor Kande; Jean Jacques Muyembe; Joris Menten; Jo Robays; Marleen Boelaert	DOI=10.4269/ajtmh.2010.09-0735	PMID=20682885	URL=https://pubmed.ncbi.nlm.nih.gov/20682885/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-138
 SOURCE	NS-SURVEILLANCE-036	TARGET_TITLE=Utility of (1-3)-β-D-glucan testing for diagnostics and monitoring response to treatment during the multistate outbreak of fungal meningitis and other infections.	TARGET_AUTHOR=Anastasia P Litvintseva	TARGET_YEAR=2014	QUERY_COUNT=2	CANDIDATE_COUNT=1
-CAND	PMID:24336827	TITLE=Utility of (1-3)-β-D-glucan testing for diagnostics and monitoring response to treatment during the multistate outbreak of fungal meningitis and other infections.	YEAR=2014	AUTHORS=Anastasia P Litvintseva; Mark D Lindsley; Lalitha Gade; Rachel Smith; Tom Chiller; Jennifer L Lyons; Kiran T Thakur; Sean X Zhang; Dale E Grgurich; Thomas M Kerkering; Mary E Brandt; Benjamin J Park	DOI=10.1093/cid/cit808	PMID=24336827	URL=https://pubmed.ncbi.nlm.nih.gov/24336827/	QUERY=SEARCH-20260718-LINEAGE-SURVEILLANCE-36
+CAND	PMID:24336827	TITLE=Utility of (1-3)-β-D-glucan testing for diagnostics and monitoring response to treatment during the multistate outbreak of fungal meningitis and other infections.	YEAR=2014	AUTHORS=Anastasia P Litvintseva; Mark D Lindsley; Lalitha Gade; Rachel Smith; Tom Chiller; Jennifer L Lyons; Kiran T Thakur; Sean X Zhang; Dale E Grgurich; Thomas M Kerkering; Mary E Brandt; Benjamin J Park	DOI=10.1093/cid/cit808	PMID=24336827	URL=https://pubmed.ncbi.nlm.nih.gov/24336827/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-140
 SOURCE	NS-SURVEILLANCE-037	TARGET_TITLE=CWSS-IS: A Technical Framework for Digitalized Wastewater Surveillance-Information System Structure, Data Standards, and Application - China, February 2024-January 2026.	TARGET_AUTHOR=Shuxin Hao	TARGET_YEAR=2026	QUERY_COUNT=2	CANDIDATE_COUNT=1
-CAND	PMID:42273608	TITLE=CWSS-IS: A Technical Framework for Digitalized Wastewater Surveillance-Information System Structure, Data Standards, and Application - China, February 2024-January 2026.	YEAR=2026	AUTHORS=Shuxin Hao; Liang Zhang; Fuchang Deng; Jiayi Han; Xia Li; Huihui Sun; Xiao Zhang; Song Tang; Lan Zhang; Yang Yang; Qing Guo; Lin Wang; Yue Liu; Xiaoyuan Yao	DOI=10.46234/ccdcw2026.117	PMID=42273608	URL=https://pubmed.ncbi.nlm.nih.gov/42273608/	QUERY=SEARCH-20260718-LINEAGE-SURVEILLANCE-37
+CAND	PMID:42273608	TITLE=CWSS-IS: A Technical Framework for Digitalized Wastewater Surveillance-Information System Structure, Data Standards, and Application - China, February 2024-January 2026.	YEAR=2026	AUTHORS=Shuxin Hao; Liang Zhang; Fuchang Deng; Jiayi Han; Xia Li; Huihui Sun; Xiao Zhang; Song Tang; Lan Zhang; Yang Yang; Qing Guo; Lin Wang; Yue Liu; Xiaoyuan Yao	DOI=10.46234/ccdcw2026.117	PMID=42273608	URL=https://pubmed.ncbi.nlm.nih.gov/42273608/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-142
 SOURCE	NS-SURVEILLANCE-038	TARGET_TITLE=Use of cell phone data to correct Île-de-France population estimates and SARS-CoV-2 incidence, July to September, 2021: a proof-of-concept exercise.	TARGET_AUTHOR=Arnaud Tarantola	TARGET_YEAR=2025	QUERY_COUNT=2	CANDIDATE_COUNT=1
-CAND	PMID:40476291	TITLE=Use of cell phone data to correct Île-de-France population estimates and SARS-CoV-2 incidence, July to September, 2021: a proof-of-concept exercise.	YEAR=2025	AUTHORS=Arnaud Tarantola; Mohamed Hamidouche	DOI=10.2807/1560-7917.es.2025.30.22.2400530	PMID=40476291	URL=https://pubmed.ncbi.nlm.nih.gov/40476291/	QUERY=SEARCH-20260718-LINEAGE-SURVEILLANCE-38
+CAND	PMID:40476291	TITLE=Use of cell phone data to correct Île-de-France population estimates and SARS-CoV-2 incidence, July to September, 2021: a proof-of-concept exercise.	YEAR=2025	AUTHORS=Arnaud Tarantola; Mohamed Hamidouche	DOI=10.2807/1560-7917.es.2025.30.22.2400530	PMID=40476291	URL=https://pubmed.ncbi.nlm.nih.gov/40476291/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-144
 SOURCE	NS-SURVEILLANCE-039	TARGET_TITLE=Detecting Acute Otitis Media Symptom Episodes Using a Mobile App: Cohort Study.	TARGET_AUTHOR=Annemarijn C Prins-van Ginkel	TARGET_YEAR=2017	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:29183869	TITLE=Detecting Acute Otitis Media Symptom Episodes Using a Mobile App: Cohort Study.	YEAR=2017	AUTHORS=Annemarijn C Prins-van Ginkel; Marieke LA de Hoog; C Uiterwaal; Henriette A Smit; Patricia Cj Bruijning-Verhagen	DOI=10.2196/mhealth.7505	PMID=29183869	URL=https://pubmed.ncbi.nlm.nih.gov/29183869/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-39
+CAND	PMID:29183869	TITLE=Detecting Acute Otitis Media Symptom Episodes Using a Mobile App: Cohort Study.	YEAR=2017	AUTHORS=Annemarijn C Prins-van Ginkel; Marieke LA de Hoog; C Uiterwaal; Henriette A Smit; Patricia Cj Bruijning-Verhagen	DOI=10.2196/mhealth.7505	PMID=29183869	URL=https://pubmed.ncbi.nlm.nih.gov/29183869/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-145
 SOURCE	NS-SURVEILLANCE-040	TARGET_TITLE=An analysis of 45 large-scale wastewater sites in England to estimate SARS-CoV-2 community prevalence.	TARGET_AUTHOR=Mario Morvan	TARGET_YEAR=2022	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:35879277	TITLE=An analysis of 45 large-scale wastewater sites in England to estimate SARS-CoV-2 community prevalence.	YEAR=2022	AUTHORS=Mario Morvan; Anna Lo Jacomo; Celia Souque; Matthew J Wade; Till Hoffmann; Koen Pouwels; Chris Lilley; Andrew C Singer; Jonathan Porter; Nicholas P Evens; David I Walker; Joshua T Bunce; Andrew Engeli; Jasmine Grimsley; Kathleen M O'Reilly; Leon Danon	DOI=10.1038/s41467-022-31753-y	PMID=35879277	URL=https://pubmed.ncbi.nlm.nih.gov/35879277/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-40
+CAND	PMID:35879277	TITLE=An analysis of 45 large-scale wastewater sites in England to estimate SARS-CoV-2 community prevalence.	YEAR=2022	AUTHORS=Mario Morvan; Anna Lo Jacomo; Celia Souque; Matthew J Wade; Till Hoffmann; Koen Pouwels; Chris Lilley; Andrew C Singer; Jonathan Porter; Nicholas P Evens; David I Walker; Joshua T Bunce; Andrew Engeli; Jasmine Grimsley; Kathleen M O'Reilly; Leon Danon	DOI=10.1038/s41467-022-31753-y	PMID=35879277	URL=https://pubmed.ncbi.nlm.nih.gov/35879277/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-146
 SOURCE	NS-SURVEILLANCE-041	TARGET_TITLE=Rapid incidence estimation from SARS-CoV-2 genomes reveals decreased case detection in Europe during summer 2020.	TARGET_AUTHOR=Maureen Rebecca Smith	TARGET_YEAR=2021	QUERY_COUNT=2	CANDIDATE_COUNT=1
-CAND	PMID:34650062	TITLE=Rapid incidence estimation from SARS-CoV-2 genomes reveals decreased case detection in Europe during summer 2020.	YEAR=2021	AUTHORS=Maureen Rebecca Smith; Maria Trofimova; Ariane Weber; Yannick Duport; Denise Kühnert; Max von Kleist	DOI=10.1038/s41467-021-26267-y	PMID=34650062	URL=https://pubmed.ncbi.nlm.nih.gov/34650062/	QUERY=SEARCH-20260718-LINEAGE-SURVEILLANCE-41
+CAND	PMID:34650062	TITLE=Rapid incidence estimation from SARS-CoV-2 genomes reveals decreased case detection in Europe during summer 2020.	YEAR=2021	AUTHORS=Maureen Rebecca Smith; Maria Trofimova; Ariane Weber; Yannick Duport; Denise Kühnert; Max von Kleist	DOI=10.1038/s41467-021-26267-y	PMID=34650062	URL=https://pubmed.ncbi.nlm.nih.gov/34650062/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-148
 SOURCE	NS-SURVEILLANCE-042	TARGET_TITLE=Denominator doesn't matter: standardizing healthcare-associated infection rates by bed days or device days.	TARGET_AUTHOR=Molly J Horstman	TARGET_YEAR=2015	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:25782986	TITLE=Denominator doesn't matter: standardizing healthcare-associated infection rates by bed days or device days.	YEAR=2015	AUTHORS=Molly J Horstman; Yu-Fang Li; Peter L Almenoff; Ron W Freyberg; Barbara W Trautner	DOI=10.1017/ice.2015.42	PMID=25782986	URL=https://pubmed.ncbi.nlm.nih.gov/25782986/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-42
+CAND	PMID:25782986	TITLE=Denominator doesn't matter: standardizing healthcare-associated infection rates by bed days or device days.	YEAR=2015	AUTHORS=Molly J Horstman; Yu-Fang Li; Peter L Almenoff; Ron W Freyberg; Barbara W Trautner	DOI=10.1017/ice.2015.42	PMID=25782986	URL=https://pubmed.ncbi.nlm.nih.gov/25782986/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-149
 SOURCE	NS-SURVEILLANCE-043	TARGET_TITLE=Use of Electronic Health Records to Benchmark Clinical Practice Guideline-Consistent Care in Pediatric Oncology.	TARGET_AUTHOR=Adam Paul Yan	TARGET_YEAR=2026	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:41886707	TITLE=Use of Electronic Health Records to Benchmark Clinical Practice Guideline-Consistent Care in Pediatric Oncology.	YEAR=2026	AUTHORS=Adam Paul Yan; Martin Yi; Priya Patel; Paula D Robinson; Matthew MacDonald; Donna L Johnston; Agata Wolochacz; Ida Mehrdadi; Paul Gibson; L Lee Dupuis; Lillian Sung	DOI=10.1200/cci-25-00326	PMID=41886707	URL=https://pubmed.ncbi.nlm.nih.gov/41886707/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-43
+CAND	PMID:41886707	TITLE=Use of Electronic Health Records to Benchmark Clinical Practice Guideline-Consistent Care in Pediatric Oncology.	YEAR=2026	AUTHORS=Adam Paul Yan; Martin Yi; Priya Patel; Paula D Robinson; Matthew MacDonald; Donna L Johnston; Agata Wolochacz; Ida Mehrdadi; Paul Gibson; L Lee Dupuis; Lillian Sung	DOI=10.1200/cci-25-00326	PMID=41886707	URL=https://pubmed.ncbi.nlm.nih.gov/41886707/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-150
 SOURCE	NS-SURVEILLANCE-044	TARGET_TITLE=Power Law for Estimating Underdetection of Foodborne Disease Outbreaks, United States.	TARGET_AUTHOR=Laura Ford	TARGET_YEAR=2023	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:38270126	TITLE=Power Law for Estimating Underdetection of Foodborne Disease Outbreaks, United States.	YEAR=2023	AUTHORS=Laura Ford; Julie L Self; Karen K Wong; Robert M Hoekstra; Robert V Tauxe; Erica Billig Rose; Beau B Bruce	DOI=10.3201/eid3002.230342	PMID=38270126	URL=https://pubmed.ncbi.nlm.nih.gov/38270126/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-44
+CAND	PMID:38270126	TITLE=Power Law for Estimating Underdetection of Foodborne Disease Outbreaks, United States.	YEAR=2023	AUTHORS=Laura Ford; Julie L Self; Karen K Wong; Robert M Hoekstra; Robert V Tauxe; Erica Billig Rose; Beau B Bruce	DOI=10.3201/eid3002.230342	PMID=38270126	URL=https://pubmed.ncbi.nlm.nih.gov/38270126/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-151
 SOURCE	NS-SURVEILLANCE-045	TARGET_TITLE=Maternal colonization with Streptococcus agalactiae and associated stillbirth and neonatal disease in coastal Kenya.	TARGET_AUTHOR=Anna C Seale	TARGET_YEAR=2016	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:27572968	TITLE=Maternal colonization with Streptococcus agalactiae and associated stillbirth and neonatal disease in coastal Kenya.	YEAR=2016	AUTHORS=Anna C Seale; Angela C Koech; Anna E Sheppard; Hellen C Barsosio; Joyce Langat; Emily Anyango; Stella Mwakio; Salim Mwarumba; Susan C Morpeth; Kirimi Anampiu; Alison Vaughan; Adam Giess; Polycarp Mogeni; Leahbell Walusuna; Hope Mwangudzah; Doris Mwanzui; Mariam Salim; Bryn Kemp; Caroline Jones; Neema Mturi; Benjamin Tsofa; Edward Mumbo; David Mulewa; Victor Bandika; Musimbi Soita; Maureen Owiti; Norris Onzere; A Sarah Walker; Stephanie J Schrag; Stephen H Kennedy; Greg Fegan; Derrick W Crook; James A Berkley	DOI=10.1038/nmicrobiol.2016.67	PMID=27572968	URL=https://pubmed.ncbi.nlm.nih.gov/27572968/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-45
+CAND	PMID:27572968	TITLE=Maternal colonization with Streptococcus agalactiae and associated stillbirth and neonatal disease in coastal Kenya.	YEAR=2016	AUTHORS=Anna C Seale; Angela C Koech; Anna E Sheppard; Hellen C Barsosio; Joyce Langat; Emily Anyango; Stella Mwakio; Salim Mwarumba; Susan C Morpeth; Kirimi Anampiu; Alison Vaughan; Adam Giess; Polycarp Mogeni; Leahbell Walusuna; Hope Mwangudzah; Doris Mwanzui; Mariam Salim; Bryn Kemp; Caroline Jones; Neema Mturi; Benjamin Tsofa; Edward Mumbo; David Mulewa; Victor Bandika; Musimbi Soita; Maureen Owiti; Norris Onzere; A Sarah Walker; Stephanie J Schrag; Stephen H Kennedy; Greg Fegan; Derrick W Crook; James A Berkley	DOI=10.1038/nmicrobiol.2016.67	PMID=27572968	URL=https://pubmed.ncbi.nlm.nih.gov/27572968/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-152
 SOURCE	NS-SURVEILLANCE-046	TARGET_TITLE=Kinetics of serum antibodies in response to infection with Yersinia enterocolitica.	TARGET_AUTHOR=I Vaitkeviciute	TARGET_YEAR=2019	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:31063094	TITLE=Kinetics of serum antibodies in response to infection with Yersinia enterocolitica.	YEAR=2019	AUTHORS=I Vaitkeviciute; P F M Teunis; W van Pelt; K A Krogfelt	DOI=10.1017/s0950268819000530	PMID=31063094	URL=https://pubmed.ncbi.nlm.nih.gov/31063094/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-46
+CAND	PMID:31063094	TITLE=Kinetics of serum antibodies in response to infection with Yersinia enterocolitica.	YEAR=2019	AUTHORS=I Vaitkeviciute; P F M Teunis; W van Pelt; K A Krogfelt	DOI=10.1017/s0950268819000530	PMID=31063094	URL=https://pubmed.ncbi.nlm.nih.gov/31063094/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-153
 SOURCE	NS-SURVEILLANCE-047	TARGET_TITLE=Implementation of data triangulation and dashboard development for COVID-19 vaccine adverse event following immunisation (AEFI) data in Nigeria.	TARGET_AUTHOR=Talya Shragai	TARGET_YEAR=2023	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:36650016	TITLE=Implementation of data triangulation and dashboard development for COVID-19 vaccine adverse event following immunisation (AEFI) data in Nigeria.	YEAR=2023	AUTHORS=Talya Shragai; Oluwasegun Joel Adegoke; Hadley Ikwe; Temilade Sorungbe; Aminu Haruna; Imoiboho Williams; Rita Okonkwo; Kenneth Onu; Adeyelu Asekun; Margaret Gberikon; Emem Iwara; Alash'le Abimiku; Ahmed Rufai; Bassey Okposen; Jane Gidudu; Eugene Lam; Omotayo Bolu	DOI=10.1136/bmjgh-2022-011006	PMID=36650016	URL=https://pubmed.ncbi.nlm.nih.gov/36650016/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-47
+CAND	PMID:36650016	TITLE=Implementation of data triangulation and dashboard development for COVID-19 vaccine adverse event following immunisation (AEFI) data in Nigeria.	YEAR=2023	AUTHORS=Talya Shragai; Oluwasegun Joel Adegoke; Hadley Ikwe; Temilade Sorungbe; Aminu Haruna; Imoiboho Williams; Rita Okonkwo; Kenneth Onu; Adeyelu Asekun; Margaret Gberikon; Emem Iwara; Alash'le Abimiku; Ahmed Rufai; Bassey Okposen; Jane Gidudu; Eugene Lam; Omotayo Bolu	DOI=10.1136/bmjgh-2022-011006	PMID=36650016	URL=https://pubmed.ncbi.nlm.nih.gov/36650016/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-154
 SOURCE	NS-SURVEILLANCE-048	TARGET_TITLE=Syndemic factors associated with HIV risk for gay and bisexual men: comparing latent class and latent factor modeling.	TARGET_AUTHOR=Tyrel J Starks	TARGET_YEAR=2014	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:25055765	TITLE=Syndemic factors associated with HIV risk for gay and bisexual men: comparing latent class and latent factor modeling.	YEAR=2014	AUTHORS=Tyrel J Starks; Brett M Millar; Jeremy J Eggleston; Jeffrey T Parsons	DOI=10.1007/s10461-014-0841-9	PMID=25055765	URL=https://pubmed.ncbi.nlm.nih.gov/25055765/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-48
+CAND	PMID:25055765	TITLE=Syndemic factors associated with HIV risk for gay and bisexual men: comparing latent class and latent factor modeling.	YEAR=2014	AUTHORS=Tyrel J Starks; Brett M Millar; Jeremy J Eggleston; Jeffrey T Parsons	DOI=10.1007/s10461-014-0841-9	PMID=25055765	URL=https://pubmed.ncbi.nlm.nih.gov/25055765/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-155
 SOURCE	NS-SURVEILLANCE-049	TARGET_TITLE=Corrigendum: Investigating the influencing factors of vaccination decisions for newly-developed and established vaccines: a comparative study based on latent class logit models in China.	TARGET_AUTHOR=Shiyun Chang	TARGET_YEAR=2024	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:39606070	TITLE=Corrigendum: Investigating the influencing factors of vaccination decisions for newly-developed and established vaccines: a comparative study based on latent class logit models in China.	YEAR=2024	AUTHORS=Shiyun Chang; Biao Xu; Hailing Xi; Yifan Shao	DOI=10.3389/fpubh.2024.1509718	PMID=39606070	URL=https://pubmed.ncbi.nlm.nih.gov/39606070/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-49
+CAND	PMID:39606070	TITLE=Corrigendum: Investigating the influencing factors of vaccination decisions for newly-developed and established vaccines: a comparative study based on latent class logit models in China.	YEAR=2024	AUTHORS=Shiyun Chang; Biao Xu; Hailing Xi; Yifan Shao	DOI=10.3389/fpubh.2024.1509718	PMID=39606070	URL=https://pubmed.ncbi.nlm.nih.gov/39606070/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-156
 SOURCE	NS-SURVEILLANCE-050	TARGET_TITLE=Joint model-based clustering of nonlinear longitudinal trajectories and associated time-to-event data analysis, linked by latent class membership: with application to AIDS clinical studies.	TARGET_AUTHOR=Yangxin Huang	TARGET_YEAR=2018	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:29080062	TITLE=Joint model-based clustering of nonlinear longitudinal trajectories and associated time-to-event data analysis, linked by latent class membership: with application to AIDS clinical studies.	YEAR=2018	AUTHORS=Yangxin Huang; Xiaosun Lu; Jiaqing Chen; Juan Liang; Miriam Zangmeister	DOI=10.1007/s10985-017-9409-0	PMID=29080062	URL=https://pubmed.ncbi.nlm.nih.gov/29080062/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-50
+CAND	PMID:29080062	TITLE=Joint model-based clustering of nonlinear longitudinal trajectories and associated time-to-event data analysis, linked by latent class membership: with application to AIDS clinical studies.	YEAR=2018	AUTHORS=Yangxin Huang; Xiaosun Lu; Jiaqing Chen; Juan Liang; Miriam Zangmeister	DOI=10.1007/s10985-017-9409-0	PMID=29080062	URL=https://pubmed.ncbi.nlm.nih.gov/29080062/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-157
 SOURCE	NS-SURVEILLANCE-051	TARGET_TITLE=Invited commentary: Human papillomavirus infection and risk of cervical precancer--using the right methods to answer the right questions.	TARGET_AUTHOR=Eduardo L Franco	TARGET_YEAR=2010	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:20007675	TITLE=Invited commentary: Human papillomavirus infection and risk of cervical precancer--using the right methods to answer the right questions.	YEAR=2010	AUTHORS=Eduardo L Franco; Joseph Tota	DOI=10.1093/aje/kwp392	PMID=20007675	URL=https://pubmed.ncbi.nlm.nih.gov/20007675/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-51
+CAND	PMID:20007675	TITLE=Invited commentary: Human papillomavirus infection and risk of cervical precancer--using the right methods to answer the right questions.	YEAR=2010	AUTHORS=Eduardo L Franco; Joseph Tota	DOI=10.1093/aje/kwp392	PMID=20007675	URL=https://pubmed.ncbi.nlm.nih.gov/20007675/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-158
 SOURCE	NS-SURVEILLANCE-052	TARGET_TITLE=Accounting for nonsampling error in estimates of HIV epidemic trends from antenatal clinic sentinel surveillance.	TARGET_AUTHOR=Jeffrey W Eaton	TARGET_YEAR=2017	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:28296801	TITLE=Accounting for nonsampling error in estimates of HIV epidemic trends from antenatal clinic sentinel surveillance.	YEAR=2017	AUTHORS=Jeffrey W Eaton; Le Bao	DOI=10.1097/qad.0000000000001419	PMID=28296801	URL=https://pubmed.ncbi.nlm.nih.gov/28296801/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-52
+CAND	PMID:28296801	TITLE=Accounting for nonsampling error in estimates of HIV epidemic trends from antenatal clinic sentinel surveillance.	YEAR=2017	AUTHORS=Jeffrey W Eaton; Le Bao	DOI=10.1097/qad.0000000000001419	PMID=28296801	URL=https://pubmed.ncbi.nlm.nih.gov/28296801/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-159
 SOURCE	NS-SURVEILLANCE-053	TARGET_TITLE=Measuring sexual behaviour in Malawi: a triangulation of three data collection instruments.	TARGET_AUTHOR=Nicola Desmond	TARGET_YEAR=2018	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:29954360	TITLE=Measuring sexual behaviour in Malawi: a triangulation of three data collection instruments.	YEAR=2018	AUTHORS=Nicola Desmond; Nico Nagelkerke; Wezzie Lora; Effie Chipeta; Mwiza Sambo; Moses Kumwenda; Elizabeth L Corbett; Miriam Taegtemeyer; Janet Seeley; David G Lalloo; Sally Theobald	DOI=10.1186/s12889-018-5717-x	PMID=29954360	URL=https://pubmed.ncbi.nlm.nih.gov/29954360/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-53
+CAND	PMID:29954360	TITLE=Measuring sexual behaviour in Malawi: a triangulation of three data collection instruments.	YEAR=2018	AUTHORS=Nicola Desmond; Nico Nagelkerke; Wezzie Lora; Effie Chipeta; Mwiza Sambo; Moses Kumwenda; Elizabeth L Corbett; Miriam Taegtemeyer; Janet Seeley; David G Lalloo; Sally Theobald	DOI=10.1186/s12889-018-5717-x	PMID=29954360	URL=https://pubmed.ncbi.nlm.nih.gov/29954360/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-160
 SOURCE	NS-SURVEILLANCE-054	TARGET_TITLE=Estimating the number of HIV-positive pregnant women in Sergipe, Brazil, using capture-recapture.	TARGET_AUTHOR=Lígia Mara Dolce de Lemos	TARGET_YEAR=2013	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:23383591	TITLE=Estimating the number of HIV-positive pregnant women in Sergipe, Brazil, using capture-recapture.	YEAR=2013	AUTHORS=Lígia Mara Dolce de Lemos; Gabriella Souza Duarte; Nágyla Galvão Regis Martins; Flávia Janólio Costacurta Pinto da Silva; Chinenye Ilozue; Ricardo Queiroz Gurgel	DOI=10.1080/09540121.2013.764389	PMID=23383591	URL=https://pubmed.ncbi.nlm.nih.gov/23383591/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-54
+CAND	PMID:23383591	TITLE=Estimating the number of HIV-positive pregnant women in Sergipe, Brazil, using capture-recapture.	YEAR=2013	AUTHORS=Lígia Mara Dolce de Lemos; Gabriella Souza Duarte; Nágyla Galvão Regis Martins; Flávia Janólio Costacurta Pinto da Silva; Chinenye Ilozue; Ricardo Queiroz Gurgel	DOI=10.1080/09540121.2013.764389	PMID=23383591	URL=https://pubmed.ncbi.nlm.nih.gov/23383591/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-161
 SOURCE	NS-SURVEILLANCE-055	TARGET_TITLE=Robustness of Eco-Epidemiological Capture-Recapture Parameter Estimates to Variation in Infection State Uncertainty.	TARGET_AUTHOR=Sarah Benhaiem	TARGET_YEAR=2018	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:30211175	TITLE=Robustness of Eco-Epidemiological Capture-Recapture Parameter Estimates to Variation in Infection State Uncertainty.	YEAR=2018	AUTHORS=Sarah Benhaiem; Lucile Marescot; Heribert Hofer; Marion L East; Jean-Dominique Lebreton; Stephanie Kramer-Schadt; Olivier Gimenez	DOI=10.3389/fvets.2018.00197	PMID=30211175	URL=https://pubmed.ncbi.nlm.nih.gov/30211175/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-55
+CAND	PMID:30211175	TITLE=Robustness of Eco-Epidemiological Capture-Recapture Parameter Estimates to Variation in Infection State Uncertainty.	YEAR=2018	AUTHORS=Sarah Benhaiem; Lucile Marescot; Heribert Hofer; Marion L East; Jean-Dominique Lebreton; Stephanie Kramer-Schadt; Olivier Gimenez	DOI=10.3389/fvets.2018.00197	PMID=30211175	URL=https://pubmed.ncbi.nlm.nih.gov/30211175/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-162
 SOURCE	NS-SURVEILLANCE-056	TARGET_TITLE=Comparison of autoregressive integrated moving average model and generalised regression neural network model for prediction of haemorrhagic fever with renal syndrome in China: a time-series study.	TARGET_AUTHOR=Ya-Wen Wang	TARGET_YEAR=2019	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:31209084	TITLE=Comparison of autoregressive integrated moving average model and generalised regression neural network model for prediction of haemorrhagic fever with renal syndrome in China: a time-series study.	YEAR=2019	AUTHORS=Ya-Wen Wang; Zhong-Zhou Shen; Yu Jiang	DOI=10.1136/bmjopen-2018-025773	PMID=31209084	URL=https://pubmed.ncbi.nlm.nih.gov/31209084/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-56
+CAND	PMID:31209084	TITLE=Comparison of autoregressive integrated moving average model and generalised regression neural network model for prediction of haemorrhagic fever with renal syndrome in China: a time-series study.	YEAR=2019	AUTHORS=Ya-Wen Wang; Zhong-Zhou Shen; Yu Jiang	DOI=10.1136/bmjopen-2018-025773	PMID=31209084	URL=https://pubmed.ncbi.nlm.nih.gov/31209084/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-163
 SOURCE	NS-SURVEILLANCE-057	TARGET_TITLE=Sepsis trends: increasing incidence and decreasing mortality, or changing denominator?	TARGET_AUTHOR=Chanu Rhee	TARGET_YEAR=2020	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:32148931	TITLE=Sepsis trends: increasing incidence and decreasing mortality, or changing denominator?	YEAR=2020	AUTHORS=Chanu Rhee; Michael Klompas	DOI=10.21037/jtd.2019.12.51	PMID=32148931	URL=https://pubmed.ncbi.nlm.nih.gov/32148931/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-57
+CAND	PMID:32148931	TITLE=Sepsis trends: increasing incidence and decreasing mortality, or changing denominator?	YEAR=2020	AUTHORS=Chanu Rhee; Michael Klompas	DOI=10.21037/jtd.2019.12.51	PMID=32148931	URL=https://pubmed.ncbi.nlm.nih.gov/32148931/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-164
 SOURCE	NS-SURVEILLANCE-058	TARGET_TITLE=Understanding theoretically the impact of reporting of disease cases in epidemiology.	TARGET_AUTHOR=Arni S R Srinivasa Rao	TARGET_YEAR=2012	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:22410318	TITLE=Understanding theoretically the impact of reporting of disease cases in epidemiology.	YEAR=2012	AUTHORS=Arni S R Srinivasa Rao	DOI=10.1016/j.jtbi.2012.02.026	PMID=22410318	URL=https://pubmed.ncbi.nlm.nih.gov/22410318/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-58
+CAND	PMID:22410318	TITLE=Understanding theoretically the impact of reporting of disease cases in epidemiology.	YEAR=2012	AUTHORS=Arni S R Srinivasa Rao	DOI=10.1016/j.jtbi.2012.02.026	PMID=22410318	URL=https://pubmed.ncbi.nlm.nih.gov/22410318/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-165
 SOURCE	NS-SURVEILLANCE-059	TARGET_TITLE=Nowcasting influenza epidemics using non-homogeneous hidden Markov models.	TARGET_AUTHOR=Baltazar Nunes	TARGET_YEAR=2013	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:23124850	TITLE=Nowcasting influenza epidemics using non-homogeneous hidden Markov models.	YEAR=2013	AUTHORS=Baltazar Nunes; Isabel Natário; M Lucília Carvalho	DOI=10.1002/sim.5670	PMID=23124850	URL=https://pubmed.ncbi.nlm.nih.gov/23124850/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-59
+CAND	PMID:23124850	TITLE=Nowcasting influenza epidemics using non-homogeneous hidden Markov models.	YEAR=2013	AUTHORS=Baltazar Nunes; Isabel Natário; M Lucília Carvalho	DOI=10.1002/sim.5670	PMID=23124850	URL=https://pubmed.ncbi.nlm.nih.gov/23124850/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-166
 SOURCE	NS-SURVEILLANCE-060	TARGET_TITLE=Biochemical phenotypes to discriminate microbial subpopulations and improve outbreak detection.	TARGET_AUTHOR=Alicia Galar	TARGET_YEAR=2013	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:24391936	TITLE=Biochemical phenotypes to discriminate microbial subpopulations and improve outbreak detection.	YEAR=2013	AUTHORS=Alicia Galar; Martin Kulldorff; Wallis Rudnick; Thomas F O'Brien; John Stelling	DOI=10.1371/journal.pone.0084313	PMID=24391936	URL=https://pubmed.ncbi.nlm.nih.gov/24391936/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-60
+CAND	PMID:24391936	TITLE=Biochemical phenotypes to discriminate microbial subpopulations and improve outbreak detection.	YEAR=2013	AUTHORS=Alicia Galar; Martin Kulldorff; Wallis Rudnick; Thomas F O'Brien; John Stelling	DOI=10.1371/journal.pone.0084313	PMID=24391936	URL=https://pubmed.ncbi.nlm.nih.gov/24391936/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-167
 SOURCE	NS-SURVEILLANCE-061	TARGET_TITLE=Bayesian inference in an extended SEIR model with nonparametric disease transmission rate: an application to the Ebola epidemic in Sierra Leone.	TARGET_AUTHOR=Gianluca Frasso	TARGET_YEAR=2016	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:27324411	TITLE=Bayesian inference in an extended SEIR model with nonparametric disease transmission rate: an application to the Ebola epidemic in Sierra Leone.	YEAR=2016	AUTHORS=Gianluca Frasso; Philippe Lambert	DOI=10.1093/biostatistics/kxw027	PMID=27324411	URL=https://pubmed.ncbi.nlm.nih.gov/27324411/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-61
+CAND	PMID:27324411	TITLE=Bayesian inference in an extended SEIR model with nonparametric disease transmission rate: an application to the Ebola epidemic in Sierra Leone.	YEAR=2016	AUTHORS=Gianluca Frasso; Philippe Lambert	DOI=10.1093/biostatistics/kxw027	PMID=27324411	URL=https://pubmed.ncbi.nlm.nih.gov/27324411/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-168
 SOURCE	NS-SURVEILLANCE-062	TARGET_TITLE=Partially latent class models for case-control studies of childhood pneumonia aetiology.	TARGET_AUTHOR=Zhenke Wu	TARGET_YEAR=2016	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:32327815	TITLE=Partially latent class models for case-control studies of childhood pneumonia aetiology.	YEAR=2016	AUTHORS=Zhenke Wu; Maria Deloria-Knoll; Laura L Hammitt; Scott L Zeger; Pneumonia Etiology Research for Child Health Core Team	DOI=10.1111/rssc.12101	PMID=32327815	URL=https://pubmed.ncbi.nlm.nih.gov/32327815/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-62
+CAND	PMID:32327815	TITLE=Partially latent class models for case-control studies of childhood pneumonia aetiology.	YEAR=2016	AUTHORS=Zhenke Wu; Maria Deloria-Knoll; Laura L Hammitt; Scott L Zeger; Pneumonia Etiology Research for Child Health Core Team	DOI=10.1111/rssc.12101	PMID=32327815	URL=https://pubmed.ncbi.nlm.nih.gov/32327815/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-169
 SOURCE	NS-SURVEILLANCE-063	TARGET_TITLE=Adverse events following school-based vaccination of girls with quadrivalent human papillomavirus vaccine in Slovenia, 2009 to 2013.	TARGET_AUTHOR=Maja Šubelj	TARGET_YEAR=2016	QUERY_COUNT=1	CANDIDATE_COUNT=1
-CAND	PMID:27103551	TITLE=Adverse events following school-based vaccination of girls with quadrivalent human papillomavirus vaccine in Slovenia, 2009 to 2013.	YEAR=2016	AUTHORS=Maja Šubelj; Veronika Učakar; Alenka Kraigher; Irena Klavs	DOI=10.2807/1560-7917.es.2016.21.14.30187	PMID=27103551	URL=https://pubmed.ncbi.nlm.nih.gov/27103551/	QUERY=SEARCH-20260719-LINEAGE-SURVEILLANCE-63
+CAND	PMID:27103551	TITLE=Adverse events following school-based vaccination of girls with quadrivalent human papillomavirus vaccine in Slovenia, 2009 to 2013.	YEAR=2016	AUTHORS=Maja Šubelj; Veronika Učakar; Alenka Kraigher; Irena Klavs	DOI=10.2807/1560-7917.es.2016.21.14.30187	PMID=27103551	URL=https://pubmed.ncbi.nlm.nih.gov/27103551/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-170
 SOURCE	NS-SURVEILLANCE-064	TARGET_TITLE=Prediction of post-vaccination Guillain-Barré syndrome using data from a passive surveillance system.	TARGET_AUTHOR=Chongliang Luo	TARGET_YEAR=2021	QUERY_COUNT=2	CANDIDATE_COUNT=1
-CAND	PMID:33533072	TITLE=Prediction of post-vaccination Guillain-Barré syndrome using data from a passive surveillance system.	YEAR=2021	AUTHORS=Chongliang Luo; Ying Jiang; Jingcheng Du; Jiayi Tong; Jing Huang; Vincent Lo Re; Susan S Ellenberg; Gregory A Poland; Cui Tao; Yong Chen	DOI=10.1002/pds.5196	PMID=33533072	URL=https://pubmed.ncbi.nlm.nih.gov/33533072/	QUERY=SEARCH-20260718-LINEAGE-SURVEILLANCE-64
+CAND	PMID:33533072	TITLE=Prediction of post-vaccination Guillain-Barré syndrome using data from a passive surveillance system.	YEAR=2021	AUTHORS=Chongliang Luo; Ying Jiang; Jingcheng Du; Jiayi Tong; Jing Huang; Vincent Lo Re; Susan S Ellenberg; Gregory A Poland; Cui Tao; Yong Chen	DOI=10.1002/pds.5196	PMID=33533072	URL=https://pubmed.ncbi.nlm.nih.gov/33533072/	QUERY=SEARCH-20260722-LINEAGE-SURVEILLANCE-172
 
 exec
 /bin/zsh -lc "BATCH='01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/identity_review_batches/identity_batch_08.json'; jq -r '.[] | select((.manifested_candidates|length) "'!= 1 or .source_to_resolve.title != .manifested_candidates[0].title or .source_to_resolve.year != .manifested_candidates[0].year or .source_to_resolve.first_author != (.manifested_candidates[0].authors_or_first_author|split(";")[0])) | [.named_source_id,.source_to_resolve.title,.manifested_candidates[0].title,.source_to_resolve.first_author,(.manifested_candidates[0].authors_or_first_author|split(";")[0]),.source_to_resolve.year,.manifested_candidates[0].year] | @tsv'"' \""'$BATCH"; jq -r '"'[length, ([.[]|.manifested_candidates|length]|add), ([.[]|select((.manifested_candidates|length)==0)]|length), ([.[]|select((.manifested_candidates|length)>1)]|length)]|@tsv' \""'$BATCH"' in /Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery

@@ -1,7 +1,7 @@
 {
   "active_conflicting_query_id_count": 0,
   "active_directory": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution",
-  "active_query_id_count": 513,
+  "active_query_id_count": 723,
   "active_registry_paths": [
     "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/LINEAGE_QUERY_REGISTRY.csv"
   ],
@@ -38,6 +38,12 @@
       "missing": 0
     },
     {
+      "archive": "superseded-by-semantic-repair",
+      "bad_sha": 0,
+      "manifest_entries": 196,
+      "missing": 0
+    },
+    {
       "archive": "superseded_id_collision_run",
       "bad_sha": 0,
       "manifest_entries": 885,
@@ -50,5 +56,6 @@
       "missing": 0
     }
   ],
-  "note": "Zero-adoption historical subruns retain original IDs and evidence in a sibling archive directory; they are excluded from active identity decisions and active verify-lineage closure."
+  "note": "Archived subruns are zero-adoption evidence and remain byte/SHA preserved outside active lineage decisions.",
+  "schema_version": 2
 }

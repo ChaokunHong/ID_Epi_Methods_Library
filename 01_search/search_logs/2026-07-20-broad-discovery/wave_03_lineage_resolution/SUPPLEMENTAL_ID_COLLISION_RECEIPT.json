@@ -1,16 +1,13 @@
 {
+  "active_namespace": "20260722",
+  "active_query_count": 723,
   "collision_count": 0,
-  "note": "The 20260718 token is a unique revision namespace; actual execution time is recorded by the native receipt. Four compound surnames were later corrected in the distinct 20260717 third-variant namespace and are disclosed in the lineage ledger.",
-  "query_syntax": "four longest informative title tokens plus actual first-author surname; validated 6/6 across-family miss probe v3",
-  "registries_compared": {
-    "active": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/LINEAGE_QUERY_REGISTRY.csv",
-    "failed": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/failed_exact_phrase_run/LINEAGE_QUERY_REGISTRY.csv",
-    "interrupted": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/interrupted_append_attempt/LINEAGE_QUERY_REGISTRY.csv",
-    "probe0": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/syntax_probe/LINEAGE_QUERY_REGISTRY.csv",
-    "probe1": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/miss_title_author_probe/LINEAGE_QUERY_REGISTRY.csv",
-    "probe2": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/miss_title_author_probe_v2/LINEAGE_QUERY_REGISTRY.csv",
-    "probe3": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/miss_title_author_probe_v3/LINEAGE_QUERY_REGISTRY.csv"
+  "note": "Legacy filename retained for continuity. All active base and supplemental variants now use their actual execution date.",
+  "query_variant_counts": {
+    "exact_title": 620,
+    "method_author_year": 5,
+    "title_first_author": 97,
+    "title_year": 1
   },
-  "supplemental_namespace": "20260718",
-  "supplemental_query_count": 73
+  "schema_version": 2
 }

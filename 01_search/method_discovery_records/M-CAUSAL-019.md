@@ -5,7 +5,7 @@
 - Verification state: discovery
 - Preliminary family: causal_policy
 - Canonical discovery label: Instrumental-variable designs
-- Known label variants: Instrumental-variable designs | instrumental_variables
+- Known label variants: None documented at discovery stage
 - Linked discovery paper IDs: P-2010-0090 | P-2012-0010 | P-2012-0184 | P-2013-0038 | P-2014-0104 | P-2015-0057 | P-2015-0065 | P-2016-0143 | P-2017-0106 | P-2017-0165 | P-2018-0051 | P-2018-0313 | P-2019-0070 | P-2019-0313 | P-2021-0021 | P-2021-0172 | P-2022-0359 | P-2022-0734 | P-2023-0164 | P-2023-0168 | P-2023-0640 | P-2023-0739 | P-2024-0614 | P-2024-0619 | P-2025-0246 | P-2025-0334 | P-2025-0818 | P-2026-0168
 - Discovery search IDs: SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01 | SEARCH-20260720-PUBMED-VENUE-CAUSAL-01
 - Author: task6-canonical-integrator
@@ -17,8 +17,9 @@
 Semantic review grouped 28 retained discovery records under this design concept after inspecting titles and complete available abstracts. This is a preliminary problem/method class only; no estimand, identification assumption, performance result, or software capability is verified.
 
 ## Lineage candidates
-- NS-CAUSAL-027 | role=authoritative_candidate | status=resolved_identity_role_unverified | identity=PMID:25051311 | searches=SEARCH-20260718-LINEAGE-CAUSAL-27|SEARCH-20260719-LINEAGE-CAUSAL-27 | URL=https://pubmed.ncbi.nlm.nih.gov/25051311/
-- NS-CAUSAL-028 | role=infectious_application | status=resolved_identity_role_unverified | identity=PMID:20159831 | searches=SEARCH-20260719-LINEAGE-CAUSAL-28 | URL=https://pubmed.ncbi.nlm.nih.gov/20159831/
+- NS-CAUSAL-027 | role=diagnostic | status=resolved_identity_role_unverified | identity=PMID:25051311 | searches=SEARCH-20260722-LINEAGE-CAUSAL-130|SEARCH-20260722-LINEAGE-CAUSAL-131 | URL=https://pubmed.ncbi.nlm.nih.gov/25051311/
+- NS-CAUSAL-028 | role=infectious_application | status=resolved_identity_role_unverified | identity=PMID:20159831 | searches=SEARCH-20260722-LINEAGE-CAUSAL-132 | URL=https://pubmed.ncbi.nlm.nih.gov/20159831/
+- NS-CAUSAL-103 | role=authoritative_candidate | status=resolved_identity_role_unverified | identity=PMID:27354709 | searches=SEARCH-20260722-LINEAGE-CAUSAL-222 | URL=https://pubmed.ncbi.nlm.nih.gov/27354709/
 
 All entries above are bibliographic discovery leads, not normalized authoritative relationships.
 
@@ -26,4 +27,4 @@ All entries above are bibliographic discovery leads, not normalized authoritativ
 The linked corpus contains these discovery record types: applied_seed=21, method_source=7. Eligibility came from the frozen infectious-disease methods-first search and semantic review. Public-data access, AMR relevance, LMIC relevance, and solo workload remain unevaluated.
 
 ## Evidence defects and next verification action
-Lineage identity has 0 unresolved lead(s), and every resolved identity still has an unverified bibliographic role. The next plan must inspect full-text methods, assumptions, estimands, diagnostics, limitations, corrections, implementation/reproduction resources, and authoritative-source status before creating any Stage 3 method card.
+Bibliographic identity has 0 unresolved selected lead(s); this count is not a lineage-completeness claim. The concept-level inspection closes all seven source-role cells: 3 queried and 4 not directly named in the assigned title/abstract evidence. Every resolved identity still has an unverified bibliographic role. The next plan must inspect full-text methods, assumptions, estimands, diagnostics, limitations, corrections, implementation/reproduction resources, and authoritative-source status before creating any Stage 3 method card.
