@@ -1,0 +1,419 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
+<PubmedArticleSet>
+<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Automated"><PMID Version="1">35187670</PMID><DateCompleted><Year>2022</Year><Month>07</Month><Day>01</Day></DateCompleted><DateRevised><Year>2022</Year><Month>07</Month><Day>29</Day></DateRevised><Article PubModel="Print-Electronic"><Journal><ISSN IssnType="Electronic">1539-6924</ISSN><JournalIssue CitedMedium="Internet"><Volume>42</Volume><Issue>6</Issue><PubDate><Year>2022</Year><Month>Jun</Month></PubDate></JournalIssue><Title>Risk analysis : an official publication of the Society for Risk Analysis</Title><ISOAbbreviation>Risk Anal</ISOAbbreviation></Journal><ArticleTitle>Co-designing and building an expert-elicited non-parametric Bayesian network model: demonstrating a methodology using a Bonamia Ostreae spread risk case study.</ArticleTitle><Pagination><StartPage>1235</StartPage><EndPage>1254</EndPage><MedlinePgn>1235-1254</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.1111/risa.13904</ELocationID><Abstract><AbstractText>The development and use of probabilistic models, particularly Bayesian networks (BN), to support risk-based decision making is well established. Striking an efficient balance between satisfying model complexity and ease of development requires continuous compromise. Codesign, wherein the structural content of the model is developed hand-in-hand with the experts who will be accountable for the parameter estimates, shows promise, as do so-called nonparametric Bayesian networks (NPBNs), which provide a light-touch approach to capturing complex relationships among nodes. We describe and demonstrate the process of codesigning, building, quantifying, and validating an NPBN model for emerging risks and the consequences of potential management decisions using structured expert judgment (SEJ). We develop a case study of the local spread of a marine pathogen, namely, Bonamia ostreae. The BN was developed through a series of semistructured workshops that incorporated extensive feedback from many experts. The model was then quantified with a combination of field and expert-elicited data. The IDEA protocol for SEJ was used in its hybrid (remote and face-to-face) form to elicit information about more than 100 parameters. This article focuses on the modeling and quantification process, the methodological challenges, and the way these were&#xa0;addressed.</AbstractText><CopyrightInformation>&#xa9; 2022 The Authors. Risk Analysis published by Wiley Periodicals LLC on behalf of Society for Risk Analysis.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Hanea</LastName><ForeName>Anca M</ForeName><Initials>AM</Initials><AffiliationInfo><Affiliation>Centre of Excellence for Biosecurity Risk Analysis, University of Melbourne, Parkville, Victoria, Australia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Hilton</LastName><ForeName>Zo&#xeb;</ForeName><Initials>Z</Initials><AffiliationInfo><Affiliation>Cawthron Institute, Nelson, New Zealand.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Knight</LastName><ForeName>Ben</ForeName><Initials>B</Initials><AffiliationInfo><Affiliation>Cawthron Institute, Nelson, New Zealand.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>P Robinson</LastName><ForeName>Andrew</ForeName><Initials>A</Initials><AffiliationInfo><Affiliation>Centre of Excellence for Biosecurity Risk Analysis, University of Melbourne, Parkville, Victoria, Australia.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2022</Year><Month>02</Month><Day>20</Day></ArticleDate></Article><MedlineJournalInfo><Country>United States</Country><MedlineTA>Risk Anal</MedlineTA><NlmUniqueID>8109978</NlmUniqueID><ISSNLinking>0272-4332</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D001499" MajorTopicYN="N">Bayes Theorem</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D041602" MajorTopicYN="Y">Haplosporida</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D007600" MajorTopicYN="N">Judgment</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D015233" MajorTopicYN="N">Models, Statistical</DescriptorName></MeshHeading></MeshHeadingList><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">Bayesian networks</Keyword><Keyword MajorTopicYN="N">expert elicitation</Keyword><Keyword MajorTopicYN="N">pathogens risk</Keyword><Keyword MajorTopicYN="N">uncertainty quantification</Keyword></KeywordList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="pubmed"><Year>2022</Year><Month>2</Month><Day>22</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2022</Year><Month>7</Month><Day>2</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2022</Year><Month>2</Month><Day>21</Day><Hour>6</Hour><Minute>9</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2022</Year><Month>7</Month><Day>22</Day></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">35187670</ArticleId><ArticleId IdType="pmc">PMC9303608</ArticleId><ArticleId IdType="doi">10.1111/risa.13904</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>
+
+Arzul, I.
+, 
+Gagnaire, B.
+, 
+Bond, C.
+, 
+Chollet, B.
+, 
+Morga, B.
+, 
+Ferrand, S.
+, 
+Robert, M.
+, &amp; 
+Renault, T.
+ (2009). Effects of temperature and salinity on the survival of <i>Bonamia ostreae</i>, a parasite infecting flat oysters <i>Ostrea edulis</i>
+. Diseases of Aquatic Organisms, 85(1), 67&#x2013;75.</Citation><ArticleIdList><ArticleId IdType="pubmed">19593935</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Arzul, I.
+, 
+Langlade, A.
+, 
+Chollet, B.
+, 
+Robert, M.
+, 
+Ferrand, S.
+, 
+Omnes, E.
+, 
+Lerond, S.
+, 
+Couraleau, Y.
+, 
+Joly, J.
+, &amp; 
+Francois, C.
+ (2011). Can the protozoan parasite <i>Bonamia ostreae</i> infect larvae of flat oysters <i>Ostrea edulis</i>?
+Veterinary Parasitology, 179(1&#x2010;3), 69&#x2013;76.</Citation><ArticleIdList><ArticleId IdType="pubmed">21334809</ArticleId></ArticleIdList></Reference><Reference><Citation>Ben&#x2010;Horin, T. , Burge, C. , Bushek, D. , Groner, M. , Proestou, D. , Huey, L. , Bidegain, G. , &amp; Carnegie, R. (2018). Intensive oyster aquaculture can reduce disease impacts on sympatric wild oysters. Aquaculture Environment Interactions, 10, 557&#x2013;567.</Citation></Reference><Reference><Citation>
+
+Bradley, T.
+, 
+Mercer, J.
+, 
+Humphrey, J.
+, 
+Moody, N.
+, &amp; 
+Hunnam, J.
+ (2020). 
+<i>Bonamia exitiosa</i> in farmed native oysters <i>Ostrea angasi</i> in Australia: Optimal epidemiological qPCR cut&#x2010;point and clinical disease risk factors. Diseases of Aquatic Organisms, 140, 151&#x2013;165.</Citation><ArticleIdList><ArticleId IdType="pubmed">32759473</ArticleId></ArticleIdList></Reference><Reference><Citation>Brown, S. (2011). Ecology and enhancement of the flat oyster Ostrea chilensis (Philippi, 1845) in central New Zealand. Phd., University of Canterbury.</Citation></Reference><Reference><Citation>
+
+Brown, S.
+, 
+Handley, S.
+, 
+Michael, K.
+, &amp; 
+Schiel, D.
+ (2010). Annual pattern of brooding and settlement in a population of the flat oyster <i>Ostrea chilensis</i> from central New Zealand. New Zealand Journal of Marine and Freshwater Research, 44(4), 217&#x2013;227.</Citation></Reference><Reference><Citation>Burgman, M. , Layman, H. , &amp; French, S. (2021). Eliciting model structures for multivariate probabilistic risk analysis. Frontiers in Applied Mathematics and Statistics, 7, 36.</Citation></Reference><Reference><Citation>
+
+Caceres&#x2010;Martinez, J.
+, 
+Robledo, J.
+, &amp; 
+Figueras, A.
+ (1995). Presence of <i>Bonamia</i> and its relation to age, growth rates and gonadal development of the flat oyster, <i>Ostrea edulis</i>, in the Ria de Vigo, Galicia (NW Spain). Aquaculture, 130(1), 15&#x2013;23.</Citation></Reference><Reference><Citation>Carnegie, R. , Arzul, I. , &amp; Bushek, D. (2016). Managing marine mollusc diseases in the context of regional and international commerce: Policy issues and emerging concerns. Philosophical Transactions of the Royal Society B&#x2010;Biological Sciences, 371(1689), 11.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4760145</ArticleId><ArticleId IdType="pubmed">26880834</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Carnegie, R. B.
+, 
+Stokes, N. A.
+, 
+Audemard, C.
+, 
+Bishop, M. J.
+, 
+Wilbur, A. E.
+, 
+Alphin, T. D.
+, 
+Posey, M. H.
+, 
+Peterson, C. H.
+, &amp; 
+Burreson, E. M.
+ (2008). Strong seasonality of <i>Bonamia</i> sp. infection and induced <i>Crassostrea ariakensis</i> mortality in Bogue and Masonboro Sounds, North Carolina, USA. Journal of Invertebrate Pathology, 98(3), 335&#x2013;343.</Citation><ArticleIdList><ArticleId IdType="pubmed">18455182</ArticleId></ArticleIdList></Reference><Reference><Citation>Charisse Farr, A. , Mengersen, K. , Ruggeri, F. , Simpson, D. , Wu, P. , &amp; Yarlagadda, P. (2020). Combining opinions for use in Bayesian networks: A measurement error approach. International Statistical Review, 88(2), 335&#x2013;353.</Citation></Reference><Reference><Citation>Colson, A. R. , &amp; Cooke, R. M. (2017). Cross validation for the classical model of structured expert judgement. Reliability Engineering and System Safety, 163, 109&#x2013;120.</Citation></Reference><Reference><Citation>Cooke, R. (1991). Experts in uncertainty: Opinion and subjective probability in science. Environmental ethics and science policy series. Oxford: Oxford University Press.</Citation></Reference><Reference><Citation>Cooke, R. , Kurowicka, D. , Hanea, A. , Morales&#x2010;Napoles, O. , Ababei, D. , Ale, B. , &amp; Roelen, A. (2007). Continuous/discrete non parametric Bayesian belief nets with UNICORN and UNINET. Proceedings of Mathematical Methods in Reliability, 1&#x2013;8.</Citation></Reference><Reference><Citation>
+
+Cranfield, H. J.
+, 
+Dunn, A.
+, 
+Doonan, I. J.
+, &amp; 
+Michael, K. P.
+ (2005). 
+<i>Bonamia exitiosa</i> epizootic in <i>Ostrea chilensis</i> from Foveaux Strait, southern New Zealand between 1986 and 1992. ICES Journal of Marine Science, 62(1), 3&#x2013;13.</Citation></Reference><Reference><Citation>
+
+Culloty, S.
+, 
+Cronin, M.
+, &amp; 
+Mulcahy, M.
+ (2001). An investigation into the relative resistance of Irish flat oysters <i>Ostrea edulis L</i>. to the parasite <i>Bonamia ostreae</i>
+. Aquaculture, 199(3&#x2010;4), 229&#x2013;244.</Citation></Reference><Reference><Citation>
+
+Culloty, S.
+, 
+Cronin, M.
+, &amp; 
+Mulcahy, M.
+ (2004). Potential resistance of a number of populations of the oyster <i>Ostrea edulis</i> to the parasite <i>Bonamia ostreae</i>
+. Aquaculture, 237(1&#x2010;4), 41&#x2013;58.</Citation></Reference><Reference><Citation>
+
+Culloty, S.
+, &amp; 
+Mulcahy, M.
+ (1996). Season&#x2010;, age&#x2010;, and sex&#x2010;related variation in the prevalence of bonamiasis in flat oysters (<i>Ostrea edulis L</i>.) on the south coast of Ireland. Aquaculture, 144(1&#x2010;3), 53&#x2013;63.</Citation></Reference><Reference><Citation>
+
+Culloty, S.
+, 
+Novoa, B.
+, 
+Pernas, M.
+, 
+Longshaw, M.
+, 
+Mulcahy, M.
+, 
+Feist, S.
+, &amp; 
+Figueras, A.
+ (1999). Susceptibility of a number of bivalve species to the protozoan parasite <i>Bonamia ostreae</i> and their ability to act as vectors for this parasite. Diseases of Aquatic Organisms, 37(1), 73&#x2013;80.</Citation></Reference><Reference><Citation>
+
+Diggles, B.
+, &amp; 
+Hine, P.
+ (2002). 
+<i>Bonamia exitiosus</i> epidemiology in Foveaux Strait oysters. Report, Final research report, OYS1999/01, Ministry of Fisheries. Unpublished report, National Institute of Water and Atmospheric Research.</Citation></Reference><Reference><Citation>
+
+Doonan, I.
+, 
+Cranfield, H.
+, &amp; 
+Michael, K.
+ (1994). Catastrophic reduction of the oyster, <i>Tiostrea chilensis</i> (Bivalvia: Ostreidae), in Foveaux Strait, New Zealand, due to infestation by the protistan <i>Bonamia</i> sp. New Zealand Journal of Marine and Freshwater Research, 28(4), 335&#x2013;344.</Citation></Reference><Reference><Citation>
+
+Doonan, I.
+, 
+Cranfield, H.
+, &amp; 
+Michael, K.
+ (1999). Analysis and modelling of <i>Bonamia</i> sp. epizootic data 1986&#x2010;1992 and estimation of critical density of infection. Report, Final Research Report OYS9701. Ministry of Fisheries, New Zealand. Unpublished Report, NIWA Library, Wellington.</Citation></Reference><Reference><Citation>Drescher, M. , &amp; Edwards, R. C. (2018). A systematic review of transparency in the methods of expert knowledge use. Journal of Applied Ecology, 56(2), 436&#x2013;449.</Citation></Reference><Reference><Citation>EFSA . (2014). Guidance on expert knowledge elicitation in food and feed safety risk assessment. European Food Safety Authority Journal, 12(6), Parma, Italy. 3734.</Citation></Reference><Reference><Citation>
+
+Engelsma, M. Y.
+, 
+Culloty, S. C.
+, 
+Lynch, S. A.
+, 
+Arzul, I.
+, &amp; 
+Carnegie, R. B.
+ (2014). 
+<i>Bonamia</i> parasites: A rapidly changing perspective on a genus of important mollusc pathogens. Diseases of Aquatic Organisms, 110(1&#x2013;2), 5&#x2013;23.</Citation><ArticleIdList><ArticleId IdType="pubmed">25060494</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Engelsma, M. Y.
+, 
+Kerkhoff, S.
+, 
+Roozenburg, I.
+, 
+Haenen, O. L. M.
+, 
+Van Gool, A.
+, 
+Sistermans, W.
+, 
+Wijnhoven, S.
+, &amp; 
+Hummel, H.
+ (2010). Epidemiology of <i>Bonamia ostreae</i> infecting european flat oysters ostrea edulis from Lake Grevelingen, The Netherlands. Marine Ecology Progress Series, 409, 131&#x2013;142.</Citation></Reference><Reference><Citation>
+
+Feng, C.
+, 
+Lin, X.
+, 
+Wang, F.
+, 
+Zhang, Y.
+, 
+Lv, J.
+, 
+Wang, C.
+, 
+Deng, J.
+, 
+Mei, L.
+, 
+Wu, S.
+, &amp; 
+Li, H.
+ (2013). Detection and characterization of <i>Bonamia ostreae</i> in <i>Ostrea edulis</i> imported to China. Diseases of Aquatic Organisms, 106(1), 85&#x2013;91.</Citation><ArticleIdList><ArticleId IdType="pubmed">24062556</ArticleId></ArticleIdList></Reference><Reference><Citation>French, S. (2012). Expert judgment, meta&#x2010;analysis and participatory risk analysis. Decision Analysis, 9(2), 119&#x2013;127.</Citation></Reference><Reference><Citation>French, S. (2021). From soft to hard elicitation. Journal of the Operational Research Society, 1&#x2013;17.</Citation></Reference><Reference><Citation>Hanea, A. , Hemming, V. , &amp; Nane, G. (2021). Uncertainty quantification with experts: Present status and research needs. Risk Analysis, 10.1111/risa.13718</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/risa.13718</ArticleId><ArticleId IdType="pubmed">33629402</ArticleId></ArticleIdList></Reference><Reference><Citation>Hanea, A. , Kurowicka, D. , &amp; Cooke, R. (2006). Hybrid method for quantifying and analyzing Bayesian belief nets. Quality and Reliability Engineering International, 22(6), 613&#x2013;729.</Citation></Reference><Reference><Citation>
+
+Hanea, A.
+, 
+McBride, M.
+, 
+Burgman, M.
+, 
+Wintle, B.
+, 
+Fidler, F.
+, 
+Flander, L.
+, 
+Mascaro, S.
+, &amp; 
+Manning, B.
+ (2016). 
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>I</mml:mi><mml:mrow><mml:mi>n</mml:mi><mml:mi>v</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>g</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi>D</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>s</mml:mi><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi>E</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi>A</mml:mi><mml:mrow><mml:mi>g</mml:mi><mml:mi>g</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>g</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> for structured expert judgement. International Journal of Forecasting, 33(1), 267&#x2013;279.</Citation></Reference><Reference><Citation>Hanea, A. , Morales&#x2010;Napoles, O. , &amp; Ababei, D. (2015). Non&#x2010;parametric Bayesian networks: Improving theory and reviewing applications. Reliability Engineering and System Safety, 144, 265&#x2013;284.</Citation></Reference><Reference><Citation>Hanea, A. , &amp; Nane, G. (2020). An in&#x2010;depth perspective on the classical model. In Hanea A., Nane G., Bedford T., &amp; French S. (Eds.), Expert judgment in risk and decision analysis. (225&#x2013;256). Springer, Cham: International Series in Operations Research &amp; Management Science.</Citation></Reference><Reference><Citation>
+
+Hellberg, H.
+, &amp; 
+Hopkins, K.
+ (2006). The surveillance and control programme for bonamiosis and marteiliosis in European flat oysters (<i>Ostrea edulis L</i>.) in Norway. Report, National Veterinary Institute, Norwegian Food Safety Authority.</Citation></Reference><Reference><Citation>Hemming, V. , Hanea, A. , Walshe, T. , &amp; Burgman, A. (2020). Weighting and aggregating expert ecological judgements. Ecological Applications, 30(4), e02075.</Citation><ArticleIdList><ArticleId IdType="pubmed">31971641</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Hervio, D.
+, 
+Bachere, E.
+, 
+Boulo, V.
+, 
+Cochennec, N.
+, 
+Vuillemin, V.
+, 
+Le Coguic, Y.
+, 
+Cailletaux, G.
+, 
+Mazurie, J.
+, &amp; 
+Mialhe, E.
+ (1995). Establishment of an experimental infection protocol for the flat oyster, <i>Ostrea edulis</i>, with the intrahaemocytic protozoan parasite, <i>Bonamia ostreae</i>: Application in the selection of parasite&#x2010;resistant oysters. Aquaculture, 132(3&#x2010;4), 183&#x2013;194.</Citation></Reference><Reference><Citation>Higham, N. J. (2002). Computing the nearest correlation matrix&#x2010;a problem from finance. IMA Journal of Numerical Analysis, 22(3), 329&#x2013;343.</Citation></Reference><Reference><Citation>
+
+Hine, P.
+ (1991). The annual pattern of infection by <i>Bonamia</i> sp. in New Zealand flat oysters, <i>Tiostrea chilensis</i>
+. Aquaculture, 93(3), 241&#x2013;251.</Citation></Reference><Reference><Citation>
+
+Hine, P.
+ (1996). The ecology of <i>Bonamia</i> and decline of bivalve molluscs. New Zealand Journal of Ecology, 20(1), 109&#x2013;116.</Citation></Reference><Reference><Citation>
+
+Hine, P. M.
+ (2002). Severe apicomplexan infection in the oyster <i>Ostrea chilensis</i>: A possible predisposing factor in bonamiosis. Diseases of Aquatic Organisms, 51(1), 49&#x2013;60.</Citation><ArticleIdList><ArticleId IdType="pubmed">12240970</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Howard, A.
+ (1995). The possibility of long distance transmission of <i>Bonamia</i> by fouling on boat hulls. Bulletin of the European Association of Fish Pathologists (United Kingdom), 14(6), 211&#x2013;212.</Citation></Reference><Reference><Citation>
+
+Jeffs, A.
+, 
+Dunphy, B.
+, &amp; 
+Wells, R.
+ (2002). Experimental effects of water temperature on the gametogenic development of broodstock in the oyster, <i>Ostrea chilensis</i>
+. Journal of Shellfish Research, 21(2), 743&#x2013;747.</Citation></Reference><Reference><Citation>
+
+Jeffs, A.
+, &amp; 
+Hickman, R.
+ (2000). Reproductive activity in a pre&#x2010;epizootic wild population of the Chilean oyster, <i>Ostrea chilensis</i>, from southern New Zealand. Aquaculture, 183(3&#x2010;4), 241&#x2013;253.</Citation></Reference><Reference><Citation>
+
+Jeffs, A. G.
+ (1998). Gametogenic cycle of the Chilean oyster, <i>Tiostrea chilensis</i> (Philippi, 1845), in north&#x2010;eastern New Zealand. Invertebrate Reproduction &amp; Development, 34(2&#x2010;3), 109&#x2013;116.</Citation></Reference><Reference><Citation>
+
+Jeffs, A. G.
+, 
+Hooker, S. H.
+, &amp; 
+Creese, R. G.
+ (1997). Annual pattern of settlement in populations of Chilean oysters <i>Tiostrea chilensis</i> (Philippi, 1845) from northern New Zealand. Journal of Shellfish Research, 16(1), 91&#x2013;95.</Citation></Reference><Reference><Citation>Joe, H. (1997). Multivariate models and dependence concepts. London: Chapman &amp; Hall.</Citation></Reference><Reference><Citation>Kevin, B. , &amp; Nicholson, A. (2009). Bayesian artificial intelligence. Boca Raton, FL: CRC Press.</Citation></Reference><Reference><Citation>Kullback, S. , &amp; Leibler, R. A. (1951). On information and sufficiency. The Annals of Mathematical Statistics, 22(1), 79&#x2013;86.</Citation></Reference><Reference><Citation>
+
+Laing, I.
+, 
+Dunn, P.
+, 
+Peeler, E.
+, 
+Feist, S.
+, &amp; 
+Longshaw, M.
+ (2014). Epidemiology of <i>Bonamia</i> in the UK, 1982 to 2012. Diseases of Aquatic Organisms, 110(1&#x2010;2), 101&#x2013;111.</Citation><ArticleIdList><ArticleId IdType="pubmed">25060502</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Lallias, D.
+, 
+Arzul, I.
+, 
+Heurtebise, S.
+, 
+Ferrand, S.
+, 
+Chollet, B.
+, 
+Robert, M.
+, 
+Beaumont, A.
+, 
+Boudry, P.
+, 
+Morga, B.
+, &amp; 
+Lapegue, S.
+ (2008). 
+<i>Bonamia ostreae</i>&#x2010;induced mortalities in one&#x2010;year old European flat oysters <i>Ostrea edulis</i>: Experimental infection by cohabitation challenge. Aquatic Living Resources, 21(4), 423&#x2013;439.</Citation></Reference><Reference><Citation>Lane, H. (2018). Studies on Bonamia parasites (Haplosporidia) in the New Zealand flat oyster Ostrea chilensis. Thesis. University of Otago.</Citation></Reference><Reference><Citation>
+
+Lane, H.
+, 
+Webb, S.
+, &amp; 
+Duncan, J.
+ (2016). 
+<i>Bonamia ostreae</i> in the New Zealand Oyster Ostrea Chilensis: A new host and geographic record for this haplosporidian parasite. Diseases of Aquatic Organisms, 118(1), 55&#x2013;63.</Citation><ArticleIdList><ArticleId IdType="pubmed">26865235</ArticleId></ArticleIdList></Reference><Reference><Citation>Lynch, A. , Wylde, S. , Armitage, D. , Mulcahy, M. F. , &amp; Culloty, S. C. (2005). The susceptibility of young, prespawning oysters, Ostreae edulis, to Bonamia ostreae. In 97th Annual Meeting of the National Shellfisheries Association (Vol. 24, p. 664). [Journal of Shellfish Research.].</Citation></Reference><Reference><Citation>
+
+Lynch, S.
+, 
+Abollo, E.
+, 
+Ramilo, A.
+, 
+Cao, A.
+, 
+Culloty, S.
+, &amp; 
+Villalba, A.
+ (2010). Observations raise the question if the Pacific oyster, <i>Crassostrea gigas</i>, can act as either a carrier or a reservoir for <i>B]onamia ostreae or Bonamia exitiosa</i>
+. Parasitology, 137(10), 1515&#x2013;1526.</Citation><ArticleIdList><ArticleId IdType="pubmed">20388237</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Lynch, S.
+, 
+Flannery, G.
+, 
+Hugh&#x2010;Jones, T.
+, 
+Hugh&#x2010;Jones, D.
+, &amp; 
+Culloty, S.
+ (2014). Thirty&#x2010;year history of Irish (Rossmore) <i>Ostrea edulis</i> selectively bred for disease resistance to <i>Bonamia ostreae</i>
+. Diseases of Aquatic Organisms, 110(1&#x2010;2), 113&#x2013;121.</Citation><ArticleIdList><ArticleId IdType="pubmed">25060503</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Madsen, L.
+, 
+Kamp, J.
+, &amp; 
+Mellergaard, S.
+ (2013). What can the Limfjord tell us about limiting factors for <i>Bonamia ostreae</i> in northern Europe?
+Bulletin of the European Association of Fish Pathologists, 33(5), 165&#x2013;169.</Citation></Reference><Reference><Citation>
+
+Martin, A.&#x2010;G.
+, 
+Gerard, A.
+, 
+Cochennec, N.
+, &amp; 
+Langlade, A.
+ (1993). Selecting flat oysters, <i>Ostrea edulis</i>, for survival against the parasite <i>Bonamia ostreae</i>: assessment of the resistance of a first selected generation. In <i>Bordeaux Aquaculture'92, EAS, European Aquaculture Society</i>, volume 18. European Aquaculture Society.</Citation></Reference><Reference><Citation>
+
+Mialhe, E.
+, 
+Bachere, E.
+, 
+Chagot, D.
+, &amp; 
+Grizel, H.
+ (1988). Isolation and purification of the protozoan <i>Bonamia ostreae</i> (Pichot et&#xa0;al. 1980), a parasite affecting the flat oyster <i>Ostrea edulis L</i>
+. Aquaculture, 71(4), 293&#x2013;299.</Citation></Reference><Reference><Citation>
+
+Michael, K. P.
+, 
+Forman, J.
+, 
+Hulston, D.
+, &amp; 
+Sutherland, J.
+ (2016). A survey of the Foveaux Strait oyster (<i>Ostrea chilensis</i>) population (OYU 5) in commercial fishery areas and the status of <i>Bonamia</i> (<i>Bonamia exitiosa</i>) in February 2016. Report, Ministry of Fisheries.</Citation></Reference><Reference><Citation>
+
+Montes, J.
+ (1991). Lag time for the infestation of flat oyster (<i>Ostrea edulis L</i>.) by <i>Bonamia ostreae</i> in estuaries of Galicia (NW Spain). Aquaculture, 93(3), 235&#x2013;239.</Citation></Reference><Reference><Citation>
+
+Montes, J.
+, 
+Ferro&#x2010;Soto, B.
+, 
+Conchas, R.
+, &amp; 
+Guerra, A.
+ (2003). Determining culture strategies in populations of the European flat oyster, <i>Ostrea edulis</i>, affected by bonamiosis. Aquaculture, 220(1), 175&#x2013;182.</Citation></Reference><Reference><Citation>Morales&#x2010;Napoles, O. , Hanea, A. , &amp; Worm, D. (2014). Experimental results about the assessments of conditional rank correlations by experts: Example with air pollution estimates. In Steenbergen R., van Gelder P., Miraglia S., &amp; Vrouwenvelde A. (Eds.), Safety, reliability and risk analysis: Beyond the horizon (pp. 1359&#x2013;1366). Boca Raton, FL: CRC Press.</Citation></Reference><Reference><Citation>
+
+Naciri&#x2010;Graven, Y.
+, 
+Martin, A.
+, 
+Baud, J.
+, 
+Renault, T.
+, &amp; 
+Gerard, A.
+ (1998). Selecting the flat oyster <i>Ostrea edulis</i> (L.) for survival when infected with the parasite <i>Bonamia ostreae</i>
+. Journal of Experimental Marine Biology and Ecology, 224(1), 91&#x2013;107.</Citation></Reference><Reference><Citation>
+NIWA
+. (2018). Monitoring <i>Bonamia ostreae</i> infection in dredge oysters (<i>Ostrea chilensis</i>) in September 2017, and the distribution of oysters in Paterson Inlet Stewart Island. Confidential unpublished document.</Citation></Reference><Reference><Citation>O'Hagan, A. (2019). Expert knowledge elicitation: Subjective but scientific. The American Statistician, 73(Suppl. 1), 69&#x2013;81.</Citation></Reference><Reference><Citation>OIE . (2018a). Infection with Bonamia exitiosa (Chapter 2.4.2, pp. 1&#x2013;12). OIE World Organisation for Animal Health.</Citation></Reference><Reference><Citation>OIE . (2018b). Infection with Bonamia ostreae (Chapter 2.4.3, pp. 1&#x2013;14). OIE World Organisation for Animal Health.</Citation></Reference><Reference><Citation>Pearl, J. (1988). Probabilistic reasoning in intelligent systems: Networks of plausible inference. San Mateo: Morgan Kaufman Publishers.</Citation></Reference><Reference><Citation>Poder, M. , Cahour, A. , &amp; Balouet, G. (1982). Hemocytic parasitosis in European oyster Ostrea edulis L.: Pathology and contamination. In Invertebrate pathology and microbial control; IIIrd International Colloquium on Invertebrate Pathology, XVth Annual Meeting, Society for Invertebrate Pathology, Brighton, England.</Citation></Reference><Reference><Citation>Pourret, O. , Na&#xef;m, P. , &amp; Marcot, B. (2008). Bayesian networks: A practical guide to applications. Chichester, West Sussex, UK: Wileys.</Citation></Reference><Reference><Citation>Quigley, J. , Wilson, K. , Walls, L. , &amp; Bedford, T. (2013). A Bayes linear Bayes method for estimation of correlated event rates. Risk Analysis, 33(12), 2209&#x2013;2224.</Citation><ArticleIdList><ArticleId IdType="pubmed">23551053</ArticleId></ArticleIdList></Reference><Reference><Citation>Smith, J. (2010). Bayesian decision analysis: Principles and practice. Cambridge: Cambridge University Press.</Citation></Reference><Reference><Citation>Stock, R. (2000). Brooding and larval biology of the flat oyster, Tiostrea chilensis. Master thesis. University of Otago.</Citation></Reference><Reference><Citation>
+
+Tige, G.
+, &amp; 
+Grizel, H.
+ (1984). Essai de contamination d'<i>Ostrea edulis</i> Linne par <i>Bonamia ostreae</i> (Pichot et&#xa0;al., 1979) en riviere de Crach (Morbinhan). Revue des Travaux de l'Institut des P&#xea;ches Maritimes, 46(4), 307&#x2013;314.</Citation></Reference><Reference><Citation>Weber, P. , Medina&#x2010;Oliva, G. , Simon, C. , &amp; Iung, B. (2010). Overview on Bayesian networks applications for dependability, risk analysis and maintenance areas. Engineering Applications of Artificial Intelligence, 25(4), 671&#x2013;682.</Citation></Reference><Reference><Citation>Werner, C. , Bedford, T. , Cooke, R. , Hanea, A. , &amp; Morales&#x2010;Napoles, O. (2017). Expert judgement for dependence in probabilistic modelling: A systematic literature review and future research directions. European Journal of Operational Research, 258(3), 801&#x2013;819.</Citation></Reference><Reference><Citation>Wilkerson, R. , &amp; Smith, J. (2020). Customised structural elicitation. In Hanea A., Nane G., Bedford T., &amp; French S. (Eds.), Expert judgment in risk and decision analysis. Cham: Springer, International Series in Operations Research &amp; Management Science.</Citation></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>

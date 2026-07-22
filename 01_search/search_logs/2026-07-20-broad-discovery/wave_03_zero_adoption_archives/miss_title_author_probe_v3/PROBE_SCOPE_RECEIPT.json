@@ -1,0 +1,13 @@
+{
+  "status": "zero_adoption_syntax_probe",
+  "revision": "v3_longest4_informative_tokens_plus_surname",
+  "query_ids": [
+    "SEARCH-20260714-LINEAGE-CAUSAL-07",
+    "SEARCH-20260714-LINEAGE-EVIDENCE-02",
+    "SEARCH-20260714-LINEAGE-FORECASTING-12",
+    "SEARCH-20260714-LINEAGE-SIMULATION-07",
+    "SEARCH-20260714-LINEAGE-SPATIAL-12",
+    "SEARCH-20260714-LINEAGE-SURVEILLANCE-12"
+  ],
+  "global_collision_count": 0
+}

@@ -1,0 +1,23 @@
+{
+  "assignment_input_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-001_RECORDS.csv",
+  "assignment_input_sha256": "e94a151cf3e8059d54bbfa64690eb5ff21ab8307e034951f95df330c87841a36",
+  "assignment_record_count": 675,
+  "batch_id": "CONCEPT-BATCH-001",
+  "concept_table_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-001.csv",
+  "concept_table_sha256": "4b10017e9a34bab461a10677563e2687a26e54f2471d215d0c316ec68ee31f89",
+  "first_label": "controlled_interrupted_time_series",
+  "last_label": "quasi_experimental_policy_evaluation",
+  "ordered_concept_labels": [
+    "controlled_interrupted_time_series",
+    "heterogeneity_robust_staggered_did",
+    "instrumental_variables",
+    "interrupted_time_series",
+    "difference_in_differences_event_study",
+    "marginal_structural_models",
+    "negative_controls",
+    "quasi_experimental_policy_evaluation"
+  ],
+  "row_count": 8,
+  "through_wave_02_index_path": "01_search/search_logs/2026-07-20-broad-discovery/global/candidates_through_wave_02.csv",
+  "through_wave_02_index_sha256": "fccb499f711bc7858f8f9ac1825d03877f169f3b80a5fcc9097e1390167102dd"
+}

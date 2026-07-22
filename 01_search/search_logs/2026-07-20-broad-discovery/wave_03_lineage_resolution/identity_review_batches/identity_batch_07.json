@@ -1,0 +1,1815 @@
+[
+  {
+    "named_source_id": "NS-SPATIAL-022",
+    "source_to_resolve": {
+      "method_label": "mobility_data_fusion_modeling",
+      "canonical_name": "Mobility data-fusion modeling",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:34705832",
+      "title": "Determining travel fluxes in epidemic areas.",
+      "first_author": "Daipeng Chen",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34705832/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-22",
+        "query_variant": "exact_title",
+        "query": "Determining[Title] AND travel[Title] AND fluxes[Title] AND epidemic[Title] AND areas[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-22",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:34705832",
+        "candidate_rank": "1",
+        "title": "Determining travel fluxes in epidemic areas.",
+        "year": "2021",
+        "authors_or_first_author": "Daipeng Chen; Yuyi Xue; Yanni Xiao",
+        "doi": "10.1371/journal.pcbi.1009473",
+        "pmid": "34705832",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34705832/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-023",
+    "source_to_resolve": {
+      "method_label": "mobility_data_fusion_modeling",
+      "canonical_name": "Mobility data-fusion modeling",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:42230614",
+      "title": "Uncovering latent urban mobility patterns via smart-card and survey data fusion.",
+      "first_author": "Khoa D Vo",
+      "year": "2026",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/42230614/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-23",
+        "query_variant": "exact_title",
+        "query": "Uncovering[Title] AND latent[Title] AND urban[Title] AND mobility[Title] AND patterns[Title] AND via[Title] AND smart[Title] AND card[Title] AND survey[Title] AND data[Title] AND fusion[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-23",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:42230614",
+        "candidate_rank": "1",
+        "title": "Uncovering latent urban mobility patterns via smart-card and survey data fusion.",
+        "year": "2026",
+        "authors_or_first_author": "Khoa D Vo; Seung Woo Ham; Mousumi Roy; Swapnil Mishra; Prateek Bansal",
+        "doi": "10.1038/s41467-026-73445-x",
+        "pmid": "42230614",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42230614/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-024",
+    "source_to_resolve": {
+      "method_label": "mobility_flow_generation_models",
+      "canonical_name": "Mobility flow generation and scaling models",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:34040209",
+      "title": "The universal visitation law of human mobility.",
+      "first_author": "Markus Schläpfer",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34040209/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-24",
+        "query_variant": "exact_title",
+        "query": "universal[Title] AND visitation[Title] AND law[Title] AND human[Title] AND mobility[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-24",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:34040209",
+        "candidate_rank": "1",
+        "title": "The universal visitation law of human mobility.",
+        "year": "2021",
+        "authors_or_first_author": "Markus Schläpfer; Lei Dong; Kevin O'Keeffe; Paolo Santi; Michael Szell; Hadrien Salat; Samuel Anklesaria; Mohammad Vazifeh; Carlo Ratti; Geoffrey B West",
+        "doi": "10.1038/s41586-021-03480-9",
+        "pmid": "34040209",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34040209/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-025",
+    "source_to_resolve": {
+      "method_label": "neural_network_predictive_models",
+      "canonical_name": "Neural-network predictive models",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:31474220",
+      "title": "A dynamic neural network model for predicting risk of Zika in real time.",
+      "first_author": "Mahmood Akhtar",
+      "year": "2019",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/31474220/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-25",
+        "query_variant": "exact_title",
+        "query": "dynamic[Title] AND neural[Title] AND network[Title] AND model[Title] AND predicting[Title] AND risk[Title] AND Zika[Title] AND real[Title] AND time[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-25",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:31474220",
+        "candidate_rank": "1",
+        "title": "A dynamic neural network model for predicting risk of Zika in real time.",
+        "year": "2019",
+        "authors_or_first_author": "Mahmood Akhtar; Moritz U G Kraemer; Lauren M Gardner",
+        "doi": "10.1186/s12916-019-1389-3",
+        "pmid": "31474220",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31474220/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-026",
+    "source_to_resolve": {
+      "method_label": "neural_network_predictive_models",
+      "canonical_name": "Neural-network predictive models",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:37153208",
+      "title": "Impacts of Daily Travel by Distances on the Spread of COVID-19: An Artificial Neural Network Model.",
+      "first_author": "Dothang Truong",
+      "year": "2023",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/37153208/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-26",
+        "query_variant": "exact_title",
+        "query": "Impacts[Title] AND Daily[Title] AND Travel[Title] AND Distances[Title] AND Spread[Title] AND COVID[Title] AND 19[Title] AND Artificial[Title] AND Neural[Title] AND Network[Title] AND Model[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-26",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:37153208",
+        "candidate_rank": "1",
+        "title": "Impacts of Daily Travel by Distances on the Spread of COVID-19: An Artificial Neural Network Model.",
+        "year": "2023",
+        "authors_or_first_author": "Dothang Truong; My D Truong",
+        "doi": "10.1177/03611981211066899",
+        "pmid": "37153208",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37153208/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-027",
+    "source_to_resolve": {
+      "method_label": "spatial_transmission_models",
+      "canonical_name": "Other spatial-transmission models",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:20335193",
+      "title": "A two-tiered model for simulating the ecological and evolutionary dynamics of rapidly evolving viruses, with an application to influenza.",
+      "first_author": "Katia Koelle",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20335193/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-27",
+        "query_variant": "exact_title",
+        "query": "two[Title] AND tiered[Title] AND model[Title] AND simulating[Title] AND ecological[Title] AND evolutionary[Title] AND dynamics[Title] AND rapidly[Title] AND evolving[Title] AND viruses[Title] AND application[Title] AND influenza[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-27",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:20335193",
+        "candidate_rank": "1",
+        "title": "A two-tiered model for simulating the ecological and evolutionary dynamics of rapidly evolving viruses, with an application to influenza.",
+        "year": "2010",
+        "authors_or_first_author": "Katia Koelle; Priya Khatri; Meredith Kamradt; Thomas B Kepler",
+        "doi": "10.1098/rsif.2010.0007",
+        "pmid": "20335193",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20335193/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-028",
+    "source_to_resolve": {
+      "method_label": "spatial_transmission_models",
+      "canonical_name": "Other spatial-transmission models",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:19864468",
+      "title": "Phylodynamics of HIV-1 from a phase-III AIDS vaccine trial in North America.",
+      "first_author": "Marcos Pérez-Losada",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/19864468/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-28",
+        "query_variant": "exact_title",
+        "query": "Phylodynamics[Title] AND HIV[Title] AND 1[Title] AND phase[Title] AND III[Title] AND AIDS[Title] AND vaccine[Title] AND trial[Title] AND North[Title] AND America[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-28",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:19864468",
+        "candidate_rank": "1",
+        "title": "Phylodynamics of HIV-1 from a phase-III AIDS vaccine trial in North America.",
+        "year": "2010",
+        "authors_or_first_author": "Marcos Pérez-Losada; David V Jobes; Faruk Sinangil; Keith A Crandall; David Posada; Phillip W Berman",
+        "doi": "10.1093/molbev/msp254",
+        "pmid": "19864468",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/19864468/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-029",
+    "source_to_resolve": {
+      "method_label": "pathogen_population_genomics_within_host_evolution",
+      "canonical_name": "Pathogen population genomics and within-host evolution",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:23300684",
+      "title": "SNP design from 454 sequencing of Podosphaera plantaginis transcriptome reveals a genetically diverse pathogen metapopulation with high levels of mixed-genotype infection.",
+      "first_author": "Charlotte Tollenaere",
+      "year": "2012",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/23300684/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-29",
+        "query_variant": "exact_title",
+        "query": "SNP[Title] AND design[Title] AND 454[Title] AND sequencing[Title] AND Podosphaera[Title] AND plantaginis[Title] AND transcriptome[Title] AND reveals[Title] AND genetically[Title] AND diverse[Title] AND pathogen[Title] AND metapopulation[Title] AND high[Title] AND levels[Title] AND mixed[Title] AND genotype[Title] AND infection[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-29",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:23300684",
+        "candidate_rank": "1",
+        "title": "SNP design from 454 sequencing of Podosphaera plantaginis transcriptome reveals a genetically diverse pathogen metapopulation with high levels of mixed-genotype infection.",
+        "year": "2012",
+        "authors_or_first_author": "Charlotte Tollenaere; Hanna Susi; Jussi Nokso-Koivisto; Patrik Koskinen; Ayco Tack; Petri Auvinen; Lars Paulin; Mikko J Frilander; Rainer Lehtonen; Anna-Liisa Laine",
+        "doi": "10.1371/journal.pone.0052492",
+        "pmid": "23300684",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23300684/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-030",
+    "source_to_resolve": {
+      "method_label": "pathogen_population_genomics_within_host_evolution",
+      "canonical_name": "Pathogen population genomics and within-host evolution",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:20819104",
+      "title": "Metapopulation structure of Vibrionaceae among coastal marine invertebrates.",
+      "first_author": "Sarah P Preheim",
+      "year": "2011",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20819104/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-30",
+        "query_variant": "exact_title",
+        "query": "Metapopulation[Title] AND structure[Title] AND Vibrionaceae[Title] AND coastal[Title] AND marine[Title] AND invertebrates[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-30",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:20819104",
+        "candidate_rank": "1",
+        "title": "Metapopulation structure of Vibrionaceae among coastal marine invertebrates.",
+        "year": "2011",
+        "authors_or_first_author": "Sarah P Preheim; Yan Boucher; Hans Wildschutte; Lawrence A David; Daniele Veneziano; Eric J Alm; Martin F Polz",
+        "doi": "10.1111/j.1462-2920.2010.02328.x",
+        "pmid": "20819104",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20819104/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-031",
+    "source_to_resolve": {
+      "method_label": "phylogenetic_contact_network_inference",
+      "canonical_name": "Phylogenetic and phylodynamic contact-network inference",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:21151699",
+      "title": "Contact heterogeneity and phylodynamics: how contact networks shape parasite evolutionary trees.",
+      "first_author": "Eamon B O'Dea",
+      "year": "2011",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/21151699/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260717-LINEAGE-SPATIAL-01",
+        "query_variant": "method_author_year",
+        "query": "(phylogenetic[Title/Abstract] OR phylodynamic[Title/Abstract]) AND contact network[Title/Abstract] AND O'Dea[Author] AND 2011[Date - Publication]"
+      },
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-31",
+        "query_variant": "title_first_author",
+        "query": "heterogeneity[Title] AND phylodynamics[Title] AND evolutionary[Title] AND networks[Title] AND Dea[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-31",
+        "query_variant": "exact_title",
+        "query": "Contact[Title] AND heterogeneity[Title] AND phylodynamics[Title] AND how[Title] AND networks[Title] AND shape[Title] AND parasite[Title] AND evolutionary[Title] AND trees[Title]"
+      }
+    ],
+    "manifested_candidates": []
+  },
+  {
+    "named_source_id": "NS-SPATIAL-032",
+    "source_to_resolve": {
+      "method_label": "phylogenetic_contact_network_inference",
+      "canonical_name": "Phylogenetic and phylodynamic contact-network inference",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:22993510",
+      "title": "Phylodynamic analysis of a viral infection network.",
+      "first_author": "Teiichiro Shiino",
+      "year": "2012",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/22993510/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-32",
+        "query_variant": "exact_title",
+        "query": "Phylodynamic[Title] AND analysis[Title] AND viral[Title] AND infection[Title] AND network[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-32",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:22993510",
+        "candidate_rank": "1",
+        "title": "Phylodynamic analysis of a viral infection network.",
+        "year": "2012",
+        "authors_or_first_author": "Teiichiro Shiino",
+        "doi": "10.3389/fmicb.2012.00278",
+        "pmid": "22993510",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22993510/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-033",
+    "source_to_resolve": {
+      "method_label": "phylogeography_genomic_diffusion",
+      "canonical_name": "Phylogeography and genomic diffusion",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:20203288",
+      "title": "Phylogeography takes a relaxed random walk in continuous space and time.",
+      "first_author": "Philippe Lemey",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20203288/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-33",
+        "query_variant": "exact_title",
+        "query": "Phylogeography[Title] AND takes[Title] AND relaxed[Title] AND random[Title] AND walk[Title] AND continuous[Title] AND space[Title] AND time[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-33",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:20203288",
+        "candidate_rank": "1",
+        "title": "Phylogeography takes a relaxed random walk in continuous space and time.",
+        "year": "2010",
+        "authors_or_first_author": "Philippe Lemey; Andrew Rambaut; John J Welch; Marc A Suchard",
+        "doi": "10.1093/molbev/msq067",
+        "pmid": "20203288",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20203288/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-034",
+    "source_to_resolve": {
+      "method_label": "phylogeography_genomic_diffusion",
+      "canonical_name": "Phylogeography and genomic diffusion",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:20394659",
+      "title": "Uncoordinated phylogeography of Borrelia burgdorferi and its tick vector, Ixodes scapularis.",
+      "first_author": "Parris T Humphrey",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20394659/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-34",
+        "query_variant": "title_first_author",
+        "query": "phylogeography[Title] AND Uncoordinated[Title] AND burgdorferi[Title] AND scapularis[Title] AND Humphrey[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-34",
+        "query_variant": "exact_title",
+        "query": "Uncoordinated[Title] AND phylogeography[Title] AND Borrelia[Title] AND burgdorferi[Title] AND its[Title] AND tick[Title] AND vector[Title] AND Ixodes[Title] AND scapularis[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-34",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:20394659",
+        "candidate_rank": "1",
+        "title": "Uncoordinated phylogeography of Borrelia burgdorferi and its tick vector, Ixodes scapularis.",
+        "year": "2010",
+        "authors_or_first_author": "Parris T Humphrey; Diane A Caporale; Dustin Brisson",
+        "doi": "10.1111/j.1558-5646.2010.01001.x",
+        "pmid": "20394659",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20394659/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-035",
+    "source_to_resolve": {
+      "method_label": "population_structure_aware_pangenome_analysis",
+      "canonical_name": "Population-structure-aware pangenome analysis",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:34559043",
+      "title": "Different evolutionary trends form the twilight zone of the bacterial pan-genome.",
+      "first_author": "Gal Horesh",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34559043/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-35",
+        "query_variant": "exact_title",
+        "query": "Different[Title] AND evolutionary[Title] AND trends[Title] AND form[Title] AND twilight[Title] AND zone[Title] AND bacterial[Title] AND pan[Title] AND genome[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-35",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:34559043",
+        "candidate_rank": "1",
+        "title": "Different evolutionary trends form the twilight zone of the bacterial pan-genome.",
+        "year": "2021",
+        "authors_or_first_author": "Gal Horesh; Alyce Taylor-Brown; Stephanie McGimpsey; Florent Lassalle; Jukka Corander; Eva Heinz; Nicholas R Thomson",
+        "doi": "10.1099/mgen.0.000670",
+        "pmid": "34559043",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34559043/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-036",
+    "source_to_resolve": {
+      "method_label": "public_health_implementation_networks",
+      "canonical_name": "Public-health implementation network systems",
+      "family": "spatial_transmission",
+      "source_role": "guidance",
+      "seed_candidate_key_for_context_only": "PMID:25254916",
+      "title": "Leveraging the laboratory response network model for the global health security agenda.",
+      "first_author": "Chris N Mangal",
+      "year": "2014",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/25254916/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-36",
+        "query_variant": "exact_title",
+        "query": "Leveraging[Title] AND laboratory[Title] AND response[Title] AND network[Title] AND model[Title] AND global[Title] AND health[Title] AND security[Title] AND agenda[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-36",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:25254916",
+        "candidate_rank": "1",
+        "title": "Leveraging the laboratory response network model for the global health security agenda.",
+        "year": "2014",
+        "authors_or_first_author": "Chris N Mangal; Lucy Maryogo-Robinson",
+        "doi": "10.1089/bsp.2014.0039",
+        "pmid": "25254916",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25254916/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-037",
+    "source_to_resolve": {
+      "method_label": "public_health_implementation_networks",
+      "canonical_name": "Public-health implementation network systems",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:38647091",
+      "title": "Development of a network model to implement the HPV vaccination coverage.",
+      "first_author": "Giovanni Guarducci",
+      "year": "2024",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/38647091/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-37",
+        "query_variant": "exact_title",
+        "query": "Development[Title] AND network[Title] AND model[Title] AND implement[Title] AND HPV[Title] AND vaccination[Title] AND coverage[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-37",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:38647091",
+        "candidate_rank": "1",
+        "title": "Development of a network model to implement the HPV vaccination coverage.",
+        "year": "2024",
+        "authors_or_first_author": "Giovanni Guarducci; Marinella Chiti; Dimitri Carlo Fattore; Raffaele Caldararo; Gabriele Messina; Paolo Filidei; Nicola Nante",
+        "doi": "10.7416/ai.2024.2630",
+        "pmid": "38647091",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38647091/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-038",
+    "source_to_resolve": {
+      "method_label": "reaction_diffusion_epidemic_models",
+      "canonical_name": "Reaction-diffusion epidemic models",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:21731655",
+      "title": "Travelling waves of a delayed SIR epidemic model with nonlinear incidence rate and spatial diffusion.",
+      "first_author": "Jing Yang",
+      "year": "2011",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/21731655/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-38",
+        "query_variant": "exact_title",
+        "query": "Travelling[Title] AND waves[Title] AND delayed[Title] AND SIR[Title] AND epidemic[Title] AND model[Title] AND nonlinear[Title] AND incidence[Title] AND rate[Title] AND spatial[Title] AND diffusion[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-38",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:21731655",
+        "candidate_rank": "1",
+        "title": "Travelling waves of a delayed SIR epidemic model with nonlinear incidence rate and spatial diffusion.",
+        "year": "2011",
+        "authors_or_first_author": "Jing Yang; Siyang Liang; Yi Zhang",
+        "doi": "10.1371/journal.pone.0021128",
+        "pmid": "21731655",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21731655/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-039",
+    "source_to_resolve": {
+      "method_label": "reaction_diffusion_epidemic_models",
+      "canonical_name": "Reaction-diffusion epidemic models",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:32362717",
+      "title": "Dynamics of an epidemic model with spatial diffusion.",
+      "first_author": "Tao Wang",
+      "year": "2014",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/32362717/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-39",
+        "query_variant": "exact_title",
+        "query": "Dynamics[Title] AND epidemic[Title] AND model[Title] AND spatial[Title] AND diffusion[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-39",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:38691213",
+        "candidate_rank": "1",
+        "title": "Threshold dynamics of a reaction-advection-diffusion schistosomiasis epidemic model with seasonality and spatial heterogeneity.",
+        "year": "2024",
+        "authors_or_first_author": "Peng Wu; Yurij Salmaniw; Xiunan Wang",
+        "doi": "10.1007/s00285-024-02097-6",
+        "pmid": "38691213",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38691213/"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-39",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:31499744",
+        "candidate_rank": "2",
+        "title": "Influence of spatial heterogeneous environment on long-term dynamics of a reaction-diffusion SVIR epidemic model with relaps.",
+        "year": "2019",
+        "authors_or_first_author": "Cheng-Cheng Zhu; Jiang Zhu; Xiao-Lan Liu",
+        "doi": "10.3934/mbe.2019295",
+        "pmid": "31499744",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31499744/"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-39",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:32362717",
+        "candidate_rank": "3",
+        "title": "Dynamics of an epidemic model with spatial diffusion.",
+        "year": "2014",
+        "authors_or_first_author": "Tao Wang",
+        "doi": "10.1016/j.physa.2014.04.028",
+        "pmid": "32362717",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32362717/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-040",
+    "source_to_resolve": {
+      "method_label": "self_exciting_point_processes",
+      "canonical_name": "Self-exciting spatiotemporal point processes",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:33746561",
+      "title": "A time-modulated Hawkes process to model the spread of COVID-19 and the impact of countermeasures.",
+      "first_author": "Michele Garetto",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/33746561/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-40",
+        "query_variant": "exact_title",
+        "query": "time[Title] AND modulated[Title] AND Hawkes[Title] AND process[Title] AND model[Title] AND spread[Title] AND COVID[Title] AND 19[Title] AND impact[Title] AND countermeasures[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-40",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:33746561",
+        "candidate_rank": "1",
+        "title": "A time-modulated Hawkes process to model the spread of COVID-19 and the impact of countermeasures.",
+        "year": "2021",
+        "authors_or_first_author": "Michele Garetto; Emilio Leonardi; Giovanni Luca Torrisi",
+        "doi": "10.1016/j.arcontrol.2021.02.002",
+        "pmid": "33746561",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33746561/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-041",
+    "source_to_resolve": {
+      "method_label": "self_exciting_point_processes",
+      "canonical_name": "Self-exciting spatiotemporal point processes",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:31395373",
+      "title": "Real-time predictions of the 2018-2019 Ebola virus disease outbreak in the Democratic Republic of the Congo using Hawkes point process models.",
+      "first_author": "J Daniel Kelly",
+      "year": "2019",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/31395373/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-41",
+        "query_variant": "exact_title",
+        "query": "Real[Title] AND time[Title] AND predictions[Title] AND 2018[Title] AND 2019[Title] AND Ebola[Title] AND virus[Title] AND disease[Title] AND outbreak[Title] AND Democratic[Title] AND Republic[Title] AND Congo[Title] AND using[Title] AND Hawkes[Title] AND point[Title] AND process[Title] AND models[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-41",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:31395373",
+        "candidate_rank": "1",
+        "title": "Real-time predictions of the 2018-2019 Ebola virus disease outbreak in the Democratic Republic of the Congo using Hawkes point process models.",
+        "year": "2019",
+        "authors_or_first_author": "J Daniel Kelly; Junhyung Park; Ryan J Harrigan; Nicole A Hoff; Sarita D Lee; Rae Wannier; Bernice Selo; Mathias Mossoko; Bathe Njoloko; Emile Okitolonda-Wemakoy; Placide Mbala-Kingebeni; George W Rutherford; Thomas B Smith; Steve Ahuka-Mundeke; Jean Jacques Muyembe-Tamfum; Anne W Rimoin; Frederic Paik Schoenberg",
+        "doi": "10.1016/j.epidem.2019.100354",
+        "pmid": "31395373",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31395373/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-042",
+    "source_to_resolve": {
+      "method_label": "sequence_similarity_network_models",
+      "canonical_name": "Sequence-similarity network models",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:30541438",
+      "title": "A nearest-neighbors network model for sequence data reveals new insight into genotype distribution of a pathogen.",
+      "first_author": "Helen N Catanese",
+      "year": "2018",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/30541438/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-42",
+        "query_variant": "title_first_author",
+        "query": "distribution[Title] AND neighbors[Title] AND sequence[Title] AND genotype[Title] AND Catanese[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-42",
+        "query_variant": "exact_title",
+        "query": "nearest[Title] AND neighbors[Title] AND network[Title] AND model[Title] AND sequence[Title] AND data[Title] AND reveals[Title] AND new[Title] AND insight[Title] AND into[Title] AND genotype[Title] AND distribution[Title] AND pathogen[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-42",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:30541438",
+        "candidate_rank": "1",
+        "title": "A nearest-neighbors network model for sequence data reveals new insight into genotype distribution of a pathogen.",
+        "year": "2018",
+        "authors_or_first_author": "Helen N Catanese; Kelly A Brayton; Assefaw H Gebremedhin",
+        "doi": "10.1186/s12859-018-2453-2",
+        "pmid": "30541438",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30541438/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-043",
+    "source_to_resolve": {
+      "method_label": "spatial_spatiotemporal_transmission_analyses",
+      "canonical_name": "Spatial and spatiotemporal transmission analyses",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:24612961",
+      "title": "The influenza pandemic of 1918-1919 in Sri Lanka: its demographic cost, timing, and propagation.",
+      "first_author": "Siddharth Chandra",
+      "year": "2014",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/24612961/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-43",
+        "query_variant": "title_first_author",
+        "query": "demographic[Title] AND propagation[Title] AND influenza[Title] AND pandemic[Title] AND Chandra[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-43",
+        "query_variant": "exact_title",
+        "query": "influenza[Title] AND pandemic[Title] AND 1918[Title] AND 1919[Title] AND Sri[Title] AND Lanka[Title] AND its[Title] AND demographic[Title] AND cost[Title] AND timing[Title] AND propagation[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-43",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:24612961",
+        "candidate_rank": "1",
+        "title": "The influenza pandemic of 1918-1919 in Sri Lanka: its demographic cost, timing, and propagation.",
+        "year": "2014",
+        "authors_or_first_author": "Siddharth Chandra; Dilshani Sarathchandra",
+        "doi": "10.1111/irv.12238",
+        "pmid": "24612961",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24612961/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-044",
+    "source_to_resolve": {
+      "method_label": "spatial_spatiotemporal_transmission_analyses",
+      "canonical_name": "Spatial and spatiotemporal transmission analyses",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:27884172",
+      "title": "Spatial distribution and trypanosome infection of tsetse flies in the sleeping sickness focus of Zimbabwe in Hurungwe District.",
+      "first_author": "William Shereni",
+      "year": "2016",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/27884172/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-44",
+        "query_variant": "exact_title",
+        "query": "Spatial[Title] AND distribution[Title] AND trypanosome[Title] AND infection[Title] AND tsetse[Title] AND flies[Title] AND sleeping[Title] AND sickness[Title] AND focus[Title] AND Zimbabwe[Title] AND Hurungwe[Title] AND District[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-44",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:27884172",
+        "candidate_rank": "1",
+        "title": "Spatial distribution and trypanosome infection of tsetse flies in the sleeping sickness focus of Zimbabwe in Hurungwe District.",
+        "year": "2016",
+        "authors_or_first_author": "William Shereni; Neil E Anderson; Learnmore Nyakupinda; Giuliano Cecchi",
+        "doi": "10.1186/s13071-016-1879-5",
+        "pmid": "27884172",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27884172/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-045",
+    "source_to_resolve": {
+      "method_label": "spatial_diffusion_models",
+      "canonical_name": "Spatial diffusion and spread models",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:27744095",
+      "title": "Estimating infectious disease transmission distances using the overall distribution of cases.",
+      "first_author": "Henrik Salje",
+      "year": "2016",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/27744095/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-45",
+        "query_variant": "title_first_author",
+        "query": "transmission[Title] AND distribution[Title] AND Estimating[Title] AND infectious[Title] AND Salje[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-45",
+        "query_variant": "exact_title",
+        "query": "Estimating[Title] AND infectious[Title] AND disease[Title] AND transmission[Title] AND distances[Title] AND using[Title] AND overall[Title] AND distribution[Title] AND cases[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-45",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:27744095",
+        "candidate_rank": "1",
+        "title": "Estimating infectious disease transmission distances using the overall distribution of cases.",
+        "year": "2016",
+        "authors_or_first_author": "Henrik Salje; Derek A T Cummings; Justin Lessler",
+        "doi": "10.1016/j.epidem.2016.10.001",
+        "pmid": "27744095",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27744095/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-046",
+    "source_to_resolve": {
+      "method_label": "spatial_diffusion_models",
+      "canonical_name": "Spatial diffusion and spread models",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:24630403",
+      "title": "Modelling the continental-scale spread of Schmallenberg virus in Europe: approaches and challenges.",
+      "first_author": "Simon Gubbins",
+      "year": "2014",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/24630403/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-46",
+        "query_variant": "exact_title",
+        "query": "Modelling[Title] AND continental[Title] AND scale[Title] AND spread[Title] AND Schmallenberg[Title] AND virus[Title] AND Europe[Title] AND approaches[Title] AND challenges[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-46",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:24630403",
+        "candidate_rank": "1",
+        "title": "Modelling the continental-scale spread of Schmallenberg virus in Europe: approaches and challenges.",
+        "year": "2014",
+        "authors_or_first_author": "Simon Gubbins; Jane Richardson; Matthew Baylis; Anthony J Wilson; José Cortiñas Abrahantes",
+        "doi": "10.1016/j.prevetmed.2014.02.004",
+        "pmid": "24630403",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24630403/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-047",
+    "source_to_resolve": {
+      "method_label": "spatial_hidden_burden_models",
+      "canonical_name": "Spatial models of hidden burden and cryptic spread",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:33327961",
+      "title": "Mapping the cryptic spread of the 2015-2016 global Zika virus epidemic.",
+      "first_author": "Haoyang Sun",
+      "year": "2020",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/33327961/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-47",
+        "query_variant": "exact_title",
+        "query": "Mapping[Title] AND cryptic[Title] AND spread[Title] AND 2015[Title] AND 2016[Title] AND global[Title] AND Zika[Title] AND virus[Title] AND epidemic[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-47",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:33327961",
+        "candidate_rank": "1",
+        "title": "Mapping the cryptic spread of the 2015-2016 global Zika virus epidemic.",
+        "year": "2020",
+        "authors_or_first_author": "Haoyang Sun; Borame L Dickens; Mark Jit; Alex R Cook; L Roman Carrasco",
+        "doi": "10.1186/s12916-020-01845-x",
+        "pmid": "33327961",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33327961/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-048",
+    "source_to_resolve": {
+      "method_label": "spatial_hidden_burden_models",
+      "canonical_name": "Spatial models of hidden burden and cryptic spread",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:34432805",
+      "title": "Estimating underreporting of leprosy in Brazil using a Bayesian approach.",
+      "first_author": "Guilherme L de Oliveira",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34432805/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-48",
+        "query_variant": "exact_title",
+        "query": "Estimating[Title] AND underreporting[Title] AND leprosy[Title] AND Brazil[Title] AND using[Title] AND Bayesian[Title] AND approach[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-48",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:34432805",
+        "candidate_rank": "1",
+        "title": "Estimating underreporting of leprosy in Brazil using a Bayesian approach.",
+        "year": "2021",
+        "authors_or_first_author": "Guilherme L de Oliveira; Juliane F Oliveira; Júlia M Pescarini; Roberto F S Andrade; Joilda S Nery; Maria Y Ichihara; Liam Smeeth; Elizabeth B Brickley; Maurício L Barreto; Gerson O Penna; Maria L F Penna; Mauro N Sanchez",
+        "doi": "10.1371/journal.pntd.0009700",
+        "pmid": "34432805",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34432805/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-049",
+    "source_to_resolve": {
+      "method_label": "spatial_regression_geostatistics",
+      "canonical_name": "Spatial regression and geostatistical models",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:40102783",
+      "title": "A flexible framework for local-level estimation of the effective reproductive number in geographic regions with sparse data.",
+      "first_author": "Md Sakhawat Hossain",
+      "year": "2025",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/40102783/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-49",
+        "query_variant": "exact_title",
+        "query": "flexible[Title] AND framework[Title] AND local[Title] AND level[Title] AND estimation[Title] AND effective[Title] AND reproductive[Title] AND number[Title] AND geographic[Title] AND regions[Title] AND sparse[Title] AND data[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-49",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:40162254",
+        "candidate_rank": "1",
+        "title": "A Flexible Framework for Local-Level Estimation of the Effective Reproductive Number in Geographic Regions with Sparse Data.",
+        "year": "2025",
+        "authors_or_first_author": "Md Sakhawat Hossain; Ravi Goyal; Natasha K Martin; Victor DeGruttola; Mohammad Mihrab Chowdhury; Christopher McMahan; Lior Rennert",
+        "doi": "10.1101/2024.11.06.24316859",
+        "pmid": "40162254",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40162254/"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-49",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:40102783",
+        "candidate_rank": "2",
+        "title": "A flexible framework for local-level estimation of the effective reproductive number in geographic regions with sparse data.",
+        "year": "2025",
+        "authors_or_first_author": "Md Sakhawat Hossain; Ravi Goyal; Natasha K Martin; Victor DeGruttola; Mohammad Mihrab Chowdhury; Christopher McMahan; Lior Rennert",
+        "doi": "10.1186/s12874-025-02525-1",
+        "pmid": "40102783",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40102783/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-050",
+    "source_to_resolve": {
+      "method_label": "spatial_regression_geostatistics",
+      "canonical_name": "Spatial regression and geostatistical models",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:24780387",
+      "title": "The spatial diffusion of norovirus epidemics over three seasons in Tokyo.",
+      "first_author": "S Inaida",
+      "year": "2015",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/24780387/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-50",
+        "query_variant": "exact_title",
+        "query": "spatial[Title] AND diffusion[Title] AND norovirus[Title] AND epidemics[Title] AND over[Title] AND three[Title] AND seasons[Title] AND Tokyo[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-50",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:24780387",
+        "candidate_rank": "1",
+        "title": "The spatial diffusion of norovirus epidemics over three seasons in Tokyo.",
+        "year": "2015",
+        "authors_or_first_author": "S Inaida; Y Shobugawa; S Matsuno; R Saito; H Suzuki",
+        "doi": "10.1017/s0950268814000697",
+        "pmid": "24780387",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24780387/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-051",
+    "source_to_resolve": {
+      "method_label": "spatial_risk_mapping_detection_adjusted",
+      "canonical_name": "Spatial risk mapping with detection/reporting adjustment",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:32312266",
+      "title": "Distance sampling for epidemiology: an interactive tool for estimating under-reporting of cases from clinic data.",
+      "first_author": "Luca Nelli",
+      "year": "2020",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/32312266/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-51",
+        "query_variant": "exact_title",
+        "query": "Distance[Title] AND sampling[Title] AND epidemiology[Title] AND interactive[Title] AND tool[Title] AND estimating[Title] AND under[Title] AND reporting[Title] AND cases[Title] AND clinic[Title] AND data[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-51",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:32312266",
+        "candidate_rank": "1",
+        "title": "Distance sampling for epidemiology: an interactive tool for estimating under-reporting of cases from clinic data.",
+        "year": "2020",
+        "authors_or_first_author": "Luca Nelli; Moussa Guelbeogo; Heather M Ferguson; Daouda Ouattara; Alfred Tiono; Sagnon N'Fale; Jason Matthiopoulos",
+        "doi": "10.1186/s12942-020-00209-1",
+        "pmid": "32312266",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32312266/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-052",
+    "source_to_resolve": {
+      "method_label": "spatial_risk_mapping_detection_adjusted",
+      "canonical_name": "Spatial risk mapping with detection/reporting adjustment",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:24551264",
+      "title": "Incorporating scale dependence in disease burden estimates: the case of human African trypanosomiasis in Uganda.",
+      "first_author": "Finola Hackett",
+      "year": "2014",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/24551264/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-52",
+        "query_variant": "exact_title",
+        "query": "Incorporating[Title] AND scale[Title] AND dependence[Title] AND disease[Title] AND burden[Title] AND estimates[Title] AND case[Title] AND human[Title] AND African[Title] AND trypanosomiasis[Title] AND Uganda[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-52",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:24551264",
+        "candidate_rank": "1",
+        "title": "Incorporating scale dependence in disease burden estimates: the case of human African trypanosomiasis in Uganda.",
+        "year": "2014",
+        "authors_or_first_author": "Finola Hackett; Lea Berrang Ford; Eric Fèvre; Pere Simarro",
+        "doi": "10.1371/journal.pntd.0002704",
+        "pmid": "24551264",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24551264/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-053",
+    "source_to_resolve": {
+      "method_label": "spillover_risk_mapping_models",
+      "canonical_name": "Spatial spillover-risk and hidden-burden models",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:29267276",
+      "title": "Quantifying the burden of vampire bat rabies in Peruvian livestock.",
+      "first_author": "Julio A Benavides",
+      "year": "2017",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/29267276/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-53",
+        "query_variant": "exact_title",
+        "query": "Quantifying[Title] AND burden[Title] AND vampire[Title] AND bat[Title] AND rabies[Title] AND Peruvian[Title] AND livestock[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-53",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:29267276",
+        "candidate_rank": "1",
+        "title": "Quantifying the burden of vampire bat rabies in Peruvian livestock.",
+        "year": "2017",
+        "authors_or_first_author": "Julio A Benavides; Elizabeth Rojas Paniagua; Katie Hampson; William Valderrama; Daniel G Streicker",
+        "doi": "10.1371/journal.pntd.0006105",
+        "pmid": "29267276",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29267276/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-054",
+    "source_to_resolve": {
+      "method_label": "spillover_risk_mapping_models",
+      "canonical_name": "Spatial spillover-risk and hidden-burden models",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:41323145",
+      "title": "Risk Mapping of African Swine Fever in Domestic Pigs and Wild Boars to Enhance Management and Surveillance in Asia.",
+      "first_author": "Nijiho Kawaguchi",
+      "year": "2025",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/41323145/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-54",
+        "query_variant": "exact_title",
+        "query": "Risk[Title] AND Mapping[Title] AND African[Title] AND Swine[Title] AND Fever[Title] AND Domestic[Title] AND Pigs[Title] AND Wild[Title] AND Boars[Title] AND Enhance[Title] AND Management[Title] AND Surveillance[Title] AND Asia[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-54",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:41323145",
+        "candidate_rank": "1",
+        "title": "Risk Mapping of African Swine Fever in Domestic Pigs and Wild Boars to Enhance Management and Surveillance in Asia.",
+        "year": "2025",
+        "authors_or_first_author": "Nijiho Kawaguchi; Cecilia Aguilar-Vega; Michihito Sasaki; Yasuko Orba; Hirofumi Sawa; José Manuel Sánchez-Vizcaíno; Norikazu Isoda; Jaime Bosch; Satoshi Ito",
+        "doi": "10.1155/tbed/8850856",
+        "pmid": "41323145",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41323145/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-055",
+    "source_to_resolve": {
+      "method_label": "spatial_reporting_heterogeneity_analyses",
+      "canonical_name": "Spatial transmission and reporting-heterogeneity analyses",
+      "family": "spatial_transmission",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:35068649",
+      "title": "Exploring the impact of under-reported cases on the COVID-19 spatiotemporal distributions using healthcare workers infection data.",
+      "first_author": "Peixiao Wang",
+      "year": "2022",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/35068649/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-55",
+        "query_variant": "exact_title",
+        "query": "Exploring[Title] AND impact[Title] AND under[Title] AND reported[Title] AND cases[Title] AND COVID[Title] AND 19[Title] AND spatiotemporal[Title] AND distributions[Title] AND using[Title] AND healthcare[Title] AND workers[Title] AND infection[Title] AND data[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-55",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:35068649",
+        "candidate_rank": "1",
+        "title": "Exploring the impact of under-reported cases on the COVID-19 spatiotemporal distributions using healthcare workers infection data.",
+        "year": "2022",
+        "authors_or_first_author": "Peixiao Wang; Tao Hu; Hongqiang Liu; Xinyan Zhu",
+        "doi": "10.1016/j.cities.2022.103593",
+        "pmid": "35068649",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35068649/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-056",
+    "source_to_resolve": {
+      "method_label": "spatial_reporting_heterogeneity_analyses",
+      "canonical_name": "Spatial transmission and reporting-heterogeneity analyses",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:38607900",
+      "title": "On the link between temperature and regional COVID-19 severity: Evidence from Italy.",
+      "first_author": "Vicente Rios",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/38607900/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-56",
+        "query_variant": "title_first_author",
+        "query": "temperature[Title] AND regional[Title] AND severity[Title] AND Evidence[Title] AND Rios[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-56",
+        "query_variant": "exact_title",
+        "query": "link[Title] AND between[Title] AND temperature[Title] AND regional[Title] AND COVID[Title] AND 19[Title] AND severity[Title] AND Evidence[Title] AND Italy[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SPATIAL-56",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:38607900",
+        "candidate_rank": "1",
+        "title": "On the link between temperature and regional COVID-19 severity: Evidence from Italy.",
+        "year": "2021",
+        "authors_or_first_author": "Vicente Rios; Lisa Gianmoena",
+        "doi": "10.1111/rsp3.12472",
+        "pmid": "38607900",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38607900/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SPATIAL-057",
+    "source_to_resolve": {
+      "method_label": "spatiotemporal_transmission_with_ascertainment_sensitivity",
+      "canonical_name": "Spatiotemporal transmission analyses with ascertainment sensitivity",
+      "family": "spatial_transmission",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:29357363",
+      "title": "Unreported cases in the 2014-2016 Ebola epidemic: Spatiotemporal variation, and implications for estimating transmission.",
+      "first_author": "Benjamin D Dalziel",
+      "year": "2018",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/29357363/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-57",
+        "query_variant": "exact_title",
+        "query": "Unreported[Title] AND cases[Title] AND 2014[Title] AND 2016[Title] AND Ebola[Title] AND epidemic[Title] AND Spatiotemporal[Title] AND variation[Title] AND implications[Title] AND estimating[Title] AND transmission[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SPATIAL-57",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:29357363",
+        "candidate_rank": "1",
+        "title": "Unreported cases in the 2014-2016 Ebola epidemic: Spatiotemporal variation, and implications for estimating transmission.",
+        "year": "2018",
+        "authors_or_first_author": "Benjamin D Dalziel; Max S Y Lau; Amanda Tiffany; Amanda McClelland; Jon Zelner; Jessica R Bliss; Bryan T Grenfell",
+        "doi": "10.1371/journal.pntd.0006161",
+        "pmid": "29357363",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29357363/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-001",
+    "source_to_resolve": {
+      "method_label": "alternative_surveillance_data_streams",
+      "canonical_name": "Alternative surveillance data streams",
+      "family": "surveillance_measurement",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:31984365",
+      "title": "Detecting reports of unsafe foods in consumer product reviews.",
+      "first_author": "Adyasha Maharana",
+      "year": "2019",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/31984365/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-01",
+        "query_variant": "exact_title",
+        "query": "Detecting[Title] AND reports[Title] AND unsafe[Title] AND foods[Title] AND consumer[Title] AND product[Title] AND reviews[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-01",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:31984365",
+        "candidate_rank": "1",
+        "title": "Detecting reports of unsafe foods in consumer product reviews.",
+        "year": "2019",
+        "authors_or_first_author": "Adyasha Maharana; Kunlin Cai; Joseph Hellerstein; Yulin Hswen; Michael Munsell; Valentina Staneva; Miki Verma; Cynthia Vint; Derry Wijaya; Elaine O Nsoesie",
+        "doi": "10.1093/jamiaopen/ooz030",
+        "pmid": "31984365",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31984365/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-002",
+    "source_to_resolve": {
+      "method_label": "alternative_surveillance_data_streams",
+      "canonical_name": "Alternative surveillance data streams",
+      "family": "surveillance_measurement",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:28079746",
+      "title": "Sentinel Surveillance for Expedited Partner Therapy Prescriptions Using Pharmacy Data, in 2 New York City Neighborhoods, 2015.",
+      "first_author": "Ebiere Okah",
+      "year": "2017",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/28079746/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-02",
+        "query_variant": "exact_title",
+        "query": "Sentinel[Title] AND Surveillance[Title] AND Expedited[Title] AND Partner[Title] AND Therapy[Title] AND Prescriptions[Title] AND Using[Title] AND Pharmacy[Title] AND Data[Title] AND 2[Title] AND New[Title] AND York[Title] AND City[Title] AND Neighborhoods[Title] AND 2015[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-02",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:28079746",
+        "candidate_rank": "1",
+        "title": "Sentinel Surveillance for Expedited Partner Therapy Prescriptions Using Pharmacy Data, in 2 New York City Neighborhoods, 2015.",
+        "year": "2017",
+        "authors_or_first_author": "Ebiere Okah; Vibhuti Arya; Meighan Rogers; Michelle Kim; Julia Ann Schillinger",
+        "doi": "10.1097/olq.0000000000000551",
+        "pmid": "28079746",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28079746/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-003",
+    "source_to_resolve": {
+      "method_label": "ascertainment_correction_hidden_burden",
+      "canonical_name": "Ascertainment correction and hidden-burden estimation",
+      "family": "surveillance_measurement",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:25768925",
+      "title": "Use of surveillance data on HIV diagnoses with HIV-related symptoms to estimate the number of people living with undiagnosed HIV in need of antiretroviral therapy.",
+      "first_author": "Rebecca K Lodwick",
+      "year": "2015",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/25768925/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-03",
+        "query_variant": "exact_title",
+        "query": "Use[Title] AND surveillance[Title] AND data[Title] AND HIV[Title] AND diagnoses[Title] AND related[Title] AND symptoms[Title] AND estimate[Title] AND number[Title] AND people[Title] AND living[Title] AND undiagnosed[Title] AND need[Title] AND antiretroviral[Title] AND therapy[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-03",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:25768925",
+        "candidate_rank": "1",
+        "title": "Use of surveillance data on HIV diagnoses with HIV-related symptoms to estimate the number of people living with undiagnosed HIV in need of antiretroviral therapy.",
+        "year": "2015",
+        "authors_or_first_author": "Rebecca K Lodwick; Fumiyo Nakagawa; Ard van Sighem; Caroline A Sabin; Andrew N Phillips",
+        "doi": "10.1371/journal.pone.0121992",
+        "pmid": "25768925",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25768925/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-004",
+    "source_to_resolve": {
+      "method_label": "ascertainment_correction_hidden_burden",
+      "canonical_name": "Ascertainment correction and hidden-burden estimation",
+      "family": "surveillance_measurement",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:25103518",
+      "title": "Burden of childhood tuberculosis in 22 high-burden countries: a mathematical modelling study.",
+      "first_author": "Peter J Dodd",
+      "year": "2014",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/25103518/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-04",
+        "query_variant": "exact_title",
+        "query": "Burden[Title] AND childhood[Title] AND tuberculosis[Title] AND 22[Title] AND high[Title] AND countries[Title] AND mathematical[Title] AND modelling[Title] AND study[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-04",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:25103518",
+        "candidate_rank": "1",
+        "title": "Burden of childhood tuberculosis in 22 high-burden countries: a mathematical modelling study.",
+        "year": "2014",
+        "authors_or_first_author": "Peter J Dodd; Elizabeth Gardiner; Renia Coghlan; James A Seddon",
+        "doi": "10.1016/s2214-109x(14)70245-1",
+        "pmid": "25103518",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25103518/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-005",
+    "source_to_resolve": {
+      "method_label": "auxiliary_signal_nowcasting",
+      "canonical_name": "Auxiliary-signal nowcasting",
+      "family": "surveillance_measurement",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:26064532",
+      "title": "Adaptive nowcasting of influenza outbreaks using Google searches.",
+      "first_author": "Tobias Preis",
+      "year": "2014",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/26064532/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-05",
+        "query_variant": "exact_title",
+        "query": "Adaptive[Title] AND nowcasting[Title] AND influenza[Title] AND outbreaks[Title] AND using[Title] AND Google[Title] AND searches[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-05",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:26064532",
+        "candidate_rank": "1",
+        "title": "Adaptive nowcasting of influenza outbreaks using Google searches.",
+        "year": "2014",
+        "authors_or_first_author": "Tobias Preis; Helen Susannah Moat",
+        "doi": "10.1098/rsos.140095",
+        "pmid": "26064532",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26064532/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-006",
+    "source_to_resolve": {
+      "method_label": "auxiliary_signal_nowcasting",
+      "canonical_name": "Auxiliary-signal nowcasting",
+      "family": "surveillance_measurement",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:38484539",
+      "title": "Web search volume as a near-real-time complementary surveillance tool of tick-borne encephalitis (TBE) in Italy.",
+      "first_author": "Alexander Domnich",
+      "year": "2024",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/38484539/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-06",
+        "query_variant": "exact_title",
+        "query": "Web[Title] AND search[Title] AND volume[Title] AND near[Title] AND real[Title] AND time[Title] AND complementary[Title] AND surveillance[Title] AND tool[Title] AND tick[Title] AND borne[Title] AND encephalitis[Title] AND TBE[Title] AND Italy[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-06",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:38484539",
+        "candidate_rank": "1",
+        "title": "Web search volume as a near-real-time complementary surveillance tool of tick-borne encephalitis (TBE) in Italy.",
+        "year": "2024",
+        "authors_or_first_author": "Alexander Domnich; Allegra Ferrari; Matilde Ogliastro; Andrea Orsi; Giancarlo Icardi",
+        "doi": "10.1016/j.ttbdis.2024.102332",
+        "pmid": "38484539",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38484539/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-007",
+    "source_to_resolve": {
+      "method_label": "burden_estimation_with_underreporting_adjustment",
+      "canonical_name": "Burden estimation with underreporting adjustment",
+      "family": "surveillance_measurement",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:36428010",
+      "title": "Magnitude of COVID-19 deaths relative to other leading causes of death: a global analysis.",
+      "first_author": "Eunice Y S Chan",
+      "year": "2022",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/36428010/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-07",
+        "query_variant": "exact_title",
+        "query": "Magnitude[Title] AND COVID[Title] AND 19[Title] AND deaths[Title] AND relative[Title] AND other[Title] AND leading[Title] AND causes[Title] AND death[Title] AND global[Title] AND analysis[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-07",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:36428010",
+        "candidate_rank": "1",
+        "title": "Magnitude of COVID-19 deaths relative to other leading causes of death: a global analysis.",
+        "year": "2022",
+        "authors_or_first_author": "Eunice Y S Chan; Davy Cheng; Janet Martin",
+        "doi": "10.1136/bmjopen-2021-049689",
+        "pmid": "36428010",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/36428010/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-008",
+    "source_to_resolve": {
+      "method_label": "burden_estimation_with_underreporting_adjustment",
+      "canonical_name": "Burden estimation with underreporting adjustment",
+      "family": "surveillance_measurement",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:28093542",
+      "title": "Disease Burden of Dengue in the Philippines: Adjusting for Underreporting by Comparing Active and Passive Dengue Surveillance in Punta Princesa, Cebu City.",
+      "first_author": "Eduardo A Undurraga",
+      "year": "2017",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/28093542/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-08",
+        "query_variant": "exact_title",
+        "query": "Disease[Title] AND Burden[Title] AND Dengue[Title] AND Philippines[Title] AND Adjusting[Title] AND Underreporting[Title] AND Comparing[Title] AND Active[Title] AND Passive[Title] AND Surveillance[Title] AND Punta[Title] AND Princesa[Title] AND Cebu[Title] AND City[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-08",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:28093542",
+        "candidate_rank": "1",
+        "title": "Disease Burden of Dengue in the Philippines: Adjusting for Underreporting by Comparing Active and Passive Dengue Surveillance in Punta Princesa, Cebu City.",
+        "year": "2017",
+        "authors_or_first_author": "Eduardo A Undurraga; Frances E Edillo; Jonathan Neil V Erasmo; Maria Theresa P Alera; In-Kyu Yoon; Francisco M Largo; Donald S Shepard",
+        "doi": "10.4269/ajtmh.16-0488",
+        "pmid": "28093542",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28093542/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-009",
+    "source_to_resolve": {
+      "method_label": "surveillance_bias_burden_reconstruction",
+      "canonical_name": "Burden reconstruction and under-ascertainment estimation",
+      "family": "surveillance_measurement",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:33407173",
+      "title": "Quantifying the under-reporting of uncorrelated longitudal data: the genital warts example.",
+      "first_author": "David Moriña",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/33407173/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-09",
+        "query_variant": "exact_title",
+        "query": "Quantifying[Title] AND under[Title] AND reporting[Title] AND uncorrelated[Title] AND longitudal[Title] AND data[Title] AND genital[Title] AND warts[Title] AND example[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-09",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:33407173",
+        "candidate_rank": "1",
+        "title": "Quantifying the under-reporting of uncorrelated longitudal data: the genital warts example.",
+        "year": "2021",
+        "authors_or_first_author": "David Moriña; Amanda Fernández-Fontelo; Alejandra Cabaña; Pedro Puig; Laura Monfil; Maria Brotons; Mireia Diaz",
+        "doi": "10.1186/s12874-020-01188-4",
+        "pmid": "33407173",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/33407173/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-010",
+    "source_to_resolve": {
+      "method_label": "surveillance_bias_burden_reconstruction",
+      "canonical_name": "Burden reconstruction and under-ascertainment estimation",
+      "family": "surveillance_measurement",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:32083145",
+      "title": "Clinical Epidemiology of 7126 Melioidosis Patients in Thailand and the Implications for a National Notifiable Diseases Surveillance System.",
+      "first_author": "Viriya Hantrakun",
+      "year": "2019",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/32083145/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-10",
+        "query_variant": "exact_title",
+        "query": "Clinical[Title] AND Epidemiology[Title] AND 7126[Title] AND Melioidosis[Title] AND Patients[Title] AND Thailand[Title] AND Implications[Title] AND National[Title] AND Notifiable[Title] AND Diseases[Title] AND Surveillance[Title] AND System[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-10",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:32083145",
+        "candidate_rank": "1",
+        "title": "Clinical Epidemiology of 7126 Melioidosis Patients in Thailand and the Implications for a National Notifiable Diseases Surveillance System.",
+        "year": "2019",
+        "authors_or_first_author": "Viriya Hantrakun; Somkid Kongyu; Preeyarach Klaytong; Sittikorn Rongsumlee; Nicholas P J Day; Sharon J Peacock; Soawapak Hinjoy; Direk Limmathurotsakul",
+        "doi": "10.1093/ofid/ofz498",
+        "pmid": "32083145",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/32083145/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-011",
+    "source_to_resolve": {
+      "method_label": "capture_recapture",
+      "canonical_name": "Capture-recapture estimation",
+      "family": "surveillance_measurement",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:21041629",
+      "title": "Exposing malaria in-host diversity and estimating population diversity by capture-recapture using massively parallel pyrosequencing.",
+      "first_author": "Jonathan J Juliano",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/21041629/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-11",
+        "query_variant": "exact_title",
+        "query": "Exposing[Title] AND malaria[Title] AND host[Title] AND diversity[Title] AND estimating[Title] AND population[Title] AND capture[Title] AND recapture[Title] AND using[Title] AND massively[Title] AND parallel[Title] AND pyrosequencing[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-11",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:21041629",
+        "candidate_rank": "1",
+        "title": "Exposing malaria in-host diversity and estimating population diversity by capture-recapture using massively parallel pyrosequencing.",
+        "year": "2010",
+        "authors_or_first_author": "Jonathan J Juliano; Kimberly Porter; Victor Mwapasa; Rithy Sem; William O Rogers; Frédéric Ariey; Chansuda Wongsrichanalai; Andrew Read; Steven R Meshnick",
+        "doi": "10.1073/pnas.1007068107",
+        "pmid": "21041629",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21041629/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-012",
+    "source_to_resolve": {
+      "method_label": "capture_recapture",
+      "canonical_name": "Capture-recapture estimation",
+      "family": "surveillance_measurement",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:20227137",
+      "title": "Disease burden of prosthetic joint infections after hip and knee joint replacement in Finland during 1999-2004: capture-recapture estimation.",
+      "first_author": "K Huotari",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20227137/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-12",
+        "query_variant": "title_first_author",
+        "query": "replacement[Title] AND prosthetic[Title] AND infections[Title] AND estimation[Title] AND Huotari[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-12",
+        "query_variant": "exact_title",
+        "query": "Disease[Title] AND burden[Title] AND prosthetic[Title] AND joint[Title] AND infections[Title] AND after[Title] AND hip[Title] AND knee[Title] AND replacement[Title] AND Finland[Title] AND during[Title] AND 1999[Title] AND 2004[Title] AND capture[Title] AND recapture[Title] AND estimation[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-SURVEILLANCE-12",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:20227137",
+        "candidate_rank": "1",
+        "title": "Disease burden of prosthetic joint infections after hip and knee joint replacement in Finland during 1999-2004: capture-recapture estimation.",
+        "year": "2010",
+        "authors_or_first_author": "K Huotari; O Lyytikäinen; J Ollgren; M J Virtanen; S Seitsalo; R Palonen; P Rantanen; Hospital Infection Surveillance Team",
+        "doi": "10.1016/j.jhin.2009.10.029",
+        "pmid": "20227137",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20227137/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-013",
+    "source_to_resolve": {
+      "method_label": "hidden_population_capture_recapture",
+      "canonical_name": "Capture-recapture for hidden-population size estimation",
+      "family": "surveillance_measurement",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:26258908",
+      "title": "Estimating the Size of Hidden Populations Using Respondent-driven Sampling Data: Case Examples from Morocco.",
+      "first_author": "Lisa G Johnston",
+      "year": "2015",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/26258908/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-13",
+        "query_variant": "exact_title",
+        "query": "Estimating[Title] AND Size[Title] AND Hidden[Title] AND Populations[Title] AND Using[Title] AND Respondent[Title] AND driven[Title] AND Sampling[Title] AND Data[Title] AND Case[Title] AND Examples[Title] AND Morocco[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-13",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:26258908",
+        "candidate_rank": "1",
+        "title": "Estimating the Size of Hidden Populations Using Respondent-driven Sampling Data: Case Examples from Morocco.",
+        "year": "2015",
+        "authors_or_first_author": "Lisa G Johnston; Katherine R McLaughlin; Houssine El Rhilani; Amina Latifi; Abdalla Toufik; Aziza Bennani; Kamal Alami; Boutaina Elomari; Mark S Handcock",
+        "doi": "10.1097/ede.0000000000000362",
+        "pmid": "26258908",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26258908/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-SURVEILLANCE-014",
+    "source_to_resolve": {
+      "method_label": "hidden_population_capture_recapture",
+      "canonical_name": "Capture-recapture for hidden-population size estimation",
+      "family": "surveillance_measurement",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:24689319",
+      "title": "Estimating the number of male sex workers with the capture-recapture technique in Nigeria.",
+      "first_author": "Sylvia B Adebajo",
+      "year": "2013",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/24689319/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-14",
+        "query_variant": "exact_title",
+        "query": "Estimating[Title] AND number[Title] AND male[Title] AND sex[Title] AND workers[Title] AND capture[Title] AND recapture[Title] AND technique[Title] AND Nigeria[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-SURVEILLANCE-14",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:24689319",
+        "candidate_rank": "1",
+        "title": "Estimating the number of male sex workers with the capture-recapture technique in Nigeria.",
+        "year": "2013",
+        "authors_or_first_author": "Sylvia B Adebajo; George I Eluwa; Jack U Tocco; Babatunde A Ahonsi; Lolade Y Abiodun; Oliver A Anene; Dennis O Akpona; Andrew S Karlyn; Scott Kellerman",
+        "doi": "",
+        "pmid": "24689319",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24689319/"
+      }
+    ]
+  }
+]

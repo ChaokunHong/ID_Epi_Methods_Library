@@ -1,0 +1,41 @@
+{
+  "algorithm": "SHA256",
+  "files": [
+    {
+      "path": "LINEAGE_QUERY_REGISTRY.csv",
+      "sha256": "0dc94a3b203a5b4739fec70504aa6aa0f32c72788899d427883d48c027129fd3"
+    },
+    {
+      "path": "crossref_candidates.csv",
+      "sha256": "64a113a8c253204b422d1687062430cfa1a8c2a49a62774672f61b5d59c2a2d3"
+    },
+    {
+      "path": "pubmed_lineage_candidates.csv",
+      "sha256": "4f709d750b9aaa36105e1fb6144a741853ea37c79e38abd1956d4aea22d4994a"
+    },
+    {
+      "path": "raw/SEARCH-20260716-LINEAGE-CAUSAL-07.esearch.json",
+      "sha256": "cafee7563b99f79e4e43a82d94ce7c5ad5ed2d13197ea0a9c674da0b8976c13c"
+    },
+    {
+      "path": "raw/SEARCH-20260716-LINEAGE-EVIDENCE-02.esearch.json",
+      "sha256": "d533fe30d0c8db1e8448581677a31d646c322eb82241a76715317406f02b45d8"
+    },
+    {
+      "path": "raw/SEARCH-20260716-LINEAGE-FORECASTING-12.esearch.json",
+      "sha256": "5ae1f87dcf6f4bc97ca43383593bfcd5db70148173b94ac2d205e7c857240f4e"
+    },
+    {
+      "path": "raw/SEARCH-20260716-LINEAGE-SIMULATION-07.esearch.json",
+      "sha256": "941b95f93940b2e6b62d6de7614b7d2e7c4e058947e24997b185d95802e4b830"
+    },
+    {
+      "path": "raw/SEARCH-20260716-LINEAGE-SPATIAL-12.esearch.json",
+      "sha256": "ef0699656a6246abebe2b00677e1f473034518da12c32d103781c2be814b8b76"
+    },
+    {
+      "path": "raw/SEARCH-20260716-LINEAGE-SURVEILLANCE-12.esearch.json",
+      "sha256": "2c3681a8aec55885d099ed21ecf1e77632efbc60c48acf641c8443ab894167fc"
+    }
+  ]
+}

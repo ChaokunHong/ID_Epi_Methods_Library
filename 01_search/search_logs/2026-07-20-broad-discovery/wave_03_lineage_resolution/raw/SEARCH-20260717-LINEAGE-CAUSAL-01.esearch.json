@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"1","retmax":"0","retstart":"0","querykey":"1","webenv":"MCID_6a603f0a2dab5e6af2017607","idlist":[],"translationset":[],"querytranslation":"(\"observational\"[Title/Abstract] OR \"effect estimation\"[Title/Abstract]) AND Branch-Elliman[Author] AND 2017/01/01:2017/12/31[Date - Publication]"}}

@@ -1,0 +1,10 @@
+{
+  "attempt": "task6-primary-codex-batch-05-initial",
+  "adoption": "zero",
+  "failure_type": "transport_output_failure",
+  "formal_output_present": false,
+  "preserved_log": "primary_reader_05_failed_transport_output.log",
+  "preserved_log_sha256": "73b6c1aad5da2c897723865c42a80480ae12bb82e8c7cb6432e879c260506f35",
+  "reason": "The read-only reader log contained an apparent complete draft, but the process did not create the required schema-constrained output file and was terminated after repeated waits. No row from this attempt was adopted.",
+  "rerun_requirement": "Fresh read-only Codex review of the original immutable batch to a new unique output path, followed by exact 50-row coverage and schema validation."
+}

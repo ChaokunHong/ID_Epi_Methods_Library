@@ -1,0 +1,23 @@
+{
+  "assignment_input_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-002_RECORDS.csv",
+  "assignment_input_sha256": "bcbced17ad0748ebe0356b33e047738ffabab75c85e4d316abea97e0be36300f",
+  "assignment_record_count": 782,
+  "batch_id": "CONCEPT-BATCH-002",
+  "concept_table_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-002.csv",
+  "concept_table_sha256": "798ab4135916ba8152e1870d962c64a96ddc5cad5a337703c70a417208c8b4b3",
+  "first_label": "parametric_g_formula",
+  "last_label": "latent_class_models",
+  "ordered_concept_labels": [
+    "parametric_g_formula",
+    "regression_discontinuity",
+    "synthetic_control",
+    "target_trial_emulation",
+    "targeted_learning_tmle",
+    "capture_recapture",
+    "diagnostic_accuracy_calibration",
+    "latent_class_models"
+  ],
+  "row_count": 8,
+  "through_wave_02_index_path": "01_search/search_logs/2026-07-20-broad-discovery/global/candidates_through_wave_02.csv",
+  "through_wave_02_index_sha256": "fccb499f711bc7858f8f9ac1825d03877f169f3b80a5fcc9097e1390167102dd"
+}

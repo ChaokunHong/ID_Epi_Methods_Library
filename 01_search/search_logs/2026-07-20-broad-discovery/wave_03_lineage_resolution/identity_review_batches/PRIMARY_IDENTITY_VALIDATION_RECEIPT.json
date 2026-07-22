@@ -1,0 +1,34 @@
+{
+  "adopted_batch_outputs": {
+    "01": "primary_decision_01.json",
+    "02": "primary_decision_02.json",
+    "03": "primary_decision_03.json",
+    "04": "primary_decision_04.json",
+    "05": "primary_decision_05_rerun.json",
+    "06": "primary_decision_06.json",
+    "07": "primary_decision_07.json",
+    "08": "primary_decision_08.json",
+    "09": "primary_decision_09.json"
+  },
+  "batch_sizes": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    35
+  ],
+  "exact_ordered_named_source_coverage": 435,
+  "unique_named_source_coverage": 435,
+  "resolved": 432,
+  "ambiguous": 2,
+  "unresolved_after_three_queries": 1,
+  "rejected": 0,
+  "failed_attempts_zero_adopted": [
+    "primary_batch_05_failed_attempt_receipt.json"
+  ],
+  "validation": "PASS"
+}

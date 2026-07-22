@@ -1,0 +1,158 @@
+{
+  "configuration_files": [
+    {
+      "path": "01_search/search_protocols/2026-07-20-broad-methods-discovery-protocol.md",
+      "sha256": "e3b1013862e2f18314702cbf1e1e0e5c2c6b9e0d2b78113b23b9e65e2ccb20df"
+    },
+    {
+      "path": "01_search/search_protocols/discovery_queries.json",
+      "sha256": "7e7e6bd7eeb4704e43ffa30e3c002a4ce5d044b5ac0c722fce7dd5d34f24a3e1"
+    },
+    {
+      "path": "01_search/journal_registry/journals.csv",
+      "sha256": "ef65e25ccb8ef1feb7220fc82c476bf2322c7e78db8fd1c05d463347aa688cc8"
+    },
+    {
+      "path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/miss_title_author_probe_v2/LINEAGE_QUERY_REGISTRY.csv",
+      "sha256": "2db0847cb264e29fb8b90ee9b60cae8fac30c750b50dfaf93bc1790c49fc0b14"
+    }
+  ],
+  "executed_at": "2026-07-22T11:24:17.055860+08:00",
+  "queries": [
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260715-LINEAGE-CAUSAL-07.esearch.json",
+      "esearch_sha256": "4104ccab7492b3f0fea84a4a3ff42fa707569c461b1390a603578902e4129cbe",
+      "query": "Cost[Title] AND effectiveness[Title] AND analysis[Title] AND various[Title] AND Westra[Author]",
+      "query_id": "SEARCH-20260715-LINEAGE-CAUSAL-07",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260715-LINEAGE-CAUSAL-07.esearch.json",
+      "raw_sha256": "4104ccab7492b3f0fea84a4a3ff42fa707569c461b1390a603578902e4129cbe",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6037e1314efeeb9b0282e1"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260715-LINEAGE-EVIDENCE-02.esearch.json",
+      "esearch_sha256": "523f49580ba1463fe978100e30046c2eaaa145bd9771ef6233fa50787f9f8a79",
+      "query": "How[Title] AND evaluate[Title] AND potential[Title] AND non[Title] AND Benn[Author]",
+      "query_id": "SEARCH-20260715-LINEAGE-EVIDENCE-02",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260715-LINEAGE-EVIDENCE-02.esearch.json",
+      "raw_sha256": "523f49580ba1463fe978100e30046c2eaaa145bd9771ef6233fa50787f9f8a79",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6037e24c24450ee30f2a10"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [],
+      "esearch_path": "raw/SEARCH-20260715-LINEAGE-FORECASTING-12.esearch.json",
+      "esearch_sha256": "e83cda076b2bc215890a6e55adb1f0521a7221ecac707ef437356d9156050183",
+      "query": "study[Title] AND regarding[Title] AND applicability[Title] AND WSARE[Title] AND Zhang[Author]",
+      "query_id": "SEARCH-20260715-LINEAGE-FORECASTING-12",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260715-LINEAGE-FORECASTING-12.esearch.json",
+      "raw_sha256": "e83cda076b2bc215890a6e55adb1f0521a7221ecac707ef437356d9156050183",
+      "reported_count": 0,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6037e31b57e29f190880ca"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260715-LINEAGE-SIMULATION-07.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "ab7c45b03d9246f19ccbad8271c1b2b8c9c3afa32bb42089923f1e332f36e209"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260715-LINEAGE-SIMULATION-07.esearch.json",
+      "esearch_sha256": "da3af4af13ba92d8ff23195e26cdf480ebd33e8147de20607c3a07fdbf4a9516",
+      "query": "machine[Title] AND learning[Title] AND approach[Title] AND identifies[Title] AND Roy[Author]",
+      "query_id": "SEARCH-20260715-LINEAGE-SIMULATION-07",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260715-LINEAGE-SIMULATION-07.esearch.json",
+      "raw_sha256": "da3af4af13ba92d8ff23195e26cdf480ebd33e8147de20607c3a07fdbf4a9516",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6037e4ecf23140030dbca4"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260715-LINEAGE-SPATIAL-12.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "04824c22f4d27d2701b9ad234f6a92e9e60c243d2e9f2ce8278a4ee8d735c769"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260715-LINEAGE-SPATIAL-12.esearch.json",
+      "esearch_sha256": "9ecdbcd687d6d882d1541217c5385f2d0c01ffa033ac71b4ab25b516bad7589a",
+      "query": "Children[Title] AND Exposed[Title] AND Fecal[Title] AND Contamination[Title] AND Wang[Author]",
+      "query_id": "SEARCH-20260715-LINEAGE-SPATIAL-12",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260715-LINEAGE-SPATIAL-12.esearch.json",
+      "raw_sha256": "9ecdbcd687d6d882d1541217c5385f2d0c01ffa033ac71b4ab25b516bad7589a",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6037e708c9e5140b0172b1"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260715-LINEAGE-SURVEILLANCE-12.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "f58fcec091baad69534cf5cb7ce361bb4d228793de0f672fc916e874c05a1f3d"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260715-LINEAGE-SURVEILLANCE-12.esearch.json",
+      "esearch_sha256": "748aac7081f2e10ed8a13b79ff825aabd472422c6515b077020b37be9a5d6f68",
+      "query": "Disease[Title] AND burden[Title] AND prosthetic[Title] AND joint[Title] AND Huotari[Author]",
+      "query_id": "SEARCH-20260715-LINEAGE-SURVEILLANCE-12",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260715-LINEAGE-SURVEILLANCE-12.esearch.json",
+      "raw_sha256": "748aac7081f2e10ed8a13b79ff825aabd472422c6515b077020b37be9a5d6f68",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6037ea6f9e4e10a70aadc4"
+    }
+  ],
+  "schema_version": 1,
+  "timezone": "Asia/Shanghai",
+  "tool_version": "1"
+}

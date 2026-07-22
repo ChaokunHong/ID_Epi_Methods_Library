@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decisions"
+  ],
+  "properties": {
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "named_source_id",
+          "selected_candidate_key",
+          "decision",
+          "reason",
+          "inspected_primary_url"
+        ],
+        "properties": {
+          "named_source_id": {
+            "type": "string"
+          },
+          "selected_candidate_key": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "resolved",
+              "ambiguous",
+              "rejected",
+              "unresolved_after_three_queries"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "inspected_primary_url": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

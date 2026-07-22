@@ -1,0 +1,6 @@
+{
+  "status": "INTERRUPTED",
+  "batch_id": "CONCEPT-BATCH-006-CONFLICT",
+  "adopted_record_count": 0,
+  "reason": "Owner-directed termination of an oversized 734-record adjudication path before a schema-valid exact-coverage result was produced; replaced by manifested C2 slices of at most 150 records."
+}

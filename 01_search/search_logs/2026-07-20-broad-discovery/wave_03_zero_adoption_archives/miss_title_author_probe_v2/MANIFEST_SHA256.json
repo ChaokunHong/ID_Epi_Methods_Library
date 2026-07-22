@@ -1,0 +1,53 @@
+{
+  "algorithm": "SHA256",
+  "files": [
+    {
+      "path": "LINEAGE_QUERY_REGISTRY.csv",
+      "sha256": "2db0847cb264e29fb8b90ee9b60cae8fac30c750b50dfaf93bc1790c49fc0b14"
+    },
+    {
+      "path": "crossref_candidates.csv",
+      "sha256": "64a113a8c253204b422d1687062430cfa1a8c2a49a62774672f61b5d59c2a2d3"
+    },
+    {
+      "path": "pubmed_lineage_candidates.csv",
+      "sha256": "791fdaacf1a5e871514a766a6cfcb3b8250b012e078e51c66305106b759d748c"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-CAUSAL-07.esearch.json",
+      "sha256": "4104ccab7492b3f0fea84a4a3ff42fa707569c461b1390a603578902e4129cbe"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-EVIDENCE-02.esearch.json",
+      "sha256": "523f49580ba1463fe978100e30046c2eaaa145bd9771ef6233fa50787f9f8a79"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-FORECASTING-12.esearch.json",
+      "sha256": "e83cda076b2bc215890a6e55adb1f0521a7221ecac707ef437356d9156050183"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-SIMULATION-07.efetch.000000000-000000000.xml",
+      "sha256": "ab7c45b03d9246f19ccbad8271c1b2b8c9c3afa32bb42089923f1e332f36e209"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-SIMULATION-07.esearch.json",
+      "sha256": "da3af4af13ba92d8ff23195e26cdf480ebd33e8147de20607c3a07fdbf4a9516"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-SPATIAL-12.efetch.000000000-000000000.xml",
+      "sha256": "04824c22f4d27d2701b9ad234f6a92e9e60c243d2e9f2ce8278a4ee8d735c769"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-SPATIAL-12.esearch.json",
+      "sha256": "9ecdbcd687d6d882d1541217c5385f2d0c01ffa033ac71b4ab25b516bad7589a"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-SURVEILLANCE-12.efetch.000000000-000000000.xml",
+      "sha256": "f58fcec091baad69534cf5cb7ce361bb4d228793de0f672fc916e874c05a1f3d"
+    },
+    {
+      "path": "raw/SEARCH-20260715-LINEAGE-SURVEILLANCE-12.esearch.json",
+      "sha256": "748aac7081f2e10ed8a13b79ff825aabd472422c6515b077020b37be9a5d6f68"
+    }
+  ]
+}

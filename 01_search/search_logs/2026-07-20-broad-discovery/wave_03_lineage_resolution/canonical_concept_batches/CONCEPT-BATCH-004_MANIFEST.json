@@ -1,0 +1,23 @@
+{
+  "assignment_input_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-004_RECORDS.csv",
+  "assignment_input_sha256": "e682a779eea8837848b9aa8dcf9a24deacf4820ec90631217e764aea430dbb0c",
+  "assignment_record_count": 953,
+  "batch_id": "CONCEPT-BATCH-004",
+  "concept_table_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-004.csv",
+  "concept_table_sha256": "fa1afe1676c6ea2a3c5fb0f805b0867d25034dbe0cd63f621e023d57a2738dfb",
+  "first_label": "bayesian_spatiotemporal_models",
+  "last_label": "metapopulation_models",
+  "ordered_concept_labels": [
+    "bayesian_spatiotemporal_models",
+    "contact_network_models",
+    "descriptive_spatial_clustering",
+    "ecological_niche_species_distribution",
+    "endemic_epidemic_models",
+    "genomic_epidemiology_transmission",
+    "gravity_radiation_mobility_models",
+    "metapopulation_models"
+  ],
+  "row_count": 8,
+  "through_wave_02_index_path": "01_search/search_logs/2026-07-20-broad-discovery/global/candidates_through_wave_02.csv",
+  "through_wave_02_index_sha256": "fccb499f711bc7858f8f9ac1825d03877f169f3b80a5fcc9097e1390167102dd"
+}

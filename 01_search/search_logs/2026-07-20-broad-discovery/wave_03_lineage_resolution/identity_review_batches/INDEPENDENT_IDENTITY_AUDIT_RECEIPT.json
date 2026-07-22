@@ -1,0 +1,23 @@
+{
+  "primary_named_source_coverage": 435,
+  "independent_audit_named_source_coverage": 435,
+  "independent_audit_percentage": 100,
+  "primary_reviewer_namespace": "task6-primary-codex-batch-*",
+  "audit_reviewer_namespace": "task6-audit-codex-batch-*",
+  "reader_independence": "Audit readers received only the immutable original batch evidence and were instructed not to inspect primary outputs.",
+  "primary_terminal_counts": {
+    "resolved": 432,
+    "ambiguous": 2,
+    "rejected": 0,
+    "unresolved_after_three_queries": 1
+  },
+  "audit_terminal_counts": {
+    "resolved": 432,
+    "ambiguous": 2,
+    "rejected": 0,
+    "unresolved_after_three_queries": 1
+  },
+  "primary_audit_pair_conflicts": 0,
+  "fresh_adjudications_required": 0,
+  "validation": "PASS"
+}

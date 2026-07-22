@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
+<PubmedArticleSet>
+<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual"><PMID Version="1">28760790</PMID><DateCompleted><Year>2018</Year><Month>04</Month><Day>20</Day></DateCompleted><DateRevised><Year>2020</Year><Month>12</Month><Day>09</Day></DateRevised><Article PubModel="Electronic"><Journal><ISSN IssnType="Electronic">2044-6055</ISSN><JournalIssue CitedMedium="Internet"><Volume>7</Volume><Issue>7</Issue><PubDate><Year>2017</Year><Month>Jul</Month><Day>31</Day></PubDate></JournalIssue><Title>BMJ open</Title><ISOAbbreviation>BMJ Open</ISOAbbreviation></Journal><ArticleTitle>Impact of health insurance coverage for <i>Helicobacter pylori</i> gastritis on the trends in eradication therapy in Japan: retrospective observational study and simulation study based on real-world data.</ArticleTitle><Pagination><StartPage>e015855</StartPage><MedlinePgn>e015855</MedlinePgn></Pagination><ELocationID EIdType="pii" ValidYN="Y">e015855</ELocationID><ELocationID EIdType="doi" ValidYN="Y">10.1136/bmjopen-2017-015855</ELocationID><Abstract><AbstractText Label="OBJECTIVES" NlmCategory="OBJECTIVE">To explore the prevalence of <i>Helicobacter pylori</i> infection in Japan and the trends of its eradication therapy before and after the changes of the insurance coverage policy, first started in 2000, and expanded to cover <i>H. pylori</i>-positive gastritis in 2013. The impacts that the changes brought were estimated.</AbstractText><AbstractText Label="METHODS" NlmCategory="METHODS">In this retrospective observational study and simulation study based on health insurance claims data, product sales data and relevant studies, individuals who received triple therapy (amoxicillin, clarithromycin, proton-pump inhibitors or potassium-competitive acid blockers) were defined as the first-time patients for <i>H. pylori</i> eradication in two Japanese health insurance claims databases (from approximately 1.6 million and 10.5 million individuals). Each sales data of eradication packages and examination kits were used to estimate the number of <i>H. pylori</i>-eradicated individuals nationwide. The prevalence of <i>H. pylori</i> infection, including the future rate, was predicted using previous studies and the estimated population trend by a national institute. Cases completed prior to the policy change on insurance coverage were simulated to estimate what would have happened had there been no change in the policy.</AbstractText><AbstractText Label="RESULTS" NlmCategory="RESULTS">The numbers of patients first received eradication therapy were 81 119 and 170 993 from two databases. The nationwide estimated number of patients successfully eradicated was approximately 650 000 per year between 2001 and 2012, whereas it rapidly rose to 1 380-000 per year in 2013. The estimated prevalence of infection in 2050 is 5%, this rate was estimated to be 28% and 22% if the policy changes had not occurred in 2000 and 2013, respectively.</AbstractText><AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">The impact of policy changes for <i>H. pylori</i> eradication therapy on the prevalence of infection was shown. The results suggest that insurance coverage expansion may also reduce the prevalence in other countries with a high prevalence of <i>H. pylori</i> infection if the reinfection is low.</AbstractText><CopyrightInformation>&#xa9; Article author(s) (or their employer(s) unless otherwise stated in the text of the article) 2017. All rights reserved. No commercial use is permitted unless otherwise expressly granted.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Hiroi</LastName><ForeName>Shinzo</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Department of Pharmacoepidemiology, Graduate School of Medicine and Public Health, Kyoto University, Kyoto, Japan.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Japan Medical Affairs, Takeda Pharmaceutical Company Limited, Tokyo, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sugano</LastName><ForeName>Kentaro</ForeName><Initials>K</Initials><AffiliationInfo><Affiliation>Department of Medicine, Jichi Medical University, Tochigi, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Tanaka</LastName><ForeName>Shiro</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Department of Clinical Biostatistics, Graduate School of Medicine, Kyoto University, Kyoto, Japan.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kawakami</LastName><ForeName>Koji</ForeName><Initials>K</Initials><AffiliationInfo><Affiliation>Department of Pharmacoepidemiology, Graduate School of Medicine and Public Health, Kyoto University, Kyoto, Japan.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D064888">Observational Study</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2017</Year><Month>07</Month><Day>31</Day></ArticleDate></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>BMJ Open</MedlineTA><NlmUniqueID>101552874</NlmUniqueID><ISSNLinking>2044-6055</ISSNLinking></MedlineJournalInfo><ChemicalList><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D000900">Anti-Bacterial Agents</NameOfSubstance></Chemical><Chemical><RegistryNumber>0</RegistryNumber><NameOfSubstance UI="D054328">Proton Pump Inhibitors</NameOfSubstance></Chemical><Chemical><RegistryNumber>804826J2HU</RegistryNumber><NameOfSubstance UI="D000658">Amoxicillin</NameOfSubstance></Chemical><Chemical><RegistryNumber>H1250JIK0A</RegistryNumber><NameOfSubstance UI="D017291">Clarithromycin</NameOfSubstance></Chemical></ChemicalList><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000658" MajorTopicYN="N">Amoxicillin</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000900" MajorTopicYN="N">Anti-Bacterial Agents</DescriptorName><QualifierName UI="Q000627" MajorTopicYN="N">therapeutic use</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D017291" MajorTopicYN="N">Clarithromycin</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D060740" MajorTopicYN="N">Disease Eradication</DescriptorName><QualifierName UI="Q000639" MajorTopicYN="Y">trends</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D004359" MajorTopicYN="N">Drug Therapy, Combination</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D005756" MajorTopicYN="N">Gastritis</DescriptorName><QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName><QualifierName UI="Q000382" MajorTopicYN="Y">microbiology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D006291" MajorTopicYN="N">Health Policy</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D016481" MajorTopicYN="N">Helicobacter Infections</DescriptorName><QualifierName UI="Q000188" MajorTopicYN="N">drug therapy</QualifierName><QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D016480" MajorTopicYN="Y">Helicobacter pylori</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D019458" MajorTopicYN="N">Insurance Coverage</DescriptorName><QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D007348" MajorTopicYN="N">Insurance, Health</DescriptorName><QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D007564" MajorTopicYN="N" Type="Geographic">Japan</DescriptorName><QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D054328" MajorTopicYN="N">Proton Pump Inhibitors</DescriptorName><QualifierName UI="Q000627" MajorTopicYN="N">therapeutic use</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D012189" MajorTopicYN="N">Retrospective Studies</DescriptorName></MeshHeading></MeshHeadingList><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">helicobacter pylor</Keyword><Keyword MajorTopicYN="N">helicobacter pylori eradication</Keyword><Keyword MajorTopicYN="N">helicobacter pylori-positive gastritis</Keyword><Keyword MajorTopicYN="N">health insurance</Keyword></KeywordList><CoiStatement>Competing interests: SH is an employee of Takeda Pharmaceutical. KS received research grants from Eisai, Daiichi Sankyo Pharma and Takeda Pharmaceutical. He also received lecture fees from Astellas Pharma, Fujifilm and Takeda Pharmaceutical. ST has no personal interests to declare. KK received research funds from Dainippon Sumitomo Pharma, Olympus, Stella Pharma, Medical Platform, Novartis Pharmaceutical, Bayer and Maruho; honorarium from Astellas, Daiichi Sankyo Pharma, Taisho Pharmaceutical, Eisai, Novartis Pharmaceutical, Mitsubishi Tanabe Pharma, Takeda Pharmaceutical and Sanofi; consulting fees from Olympus, Kyowa Hakko Kirin, Kaken Pharmaceutical and Otsuka Pharmaceutical. There are no patents, products in development or marketed products to declare, relevant to those companies.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="entrez"><Year>2017</Year><Month>8</Month><Day>2</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2017</Year><Month>8</Month><Day>2</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2018</Year><Month>4</Month><Day>21</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2017</Year><Month>7</Month><Day>31</Day></PubMedPubDate></History><PublicationStatus>epublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">28760790</ArticleId><ArticleId IdType="pmc">PMC5642792</ArticleId><ArticleId IdType="doi">10.1136/bmjopen-2017-015855</ArticleId><ArticleId IdType="pii">bmjopen-2017-015855</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>Ferlay J, Soerjomataram I, Dikshit R, et al. Cancer incidence and mortality worldwide: sources, methods and major patterns in GLOBOCAN 2012. Int J Cancer 2015;136:E359&#x2013;E386. 10.1002/ijc.29210</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/ijc.29210</ArticleId><ArticleId IdType="pubmed">25220842</ArticleId></ArticleIdList></Reference><Reference><Citation>
+World Cancer research Fund International. Stomach cancer statistics, 2016. 
+http://www.wcrf.org/int/cancer-facts-figures/data-specific-cancers/stomach-cancer-statistics.</Citation></Reference><Reference><Citation>
+Fukase K, Kato M, Kikuchi S, et al. 
+Japan Gast Study Group. Effect of eradication of <i>Helicobacter pylori</i> on incidence of metachronous gastric carcinoma after endoscopic resection of early gastric cancer: an open-label, randomised controlled trial. Lancet
+2008;372:392&#x2013;7. 10.1016/S0140-6736(08)61159-9
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0140-6736(08)61159-9</ArticleId><ArticleId IdType="pubmed">18675689</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Marshall BJ, Armstrong JA, McGechie DB, et al. 
+Attempt to fulfil Koch's postulates for pyloric <i>Campylobacter</i>. Med J Aust
+1985;142:436&#x2013;9.</Citation><ArticleIdList><ArticleId IdType="pubmed">3982345</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Morris A, Nicholson G. 
+Ingestion of <i>Campylobacter pyloridis</i> causes gastritis and raised fasting gastric pH. Am J Gastroenterol
+1987;82:192&#x2013;9.</Citation><ArticleIdList><ArticleId IdType="pubmed">3826027</ArticleId></ArticleIdList></Reference><Reference><Citation>
+IARC Working Group. <i>Helicobacter pylori</i> eradication as a strategy for preventing gastric Cancer, 2014. 
+https://www.iarc.fr/en/publications/pdfs-online/wrk/wrk8/Helicobacter_pylori_Eradication.pdf.</Citation></Reference><Reference><Citation>
+Liu WZ, Xie Y, Cheng H, et al. 
+Chinese Society of Gastroenterology, Chinese Study Group on <i>Helicobacter pylori</i>. Fourth Chinese National Consensus Report on the management of <i>Helicobacter pylori</i> infection. J Dig Dis
+2013;14:211&#x2013;21. 10.1111/1751-2980.12034
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/1751-2980.12034</ArticleId><ArticleId IdType="pubmed">23302262</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Lee SY.
+Current progress toward eradicating <i>Helicobacter pylori</i> in East Asian countries: differences in the 2013 revised guidelines between China, Japan, and South Korea. World J Gastroenterol
+2014;20:1493&#x2013;502. 10.3748/wjg.v20.i6.1493
+</Citation><ArticleIdList><ArticleId IdType="doi">10.3748/wjg.v20.i6.1493</ArticleId><ArticleId IdType="pmc">PMC3925857</ArticleId><ArticleId IdType="pubmed">24587624</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Asaka M, Kato M, Sugiyama T, et al. 
+Japan <i>Helicobacter pylori</i> Eradication Study Group. Follow-up survey of a large-scale multicenter, double-blind study of triple therapy with lansoprazole, amoxicillin, and clarithromycin for eradication of <i>Helicobacter pylori</i> in Japanese peptic ulcer patients. J Gastroenterol
+2003;38:339&#x2013;47. 10.1007/s005350300061
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s005350300061</ArticleId><ArticleId IdType="pubmed">12743773</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Emilia G, Longo G, Luppi M, et al. 
+<i>Helicobacter pylori</i> eradication can induce platelet recovery in idiopathic thrombocytopenic purpura. Blood
+2001;97:812&#x2013;4. 10.1182/blood.V97.3.812
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1182/blood.V97.3.812</ArticleId><ArticleId IdType="pubmed">11157503</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Gasbarrini A, Franceschi F, Tartaglione R, et al. 
+Regression of autoimmune thrombocytopenia after eradication of <i>Helicobacter pylori</i>. Lancet
+1998;352:878&#x2013;78. 10.1016/S0140-6736(05)60004-9
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0140-6736(05)60004-9</ArticleId><ArticleId IdType="pubmed">9742983</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Hentschel E, Brandst&#xe4;tter G, Dragosics B, et al. 
+Effect of ranitidine and amoxicillin plus metronidazole on the eradication of <i>Helicobacter pylori</i> and the recurrence of duodenal ulcer. N Engl J Med
+1993;328:308&#x2013;12. 10.1056/NEJM199302043280503
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1056/NEJM199302043280503</ArticleId><ArticleId IdType="pubmed">8419816</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Leodolter A, Kulig M, Brasch H, et al. 
+A meta-analysis comparing eradication, healing and relapse rates in patients with <i>Helicobacter pylori</i>-associated gastric or duodenal ulcer. Aliment Pharmacol Ther
+2001;15:1949&#x2013;58. 10.1046/j.1365-2036.2001.01109.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1046/j.1365-2036.2001.01109.x</ArticleId><ArticleId IdType="pubmed">11736726</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Malfertheiner P, Megraud F, O'Morain C, et al. 
+Current concepts in the management of <i>Helicobacter pylori</i> infection: the Maastricht III Consensus Report. Gut
+2007;56:772&#x2013;81. 10.1136/gut.2006.101634
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/gut.2006.101634</ArticleId><ArticleId IdType="pmc">PMC1954853</ArticleId><ArticleId IdType="pubmed">17170018</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Miwa H, Sakaki N, Sugano K, et al. 
+Recurrent peptic ulcers in patients following successful <i>Helicobacter pylori</i> eradication: a multicenter study of 4940 patients. Helicobacter
+2004;9:9&#x2013;16. 10.1111/j.1083-4389.2004.00194.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1083-4389.2004.00194.x</ArticleId><ArticleId IdType="pubmed">15156899</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ogura K, Hirata Y, Yanai A, et al. 
+The effect of <i>Helicobacter pylori</i> eradication on reducing the incidence of gastric cancer. J Clin Gastroenterol
+2008;42:279&#x2013;83. 10.1097/01.mcg.0000248006.80699.7f
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/01.mcg.0000248006.80699.7f</ArticleId><ArticleId IdType="pubmed">18223496</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Take S, Mizuno M, Ishiki K, et al. 
+The effect of eradicating <i>Helicobacter pylori</i> on the development of gastric cancer in patients with peptic ulcer disease. Am J Gastroenterol
+2005;100:1037&#x2013;42. 10.1111/j.1572-0241.2005.41384.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1572-0241.2005.41384.x</ArticleId><ArticleId IdType="pubmed">15842576</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Takenaka R, Okada H, Kato J, et al. 
+<i>Helicobacter pylori</i> eradication reduced the incidence of gastric cancer, especially of the intestinal type. Aliment Pharmacol Ther
+2007;25:805&#x2013;12. 10.1111/j.1365-2036.2007.03268.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1365-2036.2007.03268.x</ArticleId><ArticleId IdType="pubmed">17373919</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Wong BC-Y, Lam SK, Wong WM, et al. 
+<i>Helicobacter pylori</i>&#xa0;eradication to prevent gastric cancer in a high-risk region of China. JAMA
+2004;291:187&#x2013;94. 10.1001/jama.291.2.187
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/jama.291.2.187</ArticleId><ArticleId IdType="pubmed">14722144</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Wotherspoon AC, Doglioni C, Diss TC, et al. 
+Regression of primary low-grade B-cell gastric lymphoma of mucosa-associated lymphoid tissue type after eradication of <i>Helicobacter pylori</i>. Lancet
+1993;342:575&#x2013;7. 10.1016/0140-6736(93)91409-F
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/0140-6736(93)91409-F</ArticleId><ArticleId IdType="pubmed">8102719</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Asaka M, Kato M, Takahashi S, et al. 
+Japanese Society for Helicobacter Research. Guidelines for the management of <i>Helicobacter pylori</i> infection in Japan: 2009 revised edition. Helicobacter
+2010;15:1&#x2013;20. 10.1111/j.1523-5378.2009.00738.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1523-5378.2009.00738.x</ArticleId><ArticleId IdType="pubmed">20302585</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Hanamure Y, Honda A, Hokonohara A. 
+Eradication therapy in the era of <i>Helicobacter pylori</i> infection -Its issues-: current status and issues of <i>Helicobacter pylori</i> treatment in Ichikikushikino-city (Kagoshima Prefecture). Helicobacter Research
+2014;18:74&#x2013;7.</Citation></Reference><Reference><Citation>
+Fujimori K.
+The changes in <i>Helicobacter pylori</i> infection treatment: is the number of infection reduced?. Helicobacter Research
+2014;18:314&#x2013;9.</Citation></Reference><Reference><Citation>
+Asaka M, Kato M, Sakamoto N. 
+Roadmap to eliminate gastric cancer with <i>Helicobacter pylori</i> eradication and consecutive surveillance in Japan. J Gastroenterol
+2014;49:1&#x2013;8. 10.1007/s00535-013-0897-8
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s00535-013-0897-8</ArticleId><ArticleId IdType="pmc">PMC3895201</ArticleId><ArticleId IdType="pubmed">24162382</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Sugano K, Osawa H, Satoh K. 
+Clinical management of <i>Helicobacter pylori</i>--the Japanese perspective. Dig Dis
+2014;32:281&#x2013;9. 10.1159/000357859
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1159/000357859</ArticleId><ArticleId IdType="pubmed">24732194</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Asaka M, Mabe K, Matsushima R, et al. 
+<i>Helicobacter pylori</i>&#xa0;eradication to eliminate gastric cancer: the Japanese strategy. Gastroenterol Clin North Am
+2015;44:639&#x2013;48. 10.1016/j.gtc.2015.05.010
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.gtc.2015.05.010</ArticleId><ArticleId IdType="pubmed">26314673</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Asaka M, Kimura T, Kudo M, et al. 
+Relationship of <i>Helicobacter pylori</i> to serum pepsinogens in an asymptomatic Japanese population. Gastroenterology
+1992;102:760&#x2013;6. 10.1016/0016-5085(92)90156-S
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/0016-5085(92)90156-S</ArticleId><ArticleId IdType="pubmed">1537513</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Cave DR.
+How is <i>Helicobacter pylori</i> transmitted?
+Gastroenterology
+1997;113:S9&#x2013;S14. 10.1016/S0016-5085(97)80004-2
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0016-5085(97)80004-2</ArticleId><ArticleId IdType="pubmed">9394753</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Take S, Mizuno M, Ishiki K, et al. 
+Reinfection rate of <i>Helicobacter pylori</i> after eradication treatment: a long-term prospective study in Japan. J Gastroenterol
+2012;47:641&#x2013;6. 10.1007/s00535-012-0536-9
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s00535-012-0536-9</ArticleId><ArticleId IdType="pubmed">22350696</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Okimoto T, Murakami K, Sato R, et al. 
+Is the recurrence of <i>Helicobacter pylori</i> infection after eradication therapy resultant from recrudescence or reinfection, in Japan. Helicobacter
+2003;8:186&#x2013;91. 10.1046/j.1523-5378.2003.00143.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1046/j.1523-5378.2003.00143.x</ArticleId><ArticleId IdType="pubmed">12752730</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Fujisawa T, Kumagai T, Akamatsu T, et al. 
+Changes in seroepidemiological pattern of <i>Helicobacter pylori</i> and hepatitis A virus over the last 20 years in Japan. Am J Gastroenterol
+1999;94:2094&#x2013;9. 10.1111/j.1572-0241.1999.01283.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1572-0241.1999.01283.x</ArticleId><ArticleId IdType="pubmed">10445533</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Watabe H, Mitsushima T, Yamaji Y, et al. 
+Predicting the development of gastric cancer from combining <i>Helicobacter pylori</i> antibodies and serum pepsinogen status: a prospective endoscopic cohort study. Gut
+2005;54:764&#x2013;8. 10.1136/gut.2004.055400
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/gut.2004.055400</ArticleId><ArticleId IdType="pmc">PMC1774550</ArticleId><ArticleId IdType="pubmed">15888780</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ueda J, Gosho M, Inui Y, et al. 
+Prevalence of <i>Helicobacter pylori</i> infection by birth year and geographic area in Japan. Helicobacter
+2014;19:105&#x2013;10. 10.1111/hel.12110
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/hel.12110</ArticleId><ArticleId IdType="pubmed">24506211</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Shiota S, Murakawi K, Suzuki R, et al. 
+<i>Helicobacter pylori</i> infection in Japan. Expert Rev Gastroenterol Hepatol
+2013;7:35&#x2013;40. 10.1586/egh.12.67
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1586/egh.12.67</ArticleId><ArticleId IdType="pmc">PMC3732492</ArticleId><ArticleId IdType="pubmed">23265147</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ministry of Health, Labour and Welfare. Summary report of vital statistics of Japan 2013 final data, 2014. 
+http://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei13/index.html
+Japanese.</Citation></Reference><Reference><Citation>
+National Institute of Population and Social Security Research. [Future population prediction in Japan]. 2012. 
+http://www.ipss.go.jp/syoushika/tohkei/newest04/sh2401top.html.</Citation></Reference><Reference><Citation>
+Fock KM, Ang TL. 
+Epidemiology of <i>Helicobacter pylori</i> infection and gastric cancer in Asia. J Gastroenterol Hepatol
+2010;25:479&#x2013;86. 10.1111/j.1440-1746.2009.06188.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1440-1746.2009.06188.x</ArticleId><ArticleId IdType="pubmed">20370726</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ahmad MM, Rahman M, Rumi AK, et al. 
+Prevalence of <i>Helicobacter pylori</i> in asymptomatic population--a pilot serological study in Bangladesh. J Epidemiol
+1997;7:251&#x2013;4. 10.2188/jea.7.251
+</Citation><ArticleIdList><ArticleId IdType="doi">10.2188/jea.7.251</ArticleId><ArticleId IdType="pubmed">9465552</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Hoang TTH, Bengtsson C, Phung DC, et al. 
+Seroprevalence of <i>Helicobacter pylori</i>&#xa0;infection in urban and rural Vietnam. Clin Diagn Lab Immunol
+2005;12:81&#x2013;5. 10.1128/CDLI.12.1.81-85.2005
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1128/CDLI.12.1.81-85.2005</ArticleId><ArticleId IdType="pmc">PMC540201</ArticleId><ArticleId IdType="pubmed">15642989</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Xie C, Lu NH. 
+Review: clinical management of <i>Helicobacter pylori</i> infection in China. Helicobacter
+2015;20:1&#x2013;10. 10.1111/hel.12178
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/hel.12178</ArticleId><ArticleId IdType="pubmed">25382801</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Yim JY, Kim N, Choi SH, et al. 
+Seroprevalence of <i>Helicobacter pylori</i> in South Korea. Helicobacter
+2007;12:333&#x2013;40. 10.1111/j.1523-5378.2007.00504.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1523-5378.2007.00504.x</ArticleId><ArticleId IdType="pubmed">17669107</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Lim SH, Kwon JW, Kim N, et al. 
+Prevalence and risk factors of <i>Helicobacter pylori</i> infection in Korea: nationwide multicenter study over 13 years. BMC Gastroenterol
+2013;13:104
+10.1186/1471-230X-13-104
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/1471-230X-13-104</ArticleId><ArticleId IdType="pmc">PMC3702482</ArticleId><ArticleId IdType="pubmed">23800201</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Moujaber T, MacIntyre CR, Backhouse J, et al. 
+The seroepidemiology of <i>Helicobacter pylori</i> infection in Australia. Int J Infect Dis
+2008;12:500&#x2013;4. 10.1016/j.ijid.2008.01.011
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.ijid.2008.01.011</ArticleId><ArticleId IdType="pubmed">18400542</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Mitchell H, Katelaris P. 
+Epidemiology, clinical impacts and current clinical management of <i>Helicobacter pylori</i> infection. Med J Aust
+2016;204:376&#x2013;80. 10.5694/mja16.00104
+</Citation><ArticleIdList><ArticleId IdType="doi">10.5694/mja16.00104</ArticleId><ArticleId IdType="pubmed">27256648</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Sonnenberg A, Lash RH, Genta RM. 
+A national study of <i>Helicobactor pylori</i> infection in gastric biopsy specimens. Gastroenterology
+2010;139:1894&#x2013;901. 10.1053/j.gastro.2010.08.018
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1053/j.gastro.2010.08.018</ArticleId><ArticleId IdType="pubmed">20727889</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Cardenas VM, Mulla ZD, Ortiz M, et al. 
+Iron deficiency and <i>Helicobacter pylori</i> infection in the United States. Am J Epidemiol
+2006;163:127&#x2013;34. 10.1093/aje/kwj018
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/aje/kwj018</ArticleId><ArticleId IdType="pubmed">16306309</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Goh KL, Chan WK, Shiota S, et al. 
+Epidemiology of <i>Helicobacter pylori</i> infection and public health implications. Helicobacter
+2011;16 Suppl 1:1&#x2013;9. 10.1111/j.1523-5378.2011.00874.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1523-5378.2011.00874.x</ArticleId><ArticleId IdType="pmc">PMC3719046</ArticleId><ArticleId IdType="pubmed">21896079</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ueda M, Kikuchi S, Kasugai T, et al. 
+<i>Helicobacter pylori</i> risk associated with childhood home environment. Cancer Sci
+2003;94:914&#x2013;8. 10.1111/j.1349-7006.2003.tb01375.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1349-7006.2003.tb01375.x</ArticleId><ArticleId IdType="pmc">PMC11160251</ArticleId><ArticleId IdType="pubmed">14556666</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Konno M, Fujii N, Yokota S, et al. 
+Five-year follow-up study of mother-to-child transmission of <i>Helicobacter pylori</i> infection detected by a random amplified polymorphic DNA fingerprinting method. J Clin Microbiol
+2005;43:2246&#x2013;50. 10.1128/JCM.43.5.2246-2250.2005
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1128/JCM.43.5.2246-2250.2005</ArticleId><ArticleId IdType="pmc">PMC1153758</ArticleId><ArticleId IdType="pubmed">15872250</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Okuda M, Miyashiro E, Booka M, et al. 
+<i>Helicobacter pylori</i> colonization in the first 3 years of life in Japanese children. Helicobacter
+2007;12:324&#x2013;7. 10.1111/j.1523-5378.2007.00510.x
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1523-5378.2007.00510.x</ArticleId><ArticleId IdType="pubmed">17669105</ArticleId></ArticleIdList></Reference><Reference><Citation>The committee of the Japanese society for Helicobacter research. [Guidelines for diagnosis and treatment of H. pylori infection in Japan: 2016 revised edition. Tokyo: Sentan Igaku-Sha, 2016. Japanese.</Citation></Reference><Reference><Citation>
+Murakami K, Sakurai Y, Shiino M, et al. 
+Vonoprazan, a novel potassium-competitive acid blocker, as a component of first-line and second-line triple therapy for <i>Helicobacter pylori</i> eradication: a phase III, randomised, double-blind study. Gut
+2016;65:1439&#x2013;46. 10.1136/gutjnl-2015-311304
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/gutjnl-2015-311304</ArticleId><ArticleId IdType="pmc">PMC5036253</ArticleId><ArticleId IdType="pubmed">26935876</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>

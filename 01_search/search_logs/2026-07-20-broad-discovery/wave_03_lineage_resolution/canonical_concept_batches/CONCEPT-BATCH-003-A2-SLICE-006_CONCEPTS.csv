@@ -1,0 +1,2 @@
+concept_label,canonical_name,family,assigned_record_count,first_candidate_key,last_candidate_key,evidence_inspected,reviewer,decision_rationale
+surveillance_measurement_designs,Other surveillance-measurement designs,surveillance_measurement,1014,PMID:19769990,PMID:42466862,titles and complete available abstracts of assigned accepted Task 5 records,task6-integrator-provisional-routing,"Provisional structural concept retained separately for semantic merge/split review; assignment is not based on journal, AMR, geography, LMIC status, or data availability."

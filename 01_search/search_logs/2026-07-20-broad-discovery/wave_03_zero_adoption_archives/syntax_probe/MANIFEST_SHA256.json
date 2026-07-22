@@ -1,0 +1,65 @@
+{
+  "algorithm": "SHA256",
+  "files": [
+    {
+      "path": "LINEAGE_QUERY_REGISTRY.csv",
+      "sha256": "9d61c8d6d7409e3709bb9ae636f5724ce58b113fcc482cb027b32c49a7576ece"
+    },
+    {
+      "path": "crossref_candidates.csv",
+      "sha256": "64a113a8c253204b422d1687062430cfa1a8c2a49a62774672f61b5d59c2a2d3"
+    },
+    {
+      "path": "pubmed_lineage_candidates.csv",
+      "sha256": "2e30895e4755ee8c0a052c0e311d52012632aeeb20e4013629e743f63b8910b9"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-01.efetch.000000000-000000000.xml",
+      "sha256": "4f998696866b1d9acb4c045a8f8591d5352e6e097029559cb856d35eb7e8bc32"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-01.esearch.json",
+      "sha256": "b4d68ae8eae01bb8acc1b08ade2ab8c207422f1c6302c943c7cf75fafbd00137"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-01.efetch.000000000-000000001.xml",
+      "sha256": "562f8676c27ca35443bd761d0ac5d9315b9fb1e36a3898032f877b9b71d7c4b2"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-01.esearch.json",
+      "sha256": "57020fea1bdda156c5b177ccf115f307177ca17d84c11aa7bc61c0bbfaee710f"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-01.efetch.000000000-000000000.xml",
+      "sha256": "472ee26c450551c7aa018dc3b9b1374cf719b3c22f3971e0bab345bb7177b2d0"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-01.esearch.json",
+      "sha256": "eb55e590c6c5663acdda0e38af891c93f8535e97c8f1d240aa4e1ae3b803f11d"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-01.efetch.000000000-000000000.xml",
+      "sha256": "7020b030f819d71de0c30c54c17cb5b33cb6242b3bb0ed848b2d544a17f0bc44"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-SIMULATION-01.esearch.json",
+      "sha256": "c5444c1753077175cf6d3cb14d44cffe7614e369045147af08b97025e4b71430"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-01.efetch.000000000-000000000.xml",
+      "sha256": "3e8fd85c0b5582df7914a6c6185ad06bfb4b5cd80317467c3cbdbb05805c3adc"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-SPATIAL-01.esearch.json",
+      "sha256": "b338605f4c1be153331625dc951ba761b964c2a2ba45e10d6d192b225e069b2b"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-01.efetch.000000000-000000000.xml",
+      "sha256": "a1bad88c8e6f4c4fe92b15fa77f2d816aa1deafd5ffc82fb20086ea6a1928a85"
+    },
+    {
+      "path": "raw/SEARCH-20260722-LINEAGE-SURVEILLANCE-01.esearch.json",
+      "sha256": "b3c97958183b49c5881d8d6d143dc4c5054f0283082919803cb35ac96863ea0f"
+    }
+  ]
+}

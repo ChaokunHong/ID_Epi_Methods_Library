@@ -1,0 +1,54 @@
+{
+  "active_conflicting_query_id_count": 0,
+  "active_directory": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution",
+  "active_query_id_count": 513,
+  "active_registry_paths": [
+    "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/LINEAGE_QUERY_REGISTRY.csv"
+  ],
+  "archive_directory": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives",
+  "archive_manifest_reports": [
+    {
+      "archive": "failed_exact_phrase_run",
+      "bad_sha": 0,
+      "manifest_entries": 438,
+      "missing": 0
+    },
+    {
+      "archive": "interrupted_append_attempt",
+      "bad_sha": 0,
+      "manifest_entries": 443,
+      "missing": 0
+    },
+    {
+      "archive": "miss_title_author_probe",
+      "bad_sha": 0,
+      "manifest_entries": 9,
+      "missing": 0
+    },
+    {
+      "archive": "miss_title_author_probe_v2",
+      "bad_sha": 0,
+      "manifest_entries": 12,
+      "missing": 0
+    },
+    {
+      "archive": "miss_title_author_probe_v3",
+      "bad_sha": 0,
+      "manifest_entries": 15,
+      "missing": 0
+    },
+    {
+      "archive": "superseded_id_collision_run",
+      "bad_sha": 0,
+      "manifest_entries": 885,
+      "missing": 0
+    },
+    {
+      "archive": "syntax_probe",
+      "bad_sha": 0,
+      "manifest_entries": 15,
+      "missing": 0
+    }
+  ],
+  "note": "Zero-adoption historical subruns retain original IDs and evidence in a sibling archive directory; they are excluded from active identity decisions and active verify-lineage closure."
+}

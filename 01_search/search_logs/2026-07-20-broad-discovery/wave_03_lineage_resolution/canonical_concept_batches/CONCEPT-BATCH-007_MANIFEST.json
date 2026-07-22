@@ -1,0 +1,23 @@
+{
+  "assignment_input_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-007_RECORDS.csv",
+  "assignment_input_sha256": "0f9c4bdafaceccf1a90f677f4ebecc414c1e4615a5ccab66d3cfd8cb1ffb4c83",
+  "assignment_record_count": 121,
+  "batch_id": "CONCEPT-BATCH-007",
+  "concept_table_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-007.csv",
+  "concept_table_sha256": "e614b138e5517804e48ef24558de19590f34337aeeb4c25cb3d06df21f6d4128",
+  "first_label": "triangulation_cross_system",
+  "last_label": "systematic_review_meta_analysis",
+  "ordered_concept_labels": [
+    "triangulation_cross_system",
+    "denominator_population_sensitivity",
+    "hierarchical_borrowing",
+    "modelled_observed_triangulation",
+    "evidence_robustness_methods",
+    "outcome_definition_sensitivity",
+    "specification_curve_multiverse",
+    "systematic_review_meta_analysis"
+  ],
+  "row_count": 8,
+  "through_wave_02_index_path": "01_search/search_logs/2026-07-20-broad-discovery/global/candidates_through_wave_02.csv",
+  "through_wave_02_index_sha256": "fccb499f711bc7858f8f9ac1825d03877f169f3b80a5fcc9097e1390167102dd"
+}

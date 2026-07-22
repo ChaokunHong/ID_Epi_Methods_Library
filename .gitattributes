@@ -1,0 +1,9 @@
+# Wave 3 evidence is byte-preserved and SHA-locked. PubMed XML text and legacy
+# CSV/log captures may contain source CRLF or trailing spaces that must not be
+# rewritten merely to satisfy patch whitespace heuristics.
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/**/*.csv -whitespace
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/**/*.xml -whitespace
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/**/*.log -whitespace
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/**/*.csv -whitespace
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/**/*.xml -whitespace
+01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/**/*.log -whitespace

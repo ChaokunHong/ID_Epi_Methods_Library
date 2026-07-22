@@ -1,0 +1,36 @@
+{
+  "active_namespace": {
+    "date_token": "20260719",
+    "query_count": 435,
+    "semantics": "Globally unused project registry namespace/revision key for clean active corrected exact-title run; actual execution time is in LINEAGE_RUN_RECEIPT.executed_at."
+  },
+  "execution_date": "2026-07-22",
+  "schema_version": 1,
+  "supplemental_namespace": {
+    "date_token": "20260718",
+    "query_count": 73,
+    "semantics": "Globally unused project registry namespace/revision key for actual title-first-author miss supplements; actual execution time is in native receipt.",
+    "syntax": "four longest informative title tokens plus actual surname; 6/6 across-family v3 probe."
+  },
+  "third_variant_namespace": {
+    "date_token": "20260717",
+    "query_count": 5,
+    "semantics": "Globally unused project registry namespace/revision key for method_author_year searches on five two-variant misses; actual execution time is in native receipt.",
+    "compound_surname_corrections": [
+      "Branch-Elliman",
+      "Tonkin-Crine",
+      "Joyal-Desmarais",
+      "O'Dea"
+    ]
+  },
+  "zero_adoption_archive_directory": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives",
+  "zero_adoption_subruns": [
+    "failed_exact_phrase_run",
+    "interrupted_append_attempt",
+    "miss_title_author_probe",
+    "miss_title_author_probe_v2",
+    "miss_title_author_probe_v3",
+    "superseded_id_collision_run",
+    "syntax_probe"
+  ]
+}

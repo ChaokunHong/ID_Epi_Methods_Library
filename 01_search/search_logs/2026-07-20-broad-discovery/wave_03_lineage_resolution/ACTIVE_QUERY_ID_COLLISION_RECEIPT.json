@@ -1,0 +1,23 @@
+{
+  "active_namespaces": {
+    "20260717": 5,
+    "20260718": 73,
+    "20260719": 435
+  },
+  "active_query_count": 513,
+  "active_vs_all_archives_and_probes_different_query_collision_count": 0,
+  "claim_boundary": "Historical zero-adoption subruns retain their original evidence even where early probe/archive IDs collided; no active query ID is reused.",
+  "historical_collisions_are_not_active": true,
+  "historical_actually_executed_same_id_different_query_collision_count": 8,
+  "historical_zero_adoption_archive_collision_count": 439,
+  "registries_compared": {
+    "failed": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/failed_exact_phrase_run/LINEAGE_QUERY_REGISTRY.csv",
+    "interrupted": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/interrupted_append_attempt/LINEAGE_QUERY_REGISTRY.csv",
+    "probe0": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/syntax_probe/LINEAGE_QUERY_REGISTRY.csv",
+    "probe1": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/miss_title_author_probe/LINEAGE_QUERY_REGISTRY.csv",
+    "probe2": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/miss_title_author_probe_v2/LINEAGE_QUERY_REGISTRY.csv",
+    "probe3": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/miss_title_author_probe_v3/LINEAGE_QUERY_REGISTRY.csv",
+    "superseded": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_zero_adoption_archives/superseded_id_collision_run/LINEAGE_QUERY_REGISTRY.csv"
+  },
+  "namespace_note": "Date tokens are globally unique project registry revision keys; true execution time is recorded in LINEAGE_RUN_RECEIPT.executed_at."
+}

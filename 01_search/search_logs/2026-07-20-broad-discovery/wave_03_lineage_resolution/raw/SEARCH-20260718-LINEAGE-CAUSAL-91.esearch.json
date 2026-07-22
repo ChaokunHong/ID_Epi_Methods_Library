@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"1","retmax":"0","retstart":"0","querykey":"1","webenv":"MCID_6a603db21e853a4f2c0514ba","idlist":[],"translationset":[],"querytranslation":"\"Hospitalization\"[Title] AND \"Association\"[Title] AND \"Vaccination\"[Title] AND \"Laboratory\"[Title] AND Grijalva[Author]"}}

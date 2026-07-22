@@ -1,0 +1,601 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
+<PubmedArticleSet>
+<PubmedArticle><MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM"><PMID Version="1">41069648</PMID><DateCompleted><Year>2025</Year><Month>10</Month><Day>10</Day></DateCompleted><DateRevised><Year>2025</Year><Month>10</Month><Day>12</Day></DateRevised><Article PubModel="Electronic-eCollection"><Journal><ISSN IssnType="Print">2398-502X</ISSN><JournalIssue CitedMedium="Print"><Volume>10</Volume><PubDate><Year>2025</Year></PubDate></JournalIssue><Title>Wellcome open research</Title><ISOAbbreviation>Wellcome Open Res</ISOAbbreviation></Journal><ArticleTitle>Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data.</ArticleTitle><Pagination><StartPage>54</StartPage><MedlinePgn>54</MedlinePgn></Pagination><ELocationID EIdType="pii" ValidYN="Y">54</ELocationID><ELocationID EIdType="doi" ValidYN="Y">10.12688/wellcomeopenres.22955.2</ELocationID><Abstract><AbstractText Label="BACKGROUND" NlmCategory="UNASSIGNED">Observational studies play an important role in assessing the comparative effectiveness of competing treatments. In clinical trials the randomization of participants to treatment and control groups generally results in balanced groups with respect to possible confounders, which makes the analysis straightforward. However, when analysing observational data, the potential for unmeasured confounding makes comparing treatment effects more challenging.</AbstractText><AbstractText Label="METHODS" NlmCategory="UNASSIGNED">Causal inference methods such as Instrumental Variable and Prior Event Rate Ratio approaches enable the estimation of causal effects even in the presence of unmeasured or imperfectly measured confounding factors. Direct confounder adjustment via multivariable regression and propensity score matching also have considerable utility. Each method relies on a different set of assumptions and leverages different aspects of the data.The assumptions of each method are described, and the impact of their violation is assessed in a simulation study. We propose the prior outcome augmented Instrumental Variable method that leverages data from before and after treatment initiation and is robust to key assumption violations. Finally, we propose a heterogeneity statistic to decide if two or more estimates are statistically dissimilar, considering their correlation. We illustrate our framework in an application study assessing the risk of genital infection in type 2 diabetes patients prescribed SGLT2-inhibitors versus DPP4-inhibitors using UK primary care data.</AbstractText><AbstractText Label="RESULTS" NlmCategory="UNASSIGNED">Our proposed approach can estimate treatment effects without bias in scenarios where assumptions of other methods are violated. Furthermore, the application study exemplified the usefulness of discussing the consistency of estimation results from different estimation methods using triangulation.</AbstractText><AbstractText Label="CONCLUSION" NlmCategory="UNASSIGNED">Triangulating results of different estimation methods is important in observational data to derive high quality evidence. The proposed triangulation framework and heterogeneity statistic are valuable tools to discuss the consistency of estimation results from different methods to shed light on possible sources of bias.</AbstractText><CopyrightInformation>Copyright: &#xa9; 2025 G&#xfc;demann LM et al.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>G&#xfc;demann</LastName><ForeName>Laura M</ForeName><Initials>LM</Initials><Identifier Source="ORCID">0000-0001-6933-3653</Identifier><AffiliationInfo><Affiliation>Faculty of Health and Life Sciences, University of Exeter, Exeter, Devon, EX2 5DW, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Dennis</LastName><ForeName>John M</ForeName><Initials>JM</Initials><AffiliationInfo><Affiliation>Faculty of Health and Life Sciences, University of Exeter, Exeter, Devon, EX2 5DW, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>McGovern</LastName><ForeName>Andrew P</ForeName><Initials>AP</Initials><AffiliationInfo><Affiliation>Faculty of Health and Life Sciences, University of Exeter, Exeter, Devon, EX2 5DW, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Rodgers</LastName><ForeName>Lauren R</ForeName><Initials>LR</Initials><AffiliationInfo><Affiliation>Faculty of Health and Life Sciences, University of Exeter, Exeter, Devon, EX2 5DW, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Shields</LastName><ForeName>Beverley M</ForeName><Initials>BM</Initials><AffiliationInfo><Affiliation>Faculty of Health and Life Sciences, University of Exeter, Exeter, Devon, EX2 5DW, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Henley</LastName><ForeName>William</ForeName><Initials>W</Initials><AffiliationInfo><Affiliation>Faculty of Health and Life Sciences, University of Exeter, Exeter, Devon, EX2 5DW, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Bowden</LastName><ForeName>Jack</ForeName><Initials>J</Initials><AffiliationInfo><Affiliation>Faculty of Health and Life Sciences, University of Exeter, Exeter, Devon, EX2 5DW, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><CollectiveName>MASTERMIND consortium</CollectiveName></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2025</Year><Month>08</Month><Day>19</Day></ArticleDate></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>Wellcome Open Res</MedlineTA><NlmUniqueID>101696457</NlmUniqueID><ISSNLinking>2398-502X</ISSNLinking></MedlineJournalInfo><OtherAbstract Type="plain-language-summary" Language="eng"><AbstractText>Not all research questions and patient populations can be assessed in clinical trials due to ethical issues, costs, and practicality considerations. Therefore, it is important for medical research to derive high-quality real world evidence from observational data, which has been collected for purposes such as administrative tasks and not primarily for research. To assess and compare the effect of treatment options on a specific health outcome of interest from observational data, suitable statistical methods need to be employed to address data quality issues. Ideally, all factors that can simultaneously influence the treatment decision of a clinician and the health outcome of interest need to be included in the analysis to control for their effects and accurately analyse the treatment effect of interest. If some of these factors are not measured in the data, advanced statistical methods need to be employed. We introduce a new method to address this issue and compare it with existing methods. Additionally, we illustrate all methods discussed in a case study for type 2 diabetes research. Our analysis shows that our proposed method is able to provide high quality observational evidence in certain scenarios. Furthermore, the comparison of different methods and our outlined case study provides insights into strengths and weaknesses, of the methods which are important considerations when choosing between them for observational research.</AbstractText><CopyrightInformation>Copyright: &#xa9; 2025 G&#xfc;demann LM et al.</CopyrightInformation></OtherAbstract><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">Instrumental Variable method</Keyword><Keyword MajorTopicYN="N">Prior Event Rate Ratio approach</Keyword><Keyword MajorTopicYN="N">causal inference</Keyword><Keyword MajorTopicYN="N">triangulation</Keyword><Keyword MajorTopicYN="N">unmeasured confounding</Keyword></KeywordList><CoiStatement>Competing interests: JB is a part time employee of Novo Nordisk. This project is unrelated to his work for the company. The other authors declared there is no conflict of interest.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="accepted"><Year>2025</Year><Month>8</Month><Day>1</Day></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2025</Year><Month>10</Month><Day>10</Day><Hour>6</Hour><Minute>29</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2025</Year><Month>10</Month><Day>10</Day><Hour>6</Hour><Minute>28</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2025</Year><Month>10</Month><Day>10</Day><Hour>4</Hour><Minute>48</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2025</Year><Month>8</Month><Day>19</Day></PubMedPubDate></History><PublicationStatus>epublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">41069648</ArticleId><ArticleId IdType="pmc">PMC12504944</ArticleId><ArticleId IdType="doi">10.12688/wellcomeopenres.22955.2</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>
+Greenland S, Morgenstern H:
+Confounding in health research.
+
+<i>Annu Rev Public Health.</i>
+
+2001;22:189&#x2013;212.
+10.1146/annurev.publhealth.22.1.189
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1146/annurev.publhealth.22.1.189</ArticleId><ArticleId IdType="pubmed">11274518</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Jager KJ, Zoccali C, MacLeod A, et al. :
+Confounding: what it is and how to deal with it.
+
+<i>Kidney Int.</i>
+Nature Publishing Group,2008;73(3):256&#x2013;260.
+10.1038/sj.ki.5002650
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/sj.ki.5002650</ArticleId><ArticleId IdType="pubmed">17978811</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Boyko EJ:
+Observational research - opportunities and limitations.
+
+<i>J Diabetes Complications.</i>
+
+2013;27(6):642&#x2013;648.
+10.1016/j.jdiacomp.2013.07.007
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.jdiacomp.2013.07.007</ArticleId><ArticleId IdType="pmc">PMC3818421</ArticleId><ArticleId IdType="pubmed">24055326</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Pearl J:
+Aspects of graphical models connected with causality. In:
+<i>Proceedings of the 49th Session of the International Statistical Institute. </i>
+1993;391&#x2013;401.
+Reference Source
+</Citation></Reference><Reference><Citation>
+Pearl J:
+Causality: models, reasoning, and inference. New York: Cambridge University Press. 2nd edition,2000.
+Reference Source
+</Citation></Reference><Reference><Citation>
+Dawwas GK, Smith SM, Park H:
+Cardiovascular outcomes of sodium glucose cotransporter&#x2010;2 inhibitors in patients with type 2 diabetes.
+
+<i>Diabetes Obes Metab.</i>
+
+2019;21(1):28&#x2013;36.
+10.1111/dom.13477
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/dom.13477</ArticleId><ArticleId IdType="pubmed">30039524</ArticleId></ArticleIdList></Reference><Reference><Citation>
+McGovern AP, Hogg M, Shields BM, et al. :
+Risk factors for genital infections in people initiating SGLT2 inhibitors and their impact on discontinuation.
+
+<i>BMJ Open Diabetes Res Care.</i>
+BMJ Publishing Group,2020;8(1):
+e001238.
+10.1136/bmjdrc-2020-001238
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/bmjdrc-2020-001238</ArticleId><ArticleId IdType="pmc">PMC7252998</ArticleId><ArticleId IdType="pubmed">32448787</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Streeter AJ, Lin NX, Crathorne L, et al. :
+Adjusting for unmeasured confounding in nonrandomized longitudinal studies: a methodological review.
+
+<i>J Clin Epidemiol.</i>
+
+2017;87:23&#x2013;34.
+10.1016/j.jclinepi.2017.04.022
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.jclinepi.2017.04.022</ArticleId><ArticleId IdType="pmc">PMC5589113</ArticleId><ArticleId IdType="pubmed">28460857</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Bowden J, Bornkamp B, Glimm E, et al. :
+Connecting instrumental variable methods for causal inference to the estimand framework.
+
+<i>Stat Med.</i>
+in press,2021;40(25):5605&#x2013;5627.
+10.1002/sim.9143
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/sim.9143</ArticleId><ArticleId IdType="pubmed">34288021</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Pezzin LE, Laud P, Yen TWF, et al. :
+Re-examining the relationship of breast cancer hospital and surgical volume to mortality: an instrumental variable analysis.
+
+<i>Med Care.</i>
+NIH Public Access,2015;53(12):1033&#x2013;9.
+10.1097/MLR.0000000000000439
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/MLR.0000000000000439</ArticleId><ArticleId IdType="pmc">PMC4648647</ArticleId><ArticleId IdType="pubmed">26492213</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Smith GD, Ebrahim S:
+&#x2018;Mendelian randomization&#x2019;: can genetic epidemiology contribute to understanding environmental determinants of disease?
+
+<i>Int J Epidemiol.</i>
+
+2003;32(1):1&#x2013;22.
+10.1093/ije/dyg070
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/ije/dyg070</ArticleId><ArticleId IdType="pubmed">12689998</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Brookhart MA, Wang PS, Solomon DH, et al. :
+Evaluating short-term drug effects using a physician-specific prescribing preference as an instrumental variable.
+
+<i>Epidemiology.</i>
+
+2006;17(3):268&#x2013;275.
+10.1097/01.ede.0000193606.58671.c5
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/01.ede.0000193606.58671.c5</ArticleId><ArticleId IdType="pmc">PMC2715942</ArticleId><ArticleId IdType="pubmed">16617275</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Rodgers LR, Dennis JM, Shields BM, et al. :
+Prior event rate ratio adjustment produced estimates consistent with randomized trial: a diabetes case study.
+
+<i>J Clin Epidemiol.</i>
+Elsevier USA,2020;122:78&#x2013;86.
+10.1016/j.jclinepi.2020.03.007
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.jclinepi.2020.03.007</ArticleId><ArticleId IdType="pmc">PMC7262589</ArticleId><ArticleId IdType="pubmed">32194148</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Lin NX, Henley WE:
+Prior event rate ratio adjustment for hidden confounding in observational studies of treatment effectiveness: a pairwise Cox likelihood approach.
+
+<i>Stat Med.</i>
+John Wiley and Sons Ltd,2016;35(28):5149&#x2013;5169.
+10.1002/sim.7051
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/sim.7051</ArticleId><ArticleId IdType="pmc">PMC5111612</ArticleId><ArticleId IdType="pubmed">27477530</ArticleId></ArticleIdList></Reference><Reference><Citation>G&#xfc;demann LM, Dennis JM, McGovern AP, et al. : Appendix - Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data. 2024. 10.5281/zenodo.14136128</Citation><ArticleIdList><ArticleId IdType="doi">10.5281/zenodo.14136128</ArticleId></ArticleIdList></Reference><Reference><Citation>G&#xfc;demann LM, Dennis JM, McGovern AP, et al. : Appendix - Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data. 2024. 10.5281/zenodo.14204680</Citation><ArticleIdList><ArticleId IdType="doi">10.5281/zenodo.14204680</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Stock JH, Wright JH, Yogo M:
+A survey of weak instruments and weak identification in generalized method of moments.
+
+<i>J Bus Econ Stat.</i>
+
+2002;20(4):518&#x2013;529.
+10.1198/073500102288618658
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1198/073500102288618658</ArticleId></ArticleIdList></Reference><Reference><Citation>Aso S, Yasunaga H: Introduction to instrumental variable analysis. 2020;2(3):69&#x2013;74. 10.37737/ace.2.3_69</Citation><ArticleIdList><ArticleId IdType="doi">10.37737/ace.2.3_69</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Lousdal ML:
+An introduction to instrumental variable assumptions, validation and estimation.
+
+<i>Emerg Themes Epidemiol.</i>
+BioMed Central Ltd,2018;15:1&#x2013;7.
+10.1186/s12982-018-0069-7
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/s12982-018-0069-7</ArticleId><ArticleId IdType="pmc">PMC5776781</ArticleId><ArticleId IdType="pubmed">29387137</ArticleId></ArticleIdList></Reference><Reference><Citation>Wooldridge JM: Introductory Econometrics - A Modern Approach.7th ed., South-Western College Publishing,2019.</Citation></Reference><Reference><Citation>Bowden RJ, Turkington DA: Instrumental Variables.Cambridge: Cambridge University Press,1984.</Citation></Reference><Reference><Citation>
+Weiner MG, Xie D, Tannen RL:
+Replication of the Scandinavian Simvastatin Survival study using a primary care medical record database prompted exploration of a new method to address unmeasured confounding.
+
+<i>Pharmacoepidemiol Drug Saf.</i>
+Wiley Online Library,2008;17(7):661&#x2013;670.
+10.1002/pds.1585
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/pds.1585</ArticleId><ArticleId IdType="pubmed">18327857</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Tannen RL, Weiner MG, Xie D:
+Replicated studies of two randomized trials of angiotensin&#x2010;converting enzyme inhibitors: further empiric validation of the &#x2018;prior event rate ratio&#x2019; to adjust for unmeasured confounding by indication.
+
+<i>Pharmacoepidemiol Drug Saf.</i>
+Wiley Online Library,2008;17(7):671&#x2013;685.
+10.1002/pds.1584
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/pds.1584</ArticleId><ArticleId IdType="pubmed">18327852</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Uddin MJ, Groenwold RHH, van Staa TP, et al. :
+Performance of prior event rate ratio adjustment method in pharmacoepidemiology: a simulation study.
+
+<i>Pharmacoepidemiol Drug Saf.</i>
+Wiley Online Library,2015;24(5):468&#x2013;477.
+10.1002/pds.3724
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/pds.3724</ArticleId><ArticleId IdType="pubmed">25410590</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Gallagher AM, de Vries F, van Staa T:
+Prior event rate ratio adjustment: a magic bullet or more of the same?
+
+<i>Pharmacoepidemiol Drug Saf.</i>
+JOHN WILEY &amp; SONS LTD THE ATRIUM, SOUTHERN GATE, CHICHESTER PO19 8SQ, W &#x2026;,2009;18:S14&#x2013;S15.
+Reference Source
+</Citation></Reference><Reference><Citation>
+Yu M, Xie D, Wang X, et al. :
+Prior event rate ratio adjustment: numerical studies of a statistical method to address unrecognized confounding in observational studies.
+
+<i>Pharmacoepidemiol Drug Saf.</i>
+Wiley Online Library,2012;21(Suppl 2):60&#x2013;68.
+10.1002/pds.3235
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/pds.3235</ArticleId><ArticleId IdType="pubmed">22552981</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Abadie A:
+Semiparametric difference-in-differences estimators.
+
+<i>Rev Econ Stud.</i>
+
+2005;72(1):1&#x2013;19.
+Reference Source
+</Citation></Reference><Reference><Citation>
+Sant&#x2019;Anna PHC, Zhao J:
+Doubly robust difference-in-differences estimators.
+
+<i>J Econom.</i>
+
+2020;219(1):101&#x2013;122.
+10.1016/j.jeconom.2020.06.003
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.jeconom.2020.06.003</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Zhou H, Taber C, Arcona S, et al. :
+Difference-in-differences method in comparative effectiveness research: utility with unbalanced groups.
+
+<i>Appl Health Econ Health Policy.</i>
+Springer,2016;14(4):419&#x2013;429.
+10.1007/s40258-016-0249-y
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s40258-016-0249-y</ArticleId><ArticleId IdType="pmc">PMC4937082</ArticleId><ArticleId IdType="pubmed">27371369</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Lopez Bernal J, Cummins S, Gasparrini A:
+Difference in difference, controlled interrupted time series and synthetic controls.
+
+<i>Int J Epidemiol.</i>
+Oxford University Press,2019;48(6):2062&#x2013;2063.
+10.1093/ije/dyz050
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/ije/dyz050</ArticleId><ArticleId IdType="pubmed">30904926</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Craig P, Cooper C, Gunnell D, et al. :
+Using natural experiments to evaluate population health interventions: new Medical Research Council guidance.
+
+<i>J Epidemiol Community Health.</i>
+BMJ Publishing Group Ltd,2012;66(12):1182&#x2013;1186.
+10.1136/jech-2011-200375
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/jech-2011-200375</ArticleId><ArticleId IdType="pmc">PMC3796763</ArticleId><ArticleId IdType="pubmed">22577181</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Rockers PC, R&#xf8;ttingen JA, Shemilt I, et al. :
+Inclusion of quasi-experimental studies in systematic reviews of health systems research.
+
+<i>Health Policy.</i>
+Elsevier,2015;119(4):511&#x2013;521.
+10.1016/j.healthpol.2014.10.006
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.healthpol.2014.10.006</ArticleId><ArticleId IdType="pubmed">25776033</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Soumerai SB, Starr D, Majumdar SR:
+How do you know which health care effectiveness research you can trust? A guide to study design for the perplexed.
+
+<i>Prev Chronic Dis.</i>
+
+2015;12:
+E101.
+10.5888/pcd12.150187
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.5888/pcd12.150187</ArticleId><ArticleId IdType="pmc">PMC4492215</ArticleId><ArticleId IdType="pubmed">26111157</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Tchetgen ET:
+A note on the control function approach with an instrumental variable and a binary outcome.
+
+<i>Epidemiol Methods.</i>
+De Gruyter,2014;3(1):107&#x2013;112.
+10.1515/em-2014-0009
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1515/em-2014-0009</ArticleId><ArticleId IdType="pmc">PMC4405241</ArticleId><ArticleId IdType="pubmed">25914867</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Leeper TJ:
+margins: marginal effects for model objects, R package version 0.3.26.
+ 2021.
+Reference Source
+</Citation></Reference><Reference><Citation>
+Huitfeldt A, Stensrud MJ, Suzuki E:
+On the collapsibility of measures of effect in the counterfactual causal framework.
+
+<i>Emerg Themes Epidemiol.</i>
+
+2019;16:1&#x2013;5.
+10.1186/s12982-018-0083-9
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/s12982-018-0083-9</ArticleId><ArticleId IdType="pmc">PMC6322247</ArticleId><ArticleId IdType="pubmed">30627207</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Slotani M:
+Tolerance regions for a multivariate normal population.
+
+<i>Ann Inst Stat Math.</i>
+Springer,1964;16:135&#x2013;153.
+10.1007/BF02868568
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/BF02868568</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Cochran WG:
+The combination of estimates from different experiments.
+
+<i>Biometrics.</i>
+JSTOR,1954;10(1):101&#x2013;129.
+10.2307/3001666
+</Citation><ArticleIdList><ArticleId IdType="doi">10.2307/3001666</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Bowden J, Pilling LC, T&#xfc;rkmen D, et al. :
+The Triangulation WIthin a STudy (TWIST) framework for causal inference within pharmacogenetic research.
+
+<i>PLoS Genet.</i>
+Public Library of Science San Francisco, CA USA,2021;17(9):
+e1009783.
+10.1371/journal.pgen.1009783
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pgen.1009783</ArticleId><ArticleId IdType="pmc">PMC8452063</ArticleId><ArticleId IdType="pubmed">34495953</ArticleId></ArticleIdList></Reference><Reference><Citation>
+R Core Team:
+R: a language and environment for statistical computing. R foundation for statistical computing.Vienna, Austria,2023.
+Reference Source
+</Citation></Reference><Reference><Citation>
+Posit team:
+RStudio: integrated development environment for R. Posit Software.PBC, Boston, MA,2023.
+Reference Source
+</Citation></Reference><Reference><Citation>
+Morris TP, White IR, Crowther MJ:
+Using simulation studies to evaluate statistical methods.
+
+<i>Stat Med.</i>
+John Wiley and Sons Ltd,2019;38(11):2074&#x2013;2102.
+10.1002/sim.8086
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/sim.8086</ArticleId><ArticleId IdType="pmc">PMC6492164</ArticleId><ArticleId IdType="pubmed">30652356</ArticleId></ArticleIdList></Reference><Reference><Citation>Small DS: Mediation analysis without sequential ignorability: using baseline covariates interacted with random assignment as instrumental variables. 2012;46:91&#x2013;103. 10.48550/arXiv.1109.1070</Citation><ArticleIdList><ArticleId IdType="doi">10.48550/arXiv.1109.1070</ArticleId><ArticleId IdType="pmc">PMC4244702</ArticleId><ArticleId IdType="pubmed">25435642</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Spiller W, Slichter W, Bowden J, et al. :
+Detecting and correcting for bias in Mendelian randomization analyses using gene-by-environment interactions.
+
+<i>Int J Epidemiol.</i>
+
+2019;48(3):702&#x2013;712.
+10.1093/ije/dyy204
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/ije/dyy204</ArticleId><ArticleId IdType="pmc">PMC6659360</ArticleId><ArticleId IdType="pubmed">30462199</ArticleId></ArticleIdList></Reference><Reference><Citation>
+National Institute for Health and Care Excellence:
+Type 2 diabetes in adults: management.
+ 2020.
+Reference Source
+</Citation></Reference><Reference><Citation>
+Buse JB, Wexler DJ, Tsapas A, et al. :
+2019 update to: management of hyperglycemia in type 2 Diabetes, 2018. A consensus report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD).
+
+<i>Diabetes Care.</i>
+
+2020;43(2):487&#x2013;493.
+10.2337/dci19-0066
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.2337/dci19-0066</ArticleId><ArticleId IdType="pmc">PMC6971782</ArticleId><ArticleId IdType="pubmed">31857443</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Dennis JM, Henley WE, McGovern AP, et al. :
+Time trends in prescribing of type 2 diabetes drugs, glycaemic response and risk factors: a retrospective analysis of primary care data.
+
+<i>Diabetes Obes Metab.</i>
+
+2019;21(7):1576&#x2013;1584.
+10.1111/dom.13687
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/dom.13687</ArticleId><ArticleId IdType="pmc">PMC6618851</ArticleId><ArticleId IdType="pubmed">30828962</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Montvida O, Shaw J, Atherton JJ, et al. :
+Long-term trends in Antidiabetes drug usage in the US: real-world evidence in patients newly diagnosed with Type 2 diabetes.
+
+<i>Diabetes Care.</i>
+
+2018;41(1):69&#x2013;78.
+10.2337/dc17-1414
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.2337/dc17-1414</ArticleId><ArticleId IdType="pubmed">29109299</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Dennis JM:
+Precision medicine in type 2 diabetes: using individualized prediction models to optimize selection of treatment.
+
+<i>Diabetes.</i>
+
+2020;69(10):2075&#x2013;2085.
+10.2337/dbi20-0002
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.2337/dbi20-0002</ArticleId><ArticleId IdType="pmc">PMC7506836</ArticleId><ArticleId IdType="pubmed">32843566</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Herrett E, Gallagher AM, Bhaskaran K, et al. :
+Data resource profile: Clinical Practice Research Datalink (CPRD).
+
+<i>Int J Epidemiol.</i>
+
+2015;44(3):827&#x2013;36.
+10.1093/ije/dyv098
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/ije/dyv098</ArticleId><ArticleId IdType="pmc">PMC4521131</ArticleId><ArticleId IdType="pubmed">26050254</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Rodgers LR, Weedon MN, Henley WE, et al. :
+Cohort profile for the MASTERMIND study: using the Clinical Practice Research Datalink (CPRD) to investigate stratification of response to treatment in patients with type 2 diabetes.
+
+<i>BMJ Open.</i>
+
+2017;7(10):
+e017989.
+10.1136/bmjopen-2017-017989
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/bmjopen-2017-017989</ArticleId><ArticleId IdType="pmc">PMC5652624</ArticleId><ArticleId IdType="pubmed">29025846</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Booth CM, Tannock IF:
+Randomised controlled trials and population-based observational research: partners in the evolution of medical evidence.
+
+<i>Br J Cancer.</i>
+
+2014;110(3):551&#x2013;5.
+10.1038/bjc.2013.725
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/bjc.2013.725</ArticleId><ArticleId IdType="pmc">PMC3915111</ArticleId><ArticleId IdType="pubmed">24495873</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Hinton W, Feher M, Munro N, et al. :
+Real-world prevalence of the inclusion criteria for the LEADER trial: data from a national general practice network.
+
+<i>Diabetes Obes Metab.</i>
+
+2019;21(7):1661&#x2013;1667.
+10.1111/dom.13710
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/dom.13710</ArticleId><ArticleId IdType="pmc">PMC6619442</ArticleId><ArticleId IdType="pubmed">30900349</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Attia J, Holliday E, Oldmeadow C:
+A proposal for capturing interaction and effect modification using DAGs.
+
+<i>Int J Epidemiol.</i>
+
+2022;51(4):1047&#x2013;1053.
+10.1093/ije/dyac126
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/ije/dyac126</ArticleId><ArticleId IdType="pmc">PMC9365632</ArticleId><ArticleId IdType="pubmed">35696125</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Vandenbroucke JP, Elm Ev, Altman DG, et al. :
+Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): explanation and elaboration.
+
+<i>Ann Intern Med.</i>
+
+2007;147(8):W163&#x2013;94.
+10.7326/0003-4819-147-8-200710160-00010-w1
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.7326/0003-4819-147-8-200710160-00010-w1</ArticleId><ArticleId IdType="pubmed">17938389</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ho DE, Imai K, King G, et al. :
+{MatchIt}: nonparametric preprocessing for parametric causal inference.
+
+<i>J Stat Softw.</i>
+
+2011;42(8):1&#x2013;28.
+10.18637/jss.v042.i08
+</Citation><ArticleIdList><ArticleId IdType="doi">10.18637/jss.v042.i08</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Curtis HJ, Dennis JM, Shields BM, et al. :
+Time trends and geographical variation in prescribing of drugs for diabetes in England from 1998 to 2017.
+
+<i>Diabetes Obes Metab.</i>
+
+2018;20(9):2159&#x2013;2168.
+10.1111/dom.13346
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/dom.13346</ArticleId><ArticleId IdType="pmc">PMC6099452</ArticleId><ArticleId IdType="pubmed">29732725</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Korn EL, Baumrind S:
+Clinician preferences and the estimation of causal treatment differences.
+
+<i>Statist Sci.</i>
+
+1998;13(3):209&#x2013;235.
+10.1214/ss/1028905885
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1214/ss/1028905885</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Davies NM, Thomas KH, Taylor AE, et al. :
+How to compare instrumental variable and conventional regression analyses using negative controls and bias plots.
+
+<i>Int J Epidemiol.</i>
+
+2017;46(6):2067&#x2013;2077.
+10.1093/ije/dyx014
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/ije/dyx014</ArticleId><ArticleId IdType="pmc">PMC5837536</ArticleId><ArticleId IdType="pubmed">28398582</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Widding-Havneraas T, Chaulagain A, Lyhmann I, et al. :
+Preference-based instrumental variables in health research rely on important and underreported assumptions: a systematic review.
+
+<i>J Clin Epidemiol.</i>
+
+2021;139:269&#x2013;278.
+10.1016/j.jclinepi.2021.06.006
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.jclinepi.2021.06.006</ArticleId><ArticleId IdType="pubmed">34126207</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Bidulka P, O'Neill S, Basu A, et al. :
+Protocol for an observational cohort study investigating personalised medicine for intensification of treatment in people with type 2 diabetes mellitus: the PERMIT study.
+
+<i>BMJ Open.</i>
+
+2021;11(9):
+e046912.
+10.1136/bmjopen-2020-046912
+
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/bmjopen-2020-046912</ArticleId><ArticleId IdType="pmc">PMC8477338</ArticleId><ArticleId IdType="pubmed">34580091</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Dennis JM, Young KG, McGovern AP, et al. :
+Derivation and validation of a type 2 diabetes treatment selection algorithm for SGLT2-inhibitor and DPP4-inhibitor therapies based on glucose-lowering efficacy: cohort study using trial and routine clinical data.
+
+<i>medRxiv.</i>
+
+2021.
+10.1101/2021.11.11.21265959
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1101/2021.11.11.21265959</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ye T, Ertefaie A, Flory J, et al. :
+Instrumented Difference-in-Differences.
+
+<i>arXiv: 2011.03593 [stat.ME].</i>
+
+2020.
+10.48550/arXiv.2011.03593
+</Citation><ArticleIdList><ArticleId IdType="doi">10.48550/arXiv.2011.03593</ArticleId></ArticleIdList></Reference><Reference><Citation>
+G&#xfc;demann LM, Dennis JM, McGovern AP, et al. :
+Appendix - Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data.
+
+<i>Zenodo.</i>
+
+2024.
+10.5281/zenodo.14055585
+</Citation><ArticleIdList><ArticleId IdType="doi">10.5281/zenodo.14055585</ArticleId></ArticleIdList></Reference><Reference><Citation>
+:
+An Introduction to Proximal Causal Inference.
+
+<i>Statistical Science</i>
+.2024;39(3) :
+10.1214/23-STS911
+10.1214/23-STS911
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1214/23-STS911</ArticleId></ArticleIdList></Reference><Reference><Citation>
+:
+Doubly Robust Estimation of Causal Effects.
+
+<i>American Journal of Epidemiology</i>
+.2011;173(7) :
+10.1093/aje/kwq439
+761-767
+10.1093/aje/kwq439
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/aje/kwq439</ArticleId><ArticleId IdType="pmc">PMC3070495</ArticleId><ArticleId IdType="pubmed">21385832</ArticleId></ArticleIdList></Reference><Reference><Citation>
+:
+Bespoke Instruments: A new tool for addressing unmeasured confounders.
+
+<i>American Journal of Epidemiology</i>
+.2022;191(5) :
+10.1093/aje/kwab288
+939-947
+10.1093/aje/kwab288
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/aje/kwab288</ArticleId><ArticleId IdType="pmc">PMC9430468</ArticleId><ArticleId IdType="pubmed">34907434</ArticleId></ArticleIdList></Reference><Reference><Citation>
+:
+Revisit of test&#x2010;then&#x2010;pool methods and some practical considerations.
+
+<i>Pharmaceutical Statistics</i>
+.2020;19(5) :
+10.1002/pst.2009
+498-517
+10.1002/pst.2009
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/pst.2009</ArticleId><ArticleId IdType="pubmed">32171048</ArticleId></ArticleIdList></Reference><Reference><Citation>
+:
+On negative outcome control of unobserved confounding as a generalization of difference-in-differences.
+
+<i>Stat Sci</i>
+.2016;31(3) :
+10.1214/16-STS558
+348-361
+10.1214/16-STS558
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1214/16-STS558</ArticleId><ArticleId IdType="pmc">PMC5322866</ArticleId><ArticleId IdType="pubmed">28239233</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Semiparametric Difference-in-Differences Estimators, Abadie, A.
+
+<i>The Review of Economic Studies</i>
+.(2005) 72(1), 1&#x2013;19;
+Reference source
+</Citation></Reference><Reference><Citation>
+:
+Gain Scores Revisited: A Graphical Models Perspective.
+
+<i>Sociological Methods &amp; Research</i>
+.2021;50(3) :
+10.1177/0049124119826155
+1353-1375
+10.1177/0049124119826155
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1177/0049124119826155</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Selection and parallel trends Ghanem, Dalia, Pedro HC Sant'Anna, and Kaspar W&#xfc;thrich.
+
+<i>arXiv preprint</i>
+.2022);
+Reference source
+</Citation></Reference><Reference><Citation>
+:
+Doubly robust difference-in-differences estimators.
+
+<i>Journal of Econometrics</i>
+.2020;219(1) :
+10.1016/j.jeconom.2020.06.003
+101-122
+10.1016/j.jeconom.2020.06.003
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.jeconom.2020.06.003</ArticleId></ArticleIdList></Reference><Reference><Citation>
+:
+Universal Difference-in-Differences for Causal Inference in Epidemiology.
+
+<i>Epidemiology</i>
+.2024;35(1) :
+10.1097/EDE.0000000000001676
+16-22
+10.1097/EDE.0000000000001676
+
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/EDE.0000000000001676</ArticleId><ArticleId IdType="pmc">PMC10683972</ArticleId><ArticleId IdType="pubmed">38032801</ArticleId></ArticleIdList></Reference><Reference><Citation>
+A universal difference-in-differences approach for causal inference, Park, Chan, and Eric Tchetgen Tchetgen.
+
+<i>arXiv preprint</i>
+.(2022);
+Reference source
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC10683972</ArticleId><ArticleId IdType="pubmed">38032801</ArticleId></ArticleIdList></Reference><Reference><Citation>
+:
+Simple approaches to nonlinear difference-in-differences with panel&#xa0;data.
+
+<i>The Econometrics Journal</i>
+.2023;26(3) :
+10.1093/ectj/utad016
+C31-C66
+10.1093/ectj/utad016
+</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/ectj/utad016</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>

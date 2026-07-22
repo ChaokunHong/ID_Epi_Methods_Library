@@ -1,0 +1,87 @@
+{
+  "raw_sha256": {
+    "raw/SEARCH-20260722-LINEAGE-CAUSAL-01.esearch.json": "b4d68ae8eae01bb8acc1b08ade2ab8c207422f1c6302c943c7cf75fafbd00137",
+    "raw/SEARCH-20260722-LINEAGE-EVIDENCE-01.esearch.json": "57020fea1bdda156c5b177ccf115f307177ca17d84c11aa7bc61c0bbfaee710f",
+    "raw/SEARCH-20260722-LINEAGE-FORECASTING-01.esearch.json": "eb55e590c6c5663acdda0e38af891c93f8535e97c8f1d240aa4e1ae3b803f11d"
+  },
+  "receipt_queries": [
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-01.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "4f998696866b1d9acb4c045a8f8591d5352e6e097029559cb856d35eb7e8bc32"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-01.esearch.json",
+      "esearch_sha256": "b4d68ae8eae01bb8acc1b08ade2ab8c207422f1c6302c943c7cf75fafbd00137",
+      "query": "HIV[Title] AND self[Title] AND testing[Title] AND alone[Title] AND additional[Title] AND interventions[Title] AND financial[Title] AND incentives[Title] AND linkage[Title] AND care[Title] AND prevention[Title] AND male[Title] AND partners[Title] AND antenatal[Title] AND clinic[Title] AND attendees[Title] AND Malawi[Title] AND adaptive[Title] AND multi[Title] AND arm[Title] AND stage[Title] AND cluster[Title] AND randomised[Title] AND trial[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-CAUSAL-01",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-CAUSAL-01.esearch.json",
+      "raw_sha256": "b4d68ae8eae01bb8acc1b08ade2ab8c207422f1c6302c943c7cf75fafbd00137",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a60321092d23474b402cc7a"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 2,
+          "path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-01.efetch.000000000-000000001.xml",
+          "retmax": 2,
+          "retstart": 0,
+          "sha256": "562f8676c27ca35443bd761d0ac5d9315b9fb1e36a3898032f877b9b71d7c4b2"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-01.esearch.json",
+      "esearch_sha256": "57020fea1bdda156c5b177ccf115f307177ca17d84c11aa7bc61c0bbfaee710f",
+      "query": "Capture[Title] AND recapture[Title] AND method[Title] AND assessing[Title] AND publication[Title] AND bias[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-EVIDENCE-01",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-EVIDENCE-01.esearch.json",
+      "raw_sha256": "57020fea1bdda156c5b177ccf115f307177ca17d84c11aa7bc61c0bbfaee710f",
+      "reported_count": 2,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a6032121342651c300a0cea"
+    },
+    {
+      "date_end": "",
+      "date_start": "",
+      "efetch_pages": [
+        {
+          "parsed_count": 1,
+          "path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-01.efetch.000000000-000000000.xml",
+          "retmax": 1,
+          "retstart": 0,
+          "sha256": "472ee26c450551c7aa018dc3b9b1374cf719b3c22f3971e0bab345bb7177b2d0"
+        }
+      ],
+      "esearch_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-01.esearch.json",
+      "esearch_sha256": "eb55e590c6c5663acdda0e38af891c93f8535e97c8f1d240aa4e1ae3b803f11d",
+      "query": "Forecasting[Title] AND Influenza[Title] AND Epidemics[Title] AND Pandemics[Title] AND Age[Title] AND AI[Title] AND Machine[Title] AND Learning[Title]",
+      "query_id": "SEARCH-20260722-LINEAGE-FORECASTING-01",
+      "query_key": "1",
+      "query_scope": "unbounded_identity",
+      "raw_path": "raw/SEARCH-20260722-LINEAGE-FORECASTING-01.esearch.json",
+      "raw_sha256": "eb55e590c6c5663acdda0e38af891c93f8535e97c8f1d240aa4e1ae3b803f11d",
+      "reported_count": 1,
+      "source": "pubmed",
+      "status": "complete",
+      "usehistory": true,
+      "webenv": "MCID_6a603215d77bdb9f240d0aa5"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "assignment_input_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-005_RECORDS.csv",
+  "assignment_input_sha256": "3a19a2ca753cbf9ac6a334f1a09ce9b5db2a96dd58929c73f5d9ac3d848723e1",
+  "assignment_record_count": 1858,
+  "batch_id": "CONCEPT-BATCH-005",
+  "concept_table_path": "01_search/search_logs/2026-07-20-broad-discovery/wave_03_lineage_resolution/canonical_concept_batches/CONCEPT-BATCH-005.csv",
+  "concept_table_sha256": "0e13184ec6e234562e1a6ea0044acfcbcc2382733c41f2dfdadf56e700fa1246",
+  "first_label": "spatial_transmission_models",
+  "last_label": "early_warning_signals",
+  "ordered_concept_labels": [
+    "spatial_transmission_models",
+    "phylogeography_genomic_diffusion",
+    "self_exciting_point_processes",
+    "border_discontinuity_designs",
+    "spatial_diffusion_models",
+    "spatial_regression_geostatistics",
+    "changepoint_detection",
+    "early_warning_signals"
+  ],
+  "row_count": 8,
+  "through_wave_02_index_path": "01_search/search_logs/2026-07-20-broad-discovery/global/candidates_through_wave_02.csv",
+  "through_wave_02_index_sha256": "fccb499f711bc7858f8f9ac1825d03877f169f3b80a5fcc9097e1390167102dd"
+}

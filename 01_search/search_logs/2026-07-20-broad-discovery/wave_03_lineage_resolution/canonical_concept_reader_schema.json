@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "batch_id",
+    "manifest_sha256",
+    "concept_table_sha256",
+    "assignment_input_sha256",
+    "record_count",
+    "ordered_key_sha256",
+    "concept_decisions",
+    "reassignments",
+    "new_concepts",
+    "concerns"
+  ],
+  "properties": {
+    "status": {"enum": ["PASS", "FAIL"]},
+    "batch_id": {"type": "string"},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "concept_table_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "assignment_input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "record_count": {"type": "integer", "minimum": 0},
+    "ordered_key_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "concept_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["concept_label", "decision", "retained_canonical_name", "retained_family", "labels_compared", "evidence_inspected", "rationale"],
+        "properties": {
+          "concept_label": {"type": "string"},
+          "decision": {"enum": ["retain", "merge", "split", "rename"]},
+          "retained_canonical_name": {"type": "string"},
+          "retained_family": {"type": "string"},
+          "labels_compared": {"type": "string"},
+          "evidence_inspected": {"type": "string"},
+          "rationale": {"type": "string"}
+        }
+      }
+    },
+    "reassignments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidate_key", "from_concept_label", "to_concept_label", "to_canonical_name", "to_family", "rationale"],
+        "properties": {
+          "candidate_key": {"type": "string"},
+          "from_concept_label": {"type": "string"},
+          "to_concept_label": {"type": "string"},
+          "to_canonical_name": {"type": "string"},
+          "to_family": {"type": "string"},
+          "rationale": {"type": "string"}
+        }
+      }
+    },
+    "new_concepts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["concept_label", "canonical_name", "family", "rationale"],
+        "properties": {
+          "concept_label": {"type": "string"},
+          "canonical_name": {"type": "string"},
+          "family": {"type": "string"},
+          "rationale": {"type": "string"}
+        }
+      }
+    },
+    "concerns": {"type": "array", "items": {"type": "string"}}
+  }
+}

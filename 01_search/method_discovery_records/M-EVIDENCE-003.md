@@ -1,0 +1,29 @@
+# M-EVIDENCE-003 — Correction and retraction evidence
+
+## Discovery control
+- Method ID: M-EVIDENCE-003
+- Verification state: discovery
+- Preliminary family: evidence_synthesis
+- Canonical discovery label: Correction and retraction evidence
+- Known label variants: Interrupted time series and segmented regression | Legacy difference-in-differences and event-study designs | correction_and_retraction_evidence | difference_in_differences_event_study | interrupted_time_series
+- Linked discovery paper IDs: P-2024-0331 | P-2024-0365
+- Discovery search IDs: SEARCH-20260720-PUBMED-FAMILY-CAUSAL-01 | SEARCH-20260720-PUBMED-VENUE-CAUSAL-01
+- Author: task6-canonical-integrator
+- Reviewer: task6-canonical-integrator
+- Created date: 2026-07-22
+- Updated date: 2026-07-22
+
+## Structural problem lead
+Semantic review grouped 2 retained discovery records under this design concept after inspecting titles and complete available abstracts. This is a preliminary problem/method class only; no estimand, identification assumption, performance result, or software capability is verified.
+
+## Lineage candidates
+- NS-EVIDENCE-004 | role=correction | status=resolved_identity_role_unverified | identity=PMID:38665063 | searches=SEARCH-20260719-LINEAGE-EVIDENCE-04 | URL=https://pubmed.ncbi.nlm.nih.gov/38665063/
+- NS-EVIDENCE-005 | role=correction | status=resolved_identity_role_unverified | identity=PMID:39320460 | searches=SEARCH-20260719-LINEAGE-EVIDENCE-05 | URL=https://pubmed.ncbi.nlm.nih.gov/39320460/
+
+All entries above are bibliographic discovery leads, not normalized authoritative relationships.
+
+## Infectious-disease transfer route
+The linked corpus contains these discovery record types: correction=2. Eligibility came from the frozen infectious-disease methods-first search and semantic review. Public-data access, AMR relevance, LMIC relevance, and solo workload remain unevaluated.
+
+## Evidence defects and next verification action
+Lineage identity has 0 unresolved lead(s), and every resolved identity still has an unverified bibliographic role. The next plan must inspect full-text methods, assumptions, estimands, diagnostics, limitations, corrections, implementation/reproduction resources, and authoritative-source status before creating any Stage 3 method card.

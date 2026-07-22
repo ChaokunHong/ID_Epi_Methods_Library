@@ -1,0 +1,9 @@
+batch_id,record_count,agreement_both_explicit,agreement_explicit_vs_implicit,agreement_both_implicit,adjudicated_both_explicit,adjudicated_explicit_vs_implicit,adjudicated_both_implicit,adjudicated_total,notes
+CONCEPT-BATCH-001,675,20,0,601,29,25,0,54,"Explicit-vs-implicit rows are conservative adjudication items, not two explicit semantic disagreements; reader coverage failures are separately zero-adopted."
+CONCEPT-BATCH-002,782,1,0,564,102,115,0,217,"Explicit-vs-implicit rows are conservative adjudication items, not two explicit semantic disagreements; reader coverage failures are separately zero-adopted."
+CONCEPT-BATCH-003,1477,0,3,0,83,1391,0,1474,"Explicit-vs-implicit rows are conservative adjudication items, not two explicit semantic disagreements; reader coverage failures are separately zero-adopted."
+CONCEPT-BATCH-004,953,6,0,855,37,55,0,92,"Explicit-vs-implicit rows are conservative adjudication items, not two explicit semantic disagreements; reader coverage failures are separately zero-adopted."
+CONCEPT-BATCH-005,1858,1,0,1685,3,169,0,172,"Explicit-vs-implicit rows are conservative adjudication items, not two explicit semantic disagreements; reader coverage failures are separately zero-adopted."
+CONCEPT-BATCH-006,740,0,6,0,62,672,0,734,"Explicit-vs-implicit rows are conservative adjudication items, not two explicit semantic disagreements; reader coverage failures are separately zero-adopted."
+CONCEPT-BATCH-007,121,2,0,5,59,55,0,114,"Explicit-vs-implicit rows are conservative adjudication items, not two explicit semantic disagreements; reader coverage failures are separately zero-adopted."
+CONCEPT-BATCH-008,1173,0,0,816,13,344,0,357,"Explicit-vs-implicit rows are conservative adjudication items, not two explicit semantic disagreements; reader coverage failures are separately zero-adopted."

@@ -1,0 +1,1848 @@
+[
+  {
+    "named_source_id": "NS-CAUSAL-001",
+    "source_to_resolve": {
+      "method_label": "adaptive_multi_arm_multi_stage_cluster_randomized_trial",
+      "canonical_name": "Adaptive multi-arm multi-stage cluster randomized trial",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:30601823",
+      "title": "HIV self-testing alone or with additional interventions, including financial incentives, and linkage to care or prevention among male partners of antenatal care clinic attendees in Malawi: An adaptive multi-arm, multi-stage cluster randomised trial.",
+      "first_author": "Augustine T Choko",
+      "year": "2019",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/30601823/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-01",
+        "query_variant": "exact_title",
+        "query": "HIV[Title] AND self[Title] AND testing[Title] AND alone[Title] AND additional[Title] AND interventions[Title] AND financial[Title] AND incentives[Title] AND linkage[Title] AND care[Title] AND prevention[Title] AND male[Title] AND partners[Title] AND antenatal[Title] AND clinic[Title] AND attendees[Title] AND Malawi[Title] AND adaptive[Title] AND multi[Title] AND arm[Title] AND stage[Title] AND cluster[Title] AND randomised[Title] AND trial[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-01",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:30601823",
+        "candidate_rank": "1",
+        "title": "HIV self-testing alone or with additional interventions, including financial incentives, and linkage to care or prevention among male partners of antenatal care clinic attendees in Malawi: An adaptive multi-arm, multi-stage cluster randomised trial.",
+        "year": "2019",
+        "authors_or_first_author": "Augustine T Choko; Elizabeth L Corbett; Nigel Stallard; Hendramoorthy Maheswaran; Aurelia Lepine; Cheryl C Johnson; Doreen Sakala; Thokozani Kalua; Moses Kumwenda; Richard Hayes; Katherine Fielding",
+        "doi": "10.1371/journal.pmed.1002719",
+        "pmid": "30601823",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30601823/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-002",
+    "source_to_resolve": {
+      "method_label": "applied_randomized_intervention_studies",
+      "canonical_name": "Applied randomized intervention studies",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:34491227",
+      "title": "An Adaptive Intervention Trial Design for Finding the Optimal Integrated Strategies for Malaria Control and Elimination in Africa: A Model Simulation Study.",
+      "first_author": "Guofa Zhou",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34491227/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-02",
+        "query_variant": "exact_title",
+        "query": "Adaptive[Title] AND Intervention[Title] AND Trial[Title] AND Design[Title] AND Finding[Title] AND Optimal[Title] AND Integrated[Title] AND Strategies[Title] AND Malaria[Title] AND Control[Title] AND Elimination[Title] AND Africa[Title] AND Model[Title] AND Simulation[Title] AND Study[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-02",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:34491227",
+        "candidate_rank": "1",
+        "title": "An Adaptive Intervention Trial Design for Finding the Optimal Integrated Strategies for Malaria Control and Elimination in Africa: A Model Simulation Study.",
+        "year": "2021",
+        "authors_or_first_author": "Guofa Zhou; Ming-Chieh Lee; Xiaoming Wang; Daibin Zhong; Elizabeth Hemming-Schroeder; Guiyun Yan",
+        "doi": "10.4269/ajtmh.20-0254",
+        "pmid": "34491227",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34491227/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-003",
+    "source_to_resolve": {
+      "method_label": "applied_randomized_intervention_studies",
+      "canonical_name": "Applied randomized intervention studies",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:23757082",
+      "title": "Effect of an outpatient antimicrobial stewardship intervention on broad-spectrum antibiotic prescribing by primary care pediatricians: a randomized trial.",
+      "first_author": "Jeffrey S Gerber",
+      "year": "2013",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/23757082/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-03",
+        "query_variant": "exact_title",
+        "query": "Effect[Title] AND outpatient[Title] AND antimicrobial[Title] AND stewardship[Title] AND intervention[Title] AND broad[Title] AND spectrum[Title] AND antibiotic[Title] AND prescribing[Title] AND primary[Title] AND care[Title] AND pediatricians[Title] AND randomized[Title] AND trial[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-03",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:23757082",
+        "candidate_rank": "1",
+        "title": "Effect of an outpatient antimicrobial stewardship intervention on broad-spectrum antibiotic prescribing by primary care pediatricians: a randomized trial.",
+        "year": "2013",
+        "authors_or_first_author": "Jeffrey S Gerber; Priya A Prasad; Alexander G Fiks; A Russell Localio; Robert W Grundmeier; Louis M Bell; Richard C Wasserman; Ron Keren; Theoklis E Zaoutis",
+        "doi": "10.1001/jama.2013.6287",
+        "pmid": "23757082",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23757082/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-004",
+    "source_to_resolve": {
+      "method_label": "bayesian_data_fusion_for_pooled_sampling_prevalence",
+      "canonical_name": "Bayesian data fusion for pooled-sampling prevalence",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:34707835",
+      "title": "Estimating viral prevalence with data fusion for adaptive two-phase pooled sampling.",
+      "first_author": "Andrew Hoegh",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34707835/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-04",
+        "query_variant": "exact_title",
+        "query": "Estimating[Title] AND viral[Title] AND prevalence[Title] AND data[Title] AND fusion[Title] AND adaptive[Title] AND two[Title] AND phase[Title] AND pooled[Title] AND sampling[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-04",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:34707835",
+        "candidate_rank": "1",
+        "title": "Estimating viral prevalence with data fusion for adaptive two-phase pooled sampling.",
+        "year": "2021",
+        "authors_or_first_author": "Andrew Hoegh; Alison J Peel; Wyatt Madden; Manuel Ruiz Aravena; Aaron Morris; Alex Washburne; Raina K Plowright",
+        "doi": "10.1002/ece3.8107",
+        "pmid": "34707835",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34707835/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-005",
+    "source_to_resolve": {
+      "method_label": "bridged_treatment_comparison_data_fusion",
+      "canonical_name": "Bridged treatment comparison via data fusion",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:39218437",
+      "title": "Bridged treatment comparisons: an illustrative application in HIV treatment.",
+      "first_author": "Paul N Zivich",
+      "year": "2025",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/39218437/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-05",
+        "query_variant": "exact_title",
+        "query": "Bridged[Title] AND treatment[Title] AND comparisons[Title] AND illustrative[Title] AND application[Title] AND HIV[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-05",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:39218437",
+        "candidate_rank": "1",
+        "title": "Bridged treatment comparisons: an illustrative application in HIV treatment.",
+        "year": "2025",
+        "authors_or_first_author": "Paul N Zivich; Stephen R Cole; Jessie K Edwards; Bonnie E Shook-Sa; Alexander Breskin; Michael G Hudgens",
+        "doi": "10.1093/aje/kwae340",
+        "pmid": "39218437",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39218437/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-006",
+    "source_to_resolve": {
+      "method_label": "intervention_and_economic_decision_models",
+      "canonical_name": "Causal and economic evaluations under incomplete ascertainment",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:20976213",
+      "title": "Cost-effectiveness of adolescent pertussis vaccination for the Netherlands: using an individual-based dynamic model.",
+      "first_author": "Robin de Vries",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20976213/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-06",
+        "query_variant": "exact_title",
+        "query": "Cost[Title] AND effectiveness[Title] AND adolescent[Title] AND pertussis[Title] AND vaccination[Title] AND Netherlands[Title] AND using[Title] AND individual[Title] AND based[Title] AND dynamic[Title] AND model[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-06",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:20976213",
+        "candidate_rank": "1",
+        "title": "Cost-effectiveness of adolescent pertussis vaccination for the Netherlands: using an individual-based dynamic model.",
+        "year": "2010",
+        "authors_or_first_author": "Robin de Vries; Mirjam Kretzschmar; Joop F P Schellekens; Florens G A Versteegh; Tjalke A Westra; John J Roord; Maarten J Postma",
+        "doi": "10.1371/journal.pone.0013392",
+        "pmid": "20976213",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20976213/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-007",
+    "source_to_resolve": {
+      "method_label": "intervention_and_economic_decision_models",
+      "canonical_name": "Causal and economic evaluations under incomplete ascertainment",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:20728761",
+      "title": "Cost-effectiveness analysis of various pertussis vaccination strategies primarily aimed at protecting infants in the Netherlands.",
+      "first_author": "Tjalke A Westra",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20728761/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-07",
+        "query_variant": "title_first_author",
+        "query": "effectiveness[Title] AND vaccination[Title] AND Netherlands[Title] AND strategies[Title] AND Westra[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-07",
+        "query_variant": "exact_title",
+        "query": "Cost[Title] AND effectiveness[Title] AND analysis[Title] AND various[Title] AND pertussis[Title] AND vaccination[Title] AND strategies[Title] AND primarily[Title] AND aimed[Title] AND protecting[Title] AND infants[Title] AND Netherlands[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-07",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:20728761",
+        "candidate_rank": "1",
+        "title": "Cost-effectiveness analysis of various pertussis vaccination strategies primarily aimed at protecting infants in the Netherlands.",
+        "year": "2010",
+        "authors_or_first_author": "Tjalke A Westra; Robin de Vries; Johannes J Tamminga; Christophe J Sauboin; Maarten J Postma",
+        "doi": "10.1016/j.clinthera.2010.07.017",
+        "pmid": "20728761",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20728761/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-008",
+    "source_to_resolve": {
+      "method_label": "causal_interference_estimands",
+      "canonical_name": "Causal estimands for vaccination under transmission interference",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:41570185",
+      "title": "Defining and Estimating Outcomes Directly Averted by a Vaccination Program when Rollout Occurs Over Time.",
+      "first_author": "Katherine M Jia",
+      "year": "2026",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/41570185/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-08",
+        "query_variant": "title_first_author",
+        "query": "Vaccination[Title] AND Estimating[Title] AND Defining[Title] AND Outcomes[Title] AND Jia[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-08",
+        "query_variant": "exact_title",
+        "query": "Defining[Title] AND Estimating[Title] AND Outcomes[Title] AND Directly[Title] AND Averted[Title] AND Vaccination[Title] AND Program[Title] AND when[Title] AND Rollout[Title] AND Occurs[Title] AND Over[Title] AND Time[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-08",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:41570185",
+        "candidate_rank": "1",
+        "title": "Defining and Estimating Outcomes Directly Averted by a Vaccination Program when Rollout Occurs Over Time.",
+        "year": "2026",
+        "authors_or_first_author": "Katherine M Jia; Christopher B Boyer; Alyssa Bilinski; Marc Lipsitch",
+        "doi": "10.1097/ede.0000000000001953",
+        "pmid": "41570185",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41570185/"
+      },
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-08",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:41281223",
+        "candidate_rank": "2",
+        "title": "Defining and Estimating Outcomes Directly Averted by a Vaccination Program when Rollout Occurs Over Time.",
+        "year": "2025",
+        "authors_or_first_author": "Katherine M Jia; Christopher B Boyer; Alyssa Bilinski; Marc Lipsitch",
+        "doi": "10.1001/jamanetworkopen.2021.42725",
+        "pmid": "41281223",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41281223/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-009",
+    "source_to_resolve": {
+      "method_label": "causal_mediation_analysis",
+      "canonical_name": "Causal mediation analysis",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:35071157",
+      "title": "G-Computation to Causal Mediation Analysis With Sequential Multiple Mediators-Investigating the Vulnerable Time Window of HBV Activity for the Mechanism of HCV Induced Hepatocellular Carcinoma.",
+      "first_author": "An-Shun Tai",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/35071157/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-09",
+        "query_variant": "exact_title",
+        "query": "G[Title] AND Computation[Title] AND Causal[Title] AND Mediation[Title] AND Analysis[Title] AND Sequential[Title] AND Multiple[Title] AND Mediators[Title] AND Investigating[Title] AND Vulnerable[Title] AND Time[Title] AND Window[Title] AND HBV[Title] AND Activity[Title] AND Mechanism[Title] AND HCV[Title] AND Induced[Title] AND Hepatocellular[Title] AND Carcinoma[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-09",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:35071157",
+        "candidate_rank": "1",
+        "title": "G-Computation to Causal Mediation Analysis With Sequential Multiple Mediators-Investigating the Vulnerable Time Window of HBV Activity for the Mechanism of HCV Induced Hepatocellular Carcinoma.",
+        "year": "2021",
+        "authors_or_first_author": "An-Shun Tai; Yen-Tsung Huang; Hwai-I Yang; Lauren V Lan; Sheng-Hsuan Lin",
+        "doi": "10.3389/fpubh.2021.757942",
+        "pmid": "35071157",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35071157/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-010",
+    "source_to_resolve": {
+      "method_label": "causal_mediation_analysis",
+      "canonical_name": "Causal mediation analysis",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:29847479",
+      "title": "Does Partner Selection Mediate the Relationship Between School Attendance and HIV/Herpes Simplex Virus-2 Among Adolescent Girls and Young Women in South Africa: An Analysis of HIV Prevention Trials Network 068 Data.",
+      "first_author": "Marie C D Stoner",
+      "year": "2018",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/29847479/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-10",
+        "query_variant": "title_first_author",
+        "query": "Relationship[Title] AND Attendance[Title] AND Adolescent[Title] AND Prevention[Title] AND Stoner[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-10",
+        "query_variant": "exact_title",
+        "query": "Does[Title] AND Partner[Title] AND Selection[Title] AND Mediate[Title] AND Relationship[Title] AND Between[Title] AND School[Title] AND Attendance[Title] AND HIV[Title] AND Herpes[Title] AND Simplex[Title] AND Virus[Title] AND 2[Title] AND Adolescent[Title] AND Girls[Title] AND Young[Title] AND Women[Title] AND South[Title] AND Africa[Title] AND Analysis[Title] AND Prevention[Title] AND Trials[Title] AND Network[Title] AND 068[Title] AND Data[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-10",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:29847479",
+        "candidate_rank": "1",
+        "title": "Does Partner Selection Mediate the Relationship Between School Attendance and HIV/Herpes Simplex Virus-2 Among Adolescent Girls and Young Women in South Africa: An Analysis of HIV Prevention Trials Network 068 Data.",
+        "year": "2018",
+        "authors_or_first_author": "Marie C D Stoner; Jessie K Edwards; William C Miller; Allison E Aiello; Carolyn T Halpern; Aimée Julien; Katherine B Rucinski; Amanda Selin; Rhian Twine; James P Hughes; Jing Wang; Yaw Agyei; Francesc Xavier Gómez-Olivé; Ryan G Wagner; Oliver Laeyendecker; Catherine Macphail; Kathleen Kahn; Audrey Pettifor",
+        "doi": "10.1097/qai.0000000000001766",
+        "pmid": "29847479",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29847479/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-011",
+    "source_to_resolve": {
+      "method_label": "causal_methods_comparison_guidance",
+      "canonical_name": "Causal-design comparison and reporting guidance",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:41069648",
+      "title": "Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data.",
+      "first_author": "Laura M Güdemann",
+      "year": "2025",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/41069648/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-11",
+        "query_variant": "exact_title",
+        "query": "Triangulating[Title] AND Instrumental[Title] AND Variable[Title] AND confounder[Title] AND adjustment[Title] AND difference[Title] AND methods[Title] AND comparative[Title] AND effectiveness[Title] AND research[Title] AND observational[Title] AND data[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-11",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:41069648",
+        "candidate_rank": "1",
+        "title": "Triangulating Instrumental Variable, confounder adjustment and difference-in-difference methods for comparative effectiveness research in observational data.",
+        "year": "2025",
+        "authors_or_first_author": "Laura M Güdemann; John M Dennis; Andrew P McGovern; Lauren R Rodgers; Beverley M Shields; William Henley; Jack Bowden; MASTERMIND consortium",
+        "doi": "10.12688/wellcomeopenres.22955.2",
+        "pmid": "41069648",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41069648/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-012",
+    "source_to_resolve": {
+      "method_label": "clinical_early_warning_scores_and_biomarkers",
+      "canonical_name": "Clinical early-warning scores and biomarkers",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:26246167",
+      "title": "A targeted real-time early warning score (TREWScore) for septic shock.",
+      "first_author": "Katharine E Henry",
+      "year": "2015",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/26246167/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-12",
+        "query_variant": "exact_title",
+        "query": "targeted[Title] AND real[Title] AND time[Title] AND early[Title] AND warning[Title] AND score[Title] AND TREWScore[Title] AND septic[Title] AND shock[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-12",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:26246167",
+        "candidate_rank": "1",
+        "title": "A targeted real-time early warning score (TREWScore) for septic shock.",
+        "year": "2015",
+        "authors_or_first_author": "Katharine E Henry; David N Hager; Peter J Pronovost; Suchi Saria",
+        "doi": "10.1126/scitranslmed.aab3719",
+        "pmid": "26246167",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26246167/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-013",
+    "source_to_resolve": {
+      "method_label": "clinical_early_warning_scores_and_biomarkers",
+      "canonical_name": "Clinical early-warning scores and biomarkers",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:27071911",
+      "title": "Early warning score: a dynamic marker of severity and prognosis in patients with Gram-negative bacteraemia and sepsis.",
+      "first_author": "Mahableshwar Albur",
+      "year": "2016",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/27071911/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-13",
+        "query_variant": "exact_title",
+        "query": "Early[Title] AND warning[Title] AND score[Title] AND dynamic[Title] AND marker[Title] AND severity[Title] AND prognosis[Title] AND patients[Title] AND Gram[Title] AND negative[Title] AND bacteraemia[Title] AND sepsis[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-13",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:27071911",
+        "candidate_rank": "1",
+        "title": "Early warning score: a dynamic marker of severity and prognosis in patients with Gram-negative bacteraemia and sepsis.",
+        "year": "2016",
+        "authors_or_first_author": "Mahableshwar Albur; Fergus Hamilton; Alasdair P MacGowan",
+        "doi": "10.1186/s12941-016-0139-z",
+        "pmid": "27071911",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27071911/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-014",
+    "source_to_resolve": {
+      "method_label": "cluster_randomized_intervention_trials",
+      "canonical_name": "Cluster-randomized intervention trial designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:34982767",
+      "title": "The impact of removing financial incentives and/or audit and feedback on chlamydia testing in general practice: A cluster randomised controlled trial (ACCEPt-able).",
+      "first_author": "Jane S Hocking",
+      "year": "2022",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34982767/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-14",
+        "query_variant": "exact_title",
+        "query": "impact[Title] AND removing[Title] AND financial[Title] AND incentives[Title] AND audit[Title] AND feedback[Title] AND chlamydia[Title] AND testing[Title] AND general[Title] AND practice[Title] AND cluster[Title] AND randomised[Title] AND controlled[Title] AND trial[Title] AND ACCEPt[Title] AND able[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-14",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:34982767",
+        "candidate_rank": "1",
+        "title": "The impact of removing financial incentives and/or audit and feedback on chlamydia testing in general practice: A cluster randomised controlled trial (ACCEPt-able).",
+        "year": "2022",
+        "authors_or_first_author": "Jane S Hocking; Anna Wood; Meredith Temple-Smith; Sabine Braat; Matthew Law; Liliana Bulfone; Callum Jones; Mieke van Driel; Christopher K Fairley; Basil Donovan; Rebecca Guy; Nicola Low; John Kaldor; Jane Gunn",
+        "doi": "10.1371/journal.pmed.1003858",
+        "pmid": "34982767",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34982767/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-015",
+    "source_to_resolve": {
+      "method_label": "cluster_randomized_intervention_trials",
+      "canonical_name": "Cluster-randomized intervention trial designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:37100446",
+      "title": "Multi-faceted intervention to improve management of antibiotics for children presenting to primary care with acute cough and respiratory tract infection (CHICO): efficient cluster randomised controlled trial.",
+      "first_author": "Peter S Blair",
+      "year": "2023",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/37100446/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-15",
+        "query_variant": "exact_title",
+        "query": "Multi[Title] AND faceted[Title] AND intervention[Title] AND improve[Title] AND management[Title] AND antibiotics[Title] AND children[Title] AND presenting[Title] AND primary[Title] AND care[Title] AND acute[Title] AND cough[Title] AND respiratory[Title] AND tract[Title] AND infection[Title] AND CHICO[Title] AND efficient[Title] AND cluster[Title] AND randomised[Title] AND controlled[Title] AND trial[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-15",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:37100446",
+        "candidate_rank": "1",
+        "title": "Multi-faceted intervention to improve management of antibiotics for children presenting to primary care with acute cough and respiratory tract infection (CHICO): efficient cluster randomised controlled trial.",
+        "year": "2023",
+        "authors_or_first_author": "Peter S Blair; Grace Young; Clare Clement; P Dixon; Penny Seume; Jenny Ingram; Jodi Taylor; Christie Cabral; Patricia J Lucas; Elizabeth Beech; Jeremy Horwood; Martin Gulliford; Nick A Francis; Sam Creavin; Janet A Lane; Scott Bevan; Alastair D Hay",
+        "doi": "10.1136/bmj-2022-072488",
+        "pmid": "37100446",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37100446/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-016",
+    "source_to_resolve": {
+      "method_label": "comparative_policy_impact_cohort",
+      "canonical_name": "Comparative policy-impact cohort evaluation",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:38991004",
+      "title": "The impact of primary health care on AIDS incidence and mortality: A cohort study of 3.4 million Brazilians.",
+      "first_author": "Priscila F P S Pinto",
+      "year": "2024",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/38991004/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-16",
+        "query_variant": "exact_title",
+        "query": "impact[Title] AND primary[Title] AND health[Title] AND care[Title] AND AIDS[Title] AND incidence[Title] AND mortality[Title] AND cohort[Title] AND study[Title] AND 3[Title] AND 4[Title] AND million[Title] AND Brazilians[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-16",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:38991004",
+        "candidate_rank": "1",
+        "title": "The impact of primary health care on AIDS incidence and mortality: A cohort study of 3.4 million Brazilians.",
+        "year": "2024",
+        "authors_or_first_author": "Priscila F P S Pinto; James Macinko; Andréa F Silva; Iracema Lua; Gabriela Jesus; Laio Magno; Carlos A S Teles Santos; Maria Yury Ichihara; Mauricio L Barreto; Corrina Moucheraud; Luis E Souza; Inês Dourado; Davide Rasella",
+        "doi": "10.1371/journal.pmed.1004302",
+        "pmid": "38991004",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38991004/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-017",
+    "source_to_resolve": {
+      "method_label": "comparative_screening_priority_risk_assessment",
+      "canonical_name": "Comparative screening-priority risk assessment",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:31552819",
+      "title": "Targeting TB or MRSA in Norwegian municipalities during 'the refugee crisis' of 2015: a framework for priority setting in screening.",
+      "first_author": "Anders Skyrud Danielsen",
+      "year": "2019",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/31552819/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-17",
+        "query_variant": "title_first_author",
+        "query": "municipalities[Title] AND Targeting[Title] AND Norwegian[Title] AND framework[Title] AND Danielsen[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-17",
+        "query_variant": "exact_title",
+        "query": "Targeting[Title] AND TB[Title] AND MRSA[Title] AND Norwegian[Title] AND municipalities[Title] AND during[Title] AND refugee[Title] AND crisis[Title] AND 2015[Title] AND framework[Title] AND priority[Title] AND setting[Title] AND screening[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-17",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:31552819",
+        "candidate_rank": "1",
+        "title": "Targeting TB or MRSA in Norwegian municipalities during 'the refugee crisis' of 2015: a framework for priority setting in screening.",
+        "year": "2019",
+        "authors_or_first_author": "Anders Skyrud Danielsen; Petter Elstrøm; Trude Margrete Arnesen; Unni Gopinathan; Oliver Kacelnik",
+        "doi": "10.2807/1560-7917.es.2019.24.38.1800676",
+        "pmid": "31552819",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31552819/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-018",
+    "source_to_resolve": {
+      "method_label": "controlled_interrupted_time_series",
+      "canonical_name": "Controlled interrupted time series",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:35232491",
+      "title": "The comparative interrupted time series design for assessment of diagnostic impact: methodological considerations and an example using point-of-care C-reactive protein testing.",
+      "first_author": "Thomas R Fanshawe",
+      "year": "2022",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/35232491/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-18",
+        "query_variant": "exact_title",
+        "query": "comparative[Title] AND interrupted[Title] AND time[Title] AND series[Title] AND design[Title] AND assessment[Title] AND diagnostic[Title] AND impact[Title] AND methodological[Title] AND considerations[Title] AND example[Title] AND using[Title] AND point[Title] AND care[Title] AND C[Title] AND reactive[Title] AND protein[Title] AND testing[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-18",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:35232491",
+        "candidate_rank": "1",
+        "title": "The comparative interrupted time series design for assessment of diagnostic impact: methodological considerations and an example using point-of-care C-reactive protein testing.",
+        "year": "2022",
+        "authors_or_first_author": "Thomas R Fanshawe; Philip J Turner; Marjorie M Gillespie; Gail N Hayward",
+        "doi": "10.1186/s41512-022-00118-w",
+        "pmid": "35232491",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35232491/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-019",
+    "source_to_resolve": {
+      "method_label": "controlled_interrupted_time_series",
+      "canonical_name": "Controlled interrupted time series",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:20659985",
+      "title": "Reducing Clostridium difficile infection in acute care by using an improvement collaborative.",
+      "first_author": "Maxine Power",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20659985/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-19",
+        "query_variant": "exact_title",
+        "query": "Reducing[Title] AND Clostridium[Title] AND difficile[Title] AND infection[Title] AND acute[Title] AND care[Title] AND using[Title] AND improvement[Title] AND collaborative[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-19",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:20659985",
+        "candidate_rank": "1",
+        "title": "Reducing Clostridium difficile infection in acute care by using an improvement collaborative.",
+        "year": "2010",
+        "authors_or_first_author": "Maxine Power; Neil Wigglesworth; Emma Donaldson; Paul Chadwick; Stephen Gillibrand; Donald Goldmann",
+        "doi": "10.1136/bmj.c3359",
+        "pmid": "20659985",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20659985/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-020",
+    "source_to_resolve": {
+      "method_label": "counterfactual_policy_vaccination_impact",
+      "canonical_name": "Counterfactual policy and vaccination impact models",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:34711190",
+      "title": "COVID-19 underreporting and its impact on vaccination strategies.",
+      "first_author": "Vinicius Albani",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34711190/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-20",
+        "query_variant": "title_first_author",
+        "query": "underreporting[Title] AND vaccination[Title] AND strategies[Title] AND impact[Title] AND Albani[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-20",
+        "query_variant": "exact_title",
+        "query": "COVID[Title] AND 19[Title] AND underreporting[Title] AND its[Title] AND impact[Title] AND vaccination[Title] AND strategies[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-20",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:34711190",
+        "candidate_rank": "1",
+        "title": "COVID-19 underreporting and its impact on vaccination strategies.",
+        "year": "2021",
+        "authors_or_first_author": "Vinicius Albani; Jennifer Loria; Eduardo Massad; Jorge Zubelli",
+        "doi": "10.1186/s12879-021-06780-7",
+        "pmid": "34711190",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34711190/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-021",
+    "source_to_resolve": {
+      "method_label": "counterfactual_policy_vaccination_impact",
+      "canonical_name": "Counterfactual policy and vaccination impact models",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:22115361",
+      "title": "Modelling the impact of extended vaccination strategies on the epidemiology of pertussis.",
+      "first_author": "M H Rozenbaum",
+      "year": "2012",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/22115361/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-21",
+        "query_variant": "exact_title",
+        "query": "Modelling[Title] AND impact[Title] AND extended[Title] AND vaccination[Title] AND strategies[Title] AND epidemiology[Title] AND pertussis[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-21",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:22115361",
+        "candidate_rank": "1",
+        "title": "Modelling the impact of extended vaccination strategies on the epidemiology of pertussis.",
+        "year": "2012",
+        "authors_or_first_author": "M H Rozenbaum; R De Vries; H H LE; M J Postma",
+        "doi": "10.1017/s0950268811002354",
+        "pmid": "22115361",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22115361/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-022",
+    "source_to_resolve": {
+      "method_label": "covariate_adjusted_historical_control_borrowing",
+      "canonical_name": "Covariate-adjusted historical-control borrowing",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:38591424",
+      "title": "Dynamic borrowing of historical controls adjusting for covariates in vaccine efficacy clinical trials.",
+      "first_author": "Andrea Callegaro",
+      "year": "2024",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/38591424/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-22",
+        "query_variant": "exact_title",
+        "query": "Dynamic[Title] AND borrowing[Title] AND historical[Title] AND controls[Title] AND adjusting[Title] AND covariates[Title] AND vaccine[Title] AND efficacy[Title] AND clinical[Title] AND trials[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-22",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:38591424",
+        "candidate_rank": "1",
+        "title": "Dynamic borrowing of historical controls adjusting for covariates in vaccine efficacy clinical trials.",
+        "year": "2024",
+        "authors_or_first_author": "Andrea Callegaro; Yongyi Luo; Naveen Karkada; Toufik Zahaf",
+        "doi": "10.1002/pst.2384",
+        "pmid": "38591424",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38591424/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-023",
+    "source_to_resolve": {
+      "method_label": "external_synthetic_control_arms",
+      "canonical_name": "External synthetic control arms",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:38049729",
+      "title": "Comparative effectiveness of tocilizumab vs standard care in patients with severe COVID-19-related pneumonia: a retrospective cohort study utilizing registry data as a synthetic control.",
+      "first_author": "Yukari Uemura",
+      "year": "2023",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/38049729/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-23",
+        "query_variant": "exact_title",
+        "query": "Comparative[Title] AND effectiveness[Title] AND tocilizumab[Title] AND vs[Title] AND standard[Title] AND care[Title] AND patients[Title] AND severe[Title] AND COVID[Title] AND 19[Title] AND related[Title] AND pneumonia[Title] AND retrospective[Title] AND cohort[Title] AND study[Title] AND utilizing[Title] AND registry[Title] AND data[Title] AND synthetic[Title] AND control[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-23",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:38049729",
+        "candidate_rank": "1",
+        "title": "Comparative effectiveness of tocilizumab vs standard care in patients with severe COVID-19-related pneumonia: a retrospective cohort study utilizing registry data as a synthetic control.",
+        "year": "2023",
+        "authors_or_first_author": "Yukari Uemura; Ryoto Ozaki; Tomohiro Shinozaki; Hiroshi Ohtsu; Yousuke Shimizu; Kazuo Izumi; Sho Saito; Nobuaki Matsunaga; Norio Ohmagari",
+        "doi": "10.1186/s12879-023-08840-6",
+        "pmid": "38049729",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38049729/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-024",
+    "source_to_resolve": {
+      "method_label": "heterogeneity_robust_staggered_did",
+      "canonical_name": "Heterogeneity-robust staggered difference-in-differences",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:39579079",
+      "title": "Long-Term Effectiveness of Financial Incentives for Not Prescribing Unnecessary Antibiotics to Children With Acute Respiratory and Gastrointestinal Infections: Japan's Nationwide Quasi-Experimental Study.",
+      "first_author": "Yusuke Okubo",
+      "year": "2025",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/39579079/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-24",
+        "query_variant": "exact_title",
+        "query": "Long[Title] AND Term[Title] AND Effectiveness[Title] AND Financial[Title] AND Incentives[Title] AND Not[Title] AND Prescribing[Title] AND Unnecessary[Title] AND Antibiotics[Title] AND Children[Title] AND Acute[Title] AND Respiratory[Title] AND Gastrointestinal[Title] AND Infections[Title] AND Japan[Title] AND s[Title] AND Nationwide[Title] AND Quasi[Title] AND Experimental[Title] AND Study[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-24",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:39579079",
+        "candidate_rank": "1",
+        "title": "Long-Term Effectiveness of Financial Incentives for Not Prescribing Unnecessary Antibiotics to Children With Acute Respiratory and Gastrointestinal Infections: Japan's Nationwide Quasi-Experimental Study.",
+        "year": "2025",
+        "authors_or_first_author": "Yusuke Okubo; Kazuhiro Uda; Isao Miyairi",
+        "doi": "10.1093/cid/ciae577",
+        "pmid": "39579079",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39579079/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-025",
+    "source_to_resolve": {
+      "method_label": "population_size_estimation_hidden_populations",
+      "canonical_name": "Hidden-population size estimation",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:29931067",
+      "title": "A Bayesian approach to synthesize estimates of the size of hidden populations: the Anchored Multiplier.",
+      "first_author": "Paul D Wesson",
+      "year": "2018",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/29931067/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-25",
+        "query_variant": "exact_title",
+        "query": "Bayesian[Title] AND approach[Title] AND synthesize[Title] AND estimates[Title] AND size[Title] AND hidden[Title] AND populations[Title] AND Anchored[Title] AND Multiplier[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-25",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:29931067",
+        "candidate_rank": "1",
+        "title": "A Bayesian approach to synthesize estimates of the size of hidden populations: the Anchored Multiplier.",
+        "year": "2018",
+        "authors_or_first_author": "Paul D Wesson; Ali Mirzazadeh; Willi McFarland",
+        "doi": "10.1093/ije/dyy132",
+        "pmid": "29931067",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29931067/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-026",
+    "source_to_resolve": {
+      "method_label": "population_size_estimation_hidden_populations",
+      "canonical_name": "Hidden-population size estimation",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:26828366",
+      "title": "Population Size Estimation of Men Who Have Sex with Men in Tbilisi, Georgia; Multiple Methods and Triangulation of Findings.",
+      "first_author": "Lela Sulaberidze",
+      "year": "2016",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/26828366/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-26",
+        "query_variant": "title_first_author",
+        "query": "Triangulation[Title] AND Population[Title] AND Estimation[Title] AND Multiple[Title] AND Sulaberidze[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-26",
+        "query_variant": "exact_title",
+        "query": "Population[Title] AND Size[Title] AND Estimation[Title] AND Men[Title] AND Who[Title] AND Have[Title] AND Sex[Title] AND Tbilisi[Title] AND Georgia[Title] AND Multiple[Title] AND Methods[Title] AND Triangulation[Title] AND Findings[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-26",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:26828366",
+        "candidate_rank": "1",
+        "title": "Population Size Estimation of Men Who Have Sex with Men in Tbilisi, Georgia; Multiple Methods and Triangulation of Findings.",
+        "year": "2016",
+        "authors_or_first_author": "Lela Sulaberidze; Ali Mirzazadeh; Ivdity Chikovani; Natia Shengelia; Nino Tsereteli; George Gotsadze",
+        "doi": "10.1371/journal.pone.0147413",
+        "pmid": "26828366",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26828366/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-027",
+    "source_to_resolve": {
+      "method_label": "instrumental_variables",
+      "canonical_name": "Instrumental-variable designs",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:25051311",
+      "title": "Physician's preference-based instrumental variable analysis: is it valid and useful in a moderate-sized study?",
+      "first_author": "Anna G C Boef",
+      "year": "2014",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/25051311/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-27",
+        "query_variant": "title_first_author",
+        "query": "instrumental[Title] AND preference[Title] AND Physician[Title] AND variable[Title] AND Boef[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-27",
+        "query_variant": "exact_title",
+        "query": "Physician[Title] AND s[Title] AND preference[Title] AND based[Title] AND instrumental[Title] AND variable[Title] AND analysis[Title] AND is[Title] AND it[Title] AND valid[Title] AND useful[Title] AND moderate[Title] AND sized[Title] AND study[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-27",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:26605813",
+        "candidate_rank": "1",
+        "title": "Physician's Prescribing Preference as an Instrumental Variable: Exploring Assumptions Using Survey Data.",
+        "year": "2016",
+        "authors_or_first_author": "Anna G C Boef; Saskia le Cessie; Olaf M Dekkers; Peter Frey; Patricia M Kearney; Ngaire Kerse; Christian D Mallen; Vera J C McCarthy; Simon P Mooijaart; Christiane Muth; Nicolas Rodondi; Thomas Rosemann; Audrey Russell; Henk Schers; Vanessa Virgini; Margot W M de Waal; Alex Warner; Jacobijn Gussekloo; Wendy P J den Elzen",
+        "doi": "10.1097/ede.0000000000000425",
+        "pmid": "26605813",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26605813/"
+      },
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-27",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:25051311",
+        "candidate_rank": "2",
+        "title": "Physician's preference-based instrumental variable analysis: is it valid and useful in a moderate-sized study?",
+        "year": "2014",
+        "authors_or_first_author": "Anna G C Boef; Judith van Paassen; M Sesmu Arbous; Arno Middelkoop; Jan P Vandenbroucke; Saskia le Cessie; Olaf M Dekkers",
+        "doi": "10.1097/ede.0000000000000151",
+        "pmid": "25051311",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25051311/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-028",
+    "source_to_resolve": {
+      "method_label": "instrumental_variables",
+      "canonical_name": "Instrumental-variable designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:20159831",
+      "title": "Analysis of the impact of early surgery on in-hospital mortality of native valve endocarditis: use of propensity score and instrumental variable methods to adjust for treatment-selection bias.",
+      "first_author": "Tahaniyat Lalani",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20159831/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-28",
+        "query_variant": "exact_title",
+        "query": "Analysis[Title] AND impact[Title] AND early[Title] AND surgery[Title] AND hospital[Title] AND mortality[Title] AND native[Title] AND valve[Title] AND endocarditis[Title] AND use[Title] AND propensity[Title] AND score[Title] AND instrumental[Title] AND variable[Title] AND methods[Title] AND adjust[Title] AND treatment[Title] AND selection[Title] AND bias[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-28",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:20159831",
+        "candidate_rank": "1",
+        "title": "Analysis of the impact of early surgery on in-hospital mortality of native valve endocarditis: use of propensity score and instrumental variable methods to adjust for treatment-selection bias.",
+        "year": "2010",
+        "authors_or_first_author": "Tahaniyat Lalani; Christopher H Cabell; Daniel K Benjamin; Ovidiu Lasca; Christoph Naber; Vance G Fowler; G Ralph Corey; Vivian H Chu; Michael Fenely; Orathai Pachirat; Ru-San Tan; Richard Watkin; Adina Ionac; Asuncion Moreno; Carlos A Mestres; José Casabé; Natalia Chipigina; Damon P Eisen; Denis Spelman; Francois Delahaye; Gail Peterson; Lars Olaison; Andrew Wang; International Collaboration on Endocarditis-Prospective Cohort Study (ICE-PCS) Investigators",
+        "doi": "10.1161/circulationaha.109.864488",
+        "pmid": "20159831",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20159831/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-029",
+    "source_to_resolve": {
+      "method_label": "integrated_public_health_intelligence_synthesis",
+      "canonical_name": "Integrated public-health-intelligence synthesis",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:42179337",
+      "title": "Integrating Global Public Health Intelligence - Thematic Analysis from WES Synthesis 2025.",
+      "first_author": "K I Quintyne",
+      "year": "2026",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/42179337/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-29",
+        "query_variant": "exact_title",
+        "query": "Integrating[Title] AND Global[Title] AND Public[Title] AND Health[Title] AND Intelligence[Title] AND Thematic[Title] AND Analysis[Title] AND WES[Title] AND Synthesis[Title] AND 2025[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-29",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:42179337",
+        "candidate_rank": "1",
+        "title": "Integrating Global Public Health Intelligence - Thematic Analysis from WES Synthesis 2025.",
+        "year": "2026",
+        "authors_or_first_author": "K I Quintyne; R Parlour; M Williams; C Gilbourne; K Andersen; Z McCrystal",
+        "doi": "",
+        "pmid": "42179337",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42179337/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-030",
+    "source_to_resolve": {
+      "method_label": "interrupted_time_series",
+      "canonical_name": "Interrupted time series and segmented regression",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:22335933",
+      "title": "Modelling interrupted time series to evaluate prevention and control of infection in healthcare.",
+      "first_author": "V Gebski",
+      "year": "2012",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/22335933/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-30",
+        "query_variant": "exact_title",
+        "query": "Modelling[Title] AND interrupted[Title] AND time[Title] AND series[Title] AND evaluate[Title] AND prevention[Title] AND control[Title] AND infection[Title] AND healthcare[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-30",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:22335933",
+        "candidate_rank": "1",
+        "title": "Modelling interrupted time series to evaluate prevention and control of infection in healthcare.",
+        "year": "2012",
+        "authors_or_first_author": "V Gebski; K Ellingson; J Edwards; J Jernigan; D Kleinbaum",
+        "doi": "10.1017/s0950268812000179",
+        "pmid": "22335933",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22335933/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-031",
+    "source_to_resolve": {
+      "method_label": "interrupted_time_series",
+      "canonical_name": "Interrupted time series and segmented regression",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:19832710",
+      "title": "Impact of an intervention to control Clostridium difficile infection on hospital- and community-onset disease; an interrupted time series analysis.",
+      "first_author": "J Price",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/19832710/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-31",
+        "query_variant": "exact_title",
+        "query": "Impact[Title] AND intervention[Title] AND control[Title] AND Clostridium[Title] AND difficile[Title] AND infection[Title] AND hospital[Title] AND community[Title] AND onset[Title] AND disease[Title] AND interrupted[Title] AND time[Title] AND series[Title] AND analysis[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-31",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:19832710",
+        "candidate_rank": "1",
+        "title": "Impact of an intervention to control Clostridium difficile infection on hospital- and community-onset disease; an interrupted time series analysis.",
+        "year": "2010",
+        "authors_or_first_author": "J Price; E Cheek; S Lippett; M Cubbon; D N Gerding; S P Sambol; D M Citron; M Llewelyn",
+        "doi": "10.1111/j.1469-0691.2009.03077.x",
+        "pmid": "19832710",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/19832710/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-032",
+    "source_to_resolve": {
+      "method_label": "intervention_impact_evaluations",
+      "canonical_name": "Intervention impact evaluations",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:20735928",
+      "title": "Pneumococcal serotypes in children in 4 European countries.",
+      "first_author": "Germaine Hanquet",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/20735928/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-32",
+        "query_variant": "exact_title",
+        "query": "Pneumococcal[Title] AND serotypes[Title] AND children[Title] AND 4[Title] AND European[Title] AND countries[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-32",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:20735928",
+        "candidate_rank": "1",
+        "title": "Pneumococcal serotypes in children in 4 European countries.",
+        "year": "2010",
+        "authors_or_first_author": "Germaine Hanquet; Esther Kissling; Asuncion Fenoll; Robert George; Agnes Lepoutre; Tinne Lernout; David Tarragó; Emmanuelle Varon; Jan Verhaegen",
+        "doi": "10.3201/eid1609.100102",
+        "pmid": "20735928",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20735928/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-033",
+    "source_to_resolve": {
+      "method_label": "intervention_impact_evaluations",
+      "canonical_name": "Intervention impact evaluations",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:21342667",
+      "title": "Impact of conjugate 7-valent vaccination in Belgium: addressing methodological challenges.",
+      "first_author": "Germaine Hanquet",
+      "year": "2011",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/21342667/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-33",
+        "query_variant": "exact_title",
+        "query": "Impact[Title] AND conjugate[Title] AND 7[Title] AND valent[Title] AND vaccination[Title] AND Belgium[Title] AND addressing[Title] AND methodological[Title] AND challenges[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-33",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:21342667",
+        "candidate_rank": "1",
+        "title": "Impact of conjugate 7-valent vaccination in Belgium: addressing methodological challenges.",
+        "year": "2011",
+        "authors_or_first_author": "Germaine Hanquet; Tinne Lernout; Anne Vergison; Jan Verhaegen; Esther Kissling; David Tuerlinckx; Anne Malfroot; Béatrice Swennen; Martine Sabbe; Belgian IPD Scientific Committee",
+        "doi": "10.1016/j.vaccine.2011.02.016",
+        "pmid": "21342667",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/21342667/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-034",
+    "source_to_resolve": {
+      "method_label": "difference_in_differences_event_study",
+      "canonical_name": "Legacy difference-in-differences and event-study designs",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:34259625",
+      "title": "Relationship between changing malaria burden and low birth weight in sub-Saharan Africa: A difference-in-differences study via a pair-of-pairs approach.",
+      "first_author": "Siyu Heng",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34259625/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-34",
+        "query_variant": "title_first_author",
+        "query": "Relationship[Title] AND differences[Title] AND difference[Title] AND changing[Title] AND Heng[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-34",
+        "query_variant": "exact_title",
+        "query": "Relationship[Title] AND between[Title] AND changing[Title] AND malaria[Title] AND burden[Title] AND low[Title] AND birth[Title] AND weight[Title] AND sub[Title] AND Saharan[Title] AND Africa[Title] AND difference[Title] AND differences[Title] AND study[Title] AND via[Title] AND pair[Title] AND pairs[Title] AND approach[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-34",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:34259625",
+        "candidate_rank": "1",
+        "title": "Relationship between changing malaria burden and low birth weight in sub-Saharan Africa: A difference-in-differences study via a pair-of-pairs approach.",
+        "year": "2021",
+        "authors_or_first_author": "Siyu Heng; Wendy P O'Meara; Ryan A Simmons; Dylan S Small",
+        "doi": "10.7554/elife.65133",
+        "pmid": "34259625",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34259625/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-035",
+    "source_to_resolve": {
+      "method_label": "difference_in_differences_event_study",
+      "canonical_name": "Legacy difference-in-differences and event-study designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:23892483",
+      "title": "Do parental involvement laws deter risky teen sex?",
+      "first_author": "Silvie Colman",
+      "year": "2013",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/23892483/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-35",
+        "query_variant": "title_first_author",
+        "query": "involvement[Title] AND parental[Title] AND deter[Title] AND risky[Title] AND Colman[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-35",
+        "query_variant": "exact_title",
+        "query": "Do[Title] AND parental[Title] AND involvement[Title] AND laws[Title] AND deter[Title] AND risky[Title] AND teen[Title] AND sex[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-35",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:23892483",
+        "candidate_rank": "1",
+        "title": "Do parental involvement laws deter risky teen sex?",
+        "year": "2013",
+        "authors_or_first_author": "Silvie Colman; Thomas S Dee; Ted Joyce",
+        "doi": "10.1016/j.jhealeco.2013.06.003",
+        "pmid": "23892483",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23892483/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-036",
+    "source_to_resolve": {
+      "method_label": "marginal_structural_models",
+      "canonical_name": "Marginal structural models and inverse-probability weighting",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:19934191",
+      "title": "Using marginal structural measurement-error models to estimate the long-term effect of antiretroviral therapy on incident AIDS or death.",
+      "first_author": "Stephen R Cole",
+      "year": "2010",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/19934191/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-36",
+        "query_variant": "exact_title",
+        "query": "Using[Title] AND marginal[Title] AND structural[Title] AND measurement[Title] AND error[Title] AND models[Title] AND estimate[Title] AND long[Title] AND term[Title] AND effect[Title] AND antiretroviral[Title] AND therapy[Title] AND incident[Title] AND AIDS[Title] AND death[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-36",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:19934191",
+        "candidate_rank": "1",
+        "title": "Using marginal structural measurement-error models to estimate the long-term effect of antiretroviral therapy on incident AIDS or death.",
+        "year": "2010",
+        "authors_or_first_author": "Stephen R Cole; Lisa P Jacobson; Phyllis C Tien; Lawrence Kingsley; Joan S Chmiel; Kathryn Anastos",
+        "doi": "10.1093/aje/kwp329",
+        "pmid": "19934191",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/19934191/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-037",
+    "source_to_resolve": {
+      "method_label": "marginal_structural_models",
+      "canonical_name": "Marginal structural models and inverse-probability weighting",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:22972662",
+      "title": "An information criterion for marginal structural models.",
+      "first_author": "Robert W Platt",
+      "year": "2013",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/22972662/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-37",
+        "query_variant": "exact_title",
+        "query": "information[Title] AND criterion[Title] AND marginal[Title] AND structural[Title] AND models[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-37",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:23943549",
+        "candidate_rank": "1",
+        "title": "Comments on 'An information criterion for marginal structural models' by R. W. Platt, M. A. Brookhart, S. R. Cole, D. Westreich, and E. F. Schisterman.",
+        "year": "2013",
+        "authors_or_first_author": "Masataka Taguri; Yutaka Matsuyama",
+        "doi": "10.1002/sim.5810",
+        "pmid": "23943549",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23943549/"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-37",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:22972662",
+        "candidate_rank": "2",
+        "title": "An information criterion for marginal structural models.",
+        "year": "2013",
+        "authors_or_first_author": "Robert W Platt; M Alan Brookhart; Stephen R Cole; Daniel Westreich; Enrique F Schisterman",
+        "doi": "10.1002/sim.5599",
+        "pmid": "22972662",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22972662/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-038",
+    "source_to_resolve": {
+      "method_label": "multisource_epidemic_risk_framework",
+      "canonical_name": "Multi-source epidemic-risk assessment framework",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:39224172",
+      "title": "A Big Data and FRAM-Based Model for Epidemic Risk Analysis of Infectious Diseases.",
+      "first_author": "Junhua Zhu",
+      "year": "2024",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/39224172/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-38",
+        "query_variant": "exact_title",
+        "query": "Big[Title] AND Data[Title] AND FRAM[Title] AND Based[Title] AND Model[Title] AND Epidemic[Title] AND Risk[Title] AND Analysis[Title] AND Infectious[Title] AND Diseases[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-38",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:39224172",
+        "candidate_rank": "1",
+        "title": "A Big Data and FRAM-Based Model for Epidemic Risk Analysis of Infectious Diseases.",
+        "year": "2024",
+        "authors_or_first_author": "Junhua Zhu; Yue Zhuang; Wenjing Li",
+        "doi": "10.2147/rmhp.s476794",
+        "pmid": "39224172",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39224172/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-039",
+    "source_to_resolve": {
+      "method_label": "multisource_ml_risk_assessment",
+      "canonical_name": "Multi-source machine-learning risk assessment",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:42092440",
+      "title": "A Machine Learning Framework for Meat Safety Risk Assessment with Cross-Domain Data Fusion.",
+      "first_author": "Liying Wu",
+      "year": "2026",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/42092440/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-39",
+        "query_variant": "exact_title",
+        "query": "Machine[Title] AND Learning[Title] AND Framework[Title] AND Meat[Title] AND Safety[Title] AND Risk[Title] AND Assessment[Title] AND Cross[Title] AND Domain[Title] AND Data[Title] AND Fusion[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-39",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:42092440",
+        "candidate_rank": "1",
+        "title": "A Machine Learning Framework for Meat Safety Risk Assessment with Cross-Domain Data Fusion.",
+        "year": "2026",
+        "authors_or_first_author": "Liying Wu; Yanna Ke; Yiming Huang; Xiaosheng Wang; Chuanhai Ding; Xin Wang; Yu Ge",
+        "doi": "10.1016/j.jfp.2026.100802",
+        "pmid": "42092440",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/42092440/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-040",
+    "source_to_resolve": {
+      "method_label": "multimodal_ml_disease_diagnosis",
+      "canonical_name": "Multimodal machine-learning disease diagnosis",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:38620813",
+      "title": "iCovidCare: Intelligent health monitoring framework for COVID-19 using ensemble random forest in edge networks.",
+      "first_author": "Mainak Adhikari",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/38620813/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-40",
+        "query_variant": "exact_title",
+        "query": "iCovidCare[Title] AND Intelligent[Title] AND health[Title] AND monitoring[Title] AND framework[Title] AND COVID[Title] AND 19[Title] AND using[Title] AND ensemble[Title] AND random[Title] AND forest[Title] AND edge[Title] AND networks[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-40",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:38620813",
+        "candidate_rank": "1",
+        "title": "iCovidCare: Intelligent health monitoring framework for COVID-19 using ensemble random forest in edge networks.",
+        "year": "2021",
+        "authors_or_first_author": "Mainak Adhikari; Ambigavathi Munusamy",
+        "doi": "10.1016/j.iot.2021.100385",
+        "pmid": "38620813",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38620813/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-041",
+    "source_to_resolve": {
+      "method_label": "multimodal_ml_disease_diagnosis",
+      "canonical_name": "Multimodal machine-learning disease diagnosis",
+      "family": "causal_policy",
+      "source_role": "diagnostic",
+      "seed_candidate_key_for_context_only": "PMID:41272576",
+      "title": "Construction and effectiveness test of multimodal data fusion prediction model for intracranial infection after severe craniocerebral injury in children based on deep learning.",
+      "first_author": "Peiliang Zhang",
+      "year": "2025",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/41272576/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-41",
+        "query_variant": "exact_title",
+        "query": "Construction[Title] AND effectiveness[Title] AND test[Title] AND multimodal[Title] AND data[Title] AND fusion[Title] AND prediction[Title] AND model[Title] AND intracranial[Title] AND infection[Title] AND after[Title] AND severe[Title] AND craniocerebral[Title] AND injury[Title] AND children[Title] AND based[Title] AND deep[Title] AND learning[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-41",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:41272576",
+        "candidate_rank": "1",
+        "title": "Construction and effectiveness test of multimodal data fusion prediction model for intracranial infection after severe craniocerebral injury in children based on deep learning.",
+        "year": "2025",
+        "authors_or_first_author": "Peiliang Zhang; Wenbo Zhang; Jianbin Weng; Zhipeng Shen",
+        "doi": "10.1186/s12883-025-04502-z",
+        "pmid": "41272576",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41272576/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-042",
+    "source_to_resolve": {
+      "method_label": "negative_controls",
+      "canonical_name": "Negative-control designs",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:23100246",
+      "title": "Characterizing vaccine-associated risks using cubic smoothing splines.",
+      "first_author": "M Alan Brookhart",
+      "year": "2012",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/23100246/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-42",
+        "query_variant": "exact_title",
+        "query": "Characterizing[Title] AND vaccine[Title] AND associated[Title] AND risks[Title] AND using[Title] AND cubic[Title] AND smoothing[Title] AND splines[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-42",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:23100246",
+        "candidate_rank": "1",
+        "title": "Characterizing vaccine-associated risks using cubic smoothing splines.",
+        "year": "2012",
+        "authors_or_first_author": "M Alan Brookhart; Alexander M Walker; Yun Lu; Laura Polakowski; Jie Li; Corrie Paeglow; Tosmai Puenpatom; Hector Izurieta; Gregory W Daniel",
+        "doi": "10.1093/aje/kws158",
+        "pmid": "23100246",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/23100246/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-043",
+    "source_to_resolve": {
+      "method_label": "negative_controls",
+      "canonical_name": "Negative-control designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:26505897",
+      "title": "Upgrading a piped water supply from intermittent to continuous delivery and association with waterborne illness: a matched cohort study in urban India.",
+      "first_author": "Ayse Ercumen",
+      "year": "2015",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/26505897/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-43",
+        "query_variant": "exact_title",
+        "query": "Upgrading[Title] AND piped[Title] AND water[Title] AND supply[Title] AND intermittent[Title] AND continuous[Title] AND delivery[Title] AND association[Title] AND waterborne[Title] AND illness[Title] AND matched[Title] AND cohort[Title] AND study[Title] AND urban[Title] AND India[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-43",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:26505897",
+        "candidate_rank": "1",
+        "title": "Upgrading a piped water supply from intermittent to continuous delivery and association with waterborne illness: a matched cohort study in urban India.",
+        "year": "2015",
+        "authors_or_first_author": "Ayse Ercumen; Benjamin F Arnold; Emily Kumpel; Zachary Burt; Isha Ray; Kara Nelson; John M Colford",
+        "doi": "10.1371/journal.pmed.1001892",
+        "pmid": "26505897",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26505897/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-044",
+    "source_to_resolve": {
+      "method_label": "nlp_policy_and_literature_mapping",
+      "canonical_name": "NLP-based policy and literature mapping",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:40681821",
+      "title": "Progress and gaps in antimicrobial resistance research within One Health sectors in China: a systematic analysis.",
+      "first_author": "Cai Chen",
+      "year": "2025",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/40681821/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-44",
+        "query_variant": "title_first_author",
+        "query": "antimicrobial[Title] AND resistance[Title] AND systematic[Title] AND Progress[Title] AND Chen[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-44",
+        "query_variant": "exact_title",
+        "query": "Progress[Title] AND gaps[Title] AND antimicrobial[Title] AND resistance[Title] AND research[Title] AND within[Title] AND One[Title] AND Health[Title] AND sectors[Title] AND China[Title] AND systematic[Title] AND analysis[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-44",
+        "query_variant": "title_first_author",
+        "candidate_key": "PMID:40681821",
+        "candidate_rank": "1",
+        "title": "Progress and gaps in antimicrobial resistance research within One Health sectors in China: a systematic analysis.",
+        "year": "2025",
+        "authors_or_first_author": "Cai Chen; Shu-Le Li; Jue Liu; Sabiha Y Essack; Yi Luo; Mui-Choo Jong; Xiang-Yu Dai; Yao-Yang Xu; Lise Korsten; David W Graham; Yong-Guan Zhu",
+        "doi": "10.1007/s11427-025-2955-6",
+        "pmid": "40681821",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/40681821/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-045",
+    "source_to_resolve": {
+      "method_label": "observational_effect_estimation_studies",
+      "canonical_name": "Observational effect-estimation studies",
+      "family": "causal_policy",
+      "source_role": "authoritative_candidate",
+      "seed_candidate_key_for_context_only": "PMID:34183531",
+      "title": "Identifiability and Estimation Under the Test-negative Design With Population Controls With the Goal of Identifying Risk and Preventive Factors for SARS-CoV-2 Infection.",
+      "first_author": "Mireille E Schnitzer",
+      "year": "2021",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/34183531/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-45",
+        "query_variant": "exact_title",
+        "query": "Identifiability[Title] AND Estimation[Title] AND Under[Title] AND Test[Title] AND negative[Title] AND Design[Title] AND Population[Title] AND Controls[Title] AND Goal[Title] AND Identifying[Title] AND Risk[Title] AND Preventive[Title] AND Factors[Title] AND SARS[Title] AND CoV[Title] AND 2[Title] AND Infection[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-45",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:34183531",
+        "candidate_rank": "1",
+        "title": "Identifiability and Estimation Under the Test-negative Design With Population Controls With the Goal of Identifying Risk and Preventive Factors for SARS-CoV-2 Infection.",
+        "year": "2021",
+        "authors_or_first_author": "Mireille E Schnitzer; Daphna Harel; Vikki Ho; Anita Koushik; Joanna Merckx",
+        "doi": "10.1097/ede.0000000000001385",
+        "pmid": "34183531",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34183531/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-046",
+    "source_to_resolve": {
+      "method_label": "observational_effect_estimation_studies",
+      "canonical_name": "Observational effect-estimation studies",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:28692690",
+      "title": "Risk of surgical site infection, acute kidney injury, and Clostridium difficile infection following antibiotic prophylaxis with vancomycin plus a beta-lactam versus either drug alone: A national propensity-score-adjusted retrospective cohort study.",
+      "first_author": "Westyn Branch-Elliman",
+      "year": "2017",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/28692690/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260717-LINEAGE-CAUSAL-01",
+        "query_variant": "method_author_year",
+        "query": "(observational[Title/Abstract] OR effect estimation[Title/Abstract]) AND Branch-Elliman[Author] AND 2017[Date - Publication]"
+      },
+      {
+        "query_id": "SEARCH-20260718-LINEAGE-CAUSAL-46",
+        "query_variant": "title_first_author",
+        "query": "retrospective[Title] AND Clostridium[Title] AND prophylaxis[Title] AND antibiotic[Title] AND Elliman[Author]"
+      },
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-46",
+        "query_variant": "exact_title",
+        "query": "Risk[Title] AND surgical[Title] AND site[Title] AND infection[Title] AND acute[Title] AND kidney[Title] AND injury[Title] AND Clostridium[Title] AND difficile[Title] AND following[Title] AND antibiotic[Title] AND prophylaxis[Title] AND vancomycin[Title] AND plus[Title] AND beta[Title] AND lactam[Title] AND versus[Title] AND either[Title] AND drug[Title] AND alone[Title] AND national[Title] AND propensity[Title] AND score[Title] AND adjusted[Title] AND retrospective[Title] AND cohort[Title] AND study[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260717-LINEAGE-CAUSAL-01",
+        "query_variant": "method_author_year",
+        "candidate_key": "PMID:28692690",
+        "candidate_rank": "1",
+        "title": "Risk of surgical site infection, acute kidney injury, and Clostridium difficile infection following antibiotic prophylaxis with vancomycin plus a beta-lactam versus either drug alone: A national propensity-score-adjusted retrospective cohort study.",
+        "year": "2017",
+        "authors_or_first_author": "Westyn Branch-Elliman; John E Ripollone; William J O'Brien; Kamal M F Itani; Marin L Schweizer; Eli Perencevich; Judith Strymish; Kalpana Gupta",
+        "doi": "10.1371/journal.pmed.1002340",
+        "pmid": "28692690",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28692690/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-047",
+    "source_to_resolve": {
+      "method_label": "time_to_event_cohort_studies",
+      "canonical_name": "Observational time-to-event cohort designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:38076979",
+      "title": "Social determinants of adult COVID-19 vaccine acceptance and uptake in a Brazilian urban informal community: a longitudinal time-to-event study.",
+      "first_author": "Murilo Dorión",
+      "year": "2023",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/38076979/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-47",
+        "query_variant": "exact_title",
+        "query": "Social[Title] AND determinants[Title] AND adult[Title] AND COVID[Title] AND 19[Title] AND vaccine[Title] AND acceptance[Title] AND uptake[Title] AND Brazilian[Title] AND urban[Title] AND informal[Title] AND community[Title] AND longitudinal[Title] AND time[Title] AND event[Title] AND study[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-47",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:38076979",
+        "candidate_rank": "1",
+        "title": "Social determinants of adult COVID-19 vaccine acceptance and uptake in a Brazilian urban informal community: a longitudinal time-to-event study.",
+        "year": "2023",
+        "authors_or_first_author": "Murilo Dorión; Juan Pablo A Ticona; Mariam O Fofona; Margaret L Lind; Nivison Nery; Renato Victoriano; Ananias S do Aragão Filho; Mitermayer G Reis; Federico Costa; Albert I Ko",
+        "doi": "10.1101/2023.11.28.23298927",
+        "pmid": "38076979",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/38076979/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-048",
+    "source_to_resolve": {
+      "method_label": "time_to_event_cohort_studies",
+      "canonical_name": "Observational time-to-event cohort designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:37746872",
+      "title": "Long-term Cardiovascular, Cerebrovascular, and Other Thrombotic Complications in COVID-19 Survivors: A Retrospective Cohort Study.",
+      "first_author": "Jue Tao Lim",
+      "year": "2024",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/37746872/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-48",
+        "query_variant": "exact_title",
+        "query": "Long[Title] AND term[Title] AND Cardiovascular[Title] AND Cerebrovascular[Title] AND Other[Title] AND Thrombotic[Title] AND Complications[Title] AND COVID[Title] AND 19[Title] AND Survivors[Title] AND Retrospective[Title] AND Cohort[Title] AND Study[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-48",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:37746872",
+        "candidate_rank": "1",
+        "title": "Long-term Cardiovascular, Cerebrovascular, and Other Thrombotic Complications in COVID-19 Survivors: A Retrospective Cohort Study.",
+        "year": "2024",
+        "authors_or_first_author": "Jue Tao Lim; Wee Liang En; An Ting Tay; Deanette Pang; Calvin J Chiew; Benjamin Ong; David Chien Boon Lye; Kelvin Bryan Tan",
+        "doi": "10.1093/cid/ciad469",
+        "pmid": "37746872",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/37746872/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-049",
+    "source_to_resolve": {
+      "method_label": "quasi_experimental_policy_evaluation",
+      "canonical_name": "Other quasi-experimental policy-evaluation designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:28760790",
+      "title": "Impact of health insurance coverage for Helicobacter pylori gastritis on the trends in eradication therapy in Japan: retrospective observational study and simulation study based on real-world data.",
+      "first_author": "Shinzo Hiroi",
+      "year": "2017",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/28760790/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-49",
+        "query_variant": "exact_title",
+        "query": "Impact[Title] AND health[Title] AND insurance[Title] AND coverage[Title] AND Helicobacter[Title] AND pylori[Title] AND gastritis[Title] AND trends[Title] AND eradication[Title] AND therapy[Title] AND Japan[Title] AND retrospective[Title] AND observational[Title] AND study[Title] AND simulation[Title] AND based[Title] AND real[Title] AND world[Title] AND data[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-49",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:28760790",
+        "candidate_rank": "1",
+        "title": "Impact of health insurance coverage for Helicobacter pylori gastritis on the trends in eradication therapy in Japan: retrospective observational study and simulation study based on real-world data.",
+        "year": "2017",
+        "authors_or_first_author": "Shinzo Hiroi; Kentaro Sugano; Shiro Tanaka; Koji Kawakami",
+        "doi": "10.1136/bmjopen-2017-015855",
+        "pmid": "28760790",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28760790/"
+      }
+    ]
+  },
+  {
+    "named_source_id": "NS-CAUSAL-050",
+    "source_to_resolve": {
+      "method_label": "quasi_experimental_policy_evaluation",
+      "canonical_name": "Other quasi-experimental policy-evaluation designs",
+      "family": "causal_policy",
+      "source_role": "infectious_application",
+      "seed_candidate_key_for_context_only": "PMID:31869328",
+      "title": "The 2016 California policy to eliminate nonmedical vaccine exemptions and changes in vaccine coverage: An empirical policy analysis.",
+      "first_author": "Sindiso Nyathi",
+      "year": "2019",
+      "source_url_for_context_only": "https://pubmed.ncbi.nlm.nih.gov/31869328/"
+    },
+    "supporting_queries": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-50",
+        "query_variant": "exact_title",
+        "query": "2016[Title] AND California[Title] AND policy[Title] AND eliminate[Title] AND nonmedical[Title] AND vaccine[Title] AND exemptions[Title] AND changes[Title] AND coverage[Title] AND empirical[Title] AND analysis[Title]"
+      }
+    ],
+    "manifested_candidates": [
+      {
+        "query_id": "SEARCH-20260719-LINEAGE-CAUSAL-50",
+        "query_variant": "exact_title",
+        "candidate_key": "PMID:31869328",
+        "candidate_rank": "1",
+        "title": "The 2016 California policy to eliminate nonmedical vaccine exemptions and changes in vaccine coverage: An empirical policy analysis.",
+        "year": "2019",
+        "authors_or_first_author": "Sindiso Nyathi; Hannah C Karpel; Kristin L Sainani; Yvonne Maldonado; Peter J Hotez; Eran Bendavid; Nathan C Lo",
+        "doi": "10.1371/journal.pmed.1002994",
+        "pmid": "31869328",
+        "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31869328/"
+      }
+    ]
+  }
+]

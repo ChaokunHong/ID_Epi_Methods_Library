@@ -1,0 +1,284 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
+<PubmedArticleSet>
+<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual"><PMID Version="1">21668690</PMID><DateCompleted><Year>2011</Year><Month>11</Month><Day>23</Day></DateCompleted><DateRevised><Year>2021</Year><Month>10</Month><Day>20</Day></DateRevised><Article PubModel="Print-Electronic"><Journal><ISSN IssnType="Electronic">1750-2659</ISSN><JournalIssue CitedMedium="Internet"><Volume>5</Volume><Issue>5</Issue><PubDate><Year>2011</Year><Month>Sep</Month></PubDate></JournalIssue><Title>Influenza and other respiratory viruses</Title><ISOAbbreviation>Influenza Other Respir Viruses</ISOAbbreviation></Journal><ArticleTitle>Transmission parameters of the A/H1N1 (2009) influenza virus pandemic: a review.</ArticleTitle><Pagination><StartPage>306</StartPage><EndPage>316</EndPage><MedlinePgn>306-16</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.1111/j.1750-2659.2011.00234.x</ELocationID><Abstract><AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">The new influenza virus A/H1N1 (2009), identified in mid-2009, rapidly spread over the world. Estimating the transmissibility of this new virus was a public health priority.</AbstractText><AbstractText Label="METHODS" NlmCategory="METHODS">We reviewed all studies presenting estimates of the serial interval or generation time and the reproduction number of the A/H1N1 (2009) virus infection.</AbstractText><AbstractText Label="RESULTS" NlmCategory="RESULTS">Thirteen studies documented the serial interval from household or close-contact studies, with overall mean 3 days (95% CI: 2&#xb7;4, 3&#xb7;6); taking into account tertiary transmission reduced this estimate to 2&#xb7;6 days. Model-based estimates were more variable, from 1&#xb7;9 to 6 days. Twenty-four studies reported reproduction numbers for community-based epidemics at the town or country level. The range was 1&#xb7;2-3&#xb7;1, with larger estimates reported at the beginning of the pandemic. Accounting for under-reporting in the early period of the pandemic and limiting variation because of the choice of the generation time interval, the reproduction number was between 1&#xb7;2 and 2&#xb7;3 with median 1&#xb7;5.</AbstractText><AbstractText Label="DISCUSSION" NlmCategory="CONCLUSIONS">The serial interval of A/H1N1 (2009) flu was typically short, with mean value similar to the seasonal flu. The estimates of the reproduction number were more variable. Compared with past influenza pandemics, the median reproduction number was similar (1968) or slightly smaller (1889, 1918, 1957).</AbstractText><CopyrightInformation>&#xa9; 2011 Blackwell Publishing Ltd.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Bo&#xeb;lle</LastName><ForeName>Pierre-Yves</ForeName><Initials>PY</Initials><AffiliationInfo><Affiliation>Universit&#xe9; Pierre et Marie Curie-Paris 6, UMR S 707, Paris, France. boelle@u707.jussieu.fr</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Ansart</LastName><ForeName>S&#xe9;verine</ForeName><Initials>S</Initials></Author><Author ValidYN="Y"><LastName>Cori</LastName><ForeName>Anne</ForeName><Initials>A</Initials></Author><Author ValidYN="Y"><LastName>Valleron</LastName><ForeName>Alain-Jacques</ForeName><Initials>AJ</Initials></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType><PublicationType UI="D016454">Review</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2011</Year><Month>03</Month><Day>31</Day></ArticleDate></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>Influenza Other Respir Viruses</MedlineTA><NlmUniqueID>101304007</NlmUniqueID><ISSNLinking>1750-2640</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D053118" MajorTopicYN="N">Influenza A Virus, H1N1 Subtype</DescriptorName><QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D007251" MajorTopicYN="N">Influenza, Human</DescriptorName><QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName><QualifierName UI="Q000635" MajorTopicYN="Y">transmission</QualifierName><QualifierName UI="Q000821" MajorTopicYN="N">virology</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D058873" MajorTopicYN="N">Pandemics</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D011634" MajorTopicYN="N">Public Health</DescriptorName></MeshHeading></MeshHeadingList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="entrez"><Year>2011</Year><Month>6</Month><Day>15</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2011</Year><Month>6</Month><Day>15</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2011</Year><Month>12</Month><Day>13</Day><Hour>0</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2011</Year><Month>9</Month><Day>1</Day></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">21668690</ArticleId><ArticleId IdType="pmc">PMC4942041</ArticleId><ArticleId IdType="doi">10.1111/j.1750-2659.2011.00234.x</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>
+World Health Organization
+. 
+Pandemic (H1N1) 2009 &#x2013; update 109. 2010. 
+[July 21, 2010]; Available from: http://www.who.int/csr/don/2010_07_16/en/index.html.
+</Citation></Reference><Reference><Citation>
+Khan K, 
+Arino J, 
+Hu W
+<i>
+et&#xa0;al.
+</i>
+Spread of a novel influenza A (H1N1) virus via global airline transportation. 
+N Engl J Med
+2009; 361:212&#x2013;214.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">19564630</ArticleId></ArticleIdList></Reference><Reference><Citation>World Health Organization . Global surveillance during an influenza pandemic 2009.</Citation></Reference><Reference><Citation>
+Halloran ME, 
+Ferguson NM, 
+Eubank S
+<i>
+et&#xa0;al.
+</i>
+Modeling targeted layered containment of an influenza pandemic in the United States. 
+Proc Natl Acad Sci U S A
+2008; 105:4639&#x2013;4644.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2290797</ArticleId><ArticleId IdType="pubmed">18332436</ArticleId></ArticleIdList></Reference><Reference><Citation>Cowling BJ, Fang VJ, Riley S, Malik Peiris JS, Leung GM. Estimation of the serial interval of influenza. Epidemiology 2009; 20:344&#x2013;347.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3057478</ArticleId><ArticleId IdType="pubmed">19279492</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ferguson NM, 
+Cummings DA, 
+Cauchemez S
+<i>
+et&#xa0;al.
+</i>
+Strategies for containing an emerging influenza pandemic in Southeast Asia. 
+Nature
+2005; 437:209&#x2013;214.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">16079797</ArticleId></ArticleIdList></Reference><Reference><Citation>Valleron AJ, Cori A, Valtat S, Meurisse S, Carrat F, Boelle PY. Transmissibility and geographic spread of the 1889 influenza pandemic. Proc Natl Acad Sci U S A 2010; 107:8778&#x2013;8781.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2889325</ArticleId><ArticleId IdType="pubmed">20421481</ArticleId></ArticleIdList></Reference><Reference><Citation>Andreasen V, Viboud C, Simonsen L. Epidemiologic characterization of the 1918 influenza pandemic summer wave in Copenhagen: implications for pandemic control strategies. J Infect Dis 2008; 197:270&#x2013;278.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2674012</ArticleId><ArticleId IdType="pubmed">18194088</ArticleId></ArticleIdList></Reference><Reference><Citation>Jackson C, Vynnycky E, Mangtani P. Estimates of the transmissibility of the 1968 (Hong Kong) influenza pandemic: evidence of increased transmissibility between successive waves. Am J Epidemiol 2010; 171:465&#x2013;478.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2816729</ArticleId><ArticleId IdType="pubmed">20007674</ArticleId></ArticleIdList></Reference><Reference><Citation>Gani R, Hughes H, Fleming D, Griffin T, Medlock J, Leach S. Potential impact of antiviral drug use during influenza pandemic. Emerg Infect Dis 2005; 11:1355&#x2013;1362.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3371825</ArticleId><ArticleId IdType="pubmed">16229762</ArticleId></ArticleIdList></Reference><Reference><Citation>Mills CE, Robins JM, Lipsitch M. Transmissibility of 1918 pandemic influenza. Nature 2004; 432:904&#x2013;906.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7095078</ArticleId><ArticleId IdType="pubmed">15602562</ArticleId></ArticleIdList></Reference><Reference><Citation>Chowell G, Ammon CE, Hengartner NW, Hyman JM. Estimation of the reproductive number of the Spanish flu epidemic in Geneva, Switzerland. Vaccine 2006; 24:6747&#x2013;6750.</Citation><ArticleIdList><ArticleId IdType="pubmed">16782243</ArticleId></ArticleIdList></Reference><Reference><Citation>
+World Health Organization
+. 
+H1N1 in post&#x2010;pandemic period. 2010. 
+[August 31, 2010]; Available from: http://www.who.int/mediacentre/news/statements/2010/h1n1_vpc_20100810/en/index.html.
+</Citation></Reference><Reference><Citation>Svensson A. A note on generation times in epidemic models. Math Biosci 2007; 208:300&#x2013;311.</Citation><ArticleIdList><ArticleId IdType="pubmed">17174352</ArticleId></ArticleIdList></Reference><Reference><Citation>Scalia Tomba G, Svensson A, Asikainen T, Giesecke J. Some model based considerations on observing generation times for communicable diseases. Math Biosci 2010; 223:24&#x2013;31.</Citation><ArticleIdList><ArticleId IdType="pubmed">19854206</ArticleId></ArticleIdList></Reference><Reference><Citation>Fine PE. The interval between successive cases of an infectious disease. Am J Epidemiol 2003; 158:1039&#x2013;1047.</Citation><ArticleIdList><ArticleId IdType="pubmed">14630599</ArticleId></ArticleIdList></Reference><Reference><Citation>Anderson R, May R. Infectious Diseases of Humans. Dynamics and Control. Oxford: Oxford Science Publications, 1991.</Citation></Reference><Reference><Citation>Dietz K. The estimation of the basic reproduction number for infectious diseases. Stat Methods Med Res 1993; 2:23&#x2013;41.</Citation><ArticleIdList><ArticleId IdType="pubmed">8261248</ArticleId></ArticleIdList></Reference><Reference><Citation>Wallinga J, Lipsitch M. How generation intervals shape the relationship between growth rates and reproductive numbers. Proc Biol Sci 2007; 274:599&#x2013;604.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC1766383</ArticleId><ArticleId IdType="pubmed">17476782</ArticleId></ArticleIdList></Reference><Reference><Citation>Wallinga J, Teunis P. Different epidemic curves for severe acute respiratory syndrome reveal similar impacts of control measures. Am J Epidemiol 2004; 160:509&#x2013;516.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7110200</ArticleId><ArticleId IdType="pubmed">15353409</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Cowling BJ, 
+Chan KH, 
+Fang VJ
+<i>
+et&#xa0;al.
+</i>
+Comparative epidemiology of pandemic and seasonal influenza A in households. 
+N Engl J Med
+2010; 362:2175&#x2013;2184.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4070281</ArticleId><ArticleId IdType="pubmed">20558368</ArticleId></ArticleIdList></Reference><Reference><Citation>Lessler J, Reich NG, Cummings DA, Nair HP, Jordan HT, Thompson N. Outbreak of 2009 pandemic influenza A (H1N1) at a New York City school. N Engl J Med 2009; 361:2628&#x2013;2636.</Citation><ArticleIdList><ArticleId IdType="pubmed">20042754</ArticleId></ArticleIdList></Reference><Reference><Citation>
+France AM, 
+Jackson M, 
+Schrag S
+<i>
+et&#xa0;al.
+</i>
+Household transmission of 2009 influenza A (H1N1) virus after a school&#x2010;based outbreak in New York City, April&#x2013;May 2009. 
+J Infect Dis
+2010; 201:984&#x2013;992.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">20187740</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Cauchemez S, 
+Donnelly CA, 
+Reed C
+<i>
+et&#xa0;al.
+</i>
+Household transmission of 2009 pandemic influenza A(H1N1) virus in the United States. 
+N Engl J Med
+2009; 361:2619&#x2013;2627.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3840270</ArticleId><ArticleId IdType="pubmed">20042753</ArticleId></ArticleIdList></Reference><Reference><Citation>Leung YH, Li MP, Chuang SK. A school outbreak of pandemic (H1N1) 2009 infection: assessment of secondary household transmission and the protective role of oseltamivir. Epidemiol Infect 2010; June 21:1&#x2013;4.</Citation><ArticleIdList><ArticleId IdType="pubmed">20561390</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Morgan OW, 
+Parks S, 
+Shim T
+<i>
+et&#xa0;al.
+</i>
+Household transmission of pandemic (H1N1) 2009, San Antonio, Texas, USA, April&#x2013;May 2009. 
+Emerg Infect Dis
+2010; 16:631&#x2013;637.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3321969</ArticleId><ArticleId IdType="pubmed">20350377</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Pedroni E, 
+Garcia M, 
+Espinola V
+<i>
+et&#xa0;al.
+</i>
+Outbreak of 2009 pandemic influenza A(H1N1), Los Lagos, Chile, April&#x2013;June 2009. 
+Euro Surveill
+2010; 15:16&#x2013;24.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">20067745</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Suess T, 
+Buchholz U, 
+Dupke S
+<i>
+et&#xa0;al.
+</i>
+Shedding and transmission of novel influenza virus A/H1N1 infection in households &#x2013; Germany, 2009. 
+Am J Epidemiol
+2010; 171:1157&#x2013;1164.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">20439308</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Yang Y, 
+Sugimoto JD, 
+Halloran ME
+<i>
+et&#xa0;al.
+</i>
+The transmissibility and control of pandemic influenza A(H1N1) virus. 
+Science
+2009; 326:729&#x2013;733.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2880578</ArticleId><ArticleId IdType="pubmed">19745114</ArticleId></ArticleIdList></Reference><Reference><Citation>Surveillance Group for New Influenza A(H1N1) Virus Investigation and Control in Spain . New influenza A(H1N1) virus infections in Spain, April&#x2013;May 2009. Euro Surveill 2009; 14:4&#x2013;7.</Citation><ArticleIdList><ArticleId IdType="pubmed">19442404</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Ghani AC, 
+Baguelin M, 
+Griffin J
+<i>
+et&#xa0;al.
+</i>
+The Early Transmission Dynamics of H1N1pdm Influenza in the United Kingdom. 
+PLoS Curr
+2009; 1:RRN1130.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2780827</ArticleId><ArticleId IdType="pubmed">20029668</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Hahne S, 
+Donker T, 
+Meijer A
+<i>
+et&#xa0;al.
+</i>
+Epidemiology and control of influenza A(H1N1)v in the Netherlands: the first 115 cases. 
+Euro Surveill
+2009; 14:2&#x2013;5.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">19589332</ArticleId></ArticleIdList></Reference><Reference><Citation>
+McBryde E, 
+Bergeri I, 
+van Gemert C
+<i>
+et&#xa0;al.
+</i>
+Early transmission characteristics of influenza A(H1N1)v in Australia: Victorian state, 16 May&#x2013;3 June 2009. 
+Euro Surveill
+2009; 14:45&#x2013;50.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">19883544</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Fraser C, 
+Donnelly CA, 
+Cauchemez S
+<i>
+et&#xa0;al.
+</i>
+Pandemic potential of a strain of influenza A(H1N1): early findings. 
+Science
+2009; 324:1557&#x2013;1561.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3735127</ArticleId><ArticleId IdType="pubmed">19433588</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Tuite AR, 
+Greer AL, 
+Whelan M
+<i>
+et&#xa0;al.
+</i>
+Estimated epidemiologic parameters and morbidity associated with pandemic H1N1 influenza. 
+CMAJ
+2010; 182:131&#x2013;136.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2817319</ArticleId><ArticleId IdType="pubmed">19959592</ArticleId></ArticleIdList></Reference><Reference><Citation>
+White LF, 
+Wallinga J, 
+Finelli L
+<i>
+et&#xa0;al.
+</i>
+Estimation of the reproductive number and the serial interval in early phase of the 2009 influenza A/H1N1 pandemic in the USA. 
+Influenza Other Respi Viruses
+2009; 3:267&#x2013;276.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2782458</ArticleId><ArticleId IdType="pubmed">19903209</ArticleId></ArticleIdList></Reference><Reference><Citation>Hens N, Van Ranst M, Aerts M, Robesyn E, Van Damme P, Beutels P. Estimating the effective reproduction number for pandemic influenza from notification data made publicly available in real time: a multi&#x2010;country analysis for influenza A/H1N1v 2009. Vaccine 2011; 29:896&#x2013;904.</Citation><ArticleIdList><ArticleId IdType="pubmed">20580742</ArticleId></ArticleIdList></Reference><Reference><Citation>Boelle PY, Bernillon P, Desenclos JC. A preliminary estimation of the reproduction ratio for new influenza A(H1N1) from the outbreak in Mexico, March&#x2013;April 2009. Euro Surveill 2009; 14:10&#x2013;13.</Citation><ArticleIdList><ArticleId IdType="pubmed">19442402</ArticleId></ArticleIdList></Reference><Reference><Citation>Nishiura H, Castillo&#x2010;Chavez C, Safan M, Chowell G. Transmission potential of the new influenza A(H1N1) virus and its age&#x2010;specificity in Japan. Euro Surveill 2009; 14:2&#x2013;5.</Citation><ArticleIdList><ArticleId IdType="pubmed">19497256</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Cruz&#x2010;Pacheco G, 
+Duran L, 
+Esteva L
+<i>
+et&#xa0;al.
+</i>
+Modelling of the influenza A(H1N1)v outbreak in Mexico City, April&#x2013;May 2009, with control sanitary measures. 
+Euro Surveill
+2009; 14:8&#x2013;10.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">19573510</ArticleId></ArticleIdList></Reference><Reference><Citation>Hsieh YH. Pandemic influenza A(H1N1) during winter influenza season in the southern hemisphere. Influenza Other Respi Viruses 2010; 4:187&#x2013;197.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6225867</ArticleId><ArticleId IdType="pubmed">20629772</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Pourbohloul B, 
+Ahued A, 
+Davoudi B
+<i>
+et&#xa0;al.
+</i>
+Initial human transmission dynamics of the pandemic (H1N1) 2009 virus in North America. 
+Influenza Other Respi Viruses
+2009; 3:215&#x2013;222.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3122129</ArticleId><ArticleId IdType="pubmed">19702583</ArticleId></ArticleIdList></Reference><Reference><Citation>Balcan D, Colizza V, Goncalves B, Hu H, Ramasco JJ, Vespignani A. Multiscale mobility networks and the spatial spreading of infectious diseases. Proc Natl Acad Sci USA 2009; 106:21484&#x2013;21489.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2793313</ArticleId><ArticleId IdType="pubmed">20018697</ArticleId></ArticleIdList></Reference><Reference><Citation>
+McBryde E, 
+Bergeri I, 
+van Gemert C
+<i>
+et&#xa0;al.
+</i>
+Early transmission characteristics of influenza A(H1N1)v in Australia: Victorian state, 16 May&#x2013;3 June 2009. 
+Euro Surveill
+2009; 14:pii=19363.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">19883544</ArticleId></ArticleIdList></Reference><Reference><Citation>Nishiura H, Chowell G, Safan M, Castillo&#x2010;Chavez C. Pros and cons of estimating the reproduction number from early epidemic growth rate of influenza A(H1N1) 2009. Theor Biol Med Model 2010; 7:1.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2821365</ArticleId><ArticleId IdType="pubmed">20056004</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Carrat F, 
+Vergu E, 
+Ferguson NM
+<i>
+et&#xa0;al.
+</i>
+Time lines of infection and disease in human influenza: a review of volunteer challenge studies. 
+Am J Epidemiol
+2008; 167:775&#x2013;785.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">18230677</ArticleId></ArticleIdList></Reference><Reference><Citation>Baguelin M, Hoek AJ, Jit M, Flasche S, White PJ, Edmunds WJ. Vaccination against pandemic influenza A/H1N1v in England: a real&#x2010;time economic evaluation. Vaccine 2010; 28:2370&#x2013;2384.</Citation><ArticleIdList><ArticleId IdType="pubmed">20096762</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Cauchemez S, 
+Boelle PY, 
+Donnelly CA
+<i>
+et&#xa0;al.
+</i>
+Real&#x2010;time estimates in early detection of SARS. 
+Emerg Infect Dis
+2006; 12:110&#x2013;113.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3293464</ArticleId><ArticleId IdType="pubmed">16494726</ArticleId></ArticleIdList></Reference><Reference><Citation>Valleron AJ, Guidet B. Real&#x2010;time comparative monitoring of the A/H1N1 pandemic in France. Clin Microbiol Infect 2010; 16:393&#x2013;396.</Citation><ArticleIdList><ArticleId IdType="pubmed">20121818</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Balcan D, 
+Hu H, 
+Goncalves B
+<i>
+et&#xa0;al.
+</i>
+Seasonal transmission potential and activity peaks of the new influenza A(H1N1): a Monte Carlo likelihood analysis based on human mobility. 
+BMC Med
+2009; 7:45.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2755471</ArticleId><ArticleId IdType="pubmed">19744314</ArticleId></ArticleIdList></Reference><Reference><Citation>Bettencourt LM, Ribeiro RM. Real time bayesian estimation of the epidemic potential of emerging infectious diseases. PLoS ONE 2008; 3:e2185.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2366072</ArticleId><ArticleId IdType="pubmed">18478118</ArticleId></ArticleIdList></Reference><Reference><Citation>Nishiura H. Time variations in the transmissibility of pandemic influenza in Prussia, Germany, from 1918&#x2013;19. Theor Biol Med Model 2007; 4:20.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC1892008</ArticleId><ArticleId IdType="pubmed">17547753</ArticleId></ArticleIdList></Reference><Reference><Citation>Caley P, Philp DJ, McCracken K. Quantifying social distancing arising from pandemic influenza. J R Soc Interface 2008; 5:631&#x2013;639.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3226987</ArticleId><ArticleId IdType="pubmed">17916550</ArticleId></ArticleIdList></Reference><Reference><Citation>Vynnycky E, Trindall A, Mangtani P. Estimates of the reproduction numbers of Spanish influenza using morbidity data. Int J Epidemiol 2007; 36:881&#x2013;889.</Citation><ArticleIdList><ArticleId IdType="pubmed">17517812</ArticleId></ArticleIdList></Reference><Reference><Citation>Vynnycky E, Edmunds WJ. Analyses of the 1957 (Asian) influenza pandemic in the United Kingdom and the impact of school closures. Epidemiol Infect 2008; 136:166&#x2013;179.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2870798</ArticleId><ArticleId IdType="pubmed">17445311</ArticleId></ArticleIdList></Reference><Reference><Citation>Hall IM, Gani R, Hughes HE, Leach S. Real&#x2010;time epidemic forecasting for pandemic influenza. Epidemiol Infect 2007; 135:372&#x2013;385.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2870596</ArticleId><ArticleId IdType="pubmed">16928287</ArticleId></ArticleIdList></Reference><Reference><Citation>Viboud C, Tam T, Fleming D, Handel A, Miller MA, Simonsen L. Transmissibility and mortality impact of epidemic and pandemic influenza, with emphasis on the unusually deadly 1951 epidemic. Vaccine 2006; 24:6701&#x2013;6707.</Citation><ArticleIdList><ArticleId IdType="pubmed">16806596</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Munayco CV, 
+Gomez J, 
+Laguna&#x2010;Torres VA
+<i>
+et&#xa0;al.
+</i>
+Epidemiological and transmissibility analysis of influenza A(H1N1)v in a southern hemisphere setting: Peru. 
+Euro Surveill
+2009; 14:pii=19299.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">19679037</ArticleId></ArticleIdList></Reference><Reference><Citation>de Silva UC, Warachit J, Waicharoen S, Chittaganpitch M. A preliminary analysis of the epidemiology of influenza A(H1N1)v virus infection in Thailand from early outbreak data, June&#x2013;July 2009. Euro Surveill 2009; 14:pii=19292.</Citation><ArticleIdList><ArticleId IdType="pubmed">19660247</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Wu JT, 
+Cowling BJ, 
+Lau EH
+<i>
+et&#xa0;al.
+</i>
+School closure and mitigation of pandemic (H1N1) 2009, Hong Kong. 
+Emerg Infect Dis
+2010; 16:538&#x2013;541.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3206396</ArticleId><ArticleId IdType="pubmed">20202441</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Hien TT, 
+Boni MF, 
+Bryant JE
+<i>
+et&#xa0;al.
+</i>
+Early pandemic influenza (2009 H1N1) in Ho Chi Minh City, Vietnam: a clinical virological and epidemiological analysis. 
+PLoS Med
+2010; 7:e1000277.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2872648</ArticleId><ArticleId IdType="pubmed">20502525</ArticleId></ArticleIdList></Reference><Reference><Citation>Tang S, Xiao Y, Yang Y, Zhou Y, Wu J, Ma Z. Community&#x2010;based measures for mitigating the 2009 H1N1 pandemic in China. PLoS One 2010; 5:e10911.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2887838</ArticleId><ArticleId IdType="pubmed">20585565</ArticleId></ArticleIdList></Reference><Reference><Citation>Nishiura H, Wilson N, Baker MG. Estimating the reproduction number of the novel influenza A virus (H1N1) in a Southern Hemisphere setting: preliminary estimate in New Zealand. NZ Med J 2009; 122:73&#x2013;77.</Citation><ArticleIdList><ArticleId IdType="pubmed">19684651</ArticleId></ArticleIdList></Reference><Reference><Citation>Renault P, D&#x2019;Ortenzio E, Kermarec F, Filleul L. Pandemic influenza 2009 on Reunion Island: a mild wave linked to a low reproduction number. PLoS Curr Influenza 2010; 2:RRN1145.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2808401</ArticleId><ArticleId IdType="pubmed">20126277</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Paine S, 
+Mercer GN, 
+Kelly PM
+<i>
+et&#xa0;al.
+</i>
+Transmissibility of 2009 pandemic influenza A(H1N1) in New Zealand: effective reproduction number and influence of age, ethnicity and importations. 
+Euro Surveill
+2010; 15:pii=19591.
+</Citation><ArticleIdList><ArticleId IdType="pubmed">20576236</ArticleId></ArticleIdList></Reference><Reference><Citation>
+Kelly HA, 
+Mercer GN, 
+Fielding JE
+<i>
+et&#xa0;al.
+</i>
+Pandemic (H1N1) 2009 influenza community transmission was established in one australian state when the virus was first identified in North America. 
+PLoS One
+2010; 5:e11341.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2893203</ArticleId><ArticleId IdType="pubmed">20596536</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>

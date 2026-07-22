@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
+<PubmedArticleSet>
+<PubmedArticle><MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM"><PMID Version="1">26064532</PMID><DateCompleted><Year>2015</Year><Month>06</Month><Day>11</Day></DateCompleted><DateRevised><Year>2021</Year><Month>01</Month><Day>09</Day></DateRevised><Article PubModel="Electronic-eCollection"><Journal><ISSN IssnType="Print">2054-5703</ISSN><JournalIssue CitedMedium="Print"><Volume>1</Volume><Issue>2</Issue><PubDate><Year>2014</Year><Month>Oct</Month></PubDate></JournalIssue><Title>Royal Society open science</Title><ISOAbbreviation>R Soc Open Sci</ISOAbbreviation></Journal><ArticleTitle>Adaptive nowcasting of influenza outbreaks using&#xa0;Google searches.</ArticleTitle><Pagination><StartPage>140095</StartPage><MedlinePgn>140095</MedlinePgn></Pagination><ELocationID EIdType="pii" ValidYN="Y">140095</ELocationID><ELocationID EIdType="doi" ValidYN="Y">10.1098/rsos.140095</ELocationID><Abstract><AbstractText>Seasonal influenza outbreaks and pandemics of new strains of the influenza virus affect humans around the globe. However, traditional systems for measuring the spread of flu infections deliver results with one or two weeks delay. Recent research suggests that data on queries made to the search engine Google can be used to address this problem, providing real-time estimates of levels of influenza-like illness in a population. Others have however argued that equally good estimates of current flu levels can be forecast using historic flu measurements. Here, we build dynamic 'nowcasting' models; in other words, forecasting models that estimate current levels of influenza, before the release of official data one week later. We find that when using Google Flu Trends data in combination with historic flu levels, the mean absolute error (MAE) of in-sample 'nowcasts' can be significantly reduced by 14.4%, compared with a baseline model that uses historic data on flu levels only. We further demonstrate that the MAE of out-of-sample nowcasts can also be significantly reduced by between 16.0% and 52.7%, depending on the length of the sliding training interval. We conclude that, using adaptive models, Google Flu Trends data can indeed be used to improve real-time influenza monitoring, even when official reports of flu infections are available with only one week's delay.</AbstractText></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Preis</LastName><ForeName>Tobias</ForeName><Initials>T</Initials><AffiliationInfo><Affiliation>Warwick Business School, University of Warwick , Scarman Road, Coventry CV4 7AL, UK.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Moat</LastName><ForeName>Helen Susannah</ForeName><Initials>HS</Initials><AffiliationInfo><Affiliation>Warwick Business School, University of Warwick , Scarman Road, Coventry CV4 7AL, UK.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2014</Year><Month>10</Month><Day>29</Day></ArticleDate></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>R Soc Open Sci</MedlineTA><NlmUniqueID>101647528</NlmUniqueID><ISSNLinking>2054-5703</ISSNLinking></MedlineJournalInfo><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">complex systems</Keyword><Keyword MajorTopicYN="N">computational social science</Keyword><Keyword MajorTopicYN="N">data science</Keyword></KeywordList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="received"><Year>2014</Year><Month>6</Month><Day>10</Day></PubMedPubDate><PubMedPubDate PubStatus="accepted"><Year>2014</Year><Month>10</Month><Day>10</Day></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2015</Year><Month>6</Month><Day>12</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2015</Year><Month>6</Month><Day>13</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2015</Year><Month>6</Month><Day>13</Day><Hour>6</Hour><Minute>1</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2014</Year><Month>10</Month><Day>29</Day></PubMedPubDate></History><PublicationStatus>epublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">26064532</ArticleId><ArticleId IdType="pmc">PMC4448892</ArticleId><ArticleId IdType="doi">10.1098/rsos.140095</ArticleId><ArticleId IdType="pii">rsos140095</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>Lazer D, et al. 
+2009. 
+Computational social science. <i>Science</i>
+323, 721&#x2013;723. (doi:10.1126/science.1167742)</Citation><ArticleIdList><ArticleId IdType="doi">10.1126/science.1167742</ArticleId><ArticleId IdType="pmc">PMC2745217</ArticleId><ArticleId IdType="pubmed">19197046</ArticleId></ArticleIdList></Reference><Reference><Citation>Moat HS, Preis T, Olivola CY, Liu C, Chater N. 
+2014. 
+Using big data to predict collective behavior in the real world. <i>Behav. Brain Sci.</i>
+37, 92&#x2013;93. (doi:10.1017/S0140525X13001817)</Citation><ArticleIdList><ArticleId IdType="doi">10.1017/S0140525X13001817</ArticleId><ArticleId IdType="pubmed">24572233</ArticleId></ArticleIdList></Reference><Reference><Citation>Vespignani A.
+2009. 
+Predicting the behavior of techno-social systems. <i>Science</i>
+325, 425&#x2013;428. (doi:10.1126/science.1171990)</Citation><ArticleIdList><ArticleId IdType="doi">10.1126/science.1171990</ArticleId><ArticleId IdType="pubmed">19628859</ArticleId></ArticleIdList></Reference><Reference><Citation>King G.
+2011. 
+Ensuring the data-rich future of the social sciences. <i>Science</i>
+331, 719&#x2013;721. (doi:10.1126/science.1197872)</Citation><ArticleIdList><ArticleId IdType="doi">10.1126/science.1197872</ArticleId><ArticleId IdType="pubmed">21311013</ArticleId></ArticleIdList></Reference><Reference><Citation>Preis T, Reith D, Stanley HE. 
+2010. 
+Complex dynamics of our economic life on different scales: insights from search engine query data. <i>Phil. Trans. R. Soc. A</i>
+368, 5707&#x2013;5719. (doi:10.1098/rsta.2010.0284)</Citation><ArticleIdList><ArticleId IdType="doi">10.1098/rsta.2010.0284</ArticleId><ArticleId IdType="pubmed">21078644</ArticleId></ArticleIdList></Reference><Reference><Citation>Choi H, Varian H. 
+2012. 
+Predicting the present with Google trends. <i>Econ. Rec.</i>
+88, 2&#x2013;9. (doi:10.1111/j.1475-4932.2012.00809.x)</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1475-4932.2012.00809.x</ArticleId></ArticleIdList></Reference><Reference><Citation>Preis T, Moat HS, Stanley HE, Bishop SR. 
+2012. 
+Quantifying the advantage of looking forward. <i>Sci. Rep.</i>
+2, 350 (doi:10.1038/srep00350)</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/srep00350</ArticleId><ArticleId IdType="pmc">PMC3320057</ArticleId><ArticleId IdType="pubmed">22482034</ArticleId></ArticleIdList></Reference><Reference><Citation>Noguchi T, Stewart N, Olivola CY, Moat HS, Preis T. 
+2014. 
+Characterizing the time-perspective of nations with search engine query data. <i>PLoS ONE</i>
+9, e95209 (doi:10.1371/journal.pone.0095209)</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pone.0095209</ArticleId><ArticleId IdType="pmc">PMC3988161</ArticleId><ArticleId IdType="pubmed">24736725</ArticleId></ArticleIdList></Reference><Reference><Citation>Preis T, Moat HS, Stanley HE. 
+2013. 
+Quantifying trading behavior in financial markets using Google trends. <i>Sci. Rep.</i>
+3, 1684 (doi:10.1038/srep01684)</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/srep01684</ArticleId><ArticleId IdType="pmc">PMC3635219</ArticleId><ArticleId IdType="pubmed">23619126</ArticleId></ArticleIdList></Reference><Reference><Citation>Kristoufek L.
+2013. 
+Can Google trends search queries contribute to risk diversification?
+<i>Sci. Rep.</i>
+3, 2713 (doi:10.1038/srep02713)</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/srep02713</ArticleId><ArticleId IdType="pmc">PMC3776958</ArticleId><ArticleId IdType="pubmed">24048448</ArticleId></ArticleIdList></Reference><Reference><Citation>Curme C, Preis T, Stanley HE, Moat HS. 
+2014. 
+Quantifying the semantics of search behavior before stock market moves. <i>Proc. Natl Acad. Sci. USA</i>
+111, 11600&#x2013;11605. (doi:10.1073/pnas.1324054111)</Citation><ArticleIdList><ArticleId IdType="doi">10.1073/pnas.1324054111</ArticleId><ArticleId IdType="pmc">PMC4136609</ArticleId><ArticleId IdType="pubmed">25071193</ArticleId></ArticleIdList></Reference><Reference><Citation>Bordino I, Battiston S, Caldarelli G, Cristelli M, Ukkonen A, Weber I. 
+2012. 
+Web search queries can predict stock market volumes. <i>PLoS ONE</i>
+7, e40014 (doi:10.1371/journal.pone.0040014)</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pone.0040014</ArticleId><ArticleId IdType="pmc">PMC3400625</ArticleId><ArticleId IdType="pubmed">22829871</ArticleId></ArticleIdList></Reference><Reference><Citation>Yasseri T, Sumi R, Rung A, Kornai A, Kert&#xe9;sz J. 
+2012. 
+Dynamics of conflicts in Wikipedia. <i>PLoS ONE</i>
+7, e38869 (doi:10.1371/journal.pone.0038869)</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pone.0038869</ArticleId><ArticleId IdType="pmc">PMC3380063</ArticleId><ArticleId IdType="pubmed">22745683</ArticleId></ArticleIdList></Reference><Reference><Citation>Moat HS, Curme C, Avakian A, Kenett DY, Stanley HE, Preis T. 
+2013. 
+Quantifying Wikipedia usage patterns before stock market moves. <i>Sci. Rep.</i>
+3, 1801 (doi:10.1038/srep01801)</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/srep01801</ArticleId></ArticleIdList></Reference><Reference><Citation>Kristoufek L.
+2013. 
+BitCoin meets Google Trends and Wikipedia: quantifying the relationship between phenomena of the Internet era. <i>Sci. Rep.</i>
+3, 3415 (doi:10.1038/srep03415)</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/srep03415</ArticleId><ArticleId IdType="pmc">PMC3849639</ArticleId><ArticleId IdType="pubmed">24301322</ArticleId></ArticleIdList></Reference><Reference><Citation>Bollen J, Mao H, Zeng X. 
+2011. 
+Twitter mood predicts the stock market. <i>J. Comp. Sci.</i>
+2, 1&#x2013;8. (doi:10.1016/j.jocs.2010.12.007)</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.jocs.2010.12.007</ArticleId></ArticleIdList></Reference><Reference><Citation>Preis T, Moat HS, Bishop SR, Treleaven P, Stanley HE. 
+2013. 
+Quantifying the digital traces of Hurricane Sandy on Flickr. <i>Sci. Rep.</i>
+3, 3141 (doi:10.1038/srep03141)</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/srep03141</ArticleId><ArticleId IdType="pmc">PMC3817451</ArticleId><ArticleId IdType="pubmed">24189490</ArticleId></ArticleIdList></Reference><Reference><Citation>Alanyali M, Moat HS, Preis T. 
+2013. 
+Quantifying the relationship between financial news and the stock market. <i>Sci. Rep.</i>
+3, 3578 (doi:10.1038/srep03578)</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/srep03578</ArticleId><ArticleId IdType="pmc">PMC3868958</ArticleId><ArticleId IdType="pubmed">24356666</ArticleId></ArticleIdList></Reference><Reference><Citation>Polgreen PM, Chen Y, Pennock DM, Nelson FD. 
+2008. 
+Using internet searches for influenza surveillance. <i>Clin. Infect. Dis.</i>
+47, 1443&#x2013;1448. (doi:10.1086/593098)</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/593098</ArticleId><ArticleId IdType="pubmed">18954267</ArticleId></ArticleIdList></Reference><Reference><Citation>Ginsberg J, Mohebbi MH, Patel RS, Brammer L, Smolinski MS, Brilliant L. 
+2009. 
+Detecting influenza epidemics using search engine query data. <i>Nature</i>
+457, 1012&#x2013;1014. (doi:10.1038/nature07634)</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/nature07634</ArticleId><ArticleId IdType="pubmed">19020500</ArticleId></ArticleIdList></Reference><Reference><Citation>McIver DJ, Brownstein JS. 
+2014. 
+Wikipedia usage estimates prevalence of influenza-like illness in the United States in near real-time. <i>PLoS Comput. Biol.</i>
+10, e1003581 (doi:10.1371/journal.pcbi.1003581)</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pcbi.1003581</ArticleId><ArticleId IdType="pmc">PMC3990502</ArticleId><ArticleId IdType="pubmed">24743682</ArticleId></ArticleIdList></Reference><Reference><Citation>Signorini A, Segre AM, Polgreen PM. 
+2011. 
+The use of Twitter to track levels of disease activity and public concern in the U.S. during the influenza A H1N1 pandemic. <i>PLoS ONE</i>
+6, e19467 (doi:10.1371/journal.pone.0019467)</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pone.0019467</ArticleId><ArticleId IdType="pmc">PMC3087759</ArticleId><ArticleId IdType="pubmed">21573238</ArticleId></ArticleIdList></Reference><Reference><Citation>Goel S, Hofman JM, Lahaie S, Pennock DM, Watts DJ. 
+2010. 
+Predicting consumer behavior with web search. <i>Proc. Natl Acad. Sci. USA</i>
+107, 17486&#x2013;17490. (doi:10.1073/pnas.1005962107)</Citation><ArticleIdList><ArticleId IdType="doi">10.1073/pnas.1005962107</ArticleId><ArticleId IdType="pmc">PMC2955127</ArticleId><ArticleId IdType="pubmed">20876140</ArticleId></ArticleIdList></Reference><Reference><Citation>Olson DR, Konty KJ, Paladini M, Viboud C, Simonsen L. 
+2013. 
+Reassessing Google flu trends data for detection of seasonal and pandemic influenza: a comparative epidemiological study at three geographic scales. <i>PLoS Comput. Biol.</i>
+9, e1003256 (doi:10.1371/journal.pcbi.1003256)</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pcbi.1003256</ArticleId><ArticleId IdType="pmc">PMC3798275</ArticleId><ArticleId IdType="pubmed">24146603</ArticleId></ArticleIdList></Reference><Reference><Citation>Lazer DM, Kennedy R, King G, Vespignani V. 
+2014. 
+The parable of Google flu: traps in big data analysis. <i>Science</i>
+343, 1203&#x2013;1205. (doi:10.1126/science.1248506)</Citation><ArticleIdList><ArticleId IdType="doi">10.1126/science.1248506</ArticleId><ArticleId IdType="pubmed">24626916</ArticleId></ArticleIdList></Reference><Reference><Citation>Santillana M, Zhang DW, Althouse BM, Ayers JW. 
+2014. 
+What can digital disease detection learn from (an external revision to) Google flu trends?
+<i>Am. J. Prev. Med.</i>
+47, 341&#x2013;347. (doi:10.1016/j.amepre.2014.05.020)</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.amepre.2014.05.020</ArticleId><ArticleId IdType="pubmed">24997572</ArticleId></ArticleIdList></Reference><Reference><Citation>Preis T, Moat HS. 
+2014. 
+Data from adaptive nowcasting of influenza outbreaks using Google searches. <i>Dryad Repository.</i> (doi:10.5061/dryad.r06h2)</Citation><ArticleIdList><ArticleId IdType="doi">10.5061/dryad.r06h2</ArticleId><ArticleId IdType="pmc">PMC4448892</ArticleId><ArticleId IdType="pubmed">26064532</ArticleId></ArticleIdList></Reference><Reference><Citation>Cook S, Conrad C, Fowlkes AL, Mohebbi MH. 
+2011. 
+Assessing Google flu trends performance in the United States during the 2009 influenza virus A (H1N1) pandemic. <i>PLoS ONE</i>
+6, e23610 (doi:10.1371/journal.pone.0023610)</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pone.0023610</ArticleId><ArticleId IdType="pmc">PMC3158788</ArticleId><ArticleId IdType="pubmed">21886802</ArticleId></ArticleIdList></Reference><Reference><Citation>Makridakis S, Wheelwright SC, Hyndman RJ. 
+1998. 
+<i>Forecasting methods and applications</i>
+3rd edn.
+London, UK: John Wiley &amp; Sons.</Citation></Reference><Reference><Citation>Stock JH, Watson M. 
+2011. 
+<i>Introduction to econometrics</i>
+3rd edn.
+Harlow, UK: Pearson Education.</Citation></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>

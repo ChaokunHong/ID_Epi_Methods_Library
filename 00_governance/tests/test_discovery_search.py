@@ -93,6 +93,17 @@ class DiscoverySearchTests(unittest.TestCase):
             destination = self.root / registry_spec.path
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source, destination)
+            if "card_path" not in registry_spec.headers:
+                continue
+            with source.open(encoding="utf-8", newline="") as handle:
+                for row in csv.DictReader(handle):
+                    relative_card_path = (row.get("card_path") or "").strip()
+                    if not relative_card_path:
+                        continue
+                    source_card = PROJECT_ROOT / relative_card_path
+                    destination_card = self.root / relative_card_path
+                    destination_card.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(source_card, destination_card)
 
     def write_journals(self, rows: list[dict[str, str]]) -> None:
         self.write_csv(
