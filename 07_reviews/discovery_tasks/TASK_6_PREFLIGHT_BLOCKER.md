@@ -6,7 +6,13 @@ Branch: `codex/broad-methods-discovery`
 
 Tracked HEAD entering the blocker checkpoint: `a466095da7a49810102f63c2cefc0282d5c25d11`
 
-## 2026-07-22 owner clarification and current status
+## 2026-07-22 owner course correction: custom runtime line superseded
+
+The owner determined that this ignored preflight line had expanded far beyond the simple approved Task 6. The approved plan requires manifested batches, non-writing semantic readers, exact coverage, strict outputs, independent decisions/audit, lineage resolution, discovery-state registries, validators, and task review. It does not require a custom app-server, complete tool-event telemetry, or a 12,000-line runtime-security harness.
+
+Under `DEC-20260722-008`, every ignored `.superpowers/sdd/task6_semantic/` runtime artifact and its internal review is historical zero-adoption. Do not resume that implementation, do not create `frozen_002`, and do not treat any finding inside that superseded harness as a blocker to the approved Task 6. Resume Task 6 directly with bounded non-writing Codex readers over manifested frozen inputs and enforce the plan at artifact integration and independent review.
+
+## Historical 2026-07-22 owner clarification and then-current status
 
 The owner clarified that tools are legitimate when they serve the scientific objective. The approved design, broad-discovery plan, and protocol do not require a capability-empty model request. Under `DEC-20260722-007`, orchestration, validation, file I/O, and formal Wave 3 PubMed/Crossref/primary-record retrieval may use tools. Blind A/B canonical-concept readers must base judgments only on their manifested frozen batch, catalog, and prompt. A session fails closed only when observed behavior breaches that isolation: unauthorized repository/material reads, blind-assignment web/network enrichment, inter-reader communication, mutation of frozen inputs or gates, or review bypass. Mere capability exposure and benign control-plane events are not failures; complete event evidence remains mandatory.
 
