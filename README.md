@@ -14,7 +14,7 @@ The project is methods-first. Geography, LMIC relevance, AMR relevance, public-d
 
 ## Current phase
 
-Broad discovery and lineage locating are complete on the isolated `codex/broad-methods-discovery` branch, and complete branch review has passed. Final branch validation, merge to `main`, merged-main verification, and publication remain pending. The approved design is `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, and the active approved plan is `docs/superpowers/plans/2026-07-20-broad-methods-discovery-search.md`. No flagship study has been selected.
+Broad discovery and lineage locating are complete, independently reviewed, merged to `main`, fully revalidated, and published. The next independent plan is primary-source verification and complete method-card extraction, pending owner approval. The approved design is `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, and the completed discovery plan is `docs/superpowers/plans/2026-07-20-broad-methods-discovery-search.md`. No flagship study has been selected.
 
 ## Related project
 

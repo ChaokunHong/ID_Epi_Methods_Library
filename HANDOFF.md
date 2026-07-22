@@ -6,7 +6,7 @@
 
 ## Current phase and status
 
-**Broad discovery artifacts and lineage locating are scientifically complete; Tasks 1–8 and the complete whole-branch review have passed with no remaining Critical or Important findings.** Work remains isolated in `/Users/hongchaokun/Documents/PhD/ID_Epi_Methods_Library/.worktrees/broad-methods-discovery` on branch `codex/broad-methods-discovery`. Whole-branch review initially found one Important receipt-metadata validation gap and one Minor README status defect; correction `5856033df607701b1d080ef2b89befd32c532292` closed both, and the independent Standards and Spec axes each returned `0 Critical, 0 Important, 0 Minor` on re-review. The durable receipt is `07_reviews/BROAD_DISCOVERY_REVIEW_20260720.md`. Final branch validation, fast-forward merge, merged-main rerun, and push have not begun.
+**Broad discovery and lineage locating are complete, independently reviewed, merged to `main`, fully revalidated on `main`, and published to GitHub.** Tasks 1–8 and the complete whole-branch review passed with no remaining Critical or Important findings. Whole-branch correction `5856033df607701b1d080ef2b89befd32c532292` closed the one Important receipt-metadata gap and one Minor README defect; the independent Standards and Spec axes each returned `0 Critical, 0 Important, 0 Minor` on re-review. The durable review receipt is `07_reviews/BROAD_DISCOVERY_REVIEW_20260720.md`. The publication checkpoint is the latest commit touching this handoff; local `main`, tracking `origin/main`, and live GitHub `main` were verified equal after its push.
 
 The current discovery state contains 7,779 paper records, 277 method records, 6,711 evidenced provisional relationships plus 1,068 explicit omissions, 620 named-source identity decisions, 723 terminal lineage queries, and 634 manifested lineage candidates. Residual gaps remain explicit: 893 screening records are uncertain; lineage identity has 616 resolved, two ambiguous, and two unresolved-after-three-query outcomes; and the other eight normalized registries remain header-only. All six family verdicts are `adequate_for_primary_source_verification`, not exhaustive-coverage claims. The ignored custom semantic-runtime harness remains superseded with zero adoption and is not a Task 6 gate.
 
@@ -61,11 +61,11 @@ The one bootstrap-deferred Minor—redundant `try`/`except` wrappers around seve
 
 ## Exact next action
 
-Commit the passing whole-branch review receipt, then run the complete final gate on the receipt-bearing branch. Confirm local `main`, tracking `origin/main`, and live remote `main` still equal `e161163d5ba3682395ca3e4846b81e355b7cd0b9`, confirm `main` is an ancestor, and fast-forward local `main` only. Rerun the full gate on merged `main`, including the legacy external validator at exact exit `1` and the exact amended 14-line gate, then push and verify local/tracking/live-remote equality before removing the worktree or branch.
+The next independent scientific plan is **primary-source verification and complete method-card extraction**, pending owner approval. It must verify substantive claims and lineage roles from owning primary sources before promoting any provisional relationship into `03_evidence_tables/paper_method_links.csv` or constructing complete Stage 3 method cards. Do not begin that plan until it is separately written, reviewed, and approved.
 
-The next independent scientific plan is **primary-source verification and complete method-card extraction**, pending owner approval. It must verify substantive claims and lineage roles from owning primary sources before promoting any provisional relationship into `03_evidence_tables/paper_method_links.csv` or constructing complete Stage 3 method cards. Do not repeat Tasks 1–7, use the ignored runtime harness, create `frozen_002`, select a flagship, verify data feasibility, download candidate datasets, or execute a formal simulation under the discovery plan.
+Do not repeat Tasks 1–8 or whole-branch review, use the ignored runtime harness, create `frozen_002`, select a flagship, verify data feasibility, download candidate datasets, or execute a formal simulation under the completed discovery plan.
 
-At pause, local `main`, tracking `origin/main`, and live remote `main` all resolve to `e161163d5ba3682395ca3e4846b81e355b7cd0b9`; `main` is an ancestor of the discovery branch. Nothing from the discovery branch has been merged or pushed.
+At pause, broad discovery is on published `main`. Resolve the exact publication commit with `git log -1 --format=%H -- HANDOFF.md`; after push, local `main`, tracking `origin/main`, and live remote `refs/heads/main` must all equal that value. The isolated discovery worktree and merged branch are cleanup-only and may be removed only after this equality is reconfirmed.
 
 ## Verification commands
 
@@ -93,4 +93,4 @@ git diff --check
 
 ## Last updated
 
-2026-07-22 after independent Standards and Spec re-review accepted whole-branch correction `5856033df607701b1d080ef2b89befd32c532292` with `0 Critical, 0 Important, 0 Minor` on both axes. Tasks 1–8 and complete branch review are finished; final branch validation, fast-forward merge, merged-main verification, and push remain. Resolve the receipt commit containing this handoff checkpoint with `git log -1 --format=%H -- 07_reviews/BROAD_DISCOVERY_REVIEW_20260720.md`; a handoff file cannot embed the SHA of the commit that contains itself.
+2026-07-22 after fast-forwarding reviewed head `e9aa4b4397de580e6231f8a587d2b5f6a2919fed` to `main`, rerunning the complete merged-main gate, and publishing it. This final live-status checkpoint is resolved with `git log -1 --format=%H -- HANDOFF.md`; a handoff file cannot embed the SHA of the commit that contains itself. After its push, local/tracking/live-remote equality was reverified before worktree cleanup.
