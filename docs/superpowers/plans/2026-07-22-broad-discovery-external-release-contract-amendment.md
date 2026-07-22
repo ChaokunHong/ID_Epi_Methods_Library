@@ -14,12 +14,14 @@
 - Decision authority: `DEC-20260722-010`; `DEC-20260722-009` was already occupied and remains unchanged.
 - Original approved plan: `docs/superpowers/plans/2026-07-20-broad-methods-discovery-search.md`, SHA256 `671f24a245c48a9c3661ecf176081f72948c5cdc0c3157df85d3781774ee4209`; preserve its bytes.
 - Frozen external baseline: `07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_BASELINE.json`, SHA256 `d1b48eb6c11b4e3701acfba5135bcd678ba101d44516b494f2e31d33f21b087b`; preserve its bytes.
+- Exact release-contract JSON bytes, including the trailing newline: SHA256 `6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422`. The immutable constants in this amendment plan are authoritative; the JSON must match this SHA byte-for-byte at creation, the full gate, and the cached pre-commit review.
 - Task 8 blocker receipt: `07_reviews/discovery_tasks/TASK_8_REVIEW.md`, reviewed head `70e5820dadf073cea19cc4fe7eb3f1bca377b269`, verdict `NEEDS FIXES / ACK withheld — 0 Critical, 1 Important, 0 Minor`.
 - Original Task 8 review base: `140b7f2cf725aa9f0ecb1369369a2432eb6f9b52`; the same Task 8 reviewer must re-review the complete range from this base through the repair head.
 - Source repository: `/Users/hongchaokun/Documents/PhD/Surveillance_AMR`; every command in this amendment is read-only there.
 - Do not modify any search, screening, registry, lineage, coverage, wave, manifest, validator, frozen baseline, GBD, pointer, seed-source, or other external file.
 - Do not use the ignored custom runtime harness. This amendment uses only the exact commands below and the existing repository tests and validators.
 - The existing `verify-external-boundary` command must still run. Its required observed result remains exit `1` with `DISCOVERY FAIL` and exactly `- external filtered status mismatch`; record it as a nonpassing legacy check and never relabel it `PASS`.
+- The amended gate uses the immutable constants embedded in this plan and does not load or trust the mutable JSON file. `AMENDED EXTERNAL RELEASE GATE PASS` cannot compensate for a missing or mismatched release-contract JSON SHA.
 - Any mismatch in source HEAD, pointer/index state, seed status/SHA/byte comparison, live status, allowlisted GBD counts/prefix, historical reconstruction, or checkpoint equality blocks release.
 - Proof remains path/status evidence only, not dirty-file byte identity.
 - Every original Task 8 gate not explicitly replaced above remains binding, including the same-reviewer Task 8 gate, whole-branch review, merged-`main` rerun, remote equality, and push gate.
@@ -61,7 +63,7 @@ The JSON root is an object with exactly these keys and types:
 - Every `sha256`: 64-character lowercase hexadecimal string.
 - `seed.cmp_required` and `allowlisted_delta.other_delta_allowed`: booleans.
 
-Create the contract with exactly this content and a trailing newline:
+Create the contract with exactly this content and a trailing newline. These bytes must have SHA256 `6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422`:
 
 ```json
 {
@@ -179,7 +181,7 @@ Create the contract with exactly this content and a trailing newline:
 
 ## Exact Read-only Amended Gate Command
 
-Run this command at every checkpoint named by the contract. It performs no external write and exits nonzero on the first mismatch.
+Run this command at every checkpoint named by the contract. It performs no external write, uses only the immutable constants in this plan, does not read the release-contract JSON, and exits nonzero on the first mismatch. The separate JSON SHA gate remains mandatory even when this command prints PASS.
 
 ```bash
 python3 - <<'PY'
@@ -413,9 +415,22 @@ The final two shell assertions validate faithful recording of the legacy result;
 
 Run the exact read-only amended gate command above. Require the exact stated output and save its values for the verification-report pre-edit table. A mismatch blocks; do not edit any file to accommodate it.
 
-- [ ] **Step 4: Create the static release contract and update the two Task 8 documents**
+- [ ] **Step 4: Create and byte-lock the static release contract, then update the two Task 8 documents**
 
-Create the JSON with the exact content under “Release Contract JSON Interface.” Append a section titled `## Owner-approved Task 8 external release-contract repair` to `07_reviews/BROAD_DISCOVERY_VERIFICATION_20260720.md` that records:
+Create the JSON with the exact content under “Release Contract JSON Interface,” including its trailing newline. Immediately run:
+
+```bash
+contract_path=07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_RELEASE_CONTRACT_20260722.json
+required_contract_sha=6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422
+actual_contract_sha=$(shasum -a 256 "$contract_path" | awk '{print $1}')
+printf 'release-contract-json-sha256=%s\n' "$actual_contract_sha"
+test "$actual_contract_sha" = "$required_contract_sha"
+python3 -m json.tool "$contract_path" >/dev/null
+```
+
+Expected: the printed SHA is exactly `6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422`; the assertion and JSON parse both exit `0`. A SHA mismatch blocks before any use of the JSON, even if the amended external gate passes.
+
+Append a section titled `## Owner-approved Task 8 external release-contract repair` to `07_reviews/BROAD_DISCOVERY_VERIFICATION_20260720.md` that records:
 
 1. owner approval date, `DEC-20260722-010`, amendment-plan path and resolved amendment commit;
 2. the legacy validator command, exit `1`, and its exact two output lines, explicitly labelled `nonpassing legacy check`;
@@ -438,7 +453,12 @@ Run the exact read-only amended gate command again. Its output must be byte-for-
 Run:
 
 ```bash
-python3 -m json.tool 07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_RELEASE_CONTRACT_20260722.json >/dev/null
+contract_path=07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_RELEASE_CONTRACT_20260722.json
+required_contract_sha=6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422
+actual_contract_sha=$(shasum -a 256 "$contract_path" | awk '{print $1}')
+printf 'release-contract-json-sha256=%s\n' "$actual_contract_sha"
+test "$actual_contract_sha" = "$required_contract_sha"
+python3 -m json.tool "$contract_path" >/dev/null
 python3 -m unittest 00_governance/tests/test_validate_library.py -v
 python3 -m unittest 00_governance/tests/test_discovery_search.py -v
 python3 00_governance/scripts/discovery_search.py validate-config --root .
@@ -455,23 +475,57 @@ git diff --check
 git status --short --branch
 ```
 
-Also rerun Step 2's legacy-validator command and the exact amended gate command. Expected: JSON parses; 25 Library tests and 95 discovery tests pass; `validate-config` and `verify-all` print `DISCOVERY PASS`; the Library validator prints `VALIDATION PASS`; immutable hashes remain design `e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57`, bootstrap plan `6302aca22c6b46ff0c473af1b7c487dbd974d7850264b92cd4013a1ecd4af3ec`, original broad plan `671f24a245c48a9c3661ecf176081f72948c5cdc0c3157df85d3781774ee4209`, external baseline `d1b48eb6c11b4e3701acfba5135bcd678ba101d44516b494f2e31d33f21b087b`, and seed `520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55`; seed comparison exits `0`; remote `main` remains `e161163d5ba3682395ca3e4846b81e355b7cd0b9`; whitespace check is silent; exactly the three named Task 8 repair paths are changed. The legacy validator remains exit `1` with its exact failure, and the amended gate prints `AMENDED EXTERNAL RELEASE GATE PASS`.
+Also rerun Step 2's legacy-validator command and the exact amended gate command. Expected: the release-contract SHA prints exactly `6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422` before the JSON parse; 25 Library tests and 95 discovery tests pass; `validate-config` and `verify-all` print `DISCOVERY PASS`; the Library validator prints `VALIDATION PASS`; immutable hashes remain design `e5fe20a5502c903b01cad98528991f81f23dface5eb6d51dd364074d15632c57`, bootstrap plan `6302aca22c6b46ff0c473af1b7c487dbd974d7850264b92cd4013a1ecd4af3ec`, original broad plan `671f24a245c48a9c3661ecf176081f72948c5cdc0c3157df85d3781774ee4209`, external baseline `d1b48eb6c11b4e3701acfba5135bcd678ba101d44516b494f2e31d33f21b087b`, and seed `520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55`; seed comparison exits `0`; remote `main` remains `e161163d5ba3682395ca3e4846b81e355b7cd0b9`; whitespace check is silent; exactly the three named Task 8 repair paths are changed. The legacy validator remains exit `1` with its exact failure, and the amended gate prints `AMENDED EXTERNAL RELEASE GATE PASS`. A gate PASS never overrides a release-contract SHA failure.
 
 - [ ] **Step 7: Review the repair scope and commit**
 
 Run:
 
 ```bash
-git diff --name-only
-git diff --check
-git diff -- 07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_RELEASE_CONTRACT_20260722.json 07_reviews/BROAD_DISCOVERY_VERIFICATION_20260720.md HANDOFF.md
-git add 07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_RELEASE_CONTRACT_20260722.json 07_reviews/BROAD_DISCOVERY_VERIFICATION_20260720.md HANDOFF.md
-git diff --cached --name-only
+set -eu
+contract_path=07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_RELEASE_CONTRACT_20260722.json
+verification_path=07_reviews/BROAD_DISCOVERY_VERIFICATION_20260720.md
+handoff_path=HANDOFF.md
+required_contract_sha=6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422
+
+repair_status=$(git status --short --untracked-files=all)
+printf '%s\n' "$repair_status"
+actual_status=$(printf '%s\n' "$repair_status" | LC_ALL=C sort)
+expected_status=$(printf '%s\n' \
+  "?? $contract_path" \
+  " M $verification_path" \
+  " M $handoff_path" | LC_ALL=C sort)
+test "$actual_status" = "$expected_status"
+test "$(shasum -a 256 "$contract_path" | awk '{print $1}')" = "$required_contract_sha"
+
+git add -- "$contract_path" "$verification_path" "$handoff_path"
+
+cached_paths=$(git diff --cached --name-only)
+printf '%s\n' "$cached_paths"
+actual_cached_paths=$(printf '%s\n' "$cached_paths" | LC_ALL=C sort)
+expected_cached_paths=$(printf '%s\n' \
+  "$contract_path" \
+  "$verification_path" \
+  "$handoff_path" | LC_ALL=C sort)
+test "$actual_cached_paths" = "$expected_cached_paths"
+
+cached_status=$(git diff --cached --name-status)
+actual_cached_status=$(printf '%s\n' "$cached_status" | LC_ALL=C sort)
+expected_cached_status=$(printf 'A\t%s\nM\t%s\nM\t%s\n' \
+  "$contract_path" \
+  "$verification_path" \
+  "$handoff_path" | LC_ALL=C sort)
+test "$actual_cached_status" = "$expected_cached_status"
+test "$(git show ":$contract_path" | shasum -a 256 | awk '{print $1}')" = "$required_contract_sha"
+
+git diff --cached --check
+git diff --cached -- "$contract_path" "$verification_path" "$handoff_path"
 git commit -m "repair Task 8 external release contract"
+test -z "$(git status --porcelain=v1 --untracked-files=all)"
 git status --short --branch
 ```
 
-Expected: unstaged and staged path lists contain exactly the three named paths; the commit subject is exactly `repair Task 8 external release contract`; the worktree is clean after commit. Do not modify a review receipt or execution ledger in this repair commit.
+Expected: before staging, the status contains exactly one untracked addition (`??` contract JSON) and two tracked modifications (` M` verification report and ` M` handoff), independent of output order. After staging, the cached name-only set contains exactly the three named paths and the cached name-status set is exactly one `A` plus two `M` entries. The cached JSON blob has SHA256 `6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422`; `git diff --cached --check` is silent; the displayed cached diff includes all three files, so both JSON content and whitespace are reviewed before commit. The commit subject is exactly `repair Task 8 external release contract`, and the worktree is clean after commit. Do not modify a review receipt or execution ledger in this repair commit.
 
 - [ ] **Step 8: Return the complete Task 8 range to the same reviewer**
 
