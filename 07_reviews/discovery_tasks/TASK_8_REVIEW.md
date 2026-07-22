@@ -1,51 +1,45 @@
 # Task 8 Independent Review
 
-## Current verdict
+## Final verdict
 
-`NEEDS FIXES / ACK withheld — 0 Critical, 1 Important, 0 Minor`
+`PASS — no remaining Critical or Important findings`
 
-- Spec compliance: NEEDS FIXES — one Important release-gate failure
-- Task quality: PASS — 0 Critical, 0 Important, 0 Minor
-- Review range: `140b7f2cf725aa9f0ecb1369369a2432eb6f9b52..70e5820dadf073cea19cc4fe7eb3f1bca377b269`
-- Reviewed head: `70e5820dadf073cea19cc4fe7eb3f1bca377b269`
-- Implementation commit: `70e5820dadf073cea19cc4fe7eb3f1bca377b269`
+- Spec compliance: PASS — 0 Critical, 0 Important, 0 Minor.
+- Task quality: PASS — 0 Critical, 0 Important, 0 Minor.
+- Review range: `140b7f2cf725aa9f0ecb1369369a2432eb6f9b52..e0c2b821ce702ef34960cc4345ebfdad36fbeb64`
+- Reviewed head: `e0c2b821ce702ef34960cc4345ebfdad36fbeb64`
+- Original implementation: `70e5820dadf073cea19cc4fe7eb3f1bca377b269`
+- Repair commit: `e0c2b821ce702ef34960cc4345ebfdad36fbeb64`
 - Review package: `07_reviews/discovery_tasks/TASK_8_REVIEW_PACKAGE.md`
-- Exact diff package: `.superpowers/sdd/review-140b7f2..70e5820.diff`
-- Exact diff SHA256: `3f899fc3448b156501b9e198ad3850bcef5111b5f4a977f1227aa6bd31f95878`
+- Exact diff package: `.superpowers/sdd/review-140b7f2..e0c2b82.diff`
+- Exact diff SHA256: `5baba1b25e86b98d06c8ade567ffa63778a67853a28e99bc876b253e9342172e`
 
-## Important finding
+## Closure of the original Important finding
 
-### External release gate is not satisfied
+The first review correctly withheld acknowledgement because the original Task 8 contract required the frozen external validator to pass while live `Surveillance_AMR` contained a later owner-owned untracked GBD directory. The owner then approved the narrow contract in `DEC-20260722-010`. That amendment was separately implemented, repaired, and independently reviewed before the original Task 8 implementer made the bounded three-file repair.
 
-The approved Task 8 plan requires all validators to pass and requires the live filtered `Surveillance_AMR` status to equal the phase-start receipt. Fresh independent execution of `verify-external-boundary` returned exit `1`, `DISCOVERY FAIL`, and exactly one diagnostic: `external filtered status mismatch`.
+The same Task 8 reviewer has now re-reviewed the complete original Task 8 range. The legacy validator still exits `1` with exactly:
 
-The frozen phase-start pointer-filtered default status is 16 lines with SHA256 `e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e`. The live pointer-filtered default status is 17 lines with SHA256 `d3273ff3b5aba70d91e72f06d59d65d1d83eafb3f0a3bd33f163e05d3cb6ebfd`. The additional state is the already-documented owner-owned untracked GBD directory.
+```text
+DISCOVERY FAIL
+- external filtered status mismatch
+```
 
-This is Important rather than Critical because the Library content, calculations, verification report, and claim boundaries are correct and the failure is reported honestly. It nevertheless blocks the explicit release gate, so Task 8 cannot receive PASS and whole-branch review, merge, and push cannot begin under the current approved contract.
+It is recorded honestly as a nonpassing legacy check. The separate amended gate independently proves the exact allowlisted GBD-only delta and prints its exact 14-line PASS. Therefore the former Important is closed by the owner-approved, independently reviewed release contract—not by changing the frozen baseline, weakening the validator, deleting owner-owned state, or writing to `Surveillance_AMR`.
 
-The finding cannot be repaired by editing `07_reviews/BROAD_DISCOVERY_VERIFICATION_20260720.md` or `HANDOFF.md`. The plan forbids writing to `Surveillance_AMR`, and neither the frozen baseline nor validator may be changed merely to make the gate green.
+## Passing evidence
 
-## Closure conditions
+- Exact range, ancestry, saved/live diff equality, repair three-file scope, and `git diff --check`: PASS.
+- Tests: 25/25 Library and 95/95 discovery PASS.
+- `validate-config` and `verify-all`: `DISCOVERY PASS`; Library validator: `VALIDATION PASS`.
+- Release-contract JSON is byte-identical to the amendment and has SHA256 `6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422`.
+- All eight external status views and SHA256 values, GBD one/159 counts, source HEAD, pointer/index state, seed SHA/cmp, and pre/post/final equality independently match.
+- All 741 search/query IDs, wave/global counts, three manifests, screening/audit coverage, six coverage verdicts, lineage outcomes, discovery registries, and deferred header-only registries independently reconcile.
+- Final scientific totals: 7,779 papers, 277 methods, 6,711 provisional relationships plus 1,068 explicit omissions, 620 named sources, 723 lineage queries, 634 lineage candidates, and identity outcomes 616 resolved / two ambiguous / two unresolved after three queries.
+- Discovery leads remain separate from verified substantive claims. No flagship selection, candidate-data download, feasibility audit, or formal simulation occurred.
+- The Library worktree remained clean at the reviewed head; external HEAD/status snapshots remained unchanged. The external proof is correctly limited to path/status evidence rather than dirty-file byte identity.
+- Local `main`, tracking `origin/main`, and live remote `main` remained `e161163d5ba3682395ca3e4846b81e355b7cd0b9`.
 
-One of the following owner-controlled conditions is required before re-review:
+## Remaining downstream gates
 
-1. A separately authorized and independently reviewed external operation restores the exact phase-start boundary so `verify-external-boundary` returns exit `0` / `DISCOVERY PASS`, including the 16-line pointer-filtered status and SHA256 `e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e`, while source HEAD, pointer/index, and seed-source states continue to match; then rerun the complete Task 8 gate.
-2. The owner explicitly approves an independently reviewed plan revision that replaces the current external release contract with a new contract; then rerun the complete Task 8 gate and independent review against that revision.
-
-Do not close the finding by silently deleting owner-owned GBD material, editing the frozen baseline, weakening the validator, or relabeling the failed command as PASS.
-
-## Passing checks
-
-- Exact implementation range: one commit with subject `verify broad methods discovery phase`
-- Exact tracked scope: added verification report and modified handoff only
-- Executed-ID ledger: 741/741 rows independently matched
-- Manifest integrity: 1,594/1,594 entries rehashed without mismatch
-- Wave receipts and tables: 12 Wave 1 roots, six Wave 2 queries, 723 Wave 3 queries, 7,146 / 3,571 screened rows, 634 lineage candidates, and 620 lineage-ledger rows
-- Registries: 7,779 papers, 277 methods, and eight deferred normalized registries header-only
-- Library tests: 25/25 PASS
-- Discovery tests: 95/95 PASS
-- `validate-config`, `verify-all`, Library validator, and exact-range `git diff --check`: PASS
-- Required discovery-versus-verified claim boundary, immutable hashes, seed byte comparison, remote baseline, deferred work, and next-plan statement: PASS
-- Reviewed worktree: clean
-
-The reviewer made no Library or `Surveillance_AMR` write. Task 8 remains blocked at its independent review gate pending one of the explicit owner-controlled closure conditions.
+Task 8's per-task gate is complete. Independent whole-branch review, correction/re-review of any blocking findings, merged-`main` full-gate rerun, remote equality, and push remain required before publication is complete.
