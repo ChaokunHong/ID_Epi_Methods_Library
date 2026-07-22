@@ -987,3 +987,66 @@ Source HEAD remained `eb5d15656b8fe69a8359705c80125d695a1c0782`; the pointer rem
 ## Receipt boundary
 
 This report intentionally does not create `07_reviews/BROAD_DISCOVERY_REVIEW_20260720.md`, a Task 8 review receipt, or a whole-branch review. The exact commit containing this report is resolved after commit with `git log -1 --format=%H -- 07_reviews/BROAD_DISCOVERY_VERIFICATION_20260720.md`; a file cannot embed the SHA of the commit that contains itself.
+
+## Owner-approved Task 8 external release-contract repair
+
+Chaokun Hong approved the narrow external release-contract amendment on 2026-07-22 under `DEC-20260722-010`. The governing amendment is `docs/superpowers/plans/2026-07-22-broad-discovery-external-release-contract-amendment.md`, last modified in reviewed amendment commit `d0d873abe08256184bd5028fde8cf1f2f020b576`; its durable independent PASS receipt is present at repository head `97cde95c43a1b65328478885cdaa3e2911e44248`. The resulting static contract is `07_reviews/external_boundaries/BROAD_DISCOVERY_SURVEILLANCE_RELEASE_CONTRACT_20260722.json`, byte-locked with trailing newline to SHA256 `6f7e7f71d300f820ef46e7ffc98bd54aa57061e566f187362f1c44ab07e05422`.
+
+### Nonpassing legacy check retained honestly
+
+Command:
+
+```text
+python3 00_governance/scripts/discovery_search.py verify-external-boundary --root . --source-root /Users/hongchaokun/Documents/PhD/Surveillance_AMR
+```
+
+Underlying exit: `1`. Exact output:
+
+```text
+DISCOVERY FAIL
+- external filtered status mismatch
+```
+
+This is a **nonpassing legacy check** and is not relabelled as PASS. The owner-approved amendment requires that exact legacy result to remain visible and independently requires the amended gate below.
+
+### Complete pre-edit amended-gate output
+
+```text
+AMENDED EXTERNAL RELEASE GATE PASS
+source_head=eb5d15656b8fe69a8359705c80125d695a1c0782
+default=18/a4ced68b5f0b91c3289b9e5c7a3d184556d8245bc6aeb7a516ffbe06f6cf2df2
+pointer_filtered_default=17/d3273ff3b5aba70d91e72f06d59d65d1d83eafb3f0a3bd33f163e05d3cb6ebfd
+expanded=195/160824ab59e7e738689a76cb7c894ad473795b7eccac3b0bcf7a31a141125a56
+pointer_filtered_expanded=194/f3477c25000858130bd6d3d1dd2705f11d41556aa3a779806a33713a04040d4b
+filter_gbd_default=17/4e61e54d6671ef2b048e3d1967a90d0ff96524ac329689ea2aaaf4cb347f955c
+filter_gbd_expanded=36/f2492a704dff8d15031a2360ef97ad7a39e8d988830352ba628233ed00bc81ad
+filter_pointer_and_gbd_default=16/e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e
+filter_pointer_and_gbd_expanded=35/e002cc129aeea29aea4c61d059390535bf2f3332e48192b8dc5667bf588ef565
+allowlisted_gbd_entries=default:1 expanded:159
+pointer=untracked index_absent:true
+seed=untracked sha256:520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55 cmp:equal
+proof=path/status only; not dirty-file byte identity
+```
+
+### Exact amended-gate pre/post status views
+
+| Named status view | Pre-edit lines / SHA256 | Post-edit lines / SHA256 | Result |
+|---|---|---|---|
+| `default` | 18 / `a4ced68b5f0b91c3289b9e5c7a3d184556d8245bc6aeb7a516ffbe06f6cf2df2` | 18 / `a4ced68b5f0b91c3289b9e5c7a3d184556d8245bc6aeb7a516ffbe06f6cf2df2` | identical |
+| `pointer_filtered_default` | 17 / `d3273ff3b5aba70d91e72f06d59d65d1d83eafb3f0a3bd33f163e05d3cb6ebfd` | 17 / `d3273ff3b5aba70d91e72f06d59d65d1d83eafb3f0a3bd33f163e05d3cb6ebfd` | identical |
+| `expanded` | 195 / `160824ab59e7e738689a76cb7c894ad473795b7eccac3b0bcf7a31a141125a56` | 195 / `160824ab59e7e738689a76cb7c894ad473795b7eccac3b0bcf7a31a141125a56` | identical |
+| `pointer_filtered_expanded` | 194 / `f3477c25000858130bd6d3d1dd2705f11d41556aa3a779806a33713a04040d4b` | 194 / `f3477c25000858130bd6d3d1dd2705f11d41556aa3a779806a33713a04040d4b` | identical |
+| `filter_gbd_default` | 17 / `4e61e54d6671ef2b048e3d1967a90d0ff96524ac329689ea2aaaf4cb347f955c` | 17 / `4e61e54d6671ef2b048e3d1967a90d0ff96524ac329689ea2aaaf4cb347f955c` | identical |
+| `filter_gbd_expanded` | 36 / `f2492a704dff8d15031a2360ef97ad7a39e8d988830352ba628233ed00bc81ad` | 36 / `f2492a704dff8d15031a2360ef97ad7a39e8d988830352ba628233ed00bc81ad` | identical |
+| `filter_pointer_and_gbd_default` | 16 / `e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e` | 16 / `e756dbcdc0e0ab309ed1929ad1deeae1617e7d36a6389dec6ac49060775c9c6e` | identical |
+| `filter_pointer_and_gbd_expanded` | 35 / `e002cc129aeea29aea4c61d059390535bf2f3332e48192b8dc5667bf588ef565` | 35 / `e002cc129aeea29aea4c61d059390535bf2f3332e48192b8dc5667bf588ef565` | identical |
+
+The complete pre-edit and post-edit amended-gate outputs were byte-for-byte identical. Equality covers all four live views, all four reconstructed views, the GBD 1/159 counts and exact prefix, source HEAD, pointer/index state, and seed status/SHA/byte comparison.
+
+The exact allowlisted porcelain prefix is `?? "Global Burden of Disease Study 2021 (GBD 2021) Bacterial Antimicrobial Resistance Burden Estimates 1990-2021 and Forecasts 2022-2050/`. The required and observed GBD entry counts are one default entry and 159 expanded entries; no other delta is allowed.
+
+Source HEAD is `eb5d15656b8fe69a8359705c80125d695a1c0782`. The reciprocal pointer remains exactly `?? ID_EPI_METHODS_LIBRARY_POINTER.md` and absent from the index. The seed source remains exactly `?? 02_source_registry/INFECTIOUS_EPIDEMIOLOGY_PUBLIC_DATA_IDEA_SCAN_20260719.md`; source and Library copies both have SHA256 `520a634d7a876a7096ca8d19598c5de16785a71e27e6e58ae2fd62da6d791b55` and compare byte-equal. The repair made no external write and did not modify the pointer, GBD paths, seed source, frozen baseline, validator, original plan, search artifacts, registries, waves, reviews, or execution ledger.
+
+Proof limit: Path/status evidence only; no pre-phase byte manifest exists for paths already dirty at baseline.
+
+The same Task 8 reviewer must re-review the complete range from original Task 8 base `140b7f2cf725aa9f0ecb1369369a2432eb6f9b52` through the exact repair head before whole-branch review may begin. Resolve that head after commit with `git rev-parse HEAD`; whole-branch review, merge, and push remain blocked until the reviewer returns `PASS — no remaining Critical or Important findings`.
