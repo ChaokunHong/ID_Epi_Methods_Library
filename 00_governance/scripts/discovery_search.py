@@ -2601,6 +2601,40 @@ def _integer(value: object) -> bool:
     return isinstance(value, int) and not isinstance(value, bool) and value >= 0
 
 
+def _validate_receipt_metadata(
+    payload: dict[str, object], receipt_kind: str
+) -> tuple[list[str], datetime | None]:
+    errors: list[str] = []
+    if type(payload.get("schema_version")) is not int or payload.get(
+        "schema_version"
+    ) != 1:
+        errors.append(f"invalid {receipt_kind} schema_version")
+
+    executed_at: datetime | None = None
+    raw_executed_at = payload.get("executed_at")
+    if not isinstance(raw_executed_at, str) or not raw_executed_at.strip():
+        errors.append(f"invalid {receipt_kind} executed_at")
+    else:
+        try:
+            parsed_executed_at = datetime.fromisoformat(raw_executed_at)
+        except ValueError:
+            errors.append(f"invalid {receipt_kind} executed_at")
+        else:
+            if (
+                parsed_executed_at.tzinfo is None
+                or parsed_executed_at.utcoffset() is None
+            ):
+                errors.append(f"invalid {receipt_kind} executed_at")
+            else:
+                executed_at = parsed_executed_at
+
+    for field in ("timezone", "tool_version"):
+        value = payload.get(field)
+        if not isinstance(value, str) or not value.strip():
+            errors.append(f"invalid {receipt_kind} {field}")
+    return errors, executed_at
+
+
 def _parse_date(value: object) -> date | None:
     if not isinstance(value, str) or not value.strip():
         return None
@@ -2971,6 +3005,8 @@ def validate_search_run(run_dir: Path) -> list[str]:
             errors.append(f"missing receipt field: {field}")
     if any(field not in payload for field in RUN_REQUIRED_FIELDS):
         return list(dict.fromkeys(errors))
+    metadata_errors, executed_at = _validate_receipt_metadata(payload, "run")
+    errors.extend(metadata_errors)
     wave_two = run_dir.name == "wave_02_synonym_expansion"
     configuration_root = _configuration_root(run_dir)
     config_errors = _validate_configuration_files(payload["configuration_files"])
@@ -3030,11 +3066,15 @@ def validate_search_run(run_dir: Path) -> list[str]:
         errors.append("invalid cells receipt")
     else:
         if run_dir.name == "wave_01_frozen_queries":
-            try:
-                executed_date = datetime.fromisoformat(str(payload["executed_at"])).date()
-                expected_roots = build_search_cells(configuration_root, executed_date)
-            except (KeyError, TypeError, ValueError, OSError):
+            if executed_at is None:
                 expected_roots = []
+            else:
+                try:
+                    expected_roots = build_search_cells(
+                        configuration_root, executed_at.date()
+                    )
+                except (TypeError, ValueError, OSError):
+                    expected_roots = []
             expected_signatures = {
                 (
                     cell.search_id,
@@ -3509,16 +3549,9 @@ def validate_lineage(root: Path, run_dir: Path) -> list[str]:
             errors.append(f"missing lineage receipt field: {field}")
     if any(field not in payload for field in LINEAGE_REQUIRED_FIELDS):
         return list(dict.fromkeys(errors))
-    expected_execution_date: date | None = None
-    try:
-        executed_at = datetime.fromisoformat(str(payload.get("executed_at", "")))
-    except ValueError:
-        errors.append("invalid lineage executed_at")
-    else:
-        if executed_at.tzinfo is None or executed_at.utcoffset() is None:
-            errors.append("invalid lineage executed_at")
-        else:
-            expected_execution_date = executed_at.date()
+    metadata_errors, executed_at = _validate_receipt_metadata(payload, "lineage")
+    errors.extend(metadata_errors)
+    expected_execution_date = executed_at.date() if executed_at is not None else None
     errors.extend(_validate_configuration_files(payload["configuration_files"], lineage=True))
     errors.extend(
         _validate_configuration_file_hashes(root, payload["configuration_files"])

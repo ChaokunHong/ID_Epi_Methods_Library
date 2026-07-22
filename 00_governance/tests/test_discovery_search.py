@@ -2543,6 +2543,34 @@ class DiscoverySearchTests(unittest.TestCase):
         (run_dir / "RUN_RECEIPT.json").write_text(json.dumps(receipt))
         self.assertIn("missing receipt field", "\n".join(search.validate_search_run(run_dir)))
 
+    def test_search_run_rejects_invalid_receipt_metadata(self):
+        run_dir = self.make_valid_run()
+        receipt_path = run_dir / "RUN_RECEIPT.json"
+        valid_receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+        cases = (
+            ("schema_version", True, "invalid run schema_version"),
+            ("schema_version", "", "invalid run schema_version"),
+            ("schema_version", 2, "invalid run schema_version"),
+            ("schema_version", 1.0, "invalid run schema_version"),
+            ("executed_at", "not-a-timestamp", "invalid run executed_at"),
+            ("executed_at", "2026-07-20T12:00:00", "invalid run executed_at"),
+            ("timezone", "", "invalid run timezone"),
+            ("timezone", "   ", "invalid run timezone"),
+            ("timezone", None, "invalid run timezone"),
+            ("tool_version", "", "invalid run tool_version"),
+            ("tool_version", "   ", "invalid run tool_version"),
+            ("tool_version", None, "invalid run tool_version"),
+        )
+        for field, value, expected_error in cases:
+            with self.subTest(field=field, value=value):
+                receipt = json.loads(json.dumps(valid_receipt))
+                receipt[field] = value
+                receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+                self.assertIn(
+                    expected_error,
+                    "\n".join(search.validate_search_run(run_dir)),
+                )
+
     def test_search_run_recomputes_configuration_file_hashes(self):
         run_dir = self.make_valid_run()
         receipt_path = run_dir / "RUN_RECEIPT.json"
@@ -2833,6 +2861,38 @@ class DiscoverySearchTests(unittest.TestCase):
         }]
         (run_dir / "LINEAGE_RUN_RECEIPT.json").write_text(json.dumps(receipt))
         self.assertIn("prohibited crossref field", "\n".join(search.validate_lineage(self.root, run_dir)))
+
+    def test_lineage_rejects_invalid_receipt_metadata(self):
+        run_dir = self.make_valid_lineage_run(self.root)
+        receipt_path = run_dir / "LINEAGE_RUN_RECEIPT.json"
+        valid_receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+        cases = (
+            ("schema_version", True, "invalid lineage schema_version"),
+            ("schema_version", "", "invalid lineage schema_version"),
+            ("schema_version", 2, "invalid lineage schema_version"),
+            ("schema_version", 1.0, "invalid lineage schema_version"),
+            ("executed_at", "not-a-timestamp", "invalid lineage executed_at"),
+            (
+                "executed_at",
+                "2026-07-20T12:00:00",
+                "invalid lineage executed_at",
+            ),
+            ("timezone", "", "invalid lineage timezone"),
+            ("timezone", "   ", "invalid lineage timezone"),
+            ("timezone", None, "invalid lineage timezone"),
+            ("tool_version", "", "invalid lineage tool_version"),
+            ("tool_version", "   ", "invalid lineage tool_version"),
+            ("tool_version", None, "invalid lineage tool_version"),
+        )
+        for field, value, expected_error in cases:
+            with self.subTest(field=field, value=value):
+                receipt = json.loads(json.dumps(valid_receipt))
+                receipt[field] = value
+                receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+                self.assertIn(
+                    expected_error,
+                    "\n".join(search.validate_lineage(self.root, run_dir)),
+                )
 
     def test_lineage_missing_source_fields_never_enter_recomputation(self):
         run_dir = self.make_valid_lineage_run(self.root)

@@ -14,7 +14,7 @@ The project is methods-first. Geography, LMIC relevance, AMR relevance, public-d
 
 ## Current phase
 
-Bootstrap implementation plus the schema-hardening correction are complete locally. Whole-branch re-review, final validation, merge to `main`, and publication remain pending. The approved design is `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, approved by the owner on 2026-07-20 and governed for bootstrap by `docs/superpowers/plans/2026-07-20-library-bootstrap-implementation.md`. No flagship study has been selected and the broad search has not been executed.
+Broad discovery and lineage locating are complete on the isolated reviewed `codex/broad-methods-discovery` branch. Whole-branch correction and re-review, merge to `main`, merged-main verification, and publication remain pending. The approved design is `docs/superpowers/specs/2026-07-20-id-epi-methods-library-design.md`, and the active approved plan is `docs/superpowers/plans/2026-07-20-broad-methods-discovery-search.md`. No flagship study has been selected.
 
 ## Related project
 
